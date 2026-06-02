@@ -1,0 +1,45 @@
+{
+    "case_name": "Rephrase-and-Respond Ambiguous Business Request",
+    "raw_response": "```\n{\n  \"rephrased_problem\": \"Reduce manual effort in workflow processing and enhance leadership visibility into operational performance metrics\",\n  \"clarified_assumptions\": [\n    \"Manual work is primarily related to data entry and document processing\",\n    \"Leadership requires real-time visibility into workflow bottlenecks and SLA performance\",\n    \"Current workflow processes are largely manual and prone to errors\"\n  ],\n  \"proposed_solution\": \"Automated Document Processing and Workflow Analytics using AI-powered Optical Character Recognition (OCR) and Machine Learning (ML) algorithms\",\n  \"target_users\": [\n    \"Operations Team\",\n    \"Leadership\"\n  ],\n  \"key_features\": [\n    \"Automated document processing and data extraction\",\n    \"Real-time workflow analytics and dashboarding\",\n    \"Predictive modeling for bottleneck detection and SLA forecasting\"\n  ],\n  \"data_needed\": [\n    \"Historical workflow data\",\n    \"Document templates and formats\",\n    \"SLA and performance metrics\"\n  ],\n  \"success_metrics\": [\n    \"Reduced manual processing time by 30%\",\n    \"Increased accuracy in data entry by 25%\",\n    \"Improved SLA compliance by 20%\",\n    \"Reduced workflow backlog by 15%\"\n  ],\n  \"implementation_steps\": [\n    \"Data collection and preprocessing\",\n    \"AI model training and testing\",\n    \"Integration with existing workflow systems\",\n    \"Pilot deployment and testing\",\n    \"Full-scale deployment and monitoring\"\n  ],\n  \"risks\": [\n    \"Data quality issues impacting AI model accuracy\",\n    \"Integration challenges with existing systems\",\n    \"Change management and user adoption\"\n  ]\n}\n```",
+    "parsed_response": {
+        "rephrased_problem": "Reduce manual effort in workflow processing and enhance leadership visibility into operational performance metrics",
+        "clarified_assumptions": [
+            "Manual work is primarily related to data entry and document processing",
+            "Leadership requires real-time visibility into workflow bottlenecks and SLA performance",
+            "Current workflow processes are largely manual and prone to errors"
+        ],
+        "proposed_solution": "Automated Document Processing and Workflow Analytics using AI-powered Optical Character Recognition (OCR) and Machine Learning (ML) algorithms",
+        "target_users": [
+            "Operations Team",
+            "Leadership"
+        ],
+        "key_features": [
+            "Automated document processing and data extraction",
+            "Real-time workflow analytics and dashboarding",
+            "Predictive modeling for bottleneck detection and SLA forecasting"
+        ],
+        "data_needed": [
+            "Historical workflow data",
+            "Document templates and formats",
+            "SLA and performance metrics"
+        ],
+        "success_metrics": [
+            "Reduced manual processing time by 30%",
+            "Increased accuracy in data entry by 25%",
+            "Improved SLA compliance by 20%",
+            "Reduced workflow backlog by 15%"
+        ],
+        "implementation_steps": [
+            "Data collection and preprocessing",
+            "AI model training and testing",
+            "Integration with existing workflow systems",
+            "Pilot deployment and testing",
+            "Full-scale deployment and monitoring"
+        ],
+        "risks": [
+            "Data quality issues impacting AI model accuracy",
+            "Integration challenges with existing systems",
+            "Change management and user adoption"
+        ]
+    }
+}
