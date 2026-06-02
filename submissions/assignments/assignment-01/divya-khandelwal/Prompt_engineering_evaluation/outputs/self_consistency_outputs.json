@@ -1,0 +1,32 @@
+[
+    {
+        "individual_answers": [
+            37.5,
+            37.5,
+            37.5,
+            37.5,
+            37.5
+        ],
+        "final_reimbursable_amount": 37.5,
+        "consistency_count": {
+            "37.5": 5
+        },
+        "final_decision": "Most consistent reimbursable amount is 37.5",
+        "reasoning_summary": "Multiple independent reasoning runs were generated and the most consistent reimbursement amount was selected."
+    },
+    {
+        "runs": [
+            "MEDIUM",
+            "MEDIUM",
+            "MEDIUM",
+            "MEDIUM",
+            "MEDIUM"
+        ],
+        "risk_level_votes": {
+            "MEDIUM": 5
+        },
+        "final_risk_level": "MEDIUM",
+        "disagreement_analysis": "Some runs may incorrectly classify HIGH risk by focusing only on file downloads without validating the new-country condition.",
+        "final_reasoning_summary": "The most consistent result was selected after multiple independent reasoning runs."
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "incremental_revenue_range": "$80,000 - $140,000",
+        "incremental_gross_profit_range": "$32,000 - $56,000",
+        "monthly_net_benefit_range": "$2,000 - $26,000",
+        "payback_period_range_months": "6.9 - 90",
+        "decision": "APPROVE_WITH_CONDITIONS",
+        "reasoning_summary": "Net benefit after costs ranges from $2k to $26k per month, yielding a payback period between ~7 and 90 months. To meet the 12\u2011month payback requirement, monthly net benefit must be at least $15k, implying a revenue uplift of ~5.6% (within the 4\u20117% forecast). Approval is conditional on achieving at least a 5.6% uplift.",
+        "key_assumptions": [
+            "Gross margin remains constant at 40%",
+            "Revenue uplift applies to the full current monthly revenue of $2M",
+            "Infrastructure and maintenance costs are fixed at $30k per month",
+            "Implementation cost is incurred upfront and not amortized",
+            "Payback period calculated after the 3\u2011month implementation lag"
+        ]
+    },
+    {
+        "most_likely_causes": [
+            "Data drift in transaction_amount distribution",
+            "Concept drift due to changed fraud patterns after promotional campaign",
+            "Introduction of a new payment channel altering feature space"
+        ],
+        "evidence": [
+            "Precision dropped from 0.82 to 0.61 and recall from 0.76 to 0.72",
+            "Transaction volume increased by 30%",
+            "Feature distribution for transaction_amount shifted significantly",
+            "Fraud patterns changed after a promotional campaign",
+            "A new payment channel was introduced",
+            "Data pipeline logs show no failed jobs"
+        ],
+        "less_likely_causes": [
+            "Threshold miscalibration (no direct evidence of threshold change)",
+            "Pipeline failure (logs indicate all jobs succeeded)"
+        ],
+        "recommended_diagnostics": [
+            "Compute Population Stability Index (PSI) and Kolmogorov\u2011Smirnov test for transaction_amount and other key features across pre\u2011deployment vs. current data",
+            "Run drift detection per payment channel (e.g., ADWIN, DDM) to isolate impact of the new channel",
+            "Analyze label distribution and fraud pattern statistics over time to detect concept drift",
+            "Perform a hold\u2011out evaluation using recent labeled data to quantify performance loss per segment",
+            "Check calibration curves and precision\u2011recall trade\u2011off to see if threshold adjustment could recover precision"
+        ],
+        "short_term_actions": [
+            "Temporarily adjust the decision threshold to improve precision while monitoring recall",
+            "Enable per\u2011channel monitoring dashboards and set alerts for sudden drops in precision/recall",
+            "Run an offline re\u2011training on the most recent 1\u2011month data and evaluate before production rollout",
+            "If feasible, route transactions from the new payment channel through a fallback rule\u2011based filter pending model update"
+        ],
+        "long_term_actions": [
+            "Implement automated drift detection pipelines that trigger retraining or model review when PSI/KS exceeds predefined limits",
+            "Establish a regular (e.g., monthly) model retraining schedule incorporating new fraud patterns and payment channels",
+            "Add the new payment channel as an explicit feature and continuously monitor its importance",
+            "Adopt online or incremental learning methods to adapt to evolving fraud behavior",
+            "Maintain a calibration monitoring service to detect threshold misalignment over time"
+        ],
+        "reasoning_summary": "The sharp decline in precision, together with a significant shift in the transaction_amount feature and the introduction of a new payment channel, points to data drift. Concurrently, the promotional campaign altered fraud tactics, indicating concept drift. Pipeline failures are ruled out by clean logs, and there is no evidence of intentional threshold changes, making miscalibration less likely. Diagnostics focus on quantifying feature and label drift, while short\u2011term actions aim to mitigate immediate precision loss and isolate the new channel's impact. Long\u2011term actions establish continuous monitoring and scheduled retraining to prevent recurrence."
+    }
+]
