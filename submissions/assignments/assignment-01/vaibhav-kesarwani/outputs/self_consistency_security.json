@@ -1,0 +1,72 @@
+{
+  "runs": [
+    {
+      "run": 1,
+      "raw": "```json\n{\n  \"risk_level\": \"CRITICAL\",\n  \"reasons\": [\n    \"new country + downloads > 5: Germany is not considered a new country since it's a known VPN country, but outside business hours and MFA failure are true, and downloads > 5\",\n    \"outside business hours + 1 MFA failure: login time is 8:15 PM which is outside business hours and 1 MFA failure\"\n  ]\n}\n```",
+      "parsed": {
+        "risk_level": "CRITICAL",
+        "reasons": [
+          "new country + downloads > 5: Germany is not considered a new country since it's a known VPN country, but outside business hours and MFA failure are true, and downloads > 5",
+          "outside business hours + 1 MFA failure: login time is 8:15 PM which is outside business hours and 1 MFA failure"
+        ]
+      }
+    },
+    {
+      "run": 2,
+      "raw": "```json\n{\n  \"risk_level\": \"CRITICAL\",\n  \"reasons\": [\n    \"New country: False, but outside business hours and MFA failure triggered MEDIUM, and downloads > 5 triggered HIGH\",\n    \"Outside business hours\",\n    \"MFA failure\",\n    \"Downloads > 5\"\n  ]\n}\n```",
+      "parsed": {
+        "risk_level": "CRITICAL",
+        "reasons": [
+          "New country: False, but outside business hours and MFA failure triggered MEDIUM, and downloads > 5 triggered HIGH",
+          "Outside business hours",
+          "MFA failure",
+          "Downloads > 5"
+        ]
+      }
+    },
+    {
+      "run": 3,
+      "raw": "```json\n{\n  \"risk_level\": \"CRITICAL\",\n  \"reasons\": [\n    \"New country: False, but downloads > 5: True\",\n    \"Outside business hours: True\",\n    \"1 MFA failure: True\"\n  ]\n}\n```",
+      "parsed": {
+        "risk_level": "CRITICAL",
+        "reasons": [
+          "New country: False, but downloads > 5: True",
+          "Outside business hours: True",
+          "1 MFA failure: True"
+        ]
+      }
+    },
+    {
+      "run": 4,
+      "raw": "```json\n{\n  \"risk_level\": \"CRITICAL\",\n  \"reasons\": [\n    \"New country login outside known countries (excluding VPN)\",\n    \"Login outside business hours with MFA failure\"\n  ]\n}\n```",
+      "parsed": {
+        "risk_level": "CRITICAL",
+        "reasons": [
+          "New country login outside known countries (excluding VPN)",
+          "Login outside business hours with MFA failure"
+        ]
+      }
+    },
+    {
+      "run": 5,
+      "raw": "```json\n{\n  \"risk_level\": \"CRITICAL\",\n  \"reasons\": [\n    \"New country: False, but outside business hours and MFA failure triggered MEDIUM, and downloads > 5 triggered HIGH\",\n    \"Outside business hours: True\",\n    \"MFA failures: 1\",\n    \"Downloads: 8\"\n  ]\n}\n```",
+      "parsed": {
+        "risk_level": "CRITICAL",
+        "reasons": [
+          "New country: False, but outside business hours and MFA failure triggered MEDIUM, and downloads > 5 triggered HIGH",
+          "Outside business hours: True",
+          "MFA failures: 1",
+          "Downloads: 8"
+        ]
+      }
+    }
+  ],
+  "risk_level_votes": {},
+  "final_reimbursable_amount": null,
+  "final_risk_level": "CRITICAL",
+  "consistency_count": {
+    "CRITICAL": 5
+  },
+  "final_decision": "majority_vote",
+  "reasoning_summary": "Aggregated multiple independent model runs using self-consistency voting."
+}

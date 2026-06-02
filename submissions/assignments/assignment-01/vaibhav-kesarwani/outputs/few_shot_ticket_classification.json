@@ -1,0 +1,36 @@
+{
+  "case_name": "few_shot_ticket_classification",
+  "raw_response": "[\n  {\n    \"ticket\": \"I was charged twice this month and your support team has not replied for five days. I am going to post this on social media if this is not fixed today.\",\n    \"category\": \"BILLING_ISSUE\",\n    \"priority\": \"URGENT\",\n    \"justification\": \"Billing dispute with escalation risk and financial impact.\"\n  },\n  {\n    \"ticket\": \"The export button stopped working after your latest update. Our reporting team is blocked.\",\n    \"category\": \"TECHNICAL_BUG\",\n    \"priority\": \"HIGH\",\n    \"justification\": \"Core functionality regression affecting active users.\"\n  },\n  {\n    \"ticket\": \"Can you add approval workflows before invoices are submitted?\",\n    \"category\": \"FEATURE_REQUEST\",\n    \"priority\": \"MEDIUM\",\n    \"justification\": \"Request for new workflow functionality rather than a defect.\"\n  },\n  {\n    \"ticket\": \"We need confirmation that our customer data is not being used to train your AI models.\",\n    \"category\": \"COMPLIANCE_CONCERN\",\n    \"priority\": \"HIGH\",\n    \"justification\": \"Potential privacy and governance concern requiring compliance review.\"\n  },\n  {\n    \"ticket\": \"My admin account is locked and the password reset email never arrives.\",\n    \"category\": \"ACCOUNT_ACCESS\",\n    \"priority\": \"URGENT\",\n    \"justification\": \"Critical user locked out with failed recovery process.\"\n  }\n]",
+  "parsed_output": [
+    {
+      "ticket": "I was charged twice this month and your support team has not replied for five days. I am going to post this on social media if this is not fixed today.",
+      "category": "BILLING_ISSUE",
+      "priority": "URGENT",
+      "justification": "Billing dispute with escalation risk and financial impact."
+    },
+    {
+      "ticket": "The export button stopped working after your latest update. Our reporting team is blocked.",
+      "category": "TECHNICAL_BUG",
+      "priority": "HIGH",
+      "justification": "Core functionality regression affecting active users."
+    },
+    {
+      "ticket": "Can you add approval workflows before invoices are submitted?",
+      "category": "FEATURE_REQUEST",
+      "priority": "MEDIUM",
+      "justification": "Request for new workflow functionality rather than a defect."
+    },
+    {
+      "ticket": "We need confirmation that our customer data is not being used to train your AI models.",
+      "category": "COMPLIANCE_CONCERN",
+      "priority": "HIGH",
+      "justification": "Potential privacy and governance concern requiring compliance review."
+    },
+    {
+      "ticket": "My admin account is locked and the password reset email never arrives.",
+      "category": "ACCOUNT_ACCESS",
+      "priority": "URGENT",
+      "justification": "Critical user locked out with failed recovery process."
+    }
+  ]
+}
