@@ -1,0 +1,59 @@
+{
+    "rephrased_requirement": "Implement a secure, high\u2011performance AI\u2011assisted Q&A feature that lets authenticated users upload documents, extracts the content, indexes it, and returns accurate answers to user questions based on the uploaded material.",
+    "functional_requirements": [
+        "User authentication and authorization (OAuth2/OIDC).",
+        "File upload endpoint supporting configurable file types and size limits.",
+        "Virus/malware scanning of uploaded files before processing.",
+        "Content extraction (text, OCR for images/PDFs, etc.) and normalization.",
+        "Embedding generation for extracted text using a selected LLM embedding model.",
+        "Vector store indexing of embeddings per user/session.",
+        "Question endpoint that accepts natural\u2011language queries and retrieves relevant passages via similarity search.",
+        "Answer generation using a generative LLM, conditioned on retrieved passages.",
+        "Result presentation with source citations and confidence scores.",
+        "Audit logging of upload, query, and answer events.",
+        "Rate limiting and quota enforcement per user.",
+        "Data retention and deletion API to purge user data on request."
+    ],
+    "non_functional_requirements": [
+        "Response latency: \u2264 2\u202fseconds for similarity search, \u2264 5\u202fseconds for end\u2011to\u2011end answer generation under normal load.",
+        "Scalability: support at least 500 concurrent active users with auto\u2011scaling of processing workers.",
+        "Availability: 99.9\u202f% uptime measured monthly.",
+        "Maintainability: modular micro\u2011service architecture with CI/CD pipelines and automated tests covering \u2265\u202f80\u202f% of code.",
+        "Observability: metrics, logs, and tracing integrated with Prometheus/Grafana and ELK stack.",
+        "Compliance: GDPR\u2011compatible data handling, with ability to export or delete user data on demand."
+    ],
+    "security_requirements": [
+        "All network traffic encrypted with TLS\u202f1.3.",
+        "Files stored encrypted at rest using AES\u2011256\u2011GCM.",
+        "Authentication via OAuth2/OIDC with short\u2011lived access tokens.",
+        "Role\u2011based access control (RBAC) limiting users to their own data.",
+        "Input validation and strict MIME\u2011type checking for uploads.",
+        "Integration with an anti\u2011virus engine (e.g., ClamAV) for every uploaded file.",
+        "Sandboxed execution environment for any code\u2011like processing (no arbitrary code execution).",
+        "Audit logs tamper\u2011evident (append\u2011only, signed).",
+        "Regular security testing: static analysis, dependency scanning, and quarterly penetration tests."
+    ],
+    "acceptance_criteria": [
+        "Authenticated users can upload supported files up to the configured size limit (e.g., 50\u202fMB) and receive a 200\u202fOK response.",
+        "Uploaded files are scanned and rejected if malware is detected.",
+        "System indexes the content and returns a relevant answer with a confidence score \u2265\u202f0.7 for \u2265\u202f80\u202f% of a predefined test set of 100 question\u2011answer pairs.",
+        "End\u2011to\u2011end latency measured over 1000 queries stays within the defined limits (\u2264\u202f5\u202fseconds 95th percentile).",
+        "All data in transit uses TLS\u202f1.3; data at rest is encrypted with AES\u2011256\u2011GCM.",
+        "Audit logs contain timestamp, user ID, operation type, and outcome, and are immutable.",
+        "Rate limiting blocks requests exceeding 60 queries per minute per user.",
+        "Data deletion request removes all user files, embeddings, and logs within 24\u202fhours."
+    ],
+    "recommended_solution_approach": "Adopt a micro\u2011service architecture behind an API gateway. Use a front\u2011end SPA (React/Vue) for the UI, which talks to a Auth Service (OAuth2/OIDC) and a File Service (upload to S3\u2011compatible storage with server\u2011side encryption). Trigger a background worker (e.g., AWS Lambda, GCP Cloud Run, or Kubernetes Job) that runs virus scanning, extracts text (PDFBox/Tika + OCR via Tesseract), and generates embeddings via a hosted model (OpenAI, Cohere, or self\u2011hosted sentence\u2011transformers). Store embeddings in a managed vector database (Pinecone, Milvus, or Elastic Vector). A Query Service receives user questions, performs a similarity search, and forwards the top\u2011k passages to a generative LLM (OpenAI GPT\u20114, Anthropic Claude, or an on\u2011prem model) with prompt engineering that includes source citations. The Answer Service formats the response, attaches confidence scores, and returns it to the UI. All services emit structured logs and Prometheus metrics; tracing is enabled via OpenTelemetry. Deploy on a cloud provider with autoscaling groups, use IAM roles for least\u2011privilege access, and enforce network segmentation (private subnets, security groups). Implement CI/CD pipelines with automated unit, integration, and security tests, and schedule regular vulnerability scans.",
+    "open_questions": [
+        "Maximum file size and total storage quota per user?",
+        "Which specific file formats must be supported (PDF, DOCX, images, etc.)?",
+        "Preferred LLM provider for embeddings and generation, or is a self\u2011hosted model required?",
+        "Target deployment environment (AWS, GCP, Azure, on\u2011prem)?",
+        "Regulatory constraints beyond GDPR (e.g., HIPAA, CCPA)?",
+        "Retention period for uploaded files and generated embeddings?",
+        "Expected query volume and peak concurrency patterns?",
+        "Budget limits for third\u2011party services (vector DB, LLM API usage)?",
+        "Desired UI/UX features (inline citation, feedback loop for wrong answers, etc.)?",
+        "Do we need multi\u2011language support for document extraction and answering?"
+    ]
+}
