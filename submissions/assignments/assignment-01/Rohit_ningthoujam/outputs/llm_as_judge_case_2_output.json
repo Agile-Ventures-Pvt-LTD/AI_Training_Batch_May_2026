@@ -1,0 +1,27 @@
+{
+  "explanation_a": {
+    "scores": {
+      "technical_accuracy": 5,
+      "clarity": 5,
+      "beginner_usefulness": 5,
+      "completeness": 4
+    },
+    "issues": [],
+    "overall_score": 4.75
+  },
+  "explanation_b": {
+    "scores": {
+      "technical_accuracy": 2,
+      "clarity": 3,
+      "beginner_usefulness": 2,
+      "completeness": 2
+    },
+    "issues": [
+      "Technically misleading claim about shallow copy being 'always bad'",
+      "Oversimplification of deep copy being 'always better'"
+    ],
+    "overall_score": 2.25
+  },
+  "winner": "explanation_a",
+  "judge_reasoning_summary": "Explanation A accurately describes the difference between shallow and deep copy in Python, providing clear and useful information for beginners. Explanation B contains technically misleading claims and oversimplifies the concept, making it less useful for learners."
+}

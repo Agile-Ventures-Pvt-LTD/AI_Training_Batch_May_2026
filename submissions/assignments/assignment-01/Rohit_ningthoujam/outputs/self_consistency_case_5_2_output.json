@@ -1,0 +1,140 @@
+{
+  "runs": [
+    {
+      "run": 1,
+      "raw_response": [
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        }
+      ],
+      "parsed": "[{'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}]"
+    },
+    {
+      "run": 2,
+      "raw_response": [
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        }
+      ],
+      "parsed": "[{'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}]"
+    },
+    {
+      "run": 3,
+      "raw_response": [
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        }
+      ],
+      "parsed": "[{'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}]"
+    },
+    {
+      "run": 4,
+      "raw_response": [
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        }
+      ],
+      "parsed": "[{'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}]"
+    },
+    {
+      "run": 5,
+      "raw_response": [
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        },
+        {
+          "risk_level": "MEDIUM",
+          "reason": "Login outside business hours and MFA failed once"
+        }
+      ],
+      "parsed": "[{'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}]"
+    }
+  ],
+  "risk_level_votes": {
+    "[{'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}]": 5
+  },
+  "final_risk_level": "[{'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}, {'RISK_LEVEL': 'MEDIUM', 'REASON': 'LOGIN OUTSIDE BUSINESS HOURS AND MFA FAILED ONCE'}]",
+  "disagreement_analysis": "Differences arise due to interpretation of VPN exclusion and file download threshold rules.",
+  "final_reasoning_summary": "Self-consistency applied across 5 independent runs; majority vote used for final risk classification."
+}
