@@ -1,0 +1,6 @@
+{
+  "case_name": "llm_judge",
+  "raw_output": "I'm ready to evaluate. What are the responses you'd like me to score? Please provide response_a and response_b. I will return a JSON object with the evaluation results.",
+  "parsed": null,
+  "timestamp": "2026-05-28 09:53:23.792662"
+}

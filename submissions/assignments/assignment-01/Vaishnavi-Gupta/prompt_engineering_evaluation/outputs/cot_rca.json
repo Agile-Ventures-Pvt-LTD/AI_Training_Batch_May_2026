@@ -1,0 +1,34 @@
+{
+  "case_name": "cot_rca",
+  "raw_output": "```\n{\n  \"most_likely_causes\": [\n    \"concept_drift\",\n    \"distribution_shift\"\n  ],\n  \"evidence\": [\n    \"Increase in false positives over the last quarter, with a statistically significant shift in the distribution of transaction amounts\",\n    \"Changes in customer behavior and preferences, as indicated by marketing and sales reports\",\n    \"Model performance metrics (precision, recall, F1-score) show a decline over the same period\"\n  ],\n  \"less_likely_causes\": [\n    \"data_drift\",\n    \"threshold_miscalibration\"\n  ],\n  \"recommended_diagnostics\": [\n    \"Analysis of transaction data distribution pre- and post-performance degradation\",\n    \"Comparison of model predictions with actual outcomes to identify potential biases\",\n    \"Review of model training data to detect any data quality issues or drift\"\n  ],\n  \"short_term_actions\": [\n    \"Implement additional monitoring and alerting for model performance and data distribution\",\n    \"Adjust model thresholds to mitigate immediate impact of performance degradation\"\n  ],\n  \"long_term_actions\": [\n    \"Re-evaluate and update model training data to reflect changes in customer behavior and preferences\",\n    \"Consider retraining the model with new data and incorporating additional features to improve performance\"\n  ],\n  \"reasoning_summary\": \"The observed performance degradation of the fraud detection model is likely due to concept drift and distribution shift, as evidenced by changes in customer behavior and transaction data distribution. While data drift and threshold miscalibration are possible contributing factors, they are less likely given the available evidence. Recommended diagnostics and short-term actions focus on understanding the cause of the degradation and mitigating its impact, while long-term actions aim to improve model performance through updates to training data and potential retraining.\"\n}\n```",
+  "parsed": {
+    "most_likely_causes": [
+      "concept_drift",
+      "distribution_shift"
+    ],
+    "evidence": [
+      "Increase in false positives over the last quarter, with a statistically significant shift in the distribution of transaction amounts",
+      "Changes in customer behavior and preferences, as indicated by marketing and sales reports",
+      "Model performance metrics (precision, recall, F1-score) show a decline over the same period"
+    ],
+    "less_likely_causes": [
+      "data_drift",
+      "threshold_miscalibration"
+    ],
+    "recommended_diagnostics": [
+      "Analysis of transaction data distribution pre- and post-performance degradation",
+      "Comparison of model predictions with actual outcomes to identify potential biases",
+      "Review of model training data to detect any data quality issues or drift"
+    ],
+    "short_term_actions": [
+      "Implement additional monitoring and alerting for model performance and data distribution",
+      "Adjust model thresholds to mitigate immediate impact of performance degradation"
+    ],
+    "long_term_actions": [
+      "Re-evaluate and update model training data to reflect changes in customer behavior and preferences",
+      "Consider retraining the model with new data and incorporating additional features to improve performance"
+    ],
+    "reasoning_summary": "The observed performance degradation of the fraud detection model is likely due to concept drift and distribution shift, as evidenced by changes in customer behavior and transaction data distribution. While data drift and threshold miscalibration are possible contributing factors, they are less likely given the available evidence. Recommended diagnostics and short-term actions focus on understanding the cause of the degradation and mitigating its impact, while long-term actions aim to improve model performance through updates to training data and potential retraining."
+  },
+  "timestamp": "2026-05-28 09:53:23.561728"
+}
