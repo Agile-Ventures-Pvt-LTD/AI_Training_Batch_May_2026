@@ -1,0 +1,65 @@
+```json
+{
+  "options_evaluated": [
+    {
+      "option": "Option 1: AI customer support assistant",
+      "business_value_score": 4,
+      "feasibility_score": 3,
+      "risk_score": 3,
+      "pilot_suitability_score": 4,
+      "adoption_score": 3,
+      "overall_score": 17,
+      "trade_offs": [
+        "High business value, but moderate implementation complexity and medium user adoption risk",
+        "Potential cost saving is high, but contains personal customer data"
+      ]
+    },
+    {
+      "option": "Option 2: AI sales proposal generator",
+      "business_value_score": 4,
+      "feasibility_score": 5,
+      "risk_score": 5,
+      "pilot_suitability_score": 5,
+      "adoption_score": 5,
+      "overall_score": 24,
+      "trade_offs": [
+        "Low user adoption risk and low data sensitivity",
+        "Medium to high potential revenue impact, but requires brand and legal review"
+      ]
+    },
+    {
+      "option": "Option 3: AI contract risk analyzer",
+      "business_value_score": 5,
+      "feasibility_score": 2,
+      "risk_score": 2,
+      "pilot_suitability_score": 2,
+      "adoption_score": 3,
+      "overall_score": 14,
+      "trade_offs": [
+        "High business value, but high implementation complexity and high legal sensitivity",
+        "Requires strong accuracy and auditability"
+      ]
+    },
+    {
+      "option": "Option 4: AI internal HR policy assistant",
+      "business_value_score": 3,
+      "feasibility_score": 5,
+      "risk_score": 4,
+      "pilot_suitability_score": 5,
+      "adoption_score": 5,
+      "overall_score": 22,
+      "trade_offs": [
+        "Low implementation complexity and low user adoption risk",
+        "Medium potential cost saving, but high employee usage"
+      ]
+    }
+  ],
+  "recommended_option": "Option 2: AI sales proposal generator",
+  "why_not_others": {
+    "Option 1": "Moderate implementation complexity and medium user adoption risk",
+    "Option 3": "High implementation complexity and high legal sensitivity",
+    "Option 4": "Lower business value compared to Option 2"
+  },
+  "final_recommendation": "Option 2: AI sales proposal generator is the most suitable option due to its high overall score, low user adoption risk, and low data sensitivity. It also has a high feasibility score and pilot suitability score, making it a practical choice for a 90-day pilot."
+}
+```
