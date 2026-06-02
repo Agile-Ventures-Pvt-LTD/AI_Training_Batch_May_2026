@@ -11,6 +11,10 @@ This document accompanies the code submission for the Prompt Engineering Evaluat
 
 1. Configure .env with your GROQ_API_KEY.
 2. Run the cells related to each case in main.ipynb file.
+
+## Libraries and frameworks
+Please refer to requirements.txt for libraries and frameworks required.
+
 ---
 
 ## Section 1 — Zero-Shot Prompting
@@ -18,6 +22,7 @@ This document accompanies the code submission for the Prompt Engineering Evaluat
 ### What Zero-Shot Prompting Is
 
 Zero-shot prompting means giving the model a task with no worked examples. The model has to rely entirely on the instructions, the role it is given, and any criteria or schemas you embed in the prompt.
+
 
 ---
 
