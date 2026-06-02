@@ -1,0 +1,40 @@
+{
+    "error": "Invalid JSON response",
+    "raw_response": "1. User: \"Cancel my leave next Friday.\"\n{\n    \"action\": \"CANCEL_LEAVE\",\n    \"parameters\": {\n        \"date\": \"next Friday\"\n    },\n    \"requires_clarification\": false,\n    \"clarification_question\": \"\",\n    \"confidence\": 0.9\n}\n\n2. User: \"Show maternity leave policy.\"\n{\n    \"action\": \"VIEW_POLICY\",\n    \"parameters\": {\n        \"policy_type\": \"maternity leave\"\n    },\n    \"requires_clarification\": false,\n    \"clarification_question\": \"\",\n    \"confidence\": 0.95\n}\n\n3. User: \"How many earned leaves do I have left?\"\n{\n    \"action\": \"VIEW_LEAVE_BALANCE\",\n    \"parameters\": {\n        \"leave_type\": \"earned leaves\"\n    },\n    \"requires_clarification\": false,\n    \"clarification_question\": \"\",\n    \"confidence\": 0.95\n}",
+    "Few Shot Case 2.1 - Ticket Classification": [
+        {
+            "ticket": "I was charged twice this month.",
+            "category": "BILLING_ISSUE",
+            "priority": "HIGH",
+            "justification": "Double billing error."
+        },
+        {
+            "ticket": "Export button stopped working.",
+            "category": "TECHNICAL_BUG",
+            "priority": "HIGH",
+            "justification": "Critical feature failure."
+        },
+        {
+            "ticket": "Add approval workflows.",
+            "category": "FEATURE_REQUEST",
+            "priority": "LOW",
+            "justification": "New feature enhancement."
+        },
+        {
+            "ticket": "Is customer data used for AI training?",
+            "category": "PRIVACY_INQUIRY",
+            "priority": "MEDIUM",
+            "justification": "Data usage and privacy concern."
+        },
+        {
+            "ticket": "My account is locked.",
+            "category": "ACCOUNT_ACCESS_ISSUE",
+            "priority": "HIGH",
+            "justification": "Urgent account access restoration."
+        }
+    ],
+    "Few Shot Case 2.2 - API Contract Generation": {
+        "error": "Invalid JSON response",
+        "raw_response": "1. {\n    \"action\": \"CANCEL_LEAVE\",\n    \"parameters\": {\n        \"date\": \"next Friday\"\n    },\n    \"requires_clarification\": false,\n    \"clarification_question\": \"\",\n    \"confidence\": 0.9\n}\n\n2. {\n    \"action\": \"VIEW_LEAVE_POLICY\",\n    \"parameters\": {\n        \"leave_type\": \"maternity\"\n    },\n    \"requires_clarification\": false,\n    \"clarification_question\": \"\",\n    \"confidence\": 0.95\n}\n\n3. {\n    \"action\": \"GET_LEAVE_BALANCE\",\n    \"parameters\": {\n        \"leave_type\": \"earned\"\n    },\n    \"requires_clarification\": false,\n    \"clarification_question\": \"\",\n    \"confidence\": 0.95\n}"
+    }
+}

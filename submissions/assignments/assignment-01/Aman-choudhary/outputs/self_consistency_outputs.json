@@ -1,0 +1,22 @@
+[
+    {
+        "error": "Invalid JSON response",
+        "raw_response": "```json\n{\n    \"risk_level\": \"MEDIUM\",\n    \"reasoning\": \"Login outside business hours and at least one MFA failure\"\n}\n```"
+    },
+    {
+        "risk_level": "MEDIUM",
+        "reasoning": "Login outside business hours and at least one MFA failure"
+    },
+    {
+        "error": "Invalid JSON response",
+        "raw_response": "```json\n{\n    \"risk_level\": \"MEDIUM\",\n    \"reasoning\": \"Login outside business hours and at least one MFA failure\"\n}\n```"
+    },
+    {
+        "error": "Invalid JSON response",
+        "raw_response": "```json\n{\n    \"risk_level\": \"MEDIUM\",\n    \"reasoning\": \"Login outside business hours and at least one MFA failure\"\n}\n```"
+    },
+    {
+        "error": "Invalid JSON response",
+        "raw_response": "```json\n{\n    \"risk_level\": \"MEDIUM\",\n    \"reasoning\": \"Login outside business hours and at least one MFA failure\"\n}\n```"
+    }
+]
