@@ -1,0 +1,15 @@
+{
+  "runs": [
+    "MEDIUM",
+    "MEDIUM",
+    "MEDIUM",
+    "MEDIUM",
+    "MEDIUM"
+  ],
+  "risk_level_votes": {
+    "MEDIUM": 5
+  },
+  "final_risk_level": "MEDIUM",
+  "disagreement_analysis": "Variation across runs typically stems from different interpretations of Germany as a known VPN country.",
+  "final_reasoning_summary": "Five independent runs were aggregated. The majority vote determined the final risk level."
+}

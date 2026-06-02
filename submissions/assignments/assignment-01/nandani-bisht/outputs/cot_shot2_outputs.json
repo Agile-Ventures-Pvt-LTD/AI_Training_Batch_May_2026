@@ -1,0 +1,28 @@
+{
+  "most_likely_causes": [
+    "concept drift",
+    "data drift"
+  ],
+  "evidence": [
+    "change in fraud patterns after promotional campaign",
+    "shift in feature distribution for transaction_amount",
+    "introduction of new payment channel"
+  ],
+  "less_likely_causes": [
+    "threshold miscalibration"
+  ],
+  "recommended_diagnostics": [
+    "analysis of feature distribution over time",
+    "comparison of model performance on old and new payment channels",
+    "review of fraud patterns before and after promotional campaign"
+  ],
+  "short_term_actions": [
+    "monitor model performance on new payment channel",
+    "adjust thresholds if necessary"
+  ],
+  "long_term_actions": [
+    "retrain model with updated data",
+    "incorporate new payment channel and promotional campaign data into training set"
+  ],
+  "reasoning_summary": "The degradation in model performance is likely due to changes in the underlying data distribution and fraud patterns, potentially caused by the introduction of a new payment channel and a promotional campaign. The significant shift in transaction_amount feature distribution supports this hypothesis. Recommended diagnostics will help confirm the root cause and guide corrective actions."
+}

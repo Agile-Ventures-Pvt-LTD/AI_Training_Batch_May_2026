@@ -1,0 +1,57 @@
+[
+  {
+    "action": "APPLY_LEAVE",
+    "parameters": {
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-15",
+      "reason": "travelling"
+    },
+    "requires_clarification": false,
+    "clarification_question": "",
+    "confidence": 0.9
+  },
+  {
+    "start_date": "2026-06-12",
+    "end_date": "2026-06-15",
+    "reason": "travelling"
+  },
+  {
+    "action": "CHECK_BALANCE",
+    "parameters": {
+      "leave_type": "casual"
+    },
+    "requires_clarification": false,
+    "clarification_question": "",
+    "confidence": 0.9
+  },
+  {
+    "leave_type": "casual"
+  },
+  {
+    "action": "CANCEL_LEAVE",
+    "parameters": {},
+    "requires_clarification": true,
+    "clarification_question": "Please specify the exact date for 'next Friday'.",
+    "confidence": 0.7
+  },
+  {},
+  {
+    "action": "GET_POLICY",
+    "parameters": {
+      "policy_type": "maternity"
+    },
+    "requires_clarification": false,
+    "clarification_question": "",
+    "confidence": 0.9
+  },
+  {
+    "policy_type": "maternity"
+  },
+  {
+    "action": "APPLY_LEAVE",
+    "parameters": {},
+    "requires_clarification": true,
+    "clarification_question": "Please specify the exact dates for 'sometime next week'.",
+    "confidence": 0.6
+  }
+]
