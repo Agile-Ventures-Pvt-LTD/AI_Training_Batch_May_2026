@@ -1,0 +1,36 @@
+{
+    "response_a": {
+        "scores": {
+            "empathy": 2,
+            "accuracy": 3,
+            "helpfulness": 2,
+            "professionalism": 4,
+            "resolution_quality": 2
+        },
+        "strengths": [
+            "Polite language"
+        ],
+        "weaknesses": [
+            "Lacks empathy",
+            "Does not provide clear next steps",
+            "Dismissive tone"
+        ]
+    },
+    "response_b": {
+        "scores": {
+            "empathy": 5,
+            "accuracy": 5,
+            "helpfulness": 5,
+            "professionalism": 5,
+            "resolution_quality": 5
+        },
+        "strengths": [
+            "Acknowledges frustration",
+            "Provides clear escalation path",
+            "Explains next steps"
+        ],
+        "weaknesses": []
+    },
+    "winner": "B",
+    "judge_reasoning_summary": "Response B is better due to its empathetic tone, clear escalation path, and explanation of next steps, while Response A is vague and dismissive."
+}
