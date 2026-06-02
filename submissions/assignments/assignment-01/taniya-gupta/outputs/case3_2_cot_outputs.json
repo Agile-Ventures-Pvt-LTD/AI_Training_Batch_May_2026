@@ -1,0 +1,38 @@
+{
+  "parsed_output": {
+    "most_likely_causes": [
+      "Data drift in the transaction_amount feature distribution",
+      "Concept drift caused by the new payment channel and altered fraud patterns after the promotional campaign",
+      "Threshold miscalibration leading to a higher false‑positive rate (precision drop larger than recall)"
+    ],
+    "evidence": [
+      "Transaction volume rose 30% and the transaction_amount distribution shifted significantly",
+      "A new payment channel was added, which likely introduced different transaction characteristics",
+      "Fraud behavior changed after a promotional campaign, as noted in observations",
+      "Precision fell from 0.82 to 0.61 while recall only dropped from 0.76 to 0.72, indicating many more false positives"
+    ],
+    "less_likely_causes": [
+      "Pipeline or data ingestion failures (no failed jobs reported)",
+      "Simple class‑imbalance shift without feature change",
+      "Model aging alone (no retraining) – may contribute but does not explain the sharp precision drop"
+    ],
+    "recommended_diagnostics": [
+      "Run statistical drift tests (e.g., PSI, KS test) on key features, especially transaction_amount and new channel attributes",
+      "Generate a calibration curve / reliability diagram on recent data to assess threshold suitability",
+      "Break down confusion matrix by payment channel and by time period to isolate where false positives increased",
+      "Perform a feature importance comparison between training and current data to see if the model relies on drifting features"
+    ],
+    "short_term_actions": [
+      "Re‑evaluate and adjust the decision threshold using a recent validation set to restore target precision",
+      "Temporarily apply a higher‑precision post‑processing filter (e.g., rule‑based check) for transactions from the new channel",
+      "Investigate and label a sample of recent false‑positive cases to understand new patterns"
+    ],
+    "long_term_actions": [
+      "Implement automated data and concept drift monitoring with alerts for significant PSI/KS changes",
+      "Establish a regular retraining schedule (e.g., monthly) that incorporates data from the new channel and recent fraud trends",
+      "Add the new payment channel as an explicit feature and consider interaction terms with transaction_amount",
+      "Explore incremental or online learning approaches to adapt the model continuously as fraud behavior evolves"
+    ],
+    "reasoning_summary": "The sharp decline in precision, coupled with a stable recall, points to a surge in false positives. This aligns with observed data drift in transaction_amount and the introduction of a new payment channel, both of which can alter the feature space the model was trained on. Additionally, the promotional campaign changed fraud tactics, constituting concept drift. While the model has not been retrained, the immediate issue appears to be miscalibration of the decision threshold under the new data distribution. Therefore, the priority is to diagnose drift, recalibrate thresholds, and set up continuous monitoring and periodic retraining to mitigate future degradation."
+  }
+}

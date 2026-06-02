@@ -1,0 +1,28 @@
+{
+  "parsed_output": {
+    "risk_level": "HIGH",
+    "key_risk_factors": [
+      "Potential cross‑border data transfers with no region‑specific residency (Privacy & Data Governance)",
+      "Customer data may be used for model improvement unless a manual opt‑out is submitted (Privacy & Data Governance)",
+      "Only SOC 2 Type I certification; no Type II, ISO 27001, or GDPR attestations (Compliance & Certification)",
+      "Limited operational track record (18 months, 12 enterprise customers) and undocumented API rate limits (Operational & Technical Risk)",
+      "Usage‑based pricing with no caps could lead to unexpected cost spikes (Pricing & Commercial Risk)",
+      "Early‑stage vendor with limited financial and organizational maturity (Vendor Maturity & Stability)"
+    ],
+    "missing_information": [
+      "Exact timeline and scope for region‑specific data residency (e.g., EU, US, APAC)",
+      "Formal data‑processing agreement detailing data ownership, retention, and deletion procedures",
+      "Automated mechanism for opting out of data‑for‑training; how opt‑out is enforced and audited",
+      "Encryption standards used at rest and in transit (algorithms, key management, HSM usage)",
+      "Roadmap to achieve SOC 2 Type II and any other relevant certifications (ISO 27001, GDPR, CCPA)",
+      "Incident response plan, breach notification timelines, and liability clauses",
+      "Detailed SLA terms: penalties for downtime, MTTR targets, and service credits",
+      "API rate‑limit specifications and any over‑age throttling policies",
+      "Pricing model details: unit cost, volume discounts, caps, and forecasted cost at projected document volumes",
+      "Financial health indicators: funding rounds, revenue, burn rate, and any parent company backing",
+      "Exit strategy and data migration/hand‑off procedures at contract termination"
+    ],
+    "business_recommendation": "Proceed with a controlled pilot only after obtaining clarifications on data residency, opt‑out automation, and security certifications. Negotiate contractual addenda to secure data‑processing agreements, enforce strict data‑use limitations, and establish cost‑cap provisions. Consider a fallback provider for critical invoice processing to mitigate operational risk. If the vendor cannot meet these controls within a reasonable timeframe, explore alternative vendors with proven compliance and maturity.",
+    "confidence_score": 0.78
+  }
+}
