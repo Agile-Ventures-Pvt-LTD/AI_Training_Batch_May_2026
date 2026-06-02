@@ -1,0 +1,50 @@
+{
+    "individual_answers": [
+        {
+            "run": 1,
+            "answer": {
+                "reimbursable_amount": 37.5,
+                "reasoning": "International travel raises the daily meal limit to $75 (60 * 1.25). Same\u2011day travel over 8 hours caps reimbursement at 50% of that limit, i.e., $37.5. After removing the non\u2011reimbursable $12 alcohol charge, the claim is $58, which exceeds the $37.5 cap, so the reimbursable amount is $37.5. Receipts are present, satisfying the >$25 requirement."
+            },
+            "amount": 37.5
+        },
+        {
+            "run": 2,
+            "answer": {
+                "reimbursable_amount": 37.5,
+                "reasoning": "International travel raises the daily meal limit to $75. Same\u2011day travel over 8 hours caps reimbursement at 50% of that limit ($37.50). After removing the non\u2011reimbursable $12 alcohol, the eligible expense is $58, which exceeds the $37.50 cap, so the reimbursable amount is $37.50. Receipts are provided for the amount over $25."
+            },
+            "amount": 37.5
+        },
+        {
+            "run": 3,
+            "answer": {
+                "reimbursable_amount": 37.5,
+                "reasoning": "International travel raises the daily meal limit to $75 (60 * 1.25). Same\u2011day travel over 8\u202fhours caps reimbursement at 50% of that limit, i.e., $37.50. Alcohol ($12) is non\u2011reimbursable, leaving $58 of eligible meals. The lower of $58 and $37.50 is $37.50, and receipts are provided for the amount above $25."
+            },
+            "amount": 37.5
+        },
+        {
+            "run": 4,
+            "answer": {
+                "reimbursable_amount": 37.5,
+                "reasoning": "International travel raises the daily meal limit to $75 (60 * 1.25). Same\u2011day travel over 8\u202fhours caps reimbursement at 50% of that limit, i.e., $37.50. Alcohol ($12) is non\u2011reimbursable, leaving $58 of eligible expenses. The cap of $37.50 is lower, so the employee is reimbursed $37.50. Receipts are present, satisfying the >$25 requirement."
+            },
+            "amount": 37.5
+        },
+        {
+            "run": 5,
+            "answer": {
+                "reimbursable_amount": 37.5,
+                "reasoning": "International travel raises daily meal limit to $75. Same\u2011day travel >8\u202fh caps reimbursement at 50% of that limit ($37.50). Alcohol ($12) is non\u2011reimbursable, leaving $58 eligible, but the cap applies, so $37.50 is reimbursed. Receipts are present for the amount over $25."
+            },
+            "amount": 37.5
+        }
+    ],
+    "final_reimbursable_amount": 37.5,
+    "consistency_count": {
+        "37.5": 5
+    },
+    "final_decision": "Approved reimbursement amount: $37.5",
+    "reasoning_summary": "Most runs consistently applied alcohol exclusion, international uplift, and same-day travel reimbursement rules."
+}
