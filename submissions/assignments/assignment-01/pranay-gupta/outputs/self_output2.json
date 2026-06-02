@@ -1,0 +1,15 @@
+{
+    "runs": [
+        "MEDIUM",
+        "MEDIUM",
+        "MEDIUM",
+        "MEDIUM",
+        "MEDIUM"
+    ],
+    "risk_level_votes": {
+        "MEDIUM": 5
+    },
+    "final_risk_level": "MEDIUM",
+    "disagreement_analysis": "All five runs produced the same risk level (MEDIUM); there is no disagreement among the assessments.",
+    "final_reasoning_summary": "Each run lacked a new country, so the HIGH condition was false. All runs logged in after business hours with exactly one MFA failure, satisfying the MEDIUM condition. Since no run satisfied HIGH, the CRITICAL condition (both HIGH and MEDIUM) could not be met. Majority voting therefore selects MEDIUM as the final risk level."
+}
