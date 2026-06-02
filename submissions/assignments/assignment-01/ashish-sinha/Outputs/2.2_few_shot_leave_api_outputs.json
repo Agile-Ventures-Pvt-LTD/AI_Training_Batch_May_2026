@@ -1,0 +1,49 @@
+{
+    "case_name": "2.2_few_shot_leave_api_outputs",
+    "raw_response": "[\n  {\n    \"action\": \"APPLY_LEAVE\",\n    \"parameters\": {\n      \"start_date\": \"12th June\",\n      \"end_date\": \"15th June\",\n      \"reason\": \"travelling\"\n    },\n    \"requires_clarification\": true,\n    \"clarification_question\": \"Please specify the type of leave you would like to apply for.\",\n    \"confidence\": 0.85\n  },\n  {\n    \"action\": \"CHECK_BALANCE\",\n    \"parameters\": {\n      \"leave_type\": \"casual\"\n    },\n    \"requires_clarification\": false,\n    \"clarification_question\": \"\",\n    \"confidence\": 0.98\n  },\n  {\n    \"action\": \"CANCEL_LEAVE\",\n    \"parameters\": {},\n    \"requires_clarification\": true,\n    \"clarification_question\": \"Please provide the exact date for the leave request you want to cancel.\",\n    \"confidence\": 0.62\n  },\n  {\n    \"action\": \"GET_POLICY\",\n    \"parameters\": {\n      \"policy_type\": \"maternity leave\"\n    },\n    \"requires_clarification\": false,\n    \"clarification_question\": \"\",\n    \"confidence\": 0.97\n  },\n  {\n    \"action\": \"APPLY_LEAVE\",\n    \"parameters\": {},\n    \"requires_clarification\": true,\n    \"clarification_question\": \"Please provide the exact leave dates and the type of leave you would like to apply for.\",\n    \"confidence\": 0.45\n  }\n]",
+    "parsed_output": [
+        {
+            "action": "APPLY_LEAVE",
+            "parameters": {
+                "start_date": "12th June",
+                "end_date": "15th June",
+                "reason": "travelling"
+            },
+            "requires_clarification": true,
+            "clarification_question": "Please specify the type of leave you would like to apply for.",
+            "confidence": 0.85
+        },
+        {
+            "action": "CHECK_BALANCE",
+            "parameters": {
+                "leave_type": "casual"
+            },
+            "requires_clarification": false,
+            "clarification_question": "",
+            "confidence": 0.98
+        },
+        {
+            "action": "CANCEL_LEAVE",
+            "parameters": {},
+            "requires_clarification": true,
+            "clarification_question": "Please provide the exact date for the leave request you want to cancel.",
+            "confidence": 0.62
+        },
+        {
+            "action": "GET_POLICY",
+            "parameters": {
+                "policy_type": "maternity leave"
+            },
+            "requires_clarification": false,
+            "clarification_question": "",
+            "confidence": 0.97
+        },
+        {
+            "action": "APPLY_LEAVE",
+            "parameters": {},
+            "requires_clarification": true,
+            "clarification_question": "Please provide the exact leave dates and the type of leave you would like to apply for.",
+            "confidence": 0.45
+        }
+    ]
+}
