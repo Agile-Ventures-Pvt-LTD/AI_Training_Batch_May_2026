@@ -1,0 +1,58 @@
+[
+    {
+        "case_name": "case_3_1_cot_roi_decision",
+        "prompt": "You are a senior AI business strategy analyst.\n\nYour task is to evaluate whether an AI recommendation engine project should be approved.\n\nInstructions:\n- Perform careful numerical reasoning before making the decision.\n- Use gross profit, NOT total revenue, when evaluating payback.\n- Subtract ongoing AI operating costs from projected gains.\n- Treat implementation time separately from post-launch payback.\n- Think step-by-step internally, but return only concise reasoning summaries.\n- Use only the provided information.\n- Return ONLY valid JSON.\n- Do not include markdown formatting.\n- Do not include explanations outside JSON.\n\nRequired JSON Schema:\n{\n    \"incremental_revenue_range\": \"\",\n    \"incremental_gross_profit_range\": \"\",\n    \"monthly_net_benefit_range\": \"\",\n    \"payback_period_range_months\": \"\",\n    \"decision\": \"APPROVE | REJECT | APPROVE_WITH_CONDITIONS\",\n    \"reasoning_summary\": \"\",\n    \"key_assumptions\": []\n}\n\nScenario:\n\nA retail company wants to deploy an AI recommendation engine.\n\nCurrent monthly revenue: $2,000,000\n\nExpected revenue uplift from recommendations: 4% to 7%\n\nImplementation cost: $180,000 one-time\n\nMonthly AI infrastructure cost: $22,000\n\nMonthly maintenance cost: $8,000\n\nGross margin: 40%\n\nExpected implementation time: 3 months\n\nLeadership requires payback within 12 months after go-live.",
+        "raw_response": "{\n    \"incremental_revenue_range\": \"$80,000 - $140,000\",\n    \"incremental_gross_profit_range\": \"$32,000 - $56,000\",\n    \"monthly_net_benefit_range\": \"$2,000 - $26,000\",\n    \"payback_period_range_months\": \"7 - 9 months\",\n    \"decision\": \"APPROVE\",\n    \"reasoning_summary\": \"The expected payback period is within the required 12 months, and the monthly net benefit is positive, indicating the project is likely to generate sufficient returns to justify the investment.\",\n    \"key_assumptions\": [\n        \"Revenue uplift ranges from 4% to 7%\",\n        \"Gross margin remains constant at 40%\",\n        \"Implementation time is 3 months\",\n        \"Ongoing costs include $22,000 for AI infrastructure and $8,000 for maintenance\"\n    ]\n}",
+        "parsed_output": {
+            "incremental_revenue_range": "$80,000 - $140,000",
+            "incremental_gross_profit_range": "$32,000 - $56,000",
+            "monthly_net_benefit_range": "$2,000 - $26,000",
+            "payback_period_range_months": "7 - 9 months",
+            "decision": "APPROVE",
+            "reasoning_summary": "The expected payback period is within the required 12 months, and the monthly net benefit is positive, indicating the project is likely to generate sufficient returns to justify the investment.",
+            "key_assumptions": [
+                "Revenue uplift ranges from 4% to 7%",
+                "Gross margin remains constant at 40%",
+                "Implementation time is 3 months",
+                "Ongoing costs include $22,000 for AI infrastructure and $8,000 for maintenance"
+            ]
+        },
+        "valid_json": true
+    },
+    {
+        "case_name": "case_3_2_cot_ml_root_cause_analysis",
+        "prompt": "You are a senior machine learning systems analyst.\n\nYour task is to perform a structured root cause analysis for an ML fraud detection model whose performance degraded after deployment.\n\nInstructions:\n- Carefully distinguish between:\n  - data drift\n  - concept drift\n  - pipeline failure\n  - threshold miscalibration\n- Do not assume pipeline failure unless evidence supports it.\n- Recommend concrete diagnostics and remediation steps.\n- Avoid generic \"just retrain the model\" responses.\n- Think step-by-step internally, but return only concise reasoning summaries.\n- Use only the provided information.\n- Return ONLY valid JSON.\n- Do not include markdown formatting.\n- Do not include explanations outside JSON.\n\nRequired JSON Schema:\n{\n    \"most_likely_causes\": [],\n    \"evidence\": [],\n    \"less_likely_causes\": [],\n    \"recommended_diagnostics\": [],\n    \"short_term_actions\": [],\n    \"long_term_actions\": [],\n    \"reasoning_summary\": \"\"\n}\n\nScenario:\n\nA fraud detection model has degraded after deployment.\n\nBefore deployment:\n- Precision: 0.82\n- Recall: 0.76\n- F1-score: 0.79\n\nAfter 3 months:\n- Precision: 0.61\n- Recall: 0.72\n- F1-score: 0.66\n\nAdditional observations:\n- Transaction volume increased by 30%.\n- A new payment channel was introduced.\n- Fraud patterns changed after a promotional campaign.\n- Data pipeline logs show no failed jobs.\n- Feature distribution for transaction_amount shifted significantly.\n- Model was not retrained after launch.",
+        "raw_response": "{\n    \"most_likely_causes\": [\"data drift\", \"concept drift\"],\n    \"evidence\": [\"Transaction volume increased by 30%\", \"New payment channel was introduced\", \"Fraud patterns changed after a promotional campaign\", \"Feature distribution for transaction_amount shifted significantly\"],\n    \"less_likely_causes\": [\"threshold miscalibration\"],\n    \"recommended_diagnostics\": [\"Monitor feature distributions\", \"Analyze fraud patterns\", \"Evaluate model performance on new payment channel\", \"Compare model predictions with actual outcomes\"],\n    \"short_term_actions\": [\"Adjust model thresholds\", \"Implement data quality checks\"],\n    \"long_term_actions\": [\"Retrain model with new data\", \"Update model to incorporate new payment channel and fraud patterns\"],\n    \"reasoning_summary\": \"The significant changes in transaction volume, introduction of a new payment channel, and shifts in fraud patterns and feature distributions suggest data drift and concept drift as the primary causes of model performance degradation.\"\n}",
+        "parsed_output": {
+            "most_likely_causes": [
+                "data drift",
+                "concept drift"
+            ],
+            "evidence": [
+                "Transaction volume increased by 30%",
+                "New payment channel was introduced",
+                "Fraud patterns changed after a promotional campaign",
+                "Feature distribution for transaction_amount shifted significantly"
+            ],
+            "less_likely_causes": [
+                "threshold miscalibration"
+            ],
+            "recommended_diagnostics": [
+                "Monitor feature distributions",
+                "Analyze fraud patterns",
+                "Evaluate model performance on new payment channel",
+                "Compare model predictions with actual outcomes"
+            ],
+            "short_term_actions": [
+                "Adjust model thresholds",
+                "Implement data quality checks"
+            ],
+            "long_term_actions": [
+                "Retrain model with new data",
+                "Update model to incorporate new payment channel and fraud patterns"
+            ],
+            "reasoning_summary": "The significant changes in transaction volume, introduction of a new payment channel, and shifts in fraud patterns and feature distributions suggest data drift and concept drift as the primary causes of model performance degradation."
+        },
+        "valid_json": true
+    }
+]

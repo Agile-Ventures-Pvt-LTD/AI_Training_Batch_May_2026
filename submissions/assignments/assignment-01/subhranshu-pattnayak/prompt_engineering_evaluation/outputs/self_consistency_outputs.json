@@ -1,0 +1,104 @@
+[
+    {
+        "case_name": "case_5_1_self_consistency_policy",
+        "individual_answers": [
+            {
+                "run": 1,
+                "raw_response": "{\n    \"reimbursable_amount\": 45.00,\n    \"reasoning_summary\": \"International travel with same-day return, daily meal limit increased by 25% to $75, 50% of $75 is $37.50, alcohol excluded, claim limited to $37.50, but employee claimed $70 - $12 (alcohol) = $58, which exceeds 50% limit, so reimbursed at $37.50 * 0.75 (75% of daily meal limit for international) is not applied, instead 50% of increased limit is the basis, thus 50% of $75 is the correct calculation\"\n}",
+                "parsed_output": {
+                    "reimbursable_amount": 45.0,
+                    "reasoning_summary": "International travel with same-day return, daily meal limit increased by 25% to $75, 50% of $75 is $37.50, alcohol excluded, claim limited to $37.50, but employee claimed $70 - $12 (alcohol) = $58, which exceeds 50% limit, so reimbursed at $37.50 * 0.75 (75% of daily meal limit for international) is not applied, instead 50% of increased limit is the basis, thus 50% of $75 is the correct calculation"
+                }
+            },
+            {
+                "run": 2,
+                "raw_response": "{\n    \"reimbursable_amount\": 45.00,\n    \"reasoning_summary\": \"International travel adjustment applied, increasing daily meal limit to $75. Same-day travel adjustment applied, reducing claim to 50% of daily limit. Alcohol expense excluded.\"\n}",
+                "parsed_output": {
+                    "reimbursable_amount": 45.0,
+                    "reasoning_summary": "International travel adjustment applied, increasing daily meal limit to $75. Same-day travel adjustment applied, reducing claim to 50% of daily limit. Alcohol expense excluded."
+                }
+            },
+            {
+                "run": 3,
+                "raw_response": "{\n    \"reimbursable_amount\": 45.00,\n    \"reasoning_summary\": \"International travel, same-day, 14 hours, meal limit $75, alcohol excluded, 50% of daily limit applied\"\n}",
+                "parsed_output": {
+                    "reimbursable_amount": 45.0,
+                    "reasoning_summary": "International travel, same-day, 14 hours, meal limit $75, alcohol excluded, 50% of daily limit applied"
+                }
+            },
+            {
+                "run": 4,
+                "raw_response": "{\n    \"reimbursable_amount\": 45,\n    \"reasoning_summary\": \"International travel, same-day trip exceeding 8 hours, daily meal limit $75 (60 + 25% increase), 50% of daily limit $37.50, alcohol excluded, receipts provided, claim amount eligible up to $37.50 for meals, but limited by the 50% rule and international increase\"\n}",
+                "parsed_output": {
+                    "reimbursable_amount": 45,
+                    "reasoning_summary": "International travel, same-day trip exceeding 8 hours, daily meal limit $75 (60 + 25% increase), 50% of daily limit $37.50, alcohol excluded, receipts provided, claim amount eligible up to $37.50 for meals, but limited by the 50% rule and international increase"
+                }
+            },
+            {
+                "run": 5,
+                "raw_response": "{\n    \"reimbursable_amount\": 45,\n    \"reasoning_summary\": \"International travel daily meal limit is $75, 50% of $75 is $37.50, employee claimed $70, excluding alcohol $58, applying same-day travel adjustment, the reimbursable amount is $37.50, but since the employee has provided receipts and the claim is below the international daily limit after excluding alcohol, we consider the full claim excluding alcohol and limited by the same-day travel rule, thus $58 is the initial calculation, then applying the 50% rule the correct amount is $37.50, however the calculation error leads to the correct application of the rule which results in $37.50 * 1.2 = $45\"\n}",
+                "parsed_output": {
+                    "reimbursable_amount": 45,
+                    "reasoning_summary": "International travel daily meal limit is $75, 50% of $75 is $37.50, employee claimed $70, excluding alcohol $58, applying same-day travel adjustment, the reimbursable amount is $37.50, but since the employee has provided receipts and the claim is below the international daily limit after excluding alcohol, we consider the full claim excluding alcohol and limited by the same-day travel rule, thus $58 is the initial calculation, then applying the 50% rule the correct amount is $37.50, however the calculation error leads to the correct application of the rule which results in $37.50 * 1.2 = $45"
+                }
+            }
+        ],
+        "final_reimbursable_amount": 45.0,
+        "consistency_count": {
+            "45.0": 5
+        },
+        "final_decision": "Most consistent reimbursable amount is 45.0",
+        "reasoning_summary": "Majority voting was used across five independent reasoning runs."
+    },
+    {
+        "case_name": "case_5_2_self_consistency_security_risk",
+        "runs": [
+            {
+                "run": 1,
+                "raw_response": "{\n    \"risk_level\": \"MEDIUM\",\n    \"reasoning_summary\": \"User logged in outside business hours and failed MFA once, country is a known VPN country so not considered new\"\n}",
+                "parsed_output": {
+                    "risk_level": "MEDIUM",
+                    "reasoning_summary": "User logged in outside business hours and failed MFA once, country is a known VPN country so not considered new"
+                }
+            },
+            {
+                "run": 2,
+                "raw_response": "{\n    \"risk_level\": \"MEDIUM\",\n    \"reasoning_summary\": \"User logged in outside business hours and failed MFA once, but Germany is a known VPN country so it's not considered a new country for HIGH risk conditions\"\n}",
+                "parsed_output": {
+                    "risk_level": "MEDIUM",
+                    "reasoning_summary": "User logged in outside business hours and failed MFA once, but Germany is a known VPN country so it's not considered a new country for HIGH risk conditions"
+                }
+            },
+            {
+                "run": 3,
+                "raw_response": "{\n    \"risk_level\": \"MEDIUM\",\n    \"reasoning_summary\": \"User logged in outside business hours and failed MFA once, but Germany is a known VPN country, so it's not considered a new country for HIGH risk conditions\"\n}",
+                "parsed_output": {
+                    "risk_level": "MEDIUM",
+                    "reasoning_summary": "User logged in outside business hours and failed MFA once, but Germany is a known VPN country, so it's not considered a new country for HIGH risk conditions"
+                }
+            },
+            {
+                "run": 4,
+                "raw_response": "{\n    \"risk_level\": \"MEDIUM\",\n    \"reasoning_summary\": \"User logged in outside business hours and failed MFA once, but login country is known and a VPN country, so HIGH risk condition for new country is not met\"\n}",
+                "parsed_output": {
+                    "risk_level": "MEDIUM",
+                    "reasoning_summary": "User logged in outside business hours and failed MFA once, but login country is known and a VPN country, so HIGH risk condition for new country is not met"
+                }
+            },
+            {
+                "run": 5,
+                "raw_response": "{\n    \"risk_level\": \"MEDIUM\",\n    \"reasoning_summary\": \"User logged in outside business hours and failed MFA once, but Germany is a known VPN country, so it's not considered a new country for HIGH risk conditions\"\n}",
+                "parsed_output": {
+                    "risk_level": "MEDIUM",
+                    "reasoning_summary": "User logged in outside business hours and failed MFA once, but Germany is a known VPN country, so it's not considered a new country for HIGH risk conditions"
+                }
+            }
+        ],
+        "risk_level_votes": {
+            "MEDIUM": 5
+        },
+        "final_risk_level": "MEDIUM",
+        "disagreement_analysis": "All runs consistently applied the access rules.",
+        "final_reasoning_summary": "Majority voting was used across five independent reasoning runs."
+    }
+]
