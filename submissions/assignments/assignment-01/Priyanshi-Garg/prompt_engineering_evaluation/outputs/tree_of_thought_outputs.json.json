@@ -1,0 +1,71 @@
+{
+  "options_evaluated": [
+    {
+      "option": "AI customer support assistant",
+      "business_value_score": 5,
+      "feasibility_score": 3,
+      "risk_score": 2,
+      "pilot_suitability_score": 3,
+      "adoption_score": 3,
+      "overall_score": 16,
+      "trade_offs": [
+        "High business value from cost savings vs. moderate implementation effort.",
+        "Contains personal customer data, raising privacy and compliance risk.",
+        "Medium user adoption risk; agents may resist AI hand\u2011off.",
+        "Pilot timeline may be stretched by data\u2011governance requirements."
+      ]
+    },
+    {
+      "option": "AI sales proposal generator",
+      "business_value_score": 4,
+      "feasibility_score": 5,
+      "risk_score": 3,
+      "pilot_suitability_score": 5,
+      "adoption_score": 5,
+      "overall_score": 22,
+      "trade_offs": [
+        "Low technical complexity and fast implementation.",
+        "Revenue impact is promising but depends on brand/legal sign\u2011off.",
+        "Legal review could introduce delays despite low data sensitivity.",
+        "High adoption likelihood because sales teams seek efficiency."
+      ]
+    },
+    {
+      "option": "AI contract risk analyzer",
+      "business_value_score": 5,
+      "feasibility_score": 2,
+      "risk_score": 1,
+      "pilot_suitability_score": 2,
+      "adoption_score": 3,
+      "overall_score": 13,
+      "trade_offs": [
+        "Very high business value and strategic importance.",
+        "High implementation complexity and need for auditability.",
+        "Significant legal risk; any error could expose the firm.",
+        "Pilot unlikely to succeed within 90 days due to validation requirements."
+      ]
+    },
+    {
+      "option": "AI internal HR policy assistant",
+      "business_value_score": 3,
+      "feasibility_score": 5,
+      "risk_score": 4,
+      "pilot_suitability_score": 5,
+      "adoption_score": 5,
+      "overall_score": 22,
+      "trade_offs": [
+        "Broad employee usage ensures quick feedback and ROI.",
+        "Medium sensitivity data (HR policies) but lower regulatory burden.",
+        "Very low implementation effort; can be built on existing knowledge bases.",
+        "Cost\u2011saving impact is moderate, not as high as customer\u2011support or contract analysis."
+      ]
+    }
+  ],
+  "recommended_option": "AI internal HR policy assistant",
+  "why_not_others": {
+    "AI customer support assistant": "Privacy concerns and moderate implementation effort make a 90\u2011day pilot riskier; adoption may be slower.",
+    "AI sales proposal generator": "Requires brand and legal review that could extend beyond the pilot window, despite high feasibility.",
+    "AI contract risk analyzer": "High legal risk and complexity prevent a reliable short\u2011term pilot; accuracy and auditability need longer development."
+  },
+  "final_recommendation": "Start a 90\u2011day pilot with the AI internal HR policy assistant. Its low technical complexity, minimal legal risk, and strong employee adoption potential enable rapid deployment and measurable cost savings, making it the most balanced choice for an early\u2011stage automation initiative."
+}

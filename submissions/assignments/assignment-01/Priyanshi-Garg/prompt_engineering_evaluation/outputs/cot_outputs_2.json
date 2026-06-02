@@ -1,0 +1,39 @@
+{
+  "most_likely_causes": [
+    "Concept drift due to changed fraud patterns after the promotional campaign and the introduction of a new payment channel",
+    "Data drift in the transaction_amount feature (significant distribution shift)",
+    "Threshold miscalibration caused by altered class prevalence after a 30% volume increase"
+  ],
+  "evidence": [
+    "Recall fell only slightly (0.76 \u2192 0.72) while precision dropped sharply (0.82 \u2192 0.61), indicating more false positives rather than missed frauds",
+    "Feature monitoring shows a marked shift in the distribution of transaction_amount, a key predictor for many fraud models",
+    "A new payment channel was added, which likely presents different transaction characteristics not seen during training",
+    "Promotional campaign generated novel fraud tactics that were absent from the training set",
+    "No pipeline failures were logged, so the degradation is unlikely to stem from missing data or corrupted features"
+  ],
+  "less_likely_causes": [
+    "Pipeline failure \u2013 logs report no job errors and feature schemas remain unchanged",
+    "Model staleness alone \u2013 while the model has not been retrained, the primary symptoms point to drift rather than simple aging"
+  ],
+  "recommended_diagnostics": [
+    "Compute Population Stability Index (PSI) and Kolmogorov\u2011Smirnov tests for all high\u2011impact features, especially transaction_amount and channel identifiers",
+    "Segment recent data by payment channel and calculate per\u2011segment precision/recall to isolate channel\u2011specific performance loss",
+    "Run a calibrated score analysis (reliability diagram) on the latest labeled set to assess threshold misalignment",
+    "Create a confusion matrix on a fresh validation set to quantify false\u2011positive increase",
+    "Perform a drift\u2011aware model evaluation (e.g., time\u2011split cross\u2011validation) to compare current vs. historic performance"
+  ],
+  "short_term_actions": [
+    "Temporarily raise the decision threshold or apply a higher\u2011precision operating point based on the current calibration curve",
+    "Add a lightweight rule\u2011based filter for the new payment channel (e.g., flag high\u2011amount transactions) until the model is updated",
+    "Retrain the model on the most recent 1\u20132 months of labeled data, emphasizing the new channel and post\u2011promo fraud cases"
+  ],
+  "long_term_actions": [
+    "Implement automated data\u2011drift monitoring with alerts when PSI exceeds a predefined limit",
+    "Set up a continuous learning pipeline that retrains or fine\u2011tunes the model on a rolling window of labeled data (e.g., weekly or monthly)",
+    "Incorporate online or incremental learning techniques to adapt quickly to emerging fraud patterns",
+    "Periodically re\u2011optimize the classification threshold using recent validation data to maintain target precision/recall balance",
+    "Expand feature engineering to capture channel\u2011specific signals and campaign\u2011related attributes",
+    "Document and version all training data snapshots to enable rapid rollback and reproducibility"
+  ],
+  "reasoning_summary": "The sharp precision drop with modest recall loss points to many new false positives, which aligns with a shift in transaction_amount distribution (data drift) and the emergence of unseen fraud behaviors from a new payment channel and a promotional campaign (concept drift). The unchanged pipeline logs rule out processing failures. Threshold miscalibration likely compounds the issue due to altered class prevalence after a 30% volume increase. Diagnostics focus on quantifying feature drift, channel\u2011wise performance, and score calibration, while short\u2011term actions adjust thresholds and add simple rules. Long\u2011term actions establish systematic drift detection, scheduled retraining, and adaptive thresholding to keep the model aligned with evolving fraud dynamics."
+}
