@@ -1,0 +1,41 @@
+{
+  "case_3_1": 
+
+  { "incremental_revenue_range": "$80,000 - $140,000",
+  "incremental_gross_profit_range": "$32,000 - $56,000",
+  "monthly_net_benefit_range": "$2,000 - $26,000",
+  "payback_period_range_months": "7 - 9",
+  "decision": "APPROVE",
+  "reasoning_summary": "The expected incremental gross profit range exceeds the total monthly AI costs, and the payback period is within the required 12 months after go-live, considering the 3-month implementation delay.",
+  "key_assumptions": [
+    "Uplift range of 4% to 7% is achievable",
+    "Gross margin remains constant at 40%",
+    "AI-related costs are as stated"
+  ]},
+
+  "case_3_2":
+
+   {  "most_likely_causes": ["concept drift", "data drift"],
+  "evidence": [
+    "Transaction volume increased by 30%",
+    "New payment channel introduced",
+    "Fraud patterns changed after promotional campaign",
+    "Feature distribution for transaction_amount shifted significantly"
+  ],
+  "less_likely_causes": ["threshold miscalibration"],
+  "recommended_diagnostics": [
+    "Compare feature distributions before and after deployment",
+    "Analyze fraud patterns and transaction data for new payment channel",
+    "Evaluate model performance on different subsets of data (e.g., by payment channel, transaction amount)"
+  ],
+  "short_term_actions": [
+    "Monitor model performance closely",
+    "Collect and analyze more data on new payment channel and changed fraud patterns"
+  ],
+  "long_term_actions": [
+    "Retrain model with updated data, including new payment channel and changed fraud patterns",
+    "Consider implementing online learning or incremental training to adapt to changing data and fraud patterns"
+  ],
+  "reasoning_summary": "The significant changes in transaction volume, introduction of a new payment channel, and shifts in fraud patterns and feature distributions suggest that both concept drift and data drift are likely causes of the model performance degradation. Further diagnostics are needed to understand the extent of these changes and to inform retraining and adaptation strategies."
+}
+}
