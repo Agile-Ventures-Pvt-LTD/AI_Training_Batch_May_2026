@@ -1,6 +1,0 @@
-groq
-python-dotenv
-pydantic
-jupyter
-notebook
-ipykernel
