@@ -1,0 +1,50 @@
+[
+    {
+        "batch_start": 0,
+        "hypothetical_questions": "Q1: What are the key factors that contribute to the competitive landscape of the electric vehicle market, and how does Tesla's business strategy address these factors?\n\nQ2: What are the primary risks associated with Tesla's manufacturing operations, and how does the company mitigate these risks to ensure the production of high-quality vehicles and energy storage products?\n\nQ3: How does Tesla's business model and financial performance impact its ability to make scheduled payments on its debt obligations, and what are the potential consequences of failing to meet these obligations?"
+    },
+    {
+        "batch_start": 300,
+        "hypothetical_questions": "Q1: What are the key factors that contribute to the variability in the company's warranty reserve, and how do these factors impact the company's financial statements?\n\nQ2: How do the company's lease pass-through financing obligations impact its financial statements, and what are the key assumptions underlying these obligations?\n\nQ3: What are the key risks and uncertainties associated with the company's foreign currency risk, and how do these risks impact the company's financial statements?"
+    },
+    {
+        "batch_start": 600,
+        "hypothetical_questions": "Q1: What are the key terms and conditions of the loan agreement between Tesla and the lenders, including the repayment terms, interest rates, and default provisions?\n\nQ2: What are the main provisions of the Supplemental Agreement to the Loan Agreement, including the changes to the use of proceeds and the roles of the Facility Agent and the Security Agent?\n\nQ3: What are the key financial metrics and performance indicators used by Tesla to measure its business performance, including revenue, gross margin, and operating expenses?"
+    },
+    {
+        "batch_start": 900,
+        "hypothetical_questions": "Q1: What are the key factors that could impact Tesla's ability to ramp up production and meet its manufacturing and delivery targets, and how might these factors affect the company's financial performance and stock price?\n\nQ2: How do changes in government regulations and incentives, such as tax credits and rebates, impact Tesla's sales and revenue, particularly in the energy storage and solar energy segments, and what are the potential risks and opportunities associated with these changes?\n\nQ3: What are the key drivers of Tesla's cost of revenues, including automotive sales, energy generation and storage, and services and other revenue, and how might changes in these drivers affect the company's gross margin and profitability?"
+    },
+    {
+        "batch_start": 1200,
+        "hypothetical_questions": "Q1: What are the key terms and conditions of the 2021 Pricing Agreement (Japan Cells) between Tesla, Inc. and Tesla Motors Netherlands B.V.?\n\nQ2: What are the main provisions of the Amended and Restated ABL Credit Agreement dated as of March 6, 2019, among Tesla, Inc., Tesla Motors Netherlands B.V., various lenders, Deutsche Bank AG New York Branch, as Administrative Agent and Collateral Agent, Goldman Sachs Bank USA, Morgan Stanley Senior Funding Inc., and Bank of America, N.A., as Syndication Agent?\n\nQ3: What are the key terms and conditions of the 2018 CEO Performance Award, including the vesting conditions, stock option awards, and recognition of stock-based compensation expense?"
+    },
+    {
+        "batch_start": 1500,
+        "hypothetical_questions": "Q1: What are the conditions that must be satisfied for the occurrence of the Effective Date, and what are the consequences of failing to meet these conditions?\n\nQ2: How do the Borrowers and the Lenders agree to indemnify each other for Taxes, and what are the requirements for a Lender to claim a refund from a taxing authority?\n\nQ3: What are the representations and warranties that the Credit Parties must make to induce the Lenders to make Loans, and what are the consequences of failing to meet these representations and warranties?"
+    },
+    {
+        "batch_start": 1800,
+        "hypothetical_questions": "Q1: What is the total amount of Indebtedness that the Company and its Subsidiaries are permitted to incur under Section 10.04 of the Credit Agreement, excluding any Indebtedness that is guaranteed by another Person?\n\nQ2: What is the definition of a \"Material Adverse Effect\" in the context of the Credit Agreement, and how does it relate to the Company's and its Subsidiaries' financial condition and operations?\n\nQ3: What are the consequences of a Change of Control under Section 11.11 of the Credit Agreement, and how does it affect the Company's and its Subsidiaries' obligations and liabilities under the Credit Agreement?"
+    },
+    {
+        "batch_start": 2100,
+        "hypothetical_questions": "Q1: What are the key terms and conditions that govern the relationship between the Collateral Agent and the Chargors under the Deed, and how do they impact the security created by the Deed?\n\nQ2: What are the potential risks and challenges associated with the Collateral Agent's ability to enforce the security created by the Deed, and how might these risks be mitigated?\n\nQ3: How do the provisions of the Deed regarding the security created by the Deed, including the types of assets that are subject to the security, the rights and remedies of the Collateral Agent, and the obligations of the Chargors, impact the financial performance and cash flows of the Chargors?"
+    },
+    {
+        "batch_start": 2400,
+        "hypothetical_questions": "Q1: What is the total amount of debt and finance leases as of December 31, 2022, and what are the maturities of the operating and finance lease liabilities (excluding short-term leases) as of December 31, 2022?\n\nQ2: What is the net investment in sales-type leases as of December 31, 2022, and what are the lease terms for the solar energy systems that are subject to lease or PPAs with customers?\n\nQ3: What is the total amount of restricted cash as of December 31, 2022, and what are the types of assets that are restricted as to withdrawal or use?"
+    },
+    {
+        "batch_start": 2700,
+        "hypothetical_questions": "Q1: What are the key terms and conditions that govern the relationship between Tesla, Inc. and its lenders under the Credit Agreement, and how do they impact the company's financial obligations and operations?\n\nQ2: What are the potential risks and consequences for Tesla, Inc. if it fails to comply with the terms and conditions of the Credit Agreement, and how might this impact its financial stability and operations?\n\nQ3: How does the Credit Agreement's definition of \"Restricted Subsidiary\" and the related restrictions on the company's ability to engage in certain transactions with its subsidiaries impact Tesla's business operations and financial management?"
+    },
+    {
+        "batch_start": 3000,
+        "hypothetical_questions": "Q1: What are the key factors that could impact Tesla's ability to meet its production and delivery targets, and how might these factors affect the company's financial performance?\n\nQ2: How does Tesla's business model and strategy for its energy generation and storage segment compare to its automotive segment, and what are the implications for the company's overall financial performance?\n\nQ3: What are the potential risks and challenges associated with Tesla's increasing reliance on foreign suppliers for key components, and how might these risks impact the company's supply chain and financial performance?"
+    },
+    {
+        "batch_start": 3300,
+        "hypothetical_questions": "Q1: What are the names of all subsidiaries of Tesla, Inc. as of January 26, 2024, and what is their jurisdiction of incorporation or organization?\nQ2: What are the certifications and certifications of the Chief Executive Officer and Chief Financial Officer of Tesla, Inc. regarding the Annual Report on Form 10-K for the year ended December 31, 2023, as of January 26, 2024?\nQ3: What is the Clawback Policy of Tesla, Inc. as of January 26, 2024, and what are the terms and conditions of the policy, including the definition of \"Erroneously Awarded Compensation\" and the procedures for recovery of such compensation?"
+    }
+]

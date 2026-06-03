@@ -1,6 +1,0 @@
-Since the login country (Germany) is in the known countries and also a known VPN country, it does not count as a new country. 
-The login time (8:15 PM) is outside business hours, and there is exactly 1 MFA failure, which satisfies the MEDIUM risk condition. 
-However, the HIGH risk condition is not met because Germany is not considered a new country.
-Therefore, the risk classification is MEDIUM.
-
-{ "risk": "MEDIUM" }
