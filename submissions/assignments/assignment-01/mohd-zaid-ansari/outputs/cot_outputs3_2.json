@@ -1,0 +1,40 @@
+{
+    "most_likely_causes": [
+        "Significant data drift in the transaction_amount feature",
+        "Concept drift caused by new fraud patterns after the promotional campaign",
+        "Introduction of a new payment channel altering feature distributions"
+    ],
+    "evidence": [
+        "Precision dropped from 0.82 to 0.61 and F1-score from 0.79 to 0.66 after 3 months",
+        "Transaction volume increased by 30%",
+        "A new payment channel was introduced",
+        "Fraud patterns changed after a promotional campaign",
+        "Feature distribution for transaction_amount shifted significantly",
+        "Model was not retrained after launch",
+        "Data pipeline logs show no failed jobs"
+    ],
+    "less_likely_causes": [
+        "Threshold or calibration drift due to unchanged decision threshold",
+        "Class‑imbalance shift caused by higher transaction volume"
+    ],
+    "recommended_diagnostics": [
+        "Run statistical drift tests (e.g., KS test, PSI) on key features, especially transaction_amount and new channel attributes",
+        "Compare per‑channel performance (old vs. new payment channel) using recent labeled data",
+        "Apply concept‑drift detectors (e.g., ADWIN, DDM) on model predictions over time",
+        "Re‑evaluate model calibration on the latest data and plot precision‑recall curves"
+    ],
+    "short_term_actions": [
+        "Create a fresh validation set from the last 2‑4 weeks and measure current precision/recall per channel",
+        "Temporarily adjust the decision threshold to recover precision while monitoring recall",
+        "Retrain the model on data that includes the new payment channel and post‑campaign fraud patterns, then redeploy a shadow version for A/B testing",
+        "If immediate retraining is not possible, add a simple rule‑based filter for the new channel to reduce false positives"
+    ],
+    "long_term_actions": [
+        "Implement automated data‑drift monitoring dashboards with alerts for feature distribution shifts",
+        "Schedule periodic (e.g., monthly) model retraining pipelines that ingest the latest labeled transactions",
+        "Incorporate the new payment channel as a first‑class feature and continuously track its impact on model metrics",
+        "Set up a calibration monitoring process to automatically recompute optimal thresholds as data evolves",
+        "Maintain a data validation suite that checks for missing values, schema changes, and out‑of‑range values before training"
+    ],
+    "reasoning_summary": "The sharp precision loss and shifted transaction_amount distribution point to data drift, while the promotional campaign and new payment channel indicate concept drift. No pipeline failures rule out execution errors. Immediate diagnostics should quantify drift and per‑channel performance, followed by rapid retraining with recent data. Long‑term, automate drift detection, regular retraining, and threshold calibration to keep the fraud model aligned with evolving business conditions."
+}

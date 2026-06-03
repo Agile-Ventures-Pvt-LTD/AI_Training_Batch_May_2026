@@ -1,0 +1,57 @@
+{
+    "rephrased_requirement": "Implement a web‑based AI assistant that allows authenticated users to upload documents (e.g., PDF, DOCX, TXT) up to a defined size, then ask natural‑language questions about the uploaded content. The system must return answers derived from the document with a measurable accuracy, respond within a defined latency, and enforce security controls for data protection.",
+    "functional_requirements": [
+        "Provide a UI and API endpoint for authenticated users to upload files.",
+        "Accept at least PDF, DOCX, and plain‑text formats; reject unsupported types.",
+        "Enforce a configurable maximum file size (e.g., 20 MB per file).",
+        "Store uploaded files securely for the duration of the session or a configurable retention period.",
+        "Expose an endpoint where users can submit a natural‑language question referencing the uploaded file(s).",
+        "Parse the uploaded documents, index their content in a vector store, and retrieve relevant passages to generate an answer.",
+        "Return the answer together with citations (e.g., page number or text snippet) to the source document.",
+        "Allow users to delete their uploaded files and associated data on demand."
+    ],
+    "non_functional_requirements": [
+        "Response time: answer must be returned within 3 seconds for files ≤ 20 MB under normal load.",
+        "Throughput: system must handle at least 100 concurrent upload‑question sessions.",
+        "Availability: 99.9 % uptime measured monthly.",
+        "Scalability: ability to scale horizontally by adding compute nodes without code changes.",
+        "Accuracy: answer correctness must be ≥ 90 % on a predefined benchmark set of 200 question‑answer pairs per document type.",
+        "Logging: all actions (upload, query, delete) must be logged with timestamps and user IDs for audit purposes.",
+        "Maintainability: codebase must include unit tests covering ≥ 80 % of the core logic."
+    ],
+    "security_requirements": [
+        "All client‑server communication must use TLS 1.2 or higher.",
+        "Files must be scanned for malware using an up‑to‑date antivirus engine before processing.",
+        "Stored files and vector embeddings must be encrypted at rest (AES‑256).",
+        "Access control: only the uploading user may view or delete their files and query results.",
+        "Authentication must integrate with the existing SSO provider (e.g., OAuth2/OpenID Connect).",
+        "Data retention: delete files and embeddings automatically after a configurable period (default 30 days) or on user request.",
+        "Audit log must be immutable and retained for at least 90 days.",
+        "Compliance: solution must support GDPR data‑subject rights (export, deletion)."
+    ],
+    "acceptance_criteria": [
+        "Given a supported file ≤ 20 MB, the upload API returns HTTP 201 and stores the file encrypted.",
+        "Uploading an unsupported file type returns HTTP 415 with a clear error message.",
+        "When a user submits a question after upload, the system returns an answer within 3 seconds and includes at least one citation.",
+        "On the benchmark dataset, the system achieves ≥ 90 % answer accuracy (precision/recall as defined in the test plan).",
+        "Under a load test of 100 concurrent sessions, 95 % of requests meet the 3‑second latency target.",
+        "All network traffic is captured as TLS‑encrypted; packet inspection shows no plaintext data.",
+        "Antivirus scan logs show every uploaded file was scanned and passed before processing.",
+        "Only the owner user can retrieve or delete their uploaded files; attempts by other users receive HTTP 403.",
+        "Audit logs contain entries for every upload, query, and delete action with correct timestamps and user IDs.",
+        "Files are automatically removed after 30 days; verification scripts confirm deletion from storage and vector store."
+    ],
+    "recommended_solution_approach": "Build a microservice‑based architecture: \n1. Front‑end (React or similar) for file upload and chat UI. \n2. API gateway handling authentication via OAuth2/OpenID Connect. \n3. Upload service that validates file type/size, runs antivirus scanning, encrypts, and stores files in object storage (e.g., S3 with SSE‑AES256). \n4. Document processing service that extracts text (PDF‑Miner, Apache Tika), creates embeddings using a pre‑trained model (e.g., OpenAI embeddings or open‑source sentence‑transformers), and stores them in a vector database (e.g., Pinecone, Milvus). \n5. Query service that retrieves relevant passages via similarity search, feeds them plus the user question to a Retrieval‑Augmented Generation LLM (e.g., OpenAI GPT‑4o or an on‑prem LLM), and returns the answer with citations. \n6. Delete service that removes files and associated embeddings on request or after retention period. \n7. Centralized logging and monitoring (ELK stack, Prometheus/Grafana) for performance and security audit. \nDeploy on a cloud platform with autoscaling groups to meet concurrency and latency goals, and use managed TLS termination at the load balancer.",
+    "open_questions": [
+        "What is the exact maximum file size that should be supported?",
+        "Are there additional document formats (e.g., images, spreadsheets) that need to be handled?",
+        "What is the preferred LLM provider or are there constraints on using proprietary APIs?",
+        "What benchmark dataset will be used to measure the 90 % accuracy target?",
+        "What is the expected retention period for uploaded files and embeddings (default 30 days can be overridden?)",
+        "Do we need to support multi‑language documents and queries?",
+        "What is the budget for third‑party services (vector DB, LLM API, antivirus) and any licensing restrictions?",
+        "Which existing authentication system (IdP) must be integrated?",
+        "Are there any regional data residency requirements (e.g., EU, US) that affect storage location?",
+        "What is the SLA for the underlying cloud provider that we must align with for the 99.9 % availability claim?"
+    ]
+}
