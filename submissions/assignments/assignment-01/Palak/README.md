@@ -4,7 +4,7 @@
 
 ---
 
-## 2. Assignment: **Assignment 1: Foundation of Generative AI**
+## 2. Assignment: Foundation of Generative AI**
 
 ---
 
