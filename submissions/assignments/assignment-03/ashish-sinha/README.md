@@ -1,443 +1,70 @@
-# Retrieval-Augmented Generation (RAG) for Tesla Annual Reports
+# Assignment A003 – Improving RAG Retrieval using Hypothetical Questions
 
-A production-style Retrieval-Augmented Generation (RAG) system built on Tesla Annual Reports (2019–2023) using ChromaDB, Sentence Transformers, NVIDIA-hosted Llama 3.1 70B, and Advanced Retrieval Techniques such as Hypothetical Question Indexing.
+## Overview
 
----
+This project improves Retrieval-Augmented Generation (RAG) performance on Tesla 10-K filings by using **Hypothetical Question Retrieval (HQR)**.
 
-## 📌 Project Overview
+Traditional RAG retrieves document chunks based on semantic similarity between the user query and chunk text. However, business-oriented queries often use language that differs significantly from the wording used in financial filings.
 
-Large Language Models (LLMs) possess extensive general knowledge but often struggle with domain-specific information and may generate hallucinated responses.
-
-Retrieval-Augmented Generation (RAG) addresses this challenge by retrieving relevant information from an external knowledge base and supplying it as context to the LLM before generating an answer.
-
-This project demonstrates how RAG can be used to analyze Tesla's annual reports and answer natural language questions grounded in real financial documents.
-
-### Key Objectives
-
-- Build an end-to-end RAG pipeline
-- Create a searchable knowledge base from Tesla Annual Reports
-- Improve retrieval quality using Hypothetical Question Indexing
-- Generate grounded responses using Llama 3.1 70B
-- Explore advanced retrieval strategies beyond basic semantic search
+To address this issue, hypothetical questions are generated for each chunk and indexed separately. User queries are matched against these hypothetical questions, and the retrieved questions are mapped back to their original parent chunks for grounded answer generation.
 
 ---
 
-## 🎯 Business Problem
-
-Financial reports contain hundreds of pages of information.
-
-Traditional keyword search systems often fail because users ask questions differently than information is written in the reports.
-
-For example:
-
-**User Query**
-
-> How did Tesla's automotive revenue perform in 2022?
-
-**Document Text**
-
-> Revenue generated from automotive sales increased significantly during fiscal year 2022.
-
-Although both statements refer to the same concept, keyword search may miss the connection.
-
-This project solves the problem through semantic retrieval and LLM-powered reasoning.
-
----
-
-# 🏗️ System Architecture
-
-## Baseline RAG Pipeline
-
-```text
-User Query
-    │
-    ▼
-Embedding Model
-    │
-    ▼
-Vector Search (ChromaDB)
-    │
-    ▼
-Top-K Relevant Chunks
-    │
-    ▼
-Prompt Construction
-    │
-    ▼
-Llama 3.1 70B
-    │
-    ▼
-Generated Response
-```
-
----
-
-## Advanced RAG Pipeline
-
-The advanced version introduces Hypothetical Question Indexing.
-
-```text
-Documents
-    │
-    ▼
-Chunking
-    │
-    ▼
-Generate Hypothetical Questions
-    │
-    ▼
-Create Embeddings
-    │
-    ▼
-Store in ChromaDB
-
---------------------------------
-
-User Query
-    │
-    ▼
-Similarity Search
-    │
-    ▼
-Relevant Hypothetical Questions
-    │
-    ▼
-Associated Document Chunks
-    │
-    ▼
-Llama 3.1 70B
-    │
-    ▼
-Final Answer
-```
-
----
-
-# 📂 Dataset
-
-The knowledge base consists of Tesla Annual Reports (Form 10-K) from:
-
-- 2019
-- 2020
-- 2021
-- 2022
-- 2023
-
-These reports include:
-
-- Financial Statements
-- Revenue Information
-- Automotive Segment Performance
-- Energy Generation & Storage
-- Risk Factors
-- Business Strategy
-- Corporate Governance
-- Operational Metrics
-
-### Data Source
-
-Tesla Investor Relations
-
-https://ir.tesla.com
-
----
-
-# ⚙️ Technologies Used
-
-| Component | Technology |
-|------------|------------|
-| LLM | Llama 3.1 70B |
-| API Provider | NVIDIA AI Endpoints |
-| Vector Database | ChromaDB |
-| Framework | LangChain |
-| Embedding Model | Sentence Transformers |
-| Document Loader | PyPDFLoader |
-| Programming Language | Python |
-| Notebook Environment | Jupyter Notebook |
-
----
-
-# 🧠 Embedding Model
-
-The project uses:
-
-```python
-sentence-transformers/all-MiniLM-L6-v2
-```
-
-Advantages:
-
-- Fast inference
-- Lightweight
-- Strong semantic understanding
-- Suitable for retrieval tasks
-
-The model converts both documents and user queries into dense vector representations.
-
----
-
-# 🔍 Baseline RAG Implementation
-
-## Step 1: Document Loading
-
-Tesla annual reports are loaded using:
-
-```python
-PyPDFLoader
-```
-
----
-
-## Step 2: Text Chunking
-
-Documents are split into smaller chunks to improve retrieval granularity.
-
-Benefits:
-
-- Better semantic matching
-- Reduced context size
-- Faster retrieval
-
----
-
-## Step 3: Embedding Generation
-
-Each chunk is converted into a vector embedding.
-
-Example:
-
-```python
-embedding = model.encode(chunk)
-```
-
----
-
-## Step 4: Vector Database Creation
-
-Embeddings are stored in ChromaDB.
-
-```python
-Chroma
-```
-
-This enables efficient similarity search.
-
----
-
-## Step 5: Retrieval
-
-For each user query:
-
-1. Generate query embedding
-2. Perform similarity search
-3. Retrieve top-k relevant chunks
-
----
-
-## Step 6: Response Generation
-
-Retrieved context is inserted into a prompt and sent to:
-
-```text
-Llama 3.1 70B
-```
-
-The model generates a grounded answer using the retrieved evidence.
-
----
-
-# 🚀 Advanced Retrieval: Hypothetical Question Indexing
-
-## Motivation
-
-Traditional semantic search retrieves documents directly.
-
-However, users rarely phrase questions exactly as information appears in documents.
-
-Example:
-
-### User Query
-
-> What challenges did Tesla face in battery manufacturing?
-
-### Document Text
-
-> Battery production constraints affected operational efficiency.
-
-Although semantically related, retrieval quality may degrade.
-
----
-
-## Solution
-
-Generate synthetic questions for every document chunk.
-
-Example:
-
-### Original Chunk
-
-```text
-Battery production constraints affected operational efficiency.
-```
-
-### Generated Questions
-
-```text
-What manufacturing challenges did Tesla face?
-
-What impacted battery production efficiency?
-
-What operational issues were caused by battery constraints?
-```
-
-These questions are embedded and indexed.
-
----
-
-## Benefits
-
-- Improved recall
-- Better semantic matching
-- More robust retrieval
-- Enhanced user experience
-
----
-
-# 📊 Project Workflow
-
-## Baseline System
-
-```text
-PDF Reports
-    │
-    ▼
-Chunking
-    │
-    ▼
-Embeddings
-    │
-    ▼
-ChromaDB
-    │
-    ▼
-Retriever
-    │
-    ▼
-LLM
-```
-
----
-
-## Enhanced System
-
-```text
-PDF Reports
-    │
-    ▼
-Chunking
-    │
-    ▼
-Generate Questions
-    │
-    ▼
-Embeddings
-    │
-    ▼
-ChromaDB
-    │
-    ▼
-Retriever
-    │
-    ▼
-LLM
-```
-
----
-
-# 📈 Evaluation
-
-The project compares:
-
-### Baseline Retrieval
-
-- Document chunk embeddings only
-
-### Advanced Retrieval
-
-- Hypothetical question embeddings
-
-Evaluation focuses on:
-
-- Retrieval relevance
-- Semantic recall
-- Response quality
-- Context coverage
-
----
-
-# 💡 Example Queries
-
-```text
-What was Tesla's automotive revenue in 2022?
-
-What risks were highlighted in the 2023 annual report?
-
-How did Tesla's energy generation business perform?
-
-What factors affected Tesla's profitability?
-
-What challenges were discussed regarding battery production?
-```
-
----
-
-# 📁 Repository Structure
+## Project Structure
 
 ```text
 .
-├── data/
-│   ├── Tesla_2019.pdf
-│   ├── Tesla_2020.pdf
-│   ├── Tesla_2021.pdf
-│   ├── Tesla_2022.pdf
-│   └── Tesla_2023.pdf
 │
-├── chroma_db/
+├── tesla-annual-reports/
+│   ├── tsla-2019.pdf
+│   ├── tsla-2020.pdf
+│   ├── tsla-2021.pdf
+│   ├── tsla-2022.pdf
+│   └── tsla-2023.pdf
 │
-├── notebooks/
-│   └── RAG_TESLAReports.ipynb
+├── tesla_db/
+│   ├── baseline chunk index
+│   └── hypothetical question index
 │
-├── README.md
+├── tesla_hypothetical_questions.json
 │
-└── requirements.txt
+├── HQ1.json
+├── HQ2.json
+├── HQ3.json
+├── HQ4.json
+│
+├── comparison_table.csv
+├── analysis_answers.json
+│
+├── Assignment_A003.ipynb
+│
+├── requirements.txt
+│
+└── README.md
 ```
 
 ---
 
-# 🔧 Installation
+## Environment Setup
 
-## Clone Repository
-
-```bash
-git clone https://github.com/yourusername/tesla-rag.git
-
-cd tesla-rag
-```
-
----
-
-## Create Virtual Environment
+### Create Virtual Environment
 
 ```bash
 python -m venv venv
-
-source venv/bin/activate
 ```
 
-Windows:
+Activate:
+
+Windows
 
 ```bash
 venv\Scripts\activate
+```
+
+Linux / Mac
+
+```bash
+source venv/bin/activate
 ```
 
 ---
@@ -448,119 +75,289 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
----
-
-# ▶️ Running the Project
-
-Launch Jupyter Notebook:
-
-```bash
-jupyter notebook
-```
-
-Open:
+Required libraries include:
 
 ```text
-RAG_TESLAReports.ipynb
+chromadb
+langchain
+langchain-community
+langchain-chroma
+sentence-transformers
+python-dotenv
+openai
+tqdm
+pandas
 ```
 
-Execute cells sequentially.
+---
+
+## API Configuration
+
+Create a `.env` file in the project root.
+
+```env
+NVIDIA_API_KEY=YOUR_NVIDIA_API_KEY
+```
+
+The project uses NVIDIA NIMs through the OpenAI-compatible API endpoint.
+
+```python
+client = OpenAI(
+    base_url="https://integrate.api.nvidia.com/v1",
+    api_key=os.getenv("NVIDIA_API_KEY")
+)
+```
+
+Model used:
+
+```python
+meta/llama-3.1-70b-instruct
+```
+
+Embedding model:
+
+```python
+sentence-transformers/all-mpnet-base-v2
+```
 
 ---
 
-# 🔮 Future Improvements
+## Execution Steps
 
-Potential enhancements include:
+### Step 1 – Load Tesla Filings
 
-### Hybrid Search
+Load all Tesla annual reports.
 
-Combine:
-
-- BM25
-- Dense Retrieval
-
----
-
-### Re-ranking
-
-Use:
-
-- Cross Encoders
-- Cohere Rerank
-- BGE Reranker
+```python
+pdf_loader = PyPDFDirectoryLoader(
+    "tesla-annual-reports"
+)
+```
 
 ---
 
-### Parent-Child Retrieval
+### Step 2 – Chunk Documents
 
-Improve context aggregation.
+Documents are split using:
 
----
+```python
+RecursiveCharacterTextSplitter
+```
 
-### Metadata Filtering
+Configuration:
 
-Filter results by:
+```python
+chunk_size = 512
+chunk_overlap = 16
+```
 
-- Year
-- Section
-- Topic
+Metadata retained:
 
----
-
-### Automated Evaluation
-
-Implement:
-
-- RAGAS
-- TruLens
-- DeepEval
-
----
-
-### Citation-Based Responses
-
-Provide page references alongside generated answers.
+* chunk_id
+* source_doc
+* year
+* section
+* page number
 
 ---
 
-# 📚 Key Learnings
+### Step 3 – Build Baseline Vector Index
 
-This project demonstrates:
+Create a ChromaDB collection containing original Tesla chunks.
 
-- Retrieval-Augmented Generation (RAG)
-- Semantic Search
-- Vector Databases
-- Embedding Models
-- Prompt Engineering
-- Financial Document Analysis
-- Advanced Retrieval Techniques
-- LLM Grounding Strategies
+```python
+vectorstore_persisted
+```
+
+This index is used for baseline retrieval.
 
 ---
 
-# 🤝 Contributing
+### Step 4 – Generate Hypothetical Questions
 
-Contributions, suggestions, and improvements are welcome.
+For each chunk:
 
-Feel free to open an issue or submit a pull request.
+* Generate exactly 3 hypothetical questions.
+* Questions must be answerable from the chunk.
+* No unsupported facts are allowed.
+* Parent chunk metadata is preserved.
+
+Example:
+
+```text
+What risks could affect Tesla's production scaling plans?
+
+How might supply chain disruptions impact vehicle deliveries?
+
+What operational factors could prevent Tesla from meeting growth expectations?
+```
+
+Generated questions are saved in:
+
+```text
+tesla_hypothetical_questions.json
+```
 
 ---
 
-# 📜 License
+### Step 5 – Build Hypothetical Question Index
 
-This project is licensed under the MIT License.
+Create a second Chroma collection.
+
+```python
+hq_vectorstore
+```
+
+Each question stores:
+
+```json
+{
+  "parent_chunk_id": "...",
+  "source_doc": "...",
+  "year": 2022,
+  "section": "Risk Factors"
+}
+```
 
 ---
 
-# ⭐ Acknowledgements
+### Step 6 – Run Benchmark Questions
 
-- Tesla Investor Relations
-- LangChain
-- ChromaDB
-- NVIDIA AI Endpoints
-- Sentence Transformers
-- Meta Llama Team
+Assignment benchmark questions:
+
+* HQ1
+* HQ2
+* HQ3
+* HQ4
+
+Process:
+
+```text
+User Query
+    ↓
+HQ Index Retrieval
+    ↓
+Retrieve Matching Questions
+    ↓
+Map to Parent Chunks
+    ↓
+Generate Final Answer
+```
+
+Answers are generated using parent chunks only.
 
 ---
 
-If you found this project useful, consider giving the repository a ⭐.
+### Step 7 – Generate Required Outputs
+
+Outputs produced:
+
+```text
+HQ1.json
+HQ2.json
+HQ3.json
+HQ4.json
+```
+
+Each file follows:
+
+```json
+{
+  "question_id": "",
+  "user_query": "",
+  "retrieved_hypothetical_questions": [],
+  "parent_chunks_used": [],
+  "final_answer": "",
+  "citations": [],
+  "comparison_with_baseline": ""
+}
+```
+
+---
+
+### Step 8 – Baseline vs Improved Retrieval Comparison
+
+Compare:
+
+1. Baseline chunk retrieval
+2. Hypothetical question retrieval
+
+Metrics evaluated:
+
+* Evidence quality
+* Retrieval relevance
+* Coverage
+* Precision
+* Failure modes
+
+Outputs:
+
+```text
+comparison_table.csv
+comparison_table.xlsx
+```
+
+---
+
+## Analytical Evaluation
+
+The project answers:
+
+1. Which queries benefited most from hypothetical question retrieval?
+2. Which generated questions were too broad or misleading?
+3. How unsupported facts were prevented?
+4. Whether retrieval improved for abstract business questions?
+5. How to update the HQ index when new filings are added?
+
+Results are saved in:
+
+```text
+analysis_answers.json
+```
+
+---
+
+## Rebuilding the Index
+
+Delete existing database:
+
+```text
+tesla_db/
+```
+
+Then rerun:
+
+1. Corpus ingestion
+2. Chunk generation
+3. Baseline indexing
+4. HQ generation
+5. HQ indexing
+
+---
+
+## Production Considerations
+
+Potential improvements:
+
+* Hybrid BM25 + Vector Retrieval
+* Parent-Child Retrieval
+* Cross-Encoder Re-ranking
+* Incremental HQ Index Updates
+* Metadata-Based Filtering
+* Section Classification
+
+---
+
+## Submission Deliverables
+
+This repository includes:
+
+* Complete notebook implementation
+* Prompt templates
+* Baseline RAG pipeline
+* Hypothetical Question Retrieval pipeline
+* Benchmark outputs
+* Comparison analysis
+* Final written evaluation
+
+No API keys are committed to the repository.
