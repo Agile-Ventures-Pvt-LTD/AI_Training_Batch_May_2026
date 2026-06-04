@@ -49,19 +49,20 @@ Before running the project, ensure you have:
 ---
 
 ## 📂 Project Structure
-
 ```text
 Assignment-02/
 │
-├── 2_RAG_TESLAReports_QueryExpansion.ipynb
-├── tesla_db/
-│   └── Chroma Vector Database
-│
-├── .env
-├── requirements.txt
-└── README.md
+└── pranay-gupta/
+    │
+    ├── 2_RAG_TESLAReports_QueryExpansion.ipynb
+    ├── rag_query_expansion_output.json
+    ├── tesla_db/
+    │   └── Chroma_Vector_Database/
+    │
+    ├── .env
+    ├── requirements.txt
+    └── README.md
 ```
-
 ---
 
 ## 📦 Required Libraries
