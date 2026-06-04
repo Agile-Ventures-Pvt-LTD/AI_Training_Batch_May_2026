@@ -88,6 +88,25 @@ assignment/assignment-03/taniya-gupta
 
 ---
 
+## Analytical Questions
+
+**Which queries benefited most from hypothetical question retrieval?**  
+HQ1 and HQ4 showed the biggest improvement.
+
+**Which generated questions were too broad, too narrow, or misleading?**  
+Some questions were too broad, while a few were too narrow. No major misleading questions were observed.
+
+**How did you prevent generated hypothetical questions from introducing unsupported facts?**  
+Questions were generated only from the chunk content, and final answers were produced using the original document chunks.
+
+**Did the technique improve retrieval for abstract business questions?**  
+Yes. Hypothetical question retrieval improved retrieval quality.
+
+**How would you update the hypothetical question index when new 10-K filings are added?**  
+New filings would be chunked, hypothetical questions would be generated for the new chunks, and the resulting embeddings would be added to the existing HQ vector index.
+
+---
+
 ## 7. Output Explanation
 
 The notebook produces:
