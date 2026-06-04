@@ -1,9 +1,107 @@
 {
     "question_id": "HQ4",
     "user_query": "Which disclosures help evaluate technology, cybersecurity, data, or AI operational risk even if the user does not explicitly say cybersecurity?",
-    "retrieved_hypothetical_questions": [],
-    "parent_chunks_used": [],
-    "final_answer": "Based on the provided context, which is incomplete, I can only provide a general answer. \n\nTo evaluate technology, cybersecurity, data, or AI operational risk, disclosures that may be helpful include:\n\n1. Technology and infrastructure descriptions: Information about the company's technology infrastructure, systems, and architecture can provide insight into potential operational risks.\n2. Data management and protection practices: Disclosures about data collection, storage, processing, and protection practices can help assess data-related operational risks.\n3. Cybersecurity measures and incidents: Information about cybersecurity measures, such as firewalls, encryption, and incident response plans, as well as any reported cybersecurity incidents, can help evaluate cybersecurity operational risk.\n4. AI and machine learning usage: Disclosures about the use of AI and machine learning, including data sources, algorithms, and testing procedures, can help assess AI-related operational risks.\n5. Risk management and compliance practices: Information about the company's risk management and compliance practices, including policies, procedures, and training programs, can provide insight into its overall approach to managing operational risk.\n6. Third-party and supply chain risk management: Disclosures about the company's third-party and supply chain risk management practices can help assess the potential for operational risks related to external dependencies.\n7. Business continuity and disaster recovery planning: Information about the company's business continuity and disaster recovery plans can help evaluate its preparedness for potential disruptions.\n\nThese disclosures can be found in various sources, such as:\n\n* Company reports (e.g., annual reports, sustainability reports)\n* Regulatory filings (e.g., SEC filings)\n* Industry publications and research reports\n* Company websites and social media channels\n* News articles and media coverage\n\nPlease note that the completeness and accuracy of these disclosures may vary, and additional information may be needed to fully evaluate technology, cybersecurity, data, or AI operational risk.",
-    "citations": [],
+    "retrieved_hypothetical_questions": [
+        {
+            "hypothetical_question": "How does Tesla encourage reporting of potential vulnerabilities in its products?",
+            "parent_chunk_id": "85c8a533-5afc-4c68-a6f3-9ab9bd70d500",
+            "section": "Unknown",
+            "year": 2019,
+            "score": 0.5561157464981079
+        },
+        {
+            "hypothetical_question": "What are some risks associated with Tesla's information technology systems?",
+            "parent_chunk_id": "916bb776-1ff6-4f7a-bf6b-08ed34bfcc02",
+            "section": "Unknown",
+            "year": 2019,
+            "score": 0.5979121923446655
+        },
+        {
+            "hypothetical_question": "What are some of the specific critical audit matters that the auditor identifies?",
+            "parent_chunk_id": "ae2df0a4-ef01-4eef-bd2e-cdbf9d6513ba",
+            "section": "Unknown",
+            "year": 2019,
+            "score": 0.6063007116317749
+        },
+        {
+            "hypothetical_question": "What are some potential consequences of failing to effectively manage these risks?",
+            "parent_chunk_id": "3ec21043-7020-483a-bf6c-28abf237291c",
+            "section": "Unknown",
+            "year": 2019,
+            "score": 0.6115269660949707
+        },
+        {
+            "hypothetical_question": "What are some potential consequences of failing to effectively manage these risks?",
+            "parent_chunk_id": "0f550480-b977-4d1b-9593-a4d5154f4d5b",
+            "section": "Unknown",
+            "year": 2019,
+            "score": 0.6115269660949707
+        }
+    ],
+    "parent_chunks_used": [
+        {
+            "chunk_id": "85c8a533-5afc-4c68-a6f3-9ab9bd70d500",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        },
+        {
+            "chunk_id": "916bb776-1ff6-4f7a-bf6b-08ed34bfcc02",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        },
+        {
+            "chunk_id": "ae2df0a4-ef01-4eef-bd2e-cdbf9d6513ba",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        },
+        {
+            "chunk_id": "3ec21043-7020-483a-bf6c-28abf237291c",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        },
+        {
+            "chunk_id": "0f550480-b977-4d1b-9593-a4d5154f4d5b",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        }
+    ],
+    "final_answer": "The disclosures that help evaluate technology, cybersecurity, data, or AI operational risk even if the user does not explicitly say cybersecurity are:\n\n1. Reports of potential vulnerabilities in the security of products and attempts to remedy them.\n2. Risks of unauthorized access to or control of products, their systems, or data, and the potential negative impact on the brand and business.\n3. The implementation, maintenance, segregation, and improvement of information technology systems, including the risks associated with developing, improving, and expanding core systems.\n4. The use of built-in data connectivity in products to accept and install periodic remote updates, and the security measures designed to prevent unauthorized access to information technology networks, products, and systems.\n5. The risk of loss of confidence in the company and its products if unauthorized control or manipulation of products' systems occurs.\n\nChunks that support the answer:\n\n* \"We encourage reporting of potential vulnerabilities in the security of our products via our security vulnerability reporting policy, and we aim to remedy any reported and verified vulnerability.\"\n* \"Any unauthorized access to or control of our products or their systems or any loss of data could result in legal claims or proceedings.\"\n* \"We maintain information technology measures designed to protect us against intellectual property theft, data breaches and other cyber-attacks.\"\n* \"Our products contain complex information technology systems... We have designed, implemented and tested security measures intended to prevent unauthorized access to our information technology networks, our products and their systems.\"\n* \"Any unauthorized control or manipulation of our products’ systems could result in loss of confidence in us and our products and harm our business.\"",
+    "citations": [
+        {
+            "chunk_id": "85c8a533-5afc-4c68-a6f3-9ab9bd70d500",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        },
+        {
+            "chunk_id": "916bb776-1ff6-4f7a-bf6b-08ed34bfcc02",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        },
+        {
+            "chunk_id": "ae2df0a4-ef01-4eef-bd2e-cdbf9d6513ba",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        },
+        {
+            "chunk_id": "3ec21043-7020-483a-bf6c-28abf237291c",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        },
+        {
+            "chunk_id": "0f550480-b977-4d1b-9593-a4d5154f4d5b",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        }
+    ],
     "comparison_with_baseline": ""
-} 
+}

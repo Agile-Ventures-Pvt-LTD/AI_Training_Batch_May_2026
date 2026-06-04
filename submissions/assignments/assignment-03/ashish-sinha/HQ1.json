@@ -1,9 +1,107 @@
 {
     "question_id": "HQ1",
     "user_query": "What should a board member ask about risks that could prevent Tesla from meeting production, delivery, or scaling expectations?",
-    "retrieved_hypothetical_questions": [],
-    "parent_chunks_used": [],
-    "final_answer": "Based on the provided context (which is empty), I do not have enough information to provide a specific answer. However, I can provide a general analytical response.\n\nA board member should ask questions that help identify, assess, and mitigate potential risks that could impact Tesla's production, delivery, or scaling expectations. Some possible questions they might ask include:\n\n1. What are the key risks that could prevent us from meeting our production targets, and how are we mitigating them?\n2. What are the potential bottlenecks in our supply chain, and how are we addressing them?\n3. How are we managing the ramp-up of new production lines or technologies, and what are the associated risks?\n4. What are the regulatory risks that could impact our ability to deliver vehicles, and how are we preparing for them?\n5. How are we managing the scaling of our manufacturing operations, and what are the potential risks associated with rapid growth?\n6. What are the potential risks associated with our reliance on key suppliers or partners, and how are we diversifying our supply chain?\n7. How are we monitoring and addressing potential quality control issues that could impact delivery or scaling?\n8. What are the potential risks associated with changes in market demand or consumer preferences, and how are we adapting to them?\n\nThese questions can help the board member understand the potential risks and challenges that Tesla may face in meeting its production, delivery, or scaling expectations, and how the company is addressing them.",
-    "citations": [],
+    "retrieved_hypothetical_questions": [
+        {
+            "hypothetical_question": "What are some of the risks that Tesla faces in its business and industry?",
+            "parent_chunk_id": "4b2f9090-e9f8-4193-8666-6bf2e04fc583",
+            "section": "Unknown",
+            "year": 2019,
+            "score": 0.2624037265777588
+        },
+        {
+            "hypothetical_question": "What are some of the challenges that Tesla faces in managing its growth?",
+            "parent_chunk_id": "39465884-ab24-4a8a-af77-971887af47ab",
+            "section": "Unknown",
+            "year": 2019,
+            "score": 0.29787111282348633
+        },
+        {
+            "hypothetical_question": "What are the potential risks associated with Tesla's guidance on expected financial and business performance?",
+            "parent_chunk_id": "0c966c78-f368-4ba0-89a3-d74e8b33c930",
+            "section": "Unknown",
+            "year": 2019,
+            "score": 0.3121376037597656
+        },
+        {
+            "hypothetical_question": "What are some of the factors that could harm Tesla's brand, business, prospects, financial condition, and operating results?",
+            "parent_chunk_id": "50452e30-f392-43e2-9884-973117137bfe",
+            "section": "Unknown",
+            "year": 2019,
+            "score": 0.31471920013427734
+        },
+        {
+            "hypothetical_question": "What are some of the factors that could harm Tesla's brand, business, prospects, financial condition, and operating results?",
+            "parent_chunk_id": "1577e645-4689-4852-85dd-5a5a4b9f19c3",
+            "section": "Unknown",
+            "year": 2019,
+            "score": 0.31471920013427734
+        }
+    ],
+    "parent_chunks_used": [
+        {
+            "chunk_id": "4b2f9090-e9f8-4193-8666-6bf2e04fc583",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        },
+        {
+            "chunk_id": "39465884-ab24-4a8a-af77-971887af47ab",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        },
+        {
+            "chunk_id": "0c966c78-f368-4ba0-89a3-d74e8b33c930",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        },
+        {
+            "chunk_id": "50452e30-f392-43e2-9884-973117137bfe",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        },
+        {
+            "chunk_id": "1577e645-4689-4852-85dd-5a5a4b9f19c3",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        }
+    ],
+    "final_answer": "A board member should ask about the following risks that could prevent Tesla from meeting production, delivery, or scaling expectations:\n\n1. **Supply chain constraints**: What measures are in place to mitigate the risk of supply chain disruptions, particularly for critical components like lithium-ion cells?\n2. **Manufacturing complexity**: How is the company addressing the challenges of ramping up fully automated processes, such as battery module assembly lines, to meet production targets?\n3. **Demand forecasting**: What strategies are being implemented to improve demand forecasting, particularly for new markets and products, to ensure that production matches customer demand?\n4. **International operations**: How is the company navigating the complexities of international regulations, trade policies, and economic conditions that could impact production and delivery?\n5. **Quality control**: What steps are being taken to detect and fix defects in products before they are sold to customers, and how is the company addressing issues related to software, battery packs, and other critical components?\n6. **Scaling delivery and service operations**: How is the company preparing to handle high volumes of deliveries and servicing, particularly in international markets, to meet customer expectations?\n\nChunks that support this answer:\n\n* \"We have experienced in the past, and may experience in the future, delays or other complications in the design, manufacture, launch, and production ramp of our vehicles, energy products, and product features...\"\n* \"We encountered unanticipated supply chain constraints that led to initial delays in producing Model X and an isolated supplier limitation in the manufacture of Model 3.\"\n* \"If our specific demand expectations for these variants prove inaccurate, we may not be able to timely generate sales matched to the specific vehicles that we produce in the same timeframe...\"\n* \"We face risks associated with our international operations, including unfavorable and uncertain regulatory, political, economic, tax and labor conditions...\"\n* \"Increases in costs, disruption of supply or shortage of materials, in particular for lithium-ion cells, could harm our business.\"\n* \"We have a global footprint with domestic and international operations and subsidiaries. Accordingly, we are subject to a variety of legal, political and regulatory requirements and social, environmental and economic conditions over which we have little control.\"",
+    "citations": [
+        {
+            "chunk_id": "4b2f9090-e9f8-4193-8666-6bf2e04fc583",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        },
+        {
+            "chunk_id": "39465884-ab24-4a8a-af77-971887af47ab",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        },
+        {
+            "chunk_id": "0c966c78-f368-4ba0-89a3-d74e8b33c930",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        },
+        {
+            "chunk_id": "50452e30-f392-43e2-9884-973117137bfe",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        },
+        {
+            "chunk_id": "1577e645-4689-4852-85dd-5a5a4b9f19c3",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Unknown",
+            "year": 2019
+        }
+    ],
     "comparison_with_baseline": ""
-} 
+}
