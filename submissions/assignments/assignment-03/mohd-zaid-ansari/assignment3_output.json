@@ -1,0 +1,190 @@
+[
+    {
+        "question_id": "HQ1",
+        "user_query": "What should a board member ask about risks that could prevent Tesla from meeting production, delivery, or scaling expectations?",
+        "retrieved_hypothetical_questions": [
+            {
+                "hypothetical_question": "question: What are the key risk factors that could impact Tesla's business, financial condition, and future results?",
+                "parent_chunk_id": "text_2275"
+            },
+            {
+                "hypothetical_question": "question: What are the key risk factors that could impact Tesla's business, financial condition, and future results?",
+                "parent_chunk_id": "text_2266"
+            },
+            {
+                "hypothetical_question": "question: What are the key risk factors that could impact Tesla's business, financial condition, and future results?",
+                "parent_chunk_id": "text_2270"
+            },
+            {
+                "hypothetical_question": "question: What are the key risk factors that could impact Tesla's business, financial condition, and future results?",
+                "parent_chunk_id": "text_2273"
+            },
+            {
+                "hypothetical_question": "question: What are the key risk factors that could impact Tesla's business, financial condition, and future results?",
+                "parent_chunk_id": "text_2271"
+            }
+        ],
+        "parent_chunks_used": [
+            {
+                "chunk_id": "text_2275",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf"
+            },
+            {
+                "chunk_id": "text_2266",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf"
+            },
+            {
+                "chunk_id": "text_2270",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf"
+            },
+            {
+                "chunk_id": "text_2273",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf"
+            },
+            {
+                "chunk_id": "text_2271",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf"
+            }
+        ],
+        "final_answer": "We may be unable to meet our projected construction timelines, costs and production ramps at new factories, or we may experience difficulties in generating and maintaining demand for products manufactured there. Our ability to increase production of our vehicles on a sustained basis, make them affordable globally by accessing local supply chains and workforces and streamline delivery logistics is dependent on the construction and ramp of our current and future factories. The construction of and commencement and ramp of production at these factories are subject to a number of uncertainties inherent in all new manufacturing operations, including ongoing compliance with regulatory requirements, procurement and maintenance of construction, environmental and operational licenses and approvals for additional expansion, supply chain constraints, hiring, training and retention of qualified employees and the pace of bringing production equipment and processes online with the capability to manufacture high-quality units at scale."
+    },
+    {
+        "question_id": "HQ2",
+        "user_query": "How should an analyst investigate the relationship between product defects, warranty or service obligations, customer trust, and brand risk?",
+        "retrieved_hypothetical_questions": [
+            {
+                "hypothetical_question": "question: How does the company's service and warranty offerings impact its customer satisfaction and loyalty?",
+                "parent_chunk_id": "text_3004"
+            },
+            {
+                "hypothetical_question": "How do design or manufacturing defects impact the company's ability to develop, market, and sell its products and services?",
+                "parent_chunk_id": "text_2284"
+            },
+            {
+                "hypothetical_question": "What are the potential risks associated with defects in the company's products or features?",
+                "parent_chunk_id": "text_2284"
+            },
+            {
+                "hypothetical_question": "question: What are the potential risks associated with the company's products and services failing to perform as expected?",
+                "parent_chunk_id": "text_228"
+            },
+            {
+                "hypothetical_question": "question: What are the potential risks associated with the company's products and services failing to perform as expected?",
+                "parent_chunk_id": "text_227"
+            }
+        ],
+        "parent_chunks_used": [
+            {
+                "chunk_id": "text_3004",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf"
+            },
+            {
+                "chunk_id": "text_2284",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf"
+            },
+            {
+                "chunk_id": "text_228",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf"
+            },
+            {
+                "chunk_id": "text_227",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf"
+            }
+        ],
+        "final_answer": "Our business may suffer if our products or features contain defects, fail to perform as expected or take longer than expected to become fully functional. If our products contain design or manufacturing defects that cause them not to perform as expected or that require repair, or certain features of our vehicles such as new Autopilot or FSD features take longer than expected to become enabled, are legally restricted or become subject to onerous regulation, our ability to develop, market and sell our products and services may be harmed, and we may experience delivery delays, product recalls, product liability, breach of warranty and consumer protection claims and significant warranty and other expenses."
+    },
+    {
+        "question_id": "HQ3",
+        "user_query": "What evidence helps determine whether future cash flow depends more on capital expenditure discipline, working capital, or operating income?",
+        "retrieved_hypothetical_questions": [
+            {
+                "hypothetical_question": "How does the company's investing cash flow compare to its capital expenditures?",
+                "parent_chunk_id": "text_2402"
+            },
+            {
+                "hypothetical_question": "How does the company's cash flows from operating activities impact its liquidity and capital structure?",
+                "parent_chunk_id": "text_2375"
+            },
+            {
+                "hypothetical_question": "How does the company's cash flows from operating activities impact its liquidity and capital structure?",
+                "parent_chunk_id": "text_2374"
+            },
+            {
+                "hypothetical_question": "How does the company's operating cash flow compare to its operating income?",
+                "parent_chunk_id": "text_2401"
+            },
+            {
+                "hypothetical_question": "What are the potential consequences of the cash flow and capital expenditure trends being impacted by changes in market conditions?",
+                "parent_chunk_id": "text_981"
+            }
+        ],
+        "parent_chunks_used": [
+            {
+                "chunk_id": "text_2402",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf"
+            },
+            {
+                "chunk_id": "text_2375",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf"
+            },
+            {
+                "chunk_id": "text_2374",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf"
+            },
+            {
+                "chunk_id": "text_2401",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf"
+            },
+            {
+                "chunk_id": "text_981",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf"
+            }
+        ],
+        "final_answer": "The increase in net operating assets and liabilities was mainly driven by a larger increase of inventory in the year ended December 31, 2022 as compared to the year ended December 31, 2021, partially offset by a larger increase of accounts payable and accrued liabilities, to support the ramp up in production at our factories and larger increases in other non-current assets and prepaid expenses and other current assets."
+    },
+    {
+        "question_id": "HQ4",
+        "user_query": "Which disclosures help evaluate technology, cybersecurity, data, or AI operational risk even if the user does not explicitly say cybersecurity?",
+        "retrieved_hypothetical_questions": [
+            {
+                "hypothetical_question": "What are the potential consequences of emerging and changing requirements for data protection and cybersecurity?",
+                "parent_chunk_id": "text_3073"
+            },
+            {
+                "hypothetical_question": "What are the potential consequences of security incidents or data breaches?",
+                "parent_chunk_id": "text_2296"
+            },
+            {
+                "hypothetical_question": "What are the potential consequences of security incidents or data breaches?",
+                "parent_chunk_id": "text_2295"
+            },
+            {
+                "hypothetical_question": "What are the potential risks associated with the company's information technology systems and data?",
+                "parent_chunk_id": "text_2296"
+            },
+            {
+                "hypothetical_question": "What are the potential risks associated with the company's information technology systems and data?",
+                "parent_chunk_id": "text_2294"
+            }
+        ],
+        "parent_chunks_used": [
+            {
+                "chunk_id": "text_3073",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf"
+            },
+            {
+                "chunk_id": "text_2296",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf"
+            },
+            {
+                "chunk_id": "text_2295",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf"
+            },
+            {
+                "chunk_id": "text_2294",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf"
+            }
+        ],
+        "final_answer": "We continue to expand our information technology systems as our operations grow, such as product data management, procurement, inventory management, production planning and execution, sales, service and logistics, dealer management, financial, tax and regulatory compliance systems. This includes the implementation of new internally developed systems and the deployment of such systems in the U.S. and abroad. While, we maintain information technology measures designed to protect us against intellectual property theft, data breaches, sabotage and other external or internal cyber-attacks or misappropriation, our systems and those of our service providers are potentially vulnerable to malware, ransomware, viruses, denial-of-service attacks, phishing attacks, social engineering, computer hacking, unauthorized access, exploitation of bugs, defects and vulnerabilities, breakdowns, damage, interruptions, system malfunctions, power outages, terrorism, acts of vandalism, security breaches, security incidents, inadvertent or intentional actions by employees or other third parties, and other cyber-attacks."
+    }
+]
