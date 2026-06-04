@@ -6,7 +6,66 @@
 
 ## Description
 
-This project improves document retrieval in a RAG system using **Query Expansion**. Instead of retrieving documents using only the user's original query, an LLM generates 3–4 semantically similar query variations. Each query is used for retrieval, and the final context is created from the **unique set of retrieved documents**. This helps improve retrieval recall and provides richer context for answer generation.
+This project enhances Retrieval-Augmented Generation (RAG) performance using **Query Expansion** and **Retrieval Fusion** techniques.
+
+Instead of retrieving documents using only the user's original query, the system generates multiple semantically diverse query variants using Groq LLM. The expanded queries are designed from different perspectives such as:
+
+* Financial analyst phrasing
+* Risk-factor phrasing
+* Operational/business phrasing
+* Strategic phrasing
+* Financial performance phrasing
+* Synonym/subtopic phrasing
+
+Each expanded query performs independent retrieval against a vector database.
+
+Retrieved chunks are then merged and ranked using **Reciprocal Rank Fusion (RRF)** to improve retrieval recall while maintaining relevance.
+
+The system compares:
+
+1. Baseline retrieval using the original query.
+2. Query-expanded retrieval using multiple generated queries.
+
+The final answer is generated using the fused retrieval context and includes traceable citations.
+
+---
+
+## Features
+
+### Baseline Retrieval
+
+* Retrieves relevant document chunks using only the original user query.
+* Used as a benchmark for comparison.
+
+### Query Expansion
+
+* Generates 4–6 semantically diverse query variants.
+* Preserves the original intent of the user's question.
+* Improves retrieval coverage across different document sections.
+
+### Retrieval Fusion
+
+* Retrieves documents for each expanded query.
+* Combines retrieval results using Reciprocal Rank Fusion (RRF).
+* Removes duplicate chunks.
+* Tracks which expanded query retrieved each chunk.
+
+### Answer Generation
+
+* Uses the fused retrieval context.
+* Produces evidence-based answers.
+* Includes citations linked to retrieved chunks.
+
+### Benchmark Evaluation
+
+The system evaluates retrieval performance using the following benchmark questions:
+
+* Q1: Growth constraints (supply risk vs execution risk)
+* Q2: AI roadmap and operational priorities
+* Q3: Supplier and concentration risk
+* Q4: Automotive vs Energy business strategy
+
+---
 
 ## How to Run
 
@@ -24,16 +83,10 @@ uv venv
 
 ### 3. Activate Environment
 
-**Windows**
+#### Windows
 
 ```bash
 .venv\Scripts\activate
-```
-
-**Linux/macOS**
-
-```bash
-source .venv/bin/activate
 ```
 
 ### 4. Install Dependencies
@@ -44,53 +97,141 @@ uv pip install -r requirements.txt
 
 ### 5. Configure API Key
 
-Create a `.env` file and add:
+Create a `.env` file:
 
 ```env
 GROQ_API_KEY=your_api_key_here
 ```
-
-### 6. Run the Application
-
-```bash
-python main.py
-```
+---
 
 ## Libraries / Packages Required
 
 * Python
 * Groq
 * python-dotenv
+* LangChain
+* ChromaDB
+* Sentence Transformers / Embedding Model
 * UV
+
+---
 
 ## Assumptions Made
 
 * A valid Groq API key is available.
-* The retriever returns relevant document chunks for each expanded query.
-* Duplicate documents are removed before generating the final context.
-* The LLM generates 3–4 meaningful query variations while preserving the user's intent.
+* Vector embeddings accurately represent document semantics.
+* The retriever returns relevant chunks for both baseline and expanded queries.
+* Query expansion preserves the original user intent.
+* Reciprocal Rank Fusion improves retrieval diversity and recall.
+* Duplicate chunks are removed before answer generation.
 
-## Output Explanation
+---
 
-1. User enters a query.
-2. The Groq model generates multiple query expansions.
-3. Documents are retrieved for each expanded query.
-4. Retrieved documents are merged and deduplicated.
-5. A final context is generated from the unique documents.
-6. The LLM produces the final answer using the aggregated context.
-
-### Example Flow
+## Retrieval Workflow
 
 ```text
 User Query
     ↓
-Query Expansion (3–4 Queries)
+Baseline Retrieval
     ↓
-Document Retrieval
+Generate 4–6 Expanded Queries
     ↓
-Deduplication
+Retrieve Documents for Each Query
     ↓
-Final Context
+Reciprocal Rank Fusion (RRF)
+    ↓
+Deduplicate Chunks
+    ↓
+Create Final Context
     ↓
 Answer Generation
+    ↓
+Structured JSON Output
 ```
+
+---
+
+## Output Schema
+
+```json
+{
+  "question_id": "Q1",
+  "original_query": "...",
+  "expanded_queries": [
+    "...",
+    "..."
+  ],
+  "baseline_top_chunks": [
+    {
+      "chunk_id": "...",
+      "section": "...",
+      "score": 0.81
+    }
+  ],
+  "expanded_top_chunks": [
+    {
+      "chunk_id": "...",
+      "section": "...",
+      "score": 0.88,
+      "retrieved_by": [
+        "expanded query"
+      ]
+    }
+  ],
+  "final_answer": "...",
+  "citations": [
+    {
+      "chunk_id": "...",
+      "source_doc": "...",
+      "section": "..."
+    }
+  ],
+  "retrieval_improvement_analysis": "..."
+}
+```
+
+---
+
+## Evaluation Questions
+
+The following benchmark questions were used:
+
+### Q1
+
+Does Tesla's growth story appear more constrained by external supply risk or internal execution and cost structure?
+
+### Q2
+
+Explain how Tesla's AI and product roadmap is reflected in spending, operational priorities, and risk disclosures.
+
+### Q3
+
+Assess Tesla's exposure to concentration risk across factories, suppliers, raw materials, and geographies.
+
+### Q4
+
+Compare the strategic importance of automotive operations and energy generation/storage using evidence from the 10-K.
+
+---
+
+## Retrieval Improvement Analysis
+
+The project compares baseline retrieval against query-expanded retrieval and evaluates:
+
+* Which benchmark questions improved most after expansion.
+* Which query variants introduced irrelevant retrieval.
+* Recall versus precision trade-offs.
+* Strategies for controlling noisy query expansions.
+* Potential metadata filters for year-specific or section-specific analysis.
+
+---
+
+## Output Files
+
+Results are stored as:
+
+```text
+assignment2_results.json
+```
+
+containing benchmark outputs, retrieved chunks, citations, and retrieval analysis for all evaluation questions.

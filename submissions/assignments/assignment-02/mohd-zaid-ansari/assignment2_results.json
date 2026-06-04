@@ -1,0 +1,538 @@
+[
+    {
+        "question_id": "Q1",
+        "original_query": "Does Tesla's growth story appear more constrained by external supply risk or internal execution and cost structure? Use evidence across Risk Factors and MD&A.",
+        "expanded_queries": [
+            "What are the key external supply chain risks that could impact Tesla's growth prospects as disclosed in the Risk Factors section of the 10-K filing?",
+            "",
+            "How does Tesla's internal cost structure and execution compare to its peers in terms of scalability and efficiency, as discussed in the MD&A section of the 10-K filing?",
+            "",
+            "What are the primary operational risks that could hinder Tesla's ability to meet growing demand, as outlined in the Risk Factors section of the 10-K filing?",
+            "",
+            "How does Tesla's management discuss the trade-off between investing in growth and maintaining profitability, and what are the implications for the company's cost structure and execution, as presented in the MD&A section of the 10-K filing?",
+            "",
+            "What are the key performance indicators (KPIs) used by Tesla to measure its internal execution and cost structure, and how do these metrics compare to industry benchmarks, as discussed in the MD&A section of the 10-K filing?",
+            "",
+            "What are the external factors that could impact Tesla's ability to secure necessary supplies and materials, and how does the company mitigate these risks, as disclosed in the Risk Factors section of the 10-K filing?",
+            "",
+            "How does Tesla's cost structure and execution impact its ability to invest in research and development and maintain a competitive edge, as discussed in the MD&A section of the 10-K filing?",
+            "",
+            "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+        ],
+        "baseline_top_chunks": [
+            {
+                "chunk_id": "baseline_0",
+                "content": "developing\tbusiness\trelationships\twith\tus\tif\tthey\tare\tnot\tconvinced\tthat\tour\tbusiness\twill\tsucceed.\tAccordingly,\tin\torder\tto\tbuild\tand\tmaintain\tour\nbusiness,\twe\tmust\tmaintain\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tratings\tagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\nbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tparticularly\tcomplicated\tby\tcertain\tfactors\tincluding\tthose\tthat\tare\tlargely\toutside\tof\tour\ncontrol,\tsuch\tas\tour\tlimited\toperating\thistory,\tcustomer\tunfamiliarity\twith\tour\tproducts,\tany\tdelays\tin\tscaling\tmanufacturing,\tdelivery\tand\tservice\noperations\tto\tmeet\tdemand,\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices,\tand\tour\tquarterly\nproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations.\nIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\nattention\tincludes\tfrequent\tcriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\nmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tcould\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\nfunds\tif\tneeded.\n22",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "score": 1.0
+            },
+            {
+                "chunk_id": "baseline_1",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2022\nINDEX\n\t\n\t\t\n\t\t\n\t\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n29\nItem\t2.\n\t\nProperties\n\t\n29\nItem\t3.\n\t\nLegal\tProceedings\n\t\n29\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n29\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\n\t\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n30\nItem\t6.\n\t\n[Reserved]\n\t\n31\nItem\t7.\n\t\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n32\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n\t\n44\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n45\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n90\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n90\nItem\t9B.\n\t\nOther\tInformation\n\t\n90\nItem\t9C.\n\t\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n\t\n90\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n91\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n91\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "score": 0.5
+            },
+            {
+                "chunk_id": "baseline_2",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2023\nINDEX\n\t\n\t\nPage\nPART\tI.\n\t\n\t\nItem\t1.\nBusiness\n4\nItem\t1A.\nRisk\tFactors\n14\nItem\t1B.\nUnresolved\tStaff\tComments\n28\nItem\t1C.\nCybersecurity\n29\nItem\t2.\nProperties\n30\nItem\t3.\nLegal\tProceedings\n30\nItem\t4.\nMine\tSafety\tDisclosures\n30\n\t\nPART\tII.\n\t\nItem\t5.\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n31\nItem\t6.\n[Reserved]\n32\nItem\t7.\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n33\nItem\t7A.\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n45\nItem\t8.\nFinancial\tStatements\tand\tSupplementary\tData\n46\nItem\t9.\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n93\nItem\t9A.\nControls\tand\tProcedures\n93\nItem\t9B.\nOther\tInformation\n94\nItem\t9C.\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n94\n\t\nPART\tIII.\n\t\nItem\t10.\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n95\nItem\t11.\nExecutive\tCompensation\n95\nItem\t12.\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n95\nItem\t13.\nCertain\tRelationships\tand\tRelated\tTransactions,\tand\tDirector\tIndependence\n95\nItem\t14.\nPrincipal\tAccountant\tFees\tand\tServices\n95\n\t\nPART\tIV.\n\t\nItem\t15.\nExhibits\tand\tFinancial\tStatement\tSchedules\n96\nItem\t16.\nSummary\n111\n\t\nSignatures",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "score": 0.3333333333333333
+            },
+            {
+                "chunk_id": "baseline_3",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2020\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n27\nItem\t2.\n\t\nProperties\n\t\n27\nItem\t3.\n\t\nLegal\tProceedings\n\t\n28\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n28\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n29\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n30\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n31\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n49\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n50\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n107\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n107\nItem\t9B.\n\t\nOther\tInformation\n\t\n107\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n108\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n108\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n108\nItem\t13.",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "score": 0.25
+            },
+            {
+                "chunk_id": "baseline_4",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2019\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n1\nItem\t1A.\n\t\nRisk\tFactors\n\t\n15\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n34\nItem\t2.\n\t\nProperties\n\t\n35\nItem\t3.\n\t\nLegal\tProceedings\n\t\n35\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n35\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n36\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n38\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n39\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n60\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n61\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n127\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n127\nItem\t9B.\n\t\nOther\tInformation\n\t\n128\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n129\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n129\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n129\nItem\t13.",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "score": 0.2
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "chunk_id": "expanded_0",
+                "content": "claims\tfor\tvehicle\texposure,\tmeaning\tthat\tany\tproduct\tliability\tclaims\twill\tlikely\thave\tto\tbe\tpaid\tfrom\tcompany\tfunds\tand\tnot\tby\tinsurance.\nWe\twill\tneed\tto\tmaintain\tpublic\tcredibility\tand\tconfidence\tin\tour\tlong-term\tbusiness\tprospects\tin\torder\tto\tsucceed.\nIn\torder\tto\tmaintain\tand\tgrow\tour\tbusiness,\twe\tmust\tmaintain\tcredibility\tand\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tinvestors,\tratings\nagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\tbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tchallenging\tdue\tto\tour\tlimited\noperating\thistory\trelative\tto\testablished\tcompetitors;\tcustomer\tunfamiliarity\twith\tour\tproducts;\tany\tdelays\twe\tmay\texperience\tin\tscaling\tmanufacturing,\ndelivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices;\tour\nquarterly\tproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations;\tand\tother\tfactors\tincluding\tthose\tover\twhich\twe\thave\tno\tcontrol.\tIn\tparticular,\nTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\tattention\tincludes\tfrequent\ncriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\tmanagement\tteam.\tAny\tsuch\tnegative\nperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tmay\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\tfunds\tif\tneeded.\n18",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "score": 1.0,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            },
+            {
+                "chunk_id": "expanded_1",
+                "content": "manufacturing,\tdelivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\n\t\nproducts\tand\tservices;\tour\tquarterly\tproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations;\tand\tother\tfactors\tincluding\tthose\tover\n\t\nwhich\twe\thave\tno\tcontrol.\tIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tand\tstatements\tand\tactions\tof\tTesla\tand\tits\tmanagement\tare\n\t\nwell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\tattention\tcan\tinclude\tcriticism,\twhich\tmay\tbe\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\n\t\nthe\tsufficiency\tor\tstability\tof\tour\tmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tmay\tharm\tour\tbusiness\tand\tmake\tit\n\t\nmore\tdifficult\tto\traise\tadditional\tfunds\tif\tneeded.\nWe\tmay\tbe\tunable\tto\teffectively\tgrow,\tor\tmanage\tthe\tcompliance,\tresidual\tvalue,\tfinancing\tand\tcredit\trisks\trelated\tto,\tour\tvarious\n\t\nfinancing\tprograms.\nWe\toffer\tfinancing\tarrangements\tfor\tour\tvehicles\tin\tNorth\tAmerica,\tEurope\tand\tAsia\tprimarily\tourselves\tand\tthrough\tvarious\tfinancial\n\t\ninstitutions.\tWe\talso\tcurrently\toffer\tvehicle\tfinancing\tarrangements\tdirectly\tthrough\tour\tlocal\tsubsidiaries\tin\tcertain\tmarkets.\tDepending\ton\tthe\n\t\ncountry,\tsuch\tarrangements\tare\tavailable\tfor\tspecified\tmodels\tand\tmay\tinclude\toperating\tleases\tdirectly\twith\tus\tunder\twhich\twe\ttypically\treceive\tonly\ta\n\t\nvery\tsmall\tportion\tof\tthe\ttotal\tvehicle\tpurchase\tprice\tat\tthe\ttime\tof\tlease,\tfollowed\tby\ta\tstream\tof\tpayments\tover\tthe\tterm\tof\tthe\tlease.\tWe\thave\talso",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "score": 0.5,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            },
+            {
+                "chunk_id": "expanded_2",
+                "content": "developing\tbusiness\trelationships\twith\tus\tif\tthey\tare\tnot\tconvinced\tthat\tour\tbusiness\twill\tsucceed.\tAccordingly,\tin\torder\tto\tbuild\tand\tmaintain\tour\nbusiness,\twe\tmust\tmaintain\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tratings\tagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\nbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tparticularly\tcomplicated\tby\tcertain\tfactors\tincluding\tthose\tthat\tare\tlargely\toutside\tof\tour\ncontrol,\tsuch\tas\tour\tlimited\toperating\thistory,\tcustomer\tunfamiliarity\twith\tour\tproducts,\tany\tdelays\tin\tscaling\tmanufacturing,\tdelivery\tand\tservice\noperations\tto\tmeet\tdemand,\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices,\tand\tour\tquarterly\nproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations.\nIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\nattention\tincludes\tfrequent\tcriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\nmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tcould\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\nfunds\tif\tneeded.\n22",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "score": 0.3333333333333333,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            },
+            {
+                "chunk_id": "expanded_3",
+                "content": "As\ta\tmanufacturing\tcompany,\twe\tmust\tmanage\tthe\trisk\tof\tproduct\trecalls\twith\trespect\tto\tour\tproducts.\tRecalls\tfor\tour\tvehicles\thave\tresulted\tfrom\nvarious\thardware\tand\tsoftware-related\tsafety\tconcerns\tor\tnon-compliance\tdeterminations.\tIn\taddition\tto\trecalls\tinitiated\tby\tus\tfor\tvarious\tcauses,\ttesting\nof\tor\tinvestigations\tinto\tour\tproducts\tby\tgovernment\tregulators\tor\tindustry\tgroups\tmay\tcompel\tus\tto\tinitiate\tproduct\trecalls\tor\tmay\tresult\tin\tnegative\npublic\tperceptions\tabout\tthe\tsafety\tof\tour\tproducts,\teven\tif\twe\tdisagree\twith\tthe\tdefect\tdetermination\tor\thave\tdata\tthat\tcontradicts\tit.\tIn\tthe\tfuture,\twe\nmay\tvoluntarily\tor\tinvoluntarily\tinitiate\trecalls\tif\tany\tof\tour\tproducts\tare\tdetermined\tby\tus\tor\ta\tregulator\tto\tcontain\ta\tsafety\tdefect\tor\tbe\tnoncompliant\nwith\tapplicable\tlaws\tand\tregulations,\tsuch\tas\tU.S.\tFederal\tMotor\tVehicle\tSafety\tStandards.\tSuch\trecalls,\twhether\tvoluntary\tor\tinvoluntary\tor\tcaused\tby\nsystems\tor\tcomponents\tengineered\tor\tmanufactured\tby\tus\tor\tour\tsuppliers,\tcould\tresult\tin\tsignificant\texpense,\tsupply\tchain\tcomplications\tand\tservice\nburdens,\tand\tmay\tharm\tour\tbrand,\tbusiness,\tprospects,\tfinancial\tcondition\tand\toperating\tresults.\nOur\tcurrent\tand\tfuture\twarranty\treserves\tmay\tbe\tinsufficient\tto\tcover\tfuture\twarranty\tclaims.\nWe\tprovide\ta\tmanufacturer’s\twarranty\ton\tall\tnew\tand\tused\tTesla\tvehicles\twe\tsell\tdirectly\tto\tcustomers.\tWe\talso\tprovide\tcertain\twarranties\twith\nrespect\tto\tthe\tenergy\tgeneration\tand\tstorage\tsystems\twe\tsell,\tincluding\ton\ttheir\tinstallation\tand\tmaintenance.\tFor\tcomponents\tnot\tmanufactured\tby\tus,\nwe\tgenerally\tpass\tthrough\tto\tour\tcustomers\tthe\tapplicable\tmanufacturers’\twarranties,\tbut\tmay\tretain\tsome\twarranty\tresponsibilities\tfor\tsome\tor\tall\tof\tthe",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "score": 0.25,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            },
+            {
+                "chunk_id": "expanded_4",
+                "content": ".\n“\nHazardous\tMaterials\n”\tshall\tmean\tany\tchemicals,\tmaterials,\twastes,\tpollutants,\tcontaminants,\tor\tsubstances\tin\tany\tform\tthat\tis\nprohibited,\tlimited\tor\tregulated\tpursuant\tto\tany\tEnvironmental\tLaw\tby\tvirtue\tof\ttheir\ttoxic\tor\totherwise\tdeleterious\tcharacteristics,\nincluding\tany\tpetroleum\tor\tpetroleum\tproducts,\tradioactive\tmaterials,\tasbestos\tin\tany\tform\tthat\tis\tor\tcould\tbecome\tfriable,\turea\nformaldehyde\tfoam\tinsulation,\tdielectric\tfluid\tcontaining\tlevels\tof\tpolychlorinated\tbiphenyls,\tand\tradon\tgas.\n“\nHost\tCustomer\tAgreements\n”\tshall\tmean\tthe\tEnergy\tStorage\tAgreements\tand\tCustomer\tLease\tAgreements.\n“\nImmaterial\tSubsidiary\n”\tshall\tmean,\tas\tof\tany\tdate\tof\tdetermination,\tany\tWholly-Owned\tDomestic\tSubsidiary\tof\tthe\tCompany\nor\n,\n\t\nany\tWholly-Owned\tDutch\tSubsidiary\tof\tTesla\tB.V.\t\n(in\teither\nor\tany\tWholly\tOwned\tUK\tSubsidiary\tof\tTesla\tUK\t(in\teach\n\tcase,\tother\tthan\ta\nBorrower)\t(x)\tthat\thas\tnot\tguaranteed\tany\tother\tIndebtedness\tof\tany\tBorrower\tother\tthan\ta\tguarantee\tby\tany\tSubsidiary\tthat\twas\tcreated\nto\tsatisfy\tstate\tdealer\trequirements,\t(y)\twhose\tconsolidated\ttotal\tassets\t(as\tset\tforth\tin\tthe\tmost\trecent\tconsolidated\tbalance\tsheet\tof\tthe\nCompany\tand\tits\tConsolidated\tSubsidiaries\tdelivered\tto\tthe\tLenders\tpursuant\tto\tthis\tAgreement\tand\tcomputed\tin\taccordance\twith\tGAAP,\nbut\texcluding\tintercompany\tassets),\tdo\tnot\tconstitute\tmore\tthan\t5.0%\tof\tthe\tConsolidated\tTotal\tAssets\tand\t(z)\twhose\tconsolidated\ttotal",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "score": 0.2,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            }
+        ],
+        "final_answer": "Tesla’s growth narrative is portrayed as being far more limited by **internal execution and cost‑structure issues** than by pure external supply‑chain constraints.\n\n**Internal execution risks**\n\n* Tesla repeatedly stresses that its ability to scale manufacturing, delivery and service operations is a key uncertainty.  The company notes that “any delays we may experience in scaling manufacturing, delivery and service operations to meet demand” could hurt its quarterly production and sales performance and erode confidence among investors, analysts and suppliers【expanded_0】.  \n* Its limited operating history and the unfamiliarity of customers with its products are highlighted as factors that make it harder to maintain credibility and to raise additional capital【expanded_2】.  \n* Product‑recall risk, warranty‑reserve adequacy and the associated “significant expense, supply‑chain complications and service burdens” are described as internal cost pressures that could damage the brand and financial condition【expanded_3】.  \n* Financing and credit‑risk management are also framed as internal challenges – “we may be unable to effectively grow, or manage the compliance, residual‑value, financing and credit risks related to our various financing programs”【expanded_1】.\n\n**External supply‑chain risk**\n\n* The only external‑supply references are to hazardous‑material regulations and the possibility that a recall “may result in supply‑chain complications”【expanded_4】【expanded_3】.  \n* While these are real concerns, they are presented as secondary consequences of internal product‑defect or compliance issues rather than as primary constraints on growth.\n\n**Conclusion**\n\nAcross the risk‑factor disclosures and the MD&A‑style commentary, Tesla’s growth story is framed primarily around its own ability to execute manufacturing scale‑up, manage cost‑intensive warranty and recall exposures, and sustain financing capacity.  External supply‑chain risks are mentioned, but they appear as downstream effects of internal execution problems rather than the dominant growth limiter.",
+        "citations": [
+            {
+                "chunk_id": "expanded_0",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2025
+            },
+            {
+                "chunk_id": "expanded_1",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "year": 2025
+            },
+            {
+                "chunk_id": "expanded_2",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "year": 2025
+            },
+            {
+                "chunk_id": "expanded_3",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "year": 2025
+            },
+            {
+                "chunk_id": "expanded_4",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2025
+            }
+        ],
+        "retrieval_improvement_analysis": "Expanded retrieval improved semantic coverage across financial, operational, and risk-focused terminology."
+    },
+    {
+        "question_id": "Q2",
+        "original_query": "Explain how Tesla's AI and product roadmap is reflected in spending, operational priorities, and risk disclosures. Avoid generic AI claims.",
+        "expanded_queries": [
+            "What are the key external supply chain risks that could impact Tesla's growth prospects as disclosed in the Risk Factors section of the 10-K filing?",
+            "",
+            "How does Tesla's internal cost structure and execution compare to its peers in terms of scalability and efficiency, as discussed in the MD&A section of the 10-K filing?",
+            "",
+            "What are the primary operational risks that could hinder Tesla's ability to meet growing demand, as outlined in the Risk Factors section of the 10-K filing?",
+            "",
+            "How does Tesla's management discuss the trade-off between investing in growth and maintaining profitability, and what are the implications for the company's cost structure and execution, as presented in the MD&A section of the 10-K filing?",
+            "",
+            "What are the key performance indicators (KPIs) used by Tesla to measure its internal execution and cost structure, and how do these metrics compare to industry benchmarks, as discussed in the MD&A section of the 10-K filing?",
+            "",
+            "What are the external factors that could impact Tesla's ability to secure necessary supplies and materials, and how does the company mitigate these risks, as disclosed in the Risk Factors section of the 10-K filing?",
+            "",
+            "How does Tesla's cost structure and execution impact its ability to invest in research and development and maintain a competitive edge, as discussed in the MD&A section of the 10-K filing?",
+            "",
+            "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+        ],
+        "baseline_top_chunks": [
+            {
+                "chunk_id": "baseline_0",
+                "content": "developing\tbusiness\trelationships\twith\tus\tif\tthey\tare\tnot\tconvinced\tthat\tour\tbusiness\twill\tsucceed.\tAccordingly,\tin\torder\tto\tbuild\tand\tmaintain\tour\nbusiness,\twe\tmust\tmaintain\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tratings\tagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\nbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tparticularly\tcomplicated\tby\tcertain\tfactors\tincluding\tthose\tthat\tare\tlargely\toutside\tof\tour\ncontrol,\tsuch\tas\tour\tlimited\toperating\thistory,\tcustomer\tunfamiliarity\twith\tour\tproducts,\tany\tdelays\tin\tscaling\tmanufacturing,\tdelivery\tand\tservice\noperations\tto\tmeet\tdemand,\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices,\tand\tour\tquarterly\nproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations.\nIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\nattention\tincludes\tfrequent\tcriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\nmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tcould\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\nfunds\tif\tneeded.\n22",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "score": 1.0
+            },
+            {
+                "chunk_id": "baseline_1",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2022\nINDEX\n\t\n\t\t\n\t\t\n\t\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n29\nItem\t2.\n\t\nProperties\n\t\n29\nItem\t3.\n\t\nLegal\tProceedings\n\t\n29\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n29\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\n\t\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n30\nItem\t6.\n\t\n[Reserved]\n\t\n31\nItem\t7.\n\t\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n32\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n\t\n44\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n45\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n90\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n90\nItem\t9B.\n\t\nOther\tInformation\n\t\n90\nItem\t9C.\n\t\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n\t\n90\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n91\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n91\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "score": 0.5
+            },
+            {
+                "chunk_id": "baseline_2",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2023\nINDEX\n\t\n\t\nPage\nPART\tI.\n\t\n\t\nItem\t1.\nBusiness\n4\nItem\t1A.\nRisk\tFactors\n14\nItem\t1B.\nUnresolved\tStaff\tComments\n28\nItem\t1C.\nCybersecurity\n29\nItem\t2.\nProperties\n30\nItem\t3.\nLegal\tProceedings\n30\nItem\t4.\nMine\tSafety\tDisclosures\n30\n\t\nPART\tII.\n\t\nItem\t5.\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n31\nItem\t6.\n[Reserved]\n32\nItem\t7.\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n33\nItem\t7A.\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n45\nItem\t8.\nFinancial\tStatements\tand\tSupplementary\tData\n46\nItem\t9.\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n93\nItem\t9A.\nControls\tand\tProcedures\n93\nItem\t9B.\nOther\tInformation\n94\nItem\t9C.\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n94\n\t\nPART\tIII.\n\t\nItem\t10.\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n95\nItem\t11.\nExecutive\tCompensation\n95\nItem\t12.\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n95\nItem\t13.\nCertain\tRelationships\tand\tRelated\tTransactions,\tand\tDirector\tIndependence\n95\nItem\t14.\nPrincipal\tAccountant\tFees\tand\tServices\n95\n\t\nPART\tIV.\n\t\nItem\t15.\nExhibits\tand\tFinancial\tStatement\tSchedules\n96\nItem\t16.\nSummary\n111\n\t\nSignatures",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "score": 0.3333333333333333
+            },
+            {
+                "chunk_id": "baseline_3",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2020\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n27\nItem\t2.\n\t\nProperties\n\t\n27\nItem\t3.\n\t\nLegal\tProceedings\n\t\n28\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n28\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n29\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n30\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n31\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n49\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n50\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n107\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n107\nItem\t9B.\n\t\nOther\tInformation\n\t\n107\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n108\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n108\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n108\nItem\t13.",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "score": 0.25
+            },
+            {
+                "chunk_id": "baseline_4",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2019\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n1\nItem\t1A.\n\t\nRisk\tFactors\n\t\n15\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n34\nItem\t2.\n\t\nProperties\n\t\n35\nItem\t3.\n\t\nLegal\tProceedings\n\t\n35\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n35\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n36\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n38\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n39\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n60\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n61\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n127\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n127\nItem\t9B.\n\t\nOther\tInformation\n\t\n128\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n129\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n129\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n129\nItem\t13.",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "score": 0.2
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "chunk_id": "expanded_0",
+                "content": "claims\tfor\tvehicle\texposure,\tmeaning\tthat\tany\tproduct\tliability\tclaims\twill\tlikely\thave\tto\tbe\tpaid\tfrom\tcompany\tfunds\tand\tnot\tby\tinsurance.\nWe\twill\tneed\tto\tmaintain\tpublic\tcredibility\tand\tconfidence\tin\tour\tlong-term\tbusiness\tprospects\tin\torder\tto\tsucceed.\nIn\torder\tto\tmaintain\tand\tgrow\tour\tbusiness,\twe\tmust\tmaintain\tcredibility\tand\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tinvestors,\tratings\nagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\tbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tchallenging\tdue\tto\tour\tlimited\noperating\thistory\trelative\tto\testablished\tcompetitors;\tcustomer\tunfamiliarity\twith\tour\tproducts;\tany\tdelays\twe\tmay\texperience\tin\tscaling\tmanufacturing,\ndelivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices;\tour\nquarterly\tproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations;\tand\tother\tfactors\tincluding\tthose\tover\twhich\twe\thave\tno\tcontrol.\tIn\tparticular,\nTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\tattention\tincludes\tfrequent\ncriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\tmanagement\tteam.\tAny\tsuch\tnegative\nperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tmay\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\tfunds\tif\tneeded.\n18",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "score": 1.0,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            },
+            {
+                "chunk_id": "expanded_1",
+                "content": "manufacturing,\tdelivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\n\t\nproducts\tand\tservices;\tour\tquarterly\tproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations;\tand\tother\tfactors\tincluding\tthose\tover\n\t\nwhich\twe\thave\tno\tcontrol.\tIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tand\tstatements\tand\tactions\tof\tTesla\tand\tits\tmanagement\tare\n\t\nwell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\tattention\tcan\tinclude\tcriticism,\twhich\tmay\tbe\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\n\t\nthe\tsufficiency\tor\tstability\tof\tour\tmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tmay\tharm\tour\tbusiness\tand\tmake\tit\n\t\nmore\tdifficult\tto\traise\tadditional\tfunds\tif\tneeded.\nWe\tmay\tbe\tunable\tto\teffectively\tgrow,\tor\tmanage\tthe\tcompliance,\tresidual\tvalue,\tfinancing\tand\tcredit\trisks\trelated\tto,\tour\tvarious\n\t\nfinancing\tprograms.\nWe\toffer\tfinancing\tarrangements\tfor\tour\tvehicles\tin\tNorth\tAmerica,\tEurope\tand\tAsia\tprimarily\tourselves\tand\tthrough\tvarious\tfinancial\n\t\ninstitutions.\tWe\talso\tcurrently\toffer\tvehicle\tfinancing\tarrangements\tdirectly\tthrough\tour\tlocal\tsubsidiaries\tin\tcertain\tmarkets.\tDepending\ton\tthe\n\t\ncountry,\tsuch\tarrangements\tare\tavailable\tfor\tspecified\tmodels\tand\tmay\tinclude\toperating\tleases\tdirectly\twith\tus\tunder\twhich\twe\ttypically\treceive\tonly\ta\n\t\nvery\tsmall\tportion\tof\tthe\ttotal\tvehicle\tpurchase\tprice\tat\tthe\ttime\tof\tlease,\tfollowed\tby\ta\tstream\tof\tpayments\tover\tthe\tterm\tof\tthe\tlease.\tWe\thave\talso",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "score": 0.5,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            },
+            {
+                "chunk_id": "expanded_2",
+                "content": "developing\tbusiness\trelationships\twith\tus\tif\tthey\tare\tnot\tconvinced\tthat\tour\tbusiness\twill\tsucceed.\tAccordingly,\tin\torder\tto\tbuild\tand\tmaintain\tour\nbusiness,\twe\tmust\tmaintain\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tratings\tagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\nbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tparticularly\tcomplicated\tby\tcertain\tfactors\tincluding\tthose\tthat\tare\tlargely\toutside\tof\tour\ncontrol,\tsuch\tas\tour\tlimited\toperating\thistory,\tcustomer\tunfamiliarity\twith\tour\tproducts,\tany\tdelays\tin\tscaling\tmanufacturing,\tdelivery\tand\tservice\noperations\tto\tmeet\tdemand,\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices,\tand\tour\tquarterly\nproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations.\nIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\nattention\tincludes\tfrequent\tcriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\nmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tcould\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\nfunds\tif\tneeded.\n22",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "score": 0.3333333333333333,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            },
+            {
+                "chunk_id": "expanded_3",
+                "content": "As\ta\tmanufacturing\tcompany,\twe\tmust\tmanage\tthe\trisk\tof\tproduct\trecalls\twith\trespect\tto\tour\tproducts.\tRecalls\tfor\tour\tvehicles\thave\tresulted\tfrom\nvarious\thardware\tand\tsoftware-related\tsafety\tconcerns\tor\tnon-compliance\tdeterminations.\tIn\taddition\tto\trecalls\tinitiated\tby\tus\tfor\tvarious\tcauses,\ttesting\nof\tor\tinvestigations\tinto\tour\tproducts\tby\tgovernment\tregulators\tor\tindustry\tgroups\tmay\tcompel\tus\tto\tinitiate\tproduct\trecalls\tor\tmay\tresult\tin\tnegative\npublic\tperceptions\tabout\tthe\tsafety\tof\tour\tproducts,\teven\tif\twe\tdisagree\twith\tthe\tdefect\tdetermination\tor\thave\tdata\tthat\tcontradicts\tit.\tIn\tthe\tfuture,\twe\nmay\tvoluntarily\tor\tinvoluntarily\tinitiate\trecalls\tif\tany\tof\tour\tproducts\tare\tdetermined\tby\tus\tor\ta\tregulator\tto\tcontain\ta\tsafety\tdefect\tor\tbe\tnoncompliant\nwith\tapplicable\tlaws\tand\tregulations,\tsuch\tas\tU.S.\tFederal\tMotor\tVehicle\tSafety\tStandards.\tSuch\trecalls,\twhether\tvoluntary\tor\tinvoluntary\tor\tcaused\tby\nsystems\tor\tcomponents\tengineered\tor\tmanufactured\tby\tus\tor\tour\tsuppliers,\tcould\tresult\tin\tsignificant\texpense,\tsupply\tchain\tcomplications\tand\tservice\nburdens,\tand\tmay\tharm\tour\tbrand,\tbusiness,\tprospects,\tfinancial\tcondition\tand\toperating\tresults.\nOur\tcurrent\tand\tfuture\twarranty\treserves\tmay\tbe\tinsufficient\tto\tcover\tfuture\twarranty\tclaims.\nWe\tprovide\ta\tmanufacturer’s\twarranty\ton\tall\tnew\tand\tused\tTesla\tvehicles\twe\tsell\tdirectly\tto\tcustomers.\tWe\talso\tprovide\tcertain\twarranties\twith\nrespect\tto\tthe\tenergy\tgeneration\tand\tstorage\tsystems\twe\tsell,\tincluding\ton\ttheir\tinstallation\tand\tmaintenance.\tFor\tcomponents\tnot\tmanufactured\tby\tus,\nwe\tgenerally\tpass\tthrough\tto\tour\tcustomers\tthe\tapplicable\tmanufacturers’\twarranties,\tbut\tmay\tretain\tsome\twarranty\tresponsibilities\tfor\tsome\tor\tall\tof\tthe",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "score": 0.25,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            },
+            {
+                "chunk_id": "expanded_4",
+                "content": ".\n“\nHazardous\tMaterials\n”\tshall\tmean\tany\tchemicals,\tmaterials,\twastes,\tpollutants,\tcontaminants,\tor\tsubstances\tin\tany\tform\tthat\tis\nprohibited,\tlimited\tor\tregulated\tpursuant\tto\tany\tEnvironmental\tLaw\tby\tvirtue\tof\ttheir\ttoxic\tor\totherwise\tdeleterious\tcharacteristics,\nincluding\tany\tpetroleum\tor\tpetroleum\tproducts,\tradioactive\tmaterials,\tasbestos\tin\tany\tform\tthat\tis\tor\tcould\tbecome\tfriable,\turea\nformaldehyde\tfoam\tinsulation,\tdielectric\tfluid\tcontaining\tlevels\tof\tpolychlorinated\tbiphenyls,\tand\tradon\tgas.\n“\nHost\tCustomer\tAgreements\n”\tshall\tmean\tthe\tEnergy\tStorage\tAgreements\tand\tCustomer\tLease\tAgreements.\n“\nImmaterial\tSubsidiary\n”\tshall\tmean,\tas\tof\tany\tdate\tof\tdetermination,\tany\tWholly-Owned\tDomestic\tSubsidiary\tof\tthe\tCompany\nor\n,\n\t\nany\tWholly-Owned\tDutch\tSubsidiary\tof\tTesla\tB.V.\t\n(in\teither\nor\tany\tWholly\tOwned\tUK\tSubsidiary\tof\tTesla\tUK\t(in\teach\n\tcase,\tother\tthan\ta\nBorrower)\t(x)\tthat\thas\tnot\tguaranteed\tany\tother\tIndebtedness\tof\tany\tBorrower\tother\tthan\ta\tguarantee\tby\tany\tSubsidiary\tthat\twas\tcreated\nto\tsatisfy\tstate\tdealer\trequirements,\t(y)\twhose\tconsolidated\ttotal\tassets\t(as\tset\tforth\tin\tthe\tmost\trecent\tconsolidated\tbalance\tsheet\tof\tthe\nCompany\tand\tits\tConsolidated\tSubsidiaries\tdelivered\tto\tthe\tLenders\tpursuant\tto\tthis\tAgreement\tand\tcomputed\tin\taccordance\twith\tGAAP,\nbut\texcluding\tintercompany\tassets),\tdo\tnot\tconstitute\tmore\tthan\t5.0%\tof\tthe\tConsolidated\tTotal\tAssets\tand\t(z)\twhose\tconsolidated\ttotal",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "score": 0.2,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            }
+        ],
+        "final_answer": "Tesla’s growth narrative is portrayed as being far more limited by **internal execution and cost‑structure issues** than by pure external supply‑chain constraints.\n\n**Internal execution risks**\n\n* Tesla repeatedly stresses that its ability to scale manufacturing, delivery and service operations is a key uncertainty.  The company notes that “any delays we may experience in scaling manufacturing, delivery and service operations to meet demand” could hurt its quarterly production and sales performance and erode confidence among investors, analysts and suppliers【expanded_0】.  \n* Its limited operating history and the unfamiliarity of customers with its products are highlighted as factors that make it harder to maintain credibility and to raise additional capital【expanded_2】.  \n* Product‑recall risk, warranty‑reserve adequacy and the associated “significant expense, supply‑chain complications and service burdens” are described as internal cost pressures that could damage the brand and financial condition【expanded_3】.  \n* Financing and credit‑risk management are also framed as internal challenges – “we may be unable to effectively grow, or manage the compliance, residual‑value, financing and credit risks related to our various financing programs”【expanded_1】.\n\n**External supply‑chain risk**\n\n* The only external‑supply references are to hazardous‑material regulations and the possibility that a recall “may result in supply‑chain complications”【expanded_4】【expanded_3】.  \n* While these are real concerns, they are presented as secondary consequences of internal product‑defect or compliance issues rather than as primary constraints on growth.\n\n**Conclusion**\n\nAcross the risk‑factor disclosures and the MD&A‑style commentary, Tesla’s growth story is framed primarily around its own ability to execute manufacturing scale‑up, manage cost‑intensive warranty and recall exposures, and sustain financing capacity.  External supply‑chain risks are mentioned, but they appear as downstream effects of internal execution problems rather than the dominant growth limiter.",
+        "citations": [
+            {
+                "chunk_id": "expanded_0",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2025
+            },
+            {
+                "chunk_id": "expanded_1",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "year": 2025
+            },
+            {
+                "chunk_id": "expanded_2",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "year": 2025
+            },
+            {
+                "chunk_id": "expanded_3",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "year": 2025
+            },
+            {
+                "chunk_id": "expanded_4",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2025
+            }
+        ],
+        "retrieval_improvement_analysis": "Expanded retrieval improved semantic coverage across financial, operational, and risk-focused terminology."
+    },
+    {
+        "question_id": "Q3",
+        "original_query": "A supplier asks whether Tesla is exposed to concentration risk across factories, suppliers, raw materials, or geographies. Prepare a concise risk note with citations.",
+        "expanded_queries": [
+            "What are the key external supply chain risks that could impact Tesla's growth prospects as disclosed in the Risk Factors section of the 10-K filing?",
+            "",
+            "How does Tesla's internal cost structure and execution compare to its peers in terms of scalability and efficiency, as discussed in the MD&A section of the 10-K filing?",
+            "",
+            "What are the primary operational risks that could hinder Tesla's ability to meet growing demand, as outlined in the Risk Factors section of the 10-K filing?",
+            "",
+            "How does Tesla's management discuss the trade-off between investing in growth and maintaining profitability, and what are the implications for the company's cost structure and execution, as presented in the MD&A section of the 10-K filing?",
+            "",
+            "What are the key performance indicators (KPIs) used by Tesla to measure its internal execution and cost structure, and how do these metrics compare to industry benchmarks, as discussed in the MD&A section of the 10-K filing?",
+            "",
+            "What are the external factors that could impact Tesla's ability to secure necessary supplies and materials, and how does the company mitigate these risks, as disclosed in the Risk Factors section of the 10-K filing?",
+            "",
+            "How does Tesla's cost structure and execution impact its ability to invest in research and development and maintain a competitive edge, as discussed in the MD&A section of the 10-K filing?",
+            "",
+            "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+        ],
+        "baseline_top_chunks": [
+            {
+                "chunk_id": "baseline_0",
+                "content": "developing\tbusiness\trelationships\twith\tus\tif\tthey\tare\tnot\tconvinced\tthat\tour\tbusiness\twill\tsucceed.\tAccordingly,\tin\torder\tto\tbuild\tand\tmaintain\tour\nbusiness,\twe\tmust\tmaintain\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tratings\tagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\nbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tparticularly\tcomplicated\tby\tcertain\tfactors\tincluding\tthose\tthat\tare\tlargely\toutside\tof\tour\ncontrol,\tsuch\tas\tour\tlimited\toperating\thistory,\tcustomer\tunfamiliarity\twith\tour\tproducts,\tany\tdelays\tin\tscaling\tmanufacturing,\tdelivery\tand\tservice\noperations\tto\tmeet\tdemand,\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices,\tand\tour\tquarterly\nproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations.\nIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\nattention\tincludes\tfrequent\tcriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\nmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tcould\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\nfunds\tif\tneeded.\n22",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "score": 1.0
+            },
+            {
+                "chunk_id": "baseline_1",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2022\nINDEX\n\t\n\t\t\n\t\t\n\t\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n29\nItem\t2.\n\t\nProperties\n\t\n29\nItem\t3.\n\t\nLegal\tProceedings\n\t\n29\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n29\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\n\t\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n30\nItem\t6.\n\t\n[Reserved]\n\t\n31\nItem\t7.\n\t\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n32\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n\t\n44\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n45\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n90\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n90\nItem\t9B.\n\t\nOther\tInformation\n\t\n90\nItem\t9C.\n\t\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n\t\n90\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n91\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n91\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "score": 0.5
+            },
+            {
+                "chunk_id": "baseline_2",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2023\nINDEX\n\t\n\t\nPage\nPART\tI.\n\t\n\t\nItem\t1.\nBusiness\n4\nItem\t1A.\nRisk\tFactors\n14\nItem\t1B.\nUnresolved\tStaff\tComments\n28\nItem\t1C.\nCybersecurity\n29\nItem\t2.\nProperties\n30\nItem\t3.\nLegal\tProceedings\n30\nItem\t4.\nMine\tSafety\tDisclosures\n30\n\t\nPART\tII.\n\t\nItem\t5.\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n31\nItem\t6.\n[Reserved]\n32\nItem\t7.\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n33\nItem\t7A.\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n45\nItem\t8.\nFinancial\tStatements\tand\tSupplementary\tData\n46\nItem\t9.\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n93\nItem\t9A.\nControls\tand\tProcedures\n93\nItem\t9B.\nOther\tInformation\n94\nItem\t9C.\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n94\n\t\nPART\tIII.\n\t\nItem\t10.\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n95\nItem\t11.\nExecutive\tCompensation\n95\nItem\t12.\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n95\nItem\t13.\nCertain\tRelationships\tand\tRelated\tTransactions,\tand\tDirector\tIndependence\n95\nItem\t14.\nPrincipal\tAccountant\tFees\tand\tServices\n95\n\t\nPART\tIV.\n\t\nItem\t15.\nExhibits\tand\tFinancial\tStatement\tSchedules\n96\nItem\t16.\nSummary\n111\n\t\nSignatures",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "score": 0.3333333333333333
+            },
+            {
+                "chunk_id": "baseline_3",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2020\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n27\nItem\t2.\n\t\nProperties\n\t\n27\nItem\t3.\n\t\nLegal\tProceedings\n\t\n28\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n28\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n29\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n30\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n31\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n49\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n50\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n107\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n107\nItem\t9B.\n\t\nOther\tInformation\n\t\n107\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n108\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n108\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n108\nItem\t13.",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "score": 0.25
+            },
+            {
+                "chunk_id": "baseline_4",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2019\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n1\nItem\t1A.\n\t\nRisk\tFactors\n\t\n15\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n34\nItem\t2.\n\t\nProperties\n\t\n35\nItem\t3.\n\t\nLegal\tProceedings\n\t\n35\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n35\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n36\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n38\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n39\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n60\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n61\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n127\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n127\nItem\t9B.\n\t\nOther\tInformation\n\t\n128\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n129\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n129\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n129\nItem\t13.",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "score": 0.2
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "chunk_id": "expanded_0",
+                "content": "claims\tfor\tvehicle\texposure,\tmeaning\tthat\tany\tproduct\tliability\tclaims\twill\tlikely\thave\tto\tbe\tpaid\tfrom\tcompany\tfunds\tand\tnot\tby\tinsurance.\nWe\twill\tneed\tto\tmaintain\tpublic\tcredibility\tand\tconfidence\tin\tour\tlong-term\tbusiness\tprospects\tin\torder\tto\tsucceed.\nIn\torder\tto\tmaintain\tand\tgrow\tour\tbusiness,\twe\tmust\tmaintain\tcredibility\tand\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tinvestors,\tratings\nagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\tbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tchallenging\tdue\tto\tour\tlimited\noperating\thistory\trelative\tto\testablished\tcompetitors;\tcustomer\tunfamiliarity\twith\tour\tproducts;\tany\tdelays\twe\tmay\texperience\tin\tscaling\tmanufacturing,\ndelivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices;\tour\nquarterly\tproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations;\tand\tother\tfactors\tincluding\tthose\tover\twhich\twe\thave\tno\tcontrol.\tIn\tparticular,\nTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\tattention\tincludes\tfrequent\ncriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\tmanagement\tteam.\tAny\tsuch\tnegative\nperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tmay\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\tfunds\tif\tneeded.\n18",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "score": 1.0,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            },
+            {
+                "chunk_id": "expanded_1",
+                "content": "manufacturing,\tdelivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\n\t\nproducts\tand\tservices;\tour\tquarterly\tproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations;\tand\tother\tfactors\tincluding\tthose\tover\n\t\nwhich\twe\thave\tno\tcontrol.\tIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tand\tstatements\tand\tactions\tof\tTesla\tand\tits\tmanagement\tare\n\t\nwell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\tattention\tcan\tinclude\tcriticism,\twhich\tmay\tbe\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\n\t\nthe\tsufficiency\tor\tstability\tof\tour\tmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tmay\tharm\tour\tbusiness\tand\tmake\tit\n\t\nmore\tdifficult\tto\traise\tadditional\tfunds\tif\tneeded.\nWe\tmay\tbe\tunable\tto\teffectively\tgrow,\tor\tmanage\tthe\tcompliance,\tresidual\tvalue,\tfinancing\tand\tcredit\trisks\trelated\tto,\tour\tvarious\n\t\nfinancing\tprograms.\nWe\toffer\tfinancing\tarrangements\tfor\tour\tvehicles\tin\tNorth\tAmerica,\tEurope\tand\tAsia\tprimarily\tourselves\tand\tthrough\tvarious\tfinancial\n\t\ninstitutions.\tWe\talso\tcurrently\toffer\tvehicle\tfinancing\tarrangements\tdirectly\tthrough\tour\tlocal\tsubsidiaries\tin\tcertain\tmarkets.\tDepending\ton\tthe\n\t\ncountry,\tsuch\tarrangements\tare\tavailable\tfor\tspecified\tmodels\tand\tmay\tinclude\toperating\tleases\tdirectly\twith\tus\tunder\twhich\twe\ttypically\treceive\tonly\ta\n\t\nvery\tsmall\tportion\tof\tthe\ttotal\tvehicle\tpurchase\tprice\tat\tthe\ttime\tof\tlease,\tfollowed\tby\ta\tstream\tof\tpayments\tover\tthe\tterm\tof\tthe\tlease.\tWe\thave\talso",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "score": 0.5,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            },
+            {
+                "chunk_id": "expanded_2",
+                "content": "developing\tbusiness\trelationships\twith\tus\tif\tthey\tare\tnot\tconvinced\tthat\tour\tbusiness\twill\tsucceed.\tAccordingly,\tin\torder\tto\tbuild\tand\tmaintain\tour\nbusiness,\twe\tmust\tmaintain\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tratings\tagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\nbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tparticularly\tcomplicated\tby\tcertain\tfactors\tincluding\tthose\tthat\tare\tlargely\toutside\tof\tour\ncontrol,\tsuch\tas\tour\tlimited\toperating\thistory,\tcustomer\tunfamiliarity\twith\tour\tproducts,\tany\tdelays\tin\tscaling\tmanufacturing,\tdelivery\tand\tservice\noperations\tto\tmeet\tdemand,\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices,\tand\tour\tquarterly\nproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations.\nIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\nattention\tincludes\tfrequent\tcriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\nmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tcould\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\nfunds\tif\tneeded.\n22",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "score": 0.3333333333333333,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            },
+            {
+                "chunk_id": "expanded_3",
+                "content": "As\ta\tmanufacturing\tcompany,\twe\tmust\tmanage\tthe\trisk\tof\tproduct\trecalls\twith\trespect\tto\tour\tproducts.\tRecalls\tfor\tour\tvehicles\thave\tresulted\tfrom\nvarious\thardware\tand\tsoftware-related\tsafety\tconcerns\tor\tnon-compliance\tdeterminations.\tIn\taddition\tto\trecalls\tinitiated\tby\tus\tfor\tvarious\tcauses,\ttesting\nof\tor\tinvestigations\tinto\tour\tproducts\tby\tgovernment\tregulators\tor\tindustry\tgroups\tmay\tcompel\tus\tto\tinitiate\tproduct\trecalls\tor\tmay\tresult\tin\tnegative\npublic\tperceptions\tabout\tthe\tsafety\tof\tour\tproducts,\teven\tif\twe\tdisagree\twith\tthe\tdefect\tdetermination\tor\thave\tdata\tthat\tcontradicts\tit.\tIn\tthe\tfuture,\twe\nmay\tvoluntarily\tor\tinvoluntarily\tinitiate\trecalls\tif\tany\tof\tour\tproducts\tare\tdetermined\tby\tus\tor\ta\tregulator\tto\tcontain\ta\tsafety\tdefect\tor\tbe\tnoncompliant\nwith\tapplicable\tlaws\tand\tregulations,\tsuch\tas\tU.S.\tFederal\tMotor\tVehicle\tSafety\tStandards.\tSuch\trecalls,\twhether\tvoluntary\tor\tinvoluntary\tor\tcaused\tby\nsystems\tor\tcomponents\tengineered\tor\tmanufactured\tby\tus\tor\tour\tsuppliers,\tcould\tresult\tin\tsignificant\texpense,\tsupply\tchain\tcomplications\tand\tservice\nburdens,\tand\tmay\tharm\tour\tbrand,\tbusiness,\tprospects,\tfinancial\tcondition\tand\toperating\tresults.\nOur\tcurrent\tand\tfuture\twarranty\treserves\tmay\tbe\tinsufficient\tto\tcover\tfuture\twarranty\tclaims.\nWe\tprovide\ta\tmanufacturer’s\twarranty\ton\tall\tnew\tand\tused\tTesla\tvehicles\twe\tsell\tdirectly\tto\tcustomers.\tWe\talso\tprovide\tcertain\twarranties\twith\nrespect\tto\tthe\tenergy\tgeneration\tand\tstorage\tsystems\twe\tsell,\tincluding\ton\ttheir\tinstallation\tand\tmaintenance.\tFor\tcomponents\tnot\tmanufactured\tby\tus,\nwe\tgenerally\tpass\tthrough\tto\tour\tcustomers\tthe\tapplicable\tmanufacturers’\twarranties,\tbut\tmay\tretain\tsome\twarranty\tresponsibilities\tfor\tsome\tor\tall\tof\tthe",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "score": 0.25,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            },
+            {
+                "chunk_id": "expanded_4",
+                "content": ".\n“\nHazardous\tMaterials\n”\tshall\tmean\tany\tchemicals,\tmaterials,\twastes,\tpollutants,\tcontaminants,\tor\tsubstances\tin\tany\tform\tthat\tis\nprohibited,\tlimited\tor\tregulated\tpursuant\tto\tany\tEnvironmental\tLaw\tby\tvirtue\tof\ttheir\ttoxic\tor\totherwise\tdeleterious\tcharacteristics,\nincluding\tany\tpetroleum\tor\tpetroleum\tproducts,\tradioactive\tmaterials,\tasbestos\tin\tany\tform\tthat\tis\tor\tcould\tbecome\tfriable,\turea\nformaldehyde\tfoam\tinsulation,\tdielectric\tfluid\tcontaining\tlevels\tof\tpolychlorinated\tbiphenyls,\tand\tradon\tgas.\n“\nHost\tCustomer\tAgreements\n”\tshall\tmean\tthe\tEnergy\tStorage\tAgreements\tand\tCustomer\tLease\tAgreements.\n“\nImmaterial\tSubsidiary\n”\tshall\tmean,\tas\tof\tany\tdate\tof\tdetermination,\tany\tWholly-Owned\tDomestic\tSubsidiary\tof\tthe\tCompany\nor\n,\n\t\nany\tWholly-Owned\tDutch\tSubsidiary\tof\tTesla\tB.V.\t\n(in\teither\nor\tany\tWholly\tOwned\tUK\tSubsidiary\tof\tTesla\tUK\t(in\teach\n\tcase,\tother\tthan\ta\nBorrower)\t(x)\tthat\thas\tnot\tguaranteed\tany\tother\tIndebtedness\tof\tany\tBorrower\tother\tthan\ta\tguarantee\tby\tany\tSubsidiary\tthat\twas\tcreated\nto\tsatisfy\tstate\tdealer\trequirements,\t(y)\twhose\tconsolidated\ttotal\tassets\t(as\tset\tforth\tin\tthe\tmost\trecent\tconsolidated\tbalance\tsheet\tof\tthe\nCompany\tand\tits\tConsolidated\tSubsidiaries\tdelivered\tto\tthe\tLenders\tpursuant\tto\tthis\tAgreement\tand\tcomputed\tin\taccordance\twith\tGAAP,\nbut\texcluding\tintercompany\tassets),\tdo\tnot\tconstitute\tmore\tthan\t5.0%\tof\tthe\tConsolidated\tTotal\tAssets\tand\t(z)\twhose\tconsolidated\ttotal",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "score": 0.2,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            }
+        ],
+        "final_answer": "Tesla’s growth narrative is portrayed as being far more limited by **internal execution and cost‑structure issues** than by pure external supply‑chain constraints.\n\n**Internal execution risks**\n\n* Tesla repeatedly stresses that its ability to scale manufacturing, delivery and service operations is a key uncertainty.  The company notes that “any delays we may experience in scaling manufacturing, delivery and service operations to meet demand” could hurt its quarterly production and sales performance and erode confidence among investors, analysts and suppliers【expanded_0】.  \n* Its limited operating history and the unfamiliarity of customers with its products are highlighted as factors that make it harder to maintain credibility and to raise additional capital【expanded_2】.  \n* Product‑recall risk, warranty‑reserve adequacy and the associated “significant expense, supply‑chain complications and service burdens” are described as internal cost pressures that could damage the brand and financial condition【expanded_3】.  \n* Financing and credit‑risk management are also framed as internal challenges – “we may be unable to effectively grow, or manage the compliance, residual‑value, financing and credit risks related to our various financing programs”【expanded_1】.\n\n**External supply‑chain risk**\n\n* The only external‑supply references are to hazardous‑material regulations and the possibility that a recall “may result in supply‑chain complications”【expanded_4】【expanded_3】.  \n* While these are real concerns, they are presented as secondary consequences of internal product‑defect or compliance issues rather than as primary constraints on growth.\n\n**Conclusion**\n\nAcross the risk‑factor disclosures and the MD&A‑style commentary, Tesla’s growth story is framed primarily around its own ability to execute manufacturing scale‑up, manage cost‑intensive warranty and recall exposures, and sustain financing capacity.  External supply‑chain risks are mentioned, but they appear as downstream effects of internal execution problems rather than the dominant growth limiter.",
+        "citations": [
+            {
+                "chunk_id": "expanded_0",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2025
+            },
+            {
+                "chunk_id": "expanded_1",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "year": 2025
+            },
+            {
+                "chunk_id": "expanded_2",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "year": 2025
+            },
+            {
+                "chunk_id": "expanded_3",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "year": 2025
+            },
+            {
+                "chunk_id": "expanded_4",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2025
+            }
+        ],
+        "retrieval_improvement_analysis": "Expanded retrieval improved semantic coverage across financial, operational, and risk-focused terminology."
+    },
+    {
+        "question_id": "Q4",
+        "original_query": "Compare the strategic importance of automotive operations and energy generation/storage using evidence from the 10-K. What disclosures are needed to support a business recommendation?",
+        "expanded_queries": [
+            "What are the key external supply chain risks that could impact Tesla's growth prospects as disclosed in the Risk Factors section of the 10-K filing?",
+            "",
+            "How does Tesla's internal cost structure and execution compare to its peers in terms of scalability and efficiency, as discussed in the MD&A section of the 10-K filing?",
+            "",
+            "What are the primary operational risks that could hinder Tesla's ability to meet growing demand, as outlined in the Risk Factors section of the 10-K filing?",
+            "",
+            "How does Tesla's management discuss the trade-off between investing in growth and maintaining profitability, and what are the implications for the company's cost structure and execution, as presented in the MD&A section of the 10-K filing?",
+            "",
+            "What are the key performance indicators (KPIs) used by Tesla to measure its internal execution and cost structure, and how do these metrics compare to industry benchmarks, as discussed in the MD&A section of the 10-K filing?",
+            "",
+            "What are the external factors that could impact Tesla's ability to secure necessary supplies and materials, and how does the company mitigate these risks, as disclosed in the Risk Factors section of the 10-K filing?",
+            "",
+            "How does Tesla's cost structure and execution impact its ability to invest in research and development and maintain a competitive edge, as discussed in the MD&A section of the 10-K filing?",
+            "",
+            "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+        ],
+        "baseline_top_chunks": [
+            {
+                "chunk_id": "baseline_0",
+                "content": "developing\tbusiness\trelationships\twith\tus\tif\tthey\tare\tnot\tconvinced\tthat\tour\tbusiness\twill\tsucceed.\tAccordingly,\tin\torder\tto\tbuild\tand\tmaintain\tour\nbusiness,\twe\tmust\tmaintain\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tratings\tagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\nbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tparticularly\tcomplicated\tby\tcertain\tfactors\tincluding\tthose\tthat\tare\tlargely\toutside\tof\tour\ncontrol,\tsuch\tas\tour\tlimited\toperating\thistory,\tcustomer\tunfamiliarity\twith\tour\tproducts,\tany\tdelays\tin\tscaling\tmanufacturing,\tdelivery\tand\tservice\noperations\tto\tmeet\tdemand,\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices,\tand\tour\tquarterly\nproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations.\nIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\nattention\tincludes\tfrequent\tcriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\nmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tcould\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\nfunds\tif\tneeded.\n22",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "score": 1.0
+            },
+            {
+                "chunk_id": "baseline_1",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2022\nINDEX\n\t\n\t\t\n\t\t\n\t\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n29\nItem\t2.\n\t\nProperties\n\t\n29\nItem\t3.\n\t\nLegal\tProceedings\n\t\n29\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n29\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\n\t\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n30\nItem\t6.\n\t\n[Reserved]\n\t\n31\nItem\t7.\n\t\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n32\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n\t\n44\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n45\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n90\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n90\nItem\t9B.\n\t\nOther\tInformation\n\t\n90\nItem\t9C.\n\t\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n\t\n90\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n91\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n91\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "score": 0.5
+            },
+            {
+                "chunk_id": "baseline_2",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2023\nINDEX\n\t\n\t\nPage\nPART\tI.\n\t\n\t\nItem\t1.\nBusiness\n4\nItem\t1A.\nRisk\tFactors\n14\nItem\t1B.\nUnresolved\tStaff\tComments\n28\nItem\t1C.\nCybersecurity\n29\nItem\t2.\nProperties\n30\nItem\t3.\nLegal\tProceedings\n30\nItem\t4.\nMine\tSafety\tDisclosures\n30\n\t\nPART\tII.\n\t\nItem\t5.\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n31\nItem\t6.\n[Reserved]\n32\nItem\t7.\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n33\nItem\t7A.\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n45\nItem\t8.\nFinancial\tStatements\tand\tSupplementary\tData\n46\nItem\t9.\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n93\nItem\t9A.\nControls\tand\tProcedures\n93\nItem\t9B.\nOther\tInformation\n94\nItem\t9C.\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n94\n\t\nPART\tIII.\n\t\nItem\t10.\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n95\nItem\t11.\nExecutive\tCompensation\n95\nItem\t12.\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n95\nItem\t13.\nCertain\tRelationships\tand\tRelated\tTransactions,\tand\tDirector\tIndependence\n95\nItem\t14.\nPrincipal\tAccountant\tFees\tand\tServices\n95\n\t\nPART\tIV.\n\t\nItem\t15.\nExhibits\tand\tFinancial\tStatement\tSchedules\n96\nItem\t16.\nSummary\n111\n\t\nSignatures",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "score": 0.3333333333333333
+            },
+            {
+                "chunk_id": "baseline_3",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2020\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n27\nItem\t2.\n\t\nProperties\n\t\n27\nItem\t3.\n\t\nLegal\tProceedings\n\t\n28\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n28\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n29\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n30\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n31\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n49\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n50\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n107\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n107\nItem\t9B.\n\t\nOther\tInformation\n\t\n107\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n108\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n108\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n108\nItem\t13.",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "score": 0.25
+            },
+            {
+                "chunk_id": "baseline_4",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2019\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n1\nItem\t1A.\n\t\nRisk\tFactors\n\t\n15\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n34\nItem\t2.\n\t\nProperties\n\t\n35\nItem\t3.\n\t\nLegal\tProceedings\n\t\n35\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n35\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n36\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n38\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n39\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n60\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n61\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n127\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n127\nItem\t9B.\n\t\nOther\tInformation\n\t\n128\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n129\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n129\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n129\nItem\t13.",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "score": 0.2
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "chunk_id": "expanded_0",
+                "content": "claims\tfor\tvehicle\texposure,\tmeaning\tthat\tany\tproduct\tliability\tclaims\twill\tlikely\thave\tto\tbe\tpaid\tfrom\tcompany\tfunds\tand\tnot\tby\tinsurance.\nWe\twill\tneed\tto\tmaintain\tpublic\tcredibility\tand\tconfidence\tin\tour\tlong-term\tbusiness\tprospects\tin\torder\tto\tsucceed.\nIn\torder\tto\tmaintain\tand\tgrow\tour\tbusiness,\twe\tmust\tmaintain\tcredibility\tand\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tinvestors,\tratings\nagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\tbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tchallenging\tdue\tto\tour\tlimited\noperating\thistory\trelative\tto\testablished\tcompetitors;\tcustomer\tunfamiliarity\twith\tour\tproducts;\tany\tdelays\twe\tmay\texperience\tin\tscaling\tmanufacturing,\ndelivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices;\tour\nquarterly\tproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations;\tand\tother\tfactors\tincluding\tthose\tover\twhich\twe\thave\tno\tcontrol.\tIn\tparticular,\nTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\tattention\tincludes\tfrequent\ncriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\tmanagement\tteam.\tAny\tsuch\tnegative\nperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tmay\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\tfunds\tif\tneeded.\n18",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "score": 1.0,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            },
+            {
+                "chunk_id": "expanded_1",
+                "content": "manufacturing,\tdelivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\n\t\nproducts\tand\tservices;\tour\tquarterly\tproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations;\tand\tother\tfactors\tincluding\tthose\tover\n\t\nwhich\twe\thave\tno\tcontrol.\tIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tand\tstatements\tand\tactions\tof\tTesla\tand\tits\tmanagement\tare\n\t\nwell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\tattention\tcan\tinclude\tcriticism,\twhich\tmay\tbe\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\n\t\nthe\tsufficiency\tor\tstability\tof\tour\tmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tmay\tharm\tour\tbusiness\tand\tmake\tit\n\t\nmore\tdifficult\tto\traise\tadditional\tfunds\tif\tneeded.\nWe\tmay\tbe\tunable\tto\teffectively\tgrow,\tor\tmanage\tthe\tcompliance,\tresidual\tvalue,\tfinancing\tand\tcredit\trisks\trelated\tto,\tour\tvarious\n\t\nfinancing\tprograms.\nWe\toffer\tfinancing\tarrangements\tfor\tour\tvehicles\tin\tNorth\tAmerica,\tEurope\tand\tAsia\tprimarily\tourselves\tand\tthrough\tvarious\tfinancial\n\t\ninstitutions.\tWe\talso\tcurrently\toffer\tvehicle\tfinancing\tarrangements\tdirectly\tthrough\tour\tlocal\tsubsidiaries\tin\tcertain\tmarkets.\tDepending\ton\tthe\n\t\ncountry,\tsuch\tarrangements\tare\tavailable\tfor\tspecified\tmodels\tand\tmay\tinclude\toperating\tleases\tdirectly\twith\tus\tunder\twhich\twe\ttypically\treceive\tonly\ta\n\t\nvery\tsmall\tportion\tof\tthe\ttotal\tvehicle\tpurchase\tprice\tat\tthe\ttime\tof\tlease,\tfollowed\tby\ta\tstream\tof\tpayments\tover\tthe\tterm\tof\tthe\tlease.\tWe\thave\talso",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "score": 0.5,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            },
+            {
+                "chunk_id": "expanded_2",
+                "content": "developing\tbusiness\trelationships\twith\tus\tif\tthey\tare\tnot\tconvinced\tthat\tour\tbusiness\twill\tsucceed.\tAccordingly,\tin\torder\tto\tbuild\tand\tmaintain\tour\nbusiness,\twe\tmust\tmaintain\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tratings\tagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\nbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tparticularly\tcomplicated\tby\tcertain\tfactors\tincluding\tthose\tthat\tare\tlargely\toutside\tof\tour\ncontrol,\tsuch\tas\tour\tlimited\toperating\thistory,\tcustomer\tunfamiliarity\twith\tour\tproducts,\tany\tdelays\tin\tscaling\tmanufacturing,\tdelivery\tand\tservice\noperations\tto\tmeet\tdemand,\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices,\tand\tour\tquarterly\nproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations.\nIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\nattention\tincludes\tfrequent\tcriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\nmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tcould\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\nfunds\tif\tneeded.\n22",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "score": 0.3333333333333333,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            },
+            {
+                "chunk_id": "expanded_3",
+                "content": "As\ta\tmanufacturing\tcompany,\twe\tmust\tmanage\tthe\trisk\tof\tproduct\trecalls\twith\trespect\tto\tour\tproducts.\tRecalls\tfor\tour\tvehicles\thave\tresulted\tfrom\nvarious\thardware\tand\tsoftware-related\tsafety\tconcerns\tor\tnon-compliance\tdeterminations.\tIn\taddition\tto\trecalls\tinitiated\tby\tus\tfor\tvarious\tcauses,\ttesting\nof\tor\tinvestigations\tinto\tour\tproducts\tby\tgovernment\tregulators\tor\tindustry\tgroups\tmay\tcompel\tus\tto\tinitiate\tproduct\trecalls\tor\tmay\tresult\tin\tnegative\npublic\tperceptions\tabout\tthe\tsafety\tof\tour\tproducts,\teven\tif\twe\tdisagree\twith\tthe\tdefect\tdetermination\tor\thave\tdata\tthat\tcontradicts\tit.\tIn\tthe\tfuture,\twe\nmay\tvoluntarily\tor\tinvoluntarily\tinitiate\trecalls\tif\tany\tof\tour\tproducts\tare\tdetermined\tby\tus\tor\ta\tregulator\tto\tcontain\ta\tsafety\tdefect\tor\tbe\tnoncompliant\nwith\tapplicable\tlaws\tand\tregulations,\tsuch\tas\tU.S.\tFederal\tMotor\tVehicle\tSafety\tStandards.\tSuch\trecalls,\twhether\tvoluntary\tor\tinvoluntary\tor\tcaused\tby\nsystems\tor\tcomponents\tengineered\tor\tmanufactured\tby\tus\tor\tour\tsuppliers,\tcould\tresult\tin\tsignificant\texpense,\tsupply\tchain\tcomplications\tand\tservice\nburdens,\tand\tmay\tharm\tour\tbrand,\tbusiness,\tprospects,\tfinancial\tcondition\tand\toperating\tresults.\nOur\tcurrent\tand\tfuture\twarranty\treserves\tmay\tbe\tinsufficient\tto\tcover\tfuture\twarranty\tclaims.\nWe\tprovide\ta\tmanufacturer’s\twarranty\ton\tall\tnew\tand\tused\tTesla\tvehicles\twe\tsell\tdirectly\tto\tcustomers.\tWe\talso\tprovide\tcertain\twarranties\twith\nrespect\tto\tthe\tenergy\tgeneration\tand\tstorage\tsystems\twe\tsell,\tincluding\ton\ttheir\tinstallation\tand\tmaintenance.\tFor\tcomponents\tnot\tmanufactured\tby\tus,\nwe\tgenerally\tpass\tthrough\tto\tour\tcustomers\tthe\tapplicable\tmanufacturers’\twarranties,\tbut\tmay\tretain\tsome\twarranty\tresponsibilities\tfor\tsome\tor\tall\tof\tthe",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "score": 0.25,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            },
+            {
+                "chunk_id": "expanded_4",
+                "content": ".\n“\nHazardous\tMaterials\n”\tshall\tmean\tany\tchemicals,\tmaterials,\twastes,\tpollutants,\tcontaminants,\tor\tsubstances\tin\tany\tform\tthat\tis\nprohibited,\tlimited\tor\tregulated\tpursuant\tto\tany\tEnvironmental\tLaw\tby\tvirtue\tof\ttheir\ttoxic\tor\totherwise\tdeleterious\tcharacteristics,\nincluding\tany\tpetroleum\tor\tpetroleum\tproducts,\tradioactive\tmaterials,\tasbestos\tin\tany\tform\tthat\tis\tor\tcould\tbecome\tfriable,\turea\nformaldehyde\tfoam\tinsulation,\tdielectric\tfluid\tcontaining\tlevels\tof\tpolychlorinated\tbiphenyls,\tand\tradon\tgas.\n“\nHost\tCustomer\tAgreements\n”\tshall\tmean\tthe\tEnergy\tStorage\tAgreements\tand\tCustomer\tLease\tAgreements.\n“\nImmaterial\tSubsidiary\n”\tshall\tmean,\tas\tof\tany\tdate\tof\tdetermination,\tany\tWholly-Owned\tDomestic\tSubsidiary\tof\tthe\tCompany\nor\n,\n\t\nany\tWholly-Owned\tDutch\tSubsidiary\tof\tTesla\tB.V.\t\n(in\teither\nor\tany\tWholly\tOwned\tUK\tSubsidiary\tof\tTesla\tUK\t(in\teach\n\tcase,\tother\tthan\ta\nBorrower)\t(x)\tthat\thas\tnot\tguaranteed\tany\tother\tIndebtedness\tof\tany\tBorrower\tother\tthan\ta\tguarantee\tby\tany\tSubsidiary\tthat\twas\tcreated\nto\tsatisfy\tstate\tdealer\trequirements,\t(y)\twhose\tconsolidated\ttotal\tassets\t(as\tset\tforth\tin\tthe\tmost\trecent\tconsolidated\tbalance\tsheet\tof\tthe\nCompany\tand\tits\tConsolidated\tSubsidiaries\tdelivered\tto\tthe\tLenders\tpursuant\tto\tthis\tAgreement\tand\tcomputed\tin\taccordance\twith\tGAAP,\nbut\texcluding\tintercompany\tassets),\tdo\tnot\tconstitute\tmore\tthan\t5.0%\tof\tthe\tConsolidated\tTotal\tAssets\tand\t(z)\twhose\tconsolidated\ttotal",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "score": 0.2,
+                "retrieved_by": [
+                    "What are the key risks associated with Tesla's reliance on third-party suppliers and manufacturers, and how does the company manage these risks, as outlined in the Risk Factors section of the 10-K filing?"
+                ]
+            }
+        ],
+        "final_answer": "Tesla’s growth narrative is portrayed as being far more limited by **internal execution and cost‑structure issues** than by pure external supply‑chain constraints.\n\n**Internal execution risks**\n\n* Tesla repeatedly stresses that its ability to scale manufacturing, delivery and service operations is a key uncertainty.  The company notes that “any delays we may experience in scaling manufacturing, delivery and service operations to meet demand” could hurt its quarterly production and sales performance and erode confidence among investors, analysts and suppliers【expanded_0】.  \n* Its limited operating history and the unfamiliarity of customers with its products are highlighted as factors that make it harder to maintain credibility and to raise additional capital【expanded_2】.  \n* Product‑recall risk, warranty‑reserve adequacy and the associated “significant expense, supply‑chain complications and service burdens” are described as internal cost pressures that could damage the brand and financial condition【expanded_3】.  \n* Financing and credit‑risk management are also framed as internal challenges – “we may be unable to effectively grow, or manage the compliance, residual‑value, financing and credit risks related to our various financing programs”【expanded_1】.\n\n**External supply‑chain risk**\n\n* The only external‑supply references are to hazardous‑material regulations and the possibility that a recall “may result in supply‑chain complications”【expanded_4】【expanded_3】.  \n* While these are real concerns, they are presented as secondary consequences of internal product‑defect or compliance issues rather than as primary constraints on growth.\n\n**Conclusion**\n\nAcross the risk‑factor disclosures and the MD&A‑style commentary, Tesla’s growth story is framed primarily around its own ability to execute manufacturing scale‑up, manage cost‑intensive warranty and recall exposures, and sustain financing capacity.  External supply‑chain risks are mentioned, but they appear as downstream effects of internal execution problems rather than the dominant growth limiter.",
+        "citations": [
+            {
+                "chunk_id": "expanded_0",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2025
+            },
+            {
+                "chunk_id": "expanded_1",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "year": 2025
+            },
+            {
+                "chunk_id": "expanded_2",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "year": 2025
+            },
+            {
+                "chunk_id": "expanded_3",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "year": 2025
+            },
+            {
+                "chunk_id": "expanded_4",
+                "source_doc": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "section": "tesla-annual-reports\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2025
+            }
+        ],
+        "retrieval_improvement_analysis": "Expanded retrieval improved semantic coverage across financial, operational, and risk-focused terminology."
+    }
+]
