@@ -1,0 +1,47 @@
+{
+  "question_id": "HQ1",
+  "user_query": "\nWhat should a board member ask about risks that could prevent Tesla from meeting production, delivery, or scaling expectations?\n",
+  "retrieved_hypothetical_questions": [
+    {
+      "question": "What are the risks associated with Tesla's business, as outlined in the risk factors section of the 10-K document?",
+      "batch_id": 30
+    },
+    {
+      "question": "What are the risks associated with Tesla's high-volume production of vehicles and energy storage products?",
+      "batch_id": 1
+    },
+    {
+      "question": "What are the potential risks and challenges associated with Tesla's energy generation and storage business?",
+      "batch_id": 24
+    },
+    {
+      "question": "What are the potential risks and challenges associated with Tesla's energy generation and storage business?",
+      "batch_id": 31
+    },
+    {
+      "question": "What are the risks associated with Tesla's growth and expansion?",
+      "batch_id": 23
+    },
+    {
+      "question": "What are the potential risks and challenges associated with Tesla's energy generation and storage segment?",
+      "batch_id": 24
+    },
+    {
+      "question": "What are the key factors that affect Tesla's ability to grow its business?",
+      "batch_id": 31
+    },
+    {
+      "question": "What are the key factors that could impact Tesla's ability to meet its projected construction timelines, costs, and production ramps at new factories?",
+      "batch_id": 31
+    },
+    {
+      "question": "What are the potential risks and challenges associated with Tesla's expansion into new markets and products?",
+      "batch_id": 23
+    },
+    {
+      "question": "What are the critical audit matters related to Tesla's automotive sales and warranty reserve?",
+      "batch_id": 2
+    }
+  ],
+  "final_answer": "The board of directors of Tesla, Inc. has adopted a policy requiring the company to obtain the approval of the board of directors or a committee thereof before entering into any transaction with a related party. This policy is intended to ensure that the company's interests are protected and that any transactions with related parties are fair and reasonable.\n\nThe policy defines a related party as any of the following: (i) a director or officer of the company, (ii) a significant shareholder of the company, or (iii) a spouse, child, sibling, parent, or affiliate of any of the foregoing. A significant shareholder is defined as a shareholder who owns 5% or more of the company's outstanding common stock.\n\nThe policy requires that the board of directors or a committee thereof must approve any transaction with a related party before it is entered into. This approval must be obtained in writing and must be recorded in the minutes of the meeting at which the approval is given.\n\nThe policy also requires that the company disclose any transactions with related parties in its quarterly and annual reports filed with the Securities and Exchange Commission. This disclosure must include the name of the related party, the nature of the transaction, and the amount of the transaction.\n\nThe policy is intended to ensure that the company's interests are protected and that any transactions with related parties are fair and reasonable. It is also intended to ensure that the company complies with the requirements of the Securities and Exchange Commission and the New York Stock Exchange.\n\nThe policy is effective as of the date of its adoption and may be amended or modified from time to time by the board of directors or a committee thereof. Any such amendment or modification must be approved by the board of directors or a committee thereof and must be disclosed in the company's quarterly and annual reports filed with the Securities and Exchange Commission.\n\nIn conclusion, the policy adopted by the board of directors of Tesla, Inc. is intended to ensure that the company's interests are protected and that any transactions with related parties are fair and reasonable. It is also intended to ensure that the company complies with the requirements of the Securities and Exchange Commission and the New York Stock Exchange.\n\nReferences:\n\n* Tesla, Inc. (2022). Form 10-K. Securities and Exchange Commission.\n* Tesla, Inc. (2022). Form 10-K. Securities and Exchange Commission.\n\nChunk ID: 00000529\nFiscal Year: 2022"
+}
