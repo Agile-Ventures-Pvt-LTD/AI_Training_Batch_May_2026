@@ -1,0 +1,446 @@
+[
+  {
+    "question_id": "HQ1",
+    "user_query": "What should a board member ask about risks that could prevent Tesla from meeting production, delivery, or scaling expectations?",
+    "retrieved_hypothetical_questions": [
+      {
+        "hypothetical_question": "Question 3: What are the key risks and challenges associated with Tesla's growth and expansion plans, and how might these risks impact the company's financial condition and operating results?",
+        "batch_id": 9
+      },
+      {
+        "hypothetical_question": "Question 3: What are the main risks and challenges associated with Tesla's growth strategy, including its plans to expand its manufacturing capacity, increase its energy storage product deployments, and maintain its competitive position in the automotive and energy markets?",
+        "batch_id": 30
+      },
+      {
+        "hypothetical_question": "Question 2: What are some of the risks associated with Tesla's international operations, and how could they impact the company's business?",
+        "batch_id": 2
+      },
+      {
+        "hypothetical_question": "Question 1: What is the current status of Tesla's battery cell production, and how does the company plan to increase its battery cell supply in the future?",
+        "batch_id": 30
+      },
+      {
+        "hypothetical_question": "Question 2: How does Tesla account for the costs associated with its energy generation and storage products, and what are the key components of these costs?",
+        "batch_id": 31
+      }
+    ],
+    "parent_chunks_used": [
+      {
+        "chunk_id": "text_982"
+      },
+      {
+        "chunk_id": "text_3129"
+      },
+      {
+        "chunk_id": "text_972"
+      },
+      {
+        "chunk_id": "text_922"
+      },
+      {
+        "chunk_id": "text_3122"
+      },
+      {
+        "chunk_id": "text_999"
+      },
+      {
+        "chunk_id": "text_3070"
+      },
+      {
+        "chunk_id": "text_245"
+      },
+      {
+        "chunk_id": "text_206"
+      },
+      {
+        "chunk_id": "text_261"
+      },
+      {
+        "chunk_id": "text_294"
+      },
+      {
+        "chunk_id": "text_236"
+      },
+      {
+        "chunk_id": "text_232"
+      },
+      {
+        "chunk_id": "text_931"
+      },
+      {
+        "chunk_id": "text_916"
+      },
+      {
+        "chunk_id": "text_975"
+      },
+      {
+        "chunk_id": "text_259"
+      },
+      {
+        "chunk_id": "text_3146"
+      },
+      {
+        "chunk_id": "text_3165"
+      },
+      {
+        "chunk_id": "text_974"
+      }
+    ],
+    "final_answer": "A board member should ask about the following risks that could prevent Tesla from meeting production, delivery, or scaling expectations:\n\n1. Delays in establishing and/or sustaining vehicle ramps, particularly for Model 3 and Model Y.\n2. Issues with ongoing manufacturing process improvements and cost-down efforts.\n3. Challenges in hiring, training, and compensating skilled employees to operate high-volume production facilities.\n4. Potential bottlenecks in production due to shared parts, suppliers, or production facilities among different models.\n5. Delays in launching and/or ramping production of new vehicles, such as Tesla Semi, Cybertruck, and the new Tesla Roadster.\n6. Challenges in designing, constructing, and obtaining regulatory approvals for future manufacturing facilities, including Gigafactory Berlin.\n7. Inaccurate forecasting of demand for vehicles and energy products, particularly in international markets.\n8. Difficulties in delivering vehicles to customers, particularly in regions with significant transit times.\n9. Inability to match production with actual demand for the Solar Roof, leading to unforeseen production delays or inaccuracies in demand forecasting.\n10. Overburdening of servicing capabilities and parts supply chain due to delays in adding servicing capacity or unforeseen issues with vehicle reliability.",
+    "citations": [
+      "text_982",
+      "text_3129",
+      "text_972",
+      "text_922",
+      "text_3122",
+      "text_999",
+      "text_3070",
+      "text_245",
+      "text_206",
+      "text_261",
+      "text_294",
+      "text_236",
+      "text_232",
+      "text_931",
+      "text_916",
+      "text_975",
+      "text_259",
+      "text_3146",
+      "text_3165",
+      "text_974"
+    ]
+  },
+  {
+    "question_id": "HQ2",
+    "user_query": "How should an analyst investigate the relationship between product defects, warranty or service obligations, customer trust, and brand risk?",
+    "retrieved_hypothetical_questions": [
+      {
+        "hypothetical_question": "Question 3: What are the key risks and challenges associated with Tesla's growth and expansion plans, and how might these risks impact the company's financial condition and operating results?",
+        "batch_id": 9
+      },
+      {
+        "hypothetical_question": "Question 2: What are some of the risks associated with Tesla's international operations, and how could they impact the company's business?",
+        "batch_id": 2
+      },
+      {
+        "hypothetical_question": "Question 3: What are the main risks and challenges associated with Tesla's growth strategy, including its plans to expand its manufacturing capacity, increase its energy storage product deployments, and maintain its competitive position in the automotive and energy markets?",
+        "batch_id": 30
+      },
+      {
+        "hypothetical_question": "Question 2: How much goodwill was recognized in the Maxwell acquisition, and what was the primary reason for this goodwill?",
+        "batch_id": 11
+      },
+      {
+        "hypothetical_question": "Question 2: How does Tesla's debt structure impact its ability to operate its business, and what are the potential consequences of failing to comply with debt covenants?",
+        "batch_id": 23
+      }
+    ],
+    "parent_chunks_used": [
+      {
+        "chunk_id": "text_982"
+      },
+      {
+        "chunk_id": "text_1139"
+      },
+      {
+        "chunk_id": "text_2338"
+      },
+      {
+        "chunk_id": "text_2377"
+      },
+      {
+        "chunk_id": "text_972"
+      },
+      {
+        "chunk_id": "text_1178"
+      },
+      {
+        "chunk_id": "text_1190"
+      },
+      {
+        "chunk_id": "text_922"
+      },
+      {
+        "chunk_id": "text_2357"
+      },
+      {
+        "chunk_id": "text_999"
+      },
+      {
+        "chunk_id": "text_3070"
+      },
+      {
+        "chunk_id": "text_1191"
+      },
+      {
+        "chunk_id": "text_245"
+      },
+      {
+        "chunk_id": "text_206"
+      },
+      {
+        "chunk_id": "text_261"
+      },
+      {
+        "chunk_id": "text_1127"
+      },
+      {
+        "chunk_id": "text_1146"
+      },
+      {
+        "chunk_id": "text_294"
+      },
+      {
+        "chunk_id": "text_236"
+      },
+      {
+        "chunk_id": "text_1114"
+      }
+    ],
+    "final_answer": "An analyst should investigate the relationship between product defects, warranty or service obligations, customer trust, and brand risk by examining the following areas:\n\n1. Warranty costs and provisions: Review the company's warranty costs, provisions, and policies to understand the financial impact of product defects and the company's approach to addressing them.\n2. Customer complaints and feedback: Analyze customer complaints, feedback, and reviews to gauge the frequency and severity of product defects and the company's response to them.\n3. Quality control and assurance processes: Evaluate the company's quality control and assurance processes to determine their effectiveness in preventing product defects and ensuring customer satisfaction.\n4. Regulatory compliance: Assess the company's compliance with regulatory requirements and industry standards related to product safety and quality.\n5. Brand reputation and customer trust: Monitor the company's brand reputation and customer trust by analyzing social media, customer reviews, and other metrics to determine the impact of product defects on customer trust and loyalty.\n6. Financial impact: Estimate the financial impact of product defects on the company's revenue, profitability, and cash flow.\n7. Management's discussion and analysis: Review management's discussion and analysis (MD&A) section in the company's annual report to understand their perspective on product defects, warranty obligations, and customer trust.\n8. Risk management: Evaluate the company's risk management practices to determine their effectiveness in identifying, assessing, and mitigating product defect-related risks.\n\nBy examining these areas, an analyst can gain a comprehensive understanding of the relationship between product defects, warranty or service obligations, customer trust, and brand risk, and make informed investment decisions.",
+    "citations": [
+      "text_982",
+      "text_1139",
+      "text_2338",
+      "text_2377",
+      "text_972",
+      "text_1178",
+      "text_1190",
+      "text_922",
+      "text_2357",
+      "text_999",
+      "text_3070",
+      "text_1191",
+      "text_245",
+      "text_206",
+      "text_261",
+      "text_1127",
+      "text_1146",
+      "text_294",
+      "text_236",
+      "text_1114"
+    ]
+  },
+  {
+    "question_id": "HQ3",
+    "user_query": "What evidence helps determine whether future cash flow depends more on capital expenditure discipline, working capital, or operating income?",
+    "retrieved_hypothetical_questions": [
+      {
+        "hypothetical_question": "Question 3: What are the key factors that affect Tesla's cash flow from operations, and how does the company expect its capital expenditures to trend in the next few years?",
+        "batch_id": 23
+      },
+      {
+        "hypothetical_question": "Question 2: How does Tesla's debt structure impact its ability to operate its business, and what are the potential consequences of failing to comply with debt covenants?",
+        "batch_id": 23
+      },
+      {
+        "hypothetical_question": "Question 2: What is the aggregate carrying value of the Variable Interest Entity's (VIE) assets and liabilities as of December 31, 2022, and how does it compare to the previous year?",
+        "batch_id": 25
+      },
+      {
+        "hypothetical_question": "What is the total amount of Tesla's cash, cash equivalents, and short-term investments as of December 31, 2023, and how does it compare to the same period in 2022?",
+        "batch_id": 32
+      },
+      {
+        "hypothetical_question": "Question 1: What is the estimated impact on net income (loss) before income taxes if there is a 10% adverse change in foreign currency exchange rates for all currencies?",
+        "batch_id": 10
+      }
+    ],
+    "parent_chunks_used": [
+      {
+        "chunk_id": "text_2503"
+      },
+      {
+        "chunk_id": "text_2338"
+      },
+      {
+        "chunk_id": "text_2377"
+      },
+      {
+        "chunk_id": "text_3221"
+      },
+      {
+        "chunk_id": "text_1015"
+      },
+      {
+        "chunk_id": "text_1074"
+      },
+      {
+        "chunk_id": "text_2357"
+      },
+      {
+        "chunk_id": "text_1092"
+      },
+      {
+        "chunk_id": "text_2557"
+      },
+      {
+        "chunk_id": "text_3297"
+      },
+      {
+        "chunk_id": "text_3299"
+      },
+      {
+        "chunk_id": "text_1024"
+      },
+      {
+        "chunk_id": "text_3208"
+      },
+      {
+        "chunk_id": "text_2391"
+      },
+      {
+        "chunk_id": "text_1053"
+      },
+      {
+        "chunk_id": "text_1059"
+      },
+      {
+        "chunk_id": "text_2567"
+      },
+      {
+        "chunk_id": "text_3204"
+      },
+      {
+        "chunk_id": "text_2393"
+      },
+      {
+        "chunk_id": "text_2395"
+      }
+    ],
+    "final_answer": "Our business has recently been consistently generating cash flow from operations in excess of our level of capital spend, and with better working capital management resulting in shorter days sales outstanding than days payable outstanding, our sales growth is also facilitating positive cash generation.",
+    "citations": [
+      "text_2503",
+      "text_2338",
+      "text_2377",
+      "text_3221",
+      "text_1015",
+      "text_1074",
+      "text_2357",
+      "text_1092",
+      "text_2557",
+      "text_3297",
+      "text_3299",
+      "text_1024",
+      "text_3208",
+      "text_2391",
+      "text_1053",
+      "text_1059",
+      "text_2567",
+      "text_3204",
+      "text_2393",
+      "text_2395"
+    ]
+  },
+  {
+    "question_id": "HQ4",
+    "user_query": "Which disclosures help evaluate technology, cybersecurity, data, or AI operational risk even if the user does not explicitly say cybersecurity?",
+    "retrieved_hypothetical_questions": [
+      {
+        "hypothetical_question": "Question 3: What is the threshold for determining a Material Adverse Effect in the context of ERISA Events, as specified in Section 3.09 of the agreement?",
+        "batch_id": 28
+      },
+      {
+        "hypothetical_question": "Question 2: How does the Administrative Agent maintain the confidentiality of Information received from the Borrower or its subsidiaries, and what are the exceptions to this confidentiality obligation?",
+        "batch_id": 29
+      },
+      {
+        "hypothetical_question": "Question 3: What are the key risks and challenges associated with Tesla's growth and expansion plans, and how might these risks impact the company's financial condition and operating results?",
+        "batch_id": 9
+      },
+      {
+        "hypothetical_question": "Question 2: How does Tesla account for the impairment of its digital assets, and what was the carrying value of its digital assets as of December 31, 2022?",
+        "batch_id": 24
+      },
+      {
+        "hypothetical_question": "Question 2: What are some of the risks associated with Tesla's international operations, and how could they impact the company's business?",
+        "batch_id": 2
+      }
+    ],
+    "parent_chunks_used": [
+      {
+        "chunk_id": "text_982"
+      },
+      {
+        "chunk_id": "text_2837"
+      },
+      {
+        "chunk_id": "text_2801"
+      },
+      {
+        "chunk_id": "text_2967"
+      },
+      {
+        "chunk_id": "text_2983"
+      },
+      {
+        "chunk_id": "text_2820"
+      },
+      {
+        "chunk_id": "text_972"
+      },
+      {
+        "chunk_id": "text_2994"
+      },
+      {
+        "chunk_id": "text_2873"
+      },
+      {
+        "chunk_id": "text_2913"
+      },
+      {
+        "chunk_id": "text_2827"
+      },
+      {
+        "chunk_id": "text_922"
+      },
+      {
+        "chunk_id": "text_2995"
+      },
+      {
+        "chunk_id": "text_2430"
+      },
+      {
+        "chunk_id": "text_999"
+      },
+      {
+        "chunk_id": "text_245"
+      },
+      {
+        "chunk_id": "text_206"
+      },
+      {
+        "chunk_id": "text_2402"
+      },
+      {
+        "chunk_id": "text_2879"
+      },
+      {
+        "chunk_id": "text_261"
+      }
+    ],
+    "final_answer": "Disclosures about intellectual property, licensing agreements, and potential infringement on third-party intellectual property rights help evaluate technology, cybersecurity, data, or AI operational risk.",
+    "citations": [
+      "text_982",
+      "text_2837",
+      "text_2801",
+      "text_2967",
+      "text_2983",
+      "text_2820",
+      "text_972",
+      "text_2994",
+      "text_2873",
+      "text_2913",
+      "text_2827",
+      "text_922",
+      "text_2995",
+      "text_2430",
+      "text_999",
+      "text_245",
+      "text_206",
+      "text_2402",
+      "text_2879",
+      "text_261"
+    ]
+  }
+]
