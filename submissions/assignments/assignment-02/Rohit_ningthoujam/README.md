@@ -38,7 +38,7 @@ The required libraries are listed in `requirements.txt`.
 ## Output
 
 The notebook generates expanded search queries from the original user query, helping improve retrieval quality and search coverage.
-
+It has Query expansion results in JSON 
 ## Notes
 
 API keys and sensitive credentials are not included in this submission.
