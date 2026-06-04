@@ -28,7 +28,7 @@ This assignment demonstrates the Query Expansion technique to improve retrieval 
 
 4. **Execute the Code:**
     ```bash
-    python solution.py
+    Run the ipynb file
     ```
 
 
