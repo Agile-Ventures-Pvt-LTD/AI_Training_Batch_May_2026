@@ -103,7 +103,7 @@ CHUNK_SIZE = 512
 
 CHUNK_OVERLAP = 16
 
-TOP_K = 5
+TOP_K = 2
 ```
 
 ---
