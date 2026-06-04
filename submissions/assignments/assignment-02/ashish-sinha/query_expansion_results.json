@@ -1,0 +1,910 @@
+[
+    {
+        "question_id": "Q1",
+        "original_query": "Does Tesla's growth story appear more constrained by external supply risk or internal execution and cost structure? Use evidence across Risk Factors and MD&A.",
+        "expanded_queries": [
+            "Tesla growth constraints external supply risk versus internal execution and cost structure analysis in Risk Factors and MD&A",
+            "Tesla Risk Factors section external supply chain disruptions vs internal operational execution and cost pressures",
+            "Tesla operational challenges supply constraints and cost structure impact on growth in MD&A",
+            "Tesla strategic discussion of supply chain risk and execution efficiency in Management's Discussion and Analysis",
+            "Tesla expansion limitations due to vendor shortages or internal performance and expense management in 10‑K",
+            "External supply risk impact on Tesla growth; internal execution and cost structure impact on Tesla growth; compare within Risk Factors and MD&A"
+        ],
+        "baseline_top_chunks": [
+            {
+                "chunk_id": "baseline_1",
+                "section": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "year": 2019,
+                "score": 0.2975749373435974,
+                "content": "developing\tbusiness\trelationships\twith\tus\tif\tthey\tare\tnot\tconvinced\tthat\tour\tbusiness\twill\tsucceed.\tAccordingly,\tin\torder\tto\tbuild\tand\tmaintain\tour\nbusiness,\twe\tmust\tmaintain\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tratings\tagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\nbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tparticularly\tcomplicated\tby\tcertain\tfactors\tincluding\tthose\tthat\tare\tlargely\toutside\tof\tour\ncontrol,\tsuch\tas\tour\tlimited\toperating\thistory,\tcustomer\tunfamiliarity\twith\tour\tproducts,\tany\tdelays\tin\tscaling\tmanufacturing,\tdelivery\tand\tservice\noperations\tto\tmeet\tdemand,\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices,\tand\tour\tquarterly\nproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations.\nIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\nattention\tincludes\tfrequent\tcriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\nmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tcould\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\nfunds\tif\tneeded.\n22",
+                "metadata": {
+                    "creationdate": "2020-09-30T05:19:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 24,
+                    "page_label": "25",
+                    "producer": "Qt 5.11.3",
+                    "source": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                    "title": "",
+                    "total_pages": 297
+                }
+            },
+            {
+                "chunk_id": "baseline_2",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "year": 2022,
+                "score": 0.3063735365867615,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2022\nINDEX\n\t\n\t\t\n\t\t\n\t\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n29\nItem\t2.\n\t\nProperties\n\t\n29\nItem\t3.\n\t\nLegal\tProceedings\n\t\n29\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n29\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\n\t\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n30\nItem\t6.\n\t\n[Reserved]\n\t\n31\nItem\t7.\n\t\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n32\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n\t\n44\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n45\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n90\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n90\nItem\t9B.\n\t\nOther\tInformation\n\t\n90\nItem\t9C.\n\t\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n\t\n90\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n91\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n91\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters",
+                "metadata": {
+                    "creationdate": "2023-01-31T11:10:39+00:00",
+                    "creator": "wkhtmltopdf 0.12.6",
+                    "page": 1,
+                    "page_label": "2",
+                    "producer": "Qt 5.15.2",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                    "title": "",
+                    "total_pages": 251
+                }
+            },
+            {
+                "chunk_id": "baseline_3",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "year": 2023,
+                "score": 0.30847442150115967,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2023\nINDEX\n\t\n\t\nPage\nPART\tI.\n\t\n\t\nItem\t1.\nBusiness\n4\nItem\t1A.\nRisk\tFactors\n14\nItem\t1B.\nUnresolved\tStaff\tComments\n28\nItem\t1C.\nCybersecurity\n29\nItem\t2.\nProperties\n30\nItem\t3.\nLegal\tProceedings\n30\nItem\t4.\nMine\tSafety\tDisclosures\n30\n\t\nPART\tII.\n\t\nItem\t5.\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n31\nItem\t6.\n[Reserved]\n32\nItem\t7.\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n33\nItem\t7A.\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n45\nItem\t8.\nFinancial\tStatements\tand\tSupplementary\tData\n46\nItem\t9.\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n93\nItem\t9A.\nControls\tand\tProcedures\n93\nItem\t9B.\nOther\tInformation\n94\nItem\t9C.\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n94\n\t\nPART\tIII.\n\t\nItem\t10.\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n95\nItem\t11.\nExecutive\tCompensation\n95\nItem\t12.\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n95\nItem\t13.\nCertain\tRelationships\tand\tRelated\tTransactions,\tand\tDirector\tIndependence\n95\nItem\t14.\nPrincipal\tAccountant\tFees\tand\tServices\n95\n\t\nPART\tIV.\n\t\nItem\t15.\nExhibits\tand\tFinancial\tStatement\tSchedules\n96\nItem\t16.\nSummary\n111\n\t\nSignatures",
+                "metadata": {
+                    "creationdate": "2024-01-29T11:11:14+00:00",
+                    "creator": "wkhtmltopdf 0.12.6",
+                    "page": 2,
+                    "page_label": "3",
+                    "producer": "Qt 5.15.2",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                    "title": "",
+                    "total_pages": 130
+                }
+            },
+            {
+                "chunk_id": "baseline_4",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.30940568447113037,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2020\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n27\nItem\t2.\n\t\nProperties\n\t\n27\nItem\t3.\n\t\nLegal\tProceedings\n\t\n28\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n28\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n29\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n30\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n31\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n49\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n50\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n107\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n107\nItem\t9B.\n\t\nOther\tInformation\n\t\n107\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n108\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n108\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n108\nItem\t13.",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 1,
+                    "page_label": "2",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            },
+            {
+                "chunk_id": "baseline_5",
+                "section": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "year": 2019,
+                "score": 0.3106998801231384,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2019\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n1\nItem\t1A.\n\t\nRisk\tFactors\n\t\n15\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n34\nItem\t2.\n\t\nProperties\n\t\n35\nItem\t3.\n\t\nLegal\tProceedings\n\t\n35\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n35\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n36\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n38\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n39\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n60\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n61\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n127\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n127\nItem\t9B.\n\t\nOther\tInformation\n\t\n128\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n129\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n129\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n129\nItem\t13.",
+                "metadata": {
+                    "creationdate": "2020-09-30T05:19:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 1,
+                    "page_label": "2",
+                    "producer": "Qt 5.11.3",
+                    "source": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                    "title": "",
+                    "total_pages": 297
+                }
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "chunk_id": "expanded_1",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.3358260989189148,
+                "retrieved_by": "Tesla growth constraints external supply risk versus internal execution and cost structure analysis in Risk Factors and MD&A",
+                "content": "inventory.\tSimilarly,\tthe\tincreasing\tnumber\tof\tTesla\tvehicles\talso\trequires\tus\tto\tcontinue\tto\trapidly\tincrease\tthe\tnumber\tof\tour\tSupercharger\tstations\tand\nconnectors\tthroughout\tthe\tworld.\nThere\tis\tno\tassurance\tthat\twe\twill\tbe\table\tto\tramp\tour\tbusiness\tto\tmeet\tour\tsales,\tdelivery,\tinstallation,\tservicing\tand\tvehicle\tcharging\ttargets\tglobally,\nthat\tour\tprojections\ton\twhich\tsuch\ttargets\tare\tbased\twill\tprove\taccurate\tor\tthat\tthe\tpace\tof\tgrowth\tor\tcoverage\tof\tour\tcustomer\tinfrastructure\tnetwork\twill\nmeet\tcustomer\texpectations.\t\nThese\tplans\trequire\tsignificant\tcash\tinvestments\tand\tmanagement\tresources\tand\tthere\tis\tno\tguarantee\tthat\tthey\twill\tgenerate\nadditional\tsales\tor\tinstallations\tof\tour\tproducts,\tor\tthat\twe\twill\tbe\table\tto\tavoid\tcost\toverruns\tor\tbe\table\tto\thire\tadditional\tpersonnel\tto\tsupport\tthem.\t\nAs\twe\nexpand,\tw\ne\twill\talso\tneed\tto\tensure\tour\tcompliance\twith\tregulatory\trequirements\tin\tvarious\tjurisdictions\tapplicable\tto\tthe\tsale,\tinstallation\tand\tservicing\tof\tour\nproducts,\tthe\tsale\tor\tdispatch\tof\telectricity\trelated\tto\tour\tenergy\tproducts\tand\tthe\toperation\tof\tSuperchargers.\n\tIf\twe\tfail\tto\tmanage\tour\tgrowth\teffectively,\tit\tmay\nharm\tour\tbrand,\tbusiness,\tprospects,\tfinancial\tcondition\tand\toperating\tresults.\nOur\tfuture\tgrowth\tand\tsuccess\tare\tdependent\tupon\tconsumers’\tdemand\tfor\telectric\tvehicles\tand\tspecifically\tour\tvehicles\tin\tan\tautomotive\nindustry\tthat\tis\tgenerally\tcompetitive,\tcyclical\tand\tvolatile.\nIf\tthe\tmarket\tfor\telectric\tvehicles\tin\tgeneral\tand\tTesla\tvehicles\tin\tparticular\tdoes\tnot\tdevelop\tas\twe\texpect,\tdevelops\tmore\tslowly\tthan\twe\texpect,\tor\tif",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 14,
+                    "page_label": "15",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            },
+            {
+                "chunk_id": "expanded_2",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "year": 2022,
+                "score": 0.33822762966156006,
+                "retrieved_by": "Tesla growth constraints external supply risk versus internal execution and cost structure analysis in Risk Factors and MD&A",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2022\nINDEX\n\t\n\t\t\n\t\t\n\t\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n29\nItem\t2.\n\t\nProperties\n\t\n29\nItem\t3.\n\t\nLegal\tProceedings\n\t\n29\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n29\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\n\t\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n30\nItem\t6.\n\t\n[Reserved]\n\t\n31\nItem\t7.\n\t\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n32\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n\t\n44\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n45\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n90\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n90\nItem\t9B.\n\t\nOther\tInformation\n\t\n90\nItem\t9C.\n\t\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n\t\n90\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n91\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n91\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters",
+                "metadata": {
+                    "creationdate": "2023-01-31T11:10:39+00:00",
+                    "creator": "wkhtmltopdf 0.12.6",
+                    "page": 1,
+                    "page_label": "2",
+                    "producer": "Qt 5.15.2",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                    "title": "",
+                    "total_pages": 251
+                }
+            },
+            {
+                "chunk_id": "expanded_3",
+                "section": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "year": 2019,
+                "score": 0.3452870845794678,
+                "retrieved_by": "Tesla Risk Factors section external supply chain disruptions vs internal operational execution and cost pressures",
+                "content": "developing\tbusiness\trelationships\twith\tus\tif\tthey\tare\tnot\tconvinced\tthat\tour\tbusiness\twill\tsucceed.\tAccordingly,\tin\torder\tto\tbuild\tand\tmaintain\tour\nbusiness,\twe\tmust\tmaintain\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tratings\tagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\nbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tparticularly\tcomplicated\tby\tcertain\tfactors\tincluding\tthose\tthat\tare\tlargely\toutside\tof\tour\ncontrol,\tsuch\tas\tour\tlimited\toperating\thistory,\tcustomer\tunfamiliarity\twith\tour\tproducts,\tany\tdelays\tin\tscaling\tmanufacturing,\tdelivery\tand\tservice\noperations\tto\tmeet\tdemand,\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices,\tand\tour\tquarterly\nproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations.\nIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\nattention\tincludes\tfrequent\tcriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\nmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tcould\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\nfunds\tif\tneeded.\n22",
+                "metadata": {
+                    "creationdate": "2020-09-30T05:19:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 24,
+                    "page_label": "25",
+                    "producer": "Qt 5.11.3",
+                    "source": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                    "title": "",
+                    "total_pages": 297
+                }
+            },
+            {
+                "chunk_id": "expanded_4",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "year": 2022,
+                "score": 0.34558576345443726,
+                "retrieved_by": "Tesla Risk Factors section external supply chain disruptions vs internal operational execution and cost pressures",
+                "content": "volumes\tcontinue\tto\tgrow,\twe\thave\tfaced\tin\tthe\tpast,\tand\tmay\tface\tchallenges\twith\tdeliveries\tat\tincreasing\tvolumes,\tparticularly\tin\tinternational\n\t\nmarkets\trequiring\tsignificant\ttransit\ttimes.\tWe\thave\talso\tdeployed\ta\tnumber\tof\tdelivery\tmodels,\tsuch\tas\tdeliveries\tto\tcustomers’\thomes\tand\tworkplaces\n\t\nand\ttouchless\tdeliveries,\tbut\tthere\tis\tno\tguarantee\tthat\tsuch\tmodels\twill\tbe\tscalable\tor\tbe\taccepted\tglobally.\tLikewise,\tas\twe\tramp\tour\tenergy\tproducts,\n\t\nwe\tare\tworking\tto\tsubstantially\tincrease\tour\tproduction\tand\tinstallation\tcapabilities.\tIf\twe\texperience\tproduction\tdelays\tor\tinaccurately\tforecast\n\t\ndemand,\tour\tbusiness,\tfinancial\tcondition\tand\toperating\tresults\tmay\tbe\tharmed.\n\t\nMoreover,\tbecause\tof\tour\tunique\texpertise\twith\tour\tvehicles,\twe\trecommend\tthat\tour\tvehicles\tbe\tserviced\tby\tus\tor\tby\tcertain\tauthorized\n\t\nprofessionals.\tIf\twe\texperience\tdelays\tin\tadding\tservicing\tcapacity\tor\tservicing\tour\tvehicles\tefficiently,\tor\texperience\tunforeseen\tissues\twith\tthe\n\t\nreliability\tof\tour\tvehicles,\tparticularly\thigher-volume\tadditions\tto\tour\tfleet\tsuch\tas\tModel\t3\tand\tModel\tY,\tit\tcould\toverburden\tour\tservicing\tcapabilities\n\t\nand\tparts\tinventory.\tSimilarly,\tthe\tincreasing\tnumber\tof\tTesla\tvehicles\talso\trequires\tus\tto\tcontinue\tto\trapidly\tincrease\tthe\tnumber\tof\tour\tSupercharger\n\t\nstations\tand\tconnectors\tthroughout\tthe\tworld.\n\t\nThere\tis\tno\tassurance\tthat\twe\twill\tbe\table\tto\tramp\tour\tbusiness\tto\tmeet\tour\tsales,\tdelivery,\tinstallation,\tservicing\tand\tvehicle\tcharging\ttargets\n\t\nglobally,\tthat\tour\tprojections\ton\twhich\tsuch\ttargets\tare\tbased\twill\tprove\taccurate\tor\tthat\tthe\tpace\tof\tgrowth\tor\tcoverage\tof\tour\tcustomer\tinfrastructure",
+                "metadata": {
+                    "creationdate": "2023-01-31T11:10:39+00:00",
+                    "creator": "wkhtmltopdf 0.12.6",
+                    "page": 15,
+                    "page_label": "16",
+                    "producer": "Qt 5.15.2",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                    "title": "",
+                    "total_pages": 251
+                }
+            },
+            {
+                "chunk_id": "expanded_5",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.3014668822288513,
+                "retrieved_by": "Tesla operational challenges supply constraints and cost structure impact on growth in MD&A",
+                "content": "inventory.\tSimilarly,\tthe\tincreasing\tnumber\tof\tTesla\tvehicles\talso\trequires\tus\tto\tcontinue\tto\trapidly\tincrease\tthe\tnumber\tof\tour\tSupercharger\tstations\tand\nconnectors\tthroughout\tthe\tworld.\nThere\tis\tno\tassurance\tthat\twe\twill\tbe\table\tto\tramp\tour\tbusiness\tto\tmeet\tour\tsales,\tdelivery,\tinstallation,\tservicing\tand\tvehicle\tcharging\ttargets\tglobally,\nthat\tour\tprojections\ton\twhich\tsuch\ttargets\tare\tbased\twill\tprove\taccurate\tor\tthat\tthe\tpace\tof\tgrowth\tor\tcoverage\tof\tour\tcustomer\tinfrastructure\tnetwork\twill\nmeet\tcustomer\texpectations.\t\nThese\tplans\trequire\tsignificant\tcash\tinvestments\tand\tmanagement\tresources\tand\tthere\tis\tno\tguarantee\tthat\tthey\twill\tgenerate\nadditional\tsales\tor\tinstallations\tof\tour\tproducts,\tor\tthat\twe\twill\tbe\table\tto\tavoid\tcost\toverruns\tor\tbe\table\tto\thire\tadditional\tpersonnel\tto\tsupport\tthem.\t\nAs\twe\nexpand,\tw\ne\twill\talso\tneed\tto\tensure\tour\tcompliance\twith\tregulatory\trequirements\tin\tvarious\tjurisdictions\tapplicable\tto\tthe\tsale,\tinstallation\tand\tservicing\tof\tour\nproducts,\tthe\tsale\tor\tdispatch\tof\telectricity\trelated\tto\tour\tenergy\tproducts\tand\tthe\toperation\tof\tSuperchargers.\n\tIf\twe\tfail\tto\tmanage\tour\tgrowth\teffectively,\tit\tmay\nharm\tour\tbrand,\tbusiness,\tprospects,\tfinancial\tcondition\tand\toperating\tresults.\nOur\tfuture\tgrowth\tand\tsuccess\tare\tdependent\tupon\tconsumers’\tdemand\tfor\telectric\tvehicles\tand\tspecifically\tour\tvehicles\tin\tan\tautomotive\nindustry\tthat\tis\tgenerally\tcompetitive,\tcyclical\tand\tvolatile.\nIf\tthe\tmarket\tfor\telectric\tvehicles\tin\tgeneral\tand\tTesla\tvehicles\tin\tparticular\tdoes\tnot\tdevelop\tas\twe\texpect,\tdevelops\tmore\tslowly\tthan\twe\texpect,\tor\tif",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 14,
+                    "page_label": "15",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            }
+        ],
+        "final_answer": "**Answer**  \nTesla’s growth story is portrayed as being more constrained by internal execution and cost‑structure challenges than by external supply‑side risks. The filing repeatedly stresses the need for large cash outlays, the risk of cost overruns, the difficulty of hiring and managing additional personnel, and the ability to scale manufacturing, delivery and service operations—issues that are internal to the company. While external factors such as regulatory compliance and market demand are noted, the dominant constraints highlighted are internal operational and cost‑management risks.\n\n**Key Supporting Evidence**  \n- Tesla must “rapidly increase the number of our Supercharger stations… These plans require significant cash investments and management resources and there is no guarantee that they will generate additional sales… or that we will be able to avoid cost overruns or be able to hire additional personnel to support them.” – indicating internal cost and execution risk.  \n- The company notes “limited operating history, customer unfamiliarity… any delays in scaling manufacturing, delivery and service operations to meet demand… competition and uncertainty regarding the future of electric vehicles… quarterly production and sales performance compared with market expectations” – underscoring internal execution challenges.  \n\n**Citations**  \n- [first chunk – risk factors on cash investment, cost overruns, hiring, compliance]  \n- [second chunk – risk factors on limited history, scaling manufacturing, delivery, service, competition]",
+        "citations": [
+            {
+                "chunk_id": "expanded_1",
+                "source_doc": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020
+            },
+            {
+                "chunk_id": "expanded_2",
+                "source_doc": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "year": 2022
+            },
+            {
+                "chunk_id": "expanded_3",
+                "source_doc": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "section": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "year": 2019
+            },
+            {
+                "chunk_id": "expanded_4",
+                "source_doc": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "year": 2022
+            },
+            {
+                "chunk_id": "expanded_5",
+                "source_doc": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020
+            }
+        ],
+        "baseline_quality": "Low",
+        "expanded_quality": "Low",
+        "retrieval_improvement_analysis": "Baseline retrieved 5 chunks across 4 sections. Expanded retrieval returned 12 chunks across 4 sections."
+    },
+    {
+        "question_id": "Q2",
+        "original_query": "Explain how Tesla's AI and product roadmap is reflected in spending, operational priorities, and risk disclosures. Avoid generic AI claims.",
+        "expanded_queries": [
+            "What are Tesla’s AI‑related capital expenditures and R&D spend trends in the latest 10‑K, and how do they align with the company’s product roadmap?",
+            "How does Tesla disclose AI‑related risks in its Risk Factors section, including operational, regulatory, and competitive exposures tied to its AI product roadmap?",
+            "What operational priorities does Tesla highlight in the 10‑K (e.g., manufacturing capacity, talent acquisition, infrastructure) that support its AI and product development initiatives?",
+            "How does Tesla’s Management’s Discussion & Analysis describe the strategic integration of AI into its product roadmap and the associated spending allocations?",
+            "What does Tesla’s 10‑K reveal about machine‑learning and autonomous‑technology investments, product development plans, and related risk disclosures?",
+            "Provide separate queries for (a) AI‑related capital and R&D spending, (b) operational focus areas enabling AI product rollout, and (c) risk factor statements concerning AI and autonomous technology in Tesla’s filing."
+        ],
+        "baseline_top_chunks": [
+            {
+                "chunk_id": "baseline_1",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.37954020500183105,
+                "content": "claims\tfor\tvehicle\texposure,\tmeaning\tthat\tany\tproduct\tliability\tclaims\twill\tlikely\thave\tto\tbe\tpaid\tfrom\tcompany\tfunds\tand\tnot\tby\tinsurance.\nWe\twill\tneed\tto\tmaintain\tpublic\tcredibility\tand\tconfidence\tin\tour\tlong-term\tbusiness\tprospects\tin\torder\tto\tsucceed.\nIn\torder\tto\tmaintain\tand\tgrow\tour\tbusiness,\twe\tmust\tmaintain\tcredibility\tand\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tinvestors,\tratings\nagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\tbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tchallenging\tdue\tto\tour\tlimited\noperating\thistory\trelative\tto\testablished\tcompetitors;\tcustomer\tunfamiliarity\twith\tour\tproducts;\tany\tdelays\twe\tmay\texperience\tin\tscaling\tmanufacturing,\ndelivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices;\tour\nquarterly\tproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations;\tand\tother\tfactors\tincluding\tthose\tover\twhich\twe\thave\tno\tcontrol.\tIn\tparticular,\nTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\tattention\tincludes\tfrequent\ncriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\tmanagement\tteam.\tAny\tsuch\tnegative\nperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tmay\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\tfunds\tif\tneeded.\n18",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 17,
+                    "page_label": "18",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            },
+            {
+                "chunk_id": "baseline_2",
+                "section": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "year": 2019,
+                "score": 0.38259369134902954,
+                "content": "developing\tbusiness\trelationships\twith\tus\tif\tthey\tare\tnot\tconvinced\tthat\tour\tbusiness\twill\tsucceed.\tAccordingly,\tin\torder\tto\tbuild\tand\tmaintain\tour\nbusiness,\twe\tmust\tmaintain\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tratings\tagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\nbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tparticularly\tcomplicated\tby\tcertain\tfactors\tincluding\tthose\tthat\tare\tlargely\toutside\tof\tour\ncontrol,\tsuch\tas\tour\tlimited\toperating\thistory,\tcustomer\tunfamiliarity\twith\tour\tproducts,\tany\tdelays\tin\tscaling\tmanufacturing,\tdelivery\tand\tservice\noperations\tto\tmeet\tdemand,\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices,\tand\tour\tquarterly\nproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations.\nIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\nattention\tincludes\tfrequent\tcriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\nmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tcould\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\nfunds\tif\tneeded.\n22",
+                "metadata": {
+                    "creationdate": "2020-09-30T05:19:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 24,
+                    "page_label": "25",
+                    "producer": "Qt 5.11.3",
+                    "source": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                    "title": "",
+                    "total_pages": 297
+                }
+            },
+            {
+                "chunk_id": "baseline_3",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "year": 2023,
+                "score": 0.40095216035842896,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2023\nINDEX\n\t\n\t\nPage\nPART\tI.\n\t\n\t\nItem\t1.\nBusiness\n4\nItem\t1A.\nRisk\tFactors\n14\nItem\t1B.\nUnresolved\tStaff\tComments\n28\nItem\t1C.\nCybersecurity\n29\nItem\t2.\nProperties\n30\nItem\t3.\nLegal\tProceedings\n30\nItem\t4.\nMine\tSafety\tDisclosures\n30\n\t\nPART\tII.\n\t\nItem\t5.\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n31\nItem\t6.\n[Reserved]\n32\nItem\t7.\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n33\nItem\t7A.\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n45\nItem\t8.\nFinancial\tStatements\tand\tSupplementary\tData\n46\nItem\t9.\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n93\nItem\t9A.\nControls\tand\tProcedures\n93\nItem\t9B.\nOther\tInformation\n94\nItem\t9C.\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n94\n\t\nPART\tIII.\n\t\nItem\t10.\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n95\nItem\t11.\nExecutive\tCompensation\n95\nItem\t12.\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n95\nItem\t13.\nCertain\tRelationships\tand\tRelated\tTransactions,\tand\tDirector\tIndependence\n95\nItem\t14.\nPrincipal\tAccountant\tFees\tand\tServices\n95\n\t\nPART\tIV.\n\t\nItem\t15.\nExhibits\tand\tFinancial\tStatement\tSchedules\n96\nItem\t16.\nSummary\n111\n\t\nSignatures",
+                "metadata": {
+                    "creationdate": "2024-01-29T11:11:14+00:00",
+                    "creator": "wkhtmltopdf 0.12.6",
+                    "page": 2,
+                    "page_label": "3",
+                    "producer": "Qt 5.15.2",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                    "title": "",
+                    "total_pages": 130
+                }
+            },
+            {
+                "chunk_id": "baseline_4",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "year": 2022,
+                "score": 0.4113994836807251,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2022\nINDEX\n\t\n\t\t\n\t\t\n\t\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n29\nItem\t2.\n\t\nProperties\n\t\n29\nItem\t3.\n\t\nLegal\tProceedings\n\t\n29\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n29\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\n\t\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n30\nItem\t6.\n\t\n[Reserved]\n\t\n31\nItem\t7.\n\t\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n32\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n\t\n44\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n45\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n90\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n90\nItem\t9B.\n\t\nOther\tInformation\n\t\n90\nItem\t9C.\n\t\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n\t\n90\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n91\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n91\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters",
+                "metadata": {
+                    "creationdate": "2023-01-31T11:10:39+00:00",
+                    "creator": "wkhtmltopdf 0.12.6",
+                    "page": 1,
+                    "page_label": "2",
+                    "producer": "Qt 5.15.2",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                    "title": "",
+                    "total_pages": 251
+                }
+            },
+            {
+                "chunk_id": "baseline_5",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.4148405194282532,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2020\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n27\nItem\t2.\n\t\nProperties\n\t\n27\nItem\t3.\n\t\nLegal\tProceedings\n\t\n28\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n28\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n29\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n30\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n31\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n49\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n50\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n107\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n107\nItem\t9B.\n\t\nOther\tInformation\n\t\n107\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n108\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n108\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n108\nItem\t13.",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 1,
+                    "page_label": "2",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "chunk_id": "expanded_1",
+                "section": "tesla-annual-reports\\tsla-10ka_20211231-gen.pdf",
+                "year": 2021,
+                "score": 0.26037371158599854,
+                "retrieved_by": "What are Tesla’s AI‑related capital expenditures and R&D spend trends in the latest 10‑K, and how do they align with the company’s product roadmap?",
+                "content": "objectives.\tIn\t2021,\tTesla’s\tfull-year\taccomplishments\tunder\tour\texecutive\tleadership\tincluded\tthe\tfollowing:\n\t\n•\nTotal\trevenues\tof\t$53.82\tbillion,\trepresenting\tan\tincrease\tof\t$22.28\tbillion,\tor\t70.64%\tcompared\tto\tthe\tprior\tyear;\n\t\n•\nNet\tincome\tattributable\tto\tcommon\tstockholders\tof\t$5.52\tbillion\tand\tan\toperating\tmargin\tof\t12.1%,\trepresenting\tfavorable\tchanges\tof\n$4.80\tbillion\tand\t5.8%,\trespectively,\tcompared\tto\tthe\tprior\tyear;\n\t\n•\nAnnual\tvehicle\tdelivery\tand\tproduction\trecords\tof\t936,222\tand\t\n930,422\n\ttotal\tvehicles,\trepresenting\tan\tincrease\tof\t87.38%\tand\t82.53%,\nrespectively,\tcompared\tto\tthe\tprior\tyear;\n\t\n•\n3.99\tgigawatt\thours\tof\tenergy\tstorage\tand\t345\tmegawatts\tof\tsolar\tenergy\tsystems\tdeployed;\tand\n\t\n•\nOngoing\tprogress\tin\tthe\tglobal\tgrowth\tof\tour\tmanufacturing\tcapabilities,\tincluding\tthe\tcommencement\tof\tbuilds\tof\tthe\tModel\tY\tin\nGigafactory\tTexas\tand\tequipment\ttesting\tthrough\tthe\tvehicle\tproduction\tprocess\tin\tGigafactory\tBerlin.\n7",
+                "metadata": {
+                    "creationdate": "2022-05-02T10:10:26+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 9,
+                    "page_label": "10",
+                    "producer": "Qt 5.11.3",
+                    "source": "tesla-annual-reports\\tsla-10ka_20211231-gen.pdf",
+                    "title": "",
+                    "total_pages": 56
+                }
+            },
+            {
+                "chunk_id": "expanded_2",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "year": 2023,
+                "score": 0.2854939103126526,
+                "retrieved_by": "What are Tesla’s AI‑related capital expenditures and R&D spend trends in the latest 10‑K, and how do they align with the company’s product roadmap?",
+                "content": "Tesla,\tInc.\nConsolidated\tStatements\tof\tOperations\n(in\tmillions,\texcept\tper\tshare\tdata)\nYear\tEnded\tDecember\t31,\n2023\n2022\n2021\nRevenues\nAutomotive\tsales\n$\n78,509\n\t\n$\n67,210\n\t\n$\n44,125\n\t\nAutomotive\tregulatory\tcredits\n1,790\n\t\n1,776\n\t\n1,465\n\t\nAutomotive\tleasing\n2,120\n\t\n2,476\n\t\n1,642\n\t\nTotal\tautomotive\trevenues\n82,419\n\t\n71,462\n\t\n47,232\n\t\nEnergy\tgeneration\tand\tstorage\n6,035\n\t\n3,909\n\t\n2,789\n\t\nServices\tand\tother\n8,319\n\t\n6,091\n\t\n3,802\n\t\nTotal\trevenues\n96,773\n\t\n81,462\n\t\n53,823\n\t\nCost\tof\trevenues\nAutomotive\tsales\n65,121\n\t\n49,599\n\t\n32,415\n\t\nAutomotive\tleasing\n1,268\n\t\n1,509\n\t\n978\n\t\nTotal\tautomotive\tcost\tof\trevenues\n66,389\n\t\n51,108\n\t\n33,393\n\t\nEnergy\tgeneration\tand\tstorage\n4,894\n\t\n3,621\n\t\n2,918\n\t\nServices\tand\tother\n7,830\n\t\n5,880\n\t\n3,906\n\t\nTotal\tcost\tof\trevenues\n79,113\n\t\n60,609\n\t\n40,217\n\t\nGross\tprofit\n17,660\n\t\n20,853\n\t\n13,606\n\t\nOperating\texpenses\nResearch\tand\tdevelopment\n3,969\n\t\n3,075\n\t\n2,593\n\t\nSelling,\tgeneral\tand\tadministrative\n4,800\n\t\n3,946\n\t\n4,517\n\t\nRestructuring\tand\tother\n—\n\t\n176\n\t\n(\n27\n)\nTotal\toperating\texpenses\n8,769\n\t\n7,197\n\t\n7,083\n\t\nIncome\tfrom\toperations\n8,891\n\t\n13,656",
+                "metadata": {
+                    "creationdate": "2024-01-29T11:11:14+00:00",
+                    "creator": "wkhtmltopdf 0.12.6",
+                    "page": 50,
+                    "page_label": "51",
+                    "producer": "Qt 5.15.2",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                    "title": "",
+                    "total_pages": 130
+                }
+            },
+            {
+                "chunk_id": "expanded_3",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.3072648048400879,
+                "retrieved_by": "How does Tesla disclose AI‑related risks in its Risk Factors section, including operational, regulatory, and competitive exposures tied to its AI product roadmap?",
+                "content": "claims\tfor\tvehicle\texposure,\tmeaning\tthat\tany\tproduct\tliability\tclaims\twill\tlikely\thave\tto\tbe\tpaid\tfrom\tcompany\tfunds\tand\tnot\tby\tinsurance.\nWe\twill\tneed\tto\tmaintain\tpublic\tcredibility\tand\tconfidence\tin\tour\tlong-term\tbusiness\tprospects\tin\torder\tto\tsucceed.\nIn\torder\tto\tmaintain\tand\tgrow\tour\tbusiness,\twe\tmust\tmaintain\tcredibility\tand\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tinvestors,\tratings\nagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\tbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tchallenging\tdue\tto\tour\tlimited\noperating\thistory\trelative\tto\testablished\tcompetitors;\tcustomer\tunfamiliarity\twith\tour\tproducts;\tany\tdelays\twe\tmay\texperience\tin\tscaling\tmanufacturing,\ndelivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices;\tour\nquarterly\tproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations;\tand\tother\tfactors\tincluding\tthose\tover\twhich\twe\thave\tno\tcontrol.\tIn\tparticular,\nTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\tattention\tincludes\tfrequent\ncriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\tmanagement\tteam.\tAny\tsuch\tnegative\nperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tmay\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\tfunds\tif\tneeded.\n18",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 17,
+                    "page_label": "18",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            },
+            {
+                "chunk_id": "expanded_4",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "year": 2023,
+                "score": 0.3582923412322998,
+                "retrieved_by": "How does Tesla disclose AI‑related risks in its Risk Factors section, including operational, regulatory, and competitive exposures tied to its AI product roadmap?",
+                "content": "Traffic\tSafety\tAdministration,\tthe\tNational\tTransportation\tSafety\tBoard,\tthe\tSecurities\tand\tExchange\tCommission\t(“SEC”),\tthe\tDepartment\tof\tJustice\n(“DOJ”),\tand\tvarious\tlocal,\tstate,\tfederal,\tand\tinternational\tagencies.\tThe\tongoing\trequests\tfor\tinformation\tinclude\ttopics\tsuch\tas\toperations,\ttechnology\n(e.g.,\tvehicle\tfunctionality,\tAutopilot\tand\tFSD\tCapability),\tcompliance,\tfinance,\tdata\tprivacy,\tand\tother\tmatters\trelated\tto\tTesla’s\tbusiness,\tits\tpersonnel,\nand\trelated\tparties.\tWe\troutinely\tcooperate\twith\tsuch\tformal\tand\tinformal\trequests\tfor\tinformation,\tinvestigations,\tand\tother\tinquiries.\tTo\tour\tknowledge\nno\tgovernment\tagency\tin\tany\tongoing\tinvestigation\thas\tconcluded\tthat\tany\twrongdoing\toccurred.\tWe\tcannot\tpredict\tthe\toutcome\tor\timpact\tof\tany\nongoing\tmatters.\tShould\tthe\tgovernment\tdecide\tto\tpursue\tan\tenforcement\taction,\tthere\texists\tthe\tpossibility\tof\ta\tmaterial\tadverse\timpact\ton\tour\nbusiness,\tresults\tof\toperation,\tprospects,\tcash\tflows,\tfinancial\tposition\tor\tbrand.\n89",
+                "metadata": {
+                    "creationdate": "2024-01-29T11:11:14+00:00",
+                    "creator": "wkhtmltopdf 0.12.6",
+                    "page": 90,
+                    "page_label": "91",
+                    "producer": "Qt 5.15.2",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                    "title": "",
+                    "total_pages": 130
+                }
+            },
+            {
+                "chunk_id": "expanded_5",
+                "section": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "year": 2019,
+                "score": 0.30851757526397705,
+                "retrieved_by": "What operational priorities does Tesla highlight in the 10‑K (e.g., manufacturing capacity, talent acquisition, infrastructure) that support its AI and product development initiatives?",
+                "content": "important\tthat\twe\taddress\tthem\tpromptly\twhile\tcontinuing\tto\treduce\tour\tmanufacturing\tcosts.\tIf\twe\tare\tnot\tsuccessful\tin\tdoing\tso,\tor\tif\twe\texperience\nissues\twith\tour\tongoing\tmanufacturing\tprocess\timprovements\tand\tcost-down\tefforts,\twe\tcould\tface\tdelays\tin\testablishing\tand/or\tsustaining\tour\tModel\t3\nand\tModel\tY\tramps\tor\tbe\tunable\tto\tmeet\tour\trelated\tcost\tand\tprofitability\ttargets.\nMoreover,\t\nwe\twill\tneed\tto\thire,\ttrain\tand\tcompensate\tskilled\temployees\tto\toperate\thigh-volume\tproduction\tfacilities\tto\tsupport\tour\tvehicle\tramp\tat\nthe\tFremont\tFactory\tand\tGigafactory\tShanghai,\tas\twell\tas\tat\tGigafactory\tNevada\tto\tsupport\tthe\tmanufacture\tof\tbattery\tpacks\tand\tdrive\tunits\tfor\tcertain\tof\nour\tvehicles.\t\nFinally,\tbecause\tour\tvehicle\tmodels,\tin\tparticular\tModel\t3\tand\tModel\tY,\tmay\tshare\tcertain\tparts,\tsuppliers\tor\tproduction\tfacilities\twith\neach\tother,\tthe\tvolume\tor\tefficiency\tof\tproduction\twith\trespect\tto\tone\tmodel\tmay\timpact\talso\tthe\tproduction\tof\tother\tmodels\tor\tlead\tto\tbottlenecks\tthat\nimpact\tthe\tproduction\tof\tall\tmodels.\t\t\nWe\tmay\talso\texperience\tsimilar\tfuture\tdelays\tor\tother\tcomplications\tin\tlaunching\tand/or\tramping\tproduction\tof\tnew\tvehicles,\tsuch\tas\tTesla\nSemi,\tCybertruck\tand\tthe\tnew\tTesla\tRoadster,\tour\tenergy\tstorage\tproducts\tand\tthe\tSolar\tRoof,\tas\twell\tas\tfuture\tfeatures\tand\tservices\tsuch\tas\tnew\nAutopilot\tor\tFSD\tfeatures\tand\tthe\tautonomous\tTesla\tride-hailing\tnetwork.\tLikewise,\twe\tmay\tencounter\tdelays\twith\tthe\tdesign,\tconstruction\tand\nregulatory\tor\tother\tapprovals\tnecessary\tto\tbuild\tand\tbring\tonline\tfuture\tmanufacturing\tfacilities,\tincluding\tour\tplanned\tGigafactory\tBerlin\tin\tGermany.\n15",
+                "metadata": {
+                    "creationdate": "2020-09-30T05:19:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 17,
+                    "page_label": "18",
+                    "producer": "Qt 5.11.3",
+                    "source": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                    "title": "",
+                    "total_pages": 297
+                }
+            }
+        ],
+        "final_answer": "I don't know.",
+        "citations": [
+            {
+                "chunk_id": "expanded_1",
+                "source_doc": "tesla-annual-reports\\tsla-10ka_20211231-gen.pdf",
+                "section": "tesla-annual-reports\\tsla-10ka_20211231-gen.pdf",
+                "year": 2021
+            },
+            {
+                "chunk_id": "expanded_2",
+                "source_doc": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "year": 2023
+            },
+            {
+                "chunk_id": "expanded_3",
+                "source_doc": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020
+            },
+            {
+                "chunk_id": "expanded_4",
+                "source_doc": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "year": 2023
+            },
+            {
+                "chunk_id": "expanded_5",
+                "source_doc": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "section": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "year": 2019
+            }
+        ],
+        "baseline_quality": "Low",
+        "expanded_quality": "Low",
+        "retrieval_improvement_analysis": "Baseline retrieved 5 chunks across 4 sections. Expanded retrieval returned 12 chunks across 5 sections. Additional coverage obtained from sections: tesla-annual-reports\\tsla-10ka_20211231-gen.pdf."
+    },
+    {
+        "question_id": "Q3",
+        "original_query": "A supplier asks whether Tesla is exposed to concentration risk across factories, suppliers, raw materials, or geographies. Prepare a concise risk note with citations.",
+        "expanded_queries": [
+            "Tesla concentration risk analysis of manufacturing facilities, key suppliers, critical raw materials, and geographic exposure in the 10‑K",
+            "What risk factors does Tesla disclose regarding concentration of factories, suppliers, raw materials, or regions?",
+            "Tesla operational dependence on specific plants, component suppliers, material sources, and locations",
+            "How does Tesla’s corporate strategy address concentration risk in production sites, supply chain partners, material inputs, and geographic markets?",
+            "Tesla exposure to dependency risk across manufacturing sites, vendors, commodity inputs, and territories",
+            "Tesla factory concentration risk; Tesla supplier concentration risk; Tesla raw material concentration risk; Tesla geographic concentration risk"
+        ],
+        "baseline_top_chunks": [
+            {
+                "chunk_id": "baseline_1",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.35492920875549316,
+                "content": "claims\tfor\tvehicle\texposure,\tmeaning\tthat\tany\tproduct\tliability\tclaims\twill\tlikely\thave\tto\tbe\tpaid\tfrom\tcompany\tfunds\tand\tnot\tby\tinsurance.\nWe\twill\tneed\tto\tmaintain\tpublic\tcredibility\tand\tconfidence\tin\tour\tlong-term\tbusiness\tprospects\tin\torder\tto\tsucceed.\nIn\torder\tto\tmaintain\tand\tgrow\tour\tbusiness,\twe\tmust\tmaintain\tcredibility\tand\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tinvestors,\tratings\nagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\tbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tchallenging\tdue\tto\tour\tlimited\noperating\thistory\trelative\tto\testablished\tcompetitors;\tcustomer\tunfamiliarity\twith\tour\tproducts;\tany\tdelays\twe\tmay\texperience\tin\tscaling\tmanufacturing,\ndelivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices;\tour\nquarterly\tproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations;\tand\tother\tfactors\tincluding\tthose\tover\twhich\twe\thave\tno\tcontrol.\tIn\tparticular,\nTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\tattention\tincludes\tfrequent\ncriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\tmanagement\tteam.\tAny\tsuch\tnegative\nperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tmay\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\tfunds\tif\tneeded.\n18",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 17,
+                    "page_label": "18",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            },
+            {
+                "chunk_id": "baseline_2",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.35869383811950684,
+                "content": ".\n“\nHazardous\tMaterials\n”\tshall\tmean\tany\tchemicals,\tmaterials,\twastes,\tpollutants,\tcontaminants,\tor\tsubstances\tin\tany\tform\tthat\tis\nprohibited,\tlimited\tor\tregulated\tpursuant\tto\tany\tEnvironmental\tLaw\tby\tvirtue\tof\ttheir\ttoxic\tor\totherwise\tdeleterious\tcharacteristics,\nincluding\tany\tpetroleum\tor\tpetroleum\tproducts,\tradioactive\tmaterials,\tasbestos\tin\tany\tform\tthat\tis\tor\tcould\tbecome\tfriable,\turea\nformaldehyde\tfoam\tinsulation,\tdielectric\tfluid\tcontaining\tlevels\tof\tpolychlorinated\tbiphenyls,\tand\tradon\tgas.\n“\nHost\tCustomer\tAgreements\n”\tshall\tmean\tthe\tEnergy\tStorage\tAgreements\tand\tCustomer\tLease\tAgreements.\n“\nImmaterial\tSubsidiary\n”\tshall\tmean,\tas\tof\tany\tdate\tof\tdetermination,\tany\tWholly-Owned\tDomestic\tSubsidiary\tof\tthe\tCompany\nor\n,\n\t\nany\tWholly-Owned\tDutch\tSubsidiary\tof\tTesla\tB.V.\t\n(in\teither\nor\tany\tWholly\tOwned\tUK\tSubsidiary\tof\tTesla\tUK\t(in\teach\n\tcase,\tother\tthan\ta\nBorrower)\t(x)\tthat\thas\tnot\tguaranteed\tany\tother\tIndebtedness\tof\tany\tBorrower\tother\tthan\ta\tguarantee\tby\tany\tSubsidiary\tthat\twas\tcreated\nto\tsatisfy\tstate\tdealer\trequirements,\t(y)\twhose\tconsolidated\ttotal\tassets\t(as\tset\tforth\tin\tthe\tmost\trecent\tconsolidated\tbalance\tsheet\tof\tthe\nCompany\tand\tits\tConsolidated\tSubsidiaries\tdelivered\tto\tthe\tLenders\tpursuant\tto\tthis\tAgreement\tand\tcomputed\tin\taccordance\twith\tGAAP,\nbut\texcluding\tintercompany\tassets),\tdo\tnot\tconstitute\tmore\tthan\t5.0%\tof\tthe\tConsolidated\tTotal\tAssets\tand\t(z)\twhose\tconsolidated\ttotal",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 206,
+                    "page_label": "207",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            },
+            {
+                "chunk_id": "baseline_3",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.40414291620254517,
+                "content": "inventory.\tSimilarly,\tthe\tincreasing\tnumber\tof\tTesla\tvehicles\talso\trequires\tus\tto\tcontinue\tto\trapidly\tincrease\tthe\tnumber\tof\tour\tSupercharger\tstations\tand\nconnectors\tthroughout\tthe\tworld.\nThere\tis\tno\tassurance\tthat\twe\twill\tbe\table\tto\tramp\tour\tbusiness\tto\tmeet\tour\tsales,\tdelivery,\tinstallation,\tservicing\tand\tvehicle\tcharging\ttargets\tglobally,\nthat\tour\tprojections\ton\twhich\tsuch\ttargets\tare\tbased\twill\tprove\taccurate\tor\tthat\tthe\tpace\tof\tgrowth\tor\tcoverage\tof\tour\tcustomer\tinfrastructure\tnetwork\twill\nmeet\tcustomer\texpectations.\t\nThese\tplans\trequire\tsignificant\tcash\tinvestments\tand\tmanagement\tresources\tand\tthere\tis\tno\tguarantee\tthat\tthey\twill\tgenerate\nadditional\tsales\tor\tinstallations\tof\tour\tproducts,\tor\tthat\twe\twill\tbe\table\tto\tavoid\tcost\toverruns\tor\tbe\table\tto\thire\tadditional\tpersonnel\tto\tsupport\tthem.\t\nAs\twe\nexpand,\tw\ne\twill\talso\tneed\tto\tensure\tour\tcompliance\twith\tregulatory\trequirements\tin\tvarious\tjurisdictions\tapplicable\tto\tthe\tsale,\tinstallation\tand\tservicing\tof\tour\nproducts,\tthe\tsale\tor\tdispatch\tof\telectricity\trelated\tto\tour\tenergy\tproducts\tand\tthe\toperation\tof\tSuperchargers.\n\tIf\twe\tfail\tto\tmanage\tour\tgrowth\teffectively,\tit\tmay\nharm\tour\tbrand,\tbusiness,\tprospects,\tfinancial\tcondition\tand\toperating\tresults.\nOur\tfuture\tgrowth\tand\tsuccess\tare\tdependent\tupon\tconsumers’\tdemand\tfor\telectric\tvehicles\tand\tspecifically\tour\tvehicles\tin\tan\tautomotive\nindustry\tthat\tis\tgenerally\tcompetitive,\tcyclical\tand\tvolatile.\nIf\tthe\tmarket\tfor\telectric\tvehicles\tin\tgeneral\tand\tTesla\tvehicles\tin\tparticular\tdoes\tnot\tdevelop\tas\twe\texpect,\tdevelops\tmore\tslowly\tthan\twe\texpect,\tor\tif",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 14,
+                    "page_label": "15",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            },
+            {
+                "chunk_id": "baseline_4",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.4164254665374756,
+                "content": "the\trecommendation\tand\twe\thave\tappealed\tcertain\taspects\tof\tthe\trecommended\tdecision.\tAny\tunfavorable\tultimate\toutcome\tfor\tTesla\tmay\thave\ta\tnegative\nimpact\ton\tthe\tperception\tof\tTesla’s\ttreatment\tof\tour\temployees.\tFurthermore,\twe\tare\tdirectly\tor\tindirectly\tdependent\tupon\tcompanies\twith\tunionized\twork\nforces,\tsuch\tas\tsuppliers\tand\ttrucking\tand\tfreight\tcompanies.\tAny\twork\tstoppages\tor\tstrikes\torganized\tby\tsuch\tunions\tcould\tdelay\tthe\tmanufacture\tand\tsale\tof\nour\tproducts\tand\tmay\tharm\tour\tbusiness\tand\toperating\tresults.\nWe\tmay\tchoose\tto\tor\tbe\tcompelled\tto\tundertake\tproduct\trecalls\tor\ttake\tother\tsimilar\tactions.\nAs\ta\tmanufacturing\tcompany,\twe\tmust\tmanage\tthe\trisk\tof\tproduct\trecalls\twith\trespect\tto\tour\tproducts.\tRecalls\tfor\tour\tvehicles\thave\tresulted\tfrom,\tfor\nexample,\tindustry-wide\tissues\twith\tairbags\tfrom\ta\tparticular\tsupplier,\tconcerns\tof\tcorrosion\tin\tModel\tS\tand\tModel\tX\tpower\tsteering\tassist\tmotor\tbolts,\tcertain\nsuspension\tfailures\tin\tModel\tS\tand\tModel\tX\tand\tissues\twith\tModel\tS\tand\tModel\tX\tmedia\tcontrol\tunits.\tIn\taddition\tto\trecalls\tinitiated\tby\tus\tfor\tvarious\tcauses,\ntesting\tof\tor\tinvestigations\tinto\tour\tproducts\tby\tgovernment\tregulators\tor\tindustry\tgroups\tmay\tcompel\tus\tto\tinitiate\tproduct\trecalls\tor\tmay\tresult\tin\tnegative\npublic\tperceptions\tabout\tthe\tsafety\tof\tour\tproducts,\teven\tif\twe\tdisagree\twith\tthe\tdefect\tdetermination\tor\thave\tdata\tthat\tshows\tthe\tactual\tsafety\trisk\tto\tbe\tnon-\nexistent.\tIn\tthe\tfuture,\twe\tmay\tvoluntarily\tor\tinvoluntarily\tinitiate\trecalls\tif\tany\tof\tour\tproducts\tare\tdetermined\tby\tus\tor\ta\tregulator\tto\tcontain\ta\tsafety\tdefect\tor",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 20,
+                    "page_label": "21",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            },
+            {
+                "chunk_id": "baseline_5",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "year": 2023,
+                "score": 0.41852080821990967,
+                "content": "storage\tproducts\tgenerate\tand\tstore\telectricity,\tthey\thave\tthe\tpotential\tto\tfail\tor\tcause\tinjury\tto\tpeople\tor\tproperty.\tAny\tproduct\tliability\tclaim\tmay\nsubject\tus\tto\tlawsuits\tand\tsubstantial\tmonetary\tdamages,\tproduct\trecalls\tor\tredesign\tefforts,\tand\teven\ta\tmeritless\tclaim\tmay\trequire\tus\tto\tdefend\tit,\tall\tof\nwhich\tmay\tgenerate\tnegative\tpublicity\tand\tbe\texpensive\tand\ttime-consuming.\tIn\tmost\tjurisdictions,\twe\tgenerally\tself-insure\tagainst\tthe\trisk\tof\tproduct\nliability\tclaims\tfor\tvehicle\texposure,\tmeaning\tthat\tany\tproduct\tliability\tclaims\twill\tlikely\thave\tto\tbe\tpaid\tfrom\tcompany\tfunds\tand\tnot\tby\tinsurance.\nWe\twill\tneed\tto\tmaintain\tpublic\tcredibility\tand\tconfidence\tin\tour\tlong-term\tbusiness\tprospects\tin\torder\tto\tsucceed.\nIn\torder\tto\tmaintain\tand\tgrow\tour\tbusiness,\twe\tmust\tmaintain\tcredibility\tand\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tinvestors,\tratings\nagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\tbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tchallenging\tdue\tto\tour\tlimited\noperating\thistory\trelative\tto\testablished\tcompetitors;\tcustomer\tunfamiliarity\twith\tour\tproducts;\tany\tdelays\twe\tmay\texperience\tin\tscaling\tmanufacturing,\ndelivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices;\nour\tquarterly\tproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations;\tand\tother\tfactors\tincluding\tthose\tover\twhich\twe\thave\tno\tcontrol.\tIn\nparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tand\tstatements\tand\tactions\tof\tTesla\tand\tits\tmanagement\tare\tsubject\tto\tsignificant\tamounts\tof",
+                "metadata": {
+                    "creationdate": "2024-01-29T11:11:14+00:00",
+                    "creator": "wkhtmltopdf 0.12.6",
+                    "page": 19,
+                    "page_label": "20",
+                    "producer": "Qt 5.15.2",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                    "title": "",
+                    "total_pages": 130
+                }
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "chunk_id": "expanded_1",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "year": 2022,
+                "score": 0.3642253875732422,
+                "retrieved_by": "Tesla concentration risk analysis of manufacturing facilities, key suppliers, critical raw materials, and geographic exposure in the 10‑K",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2022\nINDEX\n\t\n\t\t\n\t\t\n\t\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n29\nItem\t2.\n\t\nProperties\n\t\n29\nItem\t3.\n\t\nLegal\tProceedings\n\t\n29\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n29\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\n\t\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n30\nItem\t6.\n\t\n[Reserved]\n\t\n31\nItem\t7.\n\t\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n32\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n\t\n44\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n45\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n90\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n90\nItem\t9B.\n\t\nOther\tInformation\n\t\n90\nItem\t9C.\n\t\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n\t\n90\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n91\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n91\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters",
+                "metadata": {
+                    "creationdate": "2023-01-31T11:10:39+00:00",
+                    "creator": "wkhtmltopdf 0.12.6",
+                    "page": 1,
+                    "page_label": "2",
+                    "producer": "Qt 5.15.2",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                    "title": "",
+                    "total_pages": 251
+                }
+            },
+            {
+                "chunk_id": "expanded_2",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.3707982301712036,
+                "retrieved_by": "Tesla concentration risk analysis of manufacturing facilities, key suppliers, critical raw materials, and geographic exposure in the 10‑K",
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2020\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n27\nItem\t2.\n\t\nProperties\n\t\n27\nItem\t3.\n\t\nLegal\tProceedings\n\t\n28\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n28\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n29\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n30\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n31\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n49\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n50\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n107\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n107\nItem\t9B.\n\t\nOther\tInformation\n\t\n107\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n108\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n108\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n108\nItem\t13.",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 1,
+                    "page_label": "2",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            },
+            {
+                "chunk_id": "expanded_3",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.33601629734039307,
+                "retrieved_by": "What risk factors does Tesla disclose regarding concentration of factories, suppliers, raw materials, or regions?",
+                "content": ".\n“\nHazardous\tMaterials\n”\tshall\tmean\tany\tchemicals,\tmaterials,\twastes,\tpollutants,\tcontaminants,\tor\tsubstances\tin\tany\tform\tthat\tis\nprohibited,\tlimited\tor\tregulated\tpursuant\tto\tany\tEnvironmental\tLaw\tby\tvirtue\tof\ttheir\ttoxic\tor\totherwise\tdeleterious\tcharacteristics,\nincluding\tany\tpetroleum\tor\tpetroleum\tproducts,\tradioactive\tmaterials,\tasbestos\tin\tany\tform\tthat\tis\tor\tcould\tbecome\tfriable,\turea\nformaldehyde\tfoam\tinsulation,\tdielectric\tfluid\tcontaining\tlevels\tof\tpolychlorinated\tbiphenyls,\tand\tradon\tgas.\n“\nHost\tCustomer\tAgreements\n”\tshall\tmean\tthe\tEnergy\tStorage\tAgreements\tand\tCustomer\tLease\tAgreements.\n“\nImmaterial\tSubsidiary\n”\tshall\tmean,\tas\tof\tany\tdate\tof\tdetermination,\tany\tWholly-Owned\tDomestic\tSubsidiary\tof\tthe\tCompany\nor\n,\n\t\nany\tWholly-Owned\tDutch\tSubsidiary\tof\tTesla\tB.V.\t\n(in\teither\nor\tany\tWholly\tOwned\tUK\tSubsidiary\tof\tTesla\tUK\t(in\teach\n\tcase,\tother\tthan\ta\nBorrower)\t(x)\tthat\thas\tnot\tguaranteed\tany\tother\tIndebtedness\tof\tany\tBorrower\tother\tthan\ta\tguarantee\tby\tany\tSubsidiary\tthat\twas\tcreated\nto\tsatisfy\tstate\tdealer\trequirements,\t(y)\twhose\tconsolidated\ttotal\tassets\t(as\tset\tforth\tin\tthe\tmost\trecent\tconsolidated\tbalance\tsheet\tof\tthe\nCompany\tand\tits\tConsolidated\tSubsidiaries\tdelivered\tto\tthe\tLenders\tpursuant\tto\tthis\tAgreement\tand\tcomputed\tin\taccordance\twith\tGAAP,\nbut\texcluding\tintercompany\tassets),\tdo\tnot\tconstitute\tmore\tthan\t5.0%\tof\tthe\tConsolidated\tTotal\tAssets\tand\t(z)\twhose\tconsolidated\ttotal",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 206,
+                    "page_label": "207",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            },
+            {
+                "chunk_id": "expanded_4",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.3678940534591675,
+                "retrieved_by": "What risk factors does Tesla disclose regarding concentration of factories, suppliers, raw materials, or regions?",
+                "content": "claims\tfor\tvehicle\texposure,\tmeaning\tthat\tany\tproduct\tliability\tclaims\twill\tlikely\thave\tto\tbe\tpaid\tfrom\tcompany\tfunds\tand\tnot\tby\tinsurance.\nWe\twill\tneed\tto\tmaintain\tpublic\tcredibility\tand\tconfidence\tin\tour\tlong-term\tbusiness\tprospects\tin\torder\tto\tsucceed.\nIn\torder\tto\tmaintain\tand\tgrow\tour\tbusiness,\twe\tmust\tmaintain\tcredibility\tand\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tinvestors,\tratings\nagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\tbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tchallenging\tdue\tto\tour\tlimited\noperating\thistory\trelative\tto\testablished\tcompetitors;\tcustomer\tunfamiliarity\twith\tour\tproducts;\tany\tdelays\twe\tmay\texperience\tin\tscaling\tmanufacturing,\ndelivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices;\tour\nquarterly\tproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations;\tand\tother\tfactors\tincluding\tthose\tover\twhich\twe\thave\tno\tcontrol.\tIn\tparticular,\nTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\tattention\tincludes\tfrequent\ncriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\tmanagement\tteam.\tAny\tsuch\tnegative\nperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tmay\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\tfunds\tif\tneeded.\n18",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 17,
+                    "page_label": "18",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            },
+            {
+                "chunk_id": "expanded_5",
+                "section": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "year": 2019,
+                "score": 0.3362976312637329,
+                "retrieved_by": "Tesla operational dependence on specific plants, component suppliers, material sources, and locations",
+                "content": "important\tthat\twe\taddress\tthem\tpromptly\twhile\tcontinuing\tto\treduce\tour\tmanufacturing\tcosts.\tIf\twe\tare\tnot\tsuccessful\tin\tdoing\tso,\tor\tif\twe\texperience\nissues\twith\tour\tongoing\tmanufacturing\tprocess\timprovements\tand\tcost-down\tefforts,\twe\tcould\tface\tdelays\tin\testablishing\tand/or\tsustaining\tour\tModel\t3\nand\tModel\tY\tramps\tor\tbe\tunable\tto\tmeet\tour\trelated\tcost\tand\tprofitability\ttargets.\nMoreover,\t\nwe\twill\tneed\tto\thire,\ttrain\tand\tcompensate\tskilled\temployees\tto\toperate\thigh-volume\tproduction\tfacilities\tto\tsupport\tour\tvehicle\tramp\tat\nthe\tFremont\tFactory\tand\tGigafactory\tShanghai,\tas\twell\tas\tat\tGigafactory\tNevada\tto\tsupport\tthe\tmanufacture\tof\tbattery\tpacks\tand\tdrive\tunits\tfor\tcertain\tof\nour\tvehicles.\t\nFinally,\tbecause\tour\tvehicle\tmodels,\tin\tparticular\tModel\t3\tand\tModel\tY,\tmay\tshare\tcertain\tparts,\tsuppliers\tor\tproduction\tfacilities\twith\neach\tother,\tthe\tvolume\tor\tefficiency\tof\tproduction\twith\trespect\tto\tone\tmodel\tmay\timpact\talso\tthe\tproduction\tof\tother\tmodels\tor\tlead\tto\tbottlenecks\tthat\nimpact\tthe\tproduction\tof\tall\tmodels.\t\t\nWe\tmay\talso\texperience\tsimilar\tfuture\tdelays\tor\tother\tcomplications\tin\tlaunching\tand/or\tramping\tproduction\tof\tnew\tvehicles,\tsuch\tas\tTesla\nSemi,\tCybertruck\tand\tthe\tnew\tTesla\tRoadster,\tour\tenergy\tstorage\tproducts\tand\tthe\tSolar\tRoof,\tas\twell\tas\tfuture\tfeatures\tand\tservices\tsuch\tas\tnew\nAutopilot\tor\tFSD\tfeatures\tand\tthe\tautonomous\tTesla\tride-hailing\tnetwork.\tLikewise,\twe\tmay\tencounter\tdelays\twith\tthe\tdesign,\tconstruction\tand\nregulatory\tor\tother\tapprovals\tnecessary\tto\tbuild\tand\tbring\tonline\tfuture\tmanufacturing\tfacilities,\tincluding\tour\tplanned\tGigafactory\tBerlin\tin\tGermany.\n15",
+                "metadata": {
+                    "creationdate": "2020-09-30T05:19:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 17,
+                    "page_label": "18",
+                    "producer": "Qt 5.11.3",
+                    "source": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                    "title": "",
+                    "total_pages": 297
+                }
+            }
+        ],
+        "final_answer": "I don't know.",
+        "citations": [
+            {
+                "chunk_id": "expanded_1",
+                "source_doc": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "year": 2022
+            },
+            {
+                "chunk_id": "expanded_2",
+                "source_doc": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020
+            },
+            {
+                "chunk_id": "expanded_3",
+                "source_doc": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020
+            },
+            {
+                "chunk_id": "expanded_4",
+                "source_doc": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020
+            },
+            {
+                "chunk_id": "expanded_5",
+                "source_doc": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "section": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "year": 2019
+            }
+        ],
+        "baseline_quality": "Low",
+        "expanded_quality": "Low",
+        "retrieval_improvement_analysis": "Baseline retrieved 5 chunks across 2 sections. Expanded retrieval returned 12 chunks across 3 sections. Additional coverage obtained from sections: C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf, tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf."
+    },
+    {
+        "question_id": "Q4",
+        "original_query": "Compare the strategic importance of automotive operations and energy generation/storage using evidence from the 10-K. What disclosures are needed to support a business recommendation?",
+        "expanded_queries": [
+            "financial analyst view of automotive operations versus energy generation/storage strategic importance in the 10‑K",
+            "risk factors associated with automotive business and energy generation/storage segments disclosed in the 10‑K",
+            "operational performance data for automotive and energy generation/storage divisions in the 10‑K",
+            "company's strategic discussion of automotive operations and energy generation/storage in the 10‑K Management’s Discussion & Analysis",
+            "vehicle manufacturing and power generation/storage segment disclosures supporting business recommendation in the 10‑K",
+            "revenue, capital expenditures, and market outlook for automotive vs energy generation/storage segments in the 10‑K"
+        ],
+        "baseline_top_chunks": [
+            {
+                "chunk_id": "baseline_1",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "year": 2023,
+                "score": 0.4290733337402344,
+                "content": "ITEM\t7.\tMANAGEMENT’S\tDISCUSSION\tAND\tANALYSIS\tOF\tFINANCIAL\tCONDITION\tAND\tRESULTS\tOF\tOPERATIONS\nThe\tfollowing\tdiscussion\tand\tanalysis\tshould\tbe\tread\tin\tconjunction\twith\tthe\tconsolidated\tfinancial\tstatements\tand\tthe\trelated\tnotes\tincluded\nelsewhere\tin\tthis\tAnnual\tReport\ton\tForm\t10-K.\tFor\tfurther\tdiscussion\tof\tour\tproducts\tand\tservices,\ttechnology\tand\tcompetitive\tstrengths,\trefer\tto\tItem\t1-\nBusiness.\tFor\tdiscussion\trelated\tto\tchanges\tin\tfinancial\tcondition\tand\tthe\tresults\tof\toperations\tfor\tfiscal\tyear\t2022-related\titems,\trefer\tto\tPart\tII,\tItem\t7.\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\tin\tour\tAnnual\tReport\ton\tForm\t10-K\tfor\tfiscal\tyear\t2022,\twhich\twas\nfiled\twith\tthe\tSecurities\tand\tExchange\tCommission\ton\tJanuary\t31,\t2023.\nOverview\tand\t2023\tHighlights\nOur\tmission\tis\tto\taccelerate\tthe\tworld’s\ttransition\tto\tsustainable\tenergy.\tWe\tdesign,\tdevelop,\tmanufacture,\tlease\tand\tsell\thigh-performance\tfully\nelectric\tvehicles,\tsolar\tenergy\tgeneration\tsystems\tand\tenergy\tstorage\tproducts.\tWe\talso\toffer\tmaintenance,\tinstallation,\toperation,\tcharging,\tinsurance,\nfinancial\tand\tother\tservices\trelated\tto\tour\tproducts.\tAdditionally,\twe\tare\tincreasingly\tfocused\ton\tproducts\tand\tservices\tbased\ton\tartificial\tintelligence,\nrobotics\tand\tautomation.\nIn\t2023,\twe\tproduced\t1,845,985\tconsumer\tvehicles\tand\tdelivered\t1,808,581\tconsumer\tvehicles.\tWe\tare\tcurrently\tfocused\ton\tincreasing\tvehicle\nproduction,\tcapacity\tand\tdelivery\tcapabilities,\treducing\tcosts,\timproving\tand\tdeveloping\tour\tvehicles\tand\tbattery\ttechnologies,\tvertically\tintegrating\tand",
+                "metadata": {
+                    "creationdate": "2024-01-29T11:11:14+00:00",
+                    "creator": "wkhtmltopdf 0.12.6",
+                    "page": 33,
+                    "page_label": "34",
+                    "producer": "Qt 5.15.2",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                    "title": "",
+                    "total_pages": 130
+                }
+            },
+            {
+                "chunk_id": "baseline_2",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.45158541202545166,
+                "content": "Note\t\n2\n1\n\t–\tSegment\tReporting\tand\tInformation\tabout\tGeographic\tAreas\nWe\thave\t\ntwo\n\toperating\tand\treportable\tsegments:\t(i)\tautomotive\tand\t(ii)\tenergy\tgeneration\tand\tstorage.\tThe\tautomotive\tsegment\tincludes\tthe\tdesign,\ndevelopment,\tmanufacturing,\tsales,\tand\tleasing\tof\telectric\tvehicles\tas\twell\tas\tsales\tof\tautomotive\tregulatory\tcredits.\tAdditionally,\tthe\tautomotive\tsegment\tis\nalso\tcomprised\tof\tservices\tand\tother,\twhich\tincludes\tnon-warranty\tafter-sales\tvehicle\tservices,\tsales\tof\tused\tvehicles,\tretail\tmerchandise,\tsales\tby\tour\tacquired\nsubsidiaries\tto\tthird\tparty\tcustomers,\tand\tvehicle\tinsurance\trevenue.\tThe\tenergy\tgeneration\tand\tstorage\tsegment\tincludes\tthe\tdesign,\tmanufacture,\ninstallation,\tsales,\tand\tleasing\tof\tsolar\tenergy\tgeneration\tand\tenergy\tstorage\tproducts\tand\trelated\tservices\tand\tsales\tof\tsolar\tenergy\tsystems\tincentives.\tOur\nCODM\tdoes\tnot\tevaluate\toperating\tsegments\tusing\tasset\tor\tliability\tinformation.\t\nThe\tfollowing\ttable\tpresents\trevenues\tand\tgross\tprofit\tby\treportable\tsegment\n(in\tmillions):\n\t\n\t\n\t\nYear\tEnded\tDecember\t31,\n\t\n\t\n\t\n2020\n\t\n\t\n2019\n\t\n\t\n2018\n\t\nAutomotive\tsegment\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nRevenues\n\t\n$\n29,542\n\t\n\t\n$\n23,047\n\t\n\t\n$\n19,906\n\t\nGross\tprofit\n\t\n$\n6,612\n\t\n\t\n$\n3,879\n\t\n\t\n$\n3,852\n\t\nEnergy\tgeneration\tand\tstorage\tsegment\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nRevenues\n\t\n$\n1,994\n\t\n\t\n$\n1,531\n\t\n\t\n$\n1,555\n\t\nGross\tprofit\n\t\n$",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 104,
+                    "page_label": "105",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            },
+            {
+                "chunk_id": "baseline_3",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "year": 2022,
+                "score": 0.45540422201156616,
+                "content": "ITEM\t7.\t\nMANAGEMENT’S\tDISCUSSION\tAND\tANALYSIS\tOF\tFINANCIAL\tCONDITION\tAND\tRESULTS\tOF\tOPERATIONS\nThe\tfollowing\tdiscussion\tand\tanalysis\tshould\tbe\tread\tin\tconjunction\twith\tthe\tconsolidated\tfinancial\tstatements\tand\tthe\trelated\tnotes\tincluded\n\t\nelsewhere\tin\tthis\tAnnual\tReport\ton\tForm\t10-K.\tFor\tfurther\tdiscussion\tof\tour\tproducts\tand\tservices,\ttechnology\tand\tcompetitive\tstrengths,\trefer\tto\tItem\n\t\n1-\tBusiness.\tFor\tdiscussion\trelated\tto\tchanges\tin\tfinancial\tcondition\tand\tthe\tresults\tof\toperations\tfor\tfiscal\tyear\t2021-related\titems,\trefer\tto\tPart\tII,\tItem\n\t\n7.\tManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\tin\tour\tAnnual\tReport\ton\tForm\t10-K\tfor\tfiscal\tyear\t2021,\n\t\nwhich\twas\tfiled\twith\tthe\tSecurities\tand\tExchange\tCommission\ton\tFebruary\t7,\t2022.\nOverview\tand\t2022\tHighlights\nOur\tmission\tis\tto\taccelerate\tthe\tworld’s\ttransition\tto\tsustainable\tenergy.\tWe\tdesign,\tdevelop,\tmanufacture,\tlease\tand\tsell\thigh-performance\tfully\n\t\nelectric\tvehicles,\tsolar\tenergy\tgeneration\tsystems\tand\tenergy\tstorage\tproducts.\tWe\talso\toffer\tmaintenance,\tinstallation,\toperation,\tfinancial\tand\tother\n\t\nservices\trelated\tto\tour\tproducts.\tAdditionally,\twe\tare\tincreasingly\tfocused\ton\tproducts\tand\tservices\tbased\ton\tartificial\tintelligence,\trobotics\tand\n\t\nautomation.\nIn\t2022,\twe\tproduced\t1,369,611\tconsumer\tvehicles\tand\tdelivered\t1,313,851\tconsumer\tvehicles,\tdespite\tongoing\tsupply\tchain\tand\tlogistics\n\t\nchallenges\tand\tfactory\tshutdowns.\tWe\tare\tcurrently\tfocused\ton\tincreasing\tvehicle\tproduction,\tcapacity\tand\tdelivery\tcapabilities,\timproving\tand",
+                "metadata": {
+                    "creationdate": "2023-01-31T11:10:39+00:00",
+                    "creator": "wkhtmltopdf 0.12.6",
+                    "page": 31,
+                    "page_label": "32",
+                    "producer": "Qt 5.15.2",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                    "title": "",
+                    "total_pages": 251
+                }
+            },
+            {
+                "chunk_id": "baseline_4",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                "year": 2023,
+                "score": 0.46025359630584717,
+                "content": "Table\tof\tContents\nPART\tI\nITEM\t1.\tBUSINESS\nOverview\nWe\tdesign,\tdevelop,\tmanufacture,\tsell\tand\tlease\thigh-performance\tfully\telectric\tvehicles\tand\tenergy\tgeneration\tand\tstorage\tsystems,\tand\toffer\nservices\trelated\tto\tour\tproducts.\tWe\tgenerally\tsell\tour\tproducts\tdirectly\tto\tcustomers,\tand\tcontinue\tto\tgrow\tour\tcustomer-facing\tinfrastructure\tthrough\ta\nglobal\tnetwork\tof\tvehicle\tshowrooms\tand\tservice\tcenters,\tMobile\tService,\tbody\tshops,\tSupercharger\tstations\tand\tDestination\tChargers\tto\taccelerate\tthe\nwidespread\tadoption\tof\tour\tproducts.\tWe\temphasize\tperformance,\tattractive\tstyling\tand\tthe\tsafety\tof\tour\tusers\tand\tworkforce\tin\tthe\tdesign\tand\nmanufacture\tof\tour\tproducts\tand\tare\tcontinuing\tto\tdevelop\tfull\tself-driving\ttechnology\tfor\timproved\tsafety.\tWe\talso\tstrive\tto\tlower\tthe\tcost\tof\townership\nfor\tour\tcustomers\tthrough\tcontinuous\tefforts\tto\treduce\tmanufacturing\tcosts\tand\tby\toffering\tfinancial\tand\tother\tservices\ttailored\tto\tour\tproducts.\nOur\tmission\tis\tto\taccelerate\tthe\tworld’s\ttransition\tto\tsustainable\tenergy.\tWe\tbelieve\tthat\tthis\tmission,\talong\twith\tour\tengineering\texpertise,\nvertically\tintegrated\tbusiness\tmodel\tand\tfocus\ton\tuser\texperience\tdifferentiate\tus\tfrom\tother\tcompanies.\nSegment\tInformation\nWe\toperate\tas\ttwo\treportable\tsegments:\t(i)\tautomotive\tand\t(ii)\tenergy\tgeneration\tand\tstorage.\nThe\tautomotive\tsegment\tincludes\tthe\tdesign,\tdevelopment,\tmanufacturing,\tsales\tand\tleasing\tof\thigh-performance\tfully\telectric\tvehicles\tas\twell\tas\nsales\tof\tautomotive\tregulatory\tcredits.\tAdditionally,\tthe\tautomotive\tsegment\talso\tincludes\tservices\tand\tother,\twhich\tincludes\tsales\tof\tused\tvehicles,\tnon-\nwarranty\tafter-sales\tvehicle\tservices,\tbody\tshop\tand\tparts,\tpaid\tSupercharging,\tvehicle\tinsurance\trevenue\tand\tretail\tmerchandise.\tThe\tenergy\tgeneration",
+                "metadata": {
+                    "creationdate": "2024-01-29T11:11:14+00:00",
+                    "creator": "wkhtmltopdf 0.12.6",
+                    "page": 4,
+                    "page_label": "5",
+                    "producer": "Qt 5.15.2",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20231231-gen.pdf",
+                    "title": "",
+                    "total_pages": 130
+                }
+            },
+            {
+                "chunk_id": "baseline_5",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.46144092082977295,
+                "content": "PART\tI\nITEM\t1.\nBUSINESS\nOverview\nWe\tdesign,\tdevelop,\tmanufacture,\tsell\tand\tlease\thigh-performance\tfully\telectric\tvehicles\tand\tenergy\tgeneration\tand\tstorage\tsystems,\tand\toffer\tservices\nrelated\tto\tour\tsustainable\tenergy\tproducts.\tWe\tgenerally\tsell\tour\tproducts\tdirectly\tto\tcustomers,\tincluding\tthrough\tour\twebsite\tand\tretail\tlocations.\tWe\talso\ncontinue\tto\tgrow\tour\tcustomer-facing\tinfrastructure\tthrough\ta\tglobal\tnetwork\tof\tvehicle\tservice\tcenters,\tMobile\tService\ttechnicians,\tbody\tshops,\tSupercharger\nstations\tand\tDestination\tChargers\tto\taccelerate\tthe\twidespread\tadoption\tof\tour\tproducts.\tWe\temphasize\tperformance,\tattractive\tstyling\tand\tthe\tsafety\tof\tour\nusers\tand\tworkforce\tin\tthe\tdesign\tand\tmanufacture\tof\tour\tproducts\tand\tare\tcontinuing\tto\tdevelop\tfull\tself-driving\ttechnology\tfor\timproved\tsafety.\tWe\talso\tstrive\nto\tlower\tthe\tcost\tof\townership\tfor\tour\tcustomers\tthrough\tcontinuous\tefforts\tto\treduce\tmanufacturing\tcosts\tand\tby\toffering\tfinancial\tservices\ttailored\tto\tour\nproducts.\tOur\tmission\tto\taccelerate\tthe\tworld’s\ttransition\tto\tsustainable\tenergy,\tengineering\texpertise,\tvertically\tintegrated\tbusiness\tmodel\tand\tfocus\ton\tuser\nexperience\tdifferentiate\tus\tfrom\tother\tcompanies.\nSegment\tInformation\nWe\toperate\tas\ttwo\treportable\tsegments:\t(i)\tautomotive\tand\t(ii)\tenergy\tgeneration\tand\tstorage.\nThe\tautomotive\tsegment\tincludes\tthe\tdesign,\tdevelopment,\tmanufacturing,\tsales\tand\tleasing\tof\telectric\tvehicles\tas\twell\tas\tsales\tof\tautomotive\nregulatory\tcredits.\tAdditionally,\tthe\tautomotive\tsegment\tis\talso\tcomprised\tof\tservices\tand\tother,\twhich\tincludes\tnon-warranty\tafter-sales\tvehicle\tservices,\tsales\nof\tused\tvehicles,\tretail\tmerchandise,\tsales\tby\tour\tacquired\tsubsidiaries\tto\tthird\tparty\tcustomers\tand\tvehicle\tinsurance\trevenue.\tThe\tenergy\tgeneration\tand",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 3,
+                    "page_label": "4",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "chunk_id": "expanded_1",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.3372708559036255,
+                "retrieved_by": "financial analyst view of automotive operations versus energy generation/storage strategic importance in the 10‑K",
+                "content": "Note\t\n2\n1\n\t–\tSegment\tReporting\tand\tInformation\tabout\tGeographic\tAreas\nWe\thave\t\ntwo\n\toperating\tand\treportable\tsegments:\t(i)\tautomotive\tand\t(ii)\tenergy\tgeneration\tand\tstorage.\tThe\tautomotive\tsegment\tincludes\tthe\tdesign,\ndevelopment,\tmanufacturing,\tsales,\tand\tleasing\tof\telectric\tvehicles\tas\twell\tas\tsales\tof\tautomotive\tregulatory\tcredits.\tAdditionally,\tthe\tautomotive\tsegment\tis\nalso\tcomprised\tof\tservices\tand\tother,\twhich\tincludes\tnon-warranty\tafter-sales\tvehicle\tservices,\tsales\tof\tused\tvehicles,\tretail\tmerchandise,\tsales\tby\tour\tacquired\nsubsidiaries\tto\tthird\tparty\tcustomers,\tand\tvehicle\tinsurance\trevenue.\tThe\tenergy\tgeneration\tand\tstorage\tsegment\tincludes\tthe\tdesign,\tmanufacture,\ninstallation,\tsales,\tand\tleasing\tof\tsolar\tenergy\tgeneration\tand\tenergy\tstorage\tproducts\tand\trelated\tservices\tand\tsales\tof\tsolar\tenergy\tsystems\tincentives.\tOur\nCODM\tdoes\tnot\tevaluate\toperating\tsegments\tusing\tasset\tor\tliability\tinformation.\t\nThe\tfollowing\ttable\tpresents\trevenues\tand\tgross\tprofit\tby\treportable\tsegment\n(in\tmillions):\n\t\n\t\n\t\nYear\tEnded\tDecember\t31,\n\t\n\t\n\t\n2020\n\t\n\t\n2019\n\t\n\t\n2018\n\t\nAutomotive\tsegment\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nRevenues\n\t\n$\n29,542\n\t\n\t\n$\n23,047\n\t\n\t\n$\n19,906\n\t\nGross\tprofit\n\t\n$\n6,612\n\t\n\t\n$\n3,879\n\t\n\t\n$\n3,852\n\t\nEnergy\tgeneration\tand\tstorage\tsegment\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nRevenues\n\t\n$\n1,994\n\t\n\t\n$\n1,531\n\t\n\t\n$\n1,555\n\t\nGross\tprofit\n\t\n$",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 104,
+                    "page_label": "105",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            },
+            {
+                "chunk_id": "expanded_2",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.35482257604599,
+                "retrieved_by": "financial analyst view of automotive operations versus energy generation/storage strategic importance in the 10‑K",
+                "content": "demand\tfor\tour\tvehicles\tdecreases\tin\tour\tmarkets\tor\tour\tvehicles\tcompete\twith\teach\tother,\tour\tbusiness,\tprospects,\tfinancial\tcondition\tand\toperating\tresults\nmay\tbe\tharmed.\nWe\tare\tstill\tat\tan\tearlier\tstage\tand\thave\tlimited\tresources\tand\tproduction\trelative\tto\testablished\tcompetitors\tthat\toffer\tinternal\tcombustion\tengine\nvehicles.\tIn\taddition,\telectric\tvehicles\tstill\tcomprise\ta\tsmall\tpercentage\tof\toverall\tvehicle\tsales.\tAs\ta\tresult,\tthe\tmarket\tfor\tour\tvehicles\tcould\tbe\tnegatively\naffected\tby\tnumerous\tfactors,\tsuch\tas:\n\t\n•\nperceptions\tabout\telectric\tvehicle\tfeatures,\tquality,\tsafety,\tperformance\tand\tcost;\n\t\n•\nperceptions\tabout\tthe\tlimited\trange\tover\twhich\telectric\tvehicles\tmay\tbe\tdriven\ton\ta\tsingle\tbattery\tcharge,\tand\taccess\tto\tcharging\tfacilities;\n\t\n•\ncompetition,\tincluding\tfrom\tother\ttypes\tof\talternative\tfuel\tvehicles,\tplug-in\thybrid\telectric\tvehicles\tand\thigh\tfuel-economy\tinternal\tcombustion\nengine\tvehicles;\n\t\n•\nvolatility\tin\tthe\tcost\tof\toil\tand\tgasoline,\tsuch\tas\twide\tfluctuations\tin\tcrude\toil\tprices\tduring\t2020;\n15",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 14,
+                    "page_label": "15",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            },
+            {
+                "chunk_id": "expanded_3",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020,
+                "score": 0.29962748289108276,
+                "retrieved_by": "risk factors associated with automotive business and energy generation/storage segments disclosed in the 10‑K",
+                "content": "Note\t\n2\n1\n\t–\tSegment\tReporting\tand\tInformation\tabout\tGeographic\tAreas\nWe\thave\t\ntwo\n\toperating\tand\treportable\tsegments:\t(i)\tautomotive\tand\t(ii)\tenergy\tgeneration\tand\tstorage.\tThe\tautomotive\tsegment\tincludes\tthe\tdesign,\ndevelopment,\tmanufacturing,\tsales,\tand\tleasing\tof\telectric\tvehicles\tas\twell\tas\tsales\tof\tautomotive\tregulatory\tcredits.\tAdditionally,\tthe\tautomotive\tsegment\tis\nalso\tcomprised\tof\tservices\tand\tother,\twhich\tincludes\tnon-warranty\tafter-sales\tvehicle\tservices,\tsales\tof\tused\tvehicles,\tretail\tmerchandise,\tsales\tby\tour\tacquired\nsubsidiaries\tto\tthird\tparty\tcustomers,\tand\tvehicle\tinsurance\trevenue.\tThe\tenergy\tgeneration\tand\tstorage\tsegment\tincludes\tthe\tdesign,\tmanufacture,\ninstallation,\tsales,\tand\tleasing\tof\tsolar\tenergy\tgeneration\tand\tenergy\tstorage\tproducts\tand\trelated\tservices\tand\tsales\tof\tsolar\tenergy\tsystems\tincentives.\tOur\nCODM\tdoes\tnot\tevaluate\toperating\tsegments\tusing\tasset\tor\tliability\tinformation.\t\nThe\tfollowing\ttable\tpresents\trevenues\tand\tgross\tprofit\tby\treportable\tsegment\n(in\tmillions):\n\t\n\t\n\t\nYear\tEnded\tDecember\t31,\n\t\n\t\n\t\n2020\n\t\n\t\n2019\n\t\n\t\n2018\n\t\nAutomotive\tsegment\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nRevenues\n\t\n$\n29,542\n\t\n\t\n$\n23,047\n\t\n\t\n$\n19,906\n\t\nGross\tprofit\n\t\n$\n6,612\n\t\n\t\n$\n3,879\n\t\n\t\n$\n3,852\n\t\nEnergy\tgeneration\tand\tstorage\tsegment\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nRevenues\n\t\n$\n1,994\n\t\n\t\n$\n1,531\n\t\n\t\n$\n1,555\n\t\nGross\tprofit\n\t\n$",
+                "metadata": {
+                    "creationdate": "2021-02-08T12:40:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 104,
+                    "page_label": "105",
+                    "producer": "Qt 5.11.3",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                    "title": "",
+                    "total_pages": 449
+                }
+            },
+            {
+                "chunk_id": "expanded_4",
+                "section": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "year": 2019,
+                "score": 0.33362579345703125,
+                "retrieved_by": "risk factors associated with automotive business and energy generation/storage segments disclosed in the 10‑K",
+                "content": "market\tshare,\twhich\tcould\tharm\tour\tbusiness,\tprospects,\tfinancial\tcondition\tand\toperating\tresults.\tIn\taddition,\tModel\t3\tand\tModel\tY\tface\tcompetition\nfrom\texisting\tand\tfuture\tautomobile\tmanufacturers\tin\tthe\textremely\tcompetitive\tentry-level\tpremium\tsedan\tand\tcompact\tSUV\tmarket,\tincluding\tBMW,\nFord,\tLexus,\tMercedes\tand\tVolkswagen\tGroup.\nThe\tsolar\tand\tenergy\tstorage\tindustries\tare\thighly\tcompetitive.\tWe\tface\tcompetition\tfrom\tother\tmanufacturers,\tdevelopers\tand\tinstallers\tof\nsolar\tand\tenergy\tstorage\tsystems,\tas\twell\tas\tfrom\tlarge\tutilities.\tDecreases\tin\tthe\tretail\tprices\tof\telectricity\tfrom\tutilities\tor\tother\trenewable\tenergy\nsources\tcould\tmake\tour\tproducts\tless\tattractive\tto\tcustomers\tand\tlead\tto\tan\tincreased\trate\tof\tcustomer\tdefaults\tunder\tour\texisting\tlong-term\tleases\tand\nPPAs.\tMoreover,\tprices\tfor\tsolar\tproduct\tcomponents\tand\tprices\tper\tkWh\tfor\tlithium-ion\tbattery\tcells\thave\tdeclined\tand\tmay\tcontinue\tto\tdecline,\twhich\nmay\tadversely\timpact\tour\tability\tto\tcost-effectively\tmanufacture\tsuch\tcomponents\tourselves.\nIf\twe\tare\tunable\tto\testablish\tand\tmaintain\tconfidence\tin\tour\tlong-term\tbusiness\tprospects\tamong\tconsumers,\tanalysts\tand\twithin\nour\tindustries,\tor\tare\tsubject\tto\tnegative\tpublicity,\tthen\tour\tfinancial\tcondition,\toperating\tresults,\tbusiness\tprospects\tand\taccess\nto\tcapital\tmay\tsuffer\tmaterially.\nConsumers\tmay\tbe\tless\tlikely\tto\tpurchase\tour\tproducts\tif\tthey\tare\tnot\tconvinced\tthat\tour\tbusiness\twill\tsucceed\tor\tthat\tour\tservice\tand\tsupport\nand\tother\toperations\twill\tcontinue\tin\tthe\tlong\tterm.\tSimilarly,\tsuppliers\tand\tother\tthird\tparties\twill\tbe\tless\tlikely\tto\tinvest\ttime\tand\tresources\tin",
+                "metadata": {
+                    "creationdate": "2020-09-30T05:19:35+00:00",
+                    "creator": "wkhtmltopdf 0.12.5",
+                    "page": 24,
+                    "page_label": "25",
+                    "producer": "Qt 5.11.3",
+                    "source": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                    "title": "",
+                    "total_pages": 297
+                }
+            },
+            {
+                "chunk_id": "expanded_5",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "year": 2022,
+                "score": 0.38852232694625854,
+                "retrieved_by": "operational performance data for automotive and energy generation/storage divisions in the 10‑K",
+                "content": "Energy\tGeneration\tand\tStorage\tSegment\nEnergy\tgeneration\tand\tstorage\trevenue\tincludes\tsales\tand\tleasing\tof\tsolar\tenergy\tgeneration\tand\tenergy\tstorage\tproducts,\tfinancing\tof\tsolar\n\t\nenergy\tgeneration\tproducts,\tservices\trelated\tto\tsuch\tproducts\tand\tsales\tof\tsolar\tenergy\tsystems\tincentives.\n2022\tcompared\tto\t2021\nEnergy\tgeneration\tand\tstorage\trevenue\tincreased\t$1.12\tbillion,\tor\t40%,\tin\tthe\tyear\tended\tDecember\t31,\t2022\tas\tcompared\tto\tthe\tyear\tended\n\t\nDecember\t31,\t2021,\tprimarily\tdue\tto\tan\tincrease\tin\tenergy\tstorage\tdeployments\tof\tMegapack,\tPowerwall\tand\thigher\taverage\tselling\tprice\tof\tMegapack,\n\t\nas\twell\tas\ton\tsolar\tcash\tand\tloan\tdeployments\tdriven\tby\tprice\tincreases\tin\t2022.\nCost\tof\tRevenues\tand\tGross\tMargin\n\t\n\t\n\t\nYear\tEnded\tDecember\t31,\n\t\n\t\n2022\tvs.\t2021\tChange\n\t\n\t\n2021\tvs.\t2020\tChange\n\t\n(Dollars\tin\tmillions)\n\t\n2022\n\t\n\t\n2021\n\t\n\t\n2020\n\t\n\t\n$\n\t\n\t\n%\n\t\n\t\n$\n\t\n\t\n%\n\t\nCost\tof\trevenues\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nAutomotive\tsales\n\t\n$\n49,599\n\t\n\t\n$\n32,415\n\t\n\t\n$\n19,696\n\t\n\t\n$\n17,184\n\t\n\t\n\t\n53\n%\n\t\n$\n12,719\n\t\n\t\n\t\n65\n%\nAutomotive\tleasing\n\t\n\t\n1,509\n\t\n\t\n\t\n978\n\t\n\t\n\t\n563\n\t\n\t\n\t\n531\n\t\n\t\n\t\n54\n%\n\t\n\t\n415\n\t\n\t\n\t\n74\n%",
+                "metadata": {
+                    "creationdate": "2023-01-31T11:10:39+00:00",
+                    "creator": "wkhtmltopdf 0.12.6",
+                    "page": 37,
+                    "page_label": "38",
+                    "producer": "Qt 5.15.2",
+                    "source": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                    "title": "",
+                    "total_pages": 251
+                }
+            }
+        ],
+        "final_answer": "**Answer**  \nThe automotive segment is the clear strategic driver of Tesla’s business. In 2020 it generated $29.5 billion of revenue and $6.6 billion of gross profit, dwarfing the energy generation and storage segment, which produced only $2.0 billion of revenue (gross profit not disclosed). The automotive segment also encompasses the core EV value chain—design, development, manufacturing, sales, leasing, regulatory‑credit sales, and a broad after‑sales service portfolio—whereas the energy segment is limited to solar and storage product design, manufacture, installation, sales, leasing and related incentives.  \n\nBecause automotive activity accounts for the overwhelming share of both revenue and profit, it remains the primary source of cash flow and the main lever for scaling the company’s market position. Energy generation and storage, while much smaller today, is disclosed as a distinct segment that provides diversification and long‑term growth potential, especially as solar‑plus‑storage adoption expands and incentive programs evolve.  \n\n**Disclosures needed to support a business recommendation**  \n1. **Segment financials** – detailed revenue and gross‑profit figures (and ideally operating income, cash flow, and capital‑expenditure data) for each segment over multiple years to quantify contribution and trends.  \n2. **Segment activity description** – the scope of operations for automotive (vehicle design, manufacturing, sales, leasing, regulatory credits, services) and for energy (solar/energy‑storage design, manufacture, installation, leasing, incentives).  \n3. **Risk factors** – specific risks that could affect each segment, such as demand volatility, competition, perception of EV range and charging, oil‑price fluctuations for automotive, and incentive‑policy changes for energy.  \n4. **Market outlook and growth assumptions** – management’s expectations for vehicle demand, regulatory‑credit availability, and solar‑storage market expansion.  \n5. **Strategic initiatives** – any planned investments, new product launches, or geographic expansions that could shift the relative importance of the segments.  \n\nTogether, these disclosures allow an analyst to evaluate the relative strategic weight of each segment, assess risk exposure, and justify a recommendation (e.g., prioritizing continued investment in automotive scaling while allocating targeted capital to expand the energy business).  \n\n**Key Supporting Evidence**  \n- Automotive segment revenue $29,542 million and gross profit $6,612 million in 2020.  \n- Energy generation and storage segment revenue $1,994 million in 2020 (gross profit not shown).  \n- Descriptions of the automotive segment’s broad scope (vehicle design, manufacturing, sales, leasing, regulatory credits, services) and the energy segment’s focus on solar and storage products and incentives.  \n- Risk narrative highlighting demand uncertainty, competition, perception issues, and oil‑price volatility that could impact automotive performance.  \n\n**Citations**  \n- Segment revenue and gross‑profit figures; segment activity descriptions. 【Note 2 1 – Segment Reporting and Information about Geographic Areas】  \n- Risk factors affecting automotive demand and competition. 【Note 2 1 – Segment Reporting and Information about Geographic Areas】",
+        "citations": [
+            {
+                "chunk_id": "expanded_1",
+                "source_doc": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020
+            },
+            {
+                "chunk_id": "expanded_2",
+                "source_doc": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020
+            },
+            {
+                "chunk_id": "expanded_3",
+                "source_doc": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-10k_20201231-gen.pdf",
+                "year": 2020
+            },
+            {
+                "chunk_id": "expanded_4",
+                "source_doc": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "section": "tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf",
+                "year": 2019
+            },
+            {
+                "chunk_id": "expanded_5",
+                "source_doc": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "section": "C:\\Agile\\GenAI_Expert_BootCamp\\RAG\\tesla-annual-reports\\tsla-20221231-gen.pdf",
+                "year": 2022
+            }
+        ],
+        "baseline_quality": "Low",
+        "expanded_quality": "Low",
+        "retrieval_improvement_analysis": "Baseline retrieved 5 chunks across 3 sections. Expanded retrieval returned 12 chunks across 4 sections. Additional coverage obtained from sections: tesla-annual-reports\\tsla-10k_20191231-gen_0.pdf."
+    }
+]
