@@ -1,0 +1,18 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local secrets and environment configuration
+.env
+
+# Notebook/runtime artifacts
+.ipynb_checkpoints/
+outputs/failures.log
+data/failed_batches.jsonl

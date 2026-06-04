@@ -1,0 +1,80 @@
+{
+    "title": "Baseline vs HyDE Retrieval Comparison",
+    "method_note": "Each question retrieves five chunks for the baseline and five parent chunks through HyDE. The notebook records len() of the joined context strings, so the reported retrieval sizes are character counts, not chunk counts.",
+    "overall_recommendation": "Use HyDE as the default final-answer retrieval path for this benchmark, while retaining baseline retrieval as a diagnostic comparator. HyDE wins on three of four questions, especially where the prompt is broad or indirect. Baseline remains valuable for keyword-explicit questions.",
+    "overall_winner": "HyDE",
+    "aggregate": {
+        "questions_evaluated": 4,
+        "hyde_wins": 3,
+        "baseline_wins": 1,
+        "average_baseline_context_chars": 7167,
+        "average_hyde_context_chars": 7619
+    },
+    "questions": [
+        {
+            "question_id": "HQ1",
+            "query": "What should a board member ask about risks that could prevent Tesla from meeting production, delivery, or scaling expectations?",
+            "baseline_context_chars": 7004,
+            "hyde_context_chars": 8048,
+            "winner": "HyDE",
+            "baseline_strengths": [
+                "Identified major risk categories such as manufacturing, supply chain, delivery/service operations, workforce, recalls, competition, and external factors.",
+                "Produced a concise board-level checklist."
+            ],
+            "hyde_strengths": [
+                "Retrieved directly relevant risk-factor passages about production-ramp delays, supply chain constraints, legal/regulatory exposure, pandemic disruption, facility construction, delivery logistics, and service capacity.",
+                "Converted retrieved evidence into specific board questions with better operational detail."
+            ],
+            "reasoning": "HyDE better matched the broad risk-governance intent of the prompt and produced a more evidence-grounded set of board questions."
+        },
+        {
+            "question_id": "HQ2",
+            "query": "How should an analyst investigate the relationship between product defects, warranty or service obligations, customer trust, and brand risk?",
+            "baseline_context_chars": 6843,
+            "hyde_context_chars": 8422,
+            "winner": "HyDE",
+            "baseline_strengths": [
+                "Retrieved strong warranty-reserve and audit-procedure evidence.",
+                "Explained data validation, lookback analysis, reserve modeling, and internal-control testing."
+            ],
+            "hyde_strengths": [
+                "Retrieved passages tying product defects to warranty claims, recalls, liability, customer dissatisfaction, brand harm, and operational disruption.",
+                "Answered the full causal chain from defects to service costs, trust, and brand risk."
+            ],
+            "reasoning": "The baseline was strong on warranty accounting, but HyDE covered the full product-quality and brand-risk relationship requested by the user."
+        },
+        {
+            "question_id": "HQ3",
+            "query": "What evidence helps determine whether future cash flow depends more on capital expenditure discipline, working capital, or operating income?",
+            "baseline_context_chars": 4645,
+            "hyde_context_chars": 6303,
+            "winner": "HyDE",
+            "baseline_strengths": [
+                "Retrieved cash-flow statement context and explained the comparison framework.",
+                "Correctly identified operating cash flow, investing cash flow, and working-capital effects as the key evidence."
+            ],
+            "hyde_strengths": [
+                "Retrieved capex trend disclosures, actual investing cash outflows, operating cash-flow amounts, and working-capital commentary.",
+                "Used more concrete evidence to compare capex discipline, working capital, and operating income."
+            ],
+            "reasoning": "HyDE provided more data-rich support for the same framework, making the final answer more useful for analysis."
+        },
+        {
+            "question_id": "HQ4",
+            "query": "Which disclosures help evaluate technology, cybersecurity, data, or AI operational risk even if the user does not explicitly say \"cybersecurity\"?",
+            "baseline_context_chars": 8276,
+            "hyde_context_chars": 7703,
+            "winner": "Baseline",
+            "baseline_strengths": [
+                "Retrieved highly focused Item 1A and Item 1C cybersecurity disclosures.",
+                "Covered governance, third-party risk management, incident response, data breach exposure, and ISO/IEC 27001 certification."
+            ],
+            "hyde_strengths": [
+                "Retrieved relevant cybersecurity and privacy-risk passages.",
+                "Broadened the answer with confidentiality, privacy-law, and regulatory-risk disclosures."
+            ],
+            "reasoning": "Because the query already used terms close to the formal disclosure language, baseline retrieval was slightly more precise. HyDE remained useful but introduced a little extra noise."
+        }
+    ],
+    "conclusion": "HyDE is the stronger default for this evaluation because it improves retrieval for broad, implied, or analyst-style prompts. Baseline retrieval is still useful as a check, especially when the user query directly names the target disclosure area."
+}
