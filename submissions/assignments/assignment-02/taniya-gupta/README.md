@@ -1,4 +1,4 @@
-# Advanced RAG Retrieval Evaluation – Assignment 1: Query Expansion Retrieval
+# Advanced RAG Retrieval Evaluation – Assignment 2: Query Expansion Retrieval
 
 ## Information
 
