@@ -1,145 +1,77 @@
-# Query Expansion for RAG using Tesla Annual Reports
+# RAG Query Expansion Assignment
 
-## Overview
+## 1. Name
 
-This project demonstrates how Query Expansion techniques can improve Retrieval-Augmented Generation (RAG) performance when answering questions from Tesla Annual Reports.
-
-The system uses:
-
-* Groq LLM (Llama 3.1 8B Instant)
-* ChromaDB Vector Store
-* HuggingFace Embeddings
-* Tesla Annual Reports Dataset
-* Query Expansion Techniques
-* Hypothetical Question Generation
-
-The goal is to improve retrieval quality by generating alternative search queries before performing vector search.
+**Aman Choudhary**
 
 ---
 
-## Project Structure
+## 2. Assignment Title
 
-```text
-Amanchoudary/
-│
-├── Query Expansion.ipynb
-├── main.py
-├── requirements.txt
-├── README.md
-│
-├── tesla-annual-reports.zip
-├── tesla-annual-reports/
-├── tesla_db/
-│
-├── .env
-└── .venv/
-```
+**Retrieval-Augmented Generation (RAG) with Query Expansion for Financial Document Analysis**
 
 ---
 
-## Features
+## 3. Short Description
 
-### Document Loading
+This project implements a **Retrieval-Augmented Generation (RAG)** system over Tesla Annual Reports and evaluates the impact of **Query Expansion** on retrieval quality.
 
-* Loads Tesla Annual Report PDFs.
-* Extracts text from multiple documents.
+The system:
 
-### Text Chunking
+* Loads and processes Tesla 10-K annual reports.
+* Splits documents into semantic chunks.
+* Creates embeddings using Sentence Transformers.
+* Stores embeddings in ChromaDB vector database.
+* Generates multiple semantically similar query variations using a Large Language Model (LLM).
+* Performs retrieval using both:
 
-Documents are split into smaller chunks using:
+  * Baseline Retrieval
+  * Query Expansion Retrieval
+* Compares retrieval coverage between the two approaches.
+* Generates grounded answers using retrieved context.
+* Stores results, citations, retrieved chunks, and retrieval analysis in JSON format.
 
-* RecursiveCharacterTextSplitter
-* Chunk Size: 512
-* Chunk Overlap: 16
+### Objective
 
-### Embedding Generation
-
-Embeddings are created using:
-
-```python
-sentence-transformers/all-mpnet-base-v2
-```
-
-### Vector Database
-
-Uses ChromaDB for:
-
-* Storing document embeddings
-* Similarity search
-* Efficient retrieval
-
-### Query Expansion
-
-The system generates multiple variations of a user query before retrieval.
-
-Benefits:
-
-* Better semantic coverage
-* Improved recall
-* More relevant document retrieval
-
-### Hypothetical Questions
-
-Generates possible questions related to document content.
-
-Benefits:
-
-* Improves retrieval quality
-* Retrieves hidden relevant information
-* Enhances answer generation
-
-### Response Generation
-
-Retrieved context is passed to the Groq LLM:
-
-```text
-llama-3.1-8b-instant
-```
-
-for final answer generation.
+Improve document retrieval performance by expanding user queries and retrieving more relevant context before answer generation.
 
 ---
 
-## Installation
+## 4. Project Setup & Steps to Run
 
-### Clone Repository
+### Step 1: Create a Virtual Environment
 
 ```bash
-git clone <repository-url>
-cd Amanchoudary
+uv venv
 ```
 
-### Create Virtual Environment
+Activate the environment:
 
-```bash
-python -m venv .venv
-```
-
-### Activate Environment
-
-Windows:
+**Windows**
 
 ```bash
 .venv\Scripts\activate
 ```
 
-Git Bash:
+**Linux / Mac**
 
 ```bash
-source .venv/Scripts/activate
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
+source .venv/bin/activate
 ```
 
 ---
 
-## Environment Variables
+### Step 2: Install Dependencies
 
-Create a `.env` file:
+```bash
+uv pip install -r requirements.txt
+```
+
+---
+
+### Step 3: Configure API Key
+
+Create a `.env` file in the project root directory:
 
 ```env
 GROQ_API_KEY=your_groq_api_key
@@ -147,69 +79,195 @@ GROQ_API_KEY=your_groq_api_key
 
 ---
 
-## Run the Notebook
+### Step 4: Prepare Dataset
+
+Place Tesla Annual Report PDF files inside the data folder.
+
+
+---
+
+### Step 5: Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
 
 Open:
 
 ```text
-Query Expansion.ipynb
+RAG_query_expansion.ipynb
 ```
 
-Run all cells sequentially.
+---
+
+### Step 6: Execute Notebook Cells
+
+Run all notebook cells sequentially:
+
+1. Environment Setup
+2. PDF Loading
+3. Text Chunking
+4. Embedding Generation
+5. ChromaDB Vector Store Creation
+6. Retriever Setup
+7. Query Expansion Generation
+8. Baseline Retrieval
+9. Expanded Query Retrieval
+10. Answer Generation
+11. Result Export
 
 ---
 
-## Workflow
+## 5. Libraries / Packages Required
 
-1. Load Tesla Annual Report PDFs
-2. Split documents into chunks
-3. Generate embeddings
-4. Store embeddings in ChromaDB
-5. Receive user query
-6. Generate expanded queries
-7. Retrieve relevant chunks
-8. Generate final answer using Groq LLM
+Required Python packages:
+
+```text
+groq
+openai
+python-dotenv
+langchain
+langchain-community
+langchain-chroma
+chromadb
+sentence-transformers
+datasets
+tiktoken
+pypdf
+ipykernel
+```
+
+Install all dependencies:
+
+```bash
+uv pip install -r requirements.txt
+```
 
 ---
 
-## Technologies Used
+## 6. Assumptions Made
 
-* Python
-* LangChain
-* ChromaDB
-* Groq
-* HuggingFace Embeddings
-* Jupyter Notebook
-* RAG Architecture
+* Tesla annual report PDFs are available locally.
+* A valid Groq API key is available.
+* Documents contain machine-readable text.
+* Internet connectivity is available.
+* ChromaDB is used for vector storage.
+* Query Expansion improves retrieval by generating semantically related search queries.
+* Retrieved chunks contain sufficient context for answer generation.
 
 ---
 
-## Dataset
+## 7. System Workflow
 
-Tesla Annual Reports (10-K filings)
+```text
+User Query
+     │
+     ▼
+Query Expansion using LLM
+     │
+     ▼
+Multiple Expanded Queries
+     │
+     ▼
+Baseline Retrieval + Expanded Retrieval
+     │
+     ▼
+Chunk Fusion & Deduplication
+     │
+     ▼
+Context Construction
+     │
+     ▼
+LLM Answer Generation
+     │
+     ▼
+JSON Result Export
+```
 
-Used for:
+---
 
-* Information Retrieval
+## 8. Example Input Query
+
+```text
+Does Tesla's growth story appear more constrained by external supply risk or internal execution and cost structure?
+```
+
+---
+
+## 9. Query Expansion Example
+
+### Original Query
+
+```text
+Does Tesla's growth story appear more constrained by external supply risk or internal execution and cost structure?
+```
+
+### Expanded Queries
+
+```text
+Is Tesla's growth story limited more by external supply risks or internal execution and cost structure?
+
+Does the evidence in Tesla's Risk Factors and MD&A suggest that external supply risk or internal execution and cost structure is the bigger constraint on its growth story?
+
+Which factor appears to more restrict Tesla's growth according to the Risk Factors and MD&A disclosures?
+```
+
+---
+
+## 10. Output Explanation
+
+### Processing Steps
+
+1. User submits a query.
+2. LLM generates multiple query variations.
+3. Baseline retrieval is performed.
+4. Expanded-query retrieval is performed.
+5. Retrieved chunks are combined and deduplicated.
+6. Context is passed to the LLM.
+7. Final answer is generated.
+8. Results are stored in JSON format.
+
+---
+
+## 11. Example Output Structure
+
+```json
+{
+  "question_id": "Q1",
+  "original_query": "...",
+  "expanded_queries": [...],
+  "baseline_top_chunks": [...],
+  "expanded_top_chunks": [...],
+  "final_answer": "...",
+  "citations": [...],
+  "retrieval_improvement_analysis": "Query expansion improved retrieval coverage compared to baseline retrieval."
+}
+```
+
+---
+
+## 12. Project Outcome
+
+This assignment demonstrates:
+
+* Retrieval-Augmented Generation (RAG)
+* Query Expansion Techniques
 * Semantic Search
-* Query Expansion Experiments
-* RAG Evaluation
+* Financial Document Question Answering
+* ChromaDB Vector Database
+* Sentence Transformer Embeddings
+* Retrieval Evaluation
+* Citation-Based Answer Generation
+* LangChain RAG Pipelines
+* Groq LLM Integration
+* JSON Result Export
 
 ---
 
-## Future Improvements
+## 13. Author
 
-* Hybrid Search (BM25 + Vector Search)
-* Reranking Models
-* Multi-Query Retrieval
-* HyDE Retrieval
-* Evaluation Metrics
-* Streamlit Interface
-* FastAPI Deployment
+**Aman Choudhary**
 
----
+AI / GenAI Engineering Assignment
 
-## Author
-
-Aman Choudhary
-AI Training Batch May 2026
+Query Expansion Retrieval Evaluation using Tesla Annual Reports
