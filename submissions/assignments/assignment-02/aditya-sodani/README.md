@@ -8,39 +8,36 @@
 
 ## 2. Assignment Title
 
-**Retrieval-Augmented Generation (RAG) with Query Expansion**
+**Retrieval-Augmented Generation (RAG) with Query Expansion for Financial Document Analysis**
 
 ---
 
 ## 3. Short Description
 
-This project implements a Retrieval-Augmented Generation (RAG) pipeline for question answering over Tesla annual report documents.
+This project implements a Retrieval-Augmented Generation (RAG) system over Tesla Annual Reports and evaluates the impact of Query Expansion on retrieval quality.
 
 The system:
 
-* Loads and processes PDF documents.
-* Splits documents into smaller chunks.
+* Loads and processes Tesla 10-K annual reports.
+* Splits documents into semantic chunks.
 * Creates embeddings using Sentence Transformers.
 * Stores embeddings in ChromaDB vector database.
-* Retrieves relevant document chunks based on user queries.
-* Uses Query Expansion to improve retrieval quality.
-* Generates context-aware answers using a Large Language Model (LLM) through the Groq API.
+* Generates multiple semantically similar query variations using an LLM.
+* Performs retrieval using both:
 
-The objective is to improve the relevance of retrieved information and generate accurate answers grounded in the provided documents.
+  * Baseline Retrieval
+  * Query Expansion Retrieval
+* Compares retrieval coverage between the two approaches.
+* Generates grounded answers using retrieved context.
+* Stores results, citations, retrieved chunks, and retrieval analysis in JSON format.
+
+The objective is to improve document retrieval performance by expanding user queries and retrieving more relevant context before answer generation.
 
 ---
 
 ## 4. Steps to Run the Code
 
-### Step 1: Clone or Download the Project
-
-Ensure the following files are available:
-
-* `RAG_query_expansion.ipynb`
-* `requirements.txt`
-* Tesla Annual Report PDF files
-
-### Step 2: Create a Virtual Environment
+### Step 1: Create a Virtual Environment
 
 ```bash
 uv venv
@@ -48,24 +45,35 @@ uv venv
 
 Activate the environment:
 
-**Windows**
-
 ```bash
 .venv\Scripts\activate
 ```
 
-### Step 3: Install Required Packages
+### Step 2: Install Dependencies
 
 ```bash
 uv pip install -r requirements.txt
 ```
 
-### Step 4: Configure API Key
+### Step 3: Configure API Key
 
-Create a `.env` file in the project directory:
+Create a `.env` file:
 
 ```env
 GROQ_API_KEY=your_groq_api_key
+```
+
+### Step 4: Prepare Dataset
+
+Place Tesla Annual Report PDF files inside the project folder.
+
+Example:
+
+```text
+data/
+├── tsla-20211231-gen.pdf
+├── tsla-20221231-gen.pdf
+├── tsla-20231231-gen.pdf
 ```
 
 ### Step 5: Launch Jupyter Notebook
@@ -80,9 +88,9 @@ Open:
 RAG_query_expansion.ipynb
 ```
 
-### Step 6: Run the Notebook
+### Step 6: Execute Notebook Cells
 
-Execute all notebook cells sequentially:
+Run all cells sequentially:
 
 1. Environment Setup
 2. PDF Loading
@@ -90,17 +98,19 @@ Execute all notebook cells sequentially:
 4. Embedding Generation
 5. ChromaDB Vector Store Creation
 6. Retriever Setup
-7. Query Expansion
-8. Response Generation
+7. Query Expansion Generation
+8. Baseline Retrieval
+9. Expanded Query Retrieval
+10. Answer Generation
+11. Result Export
 
 ---
 
 ## 5. Libraries / Packages Required
 
-The following libraries are required:
-
 ```text
 groq
+openai
 python-dotenv
 langchain
 langchain-community
@@ -111,7 +121,12 @@ datasets
 tiktoken
 pypdf
 ipykernel
-openai
+```
+
+Install all dependencies:
+
+```bash
+uv pip install -r requirements.txt
 ```
 
 ---
@@ -120,35 +135,64 @@ openai
 
 * Tesla annual report PDFs are available locally.
 * A valid Groq API key is available.
-* Internet connectivity is available for model access.
-* PDF files contain readable text.
-* ChromaDB is used as the vector database for storing embeddings.
-* Query Expansion improves retrieval quality by generating related search queries.
+* Documents contain machine-readable text.
+* Internet connectivity is available.
+* ChromaDB is used for vector storage.
+* Query Expansion improves retrieval by generating semantically related search queries.
+* Retrieved chunks contain sufficient context for answer generation.
 
 ---
 
 ## 7. Output Explanation
 
-### Example User Query
+### Example Input Query
 
 ```text
-What were Tesla's main revenue sources in 2023?
+Does Tesla's growth story appear more constrained by external supply risk or internal execution and cost structure?
+```
+
+### Query Expansion Example
+
+Original Query:
+
+```text
+Does Tesla's growth story appear more constrained by external supply risk or internal execution and cost structure?
+```
+
+Expanded Queries:
+
+```text
+Is Tesla's growth story limited more by external supply risks or internal execution and cost structure?
+
+Does the evidence in Tesla's Risk Factors and MD&A suggest that external supply risk or internal execution and cost structure is the bigger constraint on its growth story?
+
+Which factor appears to more restrict Tesla's growth according to the Risk Factors and MD&A disclosures?
 ```
 
 ### System Workflow
 
-1. User submits a question.
-2. Query Expansion generates related search queries.
-3. Relevant document chunks are retrieved from ChromaDB.
-4. Retrieved context is provided to the LLM.
-5. The LLM generates a grounded answer based on the retrieved information.
+1. User submits a query.
+2. LLM generates multiple query variations.
+3. Baseline retrieval is performed.
+4. Expanded-query retrieval is performed.
+5. Retrieved chunks are combined and deduplicated.
+6. Context is passed to the LLM.
+7. Final answer is generated.
+8. Retrieval comparison results are stored in JSON format.
 
-### Example Output
+### Example Output Structure
 
-```text
-Tesla's primary revenue sources in 2023 included automotive sales,
-regulatory credits, energy generation and storage products,
-and services related to vehicle maintenance and support.
+```json
+{
+  "question_id": "Q1",
+  "original_query": "...",
+  "expanded_queries": [...],
+  "baseline_top_chunks": [...],
+  "expanded_top_chunks": [...],
+  "final_answer": "...",
+  "citations": [...],
+  "retrieval_improvement_analysis": "Query expansion improved retrieval coverage compared to baseline retrieval."
+}
 ```
 
 ---
@@ -158,13 +202,13 @@ and services related to vehicle maintenance and support.
 This assignment demonstrates:
 
 * Retrieval-Augmented Generation (RAG)
-* Document Processing and Chunking
+* Query Expansion Techniques
 * Semantic Search
-* Query Expansion
-* Vector Databases (ChromaDB)
-* Embedding Models
-* Context-Aware Question Answering
-* LangChain-Based RAG Pipelines
-* LLM Integration using Groq API
-
-##
+* Financial Document Question Answering
+* ChromaDB Vector Database
+* Sentence Transformer Embeddings
+* Retrieval Evaluation
+* Citation-Based Answer Generation
+* LangChain RAG Pipelines
+* Groq LLM Integration
+* JSON Result Export

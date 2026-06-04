@@ -1,0 +1,495 @@
+[
+    {
+        "question_id": "Q1",
+        "original_query": "Does Tesla's growth story appear more constrained by external supply risk or internal execution and cost structure? Use evidence across Risk Factors and MD&A. ",
+        "expanded_queries": [
+            "Is Tesla's growth story limited more by external supply risks or by internal execution and cost structure, based on evidence from the Risk Factors and MD&A sections?  ",
+            "Does the evidence in Tesla’s Risk Factors and MD&A suggest that external supply risk or internal execution and cost structure is the bigger constraint on its growth story?  ",
+            "Which factor—external supply risk or internal execution and cost structure—appears to more restrict Tesla’s growth, according to the Risk Factors and MD&A disclosures?"
+        ],
+        "baseline_top_chunks": [
+            {
+                "chunk_id": "chunk_1",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_2",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_3",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_4",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_5",
+                "section": "Unknown",
+                "year": 2023
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "chunk_id": "chunk_24",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Is Tesla's growth story limited more by external supply risks or by internal execution and cost structure, based on evidence from the Risk Factors and MD&A sections?  "
+            },
+            {
+                "chunk_id": "chunk_1",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Is Tesla's growth story limited more by external supply risks or by internal execution and cost structure, based on evidence from the Risk Factors and MD&A sections?  "
+            },
+            {
+                "chunk_id": "chunk_2",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Is Tesla's growth story limited more by external supply risks or by internal execution and cost structure, based on evidence from the Risk Factors and MD&A sections?  "
+            },
+            {
+                "chunk_id": "chunk_24",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Does the evidence in Tesla’s Risk Factors and MD&A suggest that external supply risk or internal execution and cost structure is the bigger constraint on its growth story?  "
+            },
+            {
+                "chunk_id": "chunk_1",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Does the evidence in Tesla’s Risk Factors and MD&A suggest that external supply risk or internal execution and cost structure is the bigger constraint on its growth story?  "
+            },
+            {
+                "chunk_id": "chunk_2",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Does the evidence in Tesla’s Risk Factors and MD&A suggest that external supply risk or internal execution and cost structure is the bigger constraint on its growth story?  "
+            },
+            {
+                "chunk_id": "chunk_24",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Which factor—external supply risk or internal execution and cost structure—appears to more restrict Tesla’s growth, according to the Risk Factors and MD&A disclosures?"
+            },
+            {
+                "chunk_id": "chunk_1",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Which factor—external supply risk or internal execution and cost structure—appears to more restrict Tesla’s growth, according to the Risk Factors and MD&A disclosures?"
+            },
+            {
+                "chunk_id": "chunk_2",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Which factor—external supply risk or internal execution and cost structure—appears to more restrict Tesla’s growth, according to the Risk Factors and MD&A disclosures?"
+            }
+        ],
+        "final_answer": "I don't know.",
+        "citations": [
+            {
+                "chunk_id": "chunk_24",
+                "source_doc": "tsla-20231231-gen.pdf",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_1",
+                "source_doc": "tsla-20231231-gen.pdf",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_2",
+                "source_doc": "tsla-20231231-gen.pdf",
+                "section": "Unknown",
+                "year": 2023
+            }
+        ],
+        "retrieval_improvement_analysis": "Query expansion improved retrieval coverage compared to baseline retrieval."
+    },
+    {
+        "question_id": "Q2",
+        "original_query": "Explain how Tesla's AI and product roadmap is reflected in spending, operational priorities, and risk disclosures. Avoid generic AI claims.",
+        "expanded_queries": [
+            "Explain how Tesla's AI and product roadmap is reflected in its spending, operational priorities, and risk disclosures, avoiding generic AI claims  ",
+            "Describe how Tesla's AI and product roadmap shows up in its expenditures, operational focus, and risk factor disclosures without using generic AI statements  ",
+            "In what ways does Tesla's AI and product roadmap influence its spending patterns, operational priorities, and risk disclosures, while excluding generic AI claims  ",
+            "How is Tesla's AI and product roadmap manifested in its financial spending, operational priorities, and risk disclosures, avoiding any generic AI language"
+        ],
+        "baseline_top_chunks": [
+            {
+                "chunk_id": "chunk_1",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_2",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_3",
+                "section": "Unknown",
+                "year": 2023
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "chunk_id": "chunk_17",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Explain how Tesla's AI and product roadmap is reflected in its spending, operational priorities, and risk disclosures, avoiding generic AI claims  "
+            },
+            {
+                "chunk_id": "chunk_24",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Explain how Tesla's AI and product roadmap is reflected in its spending, operational priorities, and risk disclosures, avoiding generic AI claims  "
+            },
+            {
+                "chunk_id": "chunk_2",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Explain how Tesla's AI and product roadmap is reflected in its spending, operational priorities, and risk disclosures, avoiding generic AI claims  "
+            },
+            {
+                "chunk_id": "chunk_17",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Describe how Tesla's AI and product roadmap shows up in its expenditures, operational focus, and risk factor disclosures without using generic AI statements  "
+            },
+            {
+                "chunk_id": "chunk_24",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Describe how Tesla's AI and product roadmap shows up in its expenditures, operational focus, and risk factor disclosures without using generic AI statements  "
+            },
+            {
+                "chunk_id": "chunk_2",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Describe how Tesla's AI and product roadmap shows up in its expenditures, operational focus, and risk factor disclosures without using generic AI statements  "
+            },
+            {
+                "chunk_id": "chunk_17",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "In what ways does Tesla's AI and product roadmap influence its spending patterns, operational priorities, and risk disclosures, while excluding generic AI claims  "
+            },
+            {
+                "chunk_id": "chunk_24",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "In what ways does Tesla's AI and product roadmap influence its spending patterns, operational priorities, and risk disclosures, while excluding generic AI claims  "
+            },
+            {
+                "chunk_id": "chunk_2",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "In what ways does Tesla's AI and product roadmap influence its spending patterns, operational priorities, and risk disclosures, while excluding generic AI claims  "
+            },
+            {
+                "chunk_id": "chunk_17",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "How is Tesla's AI and product roadmap manifested in its financial spending, operational priorities, and risk disclosures, avoiding any generic AI language"
+            },
+            {
+                "chunk_id": "chunk_24",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "How is Tesla's AI and product roadmap manifested in its financial spending, operational priorities, and risk disclosures, avoiding any generic AI language"
+            },
+            {
+                "chunk_id": "chunk_2",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "How is Tesla's AI and product roadmap manifested in its financial spending, operational priorities, and risk disclosures, avoiding any generic AI language"
+            }
+        ],
+        "final_answer": "I don't know.",
+        "citations": [
+            {
+                "chunk_id": "chunk_17",
+                "source_doc": "tsla-20231231-gen.pdf",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_24",
+                "source_doc": "tsla-20231231-gen.pdf",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_2",
+                "source_doc": "tsla-20231231-gen.pdf",
+                "section": "Unknown",
+                "year": 2023
+            }
+        ],
+        "retrieval_improvement_analysis": "Query expansion improved retrieval coverage compared to baseline retrieval."
+    },
+    {
+        "question_id": "Q3",
+        "original_query": "A supplier asks whether Tesla is exposed to concentration risk across factories, suppliers, raw materials, or geographies. Prepare a concise risk note with citations. ",
+        "expanded_queries": [
+            "Is Tesla exposed to concentration risk across its factories, suppliers, raw materials, or geographic regions? Provide a concise risk note with citations.  ",
+            "Does Tesla face concentration risk in its manufacturing sites, vendor base, commodity inputs, or regional operations? Summarize the risk briefly and include citations.  ",
+            "What is the extent of Tesla's concentration risk regarding its production facilities, supply chain partners, raw material sources, and geographic exposure? Prepare a short risk note with references.  ",
+            "Can you assess whether Tesla has concentration risk across its plants, suppliers, raw material supplies, and geographic markets, and provide a brief, cited risk summary?  ",
+            "Provide a concise risk note, citing sources, on Tesla's potential concentration risk in factories, suppliers, raw materials, and geographies."
+        ],
+        "baseline_top_chunks": [
+            {
+                "chunk_id": "chunk_1",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_2",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_3",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_4",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_5",
+                "section": "Unknown",
+                "year": 2023
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "chunk_id": "chunk_17",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Is Tesla exposed to concentration risk across its factories, suppliers, raw materials, or geographic regions? Provide a concise risk note with citations.  "
+            },
+            {
+                "chunk_id": "chunk_206",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Is Tesla exposed to concentration risk across its factories, suppliers, raw materials, or geographic regions? Provide a concise risk note with citations.  "
+            },
+            {
+                "chunk_id": "chunk_14",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Is Tesla exposed to concentration risk across its factories, suppliers, raw materials, or geographic regions? Provide a concise risk note with citations.  "
+            },
+            {
+                "chunk_id": "chunk_17",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Does Tesla face concentration risk in its manufacturing sites, vendor base, commodity inputs, or regional operations? Summarize the risk briefly and include citations.  "
+            },
+            {
+                "chunk_id": "chunk_206",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Does Tesla face concentration risk in its manufacturing sites, vendor base, commodity inputs, or regional operations? Summarize the risk briefly and include citations.  "
+            },
+            {
+                "chunk_id": "chunk_14",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Does Tesla face concentration risk in its manufacturing sites, vendor base, commodity inputs, or regional operations? Summarize the risk briefly and include citations.  "
+            },
+            {
+                "chunk_id": "chunk_17",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "What is the extent of Tesla's concentration risk regarding its production facilities, supply chain partners, raw material sources, and geographic exposure? Prepare a short risk note with references.  "
+            },
+            {
+                "chunk_id": "chunk_206",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "What is the extent of Tesla's concentration risk regarding its production facilities, supply chain partners, raw material sources, and geographic exposure? Prepare a short risk note with references.  "
+            },
+            {
+                "chunk_id": "chunk_14",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "What is the extent of Tesla's concentration risk regarding its production facilities, supply chain partners, raw material sources, and geographic exposure? Prepare a short risk note with references.  "
+            },
+            {
+                "chunk_id": "chunk_17",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Can you assess whether Tesla has concentration risk across its plants, suppliers, raw material supplies, and geographic markets, and provide a brief, cited risk summary?  "
+            },
+            {
+                "chunk_id": "chunk_206",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Can you assess whether Tesla has concentration risk across its plants, suppliers, raw material supplies, and geographic markets, and provide a brief, cited risk summary?  "
+            },
+            {
+                "chunk_id": "chunk_14",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Can you assess whether Tesla has concentration risk across its plants, suppliers, raw material supplies, and geographic markets, and provide a brief, cited risk summary?  "
+            },
+            {
+                "chunk_id": "chunk_17",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Provide a concise risk note, citing sources, on Tesla's potential concentration risk in factories, suppliers, raw materials, and geographies."
+            },
+            {
+                "chunk_id": "chunk_206",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Provide a concise risk note, citing sources, on Tesla's potential concentration risk in factories, suppliers, raw materials, and geographies."
+            },
+            {
+                "chunk_id": "chunk_14",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Provide a concise risk note, citing sources, on Tesla's potential concentration risk in factories, suppliers, raw materials, and geographies."
+            }
+        ],
+        "final_answer": "I don't know.",
+        "citations": [
+            {
+                "chunk_id": "chunk_17",
+                "source_doc": "tsla-20231231-gen.pdf",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_206",
+                "source_doc": "tsla-20231231-gen.pdf",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_14",
+                "source_doc": "tsla-20231231-gen.pdf",
+                "section": "Unknown",
+                "year": 2023
+            }
+        ],
+        "retrieval_improvement_analysis": "Query expansion improved retrieval coverage compared to baseline retrieval."
+    },
+    {
+        "question_id": "Q4",
+        "original_query": "Compare the strategic importance of automotive operations and energy generation/storage using evidence from the 10-K. What disclosures are needed to support a business recommendation? ",
+        "expanded_queries": [
+            "How do the automotive operations and energy generation/storage segments differ in strategic importance according to the 10‑K, and which disclosures are required to support a business recommendation?  ",
+            "What evidence in the 10‑K shows the relative strategic value of automotive operations compared to energy generation and storage, and what specific disclosures must be included to justify a recommendation?  ",
+            "Using the 10‑K, compare the strategic significance of the company's automotive business versus its energy generation/storage activities, and identify the disclosures needed to back a business recommendation."
+        ],
+        "baseline_top_chunks": [
+            {
+                "chunk_id": "chunk_1",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_2",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_3",
+                "section": "Unknown",
+                "year": 2023
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "chunk_id": "chunk_33",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "How do the automotive operations and energy generation/storage segments differ in strategic importance according to the 10‑K, and which disclosures are required to support a business recommendation?  "
+            },
+            {
+                "chunk_id": "chunk_104",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "How do the automotive operations and energy generation/storage segments differ in strategic importance according to the 10‑K, and which disclosures are required to support a business recommendation?  "
+            },
+            {
+                "chunk_id": "chunk_31",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "How do the automotive operations and energy generation/storage segments differ in strategic importance according to the 10‑K, and which disclosures are required to support a business recommendation?  "
+            },
+            {
+                "chunk_id": "chunk_33",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "What evidence in the 10‑K shows the relative strategic value of automotive operations compared to energy generation and storage, and what specific disclosures must be included to justify a recommendation?  "
+            },
+            {
+                "chunk_id": "chunk_104",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "What evidence in the 10‑K shows the relative strategic value of automotive operations compared to energy generation and storage, and what specific disclosures must be included to justify a recommendation?  "
+            },
+            {
+                "chunk_id": "chunk_31",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "What evidence in the 10‑K shows the relative strategic value of automotive operations compared to energy generation and storage, and what specific disclosures must be included to justify a recommendation?  "
+            },
+            {
+                "chunk_id": "chunk_33",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Using the 10‑K, compare the strategic significance of the company's automotive business versus its energy generation/storage activities, and identify the disclosures needed to back a business recommendation."
+            },
+            {
+                "chunk_id": "chunk_104",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Using the 10‑K, compare the strategic significance of the company's automotive business versus its energy generation/storage activities, and identify the disclosures needed to back a business recommendation."
+            },
+            {
+                "chunk_id": "chunk_31",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Using the 10‑K, compare the strategic significance of the company's automotive business versus its energy generation/storage activities, and identify the disclosures needed to back a business recommendation."
+            }
+        ],
+        "final_answer": "**Strategic importance**\n\n- **Automotive operations**  \n  - The automotive segment is the company’s primary revenue engine.  In 2020 it generated **$29.5 billion** in revenue and delivered **$6.6 billion** of gross profit, far out‑pacing the energy segment.  \n  - It encompasses the full value chain for electric vehicles—design, development, manufacturing, sales, leasing, regulatory‑credit sales, and a broad after‑market services portfolio (used‑vehicle sales, retail merchandise, insurance, etc.).  \n  - Production volumes underscore its strategic focus: 1.37 million consumer vehicles were produced in 2022 and 1.85 million in 2023, with the company explicitly stating that increasing vehicle production, capacity and delivery capability is a current priority.  \n\n- **Energy generation & storage**  \n  - The energy segment is positioned as a complementary growth platform that supports the firm’s sustainability mission.  It covers design, manufacture, installation, sales and leasing of solar‑energy generation and storage products, plus related services and incentive sales.  \n  - Revenue is modest relative to automotive—about **$2 billion** in 2020—indicating a smaller but still material contribution.  \n  - The segment provides diversification, exposure to renewable‑energy incentives, and a pathway to capture long‑term demand for clean‑energy infrastructure, aligning with the company’s “accelerate the world’s transition to sustainable energy” narrative.  \n\n**Overall comparison**  \nWhile both segments are integral to the company’s sustainable‑energy vision, the automotive segment is the dominant cash‑generating business and the immediate focus of operational scaling.  The energy generation and storage segment, though smaller, is strategically important for diversification, future growth, and reinforcing the sustainability narrative.\n\n**Disclosures needed to support a business recommendation**\n\n1. **Segment financials** – Detailed revenue, gross profit, operating income, and cash‑flow metrics for each segment (automotive vs. energy) over multiple years.  \n2. **Segment assets and liabilities** – Even though the CODM does not use asset‑based evaluation, disclosure of segment‑level assets, capital expenditures, and liabilities helps assess investment needs and risk exposure.  \n3. **Revenue composition** – Breakdown of automotive revenue (vehicle sales, leasing, regulatory credits, services) and energy revenue (product sales, installation services, incentives).  \n4. **Growth metrics** – Production volumes, delivery numbers, installed capacity (MW) for solar/storage, and pipeline of new products or services.  \n5. **Market and demand outlook** – Management’s discussion of EV market trends, renewable‑energy policy incentives, and competitive positioning.  \n6. **Risk factors** – Segment‑specific risks (supply‑chain constraints for vehicles, regulatory changes for credits, incentive volatility for solar, technology obsolescence).  \n7. **Capital allocation** – Planned capital spending, R&D investment, and financing plans for each segment.  \n8. **Geographic information** – Revenue and profit by geographic area to gauge exposure to regional policy and market dynamics.  \n9. **Forward‑looking statements** – Management’s expectations for vehicle production, energy‑storage deployments, and related strategic initiatives.  \n\nProviding these disclosures would give investors the quantitative and qualitative evidence needed to evaluate the relative strategic weight of each segment and to justify a recommendation—whether to prioritize further investment in the high‑volume automotive business, to accelerate growth in the renewable‑energy segment, or to balance resources across both.",
+        "citations": [
+            {
+                "chunk_id": "chunk_33",
+                "source_doc": "tsla-20231231-gen.pdf",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_104",
+                "source_doc": "tsla-20231231-gen.pdf",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_31",
+                "source_doc": "tsla-20231231-gen.pdf",
+                "section": "Unknown",
+                "year": 2023
+            }
+        ],
+        "retrieval_improvement_analysis": "Query expansion improved retrieval coverage compared to baseline retrieval."
+    }
+]
