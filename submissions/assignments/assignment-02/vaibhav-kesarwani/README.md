@@ -64,3 +64,52 @@ main.ipynb
 ## Output
 
 ![output](./assets/query-expansion.png)
+
+##  Analytical Questions
+
+### Q1. Which benchmark questions improved the most after query expansion, and why?
+
+- Q1 improved the most because expansion helped clearly map “growth constraints” to relevant Risk Factors + MD&A language, improving retrieval alignment.
+- Q4 also improved strongly since expansion helped structure comparison between segments (automotive vs energy), which is explicitly discussed in the 10-K.
+- Q2 and Q3 did not improve well because the expanded queries became too complex and did not match explicit document phrasing.
+
+### Q2. Which expanded query variants produced irrelevant retrieval results?
+
+- Q2 expansions were too abstract (AI roadmap + spending + risks combined), leading to no direct match in 10-K chunks → “I don't know”.
+- Q3 expansions introduced structured “risk assessment + citations” format, which does not exist in the document → poor retrieval alignment.
+- Over-expansion caused semantic drift away from actual financial disclosures.
+
+### Q3. Did expansion increase recall at the cost of precision? Give examples.
+
+Yes — in some cases.
+
+- Recall increased (Q1, Q4):
+    - More risk and MD&A-related chunks were retrieved.
+- But precision dropped (Q3):
+    - Expanded queries introduced concepts like “concentration risk across suppliers/geographies” in a very structured way, retrieving either irrelevant or no matching chunks.
+
+### Q4. How would you control noisy expansions in a production RAG system?
+
+To reduce noise:
+
+- Limit expansion length (2–3 variants max)
+- Use controlled prompt templates instead of free-form generation
+- Apply query rewriting rules (not full generation)
+- Add similarity threshold filtering on expanded queries
+- Use reranking models (cross-encoders) after retrieval
+- Penalize overly structured outputs (e.g., “prepare report”, “with citations”)
+- Keep expansions grounded in document vocabulary (Risk Factors, MD&A, Segment Reporting)
+
+### Q5. What metadata filters would you add if analysts ask for a specific fiscal year or 10-K section?
+
+To improve structured retrieval, add the following metadata filters:
+
+- Fiscal year filters
+    - fiscal_year (e.g. 2022, 2023)
+    - reporting_period (FY/Q1/Q2/Q3/Q4)
+
+- Section-level filters
+    - Risk Factors
+    - Financial Statements
+    - Notes to Financial Statements
+    - Segment Information

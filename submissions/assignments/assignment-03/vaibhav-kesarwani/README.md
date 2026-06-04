@@ -211,3 +211,48 @@ The system retrieves the most relevant hypothetical questions, maps them back to
 This retrieval strategy can improve semantic search performance by capturing potential user intents through generated questions.
 
 ![Hypothetical Question](./assets/hypothetical-questions.png)
+
+## Analytical Questions
+
+### Q1. Which queries benefited most from hypothetical question retrieval?
+
+HQ1, HQ2, and HQ4 benefited the most because they are abstract and indirectly phrased, requiring semantic interpretation beyond keyword matching.
+
+- HQ4 benefited the most since cybersecurity/AI risks are often described implicitly in filings.
+- HQ1 and HQ2 improved due to better mapping of risk and relationship-based reasoning.
+- HQ3 benefited least because cash flow concepts are already explicitly stated in the 10-K.
+
+### Q2. Which generated questions were too broad, too narrow, or misleading?
+
+- **Too broad:** Questions combining multiple risk or financial dimensions in a single query, reducing retrieval precision.
+- **Too narrow:** Questions focused on very specific metrics or single-year details, limiting relevant context retrieval.
+- **Misleading:** A few questions implied relationships or causal links not explicitly supported in the source chunks.
+
+### Q3. How did you prevent generated hypothetical questions from introducing unsupported facts?
+
+- Used strict chunk-only input context (no external knowledge).
+- Controlled generation via low temperature (0.2) for stability.
+- Forced the model to generate questions only, not answers or explanations.
+- Stored parent chunk IDs to ensure traceability back to source text.
+- Final answers were generated only from retrieved original chunks, not hypothetical questions.
+
+### Q4. Did the technique improve retrieval for abstract business questions?
+
+Yes. The technique significantly improved retrieval for abstract and multi-hop business questions by bridging the gap between:
+
+- natural user language, and
+- formal financial disclosure language in 10-K filings.
+
+It improved recall especially for:
+
+- risk interpretation (HQ1, HQ4)
+- relationship-based analysis (HQ2)
+- implicit operational risk queries
+
+### Q5. How would you update the hypothetical question index when new 10-K filings are added?
+
+- Ingest new filings into the chunk database with metadata (year, section, source).
+- Generate hypothetical questions only for new chunks (incremental update).
+- Embed and append them to the existing hypothetical question vector store.
+- Periodically clean duplicates and low-quality questions.
+- Optionally version the index (e.g., v1, v2) to track filing updates over time.

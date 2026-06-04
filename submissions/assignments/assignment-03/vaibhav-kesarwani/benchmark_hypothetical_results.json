@@ -1,0 +1,2886 @@
+[
+  {
+    "question_id": "HQ1",
+    "user_query": "What should a board member ask about risks that could prevent Tesla from meeting production, delivery, or scaling expectations?",
+    "retrieved_hypothetical_questions": [
+      {
+        "hypothetical_question": "Q1: What are the potential risks and consequences of Tesla's products containing defects or failing to perform as expected, and how might these risks impact the company's business and financial condition?",
+        "parent_chunk_id": [
+          "text_3040",
+          "text_3041",
+          "text_3042",
+          "text_3043",
+          "text_3044",
+          "text_3045",
+          "text_3046",
+          "text_3047",
+          "text_3048",
+          "text_3049",
+          "text_3050",
+          "text_3051",
+          "text_3052",
+          "text_3053",
+          "text_3054",
+          "text_3055",
+          "text_3056",
+          "text_3057",
+          "text_3058",
+          "text_3059"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      },
+      {
+        "hypothetical_question": "Q1: What are the potential risks and uncertainties associated with Tesla's ability to meet its publicly announced guidance or other expectations about its business, and how might these risks impact the company's stock price?",
+        "parent_chunk_id": [
+          "text_2320",
+          "text_2321",
+          "text_2322",
+          "text_2323",
+          "text_2324",
+          "text_2325",
+          "text_2326",
+          "text_2327",
+          "text_2328",
+          "text_2329",
+          "text_2330",
+          "text_2331",
+          "text_2332",
+          "text_2333",
+          "text_2334",
+          "text_2335",
+          "text_2336",
+          "text_2337",
+          "text_2338",
+          "text_2339"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      },
+      {
+        "hypothetical_question": "Q1: What are the potential risks and uncertainties that could impact Tesla's financial condition and operating results, including the volatility of the company's common stock price and the impact of regulatory limitations and other obstacles on the company's ability to sell vehicles directly to consumers?",
+        "parent_chunk_id": [
+          "text_960",
+          "text_961",
+          "text_962",
+          "text_963",
+          "text_964",
+          "text_965",
+          "text_966",
+          "text_967",
+          "text_968",
+          "text_969",
+          "text_970",
+          "text_971",
+          "text_972",
+          "text_973",
+          "text_974",
+          "text_975",
+          "text_976",
+          "text_977",
+          "text_978",
+          "text_979"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      },
+      {
+        "hypothetical_question": "Q1: What are the potential risks and challenges that Tesla may face in its expansion and growth plans, particularly in terms of regulatory compliance, supply chain constraints, and employee retention?",
+        "parent_chunk_id": [
+          "text_260",
+          "text_261",
+          "text_262",
+          "text_263",
+          "text_264",
+          "text_265",
+          "text_266",
+          "text_267",
+          "text_268",
+          "text_269",
+          "text_270",
+          "text_271",
+          "text_272",
+          "text_273",
+          "text_274",
+          "text_275",
+          "text_276",
+          "text_277",
+          "text_278",
+          "text_279"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      },
+      {
+        "hypothetical_question": "Q2: What are the potential risks and challenges associated with Tesla's plans to expand its manufacturing capabilities, including the construction and ramp of new factories, and how might these risks impact the company's business and operating results?",
+        "parent_chunk_id": [
+          "text_3020",
+          "text_3021",
+          "text_3022",
+          "text_3023",
+          "text_3024",
+          "text_3025",
+          "text_3026",
+          "text_3027",
+          "text_3028",
+          "text_3029",
+          "text_3030",
+          "text_3031",
+          "text_3032",
+          "text_3033",
+          "text_3034",
+          "text_3035",
+          "text_3036",
+          "text_3037",
+          "text_3038",
+          "text_3039"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      }
+    ],
+    "parent_chunks_used": [
+      {
+        "chunk_id": "text_260",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_261",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_262",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_263",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_264",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_265",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_266",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_267",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_268",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_269",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_270",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_271",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_272",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_273",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_274",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_275",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_276",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_277",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_278",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_279",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_960",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_961",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_962",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_963",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_964",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_965",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_966",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_967",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_968",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_969",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_970",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_971",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_972",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_973",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_974",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_975",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_976",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_977",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_978",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_979",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2320",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2321",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2322",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2323",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2324",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2325",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2326",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2327",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2328",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2329",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2330",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2331",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2332",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2333",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2334",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2335",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2336",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2337",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2338",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2339",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3020",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3021",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3022",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3023",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3024",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3025",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3026",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3027",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3028",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3029",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3030",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3031",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3032",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3033",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3034",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3035",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3036",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3037",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3038",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3039",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3040",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3041",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3042",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3043",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3044",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3045",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3046",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3047",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3048",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3049",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3050",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3051",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3052",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3053",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3054",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3055",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3056",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3057",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3058",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3059",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      }
+    ],
+    "final_answer": "The board member should ask about the following risks that could prevent Tesla from meeting production, delivery, or scaling expectations:\n\n1. Delays in launching and ramping the production of new products and features, or the company's inability to control manufacturing costs.\n2. Suppliers failing to deliver components according to schedules, prices, quality, and volumes that are acceptable to Tesla, or the company's inability to manage these components effectively.\n3. The company's inability to accurately forecast, purchase, warehouse, and transport components at high volumes to its manufacturing facilities and servicing locations internationally.\n4. Delays in meeting projected construction timelines, costs, and production ramps at new factories, or difficulties in generating and maintaining demand for products manufactured there.\n5. The company's inability to grow its global product sales, delivery, and installation capabilities, or accurately project and effectively manage its growth.\n6. The company's dependence on the continued supply of lithium-ion battery cells for its vehicles and energy storage products, and the potential for disruptions in the supply of these cells from its suppliers.\n7. The company's inability to maintain public credibility and confidence in its long-term business prospects, which could be challenging due to its limited operating history relative to established competitors, customer unfamiliarity with its products, and other factors.\n8. The company's reliance on service providers, and the potential for significant supply chain attacks or other security incidents that could have a material adverse effect on its business.\n\nThe board member should also ask about the company's plans to mitigate these risks, such as:\n\n1. Diversifying its supplier base to reduce dependence on any one supplier.\n2. Investing in automation and other technologies to improve manufacturing efficiency and reduce costs.\n3. Developing its own battery cell production capabilities to reduce dependence on external suppliers.\n4. Improving its forecasting and planning processes to better manage its supply chain and meet customer demand.\n5. Enhancing its public credibility and confidence through transparent communication and strong corporate governance practices.\n6. Developing contingency plans to address potential supply chain disruptions or other risks.",
+    "citations": [],
+    "comparison_with_baseline": "Baseline vs HyDE retrieval comparison pending manual evaluation."
+  },
+  {
+    "question_id": "HQ2",
+    "user_query": "How should an analyst investigate the relationship between product defects, warranty or service obligations, customer trust, and brand risk?",
+    "retrieved_hypothetical_questions": [
+      {
+        "hypothetical_question": "Q1: What are the potential risks and consequences associated with the company's warranty reserves being inadequate to cover future warranty claims on its products?",
+        "parent_chunk_id": [
+          "text_2300",
+          "text_2301",
+          "text_2302",
+          "text_2303",
+          "text_2304",
+          "text_2305",
+          "text_2306",
+          "text_2307",
+          "text_2308",
+          "text_2309",
+          "text_2310",
+          "text_2311",
+          "text_2312",
+          "text_2313",
+          "text_2314",
+          "text_2315",
+          "text_2316",
+          "text_2317",
+          "text_2318",
+          "text_2319"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      },
+      {
+        "hypothetical_question": "Q1: What are the key audit matters and significant judgments made by management in determining the automotive warranty reserve for certain Tesla vehicle models, and how did the auditor evaluate the reasonableness of management's estimates?",
+        "parent_chunk_id": [
+          "text_2380",
+          "text_2381",
+          "text_2382",
+          "text_2383",
+          "text_2384",
+          "text_2385",
+          "text_2386",
+          "text_2387",
+          "text_2388",
+          "text_2389",
+          "text_2390",
+          "text_2391",
+          "text_2392",
+          "text_2393",
+          "text_2394",
+          "text_2395",
+          "text_2396",
+          "text_2397",
+          "text_2398",
+          "text_2399"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      },
+      {
+        "hypothetical_question": "Q1: What are the primary factors that contribute to the variability in the warranty reserve, and how do changes in historical or projected warranty experience impact the reserve?",
+        "parent_chunk_id": [
+          "text_300",
+          "text_301",
+          "text_302",
+          "text_303",
+          "text_304",
+          "text_305",
+          "text_306",
+          "text_307",
+          "text_308",
+          "text_309",
+          "text_310",
+          "text_311",
+          "text_312",
+          "text_313",
+          "text_314",
+          "text_315",
+          "text_316",
+          "text_317",
+          "text_318",
+          "text_319"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      },
+      {
+        "hypothetical_question": "Q3: What are the key risks associated with the company's financing receivables, and how does the company manage these risks, including the allowance for expected credit losses and the concentration of risk in its receivables portfolio?",
+        "parent_chunk_id": [
+          "text_3160",
+          "text_3161",
+          "text_3162",
+          "text_3163",
+          "text_3164",
+          "text_3165",
+          "text_3166",
+          "text_3167",
+          "text_3168",
+          "text_3169",
+          "text_3170",
+          "text_3171",
+          "text_3172",
+          "text_3173",
+          "text_3174",
+          "text_3175",
+          "text_3176",
+          "text_3177",
+          "text_3178",
+          "text_3179"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      },
+      {
+        "hypothetical_question": "Q1: What are the potential risks and consequences of Tesla's products containing defects or failing to perform as expected, and how might these risks impact the company's business and financial condition?",
+        "parent_chunk_id": [
+          "text_3040",
+          "text_3041",
+          "text_3042",
+          "text_3043",
+          "text_3044",
+          "text_3045",
+          "text_3046",
+          "text_3047",
+          "text_3048",
+          "text_3049",
+          "text_3050",
+          "text_3051",
+          "text_3052",
+          "text_3053",
+          "text_3054",
+          "text_3055",
+          "text_3056",
+          "text_3057",
+          "text_3058",
+          "text_3059"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      }
+    ],
+    "parent_chunks_used": [
+      {
+        "chunk_id": "text_300",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_301",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_302",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_303",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_304",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_305",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_306",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_307",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_308",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_309",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_310",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_311",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_312",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_313",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_314",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_315",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_316",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_317",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_318",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_319",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2300",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2301",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2302",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2303",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2304",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2305",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2306",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2307",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2308",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2309",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2310",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2311",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2312",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2313",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2314",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2315",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2316",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2317",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2318",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2319",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2380",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2381",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2382",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2383",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2384",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2385",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2386",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2387",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2388",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2389",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2390",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2391",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2392",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2393",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2394",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2395",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2396",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2397",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2398",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2399",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3040",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3041",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3042",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3043",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3044",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3045",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3046",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3047",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3048",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3049",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3050",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3051",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3052",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3053",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3054",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3055",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3056",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3057",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3058",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3059",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3160",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3161",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3162",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3163",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3164",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3165",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3166",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3167",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3168",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3169",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3170",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3171",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3172",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3173",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3174",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3175",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3176",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3177",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3178",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3179",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      }
+    ],
+    "final_answer": "To investigate the relationship between product defects, warranty or service obligations, customer trust, and brand risk, an analyst should consider the following steps:\n\n1. **Review product design and manufacturing processes**: Analyze the company's product design and manufacturing processes to identify potential areas where defects may occur. This includes reviewing the company's quality control procedures, supplier management, and manufacturing capacity.\n2. **Assess warranty and service obligations**: Evaluate the company's warranty and service obligations to understand the potential financial and reputational risks associated with product defects. This includes reviewing the company's warranty policies, service contracts, and customer support processes.\n3. **Analyze customer feedback and reviews**: Examine customer feedback and reviews to understand the impact of product defects on customer trust and loyalty. This includes analyzing online reviews, social media comments, and customer satisfaction surveys.\n4. **Evaluate brand reputation and risk**: Assess the company's brand reputation and risk associated with product defects. This includes reviewing the company's brand image, customer loyalty, and market share.\n5. **Conduct a risk assessment**: Conduct a risk assessment to identify potential risks associated with product defects, warranty or service obligations, and customer trust. This includes identifying potential risks, assessing their likelihood and impact, and developing mitigation strategies.\n6. **Review industry trends and benchmarks**: Review industry trends and benchmarks to understand how other companies in the same industry manage product defects, warranty or service obligations, and customer trust.\n7. **Analyze financial data**: Analyze financial data to understand the financial impact of product defects, warranty or service obligations, and customer trust on the company's bottom line.\n8. **Develop a mitigation strategy**: Develop a mitigation strategy to address the risks associated with product defects, warranty or service obligations, and customer trust. This includes identifying potential solutions, assessing their feasibility and effectiveness, and developing a plan to implement them.\n\nBy following these steps, an analyst can gain a deeper understanding of the relationship between product defects, warranty or service obligations, customer trust, and brand risk, and develop effective strategies to mitigate these risks.\n\nIn the context of the provided document, the analyst should focus on the following sections:\n\n* **Research and Development Costs**: This section provides information on the company's research and development expenses, which can be used to identify potential areas where product defects may occur.\n* **Warranty and Service Obligations**: This section provides information on the company's warranty and service obligations, which can be used to understand the potential financial and reputational risks associated with product defects.\n* **Customer Trust and Loyalty**: This section provides information on customer feedback and reviews, which can be used to understand the impact of product defects on customer trust and loyalty.\n* **Brand Reputation and Risk**: This section provides information on the company's brand reputation and risk associated with product defects, which can be used to assess the potential impact on the company's brand image and customer loyalty.\n\nBy analyzing these sections, the analyst can gain a deeper understanding of the relationship between product defects, warranty or service obligations, customer trust, and brand risk, and develop effective strategies to mitigate these risks.",
+    "citations": [],
+    "comparison_with_baseline": "Baseline vs HyDE retrieval comparison pending manual evaluation."
+  },
+  {
+    "question_id": "HQ3",
+    "user_query": "What evidence helps determine whether future cash flow depends more on capital expenditure discipline, working capital, or operating income?",
+    "retrieved_hypothetical_questions": [
+      {
+        "hypothetical_question": "Q2: How do the changes in accounting estimates and assumptions, such as the valuation of inventory and the carrying value of assets, impact the financial statements of the company?",
+        "parent_chunk_id": [
+          "text_2340",
+          "text_2341",
+          "text_2342",
+          "text_2343",
+          "text_2344",
+          "text_2345",
+          "text_2346",
+          "text_2347",
+          "text_2348",
+          "text_2349",
+          "text_2350",
+          "text_2351",
+          "text_2352",
+          "text_2353",
+          "text_2354",
+          "text_2355",
+          "text_2356",
+          "text_2357",
+          "text_2358",
+          "text_2359"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      },
+      {
+        "hypothetical_question": "Q3: What were the main factors contributing to the increase in net income from operating activities by $307 million in the year ended December 31, 2019, and how did the company's cash flows from operating activities affect its liquidity?",
+        "parent_chunk_id": [
+          "text_320",
+          "text_321",
+          "text_322",
+          "text_323",
+          "text_324",
+          "text_325",
+          "text_326",
+          "text_327",
+          "text_328",
+          "text_329",
+          "text_330",
+          "text_331",
+          "text_332",
+          "text_333",
+          "text_334",
+          "text_335",
+          "text_336",
+          "text_337",
+          "text_338",
+          "text_339"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      },
+      {
+        "hypothetical_question": "Q2: How do the lease pass-through financing obligations, such as the master lease payments, impact the company's cash flows and financial position?",
+        "parent_chunk_id": [
+          "text_2480",
+          "text_2481",
+          "text_2482",
+          "text_2483",
+          "text_2484",
+          "text_2485",
+          "text_2486",
+          "text_2487",
+          "text_2488",
+          "text_2489",
+          "text_2490",
+          "text_2491",
+          "text_2492",
+          "text_2493",
+          "text_2494",
+          "text_2495",
+          "text_2496",
+          "text_2497",
+          "text_2498",
+          "text_2499"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      },
+      {
+        "hypothetical_question": "Q2: How did the company's sources of liquidity and cash flows enable it to fund ongoing operations, research and development projects, and expansion plans, and what were the expected capital expenditures for the next three fiscal years?",
+        "parent_chunk_id": [
+          "text_320",
+          "text_321",
+          "text_322",
+          "text_323",
+          "text_324",
+          "text_325",
+          "text_326",
+          "text_327",
+          "text_328",
+          "text_329",
+          "text_330",
+          "text_331",
+          "text_332",
+          "text_333",
+          "text_334",
+          "text_335",
+          "text_336",
+          "text_337",
+          "text_338",
+          "text_339"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      },
+      {
+        "hypothetical_question": "Q3: What are the company's plans for investing in digital assets, such as bitcoin, and how will they be accounted for in the company's financial statements?",
+        "parent_chunk_id": [
+          "text_1240",
+          "text_1241",
+          "text_1242",
+          "text_1243",
+          "text_1244",
+          "text_1245",
+          "text_1246",
+          "text_1247",
+          "text_1248",
+          "text_1249",
+          "text_1250",
+          "text_1251",
+          "text_1252",
+          "text_1253",
+          "text_1254",
+          "text_1255",
+          "text_1256",
+          "text_1257",
+          "text_1258",
+          "text_1259"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      }
+    ],
+    "parent_chunks_used": [
+      {
+        "chunk_id": "text_320",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_321",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_322",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_323",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_324",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_325",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_326",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_327",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_328",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_329",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_330",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_331",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_332",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_333",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_334",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_335",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_336",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_337",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_338",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_339",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1240",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1241",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1242",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1243",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1244",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1245",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1246",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1247",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1248",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1249",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1250",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1251",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1252",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1253",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1254",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1255",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1256",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1257",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1258",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_1259",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2340",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2341",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2342",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2343",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2344",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2345",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2346",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2347",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2348",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2349",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2350",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2351",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2352",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2353",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2354",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2355",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2356",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2357",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2358",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2359",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2480",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2481",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2482",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2483",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2484",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2485",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2486",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2487",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2488",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2489",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2490",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2491",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2492",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2493",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2494",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2495",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2496",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2497",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2498",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2499",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      }
+    ],
+    "final_answer": "Our operating cash inflows include cash from vehicle sales, customer lease payments, customer deposits, cash from sales of regulatory credits and energy generation and storage products. These cash inflows are offset by our payments to suppliers for production materials and parts used in our manufacturing process, operating expenses, operating lease payments and interest payments on our financings.",
+    "citations": [],
+    "comparison_with_baseline": "Baseline vs HyDE retrieval comparison pending manual evaluation."
+  },
+  {
+    "question_id": "HQ4",
+    "user_query": "Which disclosures help evaluate technology, cybersecurity, data, or AI operational risk even if the user does not explicitly say cybersecurity?",
+    "retrieved_hypothetical_questions": [
+      {
+        "hypothetical_question": "Q3: What are the potential risks and consequences of cyber-attacks or other security incidents affecting Tesla's information technology systems, and how might these risks impact the company's business and financial condition?",
+        "parent_chunk_id": [
+          "text_3040",
+          "text_3041",
+          "text_3042",
+          "text_3043",
+          "text_3044",
+          "text_3045",
+          "text_3046",
+          "text_3047",
+          "text_3048",
+          "text_3049",
+          "text_3050",
+          "text_3051",
+          "text_3052",
+          "text_3053",
+          "text_3054",
+          "text_3055",
+          "text_3056",
+          "text_3057",
+          "text_3058",
+          "text_3059"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      },
+      {
+        "hypothetical_question": "Q1: What are the key cybersecurity risks and measures implemented by Tesla to mitigate these risks, and how do these efforts impact the company's overall risk management and strategy?",
+        "parent_chunk_id": [
+          "text_3080",
+          "text_3081",
+          "text_3082",
+          "text_3083",
+          "text_3084",
+          "text_3085",
+          "text_3086",
+          "text_3087",
+          "text_3088",
+          "text_3089",
+          "text_3090",
+          "text_3091",
+          "text_3092",
+          "text_3093",
+          "text_3094",
+          "text_3095",
+          "text_3096",
+          "text_3097",
+          "text_3098",
+          "text_3099"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      },
+      {
+        "hypothetical_question": "Q3: What are the potential consequences of a security incident or data breach affecting Tesla's information technology systems, and how may the company's reliance on service providers and its own systems contribute to this risk?",
+        "parent_chunk_id": [
+          "text_2280",
+          "text_2281",
+          "text_2282",
+          "text_2283",
+          "text_2284",
+          "text_2285",
+          "text_2286",
+          "text_2287",
+          "text_2288",
+          "text_2289",
+          "text_2290",
+          "text_2291",
+          "text_2292",
+          "text_2293",
+          "text_2294",
+          "text_2295",
+          "text_2296",
+          "text_2297",
+          "text_2298",
+          "text_2299"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      },
+      {
+        "hypothetical_question": "Q3: What are the potential consequences for the company if it fails to comply with a variety of U.S. and international privacy and consumer protection laws, and what types of regulatory or litigation-related actions could be taken against the company?",
+        "parent_chunk_id": [
+          "text_2300",
+          "text_2301",
+          "text_2302",
+          "text_2303",
+          "text_2304",
+          "text_2305",
+          "text_2306",
+          "text_2307",
+          "text_2308",
+          "text_2309",
+          "text_2310",
+          "text_2311",
+          "text_2312",
+          "text_2313",
+          "text_2314",
+          "text_2315",
+          "text_2316",
+          "text_2317",
+          "text_2318",
+          "text_2319"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      },
+      {
+        "hypothetical_question": "Q3: What are the potential risks and consequences for Tesla's business and financial condition if the company fails to comply with evolving laws and regulations related to intellectual property, data privacy, and cybersecurity, and what steps might the company take to mitigate such risks?",
+        "parent_chunk_id": [
+          "text_3060",
+          "text_3061",
+          "text_3062",
+          "text_3063",
+          "text_3064",
+          "text_3065",
+          "text_3066",
+          "text_3067",
+          "text_3068",
+          "text_3069",
+          "text_3070",
+          "text_3071",
+          "text_3072",
+          "text_3073",
+          "text_3074",
+          "text_3075",
+          "text_3076",
+          "text_3077",
+          "text_3078",
+          "text_3079"
+        ],
+        "section": "unknown",
+        "year": 2025,
+        "score": 0.0
+      }
+    ],
+    "parent_chunks_used": [
+      {
+        "chunk_id": "text_2280",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2281",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2282",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2283",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2284",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2285",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2286",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2287",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2288",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2289",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2290",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2291",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2292",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2293",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2294",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2295",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2296",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2297",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2298",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2299",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2300",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2301",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2302",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2303",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2304",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2305",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2306",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2307",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2308",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2309",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2310",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2311",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2312",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2313",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2314",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2315",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2316",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2317",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2318",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_2319",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3040",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3041",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3042",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3043",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3044",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3045",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3046",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3047",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3048",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3049",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3050",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3051",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3052",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3053",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3054",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3055",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3056",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3057",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3058",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3059",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3060",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3061",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3062",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3063",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3064",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3065",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3066",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3067",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3068",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3069",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3070",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3071",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3072",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3073",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3074",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3075",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3076",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3077",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3078",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3079",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3080",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3081",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3082",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3083",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3084",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3085",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3086",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3087",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3088",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3089",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3090",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3091",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3092",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3093",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3094",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3095",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3096",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3097",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3098",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      },
+      {
+        "chunk_id": "text_3099",
+        "source_doc": "tesla-10k-2019-to-2023",
+        "section": "10-K context",
+        "year": 2025
+      }
+    ],
+    "final_answer": "The disclosures that help evaluate technology, cybersecurity, data, or AI operational risk even if the user does not explicitly say cybersecurity are:\n\n* \"Our products contain complex information technology systems. For example, our vehicles and energy storage products are designed with built-in data connectivity to accept and install periodic remote updates from us to improve or update their functionality.\"\n* \"Any unauthorized access to or control of our products or their systems or any loss of data could result in legal claims or government investigations.\"\n* \"Our products are also highly dependent on software, which is inherently complex and may contain latent defects or errors or be subject to external attacks.\"\n* \"We may be required to defend or insure against product liability claims.\"\n* \"We are highly dependent on the services of Elon Musk, Technoking of Tesla and our Chief Executive Officer.\"\n* \"Our information technology systems or data, or those of our service providers or customers or users could be subject to cyber-attacks or other security incidents, which could result in data breaches, intellectual property theft, claims, litigation, regulatory investigations, significant liability, reputational damage and other adverse consequences.\"\n* \"We also rely on service providers, and similar incidents relating to their information technology systems could also have a material adverse effect on our business.\"\n* \"Cybersecurity is an important part of our risk management processes and an area of focus for our Board and management.\"\n* \"Our cybersecurity risk management and strategy processes are overseen by leaders from our Information Security, Product Security, Compliance and Legal teams.\"\n* \"We have implemented incident response and breach management processes which have four overarching and interconnected stages: 1) preparation for a cybersecurity incident, 2) detection and analysis of a security incident, 3) containment, eradication and recovery, and 4) post-incident analysis.\"\n* \"We also conduct tabletop exercises to simulate responses to cybersecurity incidents. Our team of cybersecurity professionals then collaborate with technical and business stakeholders across our business units to further analyze the risk to the company, and form detection, mitigation and remediation strategies.\"\n* \"As part of the above processes, we regularly engage external auditors and consultants to assess our internal cybersecurity programs and compliance with applicable practices and standards.\"\n* \"Our risk management program also assesses third party risks, and we perform third-party risk management to identify and mitigate risks from third parties such as vendors, suppliers, and other business partners associated with our use of third-party service providers.\"\n* \"Cybersecurity risks are evaluated when determining the selection and oversight of applicable third-party service providers and potential fourth-party risks when handling and/or processing our employee, business or customer data.\"",
+    "citations": [],
+    "comparison_with_baseline": "Baseline vs HyDE retrieval comparison pending manual evaluation."
+  }
+]
