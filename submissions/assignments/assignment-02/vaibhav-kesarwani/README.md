@@ -113,3 +113,13 @@ To improve structured retrieval, add the following metadata filters:
     - Financial Statements
     - Notes to Financial Statements
     - Segment Information
+
+
+## Required Comparative Analysis
+
+| Question | Baseline Evidence Quality | Improved Evidence Quality | Improvement Observed | Failure Mode |
+| -------- | -------- | -------- | -------- | -------- |
+| Q1 | Medium | High | Expansion significantly improved retrieval of Risk Factors and MD&A sections by rephrasing “growth constraints” into supply risk and execution/cost structure language, improving relevance alignment. | Some redundancy in retrieved chunks due to overlapping query variants, but no major hallucination risk. |
+| Q2 | Low–Medium | Medium | Slight improvement in connecting AI roadmap, spending, and operational priorities, but still limited because expansions drifted away from exact 10-K phrasing, reducing retrieval precision. | Query drift caused irrelevant or overly abstract retrievals; some expansions did not match document terminology, leading to weak citations. |
+| Q3 | Medium | Low–Medium | Minimal improvement; baseline already captured supplier and geographic risk reasonably well. Expansion did not add meaningful coverage and sometimes diluted retrieval quality. | Over-structured query expansions (“risk assessment with citations”) led to poor matching and lower precision, including irrelevant or missing results. |
+| Q4 | Medium | High | Strong improvement in identifying automotive vs energy segment disclosures; expanded queries helped surface comparative MD&A and segment reporting sections more effectively. | Some broad retrieval noise from multiple reformulations, but overall relevance remained strong and useful for synthesis. |

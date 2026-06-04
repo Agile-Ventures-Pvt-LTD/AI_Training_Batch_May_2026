@@ -256,3 +256,13 @@ It improved recall especially for:
 - Embed and append them to the existing hypothetical question vector store.
 - Periodically clean duplicates and low-quality questions.
 - Optionally version the index (e.g., v1, v2) to track filing updates over time.
+
+
+## Required Comparative Analysis
+
+| Question | Baseline Evidence Quality | Improved Evidence Quality | Improvement Observed | Failure Mode |
+| -------- | -------- | -------- | -------- | -------- |
+| HQ1 | Medium | High | Retrieval became more aligned with risk-related disclosures; better coverage of production, scaling, and operational constraints. | Slight noise from broadly framed risk questions introducing adjacent but non-critical sections. |
+| HQ2 | Low–Medium | High | Strong improvement in connecting product defects → warranty obligations → customer trust; better multi-hop evidence chaining. | Some retrieved chunks were loosely related service/warranty text without direct defect linkage. |
+| HQ3 | Medium | Medium–High | Moderate improvement in identifying cash flow drivers across sections (capex, operating income, working capital). | Retrieval still somewhat broad, mixing unrelated financial commentary sections. |
+| HQ4 | Low | High | Largest improvement; successfully surfaced implicit cybersecurity/AI/data risk disclosures not keyword-matched in baseline. | Precision loss: some general “technology risk” chunks included without explicit cybersecurity relevance. |
