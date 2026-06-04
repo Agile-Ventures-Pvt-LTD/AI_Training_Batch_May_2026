@@ -1,4 +1,4 @@
-# Assignment 1: Improving RAG Retrieval Using Query Expansion
+# Assignment 2: Improving RAG Retrieval Using Query Expansion
 
 ## Overview
 
