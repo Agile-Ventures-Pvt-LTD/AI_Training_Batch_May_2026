@@ -260,3 +260,10 @@ The technique improves retrieval recall and answer completeness while maintainin
 * Multi-query expansion before hypothetical retrieval.
 * Automatic quality filtering for generated questions.
 * Incremental index updates for newly released filings.
+
+
+---
+
+### Author
+
+**Vikash Kumar**
