@@ -52,34 +52,7 @@ Return JSON only.
 Input:
 {user_input}
 """
-def prompt_outline(summary):
 
-    return f"""
-You are a content architect.
-
-Example:
-
-Input:
-AI in sales
-
-Output:
-{{
-"title":"How AI Improves Sales Productivity",
-"outline":[
-{{
-"section_heading":"Why Sales Teams Struggle",
-"section_purpose":"Pain points"
-}}
-]
-}}
-
-Now create outline.
-
-Input:
-{summary}
-
-Return JSON only.
-"""
 def prompt_blog(
         summary,
         outline,
@@ -135,33 +108,7 @@ Input:
 
 Return JSON only.
 """
-def prompt_blog(
-        summary,
-        outline,
-        user_input):
 
-    return f"""
-You are a Senior SEO Blog Writer.
-
-Write a complete blog.
-
-Rules:
-- Use provided information only
-- Do not invent statistics
-- Do not invent awards
-- Do not invent certifications
-- Use SEO keywords naturally
-- Include CTA
-
-Summary:
-{summary}
-
-Outline:
-{outline}
-
-User Data:
-{user_input}
-"""
 def prompt_seo(blog):
 
     return f"""
