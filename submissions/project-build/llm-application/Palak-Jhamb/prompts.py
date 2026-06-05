@@ -56,10 +56,10 @@ Required json format:
 
 Blog_summrization_user="""
 user has provided the information about the blog which marketing team wants to summarize and identify the key insights
-<Context>
+<context>
 Here are some info 
 {context}
-</Context>
+</context>
 
 """
 
@@ -129,6 +129,16 @@ take reference from below:
 
 Example->
 Input:
+        "Blog_topic":Machine learning,
+        "Target_Audience":students,
+        "Product_Service_Context":education platform,
+        "Key_Points":explaining about machine learning,
+        "Desired_Tone":formal,
+        "Blog_Length":medium,
+        "SEO_Keywords":Customer ,
+        "Call_to_Action":link to website,
+        "Industry":educational,
+        "Brand_Guidelines":it must be user friendly
 Output:
 {
  "title": "Machine learning",
@@ -222,4 +232,79 @@ seo_linkedin_user="""
 Generate the seo meta data and linkedin post content for the context blog provided 
 <context>{context}</context>
 
+"""
+
+quality_system="""
+You are an quality inspector for blogs
+your task is to evaluate the quality of blog generated
+
+Do not add anything by yourself
+return only valid json
+keep the output format same as provided
+
+For hallucination risk, a higher score means higher risk
+you must evaluate the generated blog using the LLM.
+The review should score the blog on:
+Criterion Score Range
+Relevance- 1 to 5
+Clarity- 1 to 5
+Structure- 1 to 5
+Tone Alignment- 1 to 5
+SEO Usage-1 to 5
+Hallucination Risk- 1 to 5
+CTA Effectiveness- 1 to 5
+
+Output:
+{
+ "scores": {
+ "relevance": 0,
+ "clarity": 0,
+ "structure": 0,
+ "tone_alignment": 0,
+ "seo_usage": 0,
+ "hallucination_risk": 0,
+ "cta_effectiveness": 0
+ },
+ "strengths": [],
+ "improvement_areas": [],
+ "final_quality_summary": ""
+}
+
+"""
+
+quality_user="""
+you are provided with blog, your task is to check the quality of blog
+<context>{context}</context>
+"""
+
+HCC_system="""
+you are an Fact-checking assistant that checks for halucination in blogs
+you must identify statements in the blog that may require verification.
+The model should extract:
+{
+ "claims_requiring_verification": [],
+ "unsupported_claims": [],
+ "safe_claims": [],
+ "recommended_edits": []
+}
+The system should flag claims such as:
+ Numerical claims
+ Market leadership claims
+ Guaranteed business outcomes
+ Legal or compliance claims
+ Customer success claims
+ Claims about competitors
+ Claims about certifications or awards
+
+
+ Instuctions:
+Do not add anything by yourself
+return only valid json
+keep the output format same as provided
+
+"""
+
+HCC_user="""
+you are provided with blog, you  must identify statements in the blog that may require verification.
+<context>{context}</context>
 """

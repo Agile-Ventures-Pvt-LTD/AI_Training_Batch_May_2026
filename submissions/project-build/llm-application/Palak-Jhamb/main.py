@@ -63,7 +63,7 @@ def main():
 # intend
     raw_response = client.generate(
     system_prompt=Blog_intent_system,
-    user_prompt=Blog_intent_user.format(Blog_Topic=Blog_Topic, Target_Audience=Target_Audience)
+    user_prompt=Blog_intent_user.format(Blog_topic=Blog_Topic, Target_audience=Target_Audience)
     )
 
     print("Intend of blog:",raw_response)
@@ -83,7 +83,7 @@ def main():
     
     raw_response_summary = client.generate(
     system_prompt=Blog_summrization_system,
-    user_prompt=Blog_summrization_system.format(context=input_data)
+    user_prompt=Blog_summrization_user.format(context=input_data)
     )
 
     print("summary of blog:",raw_response_summary)
@@ -150,6 +150,46 @@ def main():
 
     with open(output_file, "w") as f:
         json.dump(raw_response, f, indent=4)
+
+#Quality
+    from prompts import quality_system,quality_user
+    raw_response_quality = client.generate(
+    system_prompt=quality_system,
+    user_prompt=quality_user.format(context=raw_response_blog)
+    )
+
+    print("blog:",raw_response_quality)
+
+    output_dir = Path("outputs")
+    output_dir.mkdir(exist_ok=True)
+
+    output_file = output_dir / "Quality.json"
+
+    with open(output_file, "w") as f:
+        json.dump(raw_response, f, indent=4)
+
+
+#Hallucination Control Checklist
+    from prompts import HCC_system,HCC_user
+    raw_response_hcc = client.generate(
+    system_prompt=HCC_system,
+    user_prompt=HCC_user.format(context=raw_response_blog)
+    )
+
+    print("blog:",raw_response_hcc)
+
+    output_dir = Path("outputs")
+    output_dir.mkdir(exist_ok=True)
+
+    output_file = output_dir / "HCC.json"
+
+    with open(output_file, "w") as f:
+        json.dump(raw_response, f, indent=4)
+
+
+
+    from output_parser import merge_json_files
+    merge_json_files(outputs,merged_output.json)
 
 
 if __name__ == "__main__":
