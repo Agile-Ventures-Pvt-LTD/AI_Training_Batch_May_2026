@@ -1,4 +1,6 @@
 import json
+import os
+import sys
 
 from validators import validate_inputs
 from groq_client import call_groq_model
@@ -30,7 +32,12 @@ sample_input = {
 }
 
 
-validate_inputs(sample_input)
+errors = validate_inputs(sample_input)
+if errors:
+    print("Input validation failed:")
+    for e in errors:
+        print("-", e)
+    sys.exit(1)
 
 user_input = json.dumps(sample_input, indent=2)
 
@@ -97,6 +104,8 @@ final_output = {
         "total_steps_completed": 8,
     },
 }
+
+os.makedirs("outputs", exist_ok=True)
 
 with open("outputs/sample_blog_output.json", "w", encoding="utf-8") as f:
     json.dump(final_output, f, indent=4, ensure_ascii=False)
