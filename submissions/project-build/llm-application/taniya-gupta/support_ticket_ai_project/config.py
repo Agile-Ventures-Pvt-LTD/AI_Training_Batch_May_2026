@@ -1,0 +1,111 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Groq api Config
+GROQ_API_KEY = os.getenv('GROQ_API_KEY')
+GROQ_MODEL = os.getenv('GROQ_MODEL')
+
+# Model Parameters
+DEFAULT_TEMPERATURE = 0.3
+DEFAULT_MAX_TOKENS = 2000
+
+# Classification 
+CLASSIFICATION_TEMPERATURE = 0.2
+CLASSIFICATION_MAX_TOKENS = 1500
+
+# Summary 
+SUMMARY_TEMPERATURE = 0.3
+SUMMARY_MAX_TOKENS = 1500
+
+# Response
+RESPONSE_TEMPERATURE = 0.5
+RESPONSE_MAX_TOKENS = 2000
+
+# Risk Analysis 
+RISK_TEMPERATURE = 0.2
+RISK_MAX_TOKENS = 1500
+
+# Categories
+TICKET_CATEGORIES = [
+    "BILLING_ISSUE",
+    "TECHNICAL_BUG",
+    "ACCOUNT_ACCESS",
+    "FEATURE_REQUEST",
+    "SUBSCRIPTION_CHANGE",
+    "COMPLIANCE_OR_PRIVACY",
+    "PERFORMANCE_ISSUE",
+    "HOW_TO_SUPPORT",
+    "CANCELLATION_OR_REFUND",
+    "ESCALATION_COMPLAINT",
+    "OTHER"
+]
+
+# Sentiment Labels
+SENTIMENT_LABELS = ["POSITIVE", "NEUTRAL", "NEGATIVE", "FRUSTRATED", "ANGRY", "URGENT"]
+
+# Priority Labels
+PRIORITY_LABELS = ["LOW", "MEDIUM", "HIGH", "URGENT"]
+
+# Escalation Risk Labels
+ESCALATION_RISK_LABELS = ["LOW", "MEDIUM", "HIGH", "CRITICAL"]
+
+# Teams for routing
+ROUTING_TEAMS = [
+    "BILLING_SUPPORT",
+    "TECHNICAL_SUPPORT",
+    "ACCOUNT_MANAGEMENT",
+    "SECURITY_TEAM",
+    "COMPLIANCE_TEAM",
+    "PRODUCT_TEAM",
+    "CUSTOMER_SUCCESS",
+    "GENERAL_SUPPORT"
+]
+
+# Sensitive info categories
+SENSITIVE_INFO_CATEGORIES = [
+    "PAYMENT_INFORMATION",
+    "PERSONAL_INFORMATION",
+    "ACCOUNT_IDENTIFIER",
+    "LEGAL_OR_COMPLIANCE_INFORMATION",
+    "SECURITY_INFORMATION",
+    "NONE_DETECTED"
+]
+
+# Output settings
+OUTPUT_DIR = "outputs"
+ENABLE_JSON_EXPORT = True
+ENABLE_MARKDOWN_EXPORT = True
+
+# Escalation Risk Labels
+ESCALATION_RISK_LABELS = ["LOW", "MEDIUM", "HIGH", "CRITICAL"]
+
+# Sensitive Information Categories
+SENSITIVE_INFO_CATEGORIES = [
+    "PAYMENT_INFORMATION",
+    "PERSONAL_INFORMATION",
+    "ACCOUNT_IDENTIFIER",
+    "LEGAL_OR_COMPLIANCE_INFORMATION",
+    "SECURITY_INFORMATION",
+    "NONE_DETECTED"
+]
+
+# Teams for Routing
+ROUTING_TEAMS = [
+    "BILLING_SUPPORT",
+    "TECHNICAL_SUPPORT",
+    "ACCOUNT_MANAGEMENT",
+    "SECURITY_TEAM",
+    "COMPLIANCE_TEAM",
+    "PRODUCT_TEAM",
+    "CUSTOMER_SUCCESS",
+    "GENERAL_SUPPORT"
+]
+
+# Review Criteria
+REVIEW_CRITERIA = ["empathy", "correctness", "actionability", "policy_safety", "tone_alignment", "completeness"]
+
+# Output Settings
+OUTPUT_FORMAT = "json"  
+OUTPUT_DIR = "outputs"
