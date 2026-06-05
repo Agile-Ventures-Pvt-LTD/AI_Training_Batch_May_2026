@@ -1,17 +1,13 @@
 import json
-from typing import List, Dict
+import re
 
-def safe_json_parse(text: str) -> Dict[str, any]:
+def parse_json_safely(text: str) -> dict:
+    """Strips markdown formatting and parses JSON safely."""
     try:
-        return json.loads(text)
+        # Remove markdown code blocks if present
+        text = re.sub(r'```json\n?', '', text)
+        text = re.sub(r'```\n?', '', text)
+        return json.loads(text.strip())
     except json.JSONDecodeError:
-        start = text.find("{")
-        end = text.find("}") + 1
-        if start == -1 or end == -1:
-            raise ValueError("No JSON obect found")
-        try:
-            return json.load(text[start:end])
-        except json.JSONDecodeError as exc:
-            raise ValueError("Failed to parse JSON from LLM") from exc
-    
-    
+        print("[WARNING] Failed to parse JSON. Returning raw string inside dict.")
+        return {"raw_output": text}

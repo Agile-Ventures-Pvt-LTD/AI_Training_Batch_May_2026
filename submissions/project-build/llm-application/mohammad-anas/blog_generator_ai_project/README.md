@@ -1,40 +1,21 @@
-## Introduction
+# AI-Powered Blog Generator
 
-This project is a blog generation tool powered by the Groq API. It takes a user input in the form of a `BlogRequest` object and generates a comprehensive blog package, including a blog intent analysis, input summary, blog outline, final blog draft, SEO metadata, LinkedIn post, quality review, and hallucination check.
+## How to Run
+1. Create a virtual environment: `python -m venv venv` and activate it.
+2. Install dependencies: `pip install -r requirements.txt`
+3. Rename `.env.example` to `.env` and add your `GROQ_API_KEY`.
+4. Run the pipeline: `python app.py`
 
-## Participant Name
-
-Mohammad Anas
-
-## How to Run the Application
-
-1. Clone the repository to your local machine.
-2. Create a `.env` file and add your Groq API key: `GROQ_API_KEY=your_api_key_here`
-3. Install the required dependencies: `pip install -r requirements.txt`
-4. Run the application: `python main.py`
-
-## Prompt Engineering Techniques
-
-The following prompt engineering techniques were used:
-
-* **Chaining**: The application uses a series of prompts to generate the blog package. Each prompt builds on the previous one, allowing the model to generate more accurate and relevant output.
-* **Specificity**: The prompts are highly specific and detailed, providing the model with clear instructions and context.
-* **Role-Playing**: The model is instructed to play the role of a blog writer, providing a clear understanding of the task and the desired output.
+## Prompt Engineering Techniques Used
+- **Role Prompting**: Every step assigns a specific role (e.g., "B2B content strategist", "Fact-checking assistant").
+- **Zero-Shot Prompting**: Used for Intent Classification and Summarization to enforce strict JSON schemas without bias.
+- **One-Shot Prompting**: Used for SEO & Social post generation to show the exact key structure required.
+- **Few-Shot Prompting**: Used in Outline generation to demonstrate the difference between GOOD (safe) and BAD (hallucinated) claims.
 
 ## Hallucination Control
+- **Prompt Constraints**: The `BLOG_WRITER` prompt explicitly forbids inventing statistics, names, and guaranteed outcomes.
+- **Post-Generation Verification**: A dedicated step (`HALLUCINATION_SYSTEM_PROMPT`) scans the final text specifically to extract and flag numerical claims or competitor mentions for human review.
 
-To control hallucination, the application uses the following techniques:
-
-* **Hallucination Check Prompt**: A specific prompt is used to check the generated blog draft for hallucinations. This prompt instructs the model to identify any potential hallucinations and provide a review of the draft.
-* **Quality Review Prompt**: A quality review prompt is used to evaluate the generated blog draft and provide feedback on its accuracy and relevance.
-
-## Known Limitations
-
-* **Groq API Limitations**: The application is limited by the Groq API's rate limits and response times. If the API is not responding, the application may timeout or encounter rate limit errors.
-* **Model Limitations**: The Groq model used in this application has limitations in terms of its training data and ability to generate accurate and relevant output. The application may not perform well with certain types of input or topics.
-
-## Future Improvements
-
-* **Fine-Tuning the Model**: The Groq model could be fine-tuned on a specific dataset to improve its performance and accuracy.
-* **Adding More Prompts**: Additional prompts could be added to the application to generate more comprehensive blog packages or to handle specific use cases.
-* **Improving Hallucination Detection**: The hallucination detection prompt could be improved to more accurately identify potential hallucinations and provide more detailed feedback.
+## Known Limitations & Future Improvements
+- **Limitation**: Strict JSON parsing can sometimes fail if the model adds conversational text. `output_parser.py` mitigates this, but an improvement would be using native JSON-mode API features if supported.
+- **Future**: Add a Streamlit UI for non-technical marketing teams to input parameters easily.
