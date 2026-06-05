@@ -1,12 +1,25 @@
-# Joutput SON parsing
+
 import json
 
-def parse_json_response(json_string:str, file_name:str):
+
+def parse_json_response(response_text):
+
+    response_text = response_text.strip()
+
+    # Remove markdown json fences if present
+    if response_text.startswith("```json"):
+        response_text = response_text.replace("```json","",1)
+    elif response_text.startswith("```"):
+        response_text = response_text.replace("```", "", 1)
+    if response_text.endswith("```"):
+        response_text = response_text[:-3]
+
+    response_text = response_text.strip()
+
     try:
-        with open(f"./outputs/{file_name}", "w") as f:
-            json.dump(json_string, f, indent=4)
-    
-    except json.JSONDecodeError as e:
-        raise ValueError(f"Failed to parse JSON: {e}")
-    
-parse_json_response(ticket_summary_dict, "sample_ticket_summary.json")
+        return json.loads(response_text)
+
+    except Exception:
+        raise ValueError(
+            "Invalid JSON returned by model."
+        )
