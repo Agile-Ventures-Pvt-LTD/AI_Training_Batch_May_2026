@@ -1,0 +1,13 @@
+{
+  "sentiment": "FRUSTRATED",
+  "emotion_signals": [
+    "repeated follow-ups",
+    "threat of escalation",
+    "urgency",
+    "frustration",
+    "dissatisfaction",
+    "loss of trust"
+  ],
+  "sentiment_reasoning_summary": "The customer reports being charged twice after canceling a premium subscription, notes duplicate invoices, and mentions contacting support twice without a proper response. Phrases like \"extremely frustrating\" and the explicit threat to \"escalate publicly on LinkedIn\" indicate strong frustration and urgency. The repeated follow\u2011ups and lack of resolution further signal dissatisfaction and loss of trust.",
+  "confidence_score": 0.96
+}

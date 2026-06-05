@@ -45,7 +45,7 @@ call_llm = get_groq_client(
 print(call_llm)
 
 final_output = call_llm
-print("HALLUCINATION CONTROL:\n")
+print("Final Response:\n")
 
 
 output_path = "output/final_output.json"

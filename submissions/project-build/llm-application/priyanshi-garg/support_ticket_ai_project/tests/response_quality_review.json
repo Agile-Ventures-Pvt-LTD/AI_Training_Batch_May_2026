@@ -1,0 +1,22 @@
+{
+  "scores": {
+    "empathy": 5,
+    "correctness": 5,
+    "actionability": 5,
+    "policy_safety": 5,
+    "tone_alignment": 5,
+    "completeness": 5
+  },
+  "strengths": [
+    "Clearly acknowledges Amit's frustration and apologizes, demonstrating strong empathy.",
+    "Accurately follows business rules: does not promise a refund before verification, does not confirm cancellation without verification, and escalates the issue to Billing Support.",
+    "Provides concrete next steps (requesting invoice ID or account email) so the customer knows how to help resolve the issue quickly.",
+    "Maintains a professional and empathetic tone throughout the response.",
+    "Offers a commitment to resolve the issue today and keep the customer updated, covering all necessary aspects of the problem."
+  ],
+  "improvement_areas": [
+    "Could include an estimated time frame for the follow\u2011up (e.g., \"you will hear back within 2\u20114 business hours\") to set clearer expectations.",
+    "Might provide a direct contact method (phone or ticket number) for faster escalation if the customer prefers."
+  ],
+  "final_review_summary": "The drafted response fully meets the required criteria: it shows genuine empathy, adheres to all policy constraints, accurately addresses the billing issue, offers clear actionable steps, and aligns with the requested professional and empathetic tone. Minor enhancements could involve adding a specific response time estimate and a direct contact option, but overall the response is ready for delivery."
+}

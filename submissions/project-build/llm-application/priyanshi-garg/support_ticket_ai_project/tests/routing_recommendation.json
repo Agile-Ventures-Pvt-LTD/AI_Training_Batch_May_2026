@@ -1,0 +1,11 @@
+{
+  "recommended_team": "BILLING_SUPPORT",
+  "routing_reason": "The ticket concerns a double charge and a cancellation dispute for a premium subscription, which falls under billing and subscription issues. The customer is a premium tier and has escalated due to lack of response, triggering the business rule to route premium billing problems directly to Billing Support.",
+  "internal_note": "Verify the customer's cancellation request and the double charge before any refund is promised. Request the invoice ID and the email address associated with the account. Check payment logs for the duplicate transaction and confirm the subscription status. Follow the business rules: do not promise a refund until verification, do not confirm cancellation until verified, and ensure escalation handling for premium customers.",
+  "required_follow_up_information": [
+    "Invoice ID(s) for the disputed charges",
+    "Registered account email address",
+    "Last four digits of the payment method used",
+    "Confirmation of the cancellation request date"
+  ]
+}
