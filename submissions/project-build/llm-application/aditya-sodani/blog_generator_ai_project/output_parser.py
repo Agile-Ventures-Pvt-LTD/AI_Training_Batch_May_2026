@@ -1,16 +1,3 @@
-# import json
-
-    
-# def parse_json(text: str):
-
-#     try:
-#         return json.loads(text)
-    
-#     except Exception:
-#         raise ValueError(
-#             "Model returned invalid JSON."
-#         )
-
 import json
 import re
 

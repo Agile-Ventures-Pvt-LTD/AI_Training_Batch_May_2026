@@ -154,32 +154,6 @@ Generate for:
 Return JSON only.
 """
 
-# QUALITY_PROMPT = """
-# Role:
-# You are an editorial reviewer.
-
-# Review this blog.
-
-# Blog:
-# {blog}
-
-# Return:
-
-# {{
-#  "scores":{{
-#   "relevance":0,
-#   "clarity":0,
-#   "structure":0,
-#   "tone_alignment":0,
-#   "seo_usage":0,
-#   "hallucination_risk":0,
-#   "cta_effectiveness":0
-#  }},
-#  "strengths":[],
-#  "improvement_areas":[],
-#  "final_quality_summary":""
-# }}
-# """
 
 QUALITY_PROMPT = """
 Role:

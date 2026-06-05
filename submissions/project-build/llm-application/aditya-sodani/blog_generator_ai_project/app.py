@@ -22,30 +22,48 @@ sample_input = {
         "How AI can improve customer support operations",
 
     "target_audience":
-        "Customer support leaders",
+        "Customer support leaders, CX heads, and operations managers",
 
     "product_or_service_context":
-        "AI support assistant",
+        "An AI-powered customer support assistant that helps agents summarize tickets, draft responses, identify escalation risks, and reduce repetitive manual work.",
 
     "key_points": [
-        "Reduces repetitive work",
-        "Summarizes tickets",
-        "Suggests replies"
-    ],
+        "Support teams are facing increasing ticket volumes.",
+        "Agents spend a lot of time reading long customer conversations.",
+        "AI can summarize tickets and suggest draft replies.",
+        "AI should assist human agents, not replace them.",
+        "The solution can help improve consistency and response speed.",
+        "Sensitive customer data must be handled carefully."
+        ],
+
 
     "desired_tone":
-        "Professional",
+        "Professional, practical, and business-oriented",
 
     "blog_length":
-        "900 words",
+        "Medium, around 900 words",
 
     "seo_keywords": [
         "AI customer support",
-        "support automation"
+        "support automation",
+        "customer service AI"
     ],
 
     "call_to_action":
-        "Book a demo"
+        "Book a demo to explore how AI can improve your support operations.",
+
+    "industry": 
+        "SaaS",
+   
+    "avoid_claims": [
+        "Do not claim guaranteed cost reduction.",
+        "Do not claim full automation of customer support.",
+        "Do not mention any customer case study."
+        ],
+
+    "brand_guidelines": 
+        "Use clear business language. Avoid hype. Keep the tone trustworthy and practical."
+
 }
 
 
@@ -140,6 +158,9 @@ with open(
         indent=4,
         ensure_ascii=False
     )
+
+
+print(json.dumps(final_output,indent=4))
 
 print(
     "Blog package generated successfully."
