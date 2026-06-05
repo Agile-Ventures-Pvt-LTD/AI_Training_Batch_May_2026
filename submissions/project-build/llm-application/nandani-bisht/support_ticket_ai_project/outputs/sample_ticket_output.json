@@ -1,0 +1,101 @@
+{
+  "ticket_summary": {
+    "short_summary": "Premium customer charged twice after cancelling subscription",
+    "customer_problem": "Incorrect double charge for premium subscription after cancellation",
+    "business_impact": "Potential public escalation on LinkedIn and blockage of future payments",
+    "customer_requested_action": "Refund of incorrect charge",
+    "important_context": [
+      "Customer is a premium subscriber",
+      "Previous support interactions were unresponsive",
+      "Customer cancelled subscription last month"
+    ],
+    "missing_information": [
+      "Invoice ID",
+      "Registered account email"
+    ]
+  },
+  "classification": {
+    "primary_category": "BILLING_ISSUE",
+    "secondary_categories": [
+      "CANCELLATION_OR_REFUND",
+      "ESCALATION_COMPLAINT"
+    ],
+    "category_reasoning_summary": "The customer is reporting being charged twice after cancelling their subscription and is requesting a refund. They also mention not receiving a proper response from support, which adds to the escalation complaint. The primary issue is with billing, and the secondary issues are related to cancellation/refund and escalation complaint.",
+    "confidence_score": 0.9
+  },
+  "sentiment_analysis": {
+    "sentiment": "Negative",
+    "emotion_signals": [
+      "Urgency",
+      "Frustration",
+      "Threats"
+    ],
+    "sentiment_reasoning_summary": "The customer is expressing frustration due to being charged twice and not receiving a proper response from support. The customer is also creating a sense of urgency by stating that the issue needs to be resolved today and is threatening to escalate the issue publicly and block future payments.",
+    "confidence_score": 0.9
+  },
+  "priority_and_risk": {
+    "priority": "URGENT",
+    "escalation_risk": "CRITICAL",
+    "risk_triggers": [
+      "Premium customer",
+      "Repeated failed attempts to contact support",
+      "Threat to escalate publicly on LinkedIn",
+      "Threat to block future payments"
+    ],
+    "recommended_sla_action": "Escalate to billing support immediately",
+    "reasoning_summary": "The customer is a premium customer with a high-impact issue, repeated failed attempts to contact support, and explicit threats to escalate publicly and block future payments, requiring immediate attention and escalation to billing support to mitigate business risk and potential reputational damage."
+  },
+  "sensitive_information_check": {
+    "sensitive_information_detected": false,
+    "sensitive_categories": [],
+    "evidence_summary": "The ticket discusses billing and subscription issues but does not contain explicit sensitive information such as financial account numbers or payment details.",
+    "handling_recommendations": [
+      "Verify the customer's account and billing information through secure channels."
+    ]
+  },
+  "routing_recommendation": {
+    "recommended_team": "Billing Support",
+    "routing_reason": "The customer is a premium user with a billing issue, and according to the business rules, premium customer billing issues should be escalated to billing support.",
+    "internal_note": "The customer has previously contacted support without receiving a proper response, so it's essential to address their issue promptly and professionally. Verification of the cancellation and charges is required before taking any further action.",
+    "required_follow_up_information": [
+      "Invoice ID or registered account email for verification"
+    ]
+  },
+  "draft_customer_response": {
+    "draft_response": "Dear Amit, I apologize for the frustration and inconvenience you've experienced with the duplicate charge and lack of response from our support team. I understand that you cancelled your premium subscription last month, but were still charged this month, with the invoice amount appearing twice on your bank statement. I empathize with your situation and appreciate you bringing this to our attention. To assist you further, could you please provide your invoice ID or the registered email address associated with your account? Our billing support team will verify the details and work on resolving this issue as soon as possible. Your concern will be escalated to our billing support team for priority attention, as per our premium customer support policy.",
+    "response_strategy": "Escalate to billing support and verify account information",
+    "assumptions": [
+      "The customer has a legitimate concern about being charged twice",
+      "The customer did attempt to contact support previously without receiving a proper response"
+    ],
+    "information_needed_before_sending": [
+      "Verification of the customer's account status and subscription cancellation",
+      "Confirmation of the duplicate charge and invoice details"
+    ]
+  },
+  "response_quality_review": {
+    "scores": {
+      "empathy": 5,
+      "correctness": 5,
+      "actionability": 5,
+      "policy_safety": 5,
+      "tone_alignment": 5,
+      "completeness": 5
+    },
+    "strengths": [
+      "The response acknowledges the customer's frustration and apologizes for the inconvenience.",
+      "It empathizes with the customer's situation and appreciates them bringing the issue to attention.",
+      "The response requests necessary information (invoice ID or registered email address) to verify the issue.",
+      "It informs the customer that their concern will be escalated to the billing support team for priority attention, following the premium customer support policy.",
+      "The tone is professional and empathetic, aligning with the required response tone."
+    ],
+    "improvement_areas": [],
+    "final_review_summary": "The draft response is well-structured, empathetic, and correctly addresses the customer's concern. It follows all the business rules and does not promise a refund or cancellation without verification. The response is complete, actionable, and safe in terms of policy. No improvements are needed."
+  },
+  "generation_metadata": {
+    "model_used": "llama-3.3-70b-versatile",
+    "temperature": 0.2,
+    "total_steps_completed": 8,
+    "generated_at": "2026-06-05T13:12:35.814562+00:00"
+  }
+}
