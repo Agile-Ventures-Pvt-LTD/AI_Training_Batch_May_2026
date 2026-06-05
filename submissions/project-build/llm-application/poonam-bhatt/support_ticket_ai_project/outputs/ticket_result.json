@@ -1,0 +1,41 @@
+{
+    "ticket_summary": {
+        "short_summary": "",
+        "customer_problem": "",
+        "business_impact": "",
+        "customer_requested_action": "",
+        "important_context": [],
+        "missing_information": []
+    },
+    "classification": {
+        "category": "OTHER"
+    },
+    "sentiment_analysis": {
+        "label": "NEUTRAL",
+        "signals": []
+    },
+    "priority_and_risk": {
+        "priority": null,
+        "escalationRisk": null
+    },
+    "sensitive_information_check": {
+        "categories": [
+            "NONE_DETECTED"
+        ]
+    },
+    "routing_recommendation": {
+        "team": "GENERAL_SUPPORT"
+    },
+    "draft_customer_response": {
+        "response": "We\u2019re sorry to hear you\u2019re experiencing an issue. From your ticket we understand you\u2019re encountering a problem, but we need a few more details to assist you effectively. Could you please provide the specific product or service involved, any error messages you\u2019ve seen, and the steps leading up to the issue? Once we have that information, we\u2019ll investigate further and let you know the appropriate resolution steps."
+    },
+    "response_quality_review": {
+        "error": "Missing draft_response, subject, or body"
+    },
+    "generation_metadata": {
+        "model_used": "llama-3.1-70b-versatile",
+        "temperature": 0,
+        "total_steps_completed": 8,
+        "timestamp": "2026-06-05 17:30:18.164867"
+    }
+}
