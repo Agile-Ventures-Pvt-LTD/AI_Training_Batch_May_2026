@@ -1,0 +1,8 @@
+groq
+python-dotenv
+path
+python-dotenv==1.0.1
+requests==2.32.3
+tenacity==9.0.0
+pydantic==2.7.1
+rich==13.7.1
