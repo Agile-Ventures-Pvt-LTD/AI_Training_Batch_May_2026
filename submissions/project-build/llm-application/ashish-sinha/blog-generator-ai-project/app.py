@@ -1,12 +1,9 @@
 import json
 import os
-
 from validators import validate_inputs
 from groq_client import call_groq_model
 from output_parser import parse_json
 from prompt import *
-
-# User Input
 
 user_input = {
     "blog_topic": "How AI improves customer support",
@@ -168,9 +165,9 @@ print("\nChecking JSON serializability...\n")
 for key, value in final_output.items():
     try:
         json.dumps(value)
-        print(f"✓ {key}")
+        print(f"{key}")
     except TypeError as e:
-        print(f"✗ {key}: {e}")
+        print(f"{key}: {e}")
 
 # Save Output
 
