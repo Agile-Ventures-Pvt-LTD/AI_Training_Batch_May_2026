@@ -24,7 +24,6 @@ user_input = {
 }
 
 # Validation
-
 validate_inputs(user_input)
 
 print("Inputs validated")
@@ -40,7 +39,6 @@ intent = parse_json(
 )
 
 # Summary
-
 print("Generating summary...")
 
 summary = parse_json(
@@ -50,8 +48,6 @@ summary = parse_json(
 )
 
 # Outline
-
-
 print("Generating outline...")
 
 outline = parse_json(
@@ -61,8 +57,6 @@ outline = parse_json(
 )
 
 # Blog
-
-
 print("Generating blog...")
 
 blog = call_groq_model(
@@ -76,7 +70,6 @@ blog = call_groq_model(
 
 
 # SEO Metadata
-
 print("Generating SEO metadata...")
 
 seo = parse_json(
