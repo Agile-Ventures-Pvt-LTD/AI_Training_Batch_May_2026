@@ -1,0 +1,15 @@
+groq>=1.2.0
+dotenv
+pandas
+datasets>=4.8.5
+evaluate>=0.4.6
+tqdm
+bert-score>=0.3.13
+ipykernel>=7.2.0
+python-dotenv>=1.2.0
+groq
+python-dotenv
+tenacity
+pytest
+rich
+tenacity

@@ -1,0 +1,36 @@
+[    {
+     "blog_topic": "How AI can improve customer support operations",
+     "target_audience": "Customer support leaders, CX heads, and operations managers",
+     "product_or_service_context": "An AI-powered customer support assistant that helps agents summarize tickets, draft responses, identify escalation risks, and reduce repetitive manual work.", 
+     "key_points": [
+"Support teams are facing increasing ticket volumes.",
+"Agents spend a lot of time reading long customer conversations.",
+"AI can summarize tickets and suggest draft replies.",
+"AI should assist human agents, not replace them.",
+"The solution can help improve consistency and response speed.",
+"Sensitive customer data must be handled carefully."
+],
+"desired_tone": "Professional, practical, and business-oriented",
+"blog_length": "Medium, around 900 words",
+"seo_keywords": [
+"AI customer support",
+"support automation",
+"customer service AI"
+],
+"call_to_action": "Book a demo to explore how AI can improve your support operations.",
+"industry": "SaaS",
+"avoid_claims": [
+"Do not claim guaranteed cost reduction.",
+"Do not claim full automation of customer support.",
+"Do not mention any customer case study."
+],
+"call_to_action": "Book a demo to explore how AI can improve your support operations.",
+"industry": "SaaS",
+"avoid_claims": [
+"Do not claim guaranteed cost reduction.",
+"Do not claim full automation of customer support.",
+"Do not mention any customer case study."
+],
+"brand_guidelines": "Use clear business language. Avoid hype. Keep the tone trustworthy and practical."
+    }
+   ]
