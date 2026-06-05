@@ -1,0 +1,15 @@
+﻿{
+  "draft_response": "Hi Amit,\n\nThank you for reaching out and I'm sorry to hear about the billing issue and the delay in response you've experienced. I understand how frustrating it must be to see a duplicate charge after you cancelled your premium subscription.\n\nTo investigate this promptly, could you please provide the invoice number or transaction reference for the duplicated charge, the email address or username associated with your account, and the date you submitted the cancellation request? Once we have this information, we will verify the details, involve our Billing Support team, and keep you updated on the resolution.\n\nWe appreciate your patience and will work to resolve this as quickly as possible.\n\nBest regards,\n[Your Name]\nCustomer Support",
+  "response_strategy": "Escalate the ticket to the Billing Support team as a critical priority for a premium customer. Request the missing invoice ID, registered account email/username, and cancellation request date to verify the double charge and cancellation status. After receiving the required information, the billing team will investigate and provide an update. Maintain a professional and empathetic tone, avoid promising refunds or confirmations until verification is complete, and aim to respond promptly.",
+  "assumptions": [
+    "The customer is a premium subscriber as indicated in the ticket.",
+    "The cancellation request was made last month, as stated by the customer.",
+    "The duplicate charge appears on the customer's bank statement."
+  ],
+  "information_needed_before_sending": [
+    "Invoice ID or transaction reference for the duplicated charge.",
+    "Registered account email address or username.",
+    "Exact date of the cancellation request."
+  ]
+}
+

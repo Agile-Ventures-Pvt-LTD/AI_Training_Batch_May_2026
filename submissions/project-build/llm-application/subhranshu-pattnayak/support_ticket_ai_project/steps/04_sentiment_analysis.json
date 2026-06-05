@@ -1,0 +1,12 @@
+{
+  "sentiment": "FRUSTRATED",
+  "emotion_signals": [
+    "Repeated follow-ups",
+    "Threat of escalation",
+    "Urgency",
+    "Frustration",
+    "Dissatisfaction"
+  ],
+  "sentiment_reasoning_summary": "The customer expresses extreme frustration about being charged twice after cancellation, notes multiple unanswered support contacts, threatens public escalation, and demands immediate resolution, indicating strong negative emotion and urgency.",
+  "confidence_score": 0.96
+}
