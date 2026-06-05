@@ -1,0 +1,37 @@
+{
+  "is_valid": false,
+  "errors": [
+    {
+      "field": "blog_topic",
+      "message": "Field is missing"
+    },
+    {
+      "field": "target_audience",
+      "message": "Field is missing"
+    },
+    {
+      "field": "product_service_context",
+      "message": "Field is missing"
+    },
+    {
+      "field": "key_points",
+      "message": "Field is missing"
+    },
+    {
+      "field": "tone_style",
+      "message": "Field is missing"
+    },
+    {
+      "field": "blog_length",
+      "message": "Field is missing"
+    },
+    {
+      "field": "seo_keywords",
+      "message": "Field is missing"
+    },
+    {
+      "field": "call_to_action",
+      "message": "Field is missing"
+    }
+  ]
+}
