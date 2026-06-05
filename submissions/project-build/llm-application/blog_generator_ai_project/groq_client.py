@@ -3,7 +3,7 @@ import os
 
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
-def call_llm(prompt, model="llama-3.3-70b-versatile", temperature=0.2):
+def call_llm(prompt, model="openai/gpt-oss-120b", temperature=0.2):
     response = client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}],
