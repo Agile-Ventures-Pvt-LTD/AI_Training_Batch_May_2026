@@ -4,6 +4,10 @@ from validators import validate_inputs
 from groq_client import call_groq_model
 from output_parser import parse_json
 from prompt import *
+from config import (
+    MODEL_NAME,
+    TEMPERATURE
+)
 
 user_input = {
     "blog_topic": "How AI improves customer support",
@@ -79,7 +83,6 @@ seo = parse_json(
 )
 
 # LinkedIn Post
-
 print("Generating LinkedIn post...")
 
 linkedin = parse_json(
@@ -90,7 +93,6 @@ linkedin = parse_json(
 
 
 # Quality Review
-
 print("Generating quality review...")
 
 quality = parse_json(
@@ -100,7 +102,6 @@ quality = parse_json(
 )
 
 # Hallucination Check
-
 print("Running hallucination check...")
 
 try:
@@ -122,7 +123,6 @@ except Exception as e:
 
 
 # Final Output
-
 final_output = {
 
     "blog_intent_analysis": intent,
@@ -151,8 +151,6 @@ final_output = {
     }
 }
 
-# Debug Serialization Check
-
 print("\nChecking JSON serializability...\n")
 
 for key, value in final_output.items():
@@ -161,8 +159,6 @@ for key, value in final_output.items():
         print(f"{key}")
     except TypeError as e:
         print(f"{key}: {e}")
-
-# Save Output
 
 os.makedirs(
     "outputs",
