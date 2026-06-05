@@ -97,7 +97,7 @@ def main():
     with open("outputs/sample_blog_output.json", "w") as f:
         json.dump(final_package, f, indent=4)
         
-    print(f"\n✅ Pipeline Complete in {final_package['generation_metadata']['execution_time_seconds']} seconds!")
+    print(f"\n Pipeline Complete in {final_package['generation_metadata']['execution_time_seconds']} seconds!")
     print("Output saved to: outputs/sample_blog_output.json")
 
 if __name__ == "__main__":
