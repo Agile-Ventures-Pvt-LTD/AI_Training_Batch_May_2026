@@ -1,0 +1,586 @@
+[
+    {
+        "question_id": "Q1",
+        "original_query": "Does Tesla's growth story appear more constrained by external supply risk or internal execution and cost structure? Use evidence across Risk Factors and MD&A.",
+        "expanded_queries": [
+            "In Tesla's 10‑K, how do financial analysts assess whether external supply risks or internal execution and cost structure more limit its growth, based on Risk Factors and MD&A?",
+            "What risk factors does Tesla disclose that relate to external supply constraints versus internal execution and cost structure, and which are considered more material to its growth?",
+            "Which operational challenges—external supply disruptions or internal execution and cost efficiency—does Tesla highlight in its MD&A as primary growth constraints?",
+            "How does Tesla's stated strategy address external supply risk compared to internal execution and cost structure in limiting its growth, according to the 10‑K Risk Factors and MD&A?",
+            "Does Tesla's expansion face greater limitation from outside sourcing vulnerabilities or from internal performance and expense management, as discussed in the Risk Factors and Management Discussion & Analysis?",
+            "Identify and compare the subtopics of external supply risk and internal execution/cost structure within Tesla's 10‑K Risk Factors and MD&A to determine which more constrains growth."
+        ],
+        "baseline_top_chunks": [
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.2975749373435974,
+                "content": "developing\tbusiness\trelationships\twith\tus\tif\tthey\tare\tnot\tconvinced\tthat\tour\tbusiness\twill\tsucceed.\tAccordingly,\tin\torder\tto\tbuild\tand\tmaintain\tour\nbusiness,\twe\tmust\tmaintain\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tratings\tagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\nbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tparticularly\tcomplicated\tby\tcertain\tfactors\tincluding\tthose\tthat\tare\tlargely\toutside\tof\tour\ncontrol,\tsuch\tas\tour\tlimited\toperating\thistory,\tcustomer\tunfamiliarity\twith\tour\tproducts,\tany\tdelays\tin\tscaling\tmanufacturing,\tdelivery\tand\tservice\noperations\tto\tmeet\tdemand,\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices,\tand\tour\tquarterly\nproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations.\nIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\nattention\tincludes\tfrequent\tcriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\nmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tcould\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\nfunds\tif\tneeded.\n22"
+            },
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.3063735365867615,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2022\nINDEX\n\t\n\t\t\n\t\t\n\t\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n29\nItem\t2.\n\t\nProperties\n\t\n29\nItem\t3.\n\t\nLegal\tProceedings\n\t\n29\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n29\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\n\t\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n30\nItem\t6.\n\t\n[Reserved]\n\t\n31\nItem\t7.\n\t\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n32\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n\t\n44\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n45\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n90\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n90\nItem\t9B.\n\t\nOther\tInformation\n\t\n90\nItem\t9C.\n\t\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n\t\n90\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n91\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n91\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters"
+            },
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.30847442150115967,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2023\nINDEX\n\t\n\t\nPage\nPART\tI.\n\t\n\t\nItem\t1.\nBusiness\n4\nItem\t1A.\nRisk\tFactors\n14\nItem\t1B.\nUnresolved\tStaff\tComments\n28\nItem\t1C.\nCybersecurity\n29\nItem\t2.\nProperties\n30\nItem\t3.\nLegal\tProceedings\n30\nItem\t4.\nMine\tSafety\tDisclosures\n30\n\t\nPART\tII.\n\t\nItem\t5.\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n31\nItem\t6.\n[Reserved]\n32\nItem\t7.\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n33\nItem\t7A.\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n45\nItem\t8.\nFinancial\tStatements\tand\tSupplementary\tData\n46\nItem\t9.\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n93\nItem\t9A.\nControls\tand\tProcedures\n93\nItem\t9B.\nOther\tInformation\n94\nItem\t9C.\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n94\n\t\nPART\tIII.\n\t\nItem\t10.\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n95\nItem\t11.\nExecutive\tCompensation\n95\nItem\t12.\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n95\nItem\t13.\nCertain\tRelationships\tand\tRelated\tTransactions,\tand\tDirector\tIndependence\n95\nItem\t14.\nPrincipal\tAccountant\tFees\tand\tServices\n95\n\t\nPART\tIV.\n\t\nItem\t15.\nExhibits\tand\tFinancial\tStatement\tSchedules\n96\nItem\t16.\nSummary\n111\n\t\nSignatures"
+            },
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.30940568447113037,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2020\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n27\nItem\t2.\n\t\nProperties\n\t\n27\nItem\t3.\n\t\nLegal\tProceedings\n\t\n28\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n28\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n29\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n30\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n31\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n49\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n50\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n107\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n107\nItem\t9B.\n\t\nOther\tInformation\n\t\n107\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n108\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n108\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n108\nItem\t13."
+            },
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.3106998801231384,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2019\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n1\nItem\t1A.\n\t\nRisk\tFactors\n\t\n15\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n34\nItem\t2.\n\t\nProperties\n\t\n35\nItem\t3.\n\t\nLegal\tProceedings\n\t\n35\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n35\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n36\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n38\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n39\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n60\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n61\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n127\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n127\nItem\t9B.\n\t\nOther\tInformation\n\t\n128\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n129\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n129\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n129\nItem\t13."
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "chunk_id": -4235699700928799322,
+                "section": "",
+                "year": "",
+                "score": 0.2872737646102905,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2022\nINDEX\n\t\n\t\t\n\t\t\n\t\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n29\nItem\t2.\n\t\nProperties\n\t\n29\nItem\t3.\n\t\nLegal\tProceedings\n\t\n29\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n29\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\n\t\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n30\nItem\t6.\n\t\n[Reserved]\n\t\n31\nItem\t7.\n\t\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n32\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n\t\n44\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n45\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n90\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n90\nItem\t9B.\n\t\nOther\tInformation\n\t\n90\nItem\t9C.\n\t\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n\t\n90\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n91\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n91\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters"
+            },
+            {
+                "chunk_id": 6431261547203608563,
+                "section": "",
+                "year": "",
+                "score": 0.2907266616821289,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2020\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n27\nItem\t2.\n\t\nProperties\n\t\n27\nItem\t3.\n\t\nLegal\tProceedings\n\t\n28\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n28\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n29\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n30\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n31\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n49\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n50\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n107\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n107\nItem\t9B.\n\t\nOther\tInformation\n\t\n107\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n108\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n108\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n108\nItem\t13."
+            },
+            {
+                "chunk_id": 4364937537773843748,
+                "section": "",
+                "year": "",
+                "score": 0.293420672416687,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2023\nINDEX\n\t\n\t\nPage\nPART\tI.\n\t\n\t\nItem\t1.\nBusiness\n4\nItem\t1A.\nRisk\tFactors\n14\nItem\t1B.\nUnresolved\tStaff\tComments\n28\nItem\t1C.\nCybersecurity\n29\nItem\t2.\nProperties\n30\nItem\t3.\nLegal\tProceedings\n30\nItem\t4.\nMine\tSafety\tDisclosures\n30\n\t\nPART\tII.\n\t\nItem\t5.\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n31\nItem\t6.\n[Reserved]\n32\nItem\t7.\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n33\nItem\t7A.\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n45\nItem\t8.\nFinancial\tStatements\tand\tSupplementary\tData\n46\nItem\t9.\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n93\nItem\t9A.\nControls\tand\tProcedures\n93\nItem\t9B.\nOther\tInformation\n94\nItem\t9C.\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n94\n\t\nPART\tIII.\n\t\nItem\t10.\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n95\nItem\t11.\nExecutive\tCompensation\n95\nItem\t12.\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n95\nItem\t13.\nCertain\tRelationships\tand\tRelated\tTransactions,\tand\tDirector\tIndependence\n95\nItem\t14.\nPrincipal\tAccountant\tFees\tand\tServices\n95\n\t\nPART\tIV.\n\t\nItem\t15.\nExhibits\tand\tFinancial\tStatement\tSchedules\n96\nItem\t16.\nSummary\n111\n\t\nSignatures"
+            },
+            {
+                "chunk_id": 5116573785160623596,
+                "section": "",
+                "year": "",
+                "score": 0.29344862699508667,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2019\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n1\nItem\t1A.\n\t\nRisk\tFactors\n\t\n15\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n34\nItem\t2.\n\t\nProperties\n\t\n35\nItem\t3.\n\t\nLegal\tProceedings\n\t\n35\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n35\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n36\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n38\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n39\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n60\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n61\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n127\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n127\nItem\t9B.\n\t\nOther\tInformation\n\t\n128\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n129\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n129\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n129\nItem\t13."
+            },
+            {
+                "chunk_id": -3156527129096350389,
+                "section": "",
+                "year": "",
+                "score": 0.29411375522613525,
+                "content": "developing\tbusiness\trelationships\twith\tus\tif\tthey\tare\tnot\tconvinced\tthat\tour\tbusiness\twill\tsucceed.\tAccordingly,\tin\torder\tto\tbuild\tand\tmaintain\tour\nbusiness,\twe\tmust\tmaintain\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tratings\tagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\nbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tparticularly\tcomplicated\tby\tcertain\tfactors\tincluding\tthose\tthat\tare\tlargely\toutside\tof\tour\ncontrol,\tsuch\tas\tour\tlimited\toperating\thistory,\tcustomer\tunfamiliarity\twith\tour\tproducts,\tany\tdelays\tin\tscaling\tmanufacturing,\tdelivery\tand\tservice\noperations\tto\tmeet\tdemand,\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices,\tand\tour\tquarterly\nproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations.\nIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\nattention\tincludes\tfrequent\tcriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\nmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tcould\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\nfunds\tif\tneeded.\n22"
+            }
+        ],
+        "final_answer": "I don't know.",
+        "citations": [
+            {
+                "chunk_id": -4235699700928799322,
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": 6431261547203608563,
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": 4364937537773843748,
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": 5116573785160623596,
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": -3156527129096350389,
+                "section": "",
+                "year": ""
+            }
+        ],
+        "baseline_quality": {
+            "retrieved_chunks": 5,
+            "avg_score": 0.3065056920051575
+        },
+        "expanded_quality": {
+            "retrieved_chunks": 12,
+            "avg_score": 0.3154442956050237
+        },
+        "retrieval_improvement_analysis": {
+            "baseline_count": 1,
+            "expanded_count": 12,
+            "new_chunks_found": 12,
+            "new_chunk_ids": [
+                -5184647462032933085,
+                8761322962233837760,
+                4364937537773843748,
+                -4235699700928799322,
+                -6398421611181139733,
+                -3156527129096350389,
+                5116573785160623596,
+                -1841500641234361391,
+                6431261547203608563,
+                2720104650144630453,
+                1986445533001820347,
+                -7414301886109888481
+            ]
+        }
+    },
+    {
+        "question_id": "Q2",
+        "original_query": "Explain how Tesla's AI and product roadmap is reflected in spending, operational priorities, and risk disclosures. Avoid generic AI claims.",
+        "expanded_queries": [
+            "What are Tesla’s AI‑related capital expenditures and R&D spend trends in the latest 10‑K, and how do they align with the company’s product roadmap?",
+            "How does Tesla disclose AI‑related risks in its Risk Factors section, including operational, regulatory, and competitive exposures tied to its AI product roadmap?",
+            "What operational priorities does Tesla highlight in the 10‑K (e.g., manufacturing capacity, talent acquisition, infrastructure) that support its AI and product development initiatives?",
+            "How does Tesla’s Management’s Discussion & Analysis describe the strategic integration of AI into its product roadmap and the associated spending allocations?",
+            "What does Tesla’s 10‑K reveal about machine‑learning and autonomous‑technology investments, product development plans, and related risk disclosures?",
+            "Provide separate queries for (a) AI‑related capital and R&D spending, (b) operational focus areas enabling AI product rollout, and (c) risk factor statements concerning AI and autonomous technology in Tesla’s filing."
+        ],
+        "baseline_top_chunks": [
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.37954020500183105,
+                "content": "claims\tfor\tvehicle\texposure,\tmeaning\tthat\tany\tproduct\tliability\tclaims\twill\tlikely\thave\tto\tbe\tpaid\tfrom\tcompany\tfunds\tand\tnot\tby\tinsurance.\nWe\twill\tneed\tto\tmaintain\tpublic\tcredibility\tand\tconfidence\tin\tour\tlong-term\tbusiness\tprospects\tin\torder\tto\tsucceed.\nIn\torder\tto\tmaintain\tand\tgrow\tour\tbusiness,\twe\tmust\tmaintain\tcredibility\tand\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tinvestors,\tratings\nagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\tbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tchallenging\tdue\tto\tour\tlimited\noperating\thistory\trelative\tto\testablished\tcompetitors;\tcustomer\tunfamiliarity\twith\tour\tproducts;\tany\tdelays\twe\tmay\texperience\tin\tscaling\tmanufacturing,\ndelivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices;\tour\nquarterly\tproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations;\tand\tother\tfactors\tincluding\tthose\tover\twhich\twe\thave\tno\tcontrol.\tIn\tparticular,\nTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\tattention\tincludes\tfrequent\ncriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\tmanagement\tteam.\tAny\tsuch\tnegative\nperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tmay\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\tfunds\tif\tneeded.\n18"
+            },
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.38259369134902954,
+                "content": "developing\tbusiness\trelationships\twith\tus\tif\tthey\tare\tnot\tconvinced\tthat\tour\tbusiness\twill\tsucceed.\tAccordingly,\tin\torder\tto\tbuild\tand\tmaintain\tour\nbusiness,\twe\tmust\tmaintain\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tratings\tagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\nbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tparticularly\tcomplicated\tby\tcertain\tfactors\tincluding\tthose\tthat\tare\tlargely\toutside\tof\tour\ncontrol,\tsuch\tas\tour\tlimited\toperating\thistory,\tcustomer\tunfamiliarity\twith\tour\tproducts,\tany\tdelays\tin\tscaling\tmanufacturing,\tdelivery\tand\tservice\noperations\tto\tmeet\tdemand,\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices,\tand\tour\tquarterly\nproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations.\nIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\nattention\tincludes\tfrequent\tcriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\nmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tcould\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\nfunds\tif\tneeded.\n22"
+            },
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.40095216035842896,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2023\nINDEX\n\t\n\t\nPage\nPART\tI.\n\t\n\t\nItem\t1.\nBusiness\n4\nItem\t1A.\nRisk\tFactors\n14\nItem\t1B.\nUnresolved\tStaff\tComments\n28\nItem\t1C.\nCybersecurity\n29\nItem\t2.\nProperties\n30\nItem\t3.\nLegal\tProceedings\n30\nItem\t4.\nMine\tSafety\tDisclosures\n30\n\t\nPART\tII.\n\t\nItem\t5.\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n31\nItem\t6.\n[Reserved]\n32\nItem\t7.\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n33\nItem\t7A.\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n45\nItem\t8.\nFinancial\tStatements\tand\tSupplementary\tData\n46\nItem\t9.\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n93\nItem\t9A.\nControls\tand\tProcedures\n93\nItem\t9B.\nOther\tInformation\n94\nItem\t9C.\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n94\n\t\nPART\tIII.\n\t\nItem\t10.\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n95\nItem\t11.\nExecutive\tCompensation\n95\nItem\t12.\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n95\nItem\t13.\nCertain\tRelationships\tand\tRelated\tTransactions,\tand\tDirector\tIndependence\n95\nItem\t14.\nPrincipal\tAccountant\tFees\tand\tServices\n95\n\t\nPART\tIV.\n\t\nItem\t15.\nExhibits\tand\tFinancial\tStatement\tSchedules\n96\nItem\t16.\nSummary\n111\n\t\nSignatures"
+            },
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.4113994836807251,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2022\nINDEX\n\t\n\t\t\n\t\t\n\t\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n29\nItem\t2.\n\t\nProperties\n\t\n29\nItem\t3.\n\t\nLegal\tProceedings\n\t\n29\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n29\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\n\t\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n30\nItem\t6.\n\t\n[Reserved]\n\t\n31\nItem\t7.\n\t\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n32\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n\t\n44\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n45\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n90\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n90\nItem\t9B.\n\t\nOther\tInformation\n\t\n90\nItem\t9C.\n\t\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n\t\n90\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n91\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n91\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters"
+            },
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.4148405194282532,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2020\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n27\nItem\t2.\n\t\nProperties\n\t\n27\nItem\t3.\n\t\nLegal\tProceedings\n\t\n28\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n28\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n29\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n30\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n31\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n49\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n50\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n107\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n107\nItem\t9B.\n\t\nOther\tInformation\n\t\n107\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n108\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n108\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n108\nItem\t13."
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "chunk_id": 4364937537773843748,
+                "section": "",
+                "year": "",
+                "score": 0.22482776641845703,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2023\nINDEX\n\t\n\t\nPage\nPART\tI.\n\t\n\t\nItem\t1.\nBusiness\n4\nItem\t1A.\nRisk\tFactors\n14\nItem\t1B.\nUnresolved\tStaff\tComments\n28\nItem\t1C.\nCybersecurity\n29\nItem\t2.\nProperties\n30\nItem\t3.\nLegal\tProceedings\n30\nItem\t4.\nMine\tSafety\tDisclosures\n30\n\t\nPART\tII.\n\t\nItem\t5.\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n31\nItem\t6.\n[Reserved]\n32\nItem\t7.\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n33\nItem\t7A.\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n45\nItem\t8.\nFinancial\tStatements\tand\tSupplementary\tData\n46\nItem\t9.\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n93\nItem\t9A.\nControls\tand\tProcedures\n93\nItem\t9B.\nOther\tInformation\n94\nItem\t9C.\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n94\n\t\nPART\tIII.\n\t\nItem\t10.\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n95\nItem\t11.\nExecutive\tCompensation\n95\nItem\t12.\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n95\nItem\t13.\nCertain\tRelationships\tand\tRelated\tTransactions,\tand\tDirector\tIndependence\n95\nItem\t14.\nPrincipal\tAccountant\tFees\tand\tServices\n95\n\t\nPART\tIV.\n\t\nItem\t15.\nExhibits\tand\tFinancial\tStatement\tSchedules\n96\nItem\t16.\nSummary\n111\n\t\nSignatures"
+            },
+            {
+                "chunk_id": -4235699700928799322,
+                "section": "",
+                "year": "",
+                "score": 0.22604483366012573,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2022\nINDEX\n\t\n\t\t\n\t\t\n\t\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n29\nItem\t2.\n\t\nProperties\n\t\n29\nItem\t3.\n\t\nLegal\tProceedings\n\t\n29\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n29\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\n\t\nMarket\tfor\tRegistrant's\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n30\nItem\t6.\n\t\n[Reserved]\n\t\n31\nItem\t7.\n\t\nManagement's\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n32\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tabout\tMarket\tRisk\n\t\n44\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n45\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n90\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n90\nItem\t9B.\n\t\nOther\tInformation\n\t\n90\nItem\t9C.\n\t\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n\t\n90\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n91\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n91\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters"
+            },
+            {
+                "chunk_id": 6431261547203608563,
+                "section": "",
+                "year": "",
+                "score": 0.23098576068878174,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2020\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n4\nItem\t1A.\n\t\nRisk\tFactors\n\t\n14\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n27\nItem\t2.\n\t\nProperties\n\t\n27\nItem\t3.\n\t\nLegal\tProceedings\n\t\n28\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n28\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n29\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n30\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n31\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n49\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n50\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n107\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n107\nItem\t9B.\n\t\nOther\tInformation\n\t\n107\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n108\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n108\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n108\nItem\t13."
+            },
+            {
+                "chunk_id": 5116573785160623596,
+                "section": "",
+                "year": "",
+                "score": 0.23417699337005615,
+                "content": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2019\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\t\n1\nItem\t1A.\n\t\nRisk\tFactors\n\t\n15\nItem\t1B.\n\t\nUnresolved\tStaff\tComments\n\t\n34\nItem\t2.\n\t\nProperties\n\t\n35\nItem\t3.\n\t\nLegal\tProceedings\n\t\n35\nItem\t4.\n\t\nMine\tSafety\tDisclosures\n\t\n35\n\t\n\t\n\t\nPART\tII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t5.\n\t\nMarket\tfor\tRegistrant’s\tCommon\tEquity,\tRelated\tStockholder\tMatters\tand\tIssuer\tPurchases\tof\tEquity\tSecurities\n\t\n36\nItem\t6.\n\t\nSelected\tConsolidated\tFinancial\tData\n\t\n38\nItem\t7.\n\t\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\n\t\n39\nItem\t7A.\n\t\nQuantitative\tand\tQualitative\tDisclosures\tAbout\tMarket\tRisk\n\t\n60\nItem\t8.\n\t\nFinancial\tStatements\tand\tSupplementary\tData\n\t\n61\nItem\t9.\n\t\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n\t\n127\nItem\t9A.\n\t\nControls\tand\tProcedures\n\t\n127\nItem\t9B.\n\t\nOther\tInformation\n\t\n128\n\t\n\t\n\t\nPART\tIII.\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t10.\n\t\nDirectors,\tExecutive\tOfficers\tand\tCorporate\tGovernance\n\t\n129\nItem\t11.\n\t\nExecutive\tCompensation\n\t\n129\nItem\t12.\n\t\nSecurity\tOwnership\tof\tCertain\tBeneficial\tOwners\tand\tManagement\tand\tRelated\tStockholder\tMatters\n\t\n129\nItem\t13."
+            },
+            {
+                "chunk_id": 8384589538433092668,
+                "section": "",
+                "year": "",
+                "score": 0.26037371158599854,
+                "content": "objectives.\tIn\t2021,\tTesla’s\tfull-year\taccomplishments\tunder\tour\texecutive\tleadership\tincluded\tthe\tfollowing:\n\t\n•\nTotal\trevenues\tof\t$53.82\tbillion,\trepresenting\tan\tincrease\tof\t$22.28\tbillion,\tor\t70.64%\tcompared\tto\tthe\tprior\tyear;\n\t\n•\nNet\tincome\tattributable\tto\tcommon\tstockholders\tof\t$5.52\tbillion\tand\tan\toperating\tmargin\tof\t12.1%,\trepresenting\tfavorable\tchanges\tof\n$4.80\tbillion\tand\t5.8%,\trespectively,\tcompared\tto\tthe\tprior\tyear;\n\t\n•\nAnnual\tvehicle\tdelivery\tand\tproduction\trecords\tof\t936,222\tand\t\n930,422\n\ttotal\tvehicles,\trepresenting\tan\tincrease\tof\t87.38%\tand\t82.53%,\nrespectively,\tcompared\tto\tthe\tprior\tyear;\n\t\n•\n3.99\tgigawatt\thours\tof\tenergy\tstorage\tand\t345\tmegawatts\tof\tsolar\tenergy\tsystems\tdeployed;\tand\n\t\n•\nOngoing\tprogress\tin\tthe\tglobal\tgrowth\tof\tour\tmanufacturing\tcapabilities,\tincluding\tthe\tcommencement\tof\tbuilds\tof\tthe\tModel\tY\tin\nGigafactory\tTexas\tand\tequipment\ttesting\tthrough\tthe\tvehicle\tproduction\tprocess\tin\tGigafactory\tBerlin.\n7"
+            }
+        ],
+        "final_answer": "I don't know.",
+        "citations": [
+            {
+                "chunk_id": 4364937537773843748,
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": -4235699700928799322,
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": 6431261547203608563,
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": 5116573785160623596,
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": 8384589538433092668,
+                "section": "",
+                "year": ""
+            }
+        ],
+        "baseline_quality": {
+            "retrieved_chunks": 5,
+            "avg_score": 0.39786521196365354
+        },
+        "expanded_quality": {
+            "retrieved_chunks": 19,
+            "avg_score": 0.2958689560533645
+        },
+        "retrieval_improvement_analysis": {
+            "baseline_count": 1,
+            "expanded_count": 19,
+            "new_chunks_found": 19,
+            "new_chunk_ids": [
+                -4612124162120930748,
+                8742589362909781574,
+                1655838165482457482,
+                -3156527129096350389,
+                1165529926571183692,
+                2430122423232109393,
+                -7414301886109888481,
+                4364937537773843748,
+                -4235699700928799322,
+                1466759997175915239,
+                -6398421611181139733,
+                6297174750828936680,
+                5116573785160623596,
+                -9113727521304572431,
+                6431261547203608563,
+                2720104650144630453,
+                3030163871238055734,
+                -4667429748772627136,
+                8384589538433092668
+            ]
+        }
+    },
+    {
+        "question_id": "Q3",
+        "original_query": "A supplier asks whether Tesla is exposed to concentration risk across factories, suppliers, raw materials, or geographies. Prepare a concise risk note with citations.",
+        "expanded_queries": [
+            "Tesla 10‑K concentration risk analysis of manufacturing facilities, key suppliers, critical raw materials, and geographic exposure",
+            "Tesla risk factors related to concentration of factories, supplier dependence, raw material sourcing, and regional operations",
+            "Tesla operational dependence on specific plants, supplier networks, material inputs, and geographic locations",
+            "Tesla corporate strategy addressing concentration risk in production sites, supply chain partners, material sources, and market regions",
+            "Tesla exposure to centralized manufacturing, vendor reliance, commodity concentration, and regional concentration",
+            "Tesla concentration risk: (a) factory location concentration, (b) supplier concentration, (c) raw material concentration, (d) geographic concentration"
+        ],
+        "baseline_top_chunks": [
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.35492920875549316,
+                "content": "claims\tfor\tvehicle\texposure,\tmeaning\tthat\tany\tproduct\tliability\tclaims\twill\tlikely\thave\tto\tbe\tpaid\tfrom\tcompany\tfunds\tand\tnot\tby\tinsurance.\nWe\twill\tneed\tto\tmaintain\tpublic\tcredibility\tand\tconfidence\tin\tour\tlong-term\tbusiness\tprospects\tin\torder\tto\tsucceed.\nIn\torder\tto\tmaintain\tand\tgrow\tour\tbusiness,\twe\tmust\tmaintain\tcredibility\tand\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tinvestors,\tratings\nagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\tbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tchallenging\tdue\tto\tour\tlimited\noperating\thistory\trelative\tto\testablished\tcompetitors;\tcustomer\tunfamiliarity\twith\tour\tproducts;\tany\tdelays\twe\tmay\texperience\tin\tscaling\tmanufacturing,\ndelivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices;\tour\nquarterly\tproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations;\tand\tother\tfactors\tincluding\tthose\tover\twhich\twe\thave\tno\tcontrol.\tIn\tparticular,\nTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tstatements\tand\tactions\tare\twell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\tattention\tincludes\tfrequent\ncriticism,\twhich\tis\toften\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\tthe\tsufficiency\tor\tstability\tof\tour\tmanagement\tteam.\tAny\tsuch\tnegative\nperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tmay\tharm\tour\tbusiness\tand\tmake\tit\tmore\tdifficult\tto\traise\tadditional\tfunds\tif\tneeded.\n18"
+            },
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.35869383811950684,
+                "content": ".\n“\nHazardous\tMaterials\n”\tshall\tmean\tany\tchemicals,\tmaterials,\twastes,\tpollutants,\tcontaminants,\tor\tsubstances\tin\tany\tform\tthat\tis\nprohibited,\tlimited\tor\tregulated\tpursuant\tto\tany\tEnvironmental\tLaw\tby\tvirtue\tof\ttheir\ttoxic\tor\totherwise\tdeleterious\tcharacteristics,\nincluding\tany\tpetroleum\tor\tpetroleum\tproducts,\tradioactive\tmaterials,\tasbestos\tin\tany\tform\tthat\tis\tor\tcould\tbecome\tfriable,\turea\nformaldehyde\tfoam\tinsulation,\tdielectric\tfluid\tcontaining\tlevels\tof\tpolychlorinated\tbiphenyls,\tand\tradon\tgas.\n“\nHost\tCustomer\tAgreements\n”\tshall\tmean\tthe\tEnergy\tStorage\tAgreements\tand\tCustomer\tLease\tAgreements.\n“\nImmaterial\tSubsidiary\n”\tshall\tmean,\tas\tof\tany\tdate\tof\tdetermination,\tany\tWholly-Owned\tDomestic\tSubsidiary\tof\tthe\tCompany\nor\n,\n\t\nany\tWholly-Owned\tDutch\tSubsidiary\tof\tTesla\tB.V.\t\n(in\teither\nor\tany\tWholly\tOwned\tUK\tSubsidiary\tof\tTesla\tUK\t(in\teach\n\tcase,\tother\tthan\ta\nBorrower)\t(x)\tthat\thas\tnot\tguaranteed\tany\tother\tIndebtedness\tof\tany\tBorrower\tother\tthan\ta\tguarantee\tby\tany\tSubsidiary\tthat\twas\tcreated\nto\tsatisfy\tstate\tdealer\trequirements,\t(y)\twhose\tconsolidated\ttotal\tassets\t(as\tset\tforth\tin\tthe\tmost\trecent\tconsolidated\tbalance\tsheet\tof\tthe\nCompany\tand\tits\tConsolidated\tSubsidiaries\tdelivered\tto\tthe\tLenders\tpursuant\tto\tthis\tAgreement\tand\tcomputed\tin\taccordance\twith\tGAAP,\nbut\texcluding\tintercompany\tassets),\tdo\tnot\tconstitute\tmore\tthan\t5.0%\tof\tthe\tConsolidated\tTotal\tAssets\tand\t(z)\twhose\tconsolidated\ttotal"
+            },
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.40414291620254517,
+                "content": "inventory.\tSimilarly,\tthe\tincreasing\tnumber\tof\tTesla\tvehicles\talso\trequires\tus\tto\tcontinue\tto\trapidly\tincrease\tthe\tnumber\tof\tour\tSupercharger\tstations\tand\nconnectors\tthroughout\tthe\tworld.\nThere\tis\tno\tassurance\tthat\twe\twill\tbe\table\tto\tramp\tour\tbusiness\tto\tmeet\tour\tsales,\tdelivery,\tinstallation,\tservicing\tand\tvehicle\tcharging\ttargets\tglobally,\nthat\tour\tprojections\ton\twhich\tsuch\ttargets\tare\tbased\twill\tprove\taccurate\tor\tthat\tthe\tpace\tof\tgrowth\tor\tcoverage\tof\tour\tcustomer\tinfrastructure\tnetwork\twill\nmeet\tcustomer\texpectations.\t\nThese\tplans\trequire\tsignificant\tcash\tinvestments\tand\tmanagement\tresources\tand\tthere\tis\tno\tguarantee\tthat\tthey\twill\tgenerate\nadditional\tsales\tor\tinstallations\tof\tour\tproducts,\tor\tthat\twe\twill\tbe\table\tto\tavoid\tcost\toverruns\tor\tbe\table\tto\thire\tadditional\tpersonnel\tto\tsupport\tthem.\t\nAs\twe\nexpand,\tw\ne\twill\talso\tneed\tto\tensure\tour\tcompliance\twith\tregulatory\trequirements\tin\tvarious\tjurisdictions\tapplicable\tto\tthe\tsale,\tinstallation\tand\tservicing\tof\tour\nproducts,\tthe\tsale\tor\tdispatch\tof\telectricity\trelated\tto\tour\tenergy\tproducts\tand\tthe\toperation\tof\tSuperchargers.\n\tIf\twe\tfail\tto\tmanage\tour\tgrowth\teffectively,\tit\tmay\nharm\tour\tbrand,\tbusiness,\tprospects,\tfinancial\tcondition\tand\toperating\tresults.\nOur\tfuture\tgrowth\tand\tsuccess\tare\tdependent\tupon\tconsumers’\tdemand\tfor\telectric\tvehicles\tand\tspecifically\tour\tvehicles\tin\tan\tautomotive\nindustry\tthat\tis\tgenerally\tcompetitive,\tcyclical\tand\tvolatile.\nIf\tthe\tmarket\tfor\telectric\tvehicles\tin\tgeneral\tand\tTesla\tvehicles\tin\tparticular\tdoes\tnot\tdevelop\tas\twe\texpect,\tdevelops\tmore\tslowly\tthan\twe\texpect,\tor\tif"
+            },
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.4164254665374756,
+                "content": "the\trecommendation\tand\twe\thave\tappealed\tcertain\taspects\tof\tthe\trecommended\tdecision.\tAny\tunfavorable\tultimate\toutcome\tfor\tTesla\tmay\thave\ta\tnegative\nimpact\ton\tthe\tperception\tof\tTesla’s\ttreatment\tof\tour\temployees.\tFurthermore,\twe\tare\tdirectly\tor\tindirectly\tdependent\tupon\tcompanies\twith\tunionized\twork\nforces,\tsuch\tas\tsuppliers\tand\ttrucking\tand\tfreight\tcompanies.\tAny\twork\tstoppages\tor\tstrikes\torganized\tby\tsuch\tunions\tcould\tdelay\tthe\tmanufacture\tand\tsale\tof\nour\tproducts\tand\tmay\tharm\tour\tbusiness\tand\toperating\tresults.\nWe\tmay\tchoose\tto\tor\tbe\tcompelled\tto\tundertake\tproduct\trecalls\tor\ttake\tother\tsimilar\tactions.\nAs\ta\tmanufacturing\tcompany,\twe\tmust\tmanage\tthe\trisk\tof\tproduct\trecalls\twith\trespect\tto\tour\tproducts.\tRecalls\tfor\tour\tvehicles\thave\tresulted\tfrom,\tfor\nexample,\tindustry-wide\tissues\twith\tairbags\tfrom\ta\tparticular\tsupplier,\tconcerns\tof\tcorrosion\tin\tModel\tS\tand\tModel\tX\tpower\tsteering\tassist\tmotor\tbolts,\tcertain\nsuspension\tfailures\tin\tModel\tS\tand\tModel\tX\tand\tissues\twith\tModel\tS\tand\tModel\tX\tmedia\tcontrol\tunits.\tIn\taddition\tto\trecalls\tinitiated\tby\tus\tfor\tvarious\tcauses,\ntesting\tof\tor\tinvestigations\tinto\tour\tproducts\tby\tgovernment\tregulators\tor\tindustry\tgroups\tmay\tcompel\tus\tto\tinitiate\tproduct\trecalls\tor\tmay\tresult\tin\tnegative\npublic\tperceptions\tabout\tthe\tsafety\tof\tour\tproducts,\teven\tif\twe\tdisagree\twith\tthe\tdefect\tdetermination\tor\thave\tdata\tthat\tshows\tthe\tactual\tsafety\trisk\tto\tbe\tnon-\nexistent.\tIn\tthe\tfuture,\twe\tmay\tvoluntarily\tor\tinvoluntarily\tinitiate\trecalls\tif\tany\tof\tour\tproducts\tare\tdetermined\tby\tus\tor\ta\tregulator\tto\tcontain\ta\tsafety\tdefect\tor"
+            },
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.41852080821990967,
+                "content": "storage\tproducts\tgenerate\tand\tstore\telectricity,\tthey\thave\tthe\tpotential\tto\tfail\tor\tcause\tinjury\tto\tpeople\tor\tproperty.\tAny\tproduct\tliability\tclaim\tmay\nsubject\tus\tto\tlawsuits\tand\tsubstantial\tmonetary\tdamages,\tproduct\trecalls\tor\tredesign\tefforts,\tand\teven\ta\tmeritless\tclaim\tmay\trequire\tus\tto\tdefend\tit,\tall\tof\nwhich\tmay\tgenerate\tnegative\tpublicity\tand\tbe\texpensive\tand\ttime-consuming.\tIn\tmost\tjurisdictions,\twe\tgenerally\tself-insure\tagainst\tthe\trisk\tof\tproduct\nliability\tclaims\tfor\tvehicle\texposure,\tmeaning\tthat\tany\tproduct\tliability\tclaims\twill\tlikely\thave\tto\tbe\tpaid\tfrom\tcompany\tfunds\tand\tnot\tby\tinsurance.\nWe\twill\tneed\tto\tmaintain\tpublic\tcredibility\tand\tconfidence\tin\tour\tlong-term\tbusiness\tprospects\tin\torder\tto\tsucceed.\nIn\torder\tto\tmaintain\tand\tgrow\tour\tbusiness,\twe\tmust\tmaintain\tcredibility\tand\tconfidence\tamong\tcustomers,\tsuppliers,\tanalysts,\tinvestors,\tratings\nagencies\tand\tother\tparties\tin\tour\tlong-term\tfinancial\tviability\tand\tbusiness\tprospects.\tMaintaining\tsuch\tconfidence\tmay\tbe\tchallenging\tdue\tto\tour\tlimited\noperating\thistory\trelative\tto\testablished\tcompetitors;\tcustomer\tunfamiliarity\twith\tour\tproducts;\tany\tdelays\twe\tmay\texperience\tin\tscaling\tmanufacturing,\ndelivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\tproducts\tand\tservices;\nour\tquarterly\tproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations;\tand\tother\tfactors\tincluding\tthose\tover\twhich\twe\thave\tno\tcontrol.\tIn\nparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tand\tstatements\tand\tactions\tof\tTesla\tand\tits\tmanagement\tare\tsubject\tto\tsignificant\tamounts\tof"
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "chunk_id": 8761322962233837760,
+                "section": "",
+                "year": "",
+                "score": 0.2884589433670044,
+                "content": "inventory.\tSimilarly,\tthe\tincreasing\tnumber\tof\tTesla\tvehicles\talso\trequires\tus\tto\tcontinue\tto\trapidly\tincrease\tthe\tnumber\tof\tour\tSupercharger\tstations\tand\nconnectors\tthroughout\tthe\tworld.\nThere\tis\tno\tassurance\tthat\twe\twill\tbe\table\tto\tramp\tour\tbusiness\tto\tmeet\tour\tsales,\tdelivery,\tinstallation,\tservicing\tand\tvehicle\tcharging\ttargets\tglobally,\nthat\tour\tprojections\ton\twhich\tsuch\ttargets\tare\tbased\twill\tprove\taccurate\tor\tthat\tthe\tpace\tof\tgrowth\tor\tcoverage\tof\tour\tcustomer\tinfrastructure\tnetwork\twill\nmeet\tcustomer\texpectations.\t\nThese\tplans\trequire\tsignificant\tcash\tinvestments\tand\tmanagement\tresources\tand\tthere\tis\tno\tguarantee\tthat\tthey\twill\tgenerate\nadditional\tsales\tor\tinstallations\tof\tour\tproducts,\tor\tthat\twe\twill\tbe\table\tto\tavoid\tcost\toverruns\tor\tbe\table\tto\thire\tadditional\tpersonnel\tto\tsupport\tthem.\t\nAs\twe\nexpand,\tw\ne\twill\talso\tneed\tto\tensure\tour\tcompliance\twith\tregulatory\trequirements\tin\tvarious\tjurisdictions\tapplicable\tto\tthe\tsale,\tinstallation\tand\tservicing\tof\tour\nproducts,\tthe\tsale\tor\tdispatch\tof\telectricity\trelated\tto\tour\tenergy\tproducts\tand\tthe\toperation\tof\tSuperchargers.\n\tIf\twe\tfail\tto\tmanage\tour\tgrowth\teffectively,\tit\tmay\nharm\tour\tbrand,\tbusiness,\tprospects,\tfinancial\tcondition\tand\toperating\tresults.\nOur\tfuture\tgrowth\tand\tsuccess\tare\tdependent\tupon\tconsumers’\tdemand\tfor\telectric\tvehicles\tand\tspecifically\tour\tvehicles\tin\tan\tautomotive\nindustry\tthat\tis\tgenerally\tcompetitive,\tcyclical\tand\tvolatile.\nIf\tthe\tmarket\tfor\telectric\tvehicles\tin\tgeneral\tand\tTesla\tvehicles\tin\tparticular\tdoes\tnot\tdevelop\tas\twe\texpect,\tdevelops\tmore\tslowly\tthan\twe\texpect,\tor\tif"
+            },
+            {
+                "chunk_id": -1841500641234361391,
+                "section": "",
+                "year": "",
+                "score": 0.30378293991088867,
+                "content": "Tesla,\tInc.\nNotes\tto\tConsolidated\tFinancial\tStatements\n\t\nNote\t1\t–\tOverview\nTesla,\tInc.\t(“Tesla”,\tthe\t“Company”,\t“we”,\t“us”\tor\t“our”)\twas\tincorporated\tin\tthe\tState\tof\tDelaware\ton\tJuly\t1,\t2003.\tWe\tdesign,\tdevelop,\tmanufacture\nand\tsell\thigh-performance\tfully\telectric\tvehicles\tand\tdesign,\tmanufacture,\tinstall\tand\tsell\tsolar\tenergy\tgeneration\tand\tenergy\tstorage\tproducts.\tOur\tChief\nExecutive\tOfficer,\tas\tthe\tchief\toperating\tdecision\tmaker\t(“CODM”),\torganizes\tour\tcompany,\tmanages\tresource\tallocations\tand\tmeasures\tperformance\tamong\ntwo\n\toperating\tand\treportable\tsegments:\t(i)\tautomotive\tand\t(ii)\tenergy\tgeneration\tand\tstorage.\nAs\tof\tand\tfollowing\tDecember\t31,\t2020,\tthere\thas\tcontinued\tto\tbe\twidespread\timpact\tfrom\tthe\tcoronavirus\tdisease\t(“COVID-19”)\tpandemic.\tIn\t2020,\twe\ntemporarily\tsuspended\toperations\tat\teach\tof\tour\tmanufacturing\tfacilities\tworldwide\tfor\ta\tpart\tof\tthe\tfirst\thalf\tof\tthe\tyear.\tSome\tof\tour\tsuppliers\tand\tpartners\nalso\texperienced\ttemporary\tsuspensions\tbefore\tresuming,\tincluding\tPanasonic,\twhich\tmanufactures\tbattery\tcells\tfor\tour\tproducts\tat\tour\tGigafactory\tNevada.\nWe\talso\tinstituted\ttemporary\temployee\tfurloughs\tand\tcompensation\treductions\twhile\tour\tU.S.\toperations\twere\tscaled\tback.\tFinally,\t\nreduced\toperations\tor\nclosures\tat\tmotor\tvehicle\tdepartments,\tvehicle\tauction\thouses\tand\tmunicipal\tand\tutility\tcompany\tinspectors\tresulted\tin\tchallenges\tin\tor\tpostponements\tfor\tour\nnew\tvehicle\tdeliveries,\tused\tvehicle\tsales,\tand\tenergy\tproduct\tdeployments.\n\tBy\tthe\tsecond\thalf\tof\t2020,\thowever,\twe\tresumed\toperations\tat\tall\tof\tour"
+            },
+            {
+                "chunk_id": 3030163871238055734,
+                "section": "",
+                "year": "",
+                "score": 0.3071790337562561,
+                "content": "important\tthat\twe\taddress\tthem\tpromptly\twhile\tcontinuing\tto\treduce\tour\tmanufacturing\tcosts.\tIf\twe\tare\tnot\tsuccessful\tin\tdoing\tso,\tor\tif\twe\texperience\nissues\twith\tour\tongoing\tmanufacturing\tprocess\timprovements\tand\tcost-down\tefforts,\twe\tcould\tface\tdelays\tin\testablishing\tand/or\tsustaining\tour\tModel\t3\nand\tModel\tY\tramps\tor\tbe\tunable\tto\tmeet\tour\trelated\tcost\tand\tprofitability\ttargets.\nMoreover,\t\nwe\twill\tneed\tto\thire,\ttrain\tand\tcompensate\tskilled\temployees\tto\toperate\thigh-volume\tproduction\tfacilities\tto\tsupport\tour\tvehicle\tramp\tat\nthe\tFremont\tFactory\tand\tGigafactory\tShanghai,\tas\twell\tas\tat\tGigafactory\tNevada\tto\tsupport\tthe\tmanufacture\tof\tbattery\tpacks\tand\tdrive\tunits\tfor\tcertain\tof\nour\tvehicles.\t\nFinally,\tbecause\tour\tvehicle\tmodels,\tin\tparticular\tModel\t3\tand\tModel\tY,\tmay\tshare\tcertain\tparts,\tsuppliers\tor\tproduction\tfacilities\twith\neach\tother,\tthe\tvolume\tor\tefficiency\tof\tproduction\twith\trespect\tto\tone\tmodel\tmay\timpact\talso\tthe\tproduction\tof\tother\tmodels\tor\tlead\tto\tbottlenecks\tthat\nimpact\tthe\tproduction\tof\tall\tmodels.\t\t\nWe\tmay\talso\texperience\tsimilar\tfuture\tdelays\tor\tother\tcomplications\tin\tlaunching\tand/or\tramping\tproduction\tof\tnew\tvehicles,\tsuch\tas\tTesla\nSemi,\tCybertruck\tand\tthe\tnew\tTesla\tRoadster,\tour\tenergy\tstorage\tproducts\tand\tthe\tSolar\tRoof,\tas\twell\tas\tfuture\tfeatures\tand\tservices\tsuch\tas\tnew\nAutopilot\tor\tFSD\tfeatures\tand\tthe\tautonomous\tTesla\tride-hailing\tnetwork.\tLikewise,\twe\tmay\tencounter\tdelays\twith\tthe\tdesign,\tconstruction\tand\nregulatory\tor\tother\tapprovals\tnecessary\tto\tbuild\tand\tbring\tonline\tfuture\tmanufacturing\tfacilities,\tincluding\tour\tplanned\tGigafactory\tBerlin\tin\tGermany.\n15"
+            },
+            {
+                "chunk_id": 1986445533001820347,
+                "section": "",
+                "year": "",
+                "score": 0.31981998682022095,
+                "content": "manufacturing,\tdelivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor\tour\tother\n\t\nproducts\tand\tservices;\tour\tquarterly\tproduction\tand\tsales\tperformance\tcompared\twith\tmarket\texpectations;\tand\tother\tfactors\tincluding\tthose\tover\n\t\nwhich\twe\thave\tno\tcontrol.\tIn\tparticular,\tTesla’s\tproducts,\tbusiness,\tresults\tof\toperations,\tand\tstatements\tand\tactions\tof\tTesla\tand\tits\tmanagement\tare\n\t\nwell-publicized\tby\ta\trange\tof\tthird\tparties.\tSuch\tattention\tcan\tinclude\tcriticism,\twhich\tmay\tbe\texaggerated\tor\tunfounded,\tsuch\tas\tspeculation\tregarding\n\t\nthe\tsufficiency\tor\tstability\tof\tour\tmanagement\tteam.\tAny\tsuch\tnegative\tperceptions,\twhether\tcaused\tby\tus\tor\tnot,\tmay\tharm\tour\tbusiness\tand\tmake\tit\n\t\nmore\tdifficult\tto\traise\tadditional\tfunds\tif\tneeded.\nWe\tmay\tbe\tunable\tto\teffectively\tgrow,\tor\tmanage\tthe\tcompliance,\tresidual\tvalue,\tfinancing\tand\tcredit\trisks\trelated\tto,\tour\tvarious\n\t\nfinancing\tprograms.\nWe\toffer\tfinancing\tarrangements\tfor\tour\tvehicles\tin\tNorth\tAmerica,\tEurope\tand\tAsia\tprimarily\tourselves\tand\tthrough\tvarious\tfinancial\n\t\ninstitutions.\tWe\talso\tcurrently\toffer\tvehicle\tfinancing\tarrangements\tdirectly\tthrough\tour\tlocal\tsubsidiaries\tin\tcertain\tmarkets.\tDepending\ton\tthe\n\t\ncountry,\tsuch\tarrangements\tare\tavailable\tfor\tspecified\tmodels\tand\tmay\tinclude\toperating\tleases\tdirectly\twith\tus\tunder\twhich\twe\ttypically\treceive\tonly\ta\n\t\nvery\tsmall\tportion\tof\tthe\ttotal\tvehicle\tpurchase\tprice\tat\tthe\ttime\tof\tlease,\tfollowed\tby\ta\tstream\tof\tpayments\tover\tthe\tterm\tof\tthe\tlease.\tWe\thave\talso"
+            },
+            {
+                "chunk_id": 8707978095960302367,
+                "section": "",
+                "year": "",
+                "score": 0.32414567470550537,
+                "content": "of\tour\tvehicles,\tparticularly\thigher-volume\tadditions\tto\tour\tfleet\tsuch\tas\tModel\t3\tand\tModel\tY,\tit\tcould\toverburden\tour\tservicing\tcapabilities\tand\tparts\ninventory.\tSimilarly,\tthe\tincreasing\tnumber\tof\tTesla\tvehicles\talso\trequires\tus\tto\tcontinue\tto\trapidly\tincrease\tthe\tnumber\tof\tour\tSupercharger\tstations\tand\nconnectors\tthroughout\tthe\tworld.\nThere\tis\tno\tassurance\tthat\twe\twill\tbe\table\tto\tramp\tour\tbusiness\tto\tmeet\tour\tsales,\tdelivery,\tinstallation,\tservicing\tand\tvehicle\tcharging\ttargets\nglobally,\tthat\tour\tprojections\ton\twhich\tsuch\ttargets\tare\tbased\twill\tprove\taccurate\tor\tthat\tthe\tpace\tof\tgrowth\tor\tcoverage\tof\tour\tcustomer\tinfrastructure\nnetwork\twill\tmeet\tcustomer\texpectations.\tThese\tplans\trequire\tsignificant\tcash\tinvestments\tand\tmanagement\tresources\tand\tthere\tis\tno\tguarantee\tthat\nthey\twill\tgenerate\tadditional\tsales\tor\tinstallations\tof\tour\tproducts,\tor\tthat\twe\twill\tbe\table\tto\tavoid\tcost\toverruns\tor\tbe\table\tto\thire\tadditional\tpersonnel\tto\nsupport\tthem.\tAs\twe\texpand,\twe\twill\talso\tneed\tto\tensure\tour\tcompliance\twith\tregulatory\trequirements\tin\tvarious\tjurisdictions\tapplicable\tto\tthe\tsale,\ninstallation\tand\tservicing\tof\tour\tproducts,\tthe\tsale\tor\tdispatch\tof\telectricity\trelated\tto\tour\tenergy\tproducts\tand\tthe\toperation\tof\tSuperchargers.\tIf\twe\tfail\tto\nmanage\tour\tgrowth\teffectively,\tit\tmay\tharm\tour\tbrand,\tbusiness,\tprospects,\tfinancial\tcondition\tand\toperating\tresults.\nWe\twill\tneed\tto\tmaintain\tand\tsignificantly\tgrow\tour\taccess\tto\tbattery\tcells,\tincluding\tthrough\tthe\tdevelopment\tand\tmanufacture\tof\nour\town\tcells,\tand\tcontrol\tour\trelated\tcosts.\nWe\tare\tdependent\ton\tthe\tcontinued\tsupply\tof\tlithium-ion\tbattery\tcells\tfor\tour\tvehicles\tand\tenergy\tstorage\tproducts,\tand\twe\twill\trequire\tsubstantially"
+            }
+        ],
+        "final_answer": "Answer:\nTesla is exposed to concentration risk in several dimensions. Its vehicle production is concentrated in a small number of factories (Fremont, Gigafactory Shanghai, Gigafactory Nevada and the planned Gigafactory Berlin), and many models share parts, suppliers and production lines, so a disruption at one site can affect multiple models. The company also relies heavily on a limited set of key suppliers—most notably Panasonic for battery cells used at Gigafactory Nevada. This supplier and geographic concentration (primarily the United States and China) creates vulnerability to operational, regulatory or supply‑chain interruptions that could impair production, delivery and financial results.  \n\nKey Supporting Evidence:\n- Tesla’s manufacturing capacity is centered on a few factories (Fremont, Gigafactory Shanghai, Gigafactory Nevada) and future expansion is limited to a planned Gigafactory Berlin, creating a concentrated production footprint.  \n- The company depends on a small number of critical suppliers, explicitly noting Panasonic’s role in supplying battery cells for its products at Gigafactory Nevada.  \n- Shared parts, suppliers and production facilities across Model 3, Model Y and other vehicles mean that inefficiencies or bottlenecks at one model or plant can impact the entire vehicle lineup.  \n- Geographic concentration of operations in the United States and China, combined with past COVID‑19‑related suspensions, highlights exposure to regional disruptions.  \n\nCitations:\n- [inventory…]  \n- [Note 1 – Overview]  \n- [important that we address them promptly]",
+        "citations": [
+            {
+                "chunk_id": 8761322962233837760,
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": -1841500641234361391,
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": 3030163871238055734,
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": 1986445533001820347,
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": 8707978095960302367,
+                "section": "",
+                "year": ""
+            }
+        ],
+        "baseline_quality": {
+            "retrieved_chunks": 5,
+            "avg_score": 0.3905424475669861
+        },
+        "expanded_quality": {
+            "retrieved_chunks": 17,
+            "avg_score": 0.36871034958783316
+        },
+        "retrieval_improvement_analysis": {
+            "baseline_count": 1,
+            "expanded_count": 17,
+            "new_chunks_found": 17,
+            "new_chunk_ids": [
+                8761322962233837760,
+                -3156527129096350389,
+                -907086672656935989,
+                -1932373845168245170,
+                -1841500641234361391,
+                8073644700554653653,
+                -3725852209803302759,
+                3417687098067909404,
+                8707978095960302367,
+                -4468869458775673560,
+                -393841839586730519,
+                -1994391249619610066,
+                2318273982013786996,
+                2720104650144630453,
+                3030163871238055734,
+                1986445533001820347,
+                1944700024369511551
+            ]
+        }
+    },
+    {
+        "question_id": "Q4",
+        "original_query": "Compare the strategic importance of automotive operations and energy generation/storage using evidence from the 10-K. What disclosures are needed to support a business recommendation?",
+        "expanded_queries": [
+            "financial analyst view of automotive operations versus energy generation/storage strategic importance in the 10‑K",
+            "risk factors associated with automotive business and energy generation/storage segments disclosed in the 10‑K",
+            "operational performance data for automotive operations and energy generation/storage in the 10‑K",
+            "company strategy discussion on automotive and energy generation/storage segments within the 10‑K",
+            "vehicle manufacturing and power production strategic relevance 10‑K disclosures",
+            "revenue, capital expenditures, and market outlook for automotive vs energy generation/storage sub‑sections in the 10‑K"
+        ],
+        "baseline_top_chunks": [
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.4290733337402344,
+                "content": "ITEM\t7.\tMANAGEMENT’S\tDISCUSSION\tAND\tANALYSIS\tOF\tFINANCIAL\tCONDITION\tAND\tRESULTS\tOF\tOPERATIONS\nThe\tfollowing\tdiscussion\tand\tanalysis\tshould\tbe\tread\tin\tconjunction\twith\tthe\tconsolidated\tfinancial\tstatements\tand\tthe\trelated\tnotes\tincluded\nelsewhere\tin\tthis\tAnnual\tReport\ton\tForm\t10-K.\tFor\tfurther\tdiscussion\tof\tour\tproducts\tand\tservices,\ttechnology\tand\tcompetitive\tstrengths,\trefer\tto\tItem\t1-\nBusiness.\tFor\tdiscussion\trelated\tto\tchanges\tin\tfinancial\tcondition\tand\tthe\tresults\tof\toperations\tfor\tfiscal\tyear\t2022-related\titems,\trefer\tto\tPart\tII,\tItem\t7.\nManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\tin\tour\tAnnual\tReport\ton\tForm\t10-K\tfor\tfiscal\tyear\t2022,\twhich\twas\nfiled\twith\tthe\tSecurities\tand\tExchange\tCommission\ton\tJanuary\t31,\t2023.\nOverview\tand\t2023\tHighlights\nOur\tmission\tis\tto\taccelerate\tthe\tworld’s\ttransition\tto\tsustainable\tenergy.\tWe\tdesign,\tdevelop,\tmanufacture,\tlease\tand\tsell\thigh-performance\tfully\nelectric\tvehicles,\tsolar\tenergy\tgeneration\tsystems\tand\tenergy\tstorage\tproducts.\tWe\talso\toffer\tmaintenance,\tinstallation,\toperation,\tcharging,\tinsurance,\nfinancial\tand\tother\tservices\trelated\tto\tour\tproducts.\tAdditionally,\twe\tare\tincreasingly\tfocused\ton\tproducts\tand\tservices\tbased\ton\tartificial\tintelligence,\nrobotics\tand\tautomation.\nIn\t2023,\twe\tproduced\t1,845,985\tconsumer\tvehicles\tand\tdelivered\t1,808,581\tconsumer\tvehicles.\tWe\tare\tcurrently\tfocused\ton\tincreasing\tvehicle\nproduction,\tcapacity\tand\tdelivery\tcapabilities,\treducing\tcosts,\timproving\tand\tdeveloping\tour\tvehicles\tand\tbattery\ttechnologies,\tvertically\tintegrating\tand"
+            },
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.45158541202545166,
+                "content": "Note\t\n2\n1\n\t–\tSegment\tReporting\tand\tInformation\tabout\tGeographic\tAreas\nWe\thave\t\ntwo\n\toperating\tand\treportable\tsegments:\t(i)\tautomotive\tand\t(ii)\tenergy\tgeneration\tand\tstorage.\tThe\tautomotive\tsegment\tincludes\tthe\tdesign,\ndevelopment,\tmanufacturing,\tsales,\tand\tleasing\tof\telectric\tvehicles\tas\twell\tas\tsales\tof\tautomotive\tregulatory\tcredits.\tAdditionally,\tthe\tautomotive\tsegment\tis\nalso\tcomprised\tof\tservices\tand\tother,\twhich\tincludes\tnon-warranty\tafter-sales\tvehicle\tservices,\tsales\tof\tused\tvehicles,\tretail\tmerchandise,\tsales\tby\tour\tacquired\nsubsidiaries\tto\tthird\tparty\tcustomers,\tand\tvehicle\tinsurance\trevenue.\tThe\tenergy\tgeneration\tand\tstorage\tsegment\tincludes\tthe\tdesign,\tmanufacture,\ninstallation,\tsales,\tand\tleasing\tof\tsolar\tenergy\tgeneration\tand\tenergy\tstorage\tproducts\tand\trelated\tservices\tand\tsales\tof\tsolar\tenergy\tsystems\tincentives.\tOur\nCODM\tdoes\tnot\tevaluate\toperating\tsegments\tusing\tasset\tor\tliability\tinformation.\t\nThe\tfollowing\ttable\tpresents\trevenues\tand\tgross\tprofit\tby\treportable\tsegment\n(in\tmillions):\n\t\n\t\n\t\nYear\tEnded\tDecember\t31,\n\t\n\t\n\t\n2020\n\t\n\t\n2019\n\t\n\t\n2018\n\t\nAutomotive\tsegment\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nRevenues\n\t\n$\n29,542\n\t\n\t\n$\n23,047\n\t\n\t\n$\n19,906\n\t\nGross\tprofit\n\t\n$\n6,612\n\t\n\t\n$\n3,879\n\t\n\t\n$\n3,852\n\t\nEnergy\tgeneration\tand\tstorage\tsegment\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nRevenues\n\t\n$\n1,994\n\t\n\t\n$\n1,531\n\t\n\t\n$\n1,555\n\t\nGross\tprofit\n\t\n$"
+            },
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.45540422201156616,
+                "content": "ITEM\t7.\t\nMANAGEMENT’S\tDISCUSSION\tAND\tANALYSIS\tOF\tFINANCIAL\tCONDITION\tAND\tRESULTS\tOF\tOPERATIONS\nThe\tfollowing\tdiscussion\tand\tanalysis\tshould\tbe\tread\tin\tconjunction\twith\tthe\tconsolidated\tfinancial\tstatements\tand\tthe\trelated\tnotes\tincluded\n\t\nelsewhere\tin\tthis\tAnnual\tReport\ton\tForm\t10-K.\tFor\tfurther\tdiscussion\tof\tour\tproducts\tand\tservices,\ttechnology\tand\tcompetitive\tstrengths,\trefer\tto\tItem\n\t\n1-\tBusiness.\tFor\tdiscussion\trelated\tto\tchanges\tin\tfinancial\tcondition\tand\tthe\tresults\tof\toperations\tfor\tfiscal\tyear\t2021-related\titems,\trefer\tto\tPart\tII,\tItem\n\t\n7.\tManagement’s\tDiscussion\tand\tAnalysis\tof\tFinancial\tCondition\tand\tResults\tof\tOperations\tin\tour\tAnnual\tReport\ton\tForm\t10-K\tfor\tfiscal\tyear\t2021,\n\t\nwhich\twas\tfiled\twith\tthe\tSecurities\tand\tExchange\tCommission\ton\tFebruary\t7,\t2022.\nOverview\tand\t2022\tHighlights\nOur\tmission\tis\tto\taccelerate\tthe\tworld’s\ttransition\tto\tsustainable\tenergy.\tWe\tdesign,\tdevelop,\tmanufacture,\tlease\tand\tsell\thigh-performance\tfully\n\t\nelectric\tvehicles,\tsolar\tenergy\tgeneration\tsystems\tand\tenergy\tstorage\tproducts.\tWe\talso\toffer\tmaintenance,\tinstallation,\toperation,\tfinancial\tand\tother\n\t\nservices\trelated\tto\tour\tproducts.\tAdditionally,\twe\tare\tincreasingly\tfocused\ton\tproducts\tand\tservices\tbased\ton\tartificial\tintelligence,\trobotics\tand\n\t\nautomation.\nIn\t2022,\twe\tproduced\t1,369,611\tconsumer\tvehicles\tand\tdelivered\t1,313,851\tconsumer\tvehicles,\tdespite\tongoing\tsupply\tchain\tand\tlogistics\n\t\nchallenges\tand\tfactory\tshutdowns.\tWe\tare\tcurrently\tfocused\ton\tincreasing\tvehicle\tproduction,\tcapacity\tand\tdelivery\tcapabilities,\timproving\tand"
+            },
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.46025359630584717,
+                "content": "Table\tof\tContents\nPART\tI\nITEM\t1.\tBUSINESS\nOverview\nWe\tdesign,\tdevelop,\tmanufacture,\tsell\tand\tlease\thigh-performance\tfully\telectric\tvehicles\tand\tenergy\tgeneration\tand\tstorage\tsystems,\tand\toffer\nservices\trelated\tto\tour\tproducts.\tWe\tgenerally\tsell\tour\tproducts\tdirectly\tto\tcustomers,\tand\tcontinue\tto\tgrow\tour\tcustomer-facing\tinfrastructure\tthrough\ta\nglobal\tnetwork\tof\tvehicle\tshowrooms\tand\tservice\tcenters,\tMobile\tService,\tbody\tshops,\tSupercharger\tstations\tand\tDestination\tChargers\tto\taccelerate\tthe\nwidespread\tadoption\tof\tour\tproducts.\tWe\temphasize\tperformance,\tattractive\tstyling\tand\tthe\tsafety\tof\tour\tusers\tand\tworkforce\tin\tthe\tdesign\tand\nmanufacture\tof\tour\tproducts\tand\tare\tcontinuing\tto\tdevelop\tfull\tself-driving\ttechnology\tfor\timproved\tsafety.\tWe\talso\tstrive\tto\tlower\tthe\tcost\tof\townership\nfor\tour\tcustomers\tthrough\tcontinuous\tefforts\tto\treduce\tmanufacturing\tcosts\tand\tby\toffering\tfinancial\tand\tother\tservices\ttailored\tto\tour\tproducts.\nOur\tmission\tis\tto\taccelerate\tthe\tworld’s\ttransition\tto\tsustainable\tenergy.\tWe\tbelieve\tthat\tthis\tmission,\talong\twith\tour\tengineering\texpertise,\nvertically\tintegrated\tbusiness\tmodel\tand\tfocus\ton\tuser\texperience\tdifferentiate\tus\tfrom\tother\tcompanies.\nSegment\tInformation\nWe\toperate\tas\ttwo\treportable\tsegments:\t(i)\tautomotive\tand\t(ii)\tenergy\tgeneration\tand\tstorage.\nThe\tautomotive\tsegment\tincludes\tthe\tdesign,\tdevelopment,\tmanufacturing,\tsales\tand\tleasing\tof\thigh-performance\tfully\telectric\tvehicles\tas\twell\tas\nsales\tof\tautomotive\tregulatory\tcredits.\tAdditionally,\tthe\tautomotive\tsegment\talso\tincludes\tservices\tand\tother,\twhich\tincludes\tsales\tof\tused\tvehicles,\tnon-\nwarranty\tafter-sales\tvehicle\tservices,\tbody\tshop\tand\tparts,\tpaid\tSupercharging,\tvehicle\tinsurance\trevenue\tand\tretail\tmerchandise.\tThe\tenergy\tgeneration"
+            },
+            {
+                "chunk_id": "",
+                "section": "",
+                "year": "",
+                "score": 0.46144092082977295,
+                "content": "PART\tI\nITEM\t1.\nBUSINESS\nOverview\nWe\tdesign,\tdevelop,\tmanufacture,\tsell\tand\tlease\thigh-performance\tfully\telectric\tvehicles\tand\tenergy\tgeneration\tand\tstorage\tsystems,\tand\toffer\tservices\nrelated\tto\tour\tsustainable\tenergy\tproducts.\tWe\tgenerally\tsell\tour\tproducts\tdirectly\tto\tcustomers,\tincluding\tthrough\tour\twebsite\tand\tretail\tlocations.\tWe\talso\ncontinue\tto\tgrow\tour\tcustomer-facing\tinfrastructure\tthrough\ta\tglobal\tnetwork\tof\tvehicle\tservice\tcenters,\tMobile\tService\ttechnicians,\tbody\tshops,\tSupercharger\nstations\tand\tDestination\tChargers\tto\taccelerate\tthe\twidespread\tadoption\tof\tour\tproducts.\tWe\temphasize\tperformance,\tattractive\tstyling\tand\tthe\tsafety\tof\tour\nusers\tand\tworkforce\tin\tthe\tdesign\tand\tmanufacture\tof\tour\tproducts\tand\tare\tcontinuing\tto\tdevelop\tfull\tself-driving\ttechnology\tfor\timproved\tsafety.\tWe\talso\tstrive\nto\tlower\tthe\tcost\tof\townership\tfor\tour\tcustomers\tthrough\tcontinuous\tefforts\tto\treduce\tmanufacturing\tcosts\tand\tby\toffering\tfinancial\tservices\ttailored\tto\tour\nproducts.\tOur\tmission\tto\taccelerate\tthe\tworld’s\ttransition\tto\tsustainable\tenergy,\tengineering\texpertise,\tvertically\tintegrated\tbusiness\tmodel\tand\tfocus\ton\tuser\nexperience\tdifferentiate\tus\tfrom\tother\tcompanies.\nSegment\tInformation\nWe\toperate\tas\ttwo\treportable\tsegments:\t(i)\tautomotive\tand\t(ii)\tenergy\tgeneration\tand\tstorage.\nThe\tautomotive\tsegment\tincludes\tthe\tdesign,\tdevelopment,\tmanufacturing,\tsales\tand\tleasing\tof\telectric\tvehicles\tas\twell\tas\tsales\tof\tautomotive\nregulatory\tcredits.\tAdditionally,\tthe\tautomotive\tsegment\tis\talso\tcomprised\tof\tservices\tand\tother,\twhich\tincludes\tnon-warranty\tafter-sales\tvehicle\tservices,\tsales\nof\tused\tvehicles,\tretail\tmerchandise,\tsales\tby\tour\tacquired\tsubsidiaries\tto\tthird\tparty\tcustomers\tand\tvehicle\tinsurance\trevenue.\tThe\tenergy\tgeneration\tand"
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "chunk_id": 3713804736812347973,
+                "section": "",
+                "year": "",
+                "score": 0.2400195598602295,
+                "content": "Note\t\n2\n1\n\t–\tSegment\tReporting\tand\tInformation\tabout\tGeographic\tAreas\nWe\thave\t\ntwo\n\toperating\tand\treportable\tsegments:\t(i)\tautomotive\tand\t(ii)\tenergy\tgeneration\tand\tstorage.\tThe\tautomotive\tsegment\tincludes\tthe\tdesign,\ndevelopment,\tmanufacturing,\tsales,\tand\tleasing\tof\telectric\tvehicles\tas\twell\tas\tsales\tof\tautomotive\tregulatory\tcredits.\tAdditionally,\tthe\tautomotive\tsegment\tis\nalso\tcomprised\tof\tservices\tand\tother,\twhich\tincludes\tnon-warranty\tafter-sales\tvehicle\tservices,\tsales\tof\tused\tvehicles,\tretail\tmerchandise,\tsales\tby\tour\tacquired\nsubsidiaries\tto\tthird\tparty\tcustomers,\tand\tvehicle\tinsurance\trevenue.\tThe\tenergy\tgeneration\tand\tstorage\tsegment\tincludes\tthe\tdesign,\tmanufacture,\ninstallation,\tsales,\tand\tleasing\tof\tsolar\tenergy\tgeneration\tand\tenergy\tstorage\tproducts\tand\trelated\tservices\tand\tsales\tof\tsolar\tenergy\tsystems\tincentives.\tOur\nCODM\tdoes\tnot\tevaluate\toperating\tsegments\tusing\tasset\tor\tliability\tinformation.\t\nThe\tfollowing\ttable\tpresents\trevenues\tand\tgross\tprofit\tby\treportable\tsegment\n(in\tmillions):\n\t\n\t\n\t\nYear\tEnded\tDecember\t31,\n\t\n\t\n\t\n2020\n\t\n\t\n2019\n\t\n\t\n2018\n\t\nAutomotive\tsegment\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nRevenues\n\t\n$\n29,542\n\t\n\t\n$\n23,047\n\t\n\t\n$\n19,906\n\t\nGross\tprofit\n\t\n$\n6,612\n\t\n\t\n$\n3,879\n\t\n\t\n$\n3,852\n\t\nEnergy\tgeneration\tand\tstorage\tsegment\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nRevenues\n\t\n$\n1,994\n\t\n\t\n$\n1,531\n\t\n\t\n$\n1,555\n\t\nGross\tprofit\n\t\n$"
+            },
+            {
+                "chunk_id": -6048652464494628468,
+                "section": "",
+                "year": "",
+                "score": 0.2508152723312378,
+                "content": "Note\t18\t–\t\nSegment\tReporting\tand\tInformation\tabout\tGeographic\tAreas\nWe\thave\t\ntwo\n\toperating\tand\treportable\tsegments:\t(i)\tautomotive\tand\t(ii)\tenergy\tgeneration\tand\tstorage.\tThe\tautomotive\tsegment\tincludes\tthe\ndesign,\tdevelopment,\tmanufacturing,\tsales\tand\tleasing\tof\telectric\tvehicles\tas\twell\tas\tsales\tof\tautomotive\tregulatory\tcredits.\tAdditionally,\tthe\tautomotive\nsegment\tis\talso\tcomprised\tof\tservices\tand\tother,\twhich\tincludes\tsales\tof\tused\tvehicles,\tnon-warranty\tafter-sales\tvehicle\tservices,\tbody\tshop\tand\tparts,\npaid\tSupercharging,\tvehicle\tinsurance\trevenue\tand\tretail\tmerchandise.\tThe\tenergy\tgeneration\tand\tstorage\tsegment\tincludes\tthe\tdesign,\tmanufacture,\ninstallation,\tsales\tand\tleasing\tof\tsolar\tenergy\tgeneration\tand\tenergy\tstorage\tproducts\tand\trelated\tservices\tand\tsales\tof\tsolar\tenergy\tsystems\tincentives.\nOur\tCODM\tdoes\tnot\tevaluate\toperating\tsegments\tusing\tasset\tor\tliability\tinformation.\t\nThe\tfollowing\ttable\tpresents\trevenues\tand\tgross\tprofit\tby\treportable\nsegment\t(in\tmillions):\nYear\tEnded\tDecember\t31,\n2023\n2022\n2021\nAutomotive\tsegment\n\t\n\t\nRevenues\n$\n90,738\n\t\n$\n77,553\n\t\n$\n51,034\n\t\nGross\tprofit\n$\n16,519\n\t\n$\n20,565\n\t\n$\n13,735\n\t\nEnergy\tgeneration\tand\tstorage\tsegment\n\t\n\t\nRevenues\n$\n6,035\n\t\n$\n3,909\n\t\n$\n2,789\n\t\nGross\tprofit\n$\n1,141\n\t\n$\n288\n\t\n$\n(\n129\n)\nThe\tfollowing\ttable\tpresents\trevenues\tby\tgeographic\tarea\tbased\ton\tthe\tsales\tlocation\tof\tour\tproducts\t(in\tmillions):\nYear\tEnded\tDecember\t31,\n2023\n2022\n2021\nUnited\tStates\n$\n45,235\n\t\n$\n40,553\n\t\n$\n23,973"
+            },
+            {
+                "chunk_id": -8236863621202773333,
+                "section": "",
+                "year": "",
+                "score": 0.27860093116760254,
+                "content": "Energy\tGeneration\tand\tStorage\tSegment\nEnergy\tgeneration\tand\tstorage\trevenue\tincludes\tsales\tand\tleasing\tof\tsolar\tenergy\tgeneration\tand\tenergy\tstorage\tproducts,\tfinancing\tof\tsolar\n\t\nenergy\tgeneration\tproducts,\tservices\trelated\tto\tsuch\tproducts\tand\tsales\tof\tsolar\tenergy\tsystems\tincentives.\n2022\tcompared\tto\t2021\nEnergy\tgeneration\tand\tstorage\trevenue\tincreased\t$1.12\tbillion,\tor\t40%,\tin\tthe\tyear\tended\tDecember\t31,\t2022\tas\tcompared\tto\tthe\tyear\tended\n\t\nDecember\t31,\t2021,\tprimarily\tdue\tto\tan\tincrease\tin\tenergy\tstorage\tdeployments\tof\tMegapack,\tPowerwall\tand\thigher\taverage\tselling\tprice\tof\tMegapack,\n\t\nas\twell\tas\ton\tsolar\tcash\tand\tloan\tdeployments\tdriven\tby\tprice\tincreases\tin\t2022.\nCost\tof\tRevenues\tand\tGross\tMargin\n\t\n\t\n\t\nYear\tEnded\tDecember\t31,\n\t\n\t\n2022\tvs.\t2021\tChange\n\t\n\t\n2021\tvs.\t2020\tChange\n\t\n(Dollars\tin\tmillions)\n\t\n2022\n\t\n\t\n2021\n\t\n\t\n2020\n\t\n\t\n$\n\t\n\t\n%\n\t\n\t\n$\n\t\n\t\n%\n\t\nCost\tof\trevenues\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nAutomotive\tsales\n\t\n$\n49,599\n\t\n\t\n$\n32,415\n\t\n\t\n$\n19,696\n\t\n\t\n$\n17,184\n\t\n\t\n\t\n53\n%\n\t\n$\n12,719\n\t\n\t\n\t\n65\n%\nAutomotive\tleasing\n\t\n\t\n1,509\n\t\n\t\n\t\n978\n\t\n\t\n\t\n563\n\t\n\t\n\t\n531\n\t\n\t\n\t\n54\n%\n\t\n\t\n415\n\t\n\t\n\t\n74\n%"
+            },
+            {
+                "chunk_id": -6706566402746145762,
+                "section": "",
+                "year": "",
+                "score": 0.2790570855140686,
+                "content": "Automotive\tleasing\trevenue\tdecreased\t$356\tmillion,\tor\t14%,\tin\tthe\tyear\tended\tDecember\t31,\t2023\tas\tcompared\tto\tthe\tyear\tended\tDecember\t31,\n2022.\tThe\tdecrease\twas\tprimarily\tdue\tto\ta\tdecrease\tin\tdirect\tsales-type\tleasing\trevenue\tdriven\tby\tlower\tdeliveries\tyear\tover\tyear,\tpartially\toffset\tby\tan\nincrease\tfrom\tour\tgrowing\tdirect\toperating\tlease\tportfolio.\nServices\tand\tother\trevenue\tincreased\t$2.23\tbillion,\tor\t37%,\tin\tthe\tyear\tended\tDecember\t31,\t2023\tas\tcompared\tto\tthe\tyear\tended\tDecember\t31,\n2022.\tThe\tincrease\twas\tprimarily\tdue\tto\thigher\tused\tvehicle\trevenue\tdriven\tby\tincreases\tin\tvolume,\tbody\tshop\tand\tpart\tsales\trevenue,\tnon-warranty\nmaintenance\tservices\trevenue,\tpaid\tSupercharging\trevenue\tand\tinsurance\tservices\trevenue,\tall\tof\twhich\tare\tprimarily\tattributable\tto\tour\tgrowing\tfleet.\nThe\tincreases\twere\tpartially\toffset\tby\ta\tdecrease\tin\tthe\taverage\tselling\tprice\tof\tused\tvehicles.\nEnergy\tGeneration\tand\tStorage\tSegment\nEnergy\tgeneration\tand\tstorage\trevenue\tincludes\tsales\tand\tleasing\tof\tsolar\tenergy\tgeneration\tand\tenergy\tstorage\tproducts,\tfinancing\tof\tsolar\tenergy\ngeneration\tproducts,\tservices\trelated\tto\tsuch\tproducts\tand\tsales\tof\tsolar\tenergy\tsystems\tincentives.\n2023\tcompared\tto\t2022\nEnergy\tgeneration\tand\tstorage\trevenue\tincreased\t$2.13\tbillion,\tor\t54%,\tin\tthe\tyear\tended\tDecember\t31,\t2023\tas\tcompared\tto\tthe\tyear\tended\nDecember\t31,\t2022.\tThe\tincrease\twas\tprimarily\tdue\tto\tan\tincrease\tin\tdeployments\tof\tMegapack.\nCost\tof\tRevenues\tand\tGross\tMargin\nYear\tEnded\tDecember\t31,\n2023\tvs.\t2022\tChange\n2022\tvs.\t2021\tChange\n(Dollars\tin\tmillions)\n2023\n2022"
+            },
+            {
+                "chunk_id": -8698693135943240823,
+                "section": "",
+                "year": "",
+                "score": 0.2917473316192627,
+                "content": "(Dollars\tin\tmillions)\n2023\n2022\n2021\n$\n%\n$\n%\nCost\tof\trevenues\nAutomotive\tsales\n$\n65,121\t\n$\n49,599\t\n$\n32,415\t\n$\n15,522\t\n31\t\n%\n$\n17,184\t\n53\t\n%\nAutomotive\tleasing\n1,268\t\n1,509\t\n978\t\n(241)\n(16)\n%\n531\t\n54\t\n%\nTotal\tautomotive\tcost\tof\trevenues\n66,389\t\n51,108\t\n33,393\t\n15,281\t\n30\t\n%\n17,715\t\n53\t\n%\nServices\tand\tother\n7,830\t\n5,880\t\n3,906\t\n1,950\t\n33\t\n%\n1,974\t\n51\t\n%\nTotal\tautomotive\t&\tservices\tand\tother\tsegment\ncost\tof\trevenues\n74,219\t\n56,988\t\n37,299\t\n17,231\t\n30\t\n%\n19,689\t\n53\t\n%\nEnergy\tgeneration\tand\tstorage\tsegment\n4,894\t\n3,621\t\n2,918\t\n1,273\t\n35\t\n%\n703\t\n24\t\n%\nTotal\tcost\tof\trevenues\n$\n79,113\t\n$\n60,609\t\n$\n40,217\t\n$\n18,504\t\n31\t\n%\n$\n20,392\t\n51\t\n%\nGross\tprofit\ttotal\tautomotive\n$\n16,030\t\n$\n20,354\t\n$\n13,839\t\nGross\tmargin\ttotal\tautomotive\n19.4\t\n%\n28.5\t\n%\n29.3\t\n%\nGross\tprofit\ttotal\tautomotive\t&\tservices\tand\tother\nsegment\n$\n16,519\t\n$\n20,565\t\n$\n13,735\t\nGross\tmargin\ttotal\tautomotive\t&\tservices\tand\tother\nsegment\n18.2\t\n%\n26.5\t\n%\n26.9\t\n%\nGross\tprofit\tenergy\tgeneration\tand\tstorage\tsegment\n$\n1,141\t\n$\n288"
+            }
+        ],
+        "final_answer": "Answer:\nThe automotive segment is the dominant driver of Tesla’s business, generating the vast majority of revenue and gross profit, while the energy generation and storage segment is a smaller but rapidly expanding business that is moving toward profitability and diversifies the company’s product portfolio. A recommendation to prioritize continued investment in automotive operations should be backed by disclosures of its scale, margin contribution, and growth trends, whereas a recommendation to accelerate the energy segment should be supported by disclosures of its high growth rate, improving gross margins, and the specific drivers of that growth (e.g., Megapack, Powerwall deployments and higher selling prices).\n\nKey Supporting Evidence:\n- Automotive revenue was $90,738 million in 2023 versus $6,035 million for energy generation and storage, and automotive gross profit was $16,519 million versus $1,141 million for energy, showing the automotive segment’s outsized contribution to earnings. [chunk2]\n- Automotive revenue grew from $51,034 million in 2021 to $77,553 million in 2022 and $90,738 million in 2023, while energy revenue grew from $2,789 million in 2021 to $3,909 million in 2022 (a 40% increase) and $6,035 million in 2023, indicating a higher growth trajectory for the energy segment. [chunk2]\n- Energy generation and storage revenue increase in 2022 was driven by higher Megapack and Powerwall deployments, higher average selling prices, and increased solar cash and loan activity, highlighting the strategic levers behind its growth. [chunk2]\n- The segment definitions clarify that automotive includes vehicle sales, leasing, regulatory credits, and after‑sales services, whereas energy includes solar and storage product sales, financing, and incentives, underscoring the distinct business models and risk profiles. [chunk1, chunk2]\n\nDisclosures needed to support a business recommendation:\n- Detailed segment revenue and gross profit trends over multiple years (e.g., 2020‑2023) to quantify scale and growth. [chunk1, chunk2]\n- Gross margin and cost‑of‑revenue breakdowns for each segment to assess profitability dynamics. [chunk2]\n- Geographic revenue breakdowns to evaluate market concentration and exposure. [chunk2]\n- Narrative disclosures on the drivers of energy segment growth (storage deployments, pricing, solar financing) and automotive segment drivers (vehicle sales, regulatory credits, services). [chunk2]\n- Segment‑specific risk factors, capital‑expenditure requirements, and competitive landscape to gauge execution risk. [chunk1, chunk2] \n\nCitations:\n[chunk1, chunk2]",
+        "citations": [
+            {
+                "chunk_id": 3713804736812347973,
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": -6048652464494628468,
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": -8236863621202773333,
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": -6706566402746145762,
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": -8698693135943240823,
+                "section": "",
+                "year": ""
+            }
+        ],
+        "baseline_quality": {
+            "retrieved_chunks": 5,
+            "avg_score": 0.45155149698257446
+        },
+        "expanded_quality": {
+            "retrieved_chunks": 20,
+            "avg_score": 0.3496339410543442
+        },
+        "retrieval_improvement_analysis": {
+            "baseline_count": 1,
+            "expanded_count": 20,
+            "new_chunks_found": 20,
+            "new_chunk_ids": [
+                -5511793154294479611,
+                -8698693135943240823,
+                3713804736812347973,
+                -6048652464494628468,
+                5657378096149408264,
+                1655838165482457482,
+                -8629758808051416300,
+                -6706566402746145762,
+                -6380497972045688866,
+                5720607583020793694,
+                -8236863621202773333,
+                -3207792537090564439,
+                4527311652042566313,
+                -35999651928922515,
+                -4383098580365796367,
+                -4674671269905747789,
+                1331399697002135281,
+                236226044232238579,
+                -4947665508933812868,
+                -1180616023062646978
+            ]
+        }
+    }
+]
