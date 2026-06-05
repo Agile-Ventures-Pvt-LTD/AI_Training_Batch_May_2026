@@ -101,8 +101,8 @@ def user_input():
 
     return user_data
 
-data = user_input()
-print(data)
+# data = user_input()
+# print(data)
 
 data = {
 "blog_topic": "How AI can improve customer support operations",
