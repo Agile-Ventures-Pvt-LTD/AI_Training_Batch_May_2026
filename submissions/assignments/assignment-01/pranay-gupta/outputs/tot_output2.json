@@ -1,0 +1,70 @@
+{
+    "architecture_scores": [
+        {
+            "option": "A",
+            "accuracy": 4,
+            "cost": 3,
+            "privacy": 2,
+            "timeline": 5,
+            "scalability": 4,
+            "citation_reliability": 4,
+            "overall": 3.8,
+            "notes": "Balanced RAG; meets 6‑week MVP; citation via retrieved chunk IDs."
+        },
+        {
+            "option": "B",
+            "accuracy": 4,
+            "cost": 2,
+            "privacy": 5,
+            "timeline": 2,
+            "scalability": 3,
+            "citation_reliability": 3,
+            "overall": 3.0,
+            "notes": "Fine‑tuning expensive, re‑training needed for frequent doc changes; timeline too tight."
+        },
+        {
+            "option": "C",
+            "accuracy": 2,
+            "cost": 5,
+            "privacy": 5,
+            "timeline": 5,
+            "scalability": 5,
+            "citation_reliability": 5,
+            "overall": 3.2,
+            "notes": "Keyword search is cheap & private but fails the “accuracy > speed” requirement."
+        },
+        {
+            "option": "D",
+            "accuracy": 5,
+            "cost": 2,
+            "privacy": 2,
+            "timeline": 1,
+            "scalability": 3,
+            "citation_reliability": 5,
+            "overall": 3.5,
+            "notes": "High potential accuracy, but multi‑step orchestration exceeds 6‑week deadline and raises privacy exposure."
+        }
+    ],
+    "recommended_architecture": "A",
+    "implementation_rationale": "Option A delivers the best trade‑off for the startup’s constraints: it can be built within the 6‑week MVP window, provides acceptable accuracy for natural‑language Q&A, offers deterministic source citations via retrieved chunk identifiers, and keeps operational costs manageable while scaling to 20 k users through a hosted vector store and LLM API. Privacy concerns are mitigated by encrypting uploads and limiting payloads to embeddings and short prompts, which is sufficient for the initial rollout. The design also leaves clear upgrade paths (e.g., add reranking or private LLM endpoints) for later phases.",
+    "risks": [
+        "Data leakage: sending document embeddings or prompt text to a third‑party LLM API.",
+        "Cost overruns as query volume grows to 20 k users.",
+        "Hallucinated answers despite retrieval augmentation, leading to inaccurate citations.",
+        "Performance bottlenecks in the vector‑search layer under sudden traffic spikes."
+    ],
+    "mitigations": [
+        "Encrypt PDFs at rest and in transit; use client‑side chunking and only send embeddings + short query to the API.",
+        "Implement per‑user rate limits and monitor token usage; negotiate volume pricing with the LLM provider.",
+        "Post‑process LLM output to verify that cited chunk IDs appear verbatim in the generated answer; fallback to “no confident answer” when verification fails.",
+        "Choose a managed vector DB with autoscaling (e.g., Pinecone, Qdrant Cloud) and provision read replicas for high query concurrency."
+    ],
+    "mvp_plan": [
+        "Week 1: Project kickoff, define data schema, select vector DB (managed) and LLM provider (e.g., OpenAI gpt‑4o‑mini). Set up CI/CD and security baseline.",
+        "Week 2: Build PDF ingestion pipeline – text extraction, chunking (≈500 tokens), embedding generation, and upsert into vector store. Add encryption at rest.",
+        "Week 3: Implement retrieval API – similarity search (top‑k), prompt template that includes retrieved chunks and asks for citations. Integrate hosted LLM API.",
+        "Week 4: Front‑end prototype – file upload UI, question input, display answer with clickable citations linking back to source PDF page/segment.",
+        "Week 5: Automated tests (unit, integration, privacy), load‑test retrieval under 500 concurrent users, implement rate limiting and cost‑monitoring hooks.",
+        "Week 6: Beta launch to 500 pilot users, collect feedback, iterate on prompt engineering, finalize monitoring dashboards, prepare scaling plan for 20 k users."
+    ]
+}

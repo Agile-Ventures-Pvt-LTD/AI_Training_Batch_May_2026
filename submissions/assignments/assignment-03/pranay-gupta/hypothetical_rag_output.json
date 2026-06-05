@@ -1,0 +1,190 @@
+[
+  {
+    "question_id": "HQ1",
+    "user_query": "What should a board member ask about risks that could prevent Tesla from meeting production, delivery, or scaling expectations?",
+    "retrieved_hypothetical_questions": [
+      {
+        "hypothetical_question": "What are the potential risks and uncertainties that could affect Tesla's business?",
+        "parent_chunk_id": "text_911",
+        "section": "",
+        "year": ""
+      },
+      {
+        "hypothetical_question": "What are the potential risks that could harm Tesla's business, prospects, financial condition, and operating results?",
+        "parent_chunk_id": "text_918",
+        "section": "",
+        "year": ""
+      },
+      {
+        "hypothetical_question": "What are some of the risks that could harm Tesla's business, financial condition, and operating results?",
+        "parent_chunk_id": "text_204",
+        "section": "",
+        "year": ""
+      }
+    ],
+    "parent_chunks_used": [
+      {
+        "chunk_id": "text_204",
+        "source_doc": "",
+        "section": "",
+        "year": ""
+      },
+      {
+        "chunk_id": "text_911",
+        "source_doc": "",
+        "section": "",
+        "year": ""
+      },
+      {
+        "chunk_id": "text_918",
+        "source_doc": "",
+        "section": "",
+        "year": ""
+      },
+      {
+        "chunk_id": "text_919",
+        "source_doc": "",
+        "section": "",
+        "year": ""
+      }
+    ],
+    "final_answer": "Any delays we may experience in scaling manufacturing, delivery and service operations to meet demand, competition and uncertainty regarding the future of electric vehicles or our other products and services, and our quarterly production and sales performance compared with market expectations.",
+    "citations": [],
+    "comparison_with_baseline": "Added global deduplication + diversity constraint to eliminate repetitive hypothetical question generation and improve retrieval quality."
+  },
+  {
+    "question_id": "HQ2",
+    "user_query": "How should an analyst investigate the relationship between product defects, warranty or service obligations, customer trust, and brand risk?",
+    "retrieved_hypothetical_questions": [
+      {
+        "hypothetical_question": "What are the potential risks associated with defects in the company's products or features?",
+        "parent_chunk_id": "text_2284",
+        "section": "",
+        "year": ""
+      },
+      {
+        "hypothetical_question": "What are the potential risks associated with the company's products and features having latent defects or errors?",
+        "parent_chunk_id": "text_2285",
+        "section": "",
+        "year": ""
+      },
+      {
+        "hypothetical_question": "How does the company face risks associated with the potential failure of its products or features?",
+        "parent_chunk_id": "text_2285",
+        "section": "",
+        "year": ""
+      }
+    ],
+    "parent_chunks_used": [
+      {
+        "chunk_id": "text_2284",
+        "source_doc": "",
+        "section": "",
+        "year": ""
+      },
+      {
+        "chunk_id": "text_2285",
+        "source_doc": "",
+        "section": "",
+        "year": ""
+      }
+    ],
+    "final_answer": "The principal considerations for our determination that performing procedures relating to the automotive warranty reserve is a critical audit matter are the significant judgment by management in determining the warranty reserve; this in turn led to significant auditor judgment, subjectivity, and effort in performing procedures to evaluate the estimate of the nature, frequency and costs of future claims, and the audit effort involved the use of professionals with specialized skill and knowledge.\n\nAddressing the matter involved performing procedures and evaluating audit evidence in connection with forming our overall opinion on the consolidated financial statements. These procedures included testing the effectiveness of controls relating to management’s estimate of the automotive warranty reserve, including controls over management’s estimate of the nature, frequency and costs of future claims as well as the completeness and accuracy of actual claims incurred to date. These procedures also included, among others, testing management’s process for determining the automotive warranty reserve. This included evaluating the appropriateness of the model applied and the reasonableness of significant assumptions related to the nature and frequency of future claims and the related costs to repair or replace items under warranty.\n\nEvaluating the assumptions related to the nature and frequency of future claims and the related costs to repair or replace items under warranty involved evaluating whether the assumptions used were reasonable considering current and past performance, including a lookback analysis comparing prior period forecasted claims to actual claims incurred. These procedures also included developing an independent estimate of a portion of the warranty accrual, comparing the independent estimate to management’s estimate to evaluate the reasonableness of the estimate, and testing the completeness and accuracy of historical vehicle claims.\n\nProfessionals with specialized skill and knowledge were used to assist in evaluating the appropriateness of aspects of management’s model for estimating the nature and frequency of future claims, and testing management’s warranty reserve for a portion of future warranty claims.\n\nTo investigate the relationship between product defects, warranty or service obligations, customer trust, and brand risk, an analyst should consider the following:\n\n- Evaluate the effectiveness of controls relating to management’s estimate of the warranty reserve, including controls over management’s estimate of the nature, frequency and costs of future claims.\n- Test management’s process for determining the warranty reserve, including evaluating the appropriateness of the model applied and the reasonableness of significant assumptions related to the nature and frequency of future claims and the related costs to repair or replace items under warranty.\n- Develop an independent estimate of a portion of the warranty accrual, comparing the independent estimate to management’s estimate to evaluate the reasonableness of the estimate.\n- Test the completeness and accuracy of historical vehicle claims processed and that such claims were appropriately used by management in the estimation of future claims.\n- Consider the use of professionals with specialized skill and knowledge to assist in evaluating the appropriateness of aspects of management’s model for estimating the nature and frequency of future claims, and testing management’s warranty reserve for a portion of future warranty claims.",
+    "citations": [],
+    "comparison_with_baseline": "Added global deduplication + diversity constraint to eliminate repetitive hypothetical question generation and improve retrieval quality."
+  },
+  {
+    "question_id": "HQ3",
+    "user_query": "What evidence helps determine whether future cash flow depends more on capital expenditure discipline, working capital, or operating income?",
+    "retrieved_hypothetical_questions": [
+      {
+        "hypothetical_question": "What are the significant factors that affect our cash flows from operating activities, and how do they compare to previous years?",
+        "parent_chunk_id": "text_3124",
+        "section": "",
+        "year": ""
+      },
+      {
+        "hypothetical_question": "What are the primary drivers of the company's cash flows from operating activities?",
+        "parent_chunk_id": "text_1037",
+        "section": "",
+        "year": ""
+      },
+      {
+        "hypothetical_question": "What are the primary drivers of the company's cash flows from investing activities?",
+        "parent_chunk_id": "text_1038",
+        "section": "",
+        "year": ""
+      }
+    ],
+    "parent_chunks_used": [
+      {
+        "chunk_id": "text_1037",
+        "source_doc": "",
+        "section": "",
+        "year": ""
+      },
+      {
+        "chunk_id": "text_1038",
+        "source_doc": "",
+        "section": "",
+        "year": ""
+      },
+      {
+        "chunk_id": "text_3124",
+        "source_doc": "",
+        "section": "",
+        "year": ""
+      }
+    ],
+    "final_answer": "Cash from vehicle sales and related servicing, customer lease and financing payments, customer deposits, cash from sales of regulatory credits and energy generation and storage products, and interest income on our cash and investments portfolio.",
+    "citations": [],
+    "comparison_with_baseline": "Added global deduplication + diversity constraint to eliminate repetitive hypothetical question generation and improve retrieval quality."
+  },
+  {
+    "question_id": "HQ4",
+    "user_query": "Which disclosures help evaluate technology, cybersecurity, data, or AI operational risk even if the user does not explicitly say “cybersecurity”?",
+    "retrieved_hypothetical_questions": [
+      {
+        "hypothetical_question": "What are the conditions under which information is disclosed?",
+        "parent_chunk_id": "text_740",
+        "section": "",
+        "year": ""
+      },
+      {
+        "hypothetical_question": "What is the purpose of evaluating disclosure controls and procedures?",
+        "parent_chunk_id": "text_551",
+        "section": "",
+        "year": ""
+      },
+      {
+        "hypothetical_question": "What is the conclusion of the evaluation of disclosure controls and procedures as of December 31, 2019?",
+        "parent_chunk_id": "text_551",
+        "section": "",
+        "year": ""
+      }
+    ],
+    "parent_chunks_used": [
+      {
+        "chunk_id": "text_551",
+        "source_doc": "",
+        "section": "",
+        "year": ""
+      },
+      {
+        "chunk_id": "text_740",
+        "source_doc": "",
+        "section": "",
+        "year": ""
+      },
+      {
+        "chunk_id": "text_1252",
+        "source_doc": "",
+        "section": "",
+        "year": ""
+      }
+    ],
+    "final_answer": "We also rely on service providers, and similar incidents relating to their information technology systems could also have a material adverse effect on our business. Our service providers, including our workforce management software provider, have been subject to ransomware and other security incidents, and we cannot guarantee that our or our service providers’ systems have not been breached or that they do not contain exploitable defects, bugs, or vulnerabilities that could result in a security incident, or other disruption to, our or our service providers’ systems. Our ability to monitor our service providers’ security measures is limited, and, in any event, malicious third parties may be able to circumvent those security measures.\n\nOur information technology systems or data, or those of our service providers or customers or users could be subject to cyber-attacks or other security incidents, which could result in data breaches, intellectual property theft, claims, litigation, regulatory investigations, significant liability, reputational damage and other adverse consequences.\n\nThis includes the implementation of new internally developed systems and the deployment of such systems in the U.S. and abroad. While, we maintain information technology measures designed to protect us against intellectual property theft, data breaches, sabotage and other external or internal cyber-attacks or misappropriation, our systems and those of our service providers are potentially vulnerable to malware, ransomware, viruses, denial-of-service attacks, phishing attacks, social engineering, computer hacking, unauthorized access, exploitation of bugs, defects and vulnerabilities, breakdowns, damage, interruptions, system malfunctions, power outages, terrorism, acts of vandalism, security breaches, security incidents, inadvertent or intentional actions by employees or other third parties, and other cyber-attacks.\n\nTo the extent any security incident results in unauthorized access or damage to or acquisition, use, corruption, loss, destruction, alteration or disclosure of our information technology systems or data, or those of our service providers or customers or users, it could disrupt our business, harm our reputation, compel us to comply with applicable data breach notification laws, subject us to time consuming, distracting and expensive litigation, regulatory investigation and oversight, mandatory corrective action, require us to verify the correctness of database contents, or otherwise subject us to liability under laws, regulations and contractual obligations, including those that protect the privacy and security of personal information. This could result in increased costs to us and result in significant legal and financial exposure and/or reputational harm.",
+    "citations": [],
+    "comparison_with_baseline": "Added global deduplication + diversity constraint to eliminate repetitive hypothetical question generation and improve retrieval quality."
+  }
+]
