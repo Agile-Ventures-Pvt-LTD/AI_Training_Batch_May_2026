@@ -1,0 +1,20 @@
+{
+  "scores": {
+    "empathy": 5,
+    "correctness": 5,
+    "actionability": 4,
+    "policy_safety": 5,
+    "tone_alignment": 5,
+    "completeness": 5
+  },
+  "strengths": [
+    "The response acknowledges the customer's frustration and shows empathy towards their situation.",
+    "The response requests necessary information to expedite the resolution of the billing issue and escalates the matter to the billing support team.",
+    "The tone of the response is professional and empathetic, aligning with the requested tone."
+  ],
+  "improvement_areas": [
+    "The response could provide a more specific timeline for when the customer can expect a personal update on the resolution.",
+    "The response does not explicitly state what the customer can expect in terms of a refund or correction of the duplicate charge, which might be a point of clarification."
+  ],
+  "final_review_summary": "The draft response demonstrates a high level of empathy and professionalism, effectively addressing the customer's concerns and escalating the issue to the billing support team. To further improve, providing a more specific timeline for resolution and clarifying the expected outcome regarding the refund or correction of the duplicate charge would be beneficial."
+}

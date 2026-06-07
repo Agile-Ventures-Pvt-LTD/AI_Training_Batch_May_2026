@@ -1,0 +1,6 @@
+{
+  "recommended_team": "BILLING_SUPPORT",
+  "routing_reason": "The issue involves a billing problem with a premium customer who was charged twice after cancelling their subscription, requiring immediate attention from the billing support team.",
+  "internal_note": "URGENT and CRITICAL: Premium customer with unresolved billing issue post-cancellation, previous unsuccessful contacts, and threats of public escalation and financial blockage. Requires expedited review and personalized response to mitigate reputational and financial risks.",
+  "required_follow_up_information": ["Invoice ID", "Registered account email"]
+}

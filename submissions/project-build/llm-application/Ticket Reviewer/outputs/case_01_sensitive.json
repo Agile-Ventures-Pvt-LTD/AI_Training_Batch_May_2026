@@ -1,0 +1,11 @@
+{
+  "sensitive_information_detected": true,
+  "sensitive_categories": ["PAYMENT_INFORMATION", "PERSONAL_INFORMATION"],
+  "evidence_summary": "The customer mentions being charged twice and noticing duplicate invoice amounts on their bank statement, and also provides their name.",
+  "handling_recommendations": [
+    "Redact or remove any personal identifiers and payment details from the ticket before further processing.",
+    "Verify the customer's account and billing information before taking any action.",
+    "Escalate the issue to billing support as per business rules for premium customers.",
+    "Respond to the customer in a professional and empathetic tone, without confirming any refund or cancellation without verification."
+  ]
+}

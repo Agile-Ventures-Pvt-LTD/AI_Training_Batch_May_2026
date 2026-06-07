@@ -1,0 +1,6 @@
+{
+  "primary_category": "BILLING_ISSUE",
+  "secondary_categories": ["CANCELLATION_OR_REFUND", "ESCALATION_COMPLAINT"],
+  "category_reasoning_summary": "The customer reports being charged twice after cancelling their premium subscription and not receiving a proper response from support, which is a billing issue. The customer's frustration and threat to escalate publicly make ESCALATION_COMPLAINT a secondary category. CANCELLATION_OR_REFUND is also added as secondary because the customer is requesting a refund for the incorrect charge.",
+  "confidence_score": 0.96
+}

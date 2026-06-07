@@ -1,0 +1,6 @@
+{
+  "sentiment": "FRUSTRATED",
+  "emotion_signals": ["extremely frustrating", "If this is not resolved today", "will escalate this publicly on LinkedIn"],
+  "sentiment_reasoning_summary": "The customer expresses frustration due to being charged twice and not receiving a proper response from support, indicating a strong negative emotional tone. The use of urgency language and threats of public escalation further emphasize the customer's frustration and urgency to resolve the issue.",
+  "confidence_score": 0.9
+}

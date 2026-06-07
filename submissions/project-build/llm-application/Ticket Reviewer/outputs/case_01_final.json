@@ -1,0 +1,121 @@
+{
+  "ticket_summary": {
+    "short_summary": "Amit, a Premium customer, was charged twice for their subscription and hasn't received a response from support despite two attempts. They're requesting an immediate refund for the incorrect charge. The issue needs urgent resolution to prevent public escalation and potential blockage of future payments.",
+    "customer_problem": "The customer was charged twice for their premium subscription after attempting to cancel it, and is not receiving support responses.",
+    "business_impact": "If unresolved, the issue may lead to public escalation on LinkedIn and blockage of future payments, potentially damaging the company's reputation and losing a premium customer.",
+    "customer_requested_action": "Refund the incorrect charge immediately",
+    "important_context": [
+      "Customer is a Premium subscriber",
+      "Previous two support interactions were unresponsive",
+      "Customer has threatened public escalation and blockage of payments"
+    ],
+    "missing_information": [
+      "Invoice ID or details",
+      "Verification of cancellation request",
+      "Registered account email for verification"
+    ]
+  },
+  "classification": {
+    "primary_category": "BILLING_ISSUE",
+    "secondary_categories": [
+      "CANCELLATION_OR_REFUND",
+      "ESCALATION_COMPLAINT"
+    ],
+    "category_reasoning_summary": "The customer reports being charged twice after cancelling their premium subscription and not receiving a proper response from support, which is a billing issue. The customer's frustration and threat to escalate publicly make ESCALATION_COMPLAINT a secondary category. CANCELLATION_OR_REFUND is also added as secondary because the customer is requesting a refund for the incorrect charge.",
+    "confidence_score": 0.96
+  },
+  "sentiment_analysis": {
+    "sentiment": "FRUSTRATED",
+    "emotion_signals": [
+      "extremely frustrating",
+      "If this is not resolved today",
+      "will escalate this publicly on LinkedIn"
+    ],
+    "sentiment_reasoning_summary": "The customer expresses frustration due to being charged twice and not receiving a proper response from support, indicating a strong negative emotional tone. The use of urgency language and threats of public escalation further emphasize the customer's frustration and urgency to resolve the issue.",
+    "confidence_score": 0.9
+  },
+  "priority_and_risk": {
+    "priority": "URGENT",
+    "escalation_risk": "CRITICAL",
+    "risk_triggers": [
+      "Premium customer with billing issue after cancellation",
+      "Previous interactions with support were unsuccessful",
+      "Threat of public escalation on LinkedIn",
+      "Threat to block future payments via finance team",
+      "High sentiment of frustration and urgency"
+    ],
+    "recommended_sla_action": "Immediately escalate to billing support for expedited review and resolution, and provide a personal apology and update to the customer.",
+    "reasoning_summary": "The combination of a premium customer, a billing issue post-cancellation, unsuccessful prior contacts, and explicit threats of public and financial escalation, along with a high frustration sentiment, necessitates URGENT priority and CRITICAL escalation risk. Prompt and personalized attention is required to mitigate reputational and financial risks."
+  },
+  "sensitive_information_check": {
+    "sensitive_information_detected": true,
+    "sensitive_categories": [
+      "PAYMENT_INFORMATION",
+      "PERSONAL_INFORMATION"
+    ],
+    "evidence_summary": "The customer mentions being charged twice and noticing duplicate invoice amounts on their bank statement, and also provides their name.",
+    "handling_recommendations": [
+      "Redact or remove any personal identifiers and payment details from the ticket before further processing.",
+      "Verify the customer's account and billing information before taking any action.",
+      "Escalate the issue to billing support as per business rules for premium customers.",
+      "Respond to the customer in a professional and empathetic tone, without confirming any refund or cancellation without verification."
+    ]
+  },
+  "routing_recommendation": {
+    "recommended_team": "BILLING_SUPPORT",
+    "routing_reason": "The issue involves a billing problem with a premium customer who was charged twice after cancelling their subscription, requiring immediate attention from the billing support team.",
+    "internal_note": "URGENT and CRITICAL: Premium customer with unresolved billing issue post-cancellation, previous unsuccessful contacts, and threats of public escalation and financial blockage. Requires expedited review and personalized response to mitigate reputational and financial risks.",
+    "required_follow_up_information": [
+      "Invoice ID",
+      "Registered account email"
+    ]
+  },
+  "draft_customer_response": {
+    "draft_response": "Dear Amit, I apologize for the frustration and inconvenience you've experienced with being charged twice for your premium subscription after attempting to cancel it, and not receiving a proper response from our support team despite your two previous attempts. I understand that this situation is extremely frustrating for you, and I'm truly sorry that we've fallen short of our service standards. To better assist you, could you please provide us with your invoice ID or the registered email address associated with your account? This information will help our billing support team to expedite the review of your case. We will verify the details of your cancellation request and the duplicate charge with our billing team. Your issue has been escalated to our billing support team for immediate attention, and we will provide you with a personal update on the resolution. Please be assured that we're taking your concerns seriously and are committed to resolving this matter as soon as possible.",
+    "response_strategy": "The response aims to acknowledge Amit's concerns, show empathy, and request necessary information to expedite the resolution of the billing issue while escalating the matter to the billing support team.",
+    "assumptions": [
+      "The customer has indeed cancelled their subscription and is being incorrectly charged",
+      "The customer's previous interactions with support were not resolved to their satisfaction"
+    ],
+    "information_needed_before_sending": [
+      "Verification of the customer's account details",
+      "Confirmation of the billing issue from the billing support team"
+    ]
+  },
+  "response_quality_review": {
+    "scores": {
+      "empathy": 5,
+      "correctness": 5,
+      "actionability": 4,
+      "policy_safety": 5,
+      "tone_alignment": 5,
+      "completeness": 5
+    },
+    "strengths": [
+      "The response acknowledges the customer's frustration and shows empathy towards their situation.",
+      "The response requests necessary information to expedite the resolution of the billing issue and escalates the matter to the billing support team.",
+      "The tone of the response is professional and empathetic, aligning with the requested tone."
+    ],
+    "improvement_areas": [
+      "The response could provide a more specific timeline for when the customer can expect a personal update on the resolution.",
+      "The response does not explicitly state what the customer can expect in terms of a refund or correction of the duplicate charge, which might be a point of clarification."
+    ],
+    "final_review_summary": "The draft response demonstrates a high level of empathy and professionalism, effectively addressing the customer's concerns and escalating the issue to the billing support team. To further improve, providing a more specific timeline for resolution and clarifying the expected outcome regarding the refund or correction of the duplicate charge would be beneficial."
+  },
+  "generation_metadata": {
+    "model_used": "llama-3.3-70b-versatile",
+    "temperature": 0.2,
+    "total_steps_completed": 8,
+    "steps": [
+      "summarization",
+      "classification",
+      "sentiment",
+      "priority_risk",
+      "sensitive_info",
+      "routing",
+      "draft_response",
+      "quality_review"
+    ],
+    "timestamp": "2026-06-08T00:02:27.108223"
+  }
+}

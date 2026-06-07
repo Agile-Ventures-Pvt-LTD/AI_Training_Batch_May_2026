@@ -1,0 +1,13 @@
+{
+  "priority": "URGENT",
+  "escalation_risk": "CRITICAL",
+  "risk_triggers": [
+    "Premium customer with billing issue after cancellation",
+    "Previous interactions with support were unsuccessful",
+    "Threat of public escalation on LinkedIn",
+    "Threat to block future payments via finance team",
+    "High sentiment of frustration and urgency"
+  ],
+  "recommended_sla_action": "Immediately escalate to billing support for expedited review and resolution, and provide a personal apology and update to the customer.",
+  "reasoning_summary": "The combination of a premium customer, a billing issue post-cancellation, unsuccessful prior contacts, and explicit threats of public and financial escalation, along with a high frustration sentiment, necessitates URGENT priority and CRITICAL escalation risk. Prompt and personalized attention is required to mitigate reputational and financial risks."
+}

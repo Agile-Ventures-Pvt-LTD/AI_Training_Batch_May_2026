@@ -1,0 +1,8 @@
+{
+  "short_summary": "Amit, a Premium customer, was charged twice for their subscription and hasn't received a response from support despite two attempts. They're requesting an immediate refund for the incorrect charge. The issue needs urgent resolution to prevent public escalation and potential blockage of future payments.",
+  "customer_problem": "The customer was charged twice for their premium subscription after attempting to cancel it, and is not receiving support responses.",
+  "business_impact": "If unresolved, the issue may lead to public escalation on LinkedIn and blockage of future payments, potentially damaging the company's reputation and losing a premium customer.",
+  "customer_requested_action": "Refund the incorrect charge immediately",
+  "important_context": ["Customer is a Premium subscriber", "Previous two support interactions were unresponsive", "Customer has threatened public escalation and blockage of payments"],
+  "missing_information": ["Invoice ID or details", "Verification of cancellation request", "Registered account email for verification"]
+}
