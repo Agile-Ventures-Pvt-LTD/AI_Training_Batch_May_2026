@@ -86,6 +86,8 @@ GROQ_API_KEY=your_groq_api_key_here
 
 
 ## 10. Sample Questions
+supportive queries are mentioned at sample_queries.md
+Here are some:
 
 What is the total revenue from completed orders
 Show top 5 products by sales
