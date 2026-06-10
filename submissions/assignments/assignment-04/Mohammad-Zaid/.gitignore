@@ -1,0 +1,74 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+
+legacy-venv/
+modern-venv/
+venv/
+.env/
+
+# Environment Variables
+
+.env
+.env.local
+
+# Jupyter Notebooks
+
+.ipynb_checkpoints/
+
+# Pytest
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# VS Code
+
+.vscode/
+
+# JetBrains IDEs
+
+.idea/
+
+# OS Files
+
+.DS_Store
+Thumbs.db
+
+# Logs
+
+*.log
+
+# Python Build Files
+
+build/
+dist/
+*.egg-info/
+
+# Streamlit
+
+.streamlit/secrets.toml
+
+# LangSmith
+
+.langsmith/
+
+# Temporary Files
+
+*.tmp
+*.temp
+
+# SQLite WAL Files
+
+*.db-wal
+*.db-shm
+
+# Ignore local database only if evaluator recreates it
+
+# Comment this line if you want to submit the seeded database
+
+# data/ecommerce.db
