@@ -24,10 +24,16 @@ jobs:
 
     steps:
       - name: Checkout participant code
+	uses: actions/checkout@v4
+	with:
+	  ref: ${{ github.event.pull_request.head.sha }}
+	  path: participant-code
+	 
+      - name: Checkout main branch scripts
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
-
+	with:
+    	  ref: main
+    	  path: main-code
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -54,7 +60,9 @@ jobs:
         run: |
           PARTICIPANT="${{ steps.participant.outputs.participant_name }}"
 
-          find submissions -type d -name "$PARTICIPANT" -print > participant_paths.txt
+          cd participant-code
+	  find submissions -type d -name "$PARTICIPANT" -print > ../participant_paths.txt
+	  cd ..
 
           echo "# AI Review Combined Report" > ai_review_report.md
           echo "" >> ai_review_report.md
@@ -77,10 +85,10 @@ jobs:
 
             SAFE_NAME=$(echo "$submission_path" | tr '/' '-')
 
-            python .github/scripts/ai_review_submission.py \
-              --participant "$PARTICIPANT" \
-              --submission-path "$submission_path" \
-              --output "ai_review_${SAFE_NAME}.md"
+            python main-code/.github/scripts/ai_review_submission.py \
+  	     --participant "$PARTICIPANT" \
+             --submission-path "participant-code/$submission_path" \
+  	     --output "ai_review_${SAFE_NAME}.md"
 
             cat "ai_review_${SAFE_NAME}.md" >> ai_review_report.md
             echo "" >> ai_review_report.md
