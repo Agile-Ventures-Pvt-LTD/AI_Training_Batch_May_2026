@@ -77,7 +77,7 @@ This project is an AI-powered E-Commerce Database Assistant that allows users to
 ## Project Structure
 
 ```text
-ecommerce-agent-assignment/
+assignment-04/taniya-gupta
 
 ├── README.md
 ├── .env.examples
@@ -117,7 +117,7 @@ ecommerce-agent-assignment/
 Create a `.env` file:
 
 ```env
-GROQ_API_KEY=your_groq_api_key
+GROQ_API_KEY=your_groq_api_key_here
 ```
 
 ---
@@ -127,8 +127,8 @@ GROQ_API_KEY=your_groq_api_key
 ### Clone Repository
 
 ```bash
-git clone <repository_url>
-cd ecommerce-agent-assignment
+git clone <repo_url>
+cd assignment-04
 ```
 
 ---
