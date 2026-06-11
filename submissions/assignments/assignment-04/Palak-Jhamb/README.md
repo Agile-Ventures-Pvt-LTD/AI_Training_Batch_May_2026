@@ -281,3 +281,135 @@ Yes, Amit Verma has placed orders in the system.
 * Modular project structure
 * Secure read-only database access
 
+## Testing
+
+The project includes automated test scripts to verify the database, tool functionality, and end-to-end agent behavior.
+
+### Test Structure
+
+```text
+tests/
+├── test_database.py
+├── test_sql_tool.py
+└── test_agent_queries.py
+```
+
+---
+
+### 1. Database Test
+
+**File:** `tests/test_database.py`
+
+Purpose:
+
+* Verifies that the SQLite database exists.
+* Verifies all required tables are present.
+* Displays table structures.
+* Displays record counts for each table.
+* Generates a test report.
+
+Output file:
+
+```text
+test_results/database_output.txt
+```
+
+Run:
+
+```bash
+python -m test.test_database
+```
+
+---
+
+### 2. SQL Tool Test
+
+**File:** `tests/test_sql_tool.py`
+
+Purpose:
+
+* Verifies the database tool is available.
+* Displays tool name and description.
+* Executes a sample SQL query.
+* Confirms successful tool execution.
+* Generates a test report.
+
+Output file:
+
+```text
+test_results/tool_output.txt
+```
+
+Run:
+
+```bash
+python -m test.test_sql_tool
+```
+
+---
+
+### 3. Agent Query Test
+
+**File:** `tests/test_agent_queries.py`
+
+Purpose:
+
+* Executes predefined business questions against the agent.
+* Verifies SQL generation, tool usage, database retrieval, and response generation.
+* Saves all questions and answers to a report file.
+
+Output file:
+
+```text
+test_results/agent_output.txt
+```
+
+Run:
+
+```bash
+python -m test.test_agent_queries
+```
+
+---
+
+### Test Queries Used
+
+The following assignment-supported queries are used for validation:
+
+1. What is the total revenue from completed orders?
+2. Which customer has spent the most money?
+3. Show the top 5 products by quantity sold.
+4. Which product category generated the highest revenue?
+5. How many orders are pending?
+6. Show all cancelled orders with customer names.
+7. Which customers are from Delhi?
+8. Which products have stock below 10?
+9. What is the average order value?
+10. Show total revenue by month.
+11. Which city has the highest number of customers?
+12. Which customers have placed more than 2 orders?
+13. What are the top 3 most expensive products?
+14. Which product has never been ordered?
+15. Show total sales by product category.
+
+---
+
+### Generated Test Reports
+
+After executing all tests, the following reports are generated:
+
+```text
+test_results/
+├── database_output.txt
+├── tool_output.txt
+└── agent_output.txt
+```
+
+These reports provide evidence that:
+
+* The database was created successfully.
+* The custom SQL tool is functioning correctly.
+* The agent can generate SQL queries, retrieve data, and produce business-friendly responses.
+
+```
+```
