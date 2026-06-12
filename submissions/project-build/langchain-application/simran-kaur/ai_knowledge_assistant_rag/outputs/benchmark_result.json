@@ -1,0 +1,7 @@
+{
+  "query_type": "FACTUAL_LOOKUP",
+  "requires_retrieval": true,
+  "requires_comparison": false,
+  "answer_style": "concise list with brief explanations",
+  "reasoning_summary": "The user asks for the major risks that Tesla mentions, which requires retrieving Tesla's disclosed risk factors (e.g., from its latest SEC Form 10‑K or 10‑Q). This is a factual lookup, not a comparison, so we set requires_retrieval to true and provide a concise list of the key risk categories."
+}

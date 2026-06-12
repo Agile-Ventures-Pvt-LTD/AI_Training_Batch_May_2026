@@ -1,0 +1,17 @@
+python-dotenv>=1.2.2
+ipykernel>=7.2.0
+
+groq>=0.30.0,<1.0.0
+
+langchain>=1.0.0
+langchain-core>=1.0.0
+langchain-groq>=1.0.0
+langchain-experimental>=0.3.4
+langgraph>=0.6.0
+
+pandas>=2.2.2
+kagglehub>=0.3.13
+pytest>=8.0.0
+
+#pytest still need to be added in both environments
+# langgraph-prebuilt>=1.1.0
