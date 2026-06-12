@@ -1,0 +1,11 @@
+# Python-generated files
+__pycache__/
+
+# Virtual environments
+.venv
+
+#Environmental variables
+.env
+
+#data
+data\helpdesk_agent_db_package\
