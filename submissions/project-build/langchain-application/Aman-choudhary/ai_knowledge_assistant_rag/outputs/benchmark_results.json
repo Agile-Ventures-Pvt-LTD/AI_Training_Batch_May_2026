@@ -1,0 +1,76 @@
+[
+    {
+        "question": "What are Tesla\u2019s main business segments described in the filings?",
+        "answer": "North America, International, and AWS",
+        "supporting_evidence": [
+            "We have organized our operations into three segments: North America, International, and AWS."
+        ],
+        "sources": [
+            "Results of Operations",
+            "Note 10 \u2014 SEGMENT INFORMATION"
+        ],
+        "confidence": "HIGH",
+        "answerability": "ANSWERED"
+    },
+    {
+        "question": "who is the ceo of tesla",
+        "answer": "NOT_FOUND",
+        "supporting_evidence": [],
+        "sources": [],
+        "confidence": "HIGH",
+        "answerability": "NOT_FOUND"
+    },
+    {
+        "question": "\"AWS AI revenue run rate was over $15 billion in Q1 2026",
+        "answer": "AWS AI revenue run rate was over $15 billion in Q1 2026",
+        "supporting_evidence": [
+            "AWS\u2019s AI revenue run rate is over $15 billion in Q1 2026 (nearly 260 times larger than AWS at that same point)\u2014and ascending rapidly."
+        ],
+        "sources": [
+            "2/ Amazon is smack in the middle of this land rush, and companies are choosing AWS for AI. Three years after AWS launched commercially, it had a $58 million revenue run rate. Three years into this AI wave, AWS\u2019s AI revenue run rate is over $15 billion in Q1 2026 (nearly 260 times larger than AWS at that same point)\u2014and ascending rapidly."
+        ],
+        "confidence": "HIGH",
+        "answerability": "ANSWERED"
+    },
+    {
+        "question": " What are Tesla\u2019s main business segments described in the filings?",
+        "answer": "North America, International, and AWS",
+        "supporting_evidence": [
+            "We have organized our operations into three segments: North America, International, and AWS."
+        ],
+        "sources": [
+            "Results of Operations",
+            "Note 10 \u2014 SEGMENT INFORMATION"
+        ],
+        "confidence": "HIGH",
+        "answerability": "ANSWERED"
+    },
+    {
+        "question": ". What are Tesla\u2019s main business segments described in the filings?",
+        "answer": "North America, International, and AWS",
+        "supporting_evidence": [
+            "We have organized our operations into three segments: North America, International, and AWS.",
+            "We have organized our operations into three segments: North America, International, and AWS."
+        ],
+        "sources": [
+            "Results of Operations",
+            "Note 10 \u2014 SEGMENT INFORMATION"
+        ],
+        "confidence": "HIGH",
+        "answerability": "ANSWERED"
+    },
+    {
+        "question": ". What are Tesla\u2019s main business segments described in the filings?",
+        "answer": "North America, International, and AWS",
+        "supporting_evidence": [
+            "We have organized our operations into three segments: North America, International, and AWS.",
+            "We have organized our operations into three segments: North America, International, and AWS."
+        ],
+        "sources": [
+            "Results of Operations",
+            "Note 10 \u2014 SEGMENT INFORMATION"
+        ],
+        "confidence": "HIGH",
+        "answerability": "ANSWERED"
+    }
+]
