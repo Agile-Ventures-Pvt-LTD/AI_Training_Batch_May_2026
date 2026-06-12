@@ -35,11 +35,11 @@ with open(output_file, "w") as f:
     json.dump(raw_response, f, indent=4)
 my_dict = json.loads(raw_response)
 
-current_condition = my_dict['requires_retrieval']
 
+current_condition=my_dict["requires_retrieval"]
 
 print(my_dict)
-if my_dict[current_condition]==True:
+if current_condition ==True:
     from retriever import retrieve_documents
     retrieved_docs = retrieve_documents(vectorstore, user_query)
     print(retrieved_docs)
@@ -47,6 +47,8 @@ if my_dict[current_condition]==True:
         doc.page_content
         for doc in retrieved_docs
     )
+else:
+    context="not required"
 # from retriever import retrieve_documents
 # retrieved_docs = retrieve_documents(vectorstore, user_query)
 # print(retrieved_docs)
@@ -54,7 +56,7 @@ if my_dict[current_condition]==True:
 #         doc.page_content
 #         for doc in retrieved_docs
 #     )
-context="not required"
+
 
 
 from prompts import rag_system, rag_user
