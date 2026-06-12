@@ -1,0 +1,92 @@
+[
+    {
+        "case_name": "case_2_1_few_shot_ticket_classification",
+        "prompt": "You are a customer support ticket classification system.\n\nYour task is to classify customer support tickets into exactly one category.\n\nPossible Categories:\n- BILLING_ISSUE\n- TECHNICAL_BUG\n- ACCOUNT_ACCESS\n- FEATURE_REQUEST\n- COMPLIANCE_CONCERN\n- ESCALATION_RISK\n\nInstructions:\n- Classify based on the primary intent of the ticket.\n- Angry tone may increase priority but does not automatically change category.\n- Distinguish compliance concerns from technical issues.\n- Distinguish feature requests from operational problems.\n- Return ONLY valid JSON.\n- Do not include markdown formatting.\n- Do not include explanations outside JSON.\n\nRequired Output Schema:\n[\n    {\n        \"ticket\": \"\",\n        \"category\": \"\",\n        \"priority\": \"LOW | MEDIUM | HIGH | URGENT\",\n        \"justification\": \"\"\n    }\n]\n\nExamples:\n\nTicket:\n\"I was charged twice for the same invoice and nobody from billing has responded.\"\n\nOutput:\n{\n    \"ticket\": \"I was charged twice for the same invoice and nobody from billing has responded.\",\n    \"category\": \"BILLING_ISSUE\",\n    \"priority\": \"HIGH\",\n    \"justification\": \"The primary issue is duplicate billing with delayed support response.\"\n}\n\nTicket:\n\"Our users cannot log in after the latest release deployment.\"\n\nOutput:\n{\n    \"ticket\": \"Our users cannot log in after the latest release deployment.\",\n    \"category\": \"ACCOUNT_ACCESS\",\n    \"priority\": \"URGENT\",\n    \"justification\": \"The core issue involves inability to access accounts affecting multiple users.\"\n}\n\nTicket:\n\"We need confirmation that uploaded documents are not used to train AI models.\"\n\nOutput:\n{\n    \"ticket\": \"We need confirmation that uploaded documents are not used to train AI models.\",\n    \"category\": \"COMPLIANCE_CONCERN\",\n    \"priority\": \"HIGH\",\n    \"justification\": \"The request relates to privacy, data governance, and AI usage concerns.\"\n}\n\nTicket:\n\"Can you add approval workflows before expense submissions are finalized?\"\n\nOutput:\n{\n    \"ticket\": \"Can you add approval workflows before expense submissions are finalized?\",\n    \"category\": \"FEATURE_REQUEST\",\n    \"priority\": \"MEDIUM\",\n    \"justification\": \"The customer is requesting a new workflow capability.\"\n}\n\nTicket:\n\"The dashboard crashes whenever we export reports after the new update.\"\n\nOutput:\n{\n    \"ticket\": \"The dashboard crashes whenever we export reports after the new update.\",\n    \"category\": \"TECHNICAL_BUG\",\n    \"priority\": \"HIGH\",\n    \"justification\": \"The issue describes broken application functionality after an update.\"\n}\n\nNow classify the following tickets:\n\n1. I was charged twice this month and your support team has not replied for five days. I am going to post this on social media if this is not fixed today.\n\n2. The export button stopped working after your latest update. Our reporting team is blocked.\n\n3. Can you add approval workflows before invoices are submitted?\n\n4. We need confirmation that our customer data is not being used to train your AI models.\n\n5. My admin account is locked and the password reset email never arrives.",
+        "raw_response": "[\n    {\n        \"ticket\": \"I was charged twice this month and your support team has not replied for five days. I am going to post this on social media if this is not fixed today.\",\n        \"category\": \"BILLING_ISSUE\",\n        \"priority\": \"URGENT\",\n        \"justification\": \"The primary issue is duplicate billing with significantly delayed support response and potential public escalation.\"\n    },\n    {\n        \"ticket\": \"The export button stopped working after your latest update. Our reporting team is blocked.\",\n        \"category\": \"TECHNICAL_BUG\",\n        \"priority\": \"HIGH\",\n        \"justification\": \"The issue describes broken application functionality after an update affecting the reporting team.\"\n    },\n    {\n        \"ticket\": \"Can you add approval workflows before invoices are submitted?\",\n        \"category\": \"FEATURE_REQUEST\",\n        \"priority\": \"MEDIUM\",\n        \"justification\": \"The customer is requesting a new workflow capability for invoice submission.\"\n    },\n    {\n        \"ticket\": \"We need confirmation that our customer data is not being used to train your AI models.\",\n        \"category\": \"COMPLIANCE_CONCERN\",\n        \"priority\": \"HIGH\",\n        \"justification\": \"The request relates to privacy, data governance, and AI usage concerns.\"\n    },\n    {\n        \"ticket\": \"My admin account is locked and the password reset email never arrives.\",\n        \"category\": \"ACCOUNT_ACCESS\",\n        \"priority\": \"HIGH\",\n        \"justification\": \"The core issue involves inability to access an admin account due to password reset issues.\"\n    }\n]",
+        "parsed_output": [
+            {
+                "ticket": "I was charged twice this month and your support team has not replied for five days. I am going to post this on social media if this is not fixed today.",
+                "category": "BILLING_ISSUE",
+                "priority": "URGENT",
+                "justification": "The primary issue is duplicate billing with significantly delayed support response and potential public escalation."
+            },
+            {
+                "ticket": "The export button stopped working after your latest update. Our reporting team is blocked.",
+                "category": "TECHNICAL_BUG",
+                "priority": "HIGH",
+                "justification": "The issue describes broken application functionality after an update affecting the reporting team."
+            },
+            {
+                "ticket": "Can you add approval workflows before invoices are submitted?",
+                "category": "FEATURE_REQUEST",
+                "priority": "MEDIUM",
+                "justification": "The customer is requesting a new workflow capability for invoice submission."
+            },
+            {
+                "ticket": "We need confirmation that our customer data is not being used to train your AI models.",
+                "category": "COMPLIANCE_CONCERN",
+                "priority": "HIGH",
+                "justification": "The request relates to privacy, data governance, and AI usage concerns."
+            },
+            {
+                "ticket": "My admin account is locked and the password reset email never arrives.",
+                "category": "ACCOUNT_ACCESS",
+                "priority": "HIGH",
+                "justification": "The core issue involves inability to access an admin account due to password reset issues."
+            }
+        ],
+        "valid_json": true
+    },
+    {
+        "case_name": "case_2_2_few_shot_api_contract",
+        "prompt": "You are an AI leave-management request parser.\n\nYour task is to convert natural language leave-management requests into structured API contracts.\n\nSupported Actions:\n- APPLY_LEAVE\n- CHECK_BALANCE\n- CANCEL_LEAVE\n- GET_POLICY\n\nInstructions:\n- Do not invent dates, leave types, or reasons.\n- If required information is missing or ambiguous, set requires_clarification to true.\n- Ambiguous phrases like \"next Friday\" or \"sometime next week\" require clarification.\n- Return ONLY valid JSON.\n- Do not include markdown formatting.\n- Do not include explanations outside JSON.\n\nRequired Output Schema:\n[\n    {\n        \"action\": \"\",\n        \"parameters\": {},\n        \"requires_clarification\": true,\n        \"clarification_question\": \"\",\n        \"confidence\": 0.0\n    }\n]\n\nExamples:\n\nUser Request:\n\"I want to take casual leave from 12 June to 15 June because I am travelling.\"\n\nOutput:\n{\n    \"action\": \"APPLY_LEAVE\",\n    \"parameters\": {\n        \"leave_type\": \"casual\",\n        \"start_date\": \"12 June\",\n        \"end_date\": \"15 June\",\n        \"reason\": \"travelling\"\n    },\n    \"requires_clarification\": false,\n    \"clarification_question\": \"\",\n    \"confidence\": 0.95\n}\n\nUser Request:\n\"How many sick leaves do I have left?\"\n\nOutput:\n{\n    \"action\": \"CHECK_BALANCE\",\n    \"parameters\": {\n        \"leave_type\": \"sick\"\n    },\n    \"requires_clarification\": false,\n    \"clarification_question\": \"\",\n    \"confidence\": 0.98\n}\n\nUser Request:\n\"Cancel my leave request for next Friday.\"\n\nOutput:\n{\n    \"action\": \"CANCEL_LEAVE\",\n    \"parameters\": {},\n    \"requires_clarification\": true,\n    \"clarification_question\": \"Please specify the exact date for next Friday.\",\n    \"confidence\": 0.82\n}\n\nUser Request:\n\"What is the policy for maternity leave?\"\n\nOutput:\n{\n    \"action\": \"GET_POLICY\",\n    \"parameters\": {\n        \"leave_type\": \"maternity\"\n    },\n    \"requires_clarification\": false,\n    \"clarification_question\": \"\",\n    \"confidence\": 0.97\n}\n\nUser Request:\n\"I may take off sometime next week.\"\n\nOutput:\n{\n    \"action\": \"APPLY_LEAVE\",\n    \"parameters\": {},\n    \"requires_clarification\": true,\n    \"clarification_question\": \"Please specify the exact leave dates and leave type.\",\n    \"confidence\": 0.75\n}\n\nNow convert the following requests:\n\n1. I want to take leave from 12th June to 15th June because I am travelling.\n\n2. How many casual leaves do I have left?\n\n3. Cancel my leave request for next Friday.\n\n4. What is the policy for maternity leave?\n\n5. I may take off sometime next week, not sure yet.\n\nReturn the final answer as a JSON array only.",
+        "raw_response": "[\n    {\n        \"action\": \"APPLY_LEAVE\",\n        \"parameters\": {\n            \"leave_type\": \"\",\n            \"start_date\": \"12th June\",\n            \"end_date\": \"15th June\",\n            \"reason\": \"travelling\"\n        },\n        \"requires_clarification\": true,\n        \"clarification_question\": \"Please specify the leave type.\",\n        \"confidence\": 0.9\n    },\n    {\n        \"action\": \"CHECK_BALANCE\",\n        \"parameters\": {\n            \"leave_type\": \"casual\"\n        },\n        \"requires_clarification\": false,\n        \"clarification_question\": \"\",\n        \"confidence\": 0.98\n    },\n    {\n        \"action\": \"CANCEL_LEAVE\",\n        \"parameters\": {},\n        \"requires_clarification\": true,\n        \"clarification_question\": \"Please specify the exact date for next Friday.\",\n        \"confidence\": 0.82\n    },\n    {\n        \"action\": \"GET_POLICY\",\n        \"parameters\": {\n            \"leave_type\": \"maternity\"\n        },\n        \"requires_clarification\": false,\n        \"clarification_question\": \"\",\n        \"confidence\": 0.97\n    },\n    {\n        \"action\": \"APPLY_LEAVE\",\n        \"parameters\": {},\n        \"requires_clarification\": true,\n        \"clarification_question\": \"Please specify the exact leave dates and leave type.\",\n        \"confidence\": 0.75\n    }\n]",
+        "parsed_output": [
+            {
+                "action": "APPLY_LEAVE",
+                "parameters": {
+                    "leave_type": "",
+                    "start_date": "12th June",
+                    "end_date": "15th June",
+                    "reason": "travelling"
+                },
+                "requires_clarification": true,
+                "clarification_question": "Please specify the leave type.",
+                "confidence": 0.9
+            },
+            {
+                "action": "CHECK_BALANCE",
+                "parameters": {
+                    "leave_type": "casual"
+                },
+                "requires_clarification": false,
+                "clarification_question": "",
+                "confidence": 0.98
+            },
+            {
+                "action": "CANCEL_LEAVE",
+                "parameters": {},
+                "requires_clarification": true,
+                "clarification_question": "Please specify the exact date for next Friday.",
+                "confidence": 0.82
+            },
+            {
+                "action": "GET_POLICY",
+                "parameters": {
+                    "leave_type": "maternity"
+                },
+                "requires_clarification": false,
+                "clarification_question": "",
+                "confidence": 0.97
+            },
+            {
+                "action": "APPLY_LEAVE",
+                "parameters": {},
+                "requires_clarification": true,
+                "clarification_question": "Please specify the exact leave dates and leave type.",
+                "confidence": 0.75
+            }
+        ],
+        "valid_json": true
+    }
+]

@@ -1,0 +1,24 @@
+﻿{
+  "scores": {
+    "empathy": 4,
+    "correctness": 5,
+    "actionability": 5,
+    "policy_safety": 5,
+    "tone_alignment": 5,
+    "completeness": 4
+  },
+  "strengths": [
+    "Shows genuine empathy and apologizes for the inconvenience.",
+    "Avoids making unsupported claims or promises about refunds.",
+    "Provides clear, actionable next steps by requesting specific missing information.",
+    "Maintains a professional and courteous tone appropriate for a premium customer.",
+    "Ensures policy safety by not committing to actions before verification."
+  ],
+  "improvement_areas": [
+    "Could explicitly reaffirm the high-priority handling due to the customer's premium status and SLA tier.",
+    "Might include an estimated timeline for the next update after the required information is received.",
+    "Could reference that the ticket will be escalated to the Billing Support team immediately, reinforcing urgency."
+  ],
+  "final_review_summary": "The draft response is empathetic, accurate, and safe, with clear next steps for the customer. It would be stronger by explicitly highlighting the premium-customer priority, offering a brief timeline expectation, and confirming immediate escalation to the Billing team."
+}
+

@@ -1,0 +1,117 @@
+﻿{
+  "ticket_intelligence": {
+    "customer_name": "Amit",
+    "customer_type": "Premium",
+    "product_area": "Billing and subscription",
+    "summary": "Amit reports a duplicate charge after canceling his premium subscription and has not received a response to prior support inquiries.",
+    "customer_problem": "The customer was charged for a premium subscription that was cancelled last month, and the same invoice amount appears twice on his bank statement.",
+    "business_impact": "Financial loss for the customer, potential public escalation on LinkedIn, and risk of the finance team blocking future payments.",
+    "customer_requested_action": "Refund the incorrect charge and resolve the billing issue promptly.",
+    "category": "CANCELLATION_OR_REFUND",
+    "secondary_categories": [
+      "BILLING_ISSUE",
+      "ESCALATION_COMPLAINT"
+    ],
+    "sentiment": "FRUSTRATED",
+    "emotion_signals": [
+      "Repeated follow-ups",
+      "Threat of escalation",
+      "Urgency",
+      "Frustration",
+      "Dissatisfaction"
+    ],
+    "priority": "Critical",
+    "escalation_risk": "CRITICAL",
+    "priority_score": 10,
+    "risk_flags": [
+      "Repeated failed support attempts",
+      "Threat of public escalation on LinkedIn",
+      "Billing error (double charge after cancellation)",
+      "Premium customer status",
+      "Urgent demand for immediate resolution"
+    ],
+    "sensitive_information": {
+      "sensitive_information_detected": true,
+      "sensitive_categories": [
+        "PERSONAL_INFORMATION",
+        "PAYMENT_INFORMATION"
+      ],
+      "evidence_summary": "The ticket contains the customer's name (Amit) and references a double charge and duplicate invoice amount on the customer's bank statement, indicating personal and payment-related information.",
+      "handling_recommendations": [
+        "Verify the customer's identity and payment details before taking any action.",
+        "Request the invoice ID or registered account email to locate the transaction.",
+        "Do not promise a refund until verification is completed, per business rules.",
+        "Escalate the billing issue to the billing support team as required for premium customers.",
+        "Maintain a professional and empathetic tone while ensuring no sensitive data is exposed in communications."
+      ]
+    },
+    "recommended_team": "BILLING_SUPPORT"
+  },
+  "recommended_actions": {
+    "sla_action": "Escalate immediately to the Billing Support team for premium customers, request invoice ID or account email for verification, and provide a response within the shortest possible time. Do not promise a refund until verification is completed.",
+    "routing_note": "Verify the customer's account email and the specific invoice/transaction IDs related to the double charge. Confirm the cancellation status before any refund is promised. Respond professionally and empathetically within the shortest possible time, adhering to the rule not to promise a refund until verification is completed.",
+    "required_follow_up_information": [
+      "Invoice ID or transaction reference for the duplicated charge",
+      "Registered account email address",
+      "Confirmation of the cancellation request date"
+    ],
+    "missing_information": [
+      "Invoice ID for the duplicate charge",
+      "Registered account email or username for verification",
+      "Confirmation of the cancellation request date"
+    ],
+    "privacy_handling": [
+      "Verify the customer's identity and payment details before taking any action.",
+      "Request the invoice ID or registered account email to locate the transaction.",
+      "Do not promise a refund until verification is completed, per business rules.",
+      "Escalate the billing issue to the billing support team as required for premium customers.",
+      "Maintain a professional and empathetic tone while ensuring no sensitive data is exposed in communications."
+    ]
+  },
+  "agent_response": {
+    "draft_response": "Hi Amit,\n\nThank you for reaching out and I'm sorry to hear about the billing issue and the delay in response you've experienced. I understand how frustrating it must be to see a duplicate charge after you cancelled your premium subscription.\n\nTo investigate this promptly, could you please provide the invoice number or transaction reference for the duplicated charge, the email address or username associated with your account, and the date you submitted the cancellation request? Once we have this information, we will verify the details, involve our Billing Support team, and keep you updated on the resolution.\n\nWe appreciate your patience and will work to resolve this as quickly as possible.\n\nBest regards,\n[Your Name]\nCustomer Support",
+    "response_strategy": "Escalate the ticket to the Billing Support team as a critical priority for a premium customer. Request the missing invoice ID, registered account email/username, and cancellation request date to verify the double charge and cancellation status. After receiving the required information, the billing team will investigate and provide an update. Maintain a professional and empathetic tone, avoid promising refunds or confirmations until verification is complete, and aim to respond promptly.",
+    "assumptions": [
+      "The customer is a premium subscriber as indicated in the ticket.",
+      "The cancellation request was made last month, as stated by the customer.",
+      "The duplicate charge appears on the customer's bank statement."
+    ],
+    "information_needed_before_sending": [
+      "Invoice ID or transaction reference for the duplicated charge.",
+      "Registered account email address or username.",
+      "Exact date of the cancellation request."
+    ]
+  },
+  "quality_assurance": {
+    "review_scores": {
+      "empathy": 4,
+      "correctness": 5,
+      "actionability": 5,
+      "policy_safety": 5,
+      "tone_alignment": 5,
+      "completeness": 4
+    },
+    "strengths": [
+      "Shows genuine empathy and apologizes for the inconvenience.",
+      "Avoids making unsupported claims or promises about refunds.",
+      "Provides clear, actionable next steps by requesting specific missing information.",
+      "Maintains a professional and courteous tone appropriate for a premium customer.",
+      "Ensures policy safety by not committing to actions before verification."
+    ],
+    "improvement_areas": [
+      "Could explicitly reaffirm the high-priority handling due to the customer's premium status and SLA tier.",
+      "Might include an estimated timeline for the next update after the required information is received.",
+      "Could reference that the ticket will be escalated to the Billing Support team immediately, reinforcing urgency."
+    ],
+    "final_review_summary": "The draft response is empathetic, accurate, and safe, with clear next steps for the customer. It would be stronger by explicitly highlighting the premium-customer priority, offering a brief timeline expectation, and confirming immediate escalation to the Billing team.",
+    "business_rules_checked": [
+      "Do not promise refund before verification.",
+      "Do not confirm cancellation unless verified.",
+      "Ask for invoice ID or registered account email if required.",
+      "Escalate premium customer billing issues to billing support."
+    ],
+    "needs_human_review": true,
+    "review_reason": "The customer is a premium subscriber who has been charged twice after cancelling their subscription and has received no satisfactory response after multiple contacts. The frustration is high, with a direct threat to publicize the issue, creating significant reputational and financial risk. Given the premium tier, repeated support failures, and urgency, the ticket warrants a Critical priority and a Critical escalation risk, requiring immediate escalation to billing support and rapid verification of the charge. | The ticket contains the customer's name (Amit) and references a double charge and duplicate invoice amount on the customer's bank statement, indicating personal and payment-related information. | Critical billing error for a premium customer who was double-charged after cancellation and has threatened public escalation; requires immediate escalation per business rules."
+  }
+}
+

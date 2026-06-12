@@ -1,0 +1,76 @@
+[
+    {
+        "case_name": "case_4_1_llm_judge_customer_support",
+        "prompt": "You are an expert customer support quality evaluator.\n\nYour task is to evaluate two customer support responses using a structured scoring rubric.\n\nEvaluation Criteria:\n- Empathy\n- Professionalism\n- Problem Resolution Quality\n- Clarity\n- Policy Safety\n\nScoring Rules:\n- Score each category from 1 to 5.\n- Do not prefer a response simply because it is longer.\n- Penalize vague or dismissive responses.\n- Penalize unsafe promises such as guaranteeing refunds without verification.\n- Reward empathy, actionable guidance, and escalation handling.\n\nReturn ONLY valid JSON.\nDo not include markdown formatting.\nDo not include explanations outside JSON.\n\nRequired JSON Schema:\n{\n    \"response_a\": {\n        \"scores\": {},\n        \"strengths\": [],\n        \"weaknesses\": []\n    },\n    \"response_b\": {\n        \"scores\": {},\n        \"strengths\": [],\n        \"weaknesses\": []\n    },\n    \"winner\": \"A | B | TIE\",\n    \"judge_reasoning_summary\": \"\"\n}\n\nCustomer Question:\n\"I was charged for a premium plan even though I cancelled last month. I already contacted support twice and no one responded. I want a refund immediately.\"\n\nResponse A:\n\"We are sorry for the inconvenience. Please check your billing settings and make sure your cancellation was completed. Refunds are subject to our policy. Thank you.\"\n\nResponse B:\n\"I’m sorry this has been frustrating, especially after you contacted support twice. I can help escalate this as a billing issue. Please share your invoice ID or account email so the team can verify the cancellation date and refund eligibility. If the duplicate charge is confirmed, we will process the refund according to the billing policy.\"",
+        "raw_response": "{\n    \"response_a\": {\n        \"scores\": {\n            \"Empathy\": 2,\n            \"Professionalism\": 4,\n            \"Problem Resolution Quality\": 2,\n            \"Clarity\": 3,\n            \"Policy Safety\": 5\n        },\n        \"strengths\": [],\n        \"weaknesses\": [\"Lack of empathy\", \"Vague solution\"]\n    },\n    \"response_b\": {\n        \"scores\": {\n            \"Empathy\": 5,\n            \"Professionalism\": 5,\n            \"Problem Resolution Quality\": 5,\n            \"Clarity\": 5,\n            \"Policy Safety\": 5\n        },\n        \"strengths\": [\"Empathetic tone\", \"Clear guidance\", \"Proper escalation handling\"],\n        \"weaknesses\": []\n    },\n    \"winner\": \"B\",\n    \"judge_reasoning_summary\": \"Response B demonstrates a higher level of empathy, provides clear and actionable guidance, and handles the escalation properly, making it a more effective and customer-centric response.\"\n}",
+        "parsed_output": {
+            "response_a": {
+                "scores": {
+                    "Empathy": 2,
+                    "Professionalism": 4,
+                    "Problem Resolution Quality": 2,
+                    "Clarity": 3,
+                    "Policy Safety": 5
+                },
+                "strengths": [],
+                "weaknesses": [
+                    "Lack of empathy",
+                    "Vague solution"
+                ]
+            },
+            "response_b": {
+                "scores": {
+                    "Empathy": 5,
+                    "Professionalism": 5,
+                    "Problem Resolution Quality": 5,
+                    "Clarity": 5,
+                    "Policy Safety": 5
+                },
+                "strengths": [
+                    "Empathetic tone",
+                    "Clear guidance",
+                    "Proper escalation handling"
+                ],
+                "weaknesses": []
+            },
+            "winner": "B",
+            "judge_reasoning_summary": "Response B demonstrates a higher level of empathy, provides clear and actionable guidance, and handles the escalation properly, making it a more effective and customer-centric response."
+        },
+        "valid_json": true
+    },
+    {
+        "case_name": "case_4_2_llm_judge_code_explanation",
+        "prompt": "You are an expert programming educator and technical reviewer.\n\nYour task is to evaluate two explanations about shallow copy and deep copy in Python.\n\nEvaluation Criteria:\n- Technical Accuracy\n- Beginner Friendliness\n- Clarity\n- Completeness\n- Misleading Statements\n\nScoring Rules:\n- Score each category from 1 to 5.\n- Penalize technically incorrect simplifications.\n- Do not reward oversimplification if it reduces correctness.\n- Explain why deep copy is not always better.\n- Focus on educational usefulness for beginner developers.\n\nReturn ONLY valid JSON.\nDo not include markdown formatting.\nDo not include explanations outside JSON.\n\nRequired JSON Schema:\n{\n    \"explanation_a\": {\n        \"scores\": {},\n        \"issues\": [],\n        \"overall_score\": 0\n    },\n    \"explanation_b\": {\n        \"scores\": {},\n        \"issues\": [],\n        \"overall_score\": 0\n    },\n    \"winner\": \"\",\n    \"judge_reasoning_summary\": \"\"\n}\n\nQuestion:\n\"What is the difference between shallow copy and deep copy in Python?\"\n\nExplanation A:\n\"A shallow copy copies the object but keeps references to nested objects. A deep copy recursively copies nested objects too. Use copy.copy for shallow copy and copy.deepcopy for deep copy.\"\n\nExplanation B:\n\"A shallow copy means the copied variable points to the same memory. A deep copy means everything is copied into new memory. So shallow copy is always bad and deep copy is always better.\"",
+        "raw_response": "{\n    \"explanation_a\": {\n        \"scores\": {\n            \"Technical Accuracy\": 5,\n            \"Beginner Friendliness\": 4,\n            \"Clarity\": 5,\n            \"Completeness\": 4,\n            \"Misleading Statements\": 1\n        },\n        \"issues\": [],\n        \"overall_score\": 4.6\n    },\n    \"explanation_b\": {\n        \"scores\": {\n            \"Technical Accuracy\": 2,\n            \"Beginner Friendliness\": 3,\n            \"Clarity\": 3,\n            \"Completeness\": 2,\n            \"Misleading Statements\": 5\n        },\n        \"issues\": [\"oversimplification\", \"incorrect generalization\"],\n        \"overall_score\": 2.2\n    },\n    \"winner\": \"explanation_a\",\n    \"judge_reasoning_summary\": \"Explanation A is more accurate and clear, while Explanation B contains misleading statements and oversimplifications. Deep copy is not always better because it can be slower and more memory-intensive, and shallow copy can be sufficient when nested objects do not need to be modified.\"\n}",
+        "parsed_output": {
+            "explanation_a": {
+                "scores": {
+                    "Technical Accuracy": 5,
+                    "Beginner Friendliness": 4,
+                    "Clarity": 5,
+                    "Completeness": 4,
+                    "Misleading Statements": 1
+                },
+                "issues": [],
+                "overall_score": 4.6
+            },
+            "explanation_b": {
+                "scores": {
+                    "Technical Accuracy": 2,
+                    "Beginner Friendliness": 3,
+                    "Clarity": 3,
+                    "Completeness": 2,
+                    "Misleading Statements": 5
+                },
+                "issues": [
+                    "oversimplification",
+                    "incorrect generalization"
+                ],
+                "overall_score": 2.2
+            },
+            "winner": "explanation_a",
+            "judge_reasoning_summary": "Explanation A is more accurate and clear, while Explanation B contains misleading statements and oversimplifications. Deep copy is not always better because it can be slower and more memory-intensive, and shallow copy can be sufficient when nested objects do not need to be modified."
+        },
+        "valid_json": true
+    }
+]

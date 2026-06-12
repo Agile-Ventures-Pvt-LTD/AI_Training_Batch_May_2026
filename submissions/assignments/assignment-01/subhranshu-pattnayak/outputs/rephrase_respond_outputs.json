@@ -1,0 +1,139 @@
+[
+    {
+        "case_name": "case_7_1_rephrase_business_request",
+        "prompt": "You are an enterprise AI solutions consultant.\n\nYour task is to first clarify an ambiguous business request and then propose a realistic AI solution.\n\nInstructions:\n- First convert vague language into a measurable business problem.\n- Clearly state assumptions used for clarification.\n- Define what productivity and leadership visibility mean in practical operational terms.\n- Propose a focused and realistic AI solution rather than a broad AI transformation program.\n- Avoid generic consulting language.\n- Think step-by-step internally, but return only concise reasoning summaries.\n- Return ONLY valid JSON.\n- Do not include markdown formatting.\n- Do not include explanations outside JSON.\n\nRequired JSON Schema:\n{\n    \"rephrased_problem\": \"\",\n    \"clarified_assumptions\": [],\n    \"proposed_solution\": \"\",\n    \"target_users\": [],\n    \"key_features\": [],\n    \"data_needed\": [],\n    \"success_metrics\": [],\n    \"implementation_steps\": [],\n    \"risks\": []\n}\n\nBusiness Request:\n\n\"We need AI to improve operations and reduce manual work. Build something that helps teams become more productive and gives leadership better visibility.\"",
+        "raw_response": "{\n    \"rephrased_problem\": \"Improve operational efficiency by automating manual tasks and enhancing leadership's visibility into team performance metrics\",\n    \"clarified_assumptions\": [\n        \"Manual work refers to repetitive, time-consuming tasks that can be automated\",\n        \"Productivity means reducing task completion time and increasing output quality\",\n        \"Leadership visibility refers to real-time access to key performance indicators (KPIs) and team metrics\"\n    ],\n    \"proposed_solution\": \"Develop a task automation and performance monitoring platform using machine learning and data analytics\",\n    \"target_users\": [\n        \"Team leaders\",\n        \"Operations managers\",\n        \"Frontline staff\"\n    ],\n    \"key_features\": [\n        \"Automated task routing and assignment\",\n        \"Predictive analytics for task completion time and quality\",\n        \"Real-time dashboard for leadership to track team performance\"\n    ],\n    \"data_needed\": [\n        \"Historical task data\",\n        \"Team performance metrics\",\n        \"Operational KPIs\"\n    ],\n    \"success_metrics\": [\n        \"Reduction in manual task completion time\",\n        \"Increase in team output quality\",\n        \"Improvement in leadership's visibility into team performance\"\n    ],\n    \"implementation_steps\": [\n        \"Data collection and integration\",\n        \"Machine learning model development and training\",\n        \"Platform development and testing\",\n        \"Deployment and user training\"\n    ],\n    \"risks\": [\n        \"Data quality issues\",\n        \"Resistance to change from frontline staff\",\n        \"Integration challenges with existing systems\"\n    ]\n}",
+        "parsed_output": {
+            "rephrased_problem": "Improve operational efficiency by automating manual tasks and enhancing leadership's visibility into team performance metrics",
+            "clarified_assumptions": [
+                "Manual work refers to repetitive, time-consuming tasks that can be automated",
+                "Productivity means reducing task completion time and increasing output quality",
+                "Leadership visibility refers to real-time access to key performance indicators (KPIs) and team metrics"
+            ],
+            "proposed_solution": "Develop a task automation and performance monitoring platform using machine learning and data analytics",
+            "target_users": [
+                "Team leaders",
+                "Operations managers",
+                "Frontline staff"
+            ],
+            "key_features": [
+                "Automated task routing and assignment",
+                "Predictive analytics for task completion time and quality",
+                "Real-time dashboard for leadership to track team performance"
+            ],
+            "data_needed": [
+                "Historical task data",
+                "Team performance metrics",
+                "Operational KPIs"
+            ],
+            "success_metrics": [
+                "Reduction in manual task completion time",
+                "Increase in team output quality",
+                "Improvement in leadership's visibility into team performance"
+            ],
+            "implementation_steps": [
+                "Data collection and integration",
+                "Machine learning model development and training",
+                "Platform development and testing",
+                "Deployment and user training"
+            ],
+            "risks": [
+                "Data quality issues",
+                "Resistance to change from frontline staff",
+                "Integration challenges with existing systems"
+            ]
+        },
+        "valid_json": true
+    },
+    {
+        "case_name": "case_7_2_rephrase_engineering_spec",
+        "prompt": "You are a senior AI systems analyst.\n\nYour task is to convert an ambiguous technical request into a clear engineering specification.\n\nInstructions:\n- First identify ambiguity and missing constraints.\n- Convert vague requirements into measurable engineering objectives.\n- Explicitly separate:\n  - functional requirements\n  - non-functional requirements\n  - assumptions\n  - dependencies\n  - risks\n- Avoid inventing unavailable technical details.\n- Avoid overengineering the solution.\n- Think step-by-step internally, but return only concise reasoning summaries.\n- Return ONLY valid JSON.\n- Do not include markdown formatting.\n- Do not include explanations outside JSON.\n\nRequired JSON Schema:\n{\n    \"rephrased_requirement\": \"\",\n    \"functional_requirements\": [],\n    \"non_functional_requirements\": [],\n    \"assumptions\": [],\n    \"dependencies\": [],\n    \"open_questions\": [],\n    \"risks\": [],\n    \"recommended_next_steps\": []\n}\n\nTechnical Request:\n\n\"We need a smart AI search system for all company documents. Employees should quickly find information and it should scale as the company grows.\"",
+        "raw_response": "{\n    \"rephrased_requirement\": \"Develop a scalable AI-powered search system for company documents, enabling employees to efficiently locate information.\",\n    \"functional_requirements\": [\n        {\n            \"requirement\": \"Index company documents for search\",\n            \"description\": \"Create a system to crawl and index company documents for search functionality\"\n        },\n        {\n            \"requirement\": \"Implement search functionality\",\n            \"description\": \"Develop a search algorithm to retrieve relevant documents based on user queries\"\n        },\n        {\n            \"requirement\": \"Support multiple search query types\",\n            \"description\": \"Allow users to search using various query types, such as keywords, phrases, and natural language\"\n        },\n        {\n            \"requirement\": \"Integrate with existing document management system\",\n            \"description\": \"Integrate the search system with the company's existing document management system for seamless access to documents\"\n        }\n    ],\n    \"non_functional_requirements\": [\n        {\n            \"requirement\": \"Scalability\",\n            \"description\": \"Ensure the system can handle an increasing number of documents and users without compromising performance\"\n        },\n        {\n            \"requirement\": \"Usability\",\n            \"description\": \"Design an intuitive user interface for employees to easily search and access documents\"\n        },\n        {\n            \"requirement\": \"Security\",\n            \"description\": \"Implement robust security measures to protect company documents and user data\"\n        }\n    ],\n    \"assumptions\": [\n        {\n            \"assumption\": \"Existing document management system\",\n            \"description\": \"Assume the company has an existing document management system in place\"\n        },\n        {\n            \"assumption\": \"Document format consistency\",\n            \"description\": \"Assume company documents are in a consistent format, such as PDF or Word\"\n        }\n    ],\n    \"dependencies\": [\n        {\n            \"dependency\": \"Document management system API\",\n            \"description\": \"Depend on the company's document management system API for integration\"\n        },\n        {\n            \"dependency\": \"Search algorithm libraries\",\n            \"description\": \"Depend on existing search algorithm libraries for efficient search functionality\"\n        }\n    ],\n    \"open_questions\": [\n        {\n            \"question\": \"What is the expected growth rate of company documents?\",\n            \"description\": \"Need clarification on the expected growth rate of company documents to determine scalability requirements\"\n        },\n        {\n            \"question\": \"What are the specific security requirements for protecting company documents?\",\n            \"description\": \"Need clarification on the specific security requirements to ensure adequate protection\"\n        }\n    ],\n    \"risks\": [\n        {\n            \"risk\": \"Scalability issues due to rapid growth\",\n            \"description\": \"Risk of scalability issues if the system is not designed to handle rapid growth\"\n        },\n        {\n            \"risk\": \"Security breaches due to inadequate protection\",\n            \"description\": \"Risk of security breaches if the system is not designed with adequate protection measures\"\n        }\n    ],\n    \"recommended_next_steps\": [\n        {\n            \"step\": \"Clarify growth rate and security requirements\",\n            \"description\": \"Schedule a meeting with stakeholders to clarify growth rate and security requirements\"\n        },\n        {\n            \"step\": \"Research search algorithm libraries\",\n            \"description\": \"Research and evaluate existing search algorithm libraries for efficient search functionality\"\n        }\n    ]\n}",
+        "parsed_output": {
+            "rephrased_requirement": "Develop a scalable AI-powered search system for company documents, enabling employees to efficiently locate information.",
+            "functional_requirements": [
+                {
+                    "requirement": "Index company documents for search",
+                    "description": "Create a system to crawl and index company documents for search functionality"
+                },
+                {
+                    "requirement": "Implement search functionality",
+                    "description": "Develop a search algorithm to retrieve relevant documents based on user queries"
+                },
+                {
+                    "requirement": "Support multiple search query types",
+                    "description": "Allow users to search using various query types, such as keywords, phrases, and natural language"
+                },
+                {
+                    "requirement": "Integrate with existing document management system",
+                    "description": "Integrate the search system with the company's existing document management system for seamless access to documents"
+                }
+            ],
+            "non_functional_requirements": [
+                {
+                    "requirement": "Scalability",
+                    "description": "Ensure the system can handle an increasing number of documents and users without compromising performance"
+                },
+                {
+                    "requirement": "Usability",
+                    "description": "Design an intuitive user interface for employees to easily search and access documents"
+                },
+                {
+                    "requirement": "Security",
+                    "description": "Implement robust security measures to protect company documents and user data"
+                }
+            ],
+            "assumptions": [
+                {
+                    "assumption": "Existing document management system",
+                    "description": "Assume the company has an existing document management system in place"
+                },
+                {
+                    "assumption": "Document format consistency",
+                    "description": "Assume company documents are in a consistent format, such as PDF or Word"
+                }
+            ],
+            "dependencies": [
+                {
+                    "dependency": "Document management system API",
+                    "description": "Depend on the company's document management system API for integration"
+                },
+                {
+                    "dependency": "Search algorithm libraries",
+                    "description": "Depend on existing search algorithm libraries for efficient search functionality"
+                }
+            ],
+            "open_questions": [
+                {
+                    "question": "What is the expected growth rate of company documents?",
+                    "description": "Need clarification on the expected growth rate of company documents to determine scalability requirements"
+                },
+                {
+                    "question": "What are the specific security requirements for protecting company documents?",
+                    "description": "Need clarification on the specific security requirements to ensure adequate protection"
+                }
+            ],
+            "risks": [
+                {
+                    "risk": "Scalability issues due to rapid growth",
+                    "description": "Risk of scalability issues if the system is not designed to handle rapid growth"
+                },
+                {
+                    "risk": "Security breaches due to inadequate protection",
+                    "description": "Risk of security breaches if the system is not designed with adequate protection measures"
+                }
+            ],
+            "recommended_next_steps": [
+                {
+                    "step": "Clarify growth rate and security requirements",
+                    "description": "Schedule a meeting with stakeholders to clarify growth rate and security requirements"
+                },
+                {
+                    "step": "Research search algorithm libraries",
+                    "description": "Research and evaluate existing search algorithm libraries for efficient search functionality"
+                }
+            ]
+        },
+        "valid_json": true
+    }
+]
