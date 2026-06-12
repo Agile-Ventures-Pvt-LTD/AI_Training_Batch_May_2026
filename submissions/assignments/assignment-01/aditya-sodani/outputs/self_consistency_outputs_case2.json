@@ -1,0 +1,36 @@
+{
+    "case_name": "Self-Consistency Logical Deduction Risk Classification",
+    "raw_response": "{\n  \"runs\": [\n    {\"risk_level\": \"MEDIUM\", \"reason\": \"Login outside business hours and MFA failure\"},\n    {\"risk_level\": \"MEDIUM\", \"reason\": \"Login outside business hours and MFA failure\"},\n    {\"risk_level\": \"MEDIUM\", \"reason\": \"Login outside business hours and MFA failure\"},\n    {\"risk_level\": \"MEDIUM\", \"reason\": \"Login outside business hours and MFA failure\"},\n    {\"risk_level\": \"MEDIUM\", \"reason\": \"Login outside business hours and MFA failure\"}\n  ],\n  \"risk_level_votes\": {\n    \"MEDIUM\": 5,\n    \"HIGH\": 0,\n    \"CRITICAL\": 0\n  },\n  \"final_risk_level\": \"MEDIUM\",\n  \"disagreement_analysis\": \"No disagreement, all evaluations resulted in MEDIUM risk\",\n  \"final_reasoning_summary\": \"Login occurred outside business hours and MFA failed once, but Germany is a known country, so only MEDIUM risk conditions are met\"\n}",
+    "parsed_response": {
+        "runs": [
+            {
+                "risk_level": "MEDIUM",
+                "reason": "Login outside business hours and MFA failure"
+            },
+            {
+                "risk_level": "MEDIUM",
+                "reason": "Login outside business hours and MFA failure"
+            },
+            {
+                "risk_level": "MEDIUM",
+                "reason": "Login outside business hours and MFA failure"
+            },
+            {
+                "risk_level": "MEDIUM",
+                "reason": "Login outside business hours and MFA failure"
+            },
+            {
+                "risk_level": "MEDIUM",
+                "reason": "Login outside business hours and MFA failure"
+            }
+        ],
+        "risk_level_votes": {
+            "MEDIUM": 5,
+            "HIGH": 0,
+            "CRITICAL": 0
+        },
+        "final_risk_level": "MEDIUM",
+        "disagreement_analysis": "No disagreement, all evaluations resulted in MEDIUM risk",
+        "final_reasoning_summary": "Login occurred outside business hours and MFA failed once, but Germany is a known country, so only MEDIUM risk conditions are met"
+    }
+}

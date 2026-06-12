@@ -1,0 +1,19 @@
+{
+    "case_name": "Self-Consistency Policy Interpretation",
+    "raw_response": "```json\n{\n  \"individual_answers\": [\n    37.50,\n    37.50,\n    37.50,\n    37.50,\n    37.50\n  ],\n  \"final_reimbursable_amount\": 37.50,\n  \"consistency_count\": {\n    \"37.50\": 5\n  },\n  \"final_decision\": \"The majority interpretation is that the international travel uplift applies first, increasing the daily meal limit to $75, and then the same-day travel reduction applies, resulting in a 50% limit of $37.50. Since the alcohol expense is excluded, the reimbursable amount is $70 - $12 = $58, which is below the 50% limit of $37.50 is incorrect, the correct calculation is $75 * 0.5 = $37.50, and the claim is $70 - $12 = $58, so the correct answer is the minimum between $58 and $37.50, which is $37.50, after excluding alcohol.\",\n  \"reasoning_summary\": \"International travel uplift and same-day travel reduction applied correctly, with alcohol excluded and receipts provided.\"\n}\n```",
+    "parsed_response": {
+        "individual_answers": [
+            37.5,
+            37.5,
+            37.5,
+            37.5,
+            37.5
+        ],
+        "final_reimbursable_amount": 37.5,
+        "consistency_count": {
+            "37.50": 5
+        },
+        "final_decision": "The majority interpretation is that the international travel uplift applies first, increasing the daily meal limit to $75, and then the same-day travel reduction applies, resulting in a 50% limit of $37.50. Since the alcohol expense is excluded, the reimbursable amount is $70 - $12 = $58, which is below the 50% limit of $37.50 is incorrect, the correct calculation is $75 * 0.5 = $37.50, and the claim is $70 - $12 = $58, so the correct answer is the minimum between $58 and $37.50, which is $37.50, after excluding alcohol.",
+        "reasoning_summary": "International travel uplift and same-day travel reduction applied correctly, with alcohol excluded and receipts provided."
+    }
+}

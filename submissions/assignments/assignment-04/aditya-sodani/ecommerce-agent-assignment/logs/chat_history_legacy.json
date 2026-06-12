@@ -1,0 +1,32 @@
+[
+    {
+        "timestamp": "2026-06-10 17:48:29",
+        "user_query": "Show total sales by product category",
+        "response": "Unable to determine total sales by product category due to mismatch in product_id between products and order_items tables."
+    },
+    {
+        "timestamp": "2026-06-10 17:48:58",
+        "user_query": " Which customers have placed more than 2 orders?",
+        "response": "The customers who have placed more than 2 orders are: Edward Washington (5 orders), Adam Hale (4 orders), Heather Bailey (3 orders), Sharon Terry (4 orders), and Kristin Bell (3 orders)."
+    },
+    {
+        "timestamp": "2026-06-10 17:50:53",
+        "user_query": "What is the total revenue from completed orders?",
+        "response": "The total revenue from completed orders is $133,487.73"
+    },
+    {
+        "timestamp": "2026-06-10 21:56:41",
+        "user_query": " Show the top 5 products by quantity sold.",
+        "response": "The top 5 products by quantity sold are: Leave (16 units), Wonder (12 units), Form (11 units), College (10 units), and When (8 units)."
+    },
+    {
+        "timestamp": "2026-06-10 21:57:25",
+        "user_query": " Which customers are from Delhi?",
+        "response": "The customers from Delhi are: Austin Martinez (rebeccalopez@example.org) and Adam Hale (aguirremonique@example.com)"
+    },
+    {
+        "timestamp": "2026-06-10 22:13:54",
+        "user_query": " Show total sales by product category.",
+        "response": "The total sales by product category are: Books - $106,080.00, Electronics - $111,421.18, Fashion - $1,410.30, Sports - $56,365.46"
+    }
+]

@@ -1,0 +1,13 @@
+{
+    "case_name": "Few-Shot Transformation from Requirement to API Contract",
+    "raw_response": "{\n  \"action\": \"GET_POLICY\",\n  \"parameters\": {\n    \"leave_type\": \"sick\"\n  },\n  \"requires_clarification\": false,\n  \"clarification_question\": \"\",\n  \"confidence\": 0.95\n}",
+    "parsed_response": {
+        "action": "GET_POLICY",
+        "parameters": {
+            "leave_type": "sick"
+        },
+        "requires_clarification": false,
+        "clarification_question": "",
+        "confidence": 0.95
+    }
+}
