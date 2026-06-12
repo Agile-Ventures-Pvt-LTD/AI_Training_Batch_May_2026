@@ -1,0 +1,32 @@
+{
+  "response_a": {
+    "scores": {
+      "empathy": 1,
+      "clarity": 2,
+      "actionability": 1,
+      "policy_correctness": 4
+    },
+    "strengths": [],
+    "weaknesses": [
+      "vague",
+      "unhelpful",
+      "lacking empathy"
+    ]
+  },
+  "response_b": {
+    "scores": {
+      "empathy": 5,
+      "clarity": 5,
+      "actionability": 5,
+      "policy_correctness": 5
+    },
+    "strengths": [
+      "acknowledges frustration",
+      "offers solution",
+      "provides clear next steps"
+    ],
+    "weaknesses": []
+  },
+  "winner": "B",
+  "judge_reasoning_summary": "Response B demonstrates a clear understanding of the customer's issue, acknowledges their frustration, and provides a concrete solution. It also shows empathy and a willingness to help, making it a more effective and customer-centric response."
+}

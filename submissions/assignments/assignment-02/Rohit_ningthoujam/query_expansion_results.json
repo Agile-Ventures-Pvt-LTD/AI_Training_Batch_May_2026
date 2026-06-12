@@ -1,0 +1,70 @@
+[
+    {
+        "question_id": "Q1",
+        "original_query": "What regulatory investigations and legal actions against the company are mentioned in the report?",
+        "expanded_queries": [
+            "What regulatory investigations and legal actions against the company are mentioned in the report?",
+            "Which regulatory probes and lawsuits involving the company are disclosed in the filing?",
+            "Can you list any government investigations and legal proceedings against the company noted in the report?"
+        ],
+        "baseline_top_chunks": [
+            {
+                "chunk_id": "chunk_1",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_2",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "chunk_3",
+                "section": "Unknown",
+                "year": 2023
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "chunk_id": "page_89",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "What regulatory investigations and legal actions against the company are mentioned in the report?"
+            },
+            {
+                "chunk_id": "page_447",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Which regulatory probes and lawsuits involving the company are disclosed in the filing?"
+            },
+            {
+                "chunk_id": "page_298",
+                "section": "Unknown",
+                "year": 2023,
+                "retrieved_by": "Can you list any government investigations and legal proceedings against the company noted in the report?"
+            }
+        ],
+        "final_answer": "The report references several regulatory and legal matters involving the company:\n\n- **Government investigations** – The company says it is cooperating with certain government investigations (as noted in Note 15, “Commitments and Contingencies”). It adds that, to its knowledge, no agency has concluded that any wrongdoing occurred, but it could face liability, penalties or other sanctions if the SEC, the U.S. Department of Justice or any other government agency were to bring legal action in the future.\n\n- **Court judgment** – The report notes that on October 16 2018 the U.S. District Court for the Southern District of New York entered a final judgment approving the terms of a settlement (the specific matter is not detailed in the excerpt).\n\n- **Statement of no pending actions** – The company also states that, to its knowledge, there are no current legal actions, lawsuits, arbitrations, administrative or other proceedings, charges, complaints, investigations, inspections, audits, or notices of violations or possible violations pending against it or its subsidiaries.",
+        "citations": [
+            {
+                "chunk_id": "page_89",
+                "source_doc": "tsla-20231231-gen.pdf",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "page_447",
+                "source_doc": "tsla-20231231-gen.pdf",
+                "section": "Unknown",
+                "year": 2023
+            },
+            {
+                "chunk_id": "page_298",
+                "source_doc": "tsla-20231231-gen.pdf",
+                "section": "Unknown",
+                "year": 2023
+            }
+        ],
+        "retrieval_improvement_analysis": "Query expansion improved retrieval coverage compared to baseline retrieval."
+    }
+]

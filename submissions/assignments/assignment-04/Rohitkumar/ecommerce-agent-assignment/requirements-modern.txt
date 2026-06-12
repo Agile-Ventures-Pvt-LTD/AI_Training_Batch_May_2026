@@ -1,0 +1,5 @@
+langchain>=0.1.16
+langchain-community==0.0.32
+langchain-openai
+langchain-groq
+python-dotenv

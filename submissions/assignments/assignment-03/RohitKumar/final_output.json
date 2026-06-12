@@ -1,0 +1,845 @@
+{
+    "question_id": "HQ1",
+    "user_query": "What are key insights from Tesla annual report?",
+    "retrieved_hypothetical_questions": [
+        {
+            "hypothetical_question": "What is the composition of Tesla's Board of Directors and what are their qualifications and backgrounds?",
+            "parent_chunk_id": "chunk_1",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does Tesla's compensation philosophy and program align with its mission to accelerate the world's transition to sustainable energy?",
+            "parent_chunk_id": "chunk_1",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the key terms and conditions of Elon Musk's 2018 CEO Performance Award, including the vesting schedule and potential payout?",
+            "parent_chunk_id": "chunk_1",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What types of products and services does Tesla offer, and how do they contribute to the company's overall mission?",
+            "parent_chunk_id": "chunk_2",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does Tesla's manufacturing process work, and what are the key locations where the company produces its products?",
+            "parent_chunk_id": "chunk_2",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What regulatory and environmental factors does Tesla need to consider in its business operations, and how do these factors impact the company's products and services?",
+            "parent_chunk_id": "chunk_2",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the key risks and challenges that Tesla faces in its business operations, including regulatory constraints, competition, and supply chain disruptions?",
+            "parent_chunk_id": "chunk_3",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does Tesla's business model, including its focus on electric vehicles and energy storage, impact its financial performance and growth prospects?",
+            "parent_chunk_id": "chunk_3",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the potential consequences for Tesla if it fails to effectively manage its risks, including product defects, regulatory non-compliance, and cybersecurity threats?",
+            "parent_chunk_id": "chunk_3",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What factors contribute to the determination of the carrying value of inventory in relation to its net realizable value upon sale?",
+            "parent_chunk_id": "chunk_4",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does Tesla account for its direct vehicle leasing programs, and what are the implications for its financial statements?",
+            "parent_chunk_id": "chunk_4",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the key components of Tesla's revenue recognition policy, particularly with regards to automotive sales with resale value guarantees or buyback options?",
+            "parent_chunk_id": "chunk_4",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What is the accounting treatment for leases that no longer meet the definition of a lease under the new revenue standard?",
+            "parent_chunk_id": "chunk_5",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does the company recognize revenue from the sale of solar renewable energy certificates (SRECs) and investment tax credits (ITCs)?",
+            "parent_chunk_id": "chunk_5",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What is the impact of the adoption of ASC 842 on the company's accounting for leases, and how does it affect the presentation of leases on the consolidated balance sheet?",
+            "parent_chunk_id": "chunk_5",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What is the primary method used by Tesla to measure the fair value of RSUs with service or service and performance conditions?",
+            "parent_chunk_id": "chunk_6",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does Tesla recognize stock-based compensation expense associated with the 2018 CEO Performance Award?",
+            "parent_chunk_id": "chunk_6",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What is the purpose of the Monte Carlo simulation used in determining the expected achievement period for the 2018 CEO Performance Award?",
+            "parent_chunk_id": "chunk_6",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the key terms and conditions outlined in the Loan Agreement and its amendments?",
+            "parent_chunk_id": "chunk_7",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How do the various agreements and amendments impact Tesla's financial obligations and relationships with lenders and investors?",
+            "parent_chunk_id": "chunk_7",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the implications of the agreements and amendments on Tesla's business operations and strategic partnerships?",
+            "parent_chunk_id": "chunk_7",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the conditions precedent to the first drawdown under the facility agreement?",
+            "parent_chunk_id": "chunk_8",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What constitutes an event of default by the borrower under the agreement?",
+            "parent_chunk_id": "chunk_8",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does the borrower apply the advances drawn under the facility agreement?",
+            "parent_chunk_id": "chunk_8",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the key components of Tesla's energy generation and storage segment, and how do they contribute to the company's overall business strategy?",
+            "parent_chunk_id": "chunk_9",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does Tesla's expertise in electrical, mechanical, civil, and software engineering enable the design and manufacture of its energy generation and storage products and components?",
+            "parent_chunk_id": "chunk_9",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the various financing options and services offered by Tesla to its customers, including automotive purchase financing, leases, and solar PPA, and how do they support the company's sales and revenue growth?",
+            "parent_chunk_id": "chunk_9",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the key factors that could impact Tesla's ability to achieve its business goals and financial projections, and how might these factors affect the company's stock price and overall performance?",
+            "parent_chunk_id": "chunk_10",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does Tesla's business model, including its direct sales approach and energy storage products, create opportunities and challenges for the company, and what are the implications of these factors for its future growth and profitability?",
+            "parent_chunk_id": "chunk_10",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the potential risks and uncertainties associated with Tesla's operations, including regulatory challenges, supply chain disruptions, and competition from other automakers and energy companies, and how might these factors impact the company's financial condition and operating results?",
+            "parent_chunk_id": "chunk_10",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What factors contributed to the increase in Tesla's automotive sales revenue in 2020 compared to 2019?",
+            "parent_chunk_id": "chunk_11",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does Tesla account for its automotive warranty reserve, and what are the key considerations in determining this estimate?",
+            "parent_chunk_id": "chunk_11",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the primary sources of revenue for Tesla, and how do they impact the company's financial performance?",
+            "parent_chunk_id": "chunk_11",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What is the company's approach to allocating consideration to various performance obligations in a single contract?",
+            "parent_chunk_id": "chunk_12",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does the company account for variable consideration, such as guarantees and variable customer payments, in its revenue arrangements?",
+            "parent_chunk_id": "chunk_12",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What is the company's policy for recognizing stock-based compensation expense, and how does it calculate the fair value of its stock-based awards?",
+            "parent_chunk_id": "chunk_12",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the key performance milestones that Tesla's CEO must achieve to vest the 2018 CEO Performance Award, and how does the company recognize the related stock-based compensation expense?",
+            "parent_chunk_id": "chunk_13",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does Tesla account for its solar energy systems and vehicles under variable interest entity arrangements, and what are the implications for its financial statements?",
+            "parent_chunk_id": "chunk_13",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the potential risks and uncertainties associated with Tesla's legal proceedings, including securities litigation and tax disputes, and how could they impact the company's financial condition and results of operations?",
+            "parent_chunk_id": "chunk_13",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What is the purpose of the 2021 Pricing Agreement between Tesla and the Seller, and what are the key terms and conditions outlined in the agreement?",
+            "parent_chunk_id": "chunk_14",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the main provisions and obligations outlined in the Amended and Restated ABL Credit Agreement among Tesla, Inc., various lenders, and Deutsche Bank AG New York Branch?",
+            "parent_chunk_id": "chunk_14",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How do the various amendments and agreements, such as the First Amendment to the Credit Agreement and the UK Security Agreement, impact the overall credit agreement and the relationships between the parties involved?",
+            "parent_chunk_id": "chunk_14",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What constitutes an Eligible Account under the agreement, and what criteria must be met for an account to be considered eligible?",
+            "parent_chunk_id": "chunk_15",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How is the Dutch Borrowing Base calculated, and what types of inventory are included in the calculation?",
+            "parent_chunk_id": "chunk_15",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the requirements for Real Property to be considered Eligible Real Property, and what documentation must be provided to the Administrative Agent?",
+            "parent_chunk_id": "chunk_15",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the key components of the definition of \"Environmental Law\" in the context of this agreement?",
+            "parent_chunk_id": "chunk_16",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does the \"Fixed Charge Coverage Ratio\" impact the Company's ability to incur Indebtedness?",
+            "parent_chunk_id": "chunk_16",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the implications of a \"Material Disposition\" on the Company's assets and Equity Interests?",
+            "parent_chunk_id": "chunk_16",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the conditions under which a Lender may refuse to make a LIBOR Loan or convert a LIBOR Loan to a Base Rate Loan?",
+            "parent_chunk_id": "chunk_17",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How do the provisions of Section 2.10 regarding Benchmark Replacement affect the determination of interest rates for LIBOR Loans?",
+            "parent_chunk_id": "chunk_17",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the requirements for a Lender to be replaced by a Replacement Lender under Section 2.13, and what are the consequences of such replacement?",
+            "parent_chunk_id": "chunk_17",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the conditions under which a Borrower can prepay the Loans made to it, and what are the requirements for such prepayment?",
+            "parent_chunk_id": "chunk_18",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How do the Letters of Credit issued by an Issuing Lender participate in the calculation of the Letter of Credit Outstandings, and what are the requirements for cash collateralization of such Letters of Credit?",
+            "parent_chunk_id": "chunk_18",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the tax implications for the Borrowers and the Lenders under the Credit Agreement, and how are Taxes, including Indemnified Taxes, to be paid and indemnified?",
+            "parent_chunk_id": "chunk_18",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the circumstances under which a Credit Party may make payments or prepayments on, or redemptions or acquisitions for value of, any Permitted Non-Credit Party Indebtedness?",
+            "parent_chunk_id": "chunk_20",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "Can a Lender assign its Revolving Loan Commitment and related outstanding Obligations to another Lender, and if so, what are the requirements for such an assignment?",
+            "parent_chunk_id": "chunk_20",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the consequences for a Credit Party if an Event of Default occurs, and how can the Lenders exercise their rights in such an event?",
+            "parent_chunk_id": "chunk_20",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the key obligations and liabilities of the UK Borrowers and Guarantors under the Credit Agreement and Security Documents?",
+            "parent_chunk_id": "chunk_21",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How do the provisions of the Intercreditor Agreement and the U.S. Special Resolution Regimes impact the rights and obligations of the parties involved?",
+            "parent_chunk_id": "chunk_21",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the conditions and procedures for the release of liability of a Guarantor under the Guaranty, and how does it affect the contribution rights among Guarantors?",
+            "parent_chunk_id": "chunk_21",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the primary obligations of the Chargors under the Security Agreement, and how do they relate to the Secured Obligations?",
+            "parent_chunk_id": "chunk_22",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does the Collateral Agent's power to remedy non-compliance by a Chargor work, and what are the consequences of such non-compliance?",
+            "parent_chunk_id": "chunk_22",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the rules governing the distribution of proceeds from the realization of Security Assets, and how are the Primary Obligations and Secondary Obligations prioritized?",
+            "parent_chunk_id": "chunk_22",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the key factors that contribute to Tesla's competitive advantage in the electric vehicle and energy generation markets?",
+            "parent_chunk_id": "chunk_23",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does Tesla's business model address the challenges and risks associated with the development and manufacturing of electric vehicles and energy storage systems?",
+            "parent_chunk_id": "chunk_23",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the potential risks and consequences for Tesla's business and operations if it fails to manage its supply chain, manufacturing, and regulatory compliance effectively?",
+            "parent_chunk_id": "chunk_23",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the key factors that impact Tesla's revenue recognition, particularly in the automotive and energy generation and storage segments?",
+            "parent_chunk_id": "chunk_25",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does Tesla account for its digital assets, including cryptocurrencies, and what are the implications for its financial statements?",
+            "parent_chunk_id": "chunk_25",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the terms and conditions of Tesla's debt and finance leases, including the 2024 Notes and the Credit Agreement, and how do they impact the company's financial position?",
+            "parent_chunk_id": "chunk_25",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the key terms and conditions outlined in the Credit Agreement dated January 20, 2023, among Tesla, Inc., the Lenders, and Issuing Banks?",
+            "parent_chunk_id": "chunk_27",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How do the definitions of terms such as \"Benchmark Replacement Date,\" \"Defaulting Lender,\" and \"Excluded Subsidiary\" impact the interpretation and application of the Credit Agreement?",
+            "parent_chunk_id": "chunk_27",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the implications of the \"Events of Default\" and \"Benchmark Unavailability Period\" provisions on the Borrower's obligations and the Lenders' rights under the Credit Agreement?",
+            "parent_chunk_id": "chunk_27",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the conditions under which a Borrowing can be made, and what are the requirements for the notice to be delivered by the Borrower?",
+            "parent_chunk_id": "chunk_28",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How are the interest rates for Term Benchmark Loans and SONIA Loans determined, and what happens if the Daily Simple SONIA is utilized in any calculations?",
+            "parent_chunk_id": "chunk_28",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the consequences for a Defaulting Lender, and how are the Loans and LC Disbursements of non-Defaulting Lenders affected in such a scenario?",
+            "parent_chunk_id": "chunk_28",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the conditions under which the Borrower may terminate the Commitments, and what are the exceptions to these conditions?",
+            "parent_chunk_id": "chunk_29",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How do the Administrative Agent and the Lenders determine the occurrence of a Default or an Event of Default, and what actions can they take in response?",
+            "parent_chunk_id": "chunk_29",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the restrictions on the Borrower and its Restricted Subsidiaries with respect to Liens, Indebtedness, and transactions with Affiliates?",
+            "parent_chunk_id": "chunk_29",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the key factors that could impact Tesla's ability to increase production and meet demand for its vehicles and energy storage products?",
+            "parent_chunk_id": "chunk_31",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does Tesla's business model and strategy for growth and expansion expose the company to various risks and challenges, including those related to competition, regulation, and cybersecurity?",
+            "parent_chunk_id": "chunk_31",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What steps is Tesla taking to address these risks and challenges, and how might the company's financial performance and operations be affected by its ability to manage these risks?",
+            "parent_chunk_id": "chunk_31",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the key factors that affect Tesla's revenue recognition, particularly in the automotive and energy generation and storage segments?",
+            "parent_chunk_id": "chunk_32",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does Tesla account for its warranty obligations, and what are the implications for its financial statements?",
+            "parent_chunk_id": "chunk_32",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the potential risks and challenges associated with Tesla's use of digital assets, and how does the company account for these assets in its financial statements?",
+            "parent_chunk_id": "chunk_32",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What is the total value of Tesla's automotive and energy generation and storage segments as of December 31, 2023?",
+            "parent_chunk_id": "chunk_33",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How does Tesla determine the fair value of its investments, and what are the different levels of fair value hierarchy used by the company?",
+            "parent_chunk_id": "chunk_33",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the various lawsuits and legal proceedings that Tesla is currently involved in, and how do they relate to the company's products and services?",
+            "parent_chunk_id": "chunk_33",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What is the purpose of the Tesla, Inc. Clawback Policy and how does it relate to the company's executives and financial reporting?",
+            "parent_chunk_id": "chunk_34",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "What are the various subsidiaries of Tesla, Inc. listed in Exhibit 21.1, and what jurisdictions are they incorporated in?",
+            "parent_chunk_id": "chunk_34",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        },
+        {
+            "hypothetical_question": "How do the certifications and consents provided by Elon Musk and Vaibhav Taneja in Exhibits 23.1, 31.2, and 32.1 relate to the company's financial reporting and internal control over financial reporting?",
+            "parent_chunk_id": "chunk_34",
+            "section": "unknown",
+            "year": 2025,
+            "score": 0.5
+        }
+    ],
+    "parent_chunks_used": [
+        {
+            "chunk_id": "chunk_1",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_2",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_3",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_4",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_5",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_6",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_7",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_8",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_9",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_10",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_11",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_12",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_13",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_14",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_15",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_16",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_17",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_18",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_19",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_20",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_21",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_22",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_23",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_24",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_25",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_26",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_27",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_28",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_29",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_30",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_31",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_32",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_33",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_34",
+            "source_doc": "tesla_10k",
+            "section": "unknown",
+            "year": 2025
+        }
+    ],
+    "final_answer": "This summarizes key insights from Tesla reports.",
+    "citations": [],
+    "comparison_with_baseline": "Hypothetical questions improve retrieval relevance."
+}

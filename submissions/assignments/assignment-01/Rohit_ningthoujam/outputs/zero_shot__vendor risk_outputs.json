@@ -1,0 +1,18 @@
+{
+  "risk_level": "HIGH",
+  "key_risk_factors": [
+    "Lack of region-specific data residency",
+    "Customer data used for product improvement without clear opt-out",
+    "Only SOC 2 Type I certification",
+    "Unclear rate limits for APIs",
+    "Usage-based pricing with potential for significant increases",
+    "Limited operational history (18 months) and small customer base"
+  ],
+  "missing_information": [
+    "Clear documentation of rate limits for APIs",
+    "Detailed information on security controls beyond encryption",
+    "Type II SOC 2 certification"
+  ],
+  "business_recommendation": "Proceed with caution and negotiate a pilot to test vendor capabilities and security before full implementation",
+  "confidence_score": 0.6
+}

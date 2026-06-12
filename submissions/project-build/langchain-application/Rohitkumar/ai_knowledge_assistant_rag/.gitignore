@@ -1,0 +1,19 @@
+# virtual environment
+.venv/
+
+#environment variables
+.env
+
+# vector data base storage
+data/vector_store/
+data/logs/
+# vector_db
+data\vector_store
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo

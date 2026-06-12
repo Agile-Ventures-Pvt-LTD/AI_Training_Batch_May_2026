@@ -1,0 +1,64 @@
+C:\Users\Rohit kumar\Desktop\helpdesk_agent> uv run app.py
+
+Using Database:
+C:\Users\Rohit kumar\Desktop\helpdesk_agent\data\helpdesk_agent_db_package\helpdesk_agent.db
+
+╭────────── Helpdesk Agent ───────────╮
+│                                     │
+│ AI Helpdesk Ticket Operations Agent │
+│                                     │
+│ Features:                           │
+│ - Ticket Search                     │
+│ - SLA Analysis                      │
+│ - Ticket Prioritization             │
+│ - Ticket Updates                    │
+│ - Internal Comments                 │
+│ - Conversation Recall               │
+│ - Archival Memory                   │
+│ - Conversation Summaries            │
+│                                     │
+│ Type 'exit' to quit                 │
+│                                     │
+╰─────────────────────────────────────╯
+
+Helpdesk User > Which tickets should I work on first today?
+
+
+> Entering new AgentExecutor chain...
+
+Invoking: `prioritize_tickets` with `{}`
+
+
+{'success': True, 'recommended_count': 10, 'recommendations': [{'ticket_id': 'TCK-00002', 'subject': 'Peripheral compatibility', 'reason': 'high priority, enterprise customer, SLA breached'}, {'ticket_id': 'TCK-00008', 'subject': 'Battery life', 'reason': 'high priority, enterprise customer, SLA breached'}, {'ticket_id': 'TCK-00010', 'subject': 'Payment issue', 'reason': 'high priority, enterprise customer, SLA breached'}, {'ticket_id': 'TCK-00022', 'subject': 'Installation support', 'reason': 'high priority, enterprise customer, SLA breached'}, {'ticket_id': 'TCK-00056', 'subject': 'Software bug', 'reason': 'high priority, enterprise customer, SLA breached'}, {'ticket_id': 'TCK-00058', 'subject': 'Peripheral compatibility', 'reason': 'high priority, enterprise customer, SLA breached'}, {'ticket_id': 'TCK-00062', 'subject': 'Battery life', 'reason': 'high priority, enterprise customer, SLA breached'}, {'ticket_id': 'TCK-00077', 'subject': 'Account access', 'reason': 'high priority, enterprise customer, SLA breached'}, {'ticket_id': 'TCK-00080', 'subject': 'Software bug', 'reason': 'high priority, enterprise customer, SLA breached'}, {'ticket_id': 'TCK-00089', 'subject': 'Product setup', 'reason': 'high priority, enterprise customer, SLA breached'}]}Based on the results, I recommend working on the following tickets first:
+
+1. TCK-00002 - Peripheral compatibility
+2. TCK-00008 - Battery life
+3. TCK-00010 - Payment issue
+4. TCK-00022 - Installation support
+5. TCK-00056 - Software bug
+6. TCK-00058 - Peripheral compatibility
+7. TCK-00062 - Battery life
+8. TCK-00077 - Account access
+9. TCK-00080 - Software bug
+10. TCK-00089 - Product setup
+
+These tickets are all high priority, have enterprise customers, and have breached their SLAs, making them the most critical to address first.
+
+> Finished chain.
+
+Agent Response:
+
+Based on the results, I recommend working on the following tickets first:
+
+1. TCK-00002 - Peripheral compatibility
+2. TCK-00008 - Battery life
+3. TCK-00010 - Payment issue
+4. TCK-00022 - Installation support
+5. TCK-00056 - Software bug
+6. TCK-00058 - Peripheral compatibility
+7. TCK-00062 - Battery life
+8. TCK-00077 - Account access
+9. TCK-00080 - Software bug
+10. TCK-00089 - Product setup
+
+These tickets are all high priority, have enterprise customers, and have breached their SLAs, making them the most critical to address first.
