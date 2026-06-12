@@ -1,0 +1,170 @@
+[
+  {
+    "question": "What are Amazon's business segments?",
+    "result": {
+      "answer": "Amazon's business segments are North America, International, and Amazon Web Services (AWS)",
+      "supporting_evidence": [
+        "We have organized our operations into three segments: North America, International, and Amazon Web Services (\"AWS\")",
+        "We have organized our operations into three segments: North America, International, and AWS"
+      ],
+      "sources": [
+        {
+          "document": "Amazon-2025-Annual-Report.pdf",
+          "page": 14
+        },
+        {
+          "document": "Amazon-2025-Annual-Report.pdf",
+          "page": 52
+        }
+      ],
+      "confidence": "high",
+      "answerability": "answerable"
+    }
+  },
+  {
+    "question": "Who are Amazon's primary customers?",
+    "result": {
+      "answer": "consumers, sellers, developers, enterprises, content creators, advertisers, and employees",
+      "supporting_evidence": [
+        "We serve our primary customer sets, consisting of consumers, sellers, developers, enterprises, content creators, advertisers, and employees."
+      ],
+      "sources": [
+        {
+          "document": "Amazon-2025-Annual-Report.pdf",
+          "page": 52,
+          "chunk_id": "chunk_00251"
+        },
+        {
+          "document": "Amazon-2025-Annual-Report.pdf",
+          "page": 14,
+          "chunk_id": "chunk_00060"
+        }
+      ],
+      "confidence": "high",
+      "answerability": "answerable"
+    }
+  },
+  {
+    "question": "Summarize Amazon's business model.",
+    "result": {
+      "answer": "Amazon's business model is centered around being Earth's most customer-centric company, guided by four principles: customer obsession, passion for invention, commitment to operational excellence, and long-term thinking. They serve various customer sets, including consumers, sellers, developers, enterprises, content creators, advertisers, and employees, through their online and physical stores, as well as programs and services such as AWS.",
+      "supporting_evidence": [
+        "We seek to be Earth's most customer-centric company. We are guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking. (Document 1, Page 14)",
+        "We serve consumers through our online and physical stores and focus on selection, price, and convenience. (Document 2, Page 52)",
+        "We offer programs that enable sellers to grow their businesses, sell their products in our stores, and fulfill orders using our services... (Document 2, Page 52)"
+      ],
+      "sources": [
+        {
+          "document": "Amazon-2025-Annual-Report.pdf",
+          "page": 14
+        },
+        {
+          "document": "Amazon-2025-Annual-Report.pdf",
+          "page": 52
+        }
+      ],
+      "confidence": "High",
+      "answerability": "Answerable"
+    }
+  },
+  {
+    "question": "Summarize Amazon's AI strategy.",
+    "result": {
+      "answer": "Amazon's AI strategy involves making AWS the best place for others to build and use AI, with a focus on providing broader capabilities, compelling offerings, and a significant leadership position in the market. AI is seen as a multiplier that will reshape every customer experience and unlock new ones.",
+      "supporting_evidence": [
+        "Customers are choosing AWS for AI for a few reasons. First, we have broader capabilities than others, with compelling offerings for model-building (SageMaker), high-performance inference with leading selection of frontier models (Bedrock), lower-cost inference (on our custom silicon, Trainium), agent-building (Strands), scalable and secure agent environments (AgentCore), and turnkey agents for coding, software migrations, and most tasks knowledge workers use in their daily routines (Kiro, Transform, and Quick).",
+        "Across all of this, AI is not a standalone initiative—it’s a multiplier. It will reshape every customer experience we offer and unlock entirely new ones.",
+        "We’re not going to be conservative in how we play this—we’re investing to be the meaningful leader, and our future business, operating income, and FCF will be much larger because of it."
+      ],
+      "sources": [
+        {
+          "document": "Amazon-2025-Annual-Report.pdf",
+          "page": 5
+        },
+        {
+          "document": "Amazon-2025-Annual-Report.pdf",
+          "page": 8
+        },
+        {
+          "document": "Amazon-2025-Annual-Report.pdf",
+          "page": 6
+        }
+      ],
+      "confidence": "High",
+      "answerability": "Answerable"
+    }
+  },
+  {
+    "question": "Compare North America and AWS segments.",
+    "result": {
+      "answer": "The North America segment primarily consists of retail sales, advertising, and subscription services, while the AWS segment consists of global sales of compute, storage, database, and other services. The North America segment had $235,652 million in sales in 2025, while the AWS segment had $252,588 million in sales in 2025.",
+      "supporting_evidence": [
+        "North America segment primarily consists of amounts earned from retail sales of consumer products (including from sellers) and advertising and subscription services through North America-focused online and physical stores.",
+        "AWS segment consists of amounts earned from global sales of compute, storage, database, and other services for start-ups, enterprises, government agencies, and academic institutions.",
+        "North America (1) $ 196,029 $ 210,120 $ 235,652",
+        "AWS (2)  108,533  155,953  252,588"
+      ],
+      "sources": [
+        {
+          "document": "Amazon-2025-Annual-Report.pdf",
+          "page": 79
+        },
+        {
+          "document": "Amazon-2025-Annual-Report.pdf",
+          "page": 81
+        }
+      ],
+      "confidence": "high",
+      "answerability": "answerable"
+    }
+  },
+  {
+    "question": "What risks are discussed in the report?",
+    "result": {
+      "answer": "The report discusses various risks, including changes in interest rates, conditions or trends in the internet and other technologies, quarterly variations in operating results, fluctuations in the stock market, changes in financial estimates, and cybersecurity risks such as data loss or other security incidents.",
+      "supporting_evidence": [
+        "changes in interest rates; conditions or trends in the internet, other technologies including artificial intelligence, and the industry segments we operate in; quarterly variations in operating results; fluctuations in the stock market in general and market prices for technology-related companies in particular",
+        "We Could Be Harmed by Data Loss or Other Security Incidents",
+        "failure to prevent, detect, or mitigate data loss, theft, misuse, unauthorized access, or other security incidents or vulnerabilities affecting our or our vendors’ or customers’ technology, products, and systems"
+      ],
+      "sources": [
+        {
+          "source": "Amazon-2025-Annual-Report.pdf",
+          "page": 25
+        },
+        {
+          "source": "Amazon-2025-Annual-Report.pdf",
+          "page": 22
+        },
+        {
+          "source": "Amazon-2025-Annual-Report.pdf",
+          "page": 28
+        }
+      ],
+      "confidence": "High",
+      "answerability": "Answerable"
+    }
+  },
+  {
+    "question": "What will Amazon stock price be in 2027?",
+    "result": {
+      "answer": "I could not find this in the provided documents.",
+      "supporting_evidence": [],
+      "sources": [
+        "Amazon-2025-Annual-Report.pdf"
+      ],
+      "confidence": "0",
+      "answerability": "Not Answerable"
+    }
+  },
+  {
+    "question": "Did Amazon guarantee future AI profits?",
+    "result": {
+      "answer": "I could not find this in the provided documents.",
+      "supporting_evidence": [],
+      "sources": [],
+      "confidence": "0",
+      "answerability": "Unknown"
+    }
+  }
+]

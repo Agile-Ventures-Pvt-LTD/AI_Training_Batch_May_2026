@@ -1,0 +1,15 @@
+{
+    "individual_answers": [
+        37.5,
+        37.5,
+        37.5,
+        37.5,
+        37.5
+    ],
+    "final_reimbursable_amount": 37.5,
+    "consistency_count": {
+        "37.5": 5
+    },
+    "final_decision": "All five answers agree on $37.50, which is the majority and therefore the selected reimbursable amount.",
+    "reasoning_summary": "Each answer applies the policy by starting with the base daily meal limit of $60, adding a 25 % international travel increase to reach $75, then halving it because the trip was same‑day and longer than 8 hours, resulting in a $37.50 entitlement. Alcohol expenses are excluded, receipts satisfy the documentation rule, and the employee's $70 claim is capped at the $37.50 limit."
+}
