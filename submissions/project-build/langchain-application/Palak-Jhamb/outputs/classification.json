@@ -1,0 +1,1 @@
+"{\n  \"query_type\": \"OTHER\",\n  \"requires_retrieval\": false,\n  \"requires_comparison\": false,\n  \"answer_style\": \"none\",\n  \"reasoning_summary\": \"The query consists only of a greeting ('hello') and does not request factual information, summary, comparison, risk analysis, speculation, or follow\u2011up, so it does not match any specific supported category.\"\n}"
