@@ -18,9 +18,6 @@ def get_db_connection():
 
 
 def execute_select_query(query: str, params: tuple = ()):
-    # Execute SELECT query.
-    # Returns list of dictionaries.
-
     with get_db_connection() as conn:
 
         cursor = conn.cursor()
@@ -49,8 +46,6 @@ def execute_single_record_query(query: str,params: tuple = ()):
 
 
 def execute_update_query(query: str, params: tuple = ()):
-    # Execute INSERT / UPDATE / DELETE query.
-
     with get_db_connection() as conn:
 
         cursor = conn.cursor()

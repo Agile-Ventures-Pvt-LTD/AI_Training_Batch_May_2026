@@ -1,8 +1,6 @@
 import json
 import re
-
 from config import OUTPUT_DIR
-
 
 def clean_text(text):
 
@@ -21,7 +19,6 @@ def clean_text(text):
     text = re.sub(r"\s+", " ", text)
 
     return text.strip()
-
 
 def format_ticket(ticket):
 
@@ -54,11 +51,7 @@ def format_ticket_list(tickets):
     if not tickets:
         return "No tickets found."
 
-    lines = [
-        "=" * 90,
-        "TICKET RESULTS",
-        "=" * 90,
-    ]
+    lines = ["TICKET RESULTS"]
 
     for ticket in tickets:
 
@@ -78,11 +71,7 @@ def format_comments(comments):
     if not comments:
         return "No comments found."
 
-    lines = [
-        "=" * 60,
-        "TICKET COMMENTS",
-        "=" * 60,
-    ]
+    lines = ["TICKET COMMENTS",]
 
     for comment in comments:
 
@@ -103,10 +92,8 @@ def format_sla_result(sla_result):
         return "No SLA information available."
 
     lines = [
-        "=" * 60,
         "SLA STATUS",
-        "=" * 60,
-    ]
+      ]
 
     for key, value in sla_result.items():
         lines.append(f"{key}: {value}")
@@ -121,19 +108,14 @@ def format_agent_response(answer, plan, reflection):
     reflection = clean_text(reflection)
 
     sections = [
-        "=" * 80,
-        "EXECUTION PLAN",
-        "=" * 80,
+               "EXECUTION PLAN",
+  
         plan,
         "",
-        "=" * 80,
         "AGENT RESPONSE",
-        "=" * 80,
         answer,
         "",
-        "=" * 80,
         "REFLECTION",
-        "=" * 80,
         reflection,
     ]
 
