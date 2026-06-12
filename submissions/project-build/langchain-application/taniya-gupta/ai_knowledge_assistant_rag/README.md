@@ -95,4 +95,3 @@ You can test the assistant with questions like:
 7. What will the stock price be?
 8. Did the document say that it guarantees future profitability from AI products?
 
-### Please note that the data directory(vector database+raw document) has been uploaded and shared on onedrive, kindly refer to it
