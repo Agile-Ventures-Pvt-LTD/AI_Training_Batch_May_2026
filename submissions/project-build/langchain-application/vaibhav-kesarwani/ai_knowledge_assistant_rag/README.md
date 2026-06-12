@@ -1,4 +1,4 @@
-# Assignment 04 - AI Knowledge Assistant 
+# Langchain Application - AI Knowledge Assistant 
 
 ## Participant Name
 
