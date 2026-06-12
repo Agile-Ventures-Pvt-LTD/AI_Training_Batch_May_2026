@@ -5,7 +5,8 @@ from pathlib import Path
 from groq import Groq
 
 
-MAX_FILE_CHARS = 12000
+MAX_FILE_CHARS = 2500
+MAX_TOTAL_CHARS = 9000
 
 ALLOWED_EXTENSIONS = {
     ".py",
@@ -49,6 +50,10 @@ def collect_submission_files(submission_path: Path) -> str:
         return f"Submission folder not found: {submission_path}"
 
     collected_content = []
+    total_chars = 0
+
+    priority_files = []
+    other_files = []
 
     for file_path in submission_path.rglob("*"):
         if not file_path.is_file():
@@ -63,17 +68,41 @@ def collect_submission_files(submission_path: Path) -> str:
         if file_path.suffix.lower() not in ALLOWED_EXTENSIONS:
             continue
 
+        # Give higher priority to README and source code files
+        if file_path.name.lower() == "readme.md" or file_path.suffix.lower() == ".py":
+            priority_files.append(file_path)
+        else:
+            other_files.append(file_path)
+
+    files_to_review = priority_files + other_files
+
+    for file_path in files_to_review:
+        if total_chars >= MAX_TOTAL_CHARS:
+            break
+
         content = read_text_file(file_path)
 
         if not content.strip():
             continue
 
-        if len(content) > MAX_FILE_CHARS:
-            content = content[:MAX_FILE_CHARS] + "\n\n[File truncated for review]"
+        # Jupyter notebooks can be very large.
+        # Keep only a limited portion for review.
+        if file_path.suffix.lower() == ".ipynb":
+            content = content[:1500] + "\n\n[Notebook content truncated for AI review]"
 
+        if len(content) > MAX_FILE_CHARS:
+            content = content[:MAX_FILE_CHARS] + "\n\n[File truncated for AI review]"
+
+        remaining_chars = MAX_TOTAL_CHARS - total_chars
+
+        if len(content) > remaining_chars:
+            content = content[:remaining_chars] + "\n\n[Total review content limit reached]"
+        
         collected_content.append(
             f"\n\n--- FILE: {file_path} ---\n\n{content}"
         )
+
+        total_chars += len(content)
 
     if not collected_content:
         return "No readable files found for AI review."
@@ -179,24 +208,40 @@ def run_ai_review(participant_name: str, submission_path: str, model: str) -> st
     content = collect_submission_files(submission_folder)
     prompt = build_prompt(participant_name, submission_path, content)
 
-    response = client.chat.completions.create(
-        model=model,
-        messages=[
-            {
-                "role": "system",
-                "content": "You are a careful code reviewer for a technical training program.",
-            },
-            {
-                "role": "user",
-                "content": prompt,
-            },
-        ],
-        temperature=0.2,
-        max_tokens=3000,
-    )
+    try:
+        response = client.chat.completions.create(
+            model=model,
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are a careful code reviewer for a technical training program.",
+                },
+                {
+                    "role": "user",
+                    "content": prompt,
+                },
+            ],
+            temperature=0.2,
+            max_tokens=1500,
+        )
 
-    return response.choices[0].message.content
+        return response.choices[0].message.content
 
+    except Exception as error:
+        return f"""
+# AI Review Failed
+
+## Participant
+{participant_name}
+
+## Submission Path
+{submission_path}
+
+## Reason
+The AI review could not be completed because the model/API returned an error.
+
+## Error
+{str(error)}"""
 
 def main():
     parser = argparse.ArgumentParser()
