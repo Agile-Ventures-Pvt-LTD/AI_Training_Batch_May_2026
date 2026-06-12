@@ -1,0 +1,19 @@
+{
+  "case_name": "zero_shot_risk",
+  "raw_output": "{\n \"risk_level\": \"MEDIUM\",\n \"key_risk_factors\": [\n  \"inadequate data encryption\",\n  \"lack of compliance with industry standards\",\n  \"insufficient disaster recovery planning\"\n ],\n \"missing_information\": [\n  \"vendor's security audit reports\",\n  \"details on data storage and processing practices\"\n ],\n \"business_recommendation\": \"proceed with caution and negotiate a robust service level agreement\",\n \"confidence_score\": 0.7\n}",
+  "parsed": {
+    "risk_level": "MEDIUM",
+    "key_risk_factors": [
+      "inadequate data encryption",
+      "lack of compliance with industry standards",
+      "insufficient disaster recovery planning"
+    ],
+    "missing_information": [
+      "vendor's security audit reports",
+      "details on data storage and processing practices"
+    ],
+    "business_recommendation": "proceed with caution and negotiate a robust service level agreement",
+    "confidence_score": 0.7
+  },
+  "timestamp": "2026-05-28 09:53:18.609958"
+}

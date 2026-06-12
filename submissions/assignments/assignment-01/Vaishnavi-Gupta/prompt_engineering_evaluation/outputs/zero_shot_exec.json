@@ -1,0 +1,30 @@
+{
+  "case_name": "zero_shot_exec",
+  "raw_output": "```\n{\n \"decision\": \"Approved\",\n \"rationale\": \"Expected ROI within 12 months, manageable compliance risks, and positive operational impact\",\n \"financial_considerations\": [\n  \"Expected payback within 12 months\",\n  \"Projected ROI of 15%\"\n ],\n \"operational_considerations\": [\n  \"Improved customer service\",\n  \"Enhanced user experience\"\n ],\n \"people_impact\": [\n  \"Upskilling opportunities for employees\",\n  \"Potential reduction in support staff\"\n ],\n \"compliance_risks\": [\n  \"PII exposure mitigated through data anonymization\",\n  \"Regular security audits\"\n ],\n \"conditions_for_approval\": [\n  \"Implementation of robust data protection measures\",\n  \"Regular review of project performance\"\n ],\n \"final_recommendation\": \"Proceed with project implementation\"\n}\n```",
+  "parsed": {
+    "decision": "Approved",
+    "rationale": "Expected ROI within 12 months, manageable compliance risks, and positive operational impact",
+    "financial_considerations": [
+      "Expected payback within 12 months",
+      "Projected ROI of 15%"
+    ],
+    "operational_considerations": [
+      "Improved customer service",
+      "Enhanced user experience"
+    ],
+    "people_impact": [
+      "Upskilling opportunities for employees",
+      "Potential reduction in support staff"
+    ],
+    "compliance_risks": [
+      "PII exposure mitigated through data anonymization",
+      "Regular security audits"
+    ],
+    "conditions_for_approval": [
+      "Implementation of robust data protection measures",
+      "Regular review of project performance"
+    ],
+    "final_recommendation": "Proceed with project implementation"
+  },
+  "timestamp": "2026-05-28 09:53:19.320597"
+}

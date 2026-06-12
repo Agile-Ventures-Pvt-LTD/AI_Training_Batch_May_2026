@@ -1,0 +1,34 @@
+{
+  "case_name": "cot.rca",
+  "raw_output": "```\n{\n  \"most_likely_causes\": [\n    \"concept_drift\",\n    \"distribution_shift\"\n  ],\n  \"evidence\": [\n    \"Increase in false positives over the last quarter, with a statistically significant shift in the distribution of transaction amounts\",\n    \"Changes in customer behavior and spending patterns, as indicated by marketing and sales reports\",\n    \"Model performance metrics (precision, recall, F1-score) show a decline over the same period\"\n  ],\n  \"less_likely_causes\": [\n    \"threshold_miscalibration\",\n    \"external_behavioral_changes\"\n  ],\n  \"recommended_diagnostics\": [\n    \"Analysis of transaction data to identify changes in distribution and patterns\",\n    \"Comparison of model performance on historical vs. recent data\",\n    \"Review of marketing and sales reports to understand changes in customer behavior\"\n  ],\n  \"short_term_actions\": [\n    \"Adjust model thresholds to mitigate immediate performance degradation\",\n    \"Implement additional monitoring and alerting for model performance\"\n  ],\n  \"long_term_actions\": [\n    \"Re-evaluate and update model features to capture changes in customer behavior and spending patterns\",\n    \"Consider re-training the model with recent data, incorporating domain knowledge and expertise\"\n  ],\n  \"reasoning_summary\": \"The observed performance degradation is likely due to changes in the underlying concept (customer behavior and spending patterns) and distribution of transaction data. While threshold miscalibration and external behavioral changes are possible, they are less likely given the available evidence. Recommended diagnostics will help confirm the root cause, and short-term actions can mitigate immediate performance issues. Long-term actions will focus on updating the model to capture changes in the data and improve overall performance.\"\n}\n```",
+  "parsed": {
+    "most_likely_causes": [
+      "concept_drift",
+      "distribution_shift"
+    ],
+    "evidence": [
+      "Increase in false positives over the last quarter, with a statistically significant shift in the distribution of transaction amounts",
+      "Changes in customer behavior and spending patterns, as indicated by marketing and sales reports",
+      "Model performance metrics (precision, recall, F1-score) show a decline over the same period"
+    ],
+    "less_likely_causes": [
+      "threshold_miscalibration",
+      "external_behavioral_changes"
+    ],
+    "recommended_diagnostics": [
+      "Analysis of transaction data to identify changes in distribution and patterns",
+      "Comparison of model performance on historical vs. recent data",
+      "Review of marketing and sales reports to understand changes in customer behavior"
+    ],
+    "short_term_actions": [
+      "Adjust model thresholds to mitigate immediate performance degradation",
+      "Implement additional monitoring and alerting for model performance"
+    ],
+    "long_term_actions": [
+      "Re-evaluate and update model features to capture changes in customer behavior and spending patterns",
+      "Consider re-training the model with recent data, incorporating domain knowledge and expertise"
+    ],
+    "reasoning_summary": "The observed performance degradation is likely due to changes in the underlying concept (customer behavior and spending patterns) and distribution of transaction data. While threshold miscalibration and external behavioral changes are possible, they are less likely given the available evidence. Recommended diagnostics will help confirm the root cause, and short-term actions can mitigate immediate performance issues. Long-term actions will focus on updating the model to capture changes in the data and improve overall performance."
+  },
+  "timestamp": "2026-05-28 09:49:15.010496"
+}

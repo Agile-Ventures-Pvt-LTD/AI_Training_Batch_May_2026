@@ -1,0 +1,12 @@
+{
+  "case_name": "few_shot_api",
+  "raw_output": "```json\n{\n \"action\": \"APPLY_LEAVE\",\n \"parameters\": {},\n \"requires_clarification\": true,\n \"clarification_question\": \"Which exact dates and type of leave are you referring to?\",\n \"confidence\": 0.2\n}\n```",
+  "parsed": {
+    "action": "APPLY_LEAVE",
+    "parameters": {},
+    "requires_clarification": true,
+    "clarification_question": "Which exact dates and type of leave are you referring to?",
+    "confidence": 0.2
+  },
+  "timestamp": "2026-05-28 09:53:19.940580"
+}

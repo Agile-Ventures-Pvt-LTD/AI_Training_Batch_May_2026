@@ -1,0 +1,33 @@
+{
+  "case_name": "tot",
+  "raw_output": "```json\n{\n  \"options\": [\n    {\n      \"name\": \"Option A\",\n      \"business_value\": 4,\n      \"feasibility\": 3,\n      \"risk\": 4,\n      \"pilot_suitability\": 5,\n      \"adoption\": 4\n    },\n    {\n      \"name\": \"Option B\",\n      \"business_value\": 5,\n      \"feasibility\": 4,\n      \"risk\": 3,\n      \"pilot_suitability\": 3,\n      \"adoption\": 5\n    },\n    {\n      \"name\": \"Option C\",\n      \"business_value\": 3,\n      \"feasibility\": 5,\n      \"risk\": 5,\n      \"pilot_suitability\": 4,\n      \"adoption\": 3\n    }\n  ]\n}\n```",
+  "parsed": {
+    "options": [
+      {
+        "name": "Option A",
+        "business_value": 4,
+        "feasibility": 3,
+        "risk": 4,
+        "pilot_suitability": 5,
+        "adoption": 4
+      },
+      {
+        "name": "Option B",
+        "business_value": 5,
+        "feasibility": 4,
+        "risk": 3,
+        "pilot_suitability": 3,
+        "adoption": 5
+      },
+      {
+        "name": "Option C",
+        "business_value": 3,
+        "feasibility": 5,
+        "risk": 5,
+        "pilot_suitability": 4,
+        "adoption": 3
+      }
+    ]
+  },
+  "timestamp": "2026-05-28 09:53:26.049602"
+}
