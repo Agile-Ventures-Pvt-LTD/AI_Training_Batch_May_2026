@@ -1,13 +1,6 @@
 name: Evaluate Training Submissions
 
 on:
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
-      - ready_for_review
-
   workflow_dispatch:
     inputs:
       participant_branch:
@@ -18,7 +11,10 @@ on:
         description: "Participant folder name, for example taniya-gupta"
         required: true
         type: string
-
+      target_submission_path:
+        description: "Optional: exact submission path, for example submissions/project-build/llm-application/taniya-gupta"
+        required: false
+        type: string
 permissions:
   contents: read
   pull-requests: write
@@ -79,11 +75,31 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         shell: bash
         run: |
-          PARTICIPANT="${{ steps.details.outputs.participant_name }}"
+          
 
-          cd participant-code
-          find submissions -type d -name "$PARTICIPANT" -print > ../participant_paths.txt
-          cd ..
+          PARTICIPANT="${{ steps.details.outputs.participant_name }}"
+          TARGET_PATH="${{ github.event.inputs.target_submission_path }}"
+
+          if [ -n "$TARGET_PATH" ]; then
+            echo "Specific target path provided: $TARGET_PATH"
+
+            if [ -d "participant-code/$TARGET_PATH" ]; then
+              echo "$TARGET_PATH" > participant_paths.txt
+            else
+              echo "# AI Review Combined Report" > ai_review_report.md
+              echo "" >> ai_review_report.md
+              echo "**Participant:** $PARTICIPANT" >> ai_review_report.md
+              echo "" >> ai_review_report.md
+              echo "Target submission path not found: $TARGET_PATH" >> ai_review_report.md
+              echo "" >> ai_review_report.md
+              echo "Please check the folder path and rerun the workflow." >> ai_review_report.md
+              exit 0
+            fi
+          else
+            cd participant-code
+            find submissions -type d -name "$PARTICIPANT" -print > ../participant_paths.txt
+            cd ..
+          fi
 
           echo "# AI Review Combined Report" > ai_review_report.md
           echo "" >> ai_review_report.md

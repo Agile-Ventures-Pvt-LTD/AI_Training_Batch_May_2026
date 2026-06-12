@@ -5,8 +5,8 @@ from pathlib import Path
 from groq import Groq
 
 
-MAX_FILE_CHARS = 2500
-MAX_TOTAL_CHARS = 9000
+MAX_FILE_CHARS = 1500
+MAX_TOTAL_CHARS = 5000
 
 ALLOWED_EXTENSIONS = {
     ".py",
@@ -303,7 +303,7 @@ def run_ai_review(participant_name: str, submission_path: str, model: str) -> st
                 },
             ],
             temperature=0.2,
-            max_tokens=1500,
+            max_tokens=900,
         )
 
         return response.choices[0].message.content
