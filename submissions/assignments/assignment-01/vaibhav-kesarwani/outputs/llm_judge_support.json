@@ -1,0 +1,38 @@
+{
+  "case_name": "llm_judge_support",
+  "raw_response": "```json\n{\n  \"response_a\": {\n    \"scores\": {\n      \"Empathy & Tone\": 2,\n      \"Correctness & Policy Safety\": 3,\n      \"Actionability\": 1,\n      \"Problem Ownership\": 1,\n      \"Customer Experience Quality\": 1\n    },\n    \"strengths\": [],\n    \"weaknesses\": [\"Lack of empathy\", \"Vague response\", \"No clear next steps\"]\n  },\n  \"response_b\": {\n    \"scores\": {\n      \"Empathy & Tone\": 5,\n      \"Correctness & Policy Safety\": 5,\n      \"Actionability\": 5,\n      \"Problem Ownership\": 5,\n      \"Customer Experience Quality\": 5\n    },\n    \"strengths\": [\"Empathetic tone\", \"Clear next steps\", \"Takes responsibility\"],\n    \"weaknesses\": []\n  },\n  \"winner\": \"B\",\n  \"judge_reasoning_summary\": \"Response B is the winner due to its empathetic tone, clear next steps, and willingness to take responsibility for the issue. It also requests necessary verification to process the refund, ensuring a smooth and efficient resolution. Response A, on the other hand, is vague, lacks empathy, and does not provide clear next steps, making it an inferior response.\"\n}\n```",
+  "parsed_output": {
+    "response_a": {
+      "scores": {
+        "Empathy & Tone": 2,
+        "Correctness & Policy Safety": 3,
+        "Actionability": 1,
+        "Problem Ownership": 1,
+        "Customer Experience Quality": 1
+      },
+      "strengths": [],
+      "weaknesses": [
+        "Lack of empathy",
+        "Vague response",
+        "No clear next steps"
+      ]
+    },
+    "response_b": {
+      "scores": {
+        "Empathy & Tone": 5,
+        "Correctness & Policy Safety": 5,
+        "Actionability": 5,
+        "Problem Ownership": 5,
+        "Customer Experience Quality": 5
+      },
+      "strengths": [
+        "Empathetic tone",
+        "Clear next steps",
+        "Takes responsibility"
+      ],
+      "weaknesses": []
+    },
+    "winner": "B",
+    "judge_reasoning_summary": "Response B is the winner due to its empathetic tone, clear next steps, and willingness to take responsibility for the issue. It also requests necessary verification to process the refund, ensuring a smooth and efficient resolution. Response A, on the other hand, is vague, lacks empathy, and does not provide clear next steps, making it an inferior response."
+  }
+}

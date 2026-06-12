@@ -1,0 +1,22 @@
+{
+  "case_name": "zero_shot_vendor_risk",
+  "raw_response": "```json\n{\n  \"risk_level\": \"MEDIUM\",\n  \"key_risk_factors\": [\n    \"Lack of region-specific data residency\",\n    \"Unclear rate limits for APIs\",\n    \"Usage-based pricing with potential for significant increases\",\n    \"Limited operational history (18 months) and small customer base (12 enterprise customers)\",\n    \"SOC 2 Type I certification only, without Type II\",\n    \"Customer data used for product improvement unless opted out\"\n  ],\n  \"missing_information\": [\n    \"Clear documentation of rate limits for APIs\",\n    \"Detailed information on data retention and deletion policies\",\n    \"Information on security controls beyond SOC 2 Type I certification\"\n  ],\n  \"business_recommendation\": \"Proceed with caution, negotiate contractual controls for data residency, pricing, and API usage. Request additional information on security controls and operational maturity.\",\n  \"confidence_score\": 0.7\n}\n```",
+  "parsed_output": {
+    "risk_level": "MEDIUM",
+    "key_risk_factors": [
+      "Lack of region-specific data residency",
+      "Unclear rate limits for APIs",
+      "Usage-based pricing with potential for significant increases",
+      "Limited operational history (18 months) and small customer base (12 enterprise customers)",
+      "SOC 2 Type I certification only, without Type II",
+      "Customer data used for product improvement unless opted out"
+    ],
+    "missing_information": [
+      "Clear documentation of rate limits for APIs",
+      "Detailed information on data retention and deletion policies",
+      "Information on security controls beyond SOC 2 Type I certification"
+    ],
+    "business_recommendation": "Proceed with caution, negotiate contractual controls for data residency, pricing, and API usage. Request additional information on security controls and operational maturity.",
+    "confidence_score": 0.7
+  }
+}
