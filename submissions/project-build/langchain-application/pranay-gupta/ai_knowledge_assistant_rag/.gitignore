@@ -1,0 +1,12 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+chroma.sqlite3
+340305be-08d8-49cf-b7a1-b0f9c20b18ea
