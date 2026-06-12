@@ -2,7 +2,7 @@ import uuid
 
 from agent import run_agent
 
-from output_formatter import (format_agent_response,save_evaluation_output,save_sample_run)
+from output_formatter import format_agent_response,save_evaluation_output,save_sample_run
 
 
 def print_banner():
@@ -42,9 +42,7 @@ def main():
 
             show_plan = not show_plan
 
-            print(
-                f"Planning Display: {'ON' if show_plan else 'OFF'}"
-            )
+            print(f"Planning : {'ON' if show_plan else 'OFF'}")
 
             continue
 
@@ -52,9 +50,7 @@ def main():
 
             show_reflection = not show_reflection
 
-            print(
-                f"Reflection Display: {'ON' if show_reflection else 'OFF'}"
-            )
+            print(f"Reflection : {'ON' if show_reflection else 'OFF'}")
 
             continue
 
