@@ -1,0 +1,107 @@
+{
+    "ticket_summary": {
+        "short_summary": "Premium customer charged twice after cancelling subscription",
+        "customer_problem": "Unwanted double charge for premium subscription",
+        "business_impact": "Potential public escalation on LinkedIn if not resolved",
+        "customer_requested_action": "Immediate refund",
+        "important_context": [
+            "Customer cancelled premium subscription last month",
+            "No response from support after two attempts",
+            "Duplicate invoice amount appears on bank statement"
+        ],
+        "missing_information": [
+            "Subscription cancellation date",
+            "Invoice amount",
+            "Bank statement details",
+            "Previous support ticket IDs"
+        ]
+    },
+    "classification": {
+        "primary_category": "BILLING_ISSUE",
+        "secondary_categories": [
+            "CANCELLATION_OR_REFUND",
+            "ESCALATION_COMPLAINT"
+        ],
+        "category_reasoning_summary": "The customer is reporting being charged twice for their premium subscription after cancelling it, and not receiving a response from support. This indicates a billing issue that also involves a cancellation or refund request. The customer's threat to escalate publicly adds an escalation complaint aspect to the issue.",
+        "confidence_score": 0.9
+    },
+    "sentiment_analysis": {
+        "sentiment": "NEGATIVE",
+        "emotion_signals": [
+            "FRUSTRATED",
+            "ANGRY",
+            "URGENT"
+        ],
+        "sentiment_reasoning_summary": "The customer is expressing frustration and anger due to being charged twice and not receiving a response from support. The customer is also threatening to escalate the issue publicly if not resolved immediately, indicating a sense of urgency.",
+        "confidence_score": 0.9
+    },
+    "priority_and_risk": {
+        "priority": "URGENT",
+        "escalation_risk": "CRITICAL",
+        "risk_triggers": [
+            "Customer is a premium customer",
+            "Customer has been charged twice",
+            "Lack of response from support",
+            "Threat to escalate publicly on LinkedIn"
+        ],
+        "recommended_sla_action": "Immediate refund and response to the customer",
+        "reasoning_summary": "The customer is a premium customer who has been incorrectly charged and has not received a response from support. The customer is frustrated and has threatened to escalate the issue publicly, which poses a significant risk to the company's reputation. Therefore, urgent attention is required to resolve the issue and prevent further escalation."
+    },
+    "sensitive_information_check": {
+        "sensitive_information_detected": true,
+        "sensitive_categories": [
+            "PAYMENT_INFORMATION",
+            "PERSONAL_INFORMATION"
+        ],
+        "evidence_summary": "The ticket contains the customer's name ('Amit') and mentions a specific invoice amount being charged twice, which is related to payment information.",
+        "handling_recommendations": [
+            "Redact the customer's name",
+            "Remove any specific payment amounts or details",
+            "Ensure a secure and private response to the customer's concern"
+        ]
+    },
+    "routing_recommendation": {
+        "recommended_team": "BILLING_SUPPORT",
+        "routing_reason": "The customer's issue is related to being charged twice for their premium subscription and not receiving a response from support, which falls under the billing and subscription product area.",
+        "internal_note": "The customer is frustrated and has threatened to escalate the issue publicly if not resolved immediately, so prompt attention is required to resolve the issue and prevent further escalation.",
+        "required_follow_up_information": [
+            "refund confirmation",
+            "customer satisfaction feedback"
+        ]
+    },
+    "draft_customer_response": {
+        "draft_response": "Dear Amit, I apologize for the frustration and inconvenience you've experienced with being charged twice and not receiving a response from our support team. I understand how upsetting this must be, especially given your premium subscription status. I'm here to help and want to ensure that your issue is resolved as soon as possible. To better assist you, could you please provide me with your subscription ID or the exact date you cancelled your premium subscription? Additionally, I would like to request a copy of your bank statement showing the duplicate charges. Once I have this information, I'll be able to look into this matter further and guide you through the next steps to resolve the issue.",
+        "response_strategy": "Empathize and gather information",
+        "assumptions": [],
+        "information_needed_before_sending": [
+            "subscription ID",
+            "date of subscription cancellation",
+            "copy of bank statement"
+        ]
+    },
+    "response_quality_review": {
+        "scores": {
+            "empathy": 8,
+            "correctness": 9,
+            "actionability": 8,
+            "policy_safety": 9,
+            "tone_alignment": 9,
+            "completeness": 8
+        },
+        "strengths": [
+            "The response acknowledges the customer's frustration and apologizes for the inconvenience.",
+            "The tone is professional and empathetic, aligning with the required tone.",
+            "The response requests specific information to assist with the issue, showing a clear path to resolution."
+        ],
+        "improvement_areas": [
+            "The response could be more complete by providing a clear timeline for resolution or an estimated timeframe for the refund.",
+            "Additionally, the response could offer an explanation for the lack of response from the support team or provide a contact method for further assistance."
+        ],
+        "final_review_summary": "The response is well-structured, empathetic, and professional. It effectively addresses the customer's concerns and provides a clear next step for resolving the issue. With a few minor adjustments to address completeness and provide additional information, the response would be even more effective."
+    },
+    "generation_metadata": {
+        "model_used": "llama-3.3-70b-versatile",
+        "temperature": 0.2,
+        "total_steps_completed": 8
+    }
+}
