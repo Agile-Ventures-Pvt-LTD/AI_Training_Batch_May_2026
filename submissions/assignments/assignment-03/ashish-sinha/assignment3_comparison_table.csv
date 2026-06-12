@@ -1,0 +1,5 @@
+Question,Baseline Evidence Quality,Improved Evidence Quality,Improvement Observed,Failure Mode
+HQ1,Medium,High,"HQ retrieval matched production, scaling, growth-management and forward-looking risk concepts more closely than baseline retrieval.",Some generated questions were broad and retrieved generic business risk disclosures.
+HQ2,High,High,"HQ retrieval connected warranty claims, product liability, recalls, and service obligations more effectively.",One retrieved question focused on audit procedures rather than customer trust or brand risk.
+HQ3,Medium,High,"HQ retrieval improved coverage of operating cash flow, financing activities, and future cash-flow drivers.",Working capital and capital expenditure discipline were not always explicitly represented.
+HQ4,High,High,HQ retrieval surfaced technology and information-system risk disclosures even when cybersecurity terminology was indirect.,Some precision loss due to retrieval of broader technology or audit-related discussions.

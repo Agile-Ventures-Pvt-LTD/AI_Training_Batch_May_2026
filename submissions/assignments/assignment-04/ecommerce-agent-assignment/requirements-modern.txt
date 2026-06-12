@@ -1,0 +1,7 @@
+langchain>=1.3.3
+langchain-groq
+langchain-community 
+
+groq
+
+python-dotenv 

@@ -1,0 +1,77 @@
+{
+    "case_name": "6.1_tree_of_thought_ai_use_case_outputs",
+    "raw_response": "{\n  \"options_evaluated\": [\n    {\n      \"option\": \"AI customer support assistant\",\n      \"business_value_score\": 5,\n      \"feasibility_score\": 3,\n      \"risk_score\": 2,\n      \"pilot_suitability_score\": 3,\n      \"adoption_score\": 3,\n      \"overall_score\": 16,\n      \"trade_offs\": [\n        \"High cost‑saving potential and large ticket volume boost business value.\",\n        \"Moderate implementation effort and need to handle personal customer data increase privacy/compliance risk.\",\n        \"Privacy and data‑governance concerns lower risk score and make the 90‑day pilot tighter.\",\n        \"Medium user adoption risk; agents may resist change without clear ROI.\"\n      ]\n    },\n    {\n      \"option\": \"AI sales proposal generator\",\n      \"business_value_score\": 4,\n      \"feasibility_score\": 5,\n      \"risk_score\": 4,\n      \"pilot_suitability_score\": 5,\n      \"adoption_score\": 5,\n      \"overall_score\": 23,\n      \"trade_offs\": [\n        \"Revenue impact is medium‑to‑high but not as large as a full support automation.\",\n        \"Low data sensitivity and simple integration make it highly feasible.\",\n        \"Requires brand and legal review, but risk remains low because no confidential client data is processed.\",\n        \"Fast to build a 90‑day pilot; sales teams are eager to adopt tools that shorten proposal cycles.\"\n      ]\n    },\n    {\n      \"option\": \"AI contract risk analyzer\",\n      \"business_value_score\": 5,\n      \"feasibility_score\": 2,\n      \"risk_score\": 1,\n      \"pilot_suitability_score\": 2,\n      \"adoption_score\": 3,\n      \"overall_score\": 13,\n      \"trade_offs\": [\n        \"Very high business value for contract risk mitigation.\",\n        \"Implementation is complex; requires high accuracy, audit trails, and integration with legal systems.\",\n        \"Legal sensitivity creates the highest risk score; errors could expose the firm to liability.\",\n        \"90‑day pilot unlikely to achieve required validation and governance controls.\",\n        \"Medium adoption risk; legal teams are cautious about AI‑generated risk assessments.\"\n      ]\n    },\n    {\n      \"option\": \"AI internal HR policy assistant\",\n      \"business_value_score\": 4,\n      \"feasibility_score\": 5,\n      \"risk_score\": 3,\n      \"pilot_suitability_score\": 5,\n      \"adoption_score\": 5,\n      \"overall_score\": 22,\n      \"trade_offs\": [\n        \"Broad employee usage drives solid cost‑saving and productivity gains.\",\n        \"Implementation is straightforward; leverages existing HR knowledge bases.\",\n        \"Handles employee‑related data (moderate sensitivity) leading to a modest risk rating.\",\n        \"Can be piloted within 90 days with minimal integration effort.\",\n        \"Low adoption risk; HR staff typically welcome self‑service tools.\"\n      ]\n    }\n  ],\n  \"recommended_option\": \"AI sales proposal generator\",\n  \"why_not_others\": {\n    \"AI customer support assistant\": \"Strong business value but privacy/compliance risk and moderate feasibility lower its overall score and make a 90‑day pilot riskier.\",\n    \"AI contract risk analyzer\": \"Highest business value yet prohibitive legal risk, implementation complexity, and insufficient time for a reliable pilot.\",\n    \"AI internal HR policy assistant\": \"Very solid balance of value and risk, but revenue impact is lower than the sales proposal generator, placing it just behind the top score.\"\n  },\n  \"final_recommendation\": \"Start with the AI sales proposal generator pilot. It delivers a strong revenue boost, requires minimal integration, carries low legal and privacy risk, and can be launched and measured within a 90‑day window, ensuring high user adoption and quick ROI. After validating success, consider expanding to the internal HR policy assistant for broader efficiency gains.\"\n}",
+    "parsed_output": {
+        "options_evaluated": [
+            {
+                "option": "AI customer support assistant",
+                "business_value_score": 5,
+                "feasibility_score": 3,
+                "risk_score": 2,
+                "pilot_suitability_score": 3,
+                "adoption_score": 3,
+                "overall_score": 16,
+                "trade_offs": [
+                    "High cost‑saving potential and large ticket volume boost business value.",
+                    "Moderate implementation effort and need to handle personal customer data increase privacy/compliance risk.",
+                    "Privacy and data‑governance concerns lower risk score and make the 90‑day pilot tighter.",
+                    "Medium user adoption risk; agents may resist change without clear ROI."
+                ]
+            },
+            {
+                "option": "AI sales proposal generator",
+                "business_value_score": 4,
+                "feasibility_score": 5,
+                "risk_score": 4,
+                "pilot_suitability_score": 5,
+                "adoption_score": 5,
+                "overall_score": 23,
+                "trade_offs": [
+                    "Revenue impact is medium‑to‑high but not as large as a full support automation.",
+                    "Low data sensitivity and simple integration make it highly feasible.",
+                    "Requires brand and legal review, but risk remains low because no confidential client data is processed.",
+                    "Fast to build a 90‑day pilot; sales teams are eager to adopt tools that shorten proposal cycles."
+                ]
+            },
+            {
+                "option": "AI contract risk analyzer",
+                "business_value_score": 5,
+                "feasibility_score": 2,
+                "risk_score": 1,
+                "pilot_suitability_score": 2,
+                "adoption_score": 3,
+                "overall_score": 13,
+                "trade_offs": [
+                    "Very high business value for contract risk mitigation.",
+                    "Implementation is complex; requires high accuracy, audit trails, and integration with legal systems.",
+                    "Legal sensitivity creates the highest risk score; errors could expose the firm to liability.",
+                    "90‑day pilot unlikely to achieve required validation and governance controls.",
+                    "Medium adoption risk; legal teams are cautious about AI‑generated risk assessments."
+                ]
+            },
+            {
+                "option": "AI internal HR policy assistant",
+                "business_value_score": 4,
+                "feasibility_score": 5,
+                "risk_score": 3,
+                "pilot_suitability_score": 5,
+                "adoption_score": 5,
+                "overall_score": 22,
+                "trade_offs": [
+                    "Broad employee usage drives solid cost‑saving and productivity gains.",
+                    "Implementation is straightforward; leverages existing HR knowledge bases.",
+                    "Handles employee‑related data (moderate sensitivity) leading to a modest risk rating.",
+                    "Can be piloted within 90 days with minimal integration effort.",
+                    "Low adoption risk; HR staff typically welcome self‑service tools."
+                ]
+            }
+        ],
+        "recommended_option": "AI sales proposal generator",
+        "why_not_others": {
+            "AI customer support assistant": "Strong business value but privacy/compliance risk and moderate feasibility lower its overall score and make a 90‑day pilot riskier.",
+            "AI contract risk analyzer": "Highest business value yet prohibitive legal risk, implementation complexity, and insufficient time for a reliable pilot.",
+            "AI internal HR policy assistant": "Very solid balance of value and risk, but revenue impact is lower than the sales proposal generator, placing it just behind the top score."
+        },
+        "final_recommendation": "Start with the AI sales proposal generator pilot. It delivers a strong revenue boost, requires minimal integration, carries low legal and privacy risk, and can be launched and measured within a 90‑day window, ensuring high user adoption and quick ROI. After validating success, consider expanding to the internal HR policy assistant for broader efficiency gains."
+    }
+}
