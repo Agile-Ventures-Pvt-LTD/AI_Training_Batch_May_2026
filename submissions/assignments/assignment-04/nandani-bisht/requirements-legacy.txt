@@ -1,0 +1,6 @@
+langchain==0.3.25
+langchain-community==0.3.24
+langchain-core==0.3.63
+langchain-groq
+python-dotenv
+pytest

@@ -1,0 +1,300 @@
+[
+  {
+    "question_id": "HQ1",
+    "user_query": "What should a board member ask about risks that could prevent Tesla from meeting production, delivery, or scaling expectations?",
+    "retrieved_hypothetical_questions": [
+      {
+        "hypothetical_question": "What are the risks related to Tesla's ability to grow its business, and how may they impact the company?",
+        "parent_chunk_id": "doc_1103",
+        "section": "",
+        "year": "",
+        "score": null
+      },
+      {
+        "hypothetical_question": "What are the challenges and uncertainties related to Tesla's production and delivery capabilities?",
+        "parent_chunk_id": "doc_1103",
+        "section": "",
+        "year": "",
+        "score": null
+      },
+      {
+        "hypothetical_question": "What are the potential risks and challenges that Tesla may face in sustaining its production trajectory?",
+        "parent_chunk_id": "doc_438",
+        "section": "",
+        "year": "",
+        "score": null
+      },
+      {
+        "hypothetical_question": "What are the potential risks and challenges that Tesla may face in sustaining its production trajectory?",
+        "parent_chunk_id": "doc_435",
+        "section": "",
+        "year": "",
+        "score": null
+      },
+      {
+        "hypothetical_question": "What are the potential risks and challenges that Tesla may face in sustaining its production trajectory?",
+        "parent_chunk_id": "doc_436",
+        "section": "",
+        "year": "",
+        "score": null
+      }
+    ],
+    "parent_chunks_used": [
+      {
+        "chunk_id": "doc_435",
+        "source_doc": "tsla-10k_20201231-gen.pdf",
+        "section": "",
+        "year": "2020"
+      },
+      {
+        "chunk_id": "doc_436",
+        "source_doc": "tsla-10k_20201231-gen.pdf",
+        "section": "",
+        "year": "2020"
+      },
+      {
+        "chunk_id": "doc_438",
+        "source_doc": "tsla-10k_20201231-gen.pdf",
+        "section": "",
+        "year": "2020"
+      },
+      {
+        "chunk_id": "doc_1103",
+        "source_doc": "tsla-20221231-gen.pdf",
+        "section": "",
+        "year": "2022"
+      }
+    ],
+    "final_answer": "Based on the provided context, a board member may want to ask about the following risks that could prevent Tesla from meeting production, delivery, or scaling expectations:\n\n1. Supply chain constraints: The company has mentioned that it may be impacted by global COVID-19 pandemic, government regulations, and shifting social behaviors, which have limited or closed non-essential transportation, government functions, business activities, and person-to-person interactions. (source: tsla-20221231-gen.pdf, 2022, ? , chunk 1103)\n2. Hiring, training, and retention of qualified employees: The company has mentioned that it may not be able to attract and retain senior leadership necessary to grow its business, and that it will have to establish and ramp production with the capability to manufacture high-quality units at scale. (source: tsla-20221231-gen.pdf, 2022, ? , chunk 1103)\n3. Pace of bringing production equipment and processes online: The company has mentioned that it will have to establish and ramp production, which may be impacted by ongoing compliance with regulatory requirements, procurement and maintenance of construction, environmental and operational licenses and approvals for additional expansion, supply chain constraints, hiring, training, and retention of qualified employees, and the pace of bringing production equipment and processes online. (source: tsla-20221231-gen.pdf, 2022, ? , chunk 1103)\n4. Ability to attract and retain a large number of engineering, manufacturing, marketing, sales, and delivery, service, installation, technology, and support personnel: The company has mentioned that its future success also depends on its ability to attract, hire, and retain a large number of these personnel, especially in regions where it plans to expand. (source: tsla-20221231-gen.pdf, 2022, ? , chunk 1103)\n5. Cybersecurity risks: The company has mentioned that it has been the subject of reports of unauthorized access to its products, their systems or data, as well as other factors that may result in the perception that its products, their systems or data are capable of being hacked, which may harm its brand, prospects, and operating results. (source: tsla-20221231-gen.pdf, 2022, ? , chunk 1103)\n\nThese are some of the risks that a board member may want to ask about to ensure that the company is prepared to meet its production, delivery, or scaling expectations.",
+    "citations": [],
+    "comparison_with_baseline": "Hypothetical retrieval returned 4 chunks via 5 matching questions; baseline returned 5 direct similarity chunks."
+  },
+  {
+    "question_id": "HQ2",
+    "user_query": "How should an analyst investigate the relationship between product defects, warranty or service obligations, customer trust, and brand risk?",
+    "retrieved_hypothetical_questions": [
+      {
+        "hypothetical_question": "What are the potential risks and uncertainties associated with the company's ability to detect and fix defects in its products?",
+        "parent_chunk_id": "doc_565",
+        "section": "",
+        "year": "",
+        "score": null
+      },
+      {
+        "hypothetical_question": "What are the potential risks and uncertainties associated with the company's ability to detect and fix defects in its products?",
+        "parent_chunk_id": "doc_564",
+        "section": "",
+        "year": "",
+        "score": null
+      },
+      {
+        "hypothetical_question": "What are the potential risks and uncertainties associated with the company's ability to detect and fix defects in its products?",
+        "parent_chunk_id": "doc_567",
+        "section": "",
+        "year": "",
+        "score": null
+      },
+      {
+        "hypothetical_question": "What are the potential risks and uncertainties associated with the company's ability to detect and fix defects in its products?",
+        "parent_chunk_id": "doc_568",
+        "section": "",
+        "year": "",
+        "score": null
+      },
+      {
+        "hypothetical_question": "What are the potential risks and uncertainties associated with the company's ability to detect and fix defects in its products?",
+        "parent_chunk_id": "doc_566",
+        "section": "",
+        "year": "",
+        "score": null
+      }
+    ],
+    "parent_chunks_used": [
+      {
+        "chunk_id": "doc_564",
+        "source_doc": "tsla-10k_20201231-gen.pdf",
+        "section": "",
+        "year": "2020"
+      },
+      {
+        "chunk_id": "doc_565",
+        "source_doc": "tsla-10k_20201231-gen.pdf",
+        "section": "",
+        "year": "2020"
+      },
+      {
+        "chunk_id": "doc_566",
+        "source_doc": "tsla-10k_20201231-gen.pdf",
+        "section": "",
+        "year": "2020"
+      },
+      {
+        "chunk_id": "doc_567",
+        "source_doc": "tsla-10k_20201231-gen.pdf",
+        "section": "",
+        "year": "2020"
+      },
+      {
+        "chunk_id": "doc_568",
+        "source_doc": "tsla-10k_20201231-gen.pdf",
+        "section": "",
+        "year": "2020"
+      }
+    ],
+    "final_answer": "Unfortunately, the provided context does not contain any information about product defects, warranty or service obligations, customer trust, and brand risk. The context only discusses Tesla's financial statements, accounting policies, and business operations.\n\nHowever, the following information might be relevant for an analyst investigating the relationship between product defects, warranty or service obligations, customer trust, and brand risk:\n\n* In the Energy Generation and Storage Segment, Tesla mentions that they recognize revenue on energy storage system sales over time using the percentage of completion method based on cost incurred as a percentage of total estimated contract costs (source: tsla-10k_20201231-gen.pdf, 2020, Energy Generation and Storage Segment, chunk 63).\n* Tesla also mentions that certain large-scale commercial and utility-grade solar energy system and energy storage system sales are subject to milestone payments that are consistent with contract-specific phases of a project (source: tsla-10k_20201231-gen.pdf, 2020, Energy Generation and Storage Segment, chunk 63).\n* However, there is no information in the provided context about product defects, warranty or service obligations, customer trust, and brand risk.\n\nTo investigate the relationship between product defects, warranty or service obligations, customer trust, and brand risk, an analyst would need to review additional information, such as:\n\n* Tesla's product quality and reliability data\n* Warranty and service obligations data\n* Customer satisfaction and trust data\n* Brand risk and reputation data\n\nThis information might be available in Tesla's annual reports, investor presentations, or other public sources.",
+    "citations": [],
+    "comparison_with_baseline": "Hypothetical retrieval returned 5 chunks via 5 matching questions; baseline returned 5 direct similarity chunks."
+  },
+  {
+    "question_id": "HQ3",
+    "user_query": "What evidence helps determine whether future cash flow depends more on capital expenditure discipline, working capital, or operating income?",
+    "retrieved_hypothetical_questions": [
+      {
+        "hypothetical_question": "What are the risks relating to our capital expenditures and cash flow trends?",
+        "parent_chunk_id": "doc_837",
+        "section": "",
+        "year": "",
+        "score": null
+      },
+      {
+        "hypothetical_question": "What are the key assumptions underlying the company's estimates of future cash flows, and how do these assumptions impact the company's financial projections?",
+        "parent_chunk_id": "doc_892",
+        "section": "",
+        "year": "",
+        "score": null
+      },
+      {
+        "hypothetical_question": "What are the key factors that contribute to the company's operating cash outflows from operating leases and finance leases?",
+        "parent_chunk_id": "doc_203",
+        "section": "",
+        "year": "",
+        "score": null
+      },
+      {
+        "hypothetical_question": "What are the main drivers of the company's net cash used in investing activities, and how do these drivers impact the company's financial performance?",
+        "parent_chunk_id": "doc_894",
+        "section": "",
+        "year": "",
+        "score": null
+      },
+      {
+        "hypothetical_question": "What are the key factors that contribute to the company's increase in operating cash inflows from operating leases and finance leases?",
+        "parent_chunk_id": "doc_205",
+        "section": "",
+        "year": "",
+        "score": null
+      }
+    ],
+    "parent_chunks_used": [
+      {
+        "chunk_id": "doc_203",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_205",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_837",
+        "source_doc": "tsla-10k_20201231-gen.pdf",
+        "section": "",
+        "year": "2020"
+      },
+      {
+        "chunk_id": "doc_892",
+        "source_doc": "tsla-10k_20201231-gen.pdf",
+        "section": "",
+        "year": "2020"
+      },
+      {
+        "chunk_id": "doc_894",
+        "source_doc": "tsla-10k_20201231-gen.pdf",
+        "section": "",
+        "year": "2020"
+      }
+    ],
+    "final_answer": "Based on the provided context, the following information may help determine whether future cash flow depends more on capital expenditure discipline, working capital, or operating income:\n\n1. Capital Expenditures: The company's capital expenditures are typically difficult to project beyond the short term due to the number and breadth of core projects at any given time (Source: tsla-10k_20201231-gen.pdf, 2020, 3.04, chunk 892).\n2. Working Capital: The company's working capital is affected by various factors, including the number of vehicles in transit, the timing of vehicle deliveries, and the level of inventory (Source: tsla-10k_20201231-gen.pdf, 2020, 3.04, chunk 892).\n3. Operating Income: The company's operating income is affected by various factors, including the demand for electric vehicles, the competitive landscape, and the company's ability to manage costs and improve efficiency (Source: tsla-10k_20201231-gen.pdf, 2020, 3.04, chunk 892).\n\nHowever, the provided context does not provide specific evidence to determine whether future cash flow depends more on capital expenditure discipline, working capital, or operating income.",
+    "citations": [],
+    "comparison_with_baseline": "Hypothetical retrieval returned 5 chunks via 5 matching questions; baseline returned 5 direct similarity chunks."
+  },
+  {
+    "question_id": "HQ4",
+    "user_query": "Which disclosures help evaluate technology, cybersecurity, data, or AI operational risk even if the user does not explicitly say 'cybersecurity'?",
+    "retrieved_hypothetical_questions": [
+      {
+        "hypothetical_question": "What are the key cybersecurity risks that we evaluate when determining the selection and oversight of applicable third-party service providers?",
+        "parent_chunk_id": "doc_1502",
+        "section": "",
+        "year": "",
+        "score": null
+      },
+      {
+        "hypothetical_question": "What specific information relating to the Project and transactions contemplated under this agreement is not to be disclosed to any third party?",
+        "parent_chunk_id": "doc_50",
+        "section": "",
+        "year": "",
+        "score": null
+      },
+      {
+        "hypothetical_question": "What are the permitted disclosure of confidential information to assignees?",
+        "parent_chunk_id": "doc_347",
+        "section": "",
+        "year": "",
+        "score": null
+      },
+      {
+        "hypothetical_question": "What are the permitted disclosure of confidential information to assignees?",
+        "parent_chunk_id": "doc_346",
+        "section": "",
+        "year": "",
+        "score": null
+      },
+      {
+        "hypothetical_question": "What are the permitted disclosure of confidential information to assignees?",
+        "parent_chunk_id": "doc_348",
+        "section": "",
+        "year": "",
+        "score": null
+      }
+    ],
+    "parent_chunks_used": [
+      {
+        "chunk_id": "doc_50",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_346",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_347",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_348",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_1502",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      }
+    ],
+    "final_answer": "Based on the provided context, the following disclosures help evaluate technology, operational risk, data, or AI operational risk:\n\n1. The risk management program also assesses third-party risks, and we perform third-party risk management to identify and mitigate risks from third parties such as vendors, suppliers, and other business partners associated with our use of third-party service providers. (source: doc_1502, 2023, PART II, ITEM 5, chunk 1)\n2. Cybersecurity risks are evaluated when determining the selection and oversight of applicable third-party service providers and potential fourth-party risks when handling and/or processing personally identifiable information. (source: doc_1502, 2023, PART II, ITEM 5, chunk 1)\n3. Data protection or security laws or regulations relating to the processing, collection, use, retention, security, and transfer of personally identifiable information could result in regulatory or litigation-related actions against us, legal liability, fines, damages, ongoing audit requirements, and other requirements of ISO/IEC 27001:2013. (source: doc_1502, 2023, PART II, ITEM 5, chunk 1)\n4. Our risk management program also assesses third-party risks, and we perform third-party risk management to identify and mitigate risks from third parties such as vendors, suppliers, and other business partners associated with our use of third-party service providers. (source: doc_1502, 2023, PART II, ITEM 5, chunk 1)\n5. Gross margin for total automotive decreased from 28.5% to 19.4% in the year ended December 31, 2023 as compared to the year ended December 31, 2022. The decrease was primarily due to a lower average selling price on our vehicles partially offset by the favorable change in our average combined cost per unit of our vehicles and IRA manufacturing credits earned as discussed above. (source: doc_1502, 2023, PART II, ITEM 5, chunk 1)\n6. Annual Report on Form 10-K, we currently expect our capital expenditures to support our projects globally to exceed $10.00 billion in 2024 and be between $8.00 to $10.00 billion in each of the following two fiscal years. In connection with our operations at Gigafactory New York, we have an agreement to spend or incur $5.00 billion in combined capital, operational expenses, costs of goods sold and other costs in the State of New York through 2025. (source: doc_1502, 2023, PART II, ITEM 5, chunk 1)\n7. In our opinion, the consolidated financial statements referred to above present fairly, in all material respects, the financial position of the Company as of December 31, 2023 and 2022, and the results of its operations and its cash flows for each of the three years in the period ended December 31, 2023 in conformity with accounting principles generally accepted in the United States of America. Also in our opinion, the Company maintained, in all material respects, effective internal control over financial reporting as of December 31, 2023 based on our audit and the information provided to us by the Company's management. (source: doc_1502, 2023, PART II, ITEM 5, chunk 1)\n8. Automotive leasing 2,120 2,476 1,642 Energy generation and storage leasing 520 533 510 Total revenues $96,773 $81,462 $53,823 (source: doc_1502, 2023, PART II, ITEM 5, chunk 1)",
+    "citations": [],
+    "comparison_with_baseline": "Hypothetical retrieval returned 5 chunks via 5 matching questions; baseline returned 5 direct similarity chunks."
+  }
+]

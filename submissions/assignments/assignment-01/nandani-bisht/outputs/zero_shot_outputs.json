@@ -1,0 +1,16 @@
+{
+  "risk_level": "MEDIUM",
+  "key_risk_factors": [
+    "Lack of region-specific data residency",
+    "Insufficient SOC 2 certification (only Type I)",
+    "Unclear API rate limits",
+    "Usage-based pricing with potential for significant increases",
+    "Limited operational history (18 months)"
+  ],
+  "missing_information": [
+    "Detailed information on data deletion and retention policies",
+    "Clear documentation on API rate limits"
+  ],
+  "business_recommendation": "Proceed with caution, negotiate contract terms to address key risk factors, and closely monitor vendor performance",
+  "confidence_score": 0.7
+}

@@ -1,0 +1,15 @@
+{
+  "individual_answers": [
+    37.5,
+    37.5,
+    37.5,
+    37.5,
+    37.5
+  ],
+  "final_reimbursable_amount": 37.5,
+  "consistency_count": {
+    "37.5": 5
+  },
+  "final_decision": "Approved",
+  "reasoning_summary": "Five independent runs were executed and the most frequent final_reimbursable_amount was selected."
+}
