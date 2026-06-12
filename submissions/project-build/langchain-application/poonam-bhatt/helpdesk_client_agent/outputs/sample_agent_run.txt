@@ -1,0 +1,11 @@
+1. Show me all open high-priority tickets.
+2. Which tickets are overdue?
+3. Which tickets should I work on first today?
+4. Summarize ticket TCK-1003.
+5. Add a comment to TCK-1001 saying billing team is reviewing the duplicate 
+invoice.
+6. Update TCK-1001 status to In Progress.
+7. Remember that I want to prioritize enterprise customer issues first.
+8. Based on my preference, which tickets should I handle first?
+9. What did we discuss earlier about billing tickets?
+10. Summarize this conversation and store it in memory.
