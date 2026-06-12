@@ -1,0 +1,306 @@
+[
+    {
+        "question": " What are Tesla’s main business segments described in the filings?",
+        "query_type": "```\n{\n    \"query_type\": \"FACTUAL_LOOKUP\",\n    \"requires_retrieval\": true,\n    \"requires_comparison\": false,\n    \"answer_style\": \"informative\",\n    \"reasoning_summary\": \"The user is seeking specific information about Tesla's business segments as described in official filings, indicating a need for factual data retrieval.\"\n}\n```",
+        "answer": "{\n    \"answer\": \"The company's main business segments are not explicitly stated as Tesla's, however, the segments mentioned are North America, International, and AWS.\",\n    \"supporting_evidence\": [\n        \"We have organized our operations into three segments: North America, International, and AWS. These segments reflect the way the Company evaluates its business performance and manages its operations.\",\n        \"Note 10 — SEGMENT INFORMATION We have organized our operations into three segments: North America, International, and AWS.\"\n    ],\n    \"sources\": [\n        \"Results of Operations\",\n        \"Note 10 — SEGMENT INFORMATION\"\n    ],\n    \"confidence\": \"MEDIUM\",\n    \"answerability\": \"PARTIALLY_ANSWERED\"\n}",
+        "sources": [
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 28,
+                "chunk_id": "chunk_00160",
+                "snippet": "___________________\n(1) Segment amounts exclude corporate facilities. Shared facilities are allocated among the segments based on usage and \nprimarily relate to facilities that hold our technology infrastructure. See Item 8 of Part II, “Financial Sta"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 28,
+                "chunk_id": "chunk_00160",
+                "snippet": "___________________\n(1) Segment amounts exclude corporate facilities. Shared facilities are allocated among the segments based on usage and \nprimarily relate to facilities that hold our technology infrastructure. See Item 8 of Part II, “Financial Sta"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 34,
+                "chunk_id": "chunk_00192",
+                "snippet": "Results of Operations\nWe have organized our operations into three segments: North America, International, and AWS. These segments reflect \nthe way the Company evaluates its business performance and manages its operations. See Item 8 of Part II, “Fina"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 34,
+                "chunk_id": "chunk_00192",
+                "snippet": "Results of Operations\nWe have organized our operations into three segments: North America, International, and AWS. These segments reflect \nthe way the Company evaluates its business performance and manages its operations. See Item 8 of Part II, “Fina"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 77,
+                "chunk_id": "chunk_00381",
+                "snippet": "accrued.\nNote 10 — SEGMENT INFORMATION\nWe have organized our operations into three segments: North America, International, and AWS. We allocate to segment \nresults the operating expenses “Fulfillment,” “Technology and infrastructure,” “Sales and mark"
+            }
+        ],
+        "timestamp": "2026-06-12T12:59:31.714470"
+    },
+    {
+        "question": " What risks are mentioned related to manufacturing or supply chain?",
+        "query_type": "```\n{\n    \"query_type\": \"RISK_ANALYSIS\",\n    \"requires_retrieval\": true,\n    \"requires_comparison\": false,\n    \"answer_style\": \"LIST\",\n    \"reasoning_summary\": \"The user is seeking information about potential risks associated with manufacturing or supply chain, indicating a need for risk analysis and the retrieval of relevant data to provide a list of possible risks.\"\n}\n```",
+        "answer": "{\n    \"answer\": \"Risks related to manufacturing or supply chain include constraints on the availability of semiconductor products, violations by suppliers of applicable laws or regulations, and inability to procure alternatives from other suppliers in a timely and efficient manner.\",\n    \"supporting_evidence\": [\n        \"Constraints on the availability of these products could adversely affect our ability to develop and operate artificial intelligence technologies, products, or services.\",\n        \"violations by our suppliers or other vendors of applicable laws, regulations, contractual terms, intellectual property rights of others, or our Supply Chain Standards, as well as products or practices regarded as unethical, unsafe, or hazardous, could expose us to claims, damage our reputation, limit our growth, and negatively affect our operating results.\"\n    ],\n    \"sources\": [\n        \"Item 1A of Part I, \\\"Risk Factors\\\"\"\n    ],\n    \"confidence\": \"HIGH\",\n    \"answerability\": \"ANSWERED\"\n}",
+        "sources": [
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 16,
+                "chunk_id": "chunk_00077",
+                "snippet": "risks to our operations. In addition to the factors discussed in Item 7 of Part II, “Management’s Discussion and Analysis of \nFinancial Condition and Results of Operations,” and in the risk factors below, global economic and geopolitical conditions a"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 16,
+                "chunk_id": "chunk_00077",
+                "snippet": "risks to our operations. In addition to the factors discussed in Item 7 of Part II, “Management’s Discussion and Analysis of \nFinancial Condition and Results of Operations,” and in the risk factors below, global economic and geopolitical conditions a"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 22,
+                "chunk_id": "chunk_00120",
+                "snippet": "(including public health crises), geopolitical events, labor and trade disputes, or for other reasons, may result in our being \nunable to procure alternatives from other suppliers in a timely and efficient manner and on acceptable terms, or at all. F"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 22,
+                "chunk_id": "chunk_00120",
+                "snippet": "(including public health crises), geopolitical events, labor and trade disputes, or for other reasons, may result in our being \nunable to procure alternatives from other suppliers in a timely and efficient manner and on acceptable terms, or at all. F"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 30,
+                "chunk_id": "chunk_00164",
+                "snippet": "fulfillment, sortation, delivery, and data center optimization, risks of inventory management, variability in demand, the degree \nto which we enter into, maintain, and develop commercial agreements, proposed and completed acquisitions and strategic \n"
+            }
+        ],
+        "timestamp": "2026-06-12T12:59:32.737910"
+    },
+    {
+        "question": "Summarize the key risk factors in 5 bullet points.",
+        "query_type": "```\n{\n    \"query_type\": \"RISK_ANALYSIS\",\n    \"requires_retrieval\": true,\n    \"requires_comparison\": false,\n    \"answer_style\": \"bullet_points\",\n    \"reasoning_summary\": \"The user is asking for a summary of key risk factors, which requires identifying and analyzing potential risks and providing a concise overview in 5 bullet points.\"\n}\n```",
+        "answer": "{\n    \"answer\": \"The key risk factors are: \n    * changes in interest rates; \n    * conditions or trends in the internet, other technologies including artificial intelligence, and the industry segments we operate in; \n    * quarterly variations in operating results; \n    * fluctuations in the stock market in general and market prices for technology-related companies in particular; \n    * changes in financial estimates by us or decisions to increase or decrease future spending or investment levels;\",\n    \"supporting_evidence\": [\n        \"to, among other risks, the risks described elsewhere in this Item 1A, as well as: • changes in interest rates; • conditions or trends in the internet, other technologies including artificial intelligence, and the industry segments we operate in; • quarterly variations in operating results; • fluctuations in the stock market in general and market prices for technology-related companies in particular; • changes in financial estimates by us or decisions to increase or decrease future spending or investment levels;\"\n    ],\n    \"sources\": [\n        \"Item 1A. Risk Factors\"\n    ],\n    \"confidence\": \"HIGH\",\n    \"answerability\": \"ANSWERED\"\n}",
+        "sources": [
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 16,
+                "chunk_id": "chunk_00076",
+                "snippet": "Item 1A. Risk Factors\nPlease carefully consider the following discussion of significant factors, events, and uncertainties that make an \ninvestment in our securities risky. The events and consequences discussed in these risk factors could, in circums"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 16,
+                "chunk_id": "chunk_00076",
+                "snippet": "Item 1A. Risk Factors\nPlease carefully consider the following discussion of significant factors, events, and uncertainties that make an \ninvestment in our securities risky. The events and consequences discussed in these risk factors could, in circums"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 24,
+                "chunk_id": "chunk_00135",
+                "snippet": "to, among other risks, the risks described elsewhere in this Item 1A, as well as:\n• changes in interest rates;\n• conditions or trends in the internet, other technologies including artificial intelligence, and the industry segments we \noperate in;\n• q"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 24,
+                "chunk_id": "chunk_00135",
+                "snippet": "to, among other risks, the risks described elsewhere in this Item 1A, as well as:\n• changes in interest rates;\n• conditions or trends in the internet, other technologies including artificial intelligence, and the industry segments we \noperate in;\n• q"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 16,
+                "chunk_id": "chunk_00077",
+                "snippet": "risks to our operations. In addition to the factors discussed in Item 7 of Part II, “Management’s Discussion and Analysis of \nFinancial Condition and Results of Operations,” and in the risk factors below, global economic and geopolitical conditions a"
+            }
+        ],
+        "timestamp": "2026-06-12T12:59:34.048121"
+    },
+    {
+        "question": " What does the document say about automotive revenue or energy generation and storage?",
+        "query_type": "```\n{\n    \"query_type\": \"FACTUAL_LOOKUP\",\n    \"requires_retrieval\": true,\n    \"requires_comparison\": false,\n    \"answer_style\": \"extractive\",\n    \"reasoning_summary\": \"The user is seeking specific information from a document regarding automotive revenue and energy generation and storage, indicating a need for factual retrieval.\"\n}\n```",
+        "answer": "{\n    \"answer\": \"The document does not mention automotive revenue, but it mentions energy generation and storage in the context of procurement and licensing agreements.\",\n    \"supporting_evidence\": [\n        \"Energy agreements based on actual generation without a fixed or minimum volume commitment are not included.\",\n        \"Certain of our energy agreements also provide the right to receive energy certificates.\",\n        \"availability of and increases in the prices of transportation (including fuel), resources such as land, water, and energy,\"\n    ],\n    \"sources\": [\n        \"Retrieved Context\"\n    ],\n    \"confidence\": \"MEDIUM\",\n    \"answerability\": \"PARTIALLY_ANSWERED\"\n}",
+        "sources": [
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 69,
+                "chunk_id": "chunk_00342",
+                "snippet": "was 3.1% and 2.9% as of December 31, 2024 and 2025.\n(2) Includes unconditional purchase obligations related to long-term agreements to acquire and license digital media content, \nprocure energy, acquire property and equipment, and license software th"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 69,
+                "chunk_id": "chunk_00342",
+                "snippet": "was 3.1% and 2.9% as of December 31, 2024 and 2025.\n(2) Includes unconditional purchase obligations related to long-term agreements to acquire and license digital media content, \nprocure energy, acquire property and equipment, and license software th"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 69,
+                "chunk_id": "chunk_00343",
+                "snippet": "or minimum volume commitment are not included. Certain of our energy agreements also provide the right to receive \nenergy certificates.\n(3) Includes asset retirement obligations, the estimated timing and amounts of payments for rent and tenant improv"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 69,
+                "chunk_id": "chunk_00343",
+                "snippet": "or minimum volume commitment are not included. Certain of our energy agreements also provide the right to receive \nenergy certificates.\n(3) Includes asset retirement obligations, the estimated timing and amounts of payments for rent and tenant improv"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 20,
+                "chunk_id": "chunk_00104",
+                "snippet": "and could have a material adverse impact on our operating results;\n• variations in the mix of products and services we sell;\n• variations in our level of merchandise and vendor returns;\n• the extent to which we offer fast and free delivery, continue "
+            }
+        ],
+        "timestamp": "2026-06-12T12:59:35.119350"
+    },
+    {
+        "question": " Compare Tesla’s automotive business and energy business based on the provided documents.",
+        "query_type": "```\n{\n    \"query_type\": \"COMPARISON\",\n    \"requires_retrieval\": true,\n    \"requires_comparison\": true,\n    \"answer_style\": \"analytical\",\n    \"reasoning_summary\": \"The user is asking to compare two different aspects of Tesla's business, requiring the retrieval of information from the provided documents and a comparative analysis of the automotive and energy businesses.\"\n}\n```",
+        "answer": "{\n    \"answer\": \"I would not find this in the provided documents.\",\n    \"supporting_evidence\": [],\n    \"sources\": [],\n    \"confidence\": \"LOW\",\n    \"answerability\": \"NOT_FOUND\"\n}",
+        "sources": [
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 20,
+                "chunk_id": "chunk_00104",
+                "snippet": "and could have a material adverse impact on our operating results;\n• variations in the mix of products and services we sell;\n• variations in our level of merchandise and vendor returns;\n• the extent to which we offer fast and free delivery, continue "
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 20,
+                "chunk_id": "chunk_00104",
+                "snippet": "and could have a material adverse impact on our operating results;\n• variations in the mix of products and services we sell;\n• variations in our level of merchandise and vendor returns;\n• the extent to which we offer fast and free delivery, continue "
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 34,
+                "chunk_id": "chunk_00192",
+                "snippet": "Results of Operations\nWe have organized our operations into three segments: North America, International, and AWS. These segments reflect \nthe way the Company evaluates its business performance and manages its operations. See Item 8 of Part II, “Fina"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 34,
+                "chunk_id": "chunk_00192",
+                "snippet": "Results of Operations\nWe have organized our operations into three segments: North America, International, and AWS. These segments reflect \nthe way the Company evaluates its business performance and manages its operations. See Item 8 of Part II, “Fina"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 8,
+                "chunk_id": "chunk_00042",
+                "snippet": "term. This value will be a direct result of our ability to extend and solidify our current market leadership position.\nThe stronger our market leadership, the more powerful our economic model. Market leadership can translate\ndirectly to higher revenu"
+            }
+        ],
+        "timestamp": "2026-06-12T12:59:36.218482"
+    },
+    {
+        "question": "What legal or regulatory risks are mentioned?",
+        "query_type": "{\n    \"query_type\": \"RISK_ANALYSIS\",\n    \"requires_retrieval\": true,\n    \"requires_comparison\": false,\n    \"answer_style\": \"enumeration\",\n    \"reasoning_summary\": \"The user is seeking information about potential legal or regulatory risks, which requires analyzing and identifying specific risks mentioned in the context.\"\n}",
+        "answer": "{\n    \"answer\": \"Unfavorable regulations, laws, decisions, or interpretations by government or regulatory authorities, inquiries, investigations, or enforcement actions, and claims, litigation, government investigations, may expose the company to unanticipated civil and criminal liability or penalties, including substantial monetary fines.\",\n    \"supporting_evidence\": [\n        \"Unfavorable regulations, laws, decisions, or interpretations by government or regulatory authorities applying those laws and regulations, or inquiries, investigations, or enforcement actions threatened or initiated by them, could cause us to incur substantial costs, expose us to unanticipated civil and criminal liability or penalties (including substantial monetary fines)\",\n        \"result in litigation, liability, or regulatory action (including under laws related to privacy, data use, data protection, data security, network security, and consumer protection)\"\n    ],\n    \"sources\": [\n        \"Retrieved Context\"\n    ],\n    \"confidence\": \"HIGH\",\n    \"answerability\": \"ANSWERED\"\n}",
+        "sources": [
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 25,
+                "chunk_id": "chunk_00141",
+                "snippet": "Unfavorable regulations, laws, decisions, or interpretations by government or regulatory authorities applying those laws and \nregulations, or inquiries, investigations, or enforcement actions threatened or initiated by them, could cause us to incur \n"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 25,
+                "chunk_id": "chunk_00141",
+                "snippet": "Unfavorable regulations, laws, decisions, or interpretations by government or regulatory authorities applying those laws and \nregulations, or inquiries, investigations, or enforcement actions threatened or initiated by them, could cause us to incur \n"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 24,
+                "chunk_id": "chunk_00135",
+                "snippet": "to, among other risks, the risks described elsewhere in this Item 1A, as well as:\n• changes in interest rates;\n• conditions or trends in the internet, other technologies including artificial intelligence, and the industry segments we \noperate in;\n• q"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 24,
+                "chunk_id": "chunk_00135",
+                "snippet": "to, among other risks, the risks described elsewhere in this Item 1A, as well as:\n• changes in interest rates;\n• conditions or trends in the internet, other technologies including artificial intelligence, and the industry segments we \noperate in;\n• q"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 21,
+                "chunk_id": "chunk_00111",
+                "snippet": "security issues, labor or trade disputes, tariff policy changes, and similar events.\nWe Could Be Harmed by Data Loss or Other Security Incidents\nBecause we collect, process, store, and transmit large amounts of data, including confidential, classifie"
+            }
+        ],
+        "timestamp": "2026-06-12T12:59:37.582912"
+    },
+    {
+        "question": " What will Tesla’s stock price be next year?",
+        "query_type": "```\n{\n    \"query_type\": \"UNANSWERABLE\",\n    \"requires_retrieval\": false,\n    \"requires_comparison\": false,\n    \"answer_style\": \"EXPLANATION\",\n    \"reasoning_summary\": \"The query is asking for a future prediction that cannot be determined with certainty, making it unanswerable with current data.\"\n}\n```",
+        "answer": "{\n    \"answer\":\"I would not find this in the provided documents.\",\n    \"supporting_evidence\":[],\n    \"sources\":[],\n    \"confidence\":\"LOW\",\n    \"answerability\":\"NOT_FOUND\"\n}",
+        "sources": [
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 90,
+                "chunk_id": "chunk_00423",
+                "snippet": "Cumulative Total Return\nYear Ended December 31,\n$0\n$50\n$100\n$150\n$200\n$250\n2020 2021 2022 2023 2024 2025\nDollars\nYear Ended December 31\nNote: Stock price performance shown in the Stock Price Performance Graph for the common stock is\nhistorical and no"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 90,
+                "chunk_id": "chunk_00423",
+                "snippet": "Cumulative Total Return\nYear Ended December 31,\n$0\n$50\n$100\n$150\n$200\n$250\n2020 2021 2022 2023 2024 2025\nDollars\nYear Ended December 31\nNote: Stock price performance shown in the Stock Price Performance Graph for the common stock is\nhistorical and no"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 90,
+                "chunk_id": "chunk_00422",
+                "snippet": "Stock Price Performance Graph\nThe graph set forth below compares cumulative total return on the common stock with the cumulative\ntotal return of the NYSE Technology Index, the S&P 500 Index, and the S&P 500 Consumer Discretionary\nDistribution & Retai"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 90,
+                "chunk_id": "chunk_00422",
+                "snippet": "Stock Price Performance Graph\nThe graph set forth below compares cumulative total return on the common stock with the cumulative\ntotal return of the NYSE Technology Index, the S&P 500 Index, and the S&P 500 Consumer Discretionary\nDistribution & Retai"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 40,
+                "chunk_id": "chunk_00220",
+                "snippet": "Guidance\nWe provided guidance on February 5, 2026, in our earnings release furnished on Form 8-K as set forth below. These \nforward-looking statements reflect Amazon.com’s expectations as of February 5, 2026, and are subject to substantial \nuncertain"
+            }
+        ],
+        "timestamp": "2026-06-12T12:59:38.619756"
+    },
+    {
+        "question": "Did the document say Tesla guarantees future profitability from AI products?",
+        "query_type": "```\n{\n    \"query_type\": \"FACTUAL_LOOKUP\",\n    \"requires_retrieval\": true,\n    \"requires_comparison\": false,\n    \"answer_style\": \"boolean\",\n    \"reasoning_summary\": \"The user is seeking a specific piece of information from a document regarding Tesla's guarantee of future profitability from AI products, which requires retrieving and examining the relevant text.\"\n}\n```",
+        "answer": "```\n{\n    \"answer\": \"I would not find this in the provided documents.\",\n    \"supporting_evidence\": [],\n    \"sources\": [],\n    \"confidence\": \"LOW\",\n    \"answerability\": \"NOT_FOUND\"\n}\n```",
+        "sources": [
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 4,
+                "chunk_id": "chunk_00018",
+                "snippet": "1/ We have never seen a technology more quickly adopted than AI. When ChatGPT launched in November 2022,\nit reached 100 million users in two months—four times faster than TikT ok and 15 times faster than\nInstagram (ChatGPT already has over 900 millio"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 4,
+                "chunk_id": "chunk_00018",
+                "snippet": "1/ We have never seen a technology more quickly adopted than AI. When ChatGPT launched in November 2022,\nit reached 100 million users in two months—four times faster than TikT ok and 15 times faster than\nInstagram (ChatGPT already has over 900 millio"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 3,
+                "chunk_id": "chunk_00017",
+                "snippet": "investment spikes that will invite scrutiny, but the game-changers don’t typically accommodate smoother\ninvestment horizons.\nOne of these seminal shifts is AI. Every customer experience will be reinvented by AI, and there will be a\nslew of new experi"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 3,
+                "chunk_id": "chunk_00017",
+                "snippet": "investment spikes that will invite scrutiny, but the game-changers don’t typically accommodate smoother\ninvestment horizons.\nOne of these seminal shifts is AI. Every customer experience will be reinvented by AI, and there will be a\nslew of new experi"
+            },
+            {
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 7,
+                "chunk_id": "chunk_00037",
+                "snippet": "Our retail business is now approaching $600 billion in topline, yet roughly 80% of global retail sales still\nhappens in physical stores. That will change.\nA WS is at a $142 billion revenue run rate, and yet 85% of global IT spend remains on-premises."
+            }
+        ],
+        "timestamp": "2026-06-12T12:59:39.372761"
+    }
+]
