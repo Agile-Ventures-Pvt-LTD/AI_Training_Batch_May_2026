@@ -1,0 +1,32 @@
+[
+  {
+    "ticket": "I was charged twice this month and your support team has not replied for five days. I am going to post this on social media if this is not fixed today.",
+    "category": "BILLING_ISSUE",
+    "priority": "URGENT",
+    "justification": "Duplicate charge and five\u2011day silence constitute a billing error; threat to post publicly raises urgency."
+  },
+  {
+    "ticket": "The export button stopped working after your latest update. Our reporting team is blocked.",
+    "category": "TECHNICAL_BUG",
+    "priority": "HIGH",
+    "justification": "Core export functionality is broken, preventing essential reporting workflows."
+  },
+  {
+    "ticket": "Can you add approval workflows before invoices are submitted?",
+    "category": "FEATURE_REQUEST",
+    "priority": "LOW",
+    "justification": "Customer is requesting a new capability rather than reporting a defect."
+  },
+  {
+    "ticket": "We need confirmation that our customer data is not being used to train your AI models.",
+    "category": "COMPLIANCE_CONCERN",
+    "priority": "HIGH",
+    "justification": "Inquiry concerns data privacy and AI usage compliance, requiring formal assurance."
+  },
+  {
+    "ticket": "My admin account is locked and the password reset email never arrives.",
+    "category": "ACCOUNT_ACCESS",
+    "priority": "HIGH",
+    "justification": "User cannot access an admin account and password reset fails, blocking account usage."
+  }
+]

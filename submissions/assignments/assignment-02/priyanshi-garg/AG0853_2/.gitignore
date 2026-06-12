@@ -1,0 +1,13 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+.venv/
+.env
+
+
+

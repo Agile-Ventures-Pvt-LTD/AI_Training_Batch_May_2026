@@ -1,0 +1,116 @@
+{
+  "architecture_scores": [
+    {
+      "architecture": "Option A",
+      "strengths": [
+        "High accuracy using state\u2011of\u2011the\u2011art hosted LLM",
+        "Fast to implement with existing vector DB services",
+        "Scales well with managed vector store and API rate limits"
+      ],
+      "weaknesses": [
+        "User data leaves the premises when calling LLM API",
+        "LLM can hallucinate citations despite retrieval grounding",
+        "Ongoing per\u2011token cost"
+      ],
+      "scores": {
+        "accuracy": 4,
+        "cost": 3,
+        "privacy": 2,
+        "timeline_feasibility": 5,
+        "scalability": 4,
+        "citation_reliability": 3
+      },
+      "document_update_handling": "Re\u2011embed only changed chunks; vector DB supports incremental updates."
+    },
+    {
+      "architecture": "Option B",
+      "strengths": [
+        "All data stays on\u2011premise, maximal privacy",
+        "Potential to embed citation patterns directly in model"
+      ],
+      "weaknesses": [
+        "Fine\u2011tuning large models requires GPU time and expertise",
+        "Longer development cycle; re\u2011training needed for each document set change",
+        "Open\u2011source LLMs typically lag behind hosted APIs in raw accuracy"
+      ],
+      "scores": {
+        "accuracy": 3,
+        "cost": 2,
+        "privacy": 5,
+        "timeline_feasibility": 2,
+        "scalability": 3,
+        "citation_reliability": 4
+      },
+      "document_update_handling": "Any substantial change forces a new fine\u2011tune run, making frequent updates costly."
+    },
+    {
+      "architecture": "Option C",
+      "strengths": [
+        "Very low cost, no external API calls",
+        "Exact keyword matches give perfect citation traceability",
+        "Simple to maintain when documents change"
+      ],
+      "weaknesses": [
+        "Poor natural\u2011language understanding; low answer quality",
+        "Cannot handle paraphrased questions or reasoning"
+      ],
+      "scores": {
+        "accuracy": 2,
+        "cost": 5,
+        "privacy": 5,
+        "timeline_feasibility": 5,
+        "scalability": 5,
+        "citation_reliability": 5
+      },
+      "document_update_handling": "Index rebuild is trivial; just re\u2011run keyword extractor."
+    },
+    {
+      "architecture": "Option D",
+      "strengths": [
+        "Best possible accuracy through multi\u2011step retrieval, query rewriting and citation verification",
+        "Citation reliability is highest because verification step checks source presence"
+      ],
+      "weaknesses": [
+        "High operational complexity; many moving parts (rewriter, ranker, verifier, LLM)",
+        "Longer development time, higher compute cost",
+        "More components to secure and monitor"
+      ],
+      "scores": {
+        "accuracy": 5,
+        "cost": 2,
+        "privacy": 4,
+        "timeline_feasibility": 2,
+        "scalability": 3,
+        "citation_reliability": 5
+      },
+      "document_update_handling": "Requires re\u2011indexing and may need re\u2011tuning of ranker; still manageable but adds coordination overhead."
+    }
+  ],
+  "recommended_architecture": "Option A",
+  "implementation_rationale": "Option A delivers the strongest combination of accuracy, rapid delivery, and manageable cost while staying within the 6\u2011week MVP window. It meets the core requirement of providing answer citations and can be built using off\u2011the\u2011shelf vector\u2011DB services and a hosted LLM API. Privacy concerns are mitigated by encrypting data at rest, limiting the payload sent to the LLM (only the retrieved chunks), and applying strict data\u2011retention policies. The architecture is extensible: later phases can introduce query\u2011rewriting, reranking, and verification (Option D) to boost accuracy and citation reliability without re\u2011architecting the whole system.",
+  "risks": [
+    "Confidential document content is transmitted to an external LLM provider.",
+    "LLM may hallucinate or omit citations, reducing trust.",
+    "Per\u2011token API costs could grow as user base scales to 20k users.",
+    "Vector\u2011DB latency or quota limits may affect response time under load.",
+    "Frequent document updates require re\u2011embedding, which could become a bottleneck if not automated."
+  ],
+  "mitigations": [
+    "Encrypt PDFs before upload; decrypt only in memory for embedding.",
+    "Send only the minimal retrieved text chunks (e.g., top\u20113) to the LLM, never the full document.",
+    "Implement a prompt template that forces the model to cite source IDs and validate that the cited IDs appear in the retrieved set.",
+    "Negotiate volume pricing or switch to a self\u2011hosted open\u2011source embedding model to control embedding costs.",
+    "Automate the ingestion pipeline: on document upload, trigger chunking, embedding, and upsert into the vector store.",
+    "Monitor API usage and set budget alerts; introduce caching for repeated queries.",
+    "Plan a phased upgrade to Option D after MVP, reusing the existing vector store and adding a lightweight reranker."
+  ],
+  "mvp_plan": [
+    "Week 1: Set up secure file upload service, PDF parsing, chunking (\u2248200\u2011300 token chunks), and choose an open\u2011source embedding model (e.g., Sentence\u2011Transformers) to run in\u2011house.",
+    "Week 2: Deploy a managed vector database (e.g., Pinecone, Qdrant, or self\u2011hosted Milvus). Build ingestion pipeline that embeds chunks and stores them with document and chunk IDs.",
+    "Week 3: Integrate hosted LLM API (e.g., OpenAI gpt\u20114o) with a prompt that includes: retrieved chunks, user question, and a request to return citations in the format \"[docID:chunkID]\".",
+    "Week 4: Develop front\u2011end UI for document upload, question entry, and answer display with clickable citations that open the source PDF at the relevant page.",
+    "Week 5: Harden security \u2013 TLS everywhere, at\u2011rest encryption, role\u2011based access, data\u2011retention policy (delete raw PDFs after embedding), and implement logging/audit.",
+    "Week 6: Load\u2011test for 500 concurrent users, fix any latency issues, finalize monitoring (LLM usage, vector DB latency), and launch MVP.",
+    "Post\u2011MVP (Month 2\u20114): Add query\u2011rewriting and reranking layer, implement citation verification step, and evaluate cost\u2011effective self\u2011hosted LLM inference to reduce API spend."
+  ]
+}

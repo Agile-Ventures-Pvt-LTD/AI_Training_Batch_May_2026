@@ -1,0 +1,275 @@
+[
+    {
+        "timestamp": "2026-06-12T12:22:04.929821",
+        "question": "What are Tesla’s main business segments described in the filings?",
+        "answer": "Tesla's main business segments are: \n\n1. North America\n2. International\n3. Amazon Web Services (AWS)",
+        "answerability": "ANSWERED",
+        "confidence": "HIGH",
+        "retrieved_chunks": [
+            {
+                "chunk_id": "chunk_00065",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 13,
+                "snippet": "AMAZON.COM, INC. PART I Item 1. Business This Annual Report on Form 10-K and the documents incorporated herein by reference contain forward-looking statements based on expectations, estimates, and projections as of the date of this filing. Actual results and outcomes may differ materially from those"
+            },
+            {
+                "chunk_id": "chunk_00066",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 13,
+                "snippet": "primary customer sets, consisting of consumers, sellers, developers, enterprises, content creators, advertisers, and employees. We have organized our operations into three segments: North America, International, and Amazon Web Services (\u201cAWS\u201d). These segments reflect the way the Company evaluates it"
+            },
+            {
+                "chunk_id": "chunk_00258",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 51,
+                "snippet": "AMAZON.COM, INC. NOTES TO CONSOLIDATED FINANCIAL STATEMENTS Note 1 \u2014 DESCRIPTION OF BUSINESS, ACCOUNTING POLICIES, AND SUPPLEMENTAL DISCLOSURES Description of Business We seek to be Earth\u2019s most customer-centric company. In each of our segments, we serve our primary customer sets, consisting of cons"
+            },
+            {
+                "chunk_id": "chunk_00259",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 51,
+                "snippet": "developers and enterprises of all sizes through AWS, which offers a broad set of on-demand technology services, including compute, storage, database, analytics, artificial intelligence and machine learning, and other services. We also manufacture and sell electronic devices. In addition, we provide "
+            },
+            {
+                "chunk_id": "chunk_00251",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 47,
+                "snippet": "AMAZON.COM, INC. CONSOLIDATED STATEMENTS OF OPERATIONS (in millions, except per share data) Year Ended December 31, 2023 2024 2025 Net product sales $ 255,887 $ 272,311 $ 296,266 Net service sales 318,898 365,648 420,658 Total net sales 574,785 637,959 716,924 Operating expenses: Cost of sales 304,7"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-06-12T12:22:05.786495",
+        "question": "What risks are related to supply chain?",
+        "answer": "Our Supplier Relationships Subject Us to a Number of Risks, including: \n1. Decisions by suppliers to limit or stop selling or licensing merchandise, content, components, or services to us on acceptable terms, or delay delivery.\n2. Supplier bankruptcies due to poor economic conditions, natural or human-caused disasters, geopolitical events, labor and trade disputes, or for other reasons.\n3. Inability to negotiate acceptable terms with shipping companies or performance problems experienced by these companies.\n4. Inability to procure alternatives from other suppliers in a timely and efficient manner and on acceptable terms, or at all, due to constraints on the availability of certain products, such as semiconductor products.\n5. Violations by suppliers of applicable laws, regulations, contractual terms, intellectual property rights of others, or our Supply Chain Standards.",
+        "answerability": "ANSWERED",
+        "confidence": "HIGH",
+        "retrieved_chunks": [
+            {
+                "chunk_id": "chunk_00084",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 16,
+                "snippet": "In addition to the factors discussed in Item 7 of Part II, \u201cManagement\u2019s Discussion and Analysis of Financial Condition and Results of Operations,\u201d and in the risk factors below, global economic and geopolitical conditions and additional or unforeseen circumstances, developments, or events may give "
+            },
+            {
+                "chunk_id": "chunk_00137",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 24,
+                "snippet": "We Face Significant Inventory Risk In addition to risks described elsewhere in this Item 1A relating to fulfillment network and inventory optimization by us and third parties, we are exposed to significant inventory risks that may adversely affect our operating results as a result of seasonality, ne"
+            },
+            {
+                "chunk_id": "chunk_00127",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 22,
+                "snippet": "perceived negatively and harm our business and reputation. Our Supplier Relationships Subject Us to a Number of Risks We have significant suppliers, including content and technology licensors, and in some cases, limited or single-sources of supply, that are important to our sourcing, services, manuf"
+            },
+            {
+                "chunk_id": "chunk_00118",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 21,
+                "snippet": "in us being unable to secure sufficient storage space or to optimize our fulfillment network or cause other unexpected costs and other harm to our business and reputation. We rely on a limited number of shipping companies to deliver inventory to us and completed orders to our customers. An inability"
+            },
+            {
+                "chunk_id": "chunk_00128",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 22,
+                "snippet": "to poor economic conditions, natural or human-caused disasters (including public health crises), geopolitical events, labor and trade disputes, or for other reasons, may result in our being unable to procure alternatives from other suppliers in a timely and efficient manner and on acceptable terms, "
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-06-12T12:22:06.437941",
+        "question": "Summarize key risk factors.",
+        "answer": "The key risk factors discussed include: \n\n1. Intense competition in rapidly evolving businesses\n2. Changes in interest rates\n3. Conditions or trends in the internet, technology, and industry segments\n4. Quarterly variations in operating results\n5. Fluctuations in the stock market\n6. Changes in financial estimates and recommendations by securities analysts\n7. Changes in capital structure, including issuance of debt or equity\n8. Global economic and geopolitical conditions\n9. Cybersecurity risks, including data loss or other security incidents\n10. Risks related to growth and expansion, inventory management, fulfillment, and payments.",
+        "answerability": "ANSWERED",
+        "confidence": "HIGH",
+        "retrieved_chunks": [
+            {
+                "chunk_id": "chunk_00083",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 16,
+                "snippet": "Item 1A. Risk Factors Please carefully consider the following discussion of significant factors, events, and uncertainties that make an investment in our securities risky. The events and consequences discussed in these risk factors could, in circumstances we may or may not be able to accurately pred"
+            },
+            {
+                "chunk_id": "chunk_00143",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 24,
+                "snippet": "significantly in response to, among other risks, the risks described elsewhere in this Item 1A, as well as: \u2022 changes in interest rates; \u2022 conditions or trends in the internet, other technologies including artificial intelligence, and the industry segments we operate in; \u2022 quarterly variations in op"
+            },
+            {
+                "chunk_id": "chunk_00084",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 16,
+                "snippet": "In addition to the factors discussed in Item 7 of Part II, \u201cManagement\u2019s Discussion and Analysis of Financial Condition and Results of Operations,\u201d and in the risk factors below, global economic and geopolitical conditions and additional or unforeseen circumstances, developments, or events may give "
+            },
+            {
+                "chunk_id": "chunk_00165",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 27,
+                "snippet": "by senior leadership, including as part of our enterprise risk assessments that are reviewed by the Audit Committee and our Board of Directors. Such risks and mitigations are also subject to oversight by the Security Committee of our Board of Directors. Additional information about cybersecurity ris"
+            },
+            {
+                "chunk_id": "chunk_00172",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 30,
+                "snippet": "growth and expansion, the outcomes of claims, litigation, government investigations, and other proceedings, fulfillment, sortation, delivery, and data center optimization, risks of inventory management, variability in demand, the degree to which we enter into, maintain, and develop commercial agreem"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-06-12T12:22:07.001375",
+        "question": "What does the report say about AWS revenue?",
+        "answer": "AWS revenue for the years ended December 31, 2023, 2024, and 2025 was $90,757 million, $107,556 million, and $128,725 million, respectively. Operating income for AWS was $24,631 million, $39,834 million, and $45,606 million for the same periods.",
+        "answerability": "ANSWERED",
+        "confidence": "HIGH",
+        "retrieved_chunks": [
+            {
+                "chunk_id": "chunk_00320",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 61,
+                "snippet": "Unearned Revenue Unearned revenue is recorded when payments are received or due in advance of performing our service obligations and is recognized over the service period. Unearned revenue primarily relates to prepayments of AWS services and Amazon Prime memberships. Our total unearned revenue as of"
+            },
+            {
+                "chunk_id": "chunk_00251",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 47,
+                "snippet": "AMAZON.COM, INC. CONSOLIDATED STATEMENTS OF OPERATIONS (in millions, except per share data) Year Ended December 31, 2023 2024 2025 Net product sales $ 255,887 $ 272,311 $ 296,266 Net service sales 318,898 365,648 420,658 Total net sales 574,785 637,959 716,924 Operating expenses: Cost of sales 304,7"
+            },
+            {
+                "chunk_id": "chunk_00391",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 78,
+                "snippet": "consists of amounts earned from global sales of compute, storage, database, and other services for start-ups, enterprises, government agencies, and academic institutions. Information on reportable segments and reconciliation to consolidated net income is as follows (in millions): Year Ended December"
+            },
+            {
+                "chunk_id": "chunk_00248",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 46,
+                "snippet": "AMAZON.COM, INC. CONSOLIDATED STATEMENTS OF CASH FLOWS (in millions) Year Ended December 31, 2023 2024 2025 CASH, CASH EQUIVALENTS, AND RESTRICTED CASH, BEGINNING OF PERIOD $ 54,253 $ 73,890 $ 82,312 OPERATING ACTIVITIES: Net income 30,425 59,248 77,670 Adjustments to reconcile net income to net cas"
+            },
+            {
+                "chunk_id": "chunk_00003",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 1,
+                "snippet": "(companies like DoorDash, Dropbox, Pinterest, Slack, and Stripe were among many that built their businesses on AWS). Pundits said enterprises and governments would never use cloud or AWS for anything substantive. In 2008, Netflix decided to move all of its applications to AWS, then came big commitme"
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-06-12T12:22:07.897801",
+        "question": "Compare AWS and International segment.",
+        "answer": "The AWS segment and the International segment can be compared as follows:\n\n- AWS segment primarily consists of amounts earned from global sales of compute, storage, database, and other services, whereas the International segment primarily consists of amounts earned from retail sales of consumer products and advertising and subscription services through internationally-focused online stores.\n\n- In terms of revenue, the AWS segment has consistently higher earnings: $108,533 million (2023), $155,953 million (2024), and $252,588 million (2025), compared to the International segment: $69,718 million (2023), $69,487 million (2024), and $81,984 million (2025).\n\n- The assets of the AWS segment primarily consist of property and equipment, accounts receivable, and operating leases, whereas the International segment assets primarily consist of property and equipment, operating leases, inventory, accounts receivable, and digital video and music content.\n\n- Property and equipment, net, for the AWS segment are $72,701 million (2023), $110,683 million (2024), and $190,055 million (2025), compared to the International segment: $24,357 million (2023), $25,618 million (2024), and $30,632 million (2025).",
+        "answerability": "ANSWERED",
+        "confidence": "HIGH",
+        "retrieved_chunks": [
+            {
+                "chunk_id": "chunk_00390",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 78,
+                "snippet": "North America The North America segment primarily consists of amounts earned from retail sales of consumer products (including from sellers) and advertising and subscription services through North America-focused online and physical stores. This segment includes export sales from these online stores"
+            },
+            {
+                "chunk_id": "chunk_00397",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 80,
+                "snippet": "consolidated amounts are as follows (in millions): December 31, 2023 2024 2025 North America (1) $ 196,029 $ 210,120 $ 235,652 International (1) 69,718 69,487 81,984 AWS (2) 108,533 155,953 252,588 Corporate 153,574 189,334 247,818 Consolidated $ 527,854 $ 624,894 $ 818,042 ___________________ (1) N"
+            },
+            {
+                "chunk_id": "chunk_00396",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 80,
+                "snippet": "Total segment assets exclude corporate assets, such as cash and cash equivalents, marketable securities, other long-term investments, corporate facilities, goodwill and other acquired intangible assets, and tax assets. Technology infrastructure assets, which are included in property and equipment, n"
+            },
+            {
+                "chunk_id": "chunk_00395",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 79,
+                "snippet": "memberships, as well as digital video, audiobook, digital music, e-book, and other non-AWS subscription services. (6) Includes sales related to various other offerings (such as shipping services, healthcare services, and certain licensing and distribution of video content) and our co-branded credit "
+            },
+            {
+                "chunk_id": "chunk_00259",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 51,
+                "snippet": "developers and enterprises of all sizes through AWS, which offers a broad set of on-demand technology services, including compute, storage, database, analytics, artificial intelligence and machine learning, and other services. We also manufacture and sell electronic devices. In addition, we provide "
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-06-12T12:22:08.554596",
+        "question": "What legal risks are mentioned?",
+        "answer": "Claims, litigation, government investigations, and other proceedings, including potential regulatory proceedings, involving patent and other intellectual property matters, taxes, labor and employment, competition and antitrust, privacy and data protection, consumer protection, commercial disputes, goods and services offered by us and by third parties.",
+        "answerability": "ANSWERED",
+        "confidence": "HIGH",
+        "retrieved_chunks": [
+            {
+                "chunk_id": "chunk_00153",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 26,
+                "snippet": "such proceedings, including as a result of a settlement, could involve licenses, sanctions, consent decrees, or orders requiring us to make substantial future payments, preventing us from offering certain products or services, requiring us to change our business practices in a manner materially adve"
+            },
+            {
+                "chunk_id": "chunk_00149",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 25,
+                "snippet": "authorities applying those laws and regulations, or inquiries, investigations, or enforcement actions threatened or initiated by them, could cause us to incur substantial costs, expose us to unanticipated civil and criminal liability or penalties (including substantial monetary fines), diminish the "
+            },
+            {
+                "chunk_id": "chunk_00365",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 71,
+                "snippet": "defend ourselves vigorously in this matter. In addition, we are regularly subject to claims, litigation, and other proceedings, including potential regulatory proceedings, involving patent and other intellectual property matters, taxes, labor and employment, competition and antitrust, privacy and da"
+            },
+            {
+                "chunk_id": "chunk_00119",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 21,
+                "snippet": "(including public health crises) or extreme weather (including as a result of climate change), geopolitical events and security issues, labor or trade disputes, tariff policy changes, and similar events. We Could Be Harmed by Data Loss or Other Security Incidents Because we collect, process, store, "
+            },
+            {
+                "chunk_id": "chunk_00084",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 16,
+                "snippet": "In addition to the factors discussed in Item 7 of Part II, \u201cManagement\u2019s Discussion and Analysis of Financial Condition and Results of Operations,\u201d and in the risk factors below, global economic and geopolitical conditions and additional or unforeseen circumstances, developments, or events may give "
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-06-12T12:22:08.917613",
+        "question": "What will Tesla stock price be next year?",
+        "answer": "I could not find this in the provided documents.",
+        "answerability": "ANSWERED",
+        "confidence": "HIGH",
+        "retrieved_chunks": [
+            {
+                "chunk_id": "chunk_00228",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 40,
+                "snippet": "Guidance We provided guidance on February 5, 2026, in our earnings release furnished on Form 8-K as set forth below. These forward-looking statements reflect Amazon.com\u2019s expectations as of February 5, 2026, and are subject to substantial uncertainty. Our results are inherently unpredictable and may"
+            },
+            {
+                "chunk_id": "chunk_00429",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 90,
+                "snippet": "Stock Price Performance Graph The graph set forth below compares cumulative total return on the common stock with the cumulative total return of the NYSE Technology Index, the S&P 500 Index, and the S&P 500 Consumer Discretionary Distribution & Retail Index, resulting from an initial investment of $"
+            },
+            {
+                "chunk_id": "chunk_00411",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 84,
+                "snippet": "ending on November 4, 2026, subject to certain conditions. On November 11, 2025, Shelley L. Reynolds, Vice President, Worldwide Controller, adopted a trading plan intended to satisfy Rule 10b5-1(c) to sell up to 9,744 shares of Amazon.com, Inc. common stock over a period ending on November 29, 2026,"
+            },
+            {
+                "chunk_id": "chunk_00229",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 40,
+                "snippet": "as well as those outlined in Item 1A of Part I, \u201cRisk Factors.\u201d First Quarter 2026 Guidance \u2022 Net sales are expected to be between $173.5 billion and $178.5 billion, or to grow between 11% and 15% compared with first quarter 2025. This guidance anticipates a favorable impact of approximately 180 bas"
+            },
+            {
+                "chunk_id": "chunk_00410",
+                "source_file": "Amazon-2025-Annual-Report.pdf",
+                "page_number": 84,
+                "snippet": "Item 9B. Other Information On November 3, 2025, David A. Zapolsky, Senior Vice President, Chief Global Affairs and Legal Officer, adopted a trading plan intended to satisfy Rule 10b5-1(c) to sell up to 64,059 shares of Amazon.com, Inc. common stock over a period ending on November 30, 2026, subject "
+            }
+        ]
+    }
+]

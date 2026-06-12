@@ -1,0 +1,14 @@
+{
+  "draft_response": "Hi Amit,\n\nThank you for contacting us and I\u2019m sorry to hear about the duplicate charge and the delay in getting a response. I understand how frustrating this situation is, especially after you cancelled your premium subscription.\n\nTo investigate the issue thoroughly, could you please provide the following details?\n- The invoice numbers (or reference IDs) that appear twice on your statement.\n- The email address associated with your account.\n- Any confirmation or reference of the cancellation date you received.\n\nOnce we have this information, I will immediately forward it to our Billing Support team, who will review the charges and the cancellation status. We will keep you updated on our findings and work to resolve the matter as quickly as possible.\n\nThank you for your patience, and I look forward to your reply.\n\nBest regards,\n[Your Name]\nCustomer Support",
+  "response_strategy": "1. Acknowledge Amit\u2019s concern and the duplicate charge. 2. Express empathy for the frustration caused by the billing error and lack of response. 3. Summarize the issue: cancelled premium subscription, unexpected charge, duplicate invoice, and no reply from support. 4. Request missing information required for verification (invoice IDs, account email, cancellation confirmation). 5. Avoid any promises of refunds or cancellations until verification is complete. 6. Explain that the case will be escalated to Billing Support, the team that handles premium billing issues. 7. Outline next steps: once information is received, the billing team will investigate and update the customer promptly. 8. Maintain a professional and empathetic tone throughout.",
+  "assumptions": [
+    "Amit\u2019s account is a Premium subscription.",
+    "The duplicate charge relates to the same invoice amount shown twice.",
+    "No invoice IDs or account email have been provided yet."
+  ],
+  "information_needed_before_sending": [
+    "Invoice number(s) or reference IDs that appear twice on the bank statement.",
+    "The email address registered to Amit\u2019s account.",
+    "Any cancellation confirmation details (date, reference number, email)."
+  ]
+}
