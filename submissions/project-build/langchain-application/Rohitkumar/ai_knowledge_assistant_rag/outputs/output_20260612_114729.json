@@ -1,0 +1,73 @@
+{
+  "question": "What does Amazon say about AWS and AI-related growth?",
+  "query_type": "FACTUAL_LOOKUP",
+  "answer": "Amazon states that AWS is experiencing significant growth due to the increasing adoption of AI, with customers choosing AWS for their AI needs. AWS has the broadest and most capable offerings, and its strong security and operational performance make it an attractive choice for customers. As a result, AWS is growing rapidly, with a $142 billion revenue run rate and 24% year-over-year growth in Q4 2025.",
+  "supporting_evidence": "Customers are expanding their use of AI, and AWS has the broadest and most capable offerings. AWS has the strongest security and operational performance of any AI and infrastructure provider. AWS added 3.9 gigawatts of new power capacity in 2025 and expects to double total power capacity by the end of 2027.",
+  "sources": [
+    {
+      "source_file": "Amazon-2025-Annual-Report.pdf | Page: 5 | Chunk: Amazon-2025-Annual-Report.pdf_p005_003_23b201ef79",
+      "page_number": "",
+      "chunk_id": "",
+      "snippet": ""
+    },
+    {
+      "source_file": "Amazon-2025-Annual-Report.pdf | Page: 5 | Chunk: Amazon-2025-Annual-Report.pdf_p005_001_e317f9ba7c",
+      "page_number": "",
+      "chunk_id": "",
+      "snippet": ""
+    },
+    {
+      "source_file": "Amazon-2025-Annual-Report.pdf | Page: 8 | Chunk: Amazon-2025-Annual-Report.pdf_p008_002_f062000bb3",
+      "page_number": "",
+      "chunk_id": "",
+      "snippet": ""
+    }
+  ],
+  "confidence": "High",
+  "answerability": "Answerable",
+  "retrieval_debug": {
+    "top_k": 5,
+    "retrieved_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "Amazon-2025-Annual-Report.pdf_p005_003_23b201ef79",
+        "source_file": "Amazon-2025-Annual-Report.pdf",
+        "page_number": 5,
+        "similarity_score": 0.7020787000656128,
+        "preview": "ond, as\ncustomers expand their use of AI, they want their inference to reside near their other applications and data\n(for latency reasons), and much more of it resides in A WS than anywhere else. Thir"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "Amazon-2025-Annual-Report.pdf_p005_001_e317f9ba7c",
+        "source_file": "Amazon-2025-Annual-Report.pdf",
+        "page_number": 5,
+        "similarity_score": 0.7086650729179382,
+        "preview": "1/ We have never seen a technology more quickly adopted than AI. When ChatGPT launched in November 2022,\nit reached 100 million users in two months—four times faster than TikT ok and 15 times faster t"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "Amazon-2025-Annual-Report.pdf_p008_002_f062000bb3",
+        "source_file": "Amazon-2025-Annual-Report.pdf",
+        "page_number": 8,
+        "similarity_score": 0.7414027452468872,
+        "preview": "m for what’s ahead.\nOur retail business is now approaching $600 billion in topline, yet roughly 80% of global retail sales still\nhappens in physical stores. That will change.\nA WS is at a $142 billion"
+      },
+      {
+        "rank": 4,
+        "chunk_id": "Amazon-2025-Annual-Report.pdf_p032_002_2a79f57a05",
+        "source_file": "Amazon-2025-Annual-Report.pdf",
+        "page_number": 32,
+        "similarity_score": 0.8029758930206299,
+        "preview": "technology and infrastructure, including AWS, and expansion of\nnew and existing product categories and service offerings, as well as in infrastructure to enhance the customer experience and\nimprove ou"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "Amazon-2025-Annual-Report.pdf_p035_002_21f91f2249",
+        "source_file": "Amazon-2025-Annual-Report.pdf",
+        "page_number": 35,
+        "similarity_score": 0.8409183025360107,
+        "preview": "recast growth needs, expenses, and benefits from new technologies. Further, we expect to continue making\nadditional investments in our artificial intelligence initiatives. We expect some or all of the"
+      }
+    ]
+  }
+}

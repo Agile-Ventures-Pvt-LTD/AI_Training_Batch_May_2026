@@ -1,0 +1,13 @@
+{
+  "question": "What will the company's stock price be next year?",
+  "query_type": "UNANSWERABLE_OR_SPECULATIVE",
+  "answer": "I could not find this information in the provided documents. The question appears to be speculative or ask about future events, which cannot be answered from the available document collection.",
+  "supporting_evidence": [],
+  "sources": [],
+  "confidence": "LOW",
+  "answerability": "NOT_FOUND",
+  "retrieval_debug": {
+    "top_k": 5,
+    "retrieved_chunks": []
+  }
+}
