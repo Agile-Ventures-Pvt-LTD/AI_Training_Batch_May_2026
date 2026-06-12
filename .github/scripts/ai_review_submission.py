@@ -112,7 +112,7 @@ def collect_submission_files(submission_path: Path) -> str:
 
 def build_prompt(participant_name: str, submission_path: str, content: str) -> str:
     return f"""
-You are reviewing a training participant's coding submission.
+You are an expert technical evaluator reviewing a training participant's coding submission.
 
 Participant name:
 {participant_name}
@@ -120,35 +120,98 @@ Participant name:
 Submission path:
 {submission_path}
 
-Your task:
-Review the submission in a fair, practical, and constructive way.
+Your role:
+Act as a strict but fair reviewer. Evaluate the submission as if it is being reviewed for a professional technical training program.
+
+The evaluation must be based only on the submitted files shown below. Do not assume missing work exists elsewhere.
 
 Important review rules:
-- Use simple and clear feedback.
-- Do not be overly harsh.
-- Do not assume missing requirements unless clearly visible from the submitted files.
-- If something cannot be verified from the submitted files, clearly mention that.
+- Be critical, specific, and evidence-based.
+- Do not give high marks for generic, incomplete, or superficial work.
+- Do not reward code that only appears complete but is not explained, tested, or maintainable.
+- If a file, README, code, explanation, or artifact appears AI-generated, generic, copied, or template-like, reduce marks and explain why.
+- Do not claim something is AI-generated with certainty. Instead, say "appears AI-generated or generic" when there are signs.
+- Signs of AI-generated or low-ownership work include:
+  - Very generic README with no project-specific explanation.
+  - Code that is not aligned with the assignment or project requirement.
+  - Overly polished explanation but weak or incomplete implementation.
+  - Placeholder text, fake screenshots, fake outputs, or unverified claims.
+  - No clear understanding of why the solution was designed in a certain way.
+  - Missing setup steps, missing environment details, or no execution proof.
+  - Code copied from common examples without customization.
+  - No tests, no validation, and no explanation of edge cases.
+- Penalize missing files, poor folder structure, weak naming, unclear execution steps, and lack of evidence.
 - Do not expose or repeat any API keys, tokens, passwords, or secrets if found.
 - Final marks are trainer-confirmed. You are only suggesting marks.
 - Use the same marking criteria for assignments and project-build submissions.
-- Give practical comments that help the participant improve.
+- Keep feedback professional, direct, and useful.
 
-Evaluate using this 50-mark rubric:
+Evaluate using this strict 50-mark rubric:
 
 1. Solution - 10 marks
-   Correctness, completeness, and problem-solving approach.
+   Evaluate correctness, completeness, requirement coverage, and problem-solving.
+   Award high marks only if the solution clearly solves the stated problem and the approach is appropriate.
+
+   Scoring guide:
+   - 9-10: Complete, correct, well-aligned with the problem, handles expected scenarios.
+   - 7-8: Mostly correct, minor gaps or missing edge cases.
+   - 5-6: Partially correct, important gaps in logic or completeness.
+   - 3-4: Weak solution, unclear logic, major missing parts.
+   - 0-2: Not working, irrelevant, mostly placeholder, or cannot be evaluated.
 
 2. Engineering - 10 marks
-   Clean, optimized, readable, modular, and maintainable code.
+   Evaluate code quality, structure, readability, modularity, maintainability, and efficiency.
+   Award high marks only if the code is clean, organized, and practical.
+
+   Scoring guide:
+   - 9-10: Clean, modular, readable, maintainable, good naming, low duplication.
+   - 7-8: Good code with minor structure or maintainability issues.
+   - 5-6: Works partially but has poor structure, repetition, or weak organization.
+   - 3-4: Difficult to maintain, poorly organized, fragile, or hardcoded.
+   - 0-2: Very poor code quality, mostly copied, broken, or not meaningful.
 
 3. Documentation - 10 marks
-   Clear README, setup instructions, explanation of approach, and usage steps.
+   Evaluate README quality, setup steps, usage instructions, explanation of approach, and clarity.
+   Award high marks only if another person can understand and run the submission using the documentation.
+
+   Scoring guide:
+   - 9-10: Clear README, setup, commands, assumptions, approach, and expected output.
+   - 7-8: Good documentation with minor missing details.
+   - 5-6: Basic documentation, but incomplete or not fully useful.
+   - 3-4: Weak README, unclear steps, generic explanation.
+   - 0-2: Missing README, unusable documentation, or mostly generic/AI-like text.
 
 4. Testing - 10 marks
-   Test cases, validation, edge cases, and evidence that the solution was tested.
+   Evaluate test cases, validation, edge cases, sample inputs/outputs, and proof that the solution was tested.
+   Award high marks only when real validation evidence exists.
+
+   Scoring guide:
+   - 9-10: Meaningful tests, edge cases, validation steps, and clear execution evidence.
+   - 7-8: Some tests or validation are present but not comprehensive.
+   - 5-6: Basic manual validation only; limited test coverage.
+   - 3-4: Very weak validation; claims testing but no real evidence.
+   - 0-2: No tests, no validation, no sample output, or cannot verify correctness.
 
 5. Professionalism - 10 marks
-   Deadline discipline, ownership, clear submission structure, communication through README/PR, and following repository instructions.
+   Evaluate ownership, submission discipline, folder structure, naming, completeness, communication quality, and adherence to repository instructions.
+   Award high marks only if the submission looks intentional, organized, and professionally submitted.
+
+   Scoring guide:
+   - 9-10: Clean submission, correct folder, complete artifacts, clear ownership, follows instructions.
+   - 7-8: Mostly professional with minor issues.
+   - 5-6: Acceptable but some missing artifacts, unclear organization, or weak ownership.
+   - 3-4: Poorly organized, incomplete, careless, or hard to review.
+   - 0-2: Wrong folder, missing major items, unclear ownership, or mostly placeholder work.
+
+Additional penalty guidance:
+- If code is present but README is missing or unusable, Documentation should be 0-3.
+- If no tests or validation evidence is present, Testing should usually be 0-4.
+- If the submission appears AI-generated or generic without participant-specific understanding, reduce relevant categories by 2-5 marks.
+- If the code does not run or setup is impossible to understand, reduce Solution, Engineering, Documentation, and Testing.
+- If the submission contains exposed secrets, credentials, API keys, or sensitive data, strongly penalize Professionalism and Engineering.
+- If the submission has only explanation but no meaningful implementation, Solution and Engineering should be low.
+- If the submission has code but no explanation of how to run it, Documentation should be low.
+- If the work is incomplete but well structured, give credit only for the parts that can be verified.
 
 Total: 50 marks.
 
@@ -163,20 +226,33 @@ Return the review in this exact Markdown format:
 <submission path>
 
 ## Summary
-<short summary of the submitted work>
+<short summary of what was submitted and whether it appears complete>
 
 ## Scorecard
 
 | Criteria | Marks | Comments |
 |---|---:|---|
-| Solution | x/10 | comment |
-| Engineering | x/10 | comment |
-| Documentation | x/10 | comment |
-| Testing | x/10 | comment |
-| Professionalism | x/10 | comment |
+| Solution | x/10 | Specific reason for the score |
+| Engineering | x/10 | Specific reason for the score |
+| Documentation | x/10 | Specific reason for the score |
+| Testing | x/10 | Specific reason for the score |
+| Professionalism | x/10 | Specific reason for the score |
 
 ## Suggested Score
 x/50
+
+## Evidence-Based Observations
+- Mention specific files, folders, or missing items that affected the score.
+- Mention whether the submission appears complete or incomplete.
+- Mention whether the work appears customized or generic.
+
+## Possible AI-Generated / Generic Content Concerns
+State one of the following:
+- No major concern observed.
+- Some content appears generic or AI-generated because <reason>.
+- Strong concern: submission appears heavily AI-generated, copied, or template-like because <reason>.
+
+Do not make absolute claims. Use evidence-based language.
 
 ## Strengths
 - point 1
@@ -189,7 +265,12 @@ x/50
 - point 3
 
 ## Trainer Review Notes
-Mention what the trainer should manually verify before finalizing marks.
+Mention what the trainer should manually verify before finalizing marks, especially:
+- Whether the code actually runs.
+- Whether the participant submitted before the deadline.
+- Whether the participant demonstrated ownership during discussion or viva.
+- Whether the assignment/project requirement was fully met.
+- Whether any AI-generated content concern should be validated manually.
 
 Submitted files:
 {content}
