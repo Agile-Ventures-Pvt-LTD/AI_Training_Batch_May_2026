@@ -1,0 +1,79 @@
+{
+  "case_4_1": {
+    "parsed_output": {
+      "response_a": {
+        "scores": {
+          "empathy": 2,
+          "issue_ownership": 1,
+          "next_steps_clarity": 1,
+          "refund_handling": 1,
+          "professionalism": 2
+        },
+        "strengths": [
+          "Polite tone",
+          "Keeps message concise"
+        ],
+        "weaknesses": [
+          "Apology is generic and does not acknowledge the customer's frustration",
+          "Deflects responsibility by asking the user to check settings",
+          "Provides no concrete next steps or request for necessary information",
+          "Refund policy is mentioned vaguely without any commitment"
+        ]
+      },
+      "response_b": {
+        "scores": {
+          "empathy": 4,
+          "issue_ownership": 4,
+          "next_steps_clarity": 5,
+          "refund_handling": 4,
+          "professionalism": 5
+        },
+        "strengths": [
+          "Explicitly acknowledges the customer's frustration and prior support attempts",
+          "Takes ownership by offering to escalate the billing issue",
+          "Clearly requests specific information (invoice ID or account email) to move forward",
+          "Outlines the refund verification process and ties it to the billing policy",
+          "Professional and courteous language throughout"
+        ],
+        "weaknesses": [
+          "Could include an estimated timeline for the refund once eligibility is confirmed"
+        ]
+      },
+      "winner": "B",
+      "judge_reasoning_summary": "Response B demonstrates strong empathy, takes clear ownership of the issue, provides concrete next steps by requesting necessary details, and explains how the refund will be handled, all while maintaining a professional tone. Response A is vague, deflects responsibility, and lacks actionable guidance, resulting in significantly lower scores across all criteria."
+    }
+  },
+  "case_4_2": {
+    "parsed_output": {
+      "explanation_a": {
+        "scores": {
+          "technical_accuracy": 5,
+          "beginner_accessibility": 4,
+          "completeness": 4,
+          "avoidance_of_misleading_claims": 5,
+          "practical_usefulness": 5
+        },
+        "issues": [],
+        "overall_score": 4.6
+      },
+      "explanation_b": {
+        "scores": {
+          "technical_accuracy": 1,
+          "beginner_accessibility": 2,
+          "completeness": 1,
+          "avoidance_of_misleading_claims": 1,
+          "practical_usefulness": 1
+        },
+        "issues": [
+          "Incorrectly states that a shallow copy points to the same memory as the original; a shallow copy creates a new container object.",
+          "Implies shallow copies are always bad and deep copies always better, which is misleading.",
+          "Lacks explanation of how nested mutable objects behave under shallow vs. deep copy.",
+          "Does not mention the standard library functions (copy.copy, copy.deepcopy) that implement these operations."
+        ],
+        "overall_score": 1.2
+      },
+      "winner": "A",
+      "judge_reasoning_summary": "Explanation A accurately describes the behavior of shallow and deep copies, mentions the correct standard library functions, and avoids misleading statements, making it technically correct, fairly accessible, complete enough for beginners, and practically useful. Explanation B contains several factual errors (e.g., claiming shallow copies share the same memory), presents an oversimplified and misleading view that shallow copies are always bad, and omits key details, resulting in low scores across all criteria."
+    }
+  }
+}
