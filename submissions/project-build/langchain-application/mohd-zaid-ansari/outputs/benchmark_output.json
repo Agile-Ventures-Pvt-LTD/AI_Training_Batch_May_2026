@@ -1,0 +1,29 @@
+{
+  "question": "What are the key financial highlights for Amazon in 2025?",
+  "query_type": "FACTUAL_LOOKUP",
+  "answerability": "ANSWERED",
+  "confidence": "HIGH",
+  "answer": "In 2025 Amazon delivered a strong financial performance:\n- Total revenue (net sales) reached **$717\u202fbillion**, up **12% YoY** from $638\u202fbillion in 2024.\u202f\u3010Amazon\u2019s revenue in 2025 grew 12% year\u2011over\u2011year (\u201cY oY\u201d) from $638 billion to $717 billion.\u3011\n- By segment, revenue was **$426\u202fbillion** in North America (up 10% YoY), **$162\u202fbillion** internationally (up 13% YoY), and **$129\u202fbillion** for AWS (up 20% YoY).\u202f\u3010North America revenue increased 10% Y oY from $387\u202fbillion to $426\u202fbillion, International revenue grew 13% Y oY from $143\u202fbillion to $162\u202fbillion, and AWS revenue increased 20% Y oY, from $108\u202fbillion to $129\u202fbillion.\u3011\n- Operating income rose to **$80\u202fbillion**, a **17% increase** over the prior year, improving the operating margin to **11.2%** (from 10.8%).\u202f\u3010Amazon\u2019s operating income in 2025 improved 17% Y oY, from $69\u202fbillion (an operating margin of 10.8%) to $80\u202fbillion (an operating margin of 11.2%).\u3011\n- Free cash flow fell sharply to **$11\u202fbillion** (down from $38\u202fbillion) because of a **$50.7\u202fbillion** increase in property\u2011and\u2011equipment purchases, largely for AI\u2011related capex.\u202f\u3010Free Cash Flow decreased from $38\u202fbillion to $11\u202fbillion, driven primarily by a year\u2011over\u2011year increase of $50.7\u202fbillion in purchases of property and equipment\u2026 This FCF change primarily reflects capex investments in artificial intelligence.\u3011\n- The consolidated statement of operations confirms total net sales of **$716.9\u202fbillion** and operating income of **$79.975\u202fbillion** for the year ended December\u202f31,\u202f2025.\u202f\u3010Consolidated Statements of Operations\u2026 Year Ended December\u202f31,\u202f2025 \u2013 Total net sales $716,924\u202fmillion; Operating income $79,975\u202fmillion.\u3011\nThese figures together capture the key financial highlights for Amazon in 2025.",
+  "supporting_evidence": [
+    "Amazon\u2019s revenue in 2025 grew 12% year\u2011over\u2011year (\u201cY oY\u201d) from $638 billion to $717 billion.",
+    "North America revenue increased 10% Y oY from $387 billion to $426 billion, International revenue grew 13% Y oY from $143 billion to $162 billion, and AWS revenue increased 20% Y oY, from $108 billion to $129 billion.",
+    "Amazon\u2019s operating income in 2025 improved 17% Y oY, from $69 billion (an operating margin of 10.8%) to $80 billion (an operating margin of 11.2%).",
+    "Free Cash Flow decreased from $38 billion to $11 billion, driven primarily by a year\u2011over\u2011year increase of $50.7 billion in purchases of property and equipment\u2026 This FCF change primarily reflects capex investments in artificial intelligence.",
+    "Consolidated Statements of Operations\u2026 Year Ended December\u202f31,\u202f2025 \u2013 Total net sales $716,924 million; Operating income $79,975 million."
+  ],
+  "sources": [
+    "Context paragraph summarizing 2025 results",
+    "Segment revenue paragraph",
+    "Operating income paragraph",
+    "Free cash flow paragraph",
+    "Consolidated Statements of Operations table"
+  ],
+  "classification": {
+    "query_type": "FACTUAL_LOOKUP",
+    "requires_retrieval": true,
+    "requires_comparison": false,
+    "answer_style": "summary",
+    "reasoning_summary": "The user asks for specific, factual information about Amazon's financial performance in 2025, which requires retrieving up\u2011to\u2011date financial data. No comparison or analysis is requested, so it is classified as a factual lookup."
+  },
+  "context_sources": 5
+}
