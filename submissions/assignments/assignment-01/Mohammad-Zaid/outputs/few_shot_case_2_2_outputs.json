@@ -1,0 +1,10 @@
+{
+  "action": "CANCEL_LEAVE",
+  "parameters": {
+    "date": "2024-07-03",
+    "leave_type": "sick"
+  },
+  "requires_clarification": false,
+  "clarification_question": "",
+  "confidence": 0.96
+}

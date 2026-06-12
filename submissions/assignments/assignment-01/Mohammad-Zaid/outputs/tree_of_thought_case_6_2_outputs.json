@@ -1,0 +1,86 @@
+{
+  "architecture_scores": [
+    {
+      "option": "Option A: Simple RAG with vector database and hosted LLM API",
+      "accuracy_score": 4,
+      "cost_score": 3,
+      "privacy_score": 3,
+      "timeline_score": 5,
+      "scalability_score": 4,
+      "citation_reliability_score": 4,
+      "overall_score": 4,
+      "trade_offs": [
+        "Relies on third-party LLM API, exposing some document content.",
+        "Cost grows with API usage as user base expands.",
+        "Citation quality depends on prompt engineering; occasional hallucinations."
+      ]
+    },
+    {
+      "option": "Option B: Fine-tune an open-source LLM on all documents",
+      "accuracy_score": 3,
+      "cost_score": 2,
+      "privacy_score": 5,
+      "timeline_score": 2,
+      "scalability_score": 3,
+      "citation_reliability_score": 2,
+      "overall_score": 3,
+      "trade_offs": [
+        "High compute cost for fine-tuning and ongoing inference.",
+        "Long setup time exceeds the 6-week MVP window.",
+        "Frequent document updates require re-training, penalizing accuracy and cost.",
+        "Fine-tuned model may hallucinate citations without a retrieval step."
+      ]
+    },
+    {
+      "option": "Option C: Keyword search only with no LLM",
+      "accuracy_score": 2,
+      "cost_score": 5,
+      "privacy_score": 5,
+      "timeline_score": 5,
+      "scalability_score": 5,
+      "citation_reliability_score": 5,
+      "overall_score": 5,
+      "trade_offs": [
+        "Poor natural-language understanding; many user questions will be missed.",
+        "Does not meet the requirement that accuracy outweighs speed."
+      ]
+    },
+    {
+      "option": "Option D: Agentic multi-step retrieval with query rewriting, reranking, and citation verification",
+      "accuracy_score": 5,
+      "cost_score": 2,
+      "privacy_score": 3,
+      "timeline_score": 2,
+      "scalability_score": 4,
+      "citation_reliability_score": 5,
+      "overall_score": 4,
+      "trade_offs": [
+        "Complex architecture increases development time and risk of missing the 6-week deadline.",
+        "Higher operational cost due to multiple API calls and reranking models.",
+        "Privacy still depends on hosted LLM for generation."
+      ]
+    }
+  ],
+  "recommended_architecture": "Option A: Simple RAG with vector database and hosted LLM API",
+  "implementation_rationale": "Option A balances the startup's priorities: it delivers strong accuracy through retrieval-augmented generation, provides reliable source citations, fits comfortably within the 6-week MVP timeline, and keeps costs manageable for the initial 500 users while remaining scalable to 20,000 users. Privacy concerns are mitigated by encrypting documents at rest and limiting LLM payloads to short retrieved passages, which is acceptable given the budget constraints. The solution is less complex than Option D, avoiding schedule risk, and more accurate than the keyword-only approach of Option C.",
+  "risks": [
+    "Potential exposure of confidential text to the hosted LLM API.",
+    "API usage cost overruns as user base grows.",
+    "Hallucinated answers or incorrect citations from the LLM.",
+    "Vector database performance degradation with large document volumes."
+  ],
+  "mitigations": [
+    "Encrypt PDFs before ingestion; send only the smallest relevant text chunk to the LLM.",
+    "Implement usage quotas and monitor per-user token consumption; negotiate volume pricing with the LLM provider.",
+    "Use prompt templates that force the model to cite the retrieved chunk IDs and add post-processing checks that the cited IDs appear in the retrieved set.",
+    "Choose a scalable vector store (e.g., Pinecone, Qdrant) and enable sharding; run periodic index optimization."
+  ],
+  "mvp_plan": [
+    "Week 1: Set up secure document upload pipeline; extract text from PDFs; store encrypted blobs.",
+    "Week 2: Build and populate a vector database with embeddings (e.g., OpenAI embeddings or open-source model).",
+    "Week 3: Integrate hosted LLM API for RAG; develop prompt that includes top-k retrieved passages and forces citation output.",
+    "Week 4: Implement citation UI that maps LLM-generated citation IDs back to original PDF pages; add basic authentication and rate limiting.",
+    "Week 5: Conduct internal QA, accuracy testing, and cost monitoring; iterate on prompt and retrieval parameters.",
+    "Week 6: Beta release to a small user group (500 users), collect feedback, finalize monitoring dashboards, and prepare scaling plan for month-2 rollout."
+  ]
+}

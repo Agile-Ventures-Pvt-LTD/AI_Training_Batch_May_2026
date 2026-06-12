@@ -1,0 +1,67 @@
+{
+  "options_evaluated": [
+    {
+      "option": "Option 1: AI customer support assistant",
+      "business_value_score": 4,
+      "feasibility_score": 3,
+      "risk_score": 2,
+      "pilot_suitability_score": 3,
+      "adoption_score": 3,
+      "overall_score": 15,
+      "trade_offs": [
+        "High cost-saving potential vs. handling personal customer data (privacy risk).",
+        "Moderate implementation effort may stretch the 90-day window.",
+        "Medium user adoption risk could slow realized benefits."
+      ]
+    },
+    {
+      "option": "Option 2: AI sales proposal generator",
+      "business_value_score": 4,
+      "feasibility_score": 3,
+      "risk_score": 4,
+      "pilot_suitability_score": 3,
+      "adoption_score": 4,
+      "overall_score": 18,
+      "trade_offs": [
+        "Strong revenue impact but requires brand and legal sign-off, which could delay rollout.",
+        "Low data sensitivity keeps privacy risk low.",
+        "Implementation is simple, yet governance reviews add a modest pilot-timeline risk."
+      ]
+    },
+    {
+      "option": "Option 3: AI contract risk analyzer",
+      "business_value_score": 5,
+      "feasibility_score": 2,
+      "risk_score": 1,
+      "pilot_suitability_score": 2,
+      "adoption_score": 3,
+      "overall_score": 13,
+      "trade_offs": [
+        "Highest business value but very high legal sensitivity and accuracy requirements.",
+        "Complex development and auditability needs make a 90-day pilot unrealistic.",
+        "Legal risk is high, lowering the risk score."
+      ]
+    },
+    {
+      "option": "Option 4: AI internal HR policy assistant",
+      "business_value_score": 3,
+      "feasibility_score": 4,
+      "risk_score": 3,
+      "pilot_suitability_score": 4,
+      "adoption_score": 4,
+      "overall_score": 18,
+      "trade_offs": [
+        "Easy to build and quick to pilot, but business value (cost saving) is modest.",
+        "Medium data sensitivity introduces some compliance considerations.",
+        "High employee usage supports adoption, yet impact on top-line revenue is limited."
+      ]
+    }
+  ],
+  "recommended_option": "Option 2: AI sales proposal generator",
+  "why_not_others": {
+    "Option 1": "Although it offers high cost savings, privacy concerns and medium adoption risk lower its overall suitability for a short pilot.",
+    "Option 3": "The legal and accuracy demands make it too complex and risky for a 90-day experiment, despite its high business value.",
+    "Option 4": "It scores well on feasibility and adoption, but its lower business value compared to the sales generator makes it less compelling for a pilot aimed at measurable ROI."
+  },
+  "final_recommendation": "Select the AI sales proposal generator for the 90-day pilot. It balances strong revenue impact, low privacy risk, and acceptable implementation effort while maintaining high user adoption potential. The required brand and legal reviews are manageable within the pilot timeframe and provide a clear path to scale if the pilot succeeds."
+}
