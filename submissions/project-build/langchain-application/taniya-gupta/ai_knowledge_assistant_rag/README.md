@@ -86,10 +86,10 @@ ai_knowledge_assistant_rag/
 
 ## Benchmark Questions
 You can test the assistant with questions like:
-1. What are main business segments described in the filings?
-2. What risks are mentioned?
-3. Summarize the key risk factors in 5 bullet points.
-4. What does the document say about automotive revenue or energy generation and storage?
+1. What is PrimeAir
+2. What is definition and Limitations of Internal Control Over Financial Reporting
+3. Summarize the key factors in 5 bullet points.
+4. Summarize the key points of cybersecurity
 5. Compare the cumulative total return on the common stock with the cumulative total return of the NYSE Technology Index
 6. What legal or regulatory risks are mentioned?
 7. What will the stock price be?
