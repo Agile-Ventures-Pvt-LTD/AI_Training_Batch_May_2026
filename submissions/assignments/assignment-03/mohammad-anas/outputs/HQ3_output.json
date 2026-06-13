@@ -1,0 +1,54 @@
+{
+    "question_id": "HQ3",
+    "user_query": "What evidence helps determine whether future cash flow depends more on capital expenditure discipline, working capital, or operating income?",
+    "retrieved_hypothetical_questions": [
+        {
+            "hypothetical_question": "How does the massive capital expenditure required for global factory expansion impact our free cash flow generation?",
+            "parent_chunk_id": "chunk_501",
+            "section": "Item_8_Financial_Disclosures_Part_11",
+            "year": 2025,
+            "score": 0.87
+        },
+        {
+            "hypothetical_question": "In what ways do fluctuations in accounts payable and inventory levels dictate our short-term working capital liquidity?",
+            "parent_chunk_id": "chunk_332",
+            "section": "Item_8_Financial_Disclosures_Part_7",
+            "year": 2025,
+            "score": 0.84
+        },
+        {
+            "hypothetical_question": "Why is sustained growth in automotive sales revenues and operating income the primary driver of our operational cash flows?",
+            "parent_chunk_id": "chunk_089",
+            "section": "Item_8_Financial_Disclosures_Part_2",
+            "year": 2025,
+            "score": 0.81
+        }
+    ],
+    "parent_chunks_used": [
+        {
+            "chunk_id": "chunk_501",
+            "source_doc": "tsla-20231231-gen.pdf",
+            "section": "Item_8_Financial_Disclosures_Part_11",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_332",
+            "source_doc": "tsla-10ka_20211231-gen.pdf",
+            "section": "Item_8_Financial_Disclosures_Part_7",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_089",
+            "source_doc": "tsla-10k_20191231-gen_0.pdf",
+            "section": "Item_8_Financial_Disclosures_Part_2",
+            "year": 2025
+        }
+    ],
+    "final_answer": "To determine the primary drivers of future cash flow, one must look at the balance between core earnings and ongoing investments. The evidence shows that long-term cash flow is heavily burdened by capital expenditure discipline, as billions of dollars are continually required to expand manufacturing facilities and tooling for new products [chunk_501]. While short-term liquidity is heavily influenced by working capital dynamics—specifically the timing of inventory build-up and supplier payments [chunk_332]—the ultimate sustainability of cash flow relies on expanding operating income through increased vehicle deliveries and software revenue to fund those massive capital expenditures [chunk_089].",
+    "citations": [
+        "chunk_501",
+        "chunk_332",
+        "chunk_089"
+    ],
+    "comparison_with_baseline": "The HyDE Approach successfully cross-linked isolated financial tables regarding capital expenditures and operating cash flow, whereas the Baseline merely returned macro-economic boilerplate text."
+}

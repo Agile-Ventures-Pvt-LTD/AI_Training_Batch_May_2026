@@ -1,0 +1,54 @@
+{
+    "question_id": "HQ2",
+    "user_query": "How should an analyst investigate the relationship between product defects, warranty or service obligations, customer trust, and brand risk?",
+    "retrieved_hypothetical_questions": [
+        {
+            "hypothetical_question": "How do vehicle recalls and increased warranty provisions directly impact our financial liabilities and brand reputation?",
+            "parent_chunk_id": "chunk_412",
+            "section": "Item_8_Financial_Disclosures_Part_9",
+            "year": 2025,
+            "score": 0.89
+        },
+        {
+            "hypothetical_question": "What is the financial impact of servicing defective components under the New Vehicle Limited Warranty program?",
+            "parent_chunk_id": "chunk_118",
+            "section": "Item_8_Financial_Disclosures_Part_3",
+            "year": 2025,
+            "score": 0.86
+        },
+        {
+            "hypothetical_question": "How could negative media coverage regarding product safety or autopilot malfunctions reduce consumer demand and trust?",
+            "parent_chunk_id": "chunk_255",
+            "section": "Item_8_Financial_Disclosures_Part_6",
+            "year": 2025,
+            "score": 0.82
+        }
+    ],
+    "parent_chunks_used": [
+        {
+            "chunk_id": "chunk_412",
+            "source_doc": "tsla-20231231-gen.pdf",
+            "section": "Item_8_Financial_Disclosures_Part_9",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_118",
+            "source_doc": "tsla-10k_20201231-gen.pdf",
+            "section": "Item_8_Financial_Disclosures_Part_3",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_255",
+            "source_doc": "tsla-20221231-gen.pdf",
+            "section": "Item_8_Financial_Disclosures_Part_6",
+            "year": 2025
+        }
+    ],
+    "final_answer": "An analyst should investigate this relationship by examining the financial accruals made for the New Vehicle Limited Warranty and tracking the frequency and cost of voluntary and mandated vehicle recalls [chunk_412]. Surges in these service obligations indicate a higher defect rate, which strains operational margins [chunk_118]. Furthermore, the analyst must monitor how these defects are perceived publicly, as the company explicitly notes that negative media coverage regarding product safety or feature reliability (such as Autopilot) can severely erode customer trust, thereby creating significant brand risk and threatening future vehicle demand [chunk_255].",
+    "citations": [
+        "chunk_412",
+        "chunk_118",
+        "chunk_255"
+    ],
+    "comparison_with_baseline": "The HyDE Approach bypassed abstract corporate phrasing to extract hidden warranty reserve data and linked it directly to explicit brand risk factors, providing a much more cohesive answer than the Baseline."
+}

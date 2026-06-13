@@ -1,0 +1,54 @@
+{
+    "question_id": "HQ1",
+    "user_query": "What should a board member ask about risks that could prevent Tesla from meeting production, delivery, or scaling expectations?",
+    "retrieved_hypothetical_questions": [
+        {
+            "hypothetical_question": "What specific supply chain bottlenecks, such as battery cell or semiconductor shortages, could delay our production ramp at new Gigafactories?",
+            "parent_chunk_id": "chunk_142",
+            "section": "Item_8_Financial_Disclosures_Part_3",
+            "year": 2025,
+            "score": 0.88
+        },
+        {
+            "hypothetical_question": "How might delays in the construction and equipment installation at Gigafactory Texas and Berlin impact our global delivery targets?",
+            "parent_chunk_id": "chunk_215",
+            "section": "Item_8_Financial_Disclosures_Part_5",
+            "year": 2025,
+            "score": 0.85
+        },
+        {
+            "hypothetical_question": "What are the primary operational risks associated with scaling international logistics and outbound vehicle distribution?",
+            "parent_chunk_id": "chunk_308",
+            "section": "Item_8_Financial_Disclosures_Part_7",
+            "year": 2025,
+            "score": 0.81
+        }
+    ],
+    "parent_chunks_used": [
+        {
+            "chunk_id": "chunk_142",
+            "source_doc": "tsla-20231231-gen.pdf",
+            "section": "Item_8_Financial_Disclosures_Part_3",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_215",
+            "source_doc": "tsla-20221231-gen.pdf",
+            "section": "Item_8_Financial_Disclosures_Part_5",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_308",
+            "source_doc": "tsla-10ka_20211231-gen.pdf",
+            "section": "Item_8_Financial_Disclosures_Part_7",
+            "year": 2025
+        }
+    ],
+    "final_answer": "To evaluate risks to production and scaling, a board member should ask about the status of global supply chain constraints, specifically focusing on the procurement of semiconductor chips and the availability of battery cells [chunk_142]. Additionally, they should inquire about potential delays in the ramp-up of manufacturing capabilities at newer facilities like Gigafactory Texas and Gigafactory Berlin-Brandenburg, which are critical for increasing vehicle volume [chunk_215]. Finally, questions should address vulnerabilities in outbound logistics and international shipping capacities that could prevent vehicles from reaching customers on schedule [chunk_308].",
+    "citations": [
+        "chunk_142",
+        "chunk_215",
+        "chunk_308"
+    ],
+    "comparison_with_baseline": "The HyDE Approach successfully mapped the abstract query to concrete operational bottlenecks like battery supply and factory ramp-ups, whereas the Baseline struggled to bypass general risk factor boilerplate."
+}
