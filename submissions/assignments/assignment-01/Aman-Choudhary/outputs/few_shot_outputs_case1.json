@@ -1,0 +1,10 @@
+{
+    "case_name": "Few Shot Customer Ticket Intent Classification",
+    "raw_response": "[\n  {\n    \"ticket\": \"The audit logs are missing timestamps required for regulatory reporting.\",\n    \"category\": \"COMPLIANCE_CONCERN\",\n    \"priority\": \"HIGH\",\n    \"justification\": \"The issue relates to regulatory reporting and data governance, specifically the absence of required timestamps in audit logs.\"\n  }\n]",
+    "parsed_response": {
+        "ticket": "The audit logs are missing timestamps required for regulatory reporting.",
+        "category": "COMPLIANCE_CONCERN",
+        "priority": "HIGH",
+        "justification": "The issue relates to regulatory reporting and data governance, specifically the absence of required timestamps in audit logs."
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "case_name": "Root Cause Analysis for ML Model Performance Drop",
+    "raw_response": "```json\n{\n  \"most_likely_causes\": [\n    \"Concept Drift due to changed fraud patterns after promotional campaign\",\n    \"Data Drift due to significant shift in feature distribution for transaction_amount\"\n  ],\n  \"evidence\": [\n    \"Precision dropped more significantly than recall\",\n    \"Transaction volume increased by 30%\",\n    \"Introduction of new payment channel\",\n    \"Feature distribution for transaction_amount shifted significantly\",\n    \"Fraud patterns changed after promotional campaign\"\n  ],\n  \"less_likely_causes\": [\n    \"Pipeline Failure\",\n    \"Threshold Miscalibration\"\n  ],\n  \"recommended_diagnostics\": [\n    \"Monitor and analyze feature distributions for all input features\",\n    \"Evaluate model performance on a holdout set with updated fraud patterns\",\n    \"Investigate the impact of the new payment channel on model performance\",\n    \"Analyze the relationship between transaction_amount and fraud labels\"\n  ],\n  \"short_term_actions\": [\n    \"Implement data quality checks to detect and handle feature distribution shifts\",\n    \"Adjust classification threshold to balance precision and recall\"\n  ],\n  \"long_term_actions\": [\n    \"Retrain the model with updated data to capture changed fraud patterns and feature distributions\",\n    \"Consider using online learning or incremental training to adapt to changing patterns\",\n    \"Regularly monitor and update the model to prevent future performance degradation\"\n  ],\n  \"reasoning_summary\": \"The observed performance degradation is likely due to concept drift caused by changed fraud patterns and data drift resulting from shifts in feature distributions, particularly transaction_amount. Recommended diagnostics and actions focus on monitoring and adapting to these changes.\"\n}\n```",
+    "parsed_response": {
+        "most_likely_causes": [
+            "Concept Drift due to changed fraud patterns after promotional campaign",
+            "Data Drift due to significant shift in feature distribution for transaction_amount"
+        ],
+        "evidence": [
+            "Precision dropped more significantly than recall",
+            "Transaction volume increased by 30%",
+            "Introduction of new payment channel",
+            "Feature distribution for transaction_amount shifted significantly",
+            "Fraud patterns changed after promotional campaign"
+        ],
+        "less_likely_causes": [
+            "Pipeline Failure",
+            "Threshold Miscalibration"
+        ],
+        "recommended_diagnostics": [
+            "Monitor and analyze feature distributions for all input features",
+            "Evaluate model performance on a holdout set with updated fraud patterns",
+            "Investigate the impact of the new payment channel on model performance",
+            "Analyze the relationship between transaction_amount and fraud labels"
+        ],
+        "short_term_actions": [
+            "Implement data quality checks to detect and handle feature distribution shifts",
+            "Adjust classification threshold to balance precision and recall"
+        ],
+        "long_term_actions": [
+            "Retrain the model with updated data to capture changed fraud patterns and feature distributions",
+            "Consider using online learning or incremental training to adapt to changing patterns",
+            "Regularly monitor and update the model to prevent future performance degradation"
+        ],
+        "reasoning_summary": "The observed performance degradation is likely due to concept drift caused by changed fraud patterns and data drift resulting from shifts in feature distributions, particularly transaction_amount. Recommended diagnostics and actions focus on monitoring and adapting to these changes."
+    }
+}
