@@ -37,5 +37,7 @@ Create a `.env` file in the project root directory:
 ```env
 GROQ_API_KEY=your_groq_api_key
 ```
-
+## step4 :run 
+ python app.py
+ 
 ---
