@@ -1,0 +1,65 @@
+[
+    {
+        "timestamp": "2026-06-04 06:10:15",
+        "original_query": "Automotive revenue in 2021?",
+        "expanded_queries": [
+            "Were there any specific fines imposed on the company in 2022 ",
+            "What fines or penalties were levied against the company in 2022 ",
+            "Are there any notable fines or monetary penalties assessed against the company in 2022"
+        ]
+    },
+    {
+        "timestamp": "2026-06-04 10:29:14",
+        "original_query": "Automotive revenue in 2021?",
+        "expanded_queries": [
+            "Does Tesla's growth story appear more constrained by external supply risk or internal execution and cost structure based on the information provided in the Risk Factors and Management's Discussion and Analysis sections of their 10-K report?",
+            "",
+            "What are the key external supply risks and internal execution challenges that could impact Tesla's growth prospects, as discussed in the Risk Factors and MD&A sections of their 10-K filing?",
+            "",
+            "How do the external supply risks and internal cost structure and execution challenges discussed in the Risk Factors and MD&A sections of Tesla's 10-K report influence the company's growth narrative?"
+        ]
+    },
+    {
+        "timestamp": "2026-06-04 10:34:17",
+        "original_query": "Does Tesla's growth story appear more constrained by external supply risk or internal execution and cost structure? Use evidence across Risk Factors and MD&A. ",
+        "expanded_queries": [
+            "Does Tesla's growth story appear more constrained by external supply risk or internal execution and cost structure based on the information provided in the Risk Factors and Management's Discussion and Analysis sections of their 10-K report?",
+            "",
+            "What are the key external supply risks and internal execution challenges that could impact Tesla's growth prospects, as discussed in the Risk Factors and MD&A sections of their 10-K filing?",
+            "",
+            "How do the external supply risks and internal cost structure concerns discussed in Tesla's 10-K report, specifically in the Risk Factors and MD&A sections, influence the company's growth narrative?"
+        ]
+    },
+    {
+        "timestamp": "2026-06-04 10:37:05",
+        "original_query": "Explain how Tesla's AI and product roadmap is reflected in spending, operational priorities, and risk disclosures. Avoid generic AI claims.",
+        "expanded_queries": [
+            "How does Tesla's AI and product roadmap influence its capital expenditures, operational priorities, and risk disclosures in the 10-K report.",
+            "What specific AI-related investments and operational priorities are disclosed in Tesla's 10-K report, and how do they align with the company's product roadmap.",
+            "How does Tesla's 10-K report reflect the company's AI and product development priorities in terms of research and development expenses, operational focus, and risk management disclosures."
+        ]
+    },
+    {
+        "timestamp": "2026-06-04 10:44:25",
+        "original_query": "Explain how Tesla's AI and product roadmap is reflected in spending, operational priorities, and risk disclosures. Avoid generic AI claims.",
+        "expanded_queries": [
+            "How does Tesla's AI and product roadmap influence its capital expenditures, operational priorities, and risk disclosures in the 10-K report.",
+            "What specific AI-related investments and operational priorities are disclosed in Tesla's 10-K report, and how do they align with the company's product roadmap.",
+            "How does Tesla's 10-K report reflect the company's AI and product development priorities in terms of research and development expenses, operational investments, and risk management disclosures.",
+            "What AI-driven initiatives and product developments are highlighted in Tesla's 10-K report as key operational priorities, and how do they impact the company's financial performance and risk profile.",
+            "How does Tesla's 10-K report provide insight into the company's AI and product roadmap through disclosures on research and development expenses, capital expenditures, and operational priorities."
+        ]
+    },
+    {
+        "timestamp": "2026-06-04 10:49:10",
+        "original_query": "Compare the strategic importance of automotive operations and energy generation/storage using evidence from the 10-K. What disclosures are needed to support a business recommendation? ",
+        "expanded_queries": [
+            "Compare the strategic importance of automotive operations and energy generation/storage using evidence from the 10-K report, what disclosures are needed to support a business recommendation.",
+            "What are the key disclosures in the 10-K report that highlight the strategic importance of automotive operations versus energy generation/storage, and how do they support a business recommendation.",
+            "What disclosures in the 10-K report are necessary to compare the strategic importance of automotive operations and energy generation/storage, and how do they inform a business recommendation.",
+            "How do the disclosures in the 10-K report regarding automotive operations and energy generation/storage support a business recommendation, and what are the key differences in their strategic importance.",
+            "What are the key differences in the strategic importance of automotive operations and energy generation/storage as disclosed in the 10-K report, and how do they impact a business recommendation.",
+            "Compare the disclosures in the 10-K report related to automotive operations and energy generation/storage, and discuss their strategic importance in informing a business recommendation."
+        ]
+    }
+]
