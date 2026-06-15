@@ -1,0 +1,11 @@
+[
+    {
+        "timestamp": "2026-06-03 16:43:53.381386",
+        "original_query": "What was the automotive revenue in 2021?",
+        "expanded_queries": [
+            "What is the automotive revenue figure for Tesla in 2021?",
+            "What was Tesla's automotive revenue in 2021?",
+            "How much automotive revenue did Tesla report for 2021?"
+        ]
+    }
+]

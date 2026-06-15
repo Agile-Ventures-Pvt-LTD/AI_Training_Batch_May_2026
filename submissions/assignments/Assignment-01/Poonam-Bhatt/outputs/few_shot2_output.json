@@ -1,0 +1,45 @@
+[
+{
+"action":"",
+"parameters":{},
+"requires_clarification":true,
+"clarification_question":"Please specify the exact dates you would like to take off.",
+"confidence":0.6
+},
+{
+"action":"CHECK_BALANCE",
+"parameters":{
+    "leave_type":"casual"
+},
+"requires_clarification":false,
+"clarification_question":"",
+"confidence":0.98
+},
+{
+"action":"CANCEL_LEAVE",
+"parameters":{},
+"requires_clarification":true,
+"clarification_question":"Please specify the exact calendar date for next Friday.",
+"confidence":0.78
+},
+{
+"action":"APPLY_LEAVE",
+"parameters":{
+    "start_date":"5 July",
+    "end_date":"9 July",
+    "reason":""
+},
+"requires_clarification":true,
+"clarification_question":"Please specify the reason for your leave.",
+"confidence":0.8
+},
+{
+"action":"GET_POLICY",
+"parameters":{
+    "policy_type":"maternity_leave"
+},
+"requires_clarification":false,
+"clarification_question":"",
+"confidence":0.99
+}
+]
