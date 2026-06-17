@@ -1,0 +1,50 @@
+
+
+
+Ask Question: Show card details for customer 1
+TOOL CALLED: get card details
+
+Answer:
+ Card details for customer 1: 
+Card number: ************1697
+Expiry date: 2023-06-01
+Valid from date: 2013-06-01
+Card type: Visa
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Ask Question: Which merchants have highest spending?
+
+Answer:
+ The merchants with the highest spending are Walgreens Boots Alliance, Target Corporation, Amazon, Publix, Costco, Albertsons, Best Buy, Kroger, Dollar General, and The Home Depot.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ask Question: Show profile of customer 1            
+
+Answer:
+ Customer 1's profile is as follows: Denise Walker, denisewalker717@gmail.com, 689-114-6781, 1040 West 27th Avenue #APT 000401, Anchorage, AK 99503.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Ask Question: Provide spending summary for customer 1
+
+Answer:
+ The spending summary for customer 1 shows a total spend of $7530.68, with an average transaction amount of $23.76, and a total of 317 transactions.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ask Question: Display last 5 transactions for customer 1
+
+Answer:
+ The last 5 transactions for customer 1 are:
+
+- A transaction of $45.73 on September 8, 2022, at 14:50:11.
+- A transaction of $27.67 on September 8, 2022, at 13:34:12.
+- A transaction of $17.07 on September 8, 2022, at 10:08:22.
+- A transaction of $25.11 on September 8, 2022, at 06:26:47.
+- A transaction of $0.56 on September 7, 2022, at 15:34:59.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------

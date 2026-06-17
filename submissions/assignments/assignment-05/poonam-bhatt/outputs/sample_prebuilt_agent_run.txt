@@ -1,0 +1,15 @@
+Ask Question: show database schema
+TOOL CALLED: inspect_database_schema
+
+Answer:
+ The available tables in the database are:
+
+1. customer
+2. netbanking
+3. card_type
+4. card
+5. transaction_type
+6. transaction_terminal
+7. merchant_type
+8. merchant
+9. transaction
