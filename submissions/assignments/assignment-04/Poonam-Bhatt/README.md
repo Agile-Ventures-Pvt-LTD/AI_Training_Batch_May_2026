@@ -6,7 +6,7 @@ This project was developed as part of the LangChain + SQLite E-Commerce Agent as
 
 The goal of the project is to build an AI-powered assistant that can answer business-related questions using natural language and data stored in an SQLite database. Instead of writing SQL queries manually, users can ask questions in plain English, and the agent generates the required SQL query, retrieves data from the database, and presents the answer in a user-friendly format.
 
-Examples:
+Examples:-
 
 * Which customers are from Delhi?
 * How many pending orders are there?

@@ -4,7 +4,7 @@
 
 Poonam Bhatt
 
-## 2. Assignment / Project Title
+## 2. Project Title
 
 Hypothetical Question Generation for Improving Retrieval in RAG Systems
 

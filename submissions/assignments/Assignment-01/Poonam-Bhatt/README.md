@@ -1,5 +1,5 @@
- Name - Poonam Bhatt
- Assignment - Prompt Engineering
+# Name - Poonam Bhatt
+# Assignment - Prompt Engineering
 
 In this experiment, I tested different prompt engineering techniques using the Groq API to understand how prompt design affects LLM responses in terms of reasoning quality, accuracy, and consistency.
 
