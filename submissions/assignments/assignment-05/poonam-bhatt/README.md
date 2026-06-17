@@ -87,10 +87,10 @@ ccms_langgraph_agent/
 
 ## Security Measures
 
-* Card numbers are masked except for the last four digits.
-* CVV information is never exposed.
-* Database results are treated as the source of truth.
-* Responses are generated only from retrieved data.
+- Card numbers are masked except for the last four digits.
+- CVV information is never exposed.
+- Database results are treated as the source of truth.
+- Responses are generated only from retrieved data.
 
 Example:
 
@@ -110,9 +110,9 @@ While building the custom LangGraph implementation, recursion errors occurred be
 
 This was resolved by:
 
-* Adding proper conditional routing
-* Binding tools to the model
-* Returning final responses after tool execution
+- Adding proper conditional routing
+- Binding tools to the model
+- Returning final responses after tool execution
 
 ### 3. SQL Query Errors
 
@@ -122,73 +122,27 @@ Some queries contained incorrect syntax and placeholder values. These were corre
 
 Card numbers originally appeared in raw form. A masking utility was added to ensure only the last four digits are visible.
 
----
-
-## How to Run
-
-Install dependencies:
-
-```bash
-uv sync
-```
-
-Run the application:
-
-```bash
-uv run app.py
-```
 
 Example queries:
 
-```text
+
 Show profile of customer 1
 Show card details for customer 1
 Display last 5 transactions for customer 1
 Which merchants have highest spending?
 Are there suspicious transaction patterns?
 Summarize customer 1 credit card activity
-```
 
----
 
-## Testing
-
-Run tests:
-
-```bash
-uv run pytest -v
-```
-
-Tests cover:
-
-* Schema inspection
-* Customer retrieval
-* Card lookup
-* Transaction retrieval
-* Merchant summaries
-* Suspicious transaction detection
-
----
-
-## Future Improvements
-
-* Multi-customer comparisons
-* Advanced fraud detection rules
-* Conversation memory
-* Dashboard integration
-* API deployment
-* Role-based access control
-
----
 
 ## Tech Stack
 
-* Python
-* LangChain
-* LangGraph
-* Groq API
-* SQLite
-* Pytest
+- Python
+- LangChain
+- LangGraph
+- Groq API
+- SQLite
+- Pytest
 
 ---
 
