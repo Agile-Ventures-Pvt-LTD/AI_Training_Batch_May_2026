@@ -1,0 +1,79 @@
+[
+    {
+        "user_question": "Show me the database schema.",
+        "implementation_choice": "prebuilt_react_agent",
+        "tools_used": [
+            "inspect_database_schema"
+        ],
+        "records_found": 0,
+        "answer": "**Database Schema Overview**\n\n| Table | Columns |\n|-------|---------|\n| **customer** | `cust_id`, `first_name`, `last_name`, `email`, `phone`, `address`, `city`, `state`, `zip` |\n| **netbanking** | `username`, `password`, `expiry_date`, `security_question`, `security_answer`, `cust_id` |\n| **card_type** | `card_type_id`, `card_type`, `card_network`, `privilege` |\n| **card** | `card_number`, `valid_from`, `expiry`, `security_code`, `x-coordinate`, `y-coordinate`, `mean_amount`, `std_amount`, `mean_nb_tx_per_day`, `cust_id`, `card_type_id` |\n| **transaction_type** | `txn_type_id`, `debit_credit`, `lcl_intnl` |\n| **transaction_terminal** | `TERMINAL_ID`, `x_terminal_id`, `y_terminal_id` |\n| **merchant_type** | `id`, `merchant_type` |\n| **merchant** | `id`, `merchant`, `merchant_type` |\n| **transaction** | `Unnamed: 0`, `TXN_ID`, `TX_DATETIME`, `CARD_ID`, `TERMINAL_ID`, `TX_AMOUNT`, `TX_TIME_SECONDS`, `TX_TIME_DAYS`, `TXN_TYPE_ID`, `M_ID` |\n\nThese tables store customer profiles, net‑banking credentials, card definitions, transaction details, merchant information, and related reference data.",
+        "sensitive_data_masked": true,
+        "limitations": []
+    },
+    {
+        "user_question": "Show customer profile for customer 132.",
+        "implementation_choice": "prebuilt_react_agent",
+        "tools_used": [
+            "get_customer_profile"
+        ],
+        "records_found": 1,
+        "answer": "**Customer Profile (ID: 132)**  \n- **Name:** Haley Anderson  \n- **Email:** haleyanderson477@hotmail.com  \n- **City:** Arvada, CO 80004  \n\nLet me know if you need any additional information.",
+        "sensitive_data_masked": true,
+        "limitations": []
+    },
+    {
+        "user_question": "Show card details for customer 131.",
+        "implementation_choice": "prebuilt_react_agent",
+        "tools_used": [
+            "get_card_details"
+        ],
+        "records_found": 3,
+        "answer": "**Card details for customer 131 (Denise Juarez):**\n\n| Card Type | Network | Masked Number | Valid From | Expiry | Privilege |\n|-----------|---------|---------------|------------|--------|-----------|\n| Platinum | MasterCard | ************7709 | 2018‑05‑01 | 2028‑05‑01 | Platinum plus MasterCard benefits |\n| Bronze   | MasterCard | ************6221 | 2019‑04‑01 | 2029‑04‑01 | Bronze plus MasterCard benefits |\n| Platinum | MasterCard | ************8019 | 2018‑08‑01 | 2028‑08‑01 | Platinum plus MasterCard benefits |\n\nAll sensitive card numbers are masked for security.",
+        "sensitive_data_masked": true,
+        "limitations": []
+    },
+    {
+        "user_question": "Show the last 5 transactions for customer 113.",
+        "implementation_choice": "prebuilt_react_agent",
+        "tools_used": [
+            "get_customer_transactions"
+        ],
+        "records_found": 5,
+        "answer": "**Last 5 transactions for Customer 113**\n\n| Date & Time (UTC) | Amount | Merchant | Category | Type | Locality |\n|-------------------|--------|----------|----------|------|----------|\n| 2022‑09‑08 07:29:30 | $19.59 | CVS Health | Drug store / pharmacy | Credit | Local |\n| 2022‑09‑07 11:41:55 | $26.11 | Dollar General | Discount store | Debit | Local |\n| 2022‑09‑05 20:32:45 | $12.55 | CVS Health | Drug store / pharmacy | Debit | Local |\n| 2022‑09‑05 12:30:09 | $23.44 | Best Buy | Electronics specialty | Debit | Local |\n| 2022‑09‑05 10:13:04 | $30.73 | Target Corporation | Discount department store | Debit | Local |\n\n*All amounts are shown in USD. No sensitive card or personal data is included.*",
+        "sensitive_data_masked": true,
+        "limitations": []
+    },
+    {
+        "user_question": "Show transactions made on 5th June 2022.",
+        "implementation_choice": "prebuilt_react_agent",
+        "tools_used": [],
+        "records_found": 0,
+        "answer": "",
+        "sensitive_data_masked": true,
+        "limitations": [
+            "Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kt8e16ddfk3rkmpqx36t418r` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 9333, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        ]
+    },
+    {
+        "user_question": "Which merchant type has the highest total spend?",
+        "implementation_choice": "prebuilt_react_agent",
+        "tools_used": [
+            "get_merchant_spend_summary"
+        ],
+        "records_found": 0,
+        "answer": "The merchant type with the highest total spend is **“supermarket,”** with a total spend of $3,497,042.51.",
+        "sensitive_data_masked": true,
+        "limitations": []
+    },
+    {
+        "user_question": "Identify potentially suspicious transactions.",
+        "implementation_choice": "prebuilt_react_agent",
+        "tools_used": [
+            "detect_suspicious_transactions"
+        ],
+        "records_found": 0,
+        "answer": "**Potentially suspicious transaction detected**\n\n| Transaction ID | Amount | Reason |\n|----------------|--------|--------|\n| 202206011726142261372776857602093 | $171.96 | Amount significantly above the card‑holder’s typical spending pattern |\n\nThis transaction stands out based on the system’s anomaly‑detection rule (amount > mean + 1.5 × standard deviation). It should be reviewed further to confirm whether it is legitimate or requires action.",
+        "sensitive_data_masked": true,
+        "limitations": []
+    }
+]
