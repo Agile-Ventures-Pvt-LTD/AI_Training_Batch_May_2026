@@ -1,0 +1,179 @@
+
+================================================================================
+QUESTION:
+Show me the database schema.
+
+RESPONSE:
+{
+    "user_question": "Show me the database schema.",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "inspect_database_schema"
+    ],
+    "records_found": 1,
+    "answer": "The database schema includes the following tables: \n- customer\n- netbanking\n- card_type\n- card\n- transaction_type\n- transaction_terminal\n- merchant_type\n- merchant\n- transaction\n\nEach table contains various columns related to customer information, card details, transaction data, and merchant information.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+Show customer profile for customer 100
+
+RESPONSE:
+{
+    "user_question": "Show customer profile for customer 100",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_customer_profile"
+    ],
+    "records_found": 1,
+    "answer": "The customer profile for customer 100 is: \nName: Steven Farmer\nEmail: st***@hotmail.com\nPhone: ******6658\nAddress: 22 South Duncan Avenue #420, Fayetteville, AR 72701",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+Show card details for customer 100
+
+RESPONSE:
+{
+    "user_question": "Show card details for customer 100",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_card_details"
+    ],
+    "records_found": 1,
+    "answer": "The customer with ID 100 has three cards. The first card has a masked card number **** **** **** 5878, is valid from September 1, 2014, and expires on September 1, 2024. The second card has a masked card number **** **** **** 9059, is valid from June 1, 2014, and expires on June 1, 2024. The third card has a masked card number **** **** **** 9866, is valid from February 1, 2015, and expires on February 1, 2025.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+Show the last 5 transactions for customer 121 
+
+RESPONSE:
+{
+    "user_question": "Show the last 5 transactions for customer 121 ",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_customer_transactions"
+    ],
+    "records_found": 1,
+    "answer": "The last 5 transactions for customer 121 are:\n\n1. Walmart - $15.03 on 2022-09-08 22:21:24\n2. Kroger - $9.67 on 2022-09-08 21:04:33\n3. CVS Health - $10.41 on 2022-09-08 16:51:58\n4. Albertsons - $10.57 on 2022-09-08 16:03:19\n5. Walmart - $114.21 on 2022-09-08 14:04:33\n\nNote: The transaction amounts and dates are based on the data retrieved from the database and may not reflect real-time information.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+Which customers have the highest amount due?
+
+RESPONSE:
+{
+    "user_question": "Which customers have the highest amount due?",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_statement_summary"
+    ],
+    "records_found": 1,
+    "answer": "The requested data could not be retrieved because the database schema differs from the expected structure.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+Show statement summary for customer 123 
+
+RESPONSE:
+{
+    "user_question": "Show statement summary for customer 123 ",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_statement_summary"
+    ],
+    "records_found": 1,
+    "answer": "The requested data could not be retrieved because the database schema differs from the expected structure.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+Which merchant type has the highest total spend?
+
+RESPONSE:
+{
+    "user_question": "Which merchant type has the highest total spend?",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_merchant_spend_summary"
+    ],
+    "records_found": 1,
+    "answer": "The merchant type with the highest total spend is type 13, with a total spend of $3,497,042.51 and 66,386 transactions.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+Identify potentially suspicious transactions.
+
+RESPONSE:
+{
+    "user_question": "Identify potentially suspicious transactions.",
+    "implementation_choice": "custom_react_agent",
+    "tools_used": [],
+    "records_found": 0,
+    "answer": "Unable to process request: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01kvb9etf4eq89sdpeekkad683` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 13219, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+Which cards are expiring in the next 60 days?
+
+RESPONSE:
+{
+    "user_question": "Which cards are expiring in the next 60 days?",
+    "implementation_choice": "custom_react_agent",
+    "tools_used": [],
+    "records_found": 0,
+    "answer": "Unable to process request: Error code: 400 - {'error': {'message': \"Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\", 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '<function=get_card_details{\"cust_id\": \"all\"}</function>'}}",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+exit 
+
+RESPONSE:
+{
+    "user_question": "exit ",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [],
+    "records_found": 1,
+    "answer": "Goodbye.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+exit 
+
+RESPONSE:
+{
+    "user_question": "exit ",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [],
+    "records_found": 1,
+    "answer": "Goodbye.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
