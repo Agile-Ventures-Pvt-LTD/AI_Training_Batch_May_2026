@@ -2,9 +2,6 @@
 
 This project is for managing credit card data, transactions and customer profiles using LangChain and LangGraph.
 
-### Project Overview
-I implemented both a prebuilt ReAct workflow and a custom LangGraph agent to compare flexibility and development effort.
-
 ### Setup Instructions
 1. Clone the repo.
 2. Create a venv: `uv venv`
@@ -13,7 +10,7 @@ I implemented both a prebuilt ReAct workflow and a custom LangGraph agent to com
 
 ### Place ccms.db
 Place the database file in a folder named `data` at the root of the project:
-`../data/ccms.db`
+`data/ccms.db`
 
 ### Environment Variable Setup
 Create a `.env` file(copying from .env.example) and add your Groq API key:
@@ -25,7 +22,7 @@ GROQ_API_KEY=your_api_key
 Run `python app.py` and select option **1**. 
 
 ### To run custom agent
-Run `python app.py` and select option **2**. 
+Run `python app.py` and selct option **2**. 
 
 ### Tools
 - `get_database_schema`
@@ -37,6 +34,12 @@ Run `python app.py` and select option **2**.
 - `get_rewards_summary`
 - `get_notifications`
 - `detect_suspicious_transactions`
+
+### Testing
+To test the system, run
+```bash
+pytest tests\test_tools.py
+```
 
 ### Sensitive Data Masking Rules
 - **Card Numbers**: Only the last 4 digits are shown, starting digits are masked with asterisks.
