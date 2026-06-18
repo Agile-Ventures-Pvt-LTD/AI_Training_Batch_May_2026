@@ -1,0 +1,109 @@
+User Query:
+Show me the database schema.
+
+Agent Response:
+**Database Schema Overview**
+
+| Table | Columns |
+|-------|---------|
+| **card** | `card_number`, `valid_from`, `expiry`, `security_code`, `x-coordinate`, `y-coordinate`, `mean_amount`, `std_amount`, `mean_nb_tx_per_day`, `cust_id`, `card_type_id` |
+| **card_type** | `card_type_id`, `card_type`, `card_network`, `privilege` |
+| **customer** | `cust_id`, `first_name`, `last_name`, `email`, `phone`, `address`, `city`, `state`, `zip` |
+| **merchant** | `id`, `merchant`, `merchant_type` |
+| **merchant_type** | `id`, `merchant_type` |
+| **netbanking** | `username`, `password`, `expiry_date`, `security_question`, `security_answer`, `cust_id` |
+| **transaction** | `Unnamed: 0`, `TXN_ID`, `TX_DATETIME`, `CARD_ID`, `TERMINAL_ID`, `TX_AMOUNT`, `TX_TIME_SECONDS`, `TX_TIME_DAYS`, `TXN_TYPE_ID`, `M_ID` |
+| **transaction_terminal** | `TERMINAL_ID`, `x_terminal_id`, `y_terminal_id` |
+| **transaction_type** | `txn_type_id`, `debit_credit`, `lcl_intnl` |
+
+*Notes:*  
+- Column names reflect the data stored; no actual data is shown.  
+- Sensitive fields (e.g., `card_number`, `security_code`, `password`, `security_answer`) are listed only as schema metadata and are never exposed with real values.
+User Query:
+Show customer profile for customer 1
+
+User Query:
+Show customer profile for customer 1
+
+User Query:
+Show customer profile for customer 1.
+
+Agent Response:
+**Customer Profile (ID: 1)**  
+- **Name:** Denise Walker  
+- **Email:** denisewalker717@gmail.com  
+- **Phone:** 689‑114‑6781  
+- **Location:** Anchorage, AK  
+
+(Only non‑sensitive information is shown.)
+User Query:
+Show card details for customer 1.
+
+Agent Response:
+Here are the card details for **Customer 1**:
+
+- Card Number: ******1697** (only the last four digits are shown)
+User Query:
+Show the last 5 transactions for customer 1
+
+Agent Response:
+**Last 5 transactions for Customer 1 (Denise Walker)**  
+
+| Date & Time (UTC) | Amount | Merchant | Type | Local/Intl |
+|-------------------|--------|----------|------|------------|
+| 2022‑09‑08 14:50:11 | $45.73 | Kroger | Credit | Local |
+| 2022‑09‑08 13:34:12 | $27.67 | Best Buy | Debit | Local |
+| 2022‑09‑08 10:08:22 | $17.07 | Publix | Credit | Local |
+| 2022‑09‑08 06:26:47 | $25.11 | Amazon | Debit | Local |
+| 2022‑09‑07 15:34:59 | $0.56  | Best Buy | Debit | Local |
+
+*Card number is masked as ******1697** for privacy.*
+User Query:
+Which customers have the highest amount due?
+
+Agent Response:
+I’m sorry, but I wasn’t able to locate any statement‑due data for customers in the system. No records were found.
+User Query:
+Which customers have the highest amount due?
+
+Agent Response:
+I’m unable to retrieve a ranked list of customers by amount due because the system does not provide a single query that returns all customers’ statement balances at once. To determine which customers have the highest amount due, you would need to query each customer’s statement individually (e.g., using the **get_statement_summary** tool with each `cust_id`). If you can provide specific customer IDs, I can look up their current amounts due for you.
+User Query:
+Show statement summary for customer 1
+
+Agent Response:
+**Statement Summary (Customer #1)**  
+
+- **Statement Date:** June 18 2026  
+- **Due Date:** July 3 2026  
+- **Total Amount Due:** $7,530.68  
+- **Minimum Payment Due:** $376.53  
+- **Risk Level:** High  
+
+*Please review the statement details and make at least the minimum payment by the due date to avoid late fees.*
+User Query:
+Which merchant type has the highest total spend?
+
+Agent Response:
+The **“supermarket”** merchant type has the highest total spend, with a cumulative amount of **$3,497,042.51**.
+User Query:
+Show reward points for customer 1.
+
+Agent Response:
+I’m sorry, but there are no reward‑point records available for customer #1 in the system.
+User Query:
+Show reward points for customer 34
+
+Agent Response:
+I’m sorry, but there are no reward‑point records available for customer #34.
+User Query:
+Identify potentially suspicious transactions.
+
+Agent Response:
+No potentially suspicious transactions were found in the system at this time.
+User Query:
+Which cards are expiring in the next 60 days?
+
+Agent Response:
+I’m unable to list expiring cards without knowing which customer’s cards you’d like to review.  
+If you provide a **customer ID**, I can retrieve that customer’s card details and tell you which of them expire within the next 60 days.
