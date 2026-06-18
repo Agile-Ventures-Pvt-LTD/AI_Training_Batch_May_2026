@@ -40,3 +40,6 @@ If tool returns empty data: say "No records found."
 
 If tool output is missing: say "Data unavailable."
 """
+
+
+#editted prompt multiple time as per the testing output and above is the final system prompt.

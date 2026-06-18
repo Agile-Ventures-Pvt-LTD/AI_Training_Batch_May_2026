@@ -4,10 +4,6 @@ from config import DB_PATH
 # db_utils.py
 
 
-
-
-
-
 def execute_query(query, params=None):
     """
     Execute SQL query and return results as list of dictionaries.
@@ -36,8 +32,6 @@ def execute_query(query, params=None):
 
 
 
-
-# utils.py
 
 def mask_card(card_number):
     card_number = str(card_number)

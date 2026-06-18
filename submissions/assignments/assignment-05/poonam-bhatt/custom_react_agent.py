@@ -23,7 +23,7 @@ from config import GROQ_API_KEY, GROQ_MODEL
 
 
 llm = ChatGroq(
-    api_key=GROQ_API_KEY,
+    api_key=GROQ_API_KEY,    #groq api ey from .env
     model=GROQ_MODEL,
     temperature=0
 )

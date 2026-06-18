@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a Credit Card Management System (CCMS) Assistant built using LangGraph, LangChain, and Groq LLM. The goal of the project is to allow business users to retrieve customer, card, transaction, merchant, and spending information using natural language instead of writing SQL queries manually.
+This project is a Credit Card Management System (CCMS) Assistance built using LangGraph, LangChain, and Groq LLM. The goal of the project is to allow business users to retrieve customer, card, transaction, merchant, and spanding information using natural language instead of writing SQL queries manually.
 
 
 
@@ -55,8 +55,8 @@ The custom implementation demonstrates how LangGraph manages tool execution and 
 
 ## Project Structure
 
-```text
-ccms_langgraph_agent/
+
+poonam-bhatt/
 │
 ├── app.py
 ├── prebuilt_agent.py
@@ -83,7 +83,7 @@ ccms_langgraph_agent/
 │
 └── tests/
     └── test_tools.py
-```
+
 
 ## Security Measures
 
@@ -92,11 +92,9 @@ ccms_langgraph_agent/
 - Database results are treated as the source of truth.
 - Responses are generated only from retrieved data.
 
-Example:
 
-```text
 ************1697
-```
+
 
 ## Challenges Faced
 
@@ -121,6 +119,7 @@ Some queries contained incorrect syntax and placeholder values. These were corre
 ### 4. Sensitive Data Exposure
 
 Card numbers originally appeared in raw form. A masking utility was added to ensure only the last four digits are visible.
+This is done correctly to ensure the security of data present in db.
 
 
 Example queries:
@@ -148,4 +147,4 @@ Summarize customer 1 credit card activity
 
 ## Conclusion
 
-This project demonstrates how an LLM-powered agent can simplify access to credit card management data through natural language interactions while maintaining data security and structured tool usage.
+This project demonstrate how an LLM-powered agent can simplify access to credit card management data through a natural language interactions while maintaining data security and structured tool usage.

@@ -16,7 +16,7 @@ while True:
         print("\nExiting CCMS Agent...")
         break
 
-    # for prebuilt_agent
+    # for prebuilt_agent(prebuilt_agent.py)
 
     # response = agent.invoke(
     #     {
@@ -29,7 +29,7 @@ while True:
     #                 }
     # )
 
-    # for custom react agent
+    # for custom react agent(Custom_react_agent.py)
 
     response = compiled_graph.invoke(
         {

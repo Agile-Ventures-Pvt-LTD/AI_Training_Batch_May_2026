@@ -1,8 +1,3 @@
-langgraph
-pydantic
-tabulate
-rich
-pytest
 mermaid-python==0.1
 langgraph==0.3.21
 python-dotenv>=1.2.2
@@ -14,3 +9,7 @@ langchain-groq==0.3.8
 langchain-experimental==0.3.4
 git+https://github.com/openai/swarm.git
 pandas>=3.0.3
+pydantic
+tabulate
+rich
+pytest
