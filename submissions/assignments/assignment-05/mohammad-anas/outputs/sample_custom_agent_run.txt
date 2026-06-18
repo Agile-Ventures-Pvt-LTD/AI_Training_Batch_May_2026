@@ -1,0 +1,60 @@
+1 - Ask Question (type exit to quit): Show transactions above 50000.
+
+Answer:
+After conducting a thorough search, we were unable to find any records of transactions exceeding $50,000. Please be assured that we prioritize the security and confidentiality of all sensitive information, including payment details.\
+
+2- Ask Question (type exit to quit): Show recent transactions for customer 1.
+
+Answer:
+We have retrieved the recent transactions for customer 1. Below is a list of the transactions, with sensitive information obscured for security purposes:
+
+1. Transaction ID: ************1145279862398471697042, Date: 2022-09-08 14:50:11, Amount: 45.73, Terminal ID: 42
+2. Transaction ID: ************1234862398471697015, Date: 2022-09-08 13:34:12, Amount: 27.67, Terminal ID: 15
+3. Transaction ID: ************2204862398471697053, Date: 2022-09-08 10:08:22, Amount: 17.07, Terminal ID: 53
+4. Transaction ID: ************4744862398471697015, Date: 2022-09-08 06:26:47, Amount: 25.11, Terminal ID: 15
+5. Transaction ID: ************4594862398471697064, Date: 2022-09-07 15:34:59, Amount: 0.56, Terminal ID: 64
+6. Transaction ID: ************2604862398471697066, Date: 2022-09-06 15:26:04, Amount: 17.11, Terminal ID: 66
+7. Transaction ID: ************1804862398471697040, Date: 2022-09-06 15:18:06, Amount: 7.05, Terminal ID: 40
+8. Transaction ID: ************1094862398471697039, Date: 2022-09-05 16:21:09, Amount: 30.40, Terminal ID: 39
+9. Transaction ID: ************5354862398471697059, Date: 2022-09-05 13:45:35, Amount: 23.36, Terminal ID: 59
+10. Transaction ID: ************6014862398471697054, Date: 2022-09-05 12:56:01, Amount: 9.41, Terminal ID: 54
+
+Please let us know if you need any further assistance. We are here to help.
+
+3 -  Ask Question (type exit to quit):  Identify potentially suspicious transactions.
+
+Answer:
+After conducting a thorough review, we are pleased to inform you that no potentially suspicious transactions were found. We have ensured that all sensitive information, including credit card numbers and security codes, has been properly protected and remains confidential
+
+4 - Ask Question (type exit to quit): Show all debit transactions.
+
+Answer:
+After conducting a thorough search, we were unable to locate any records of debit transactions. Please be assured that we prioritize the security and confidentiality of your financial information, and we do not retain or display sensitive details such as full credit card numbers or security codes. If you have any further questions or concerns, please do not hesitate to contact us
+
+5 - Ask Question (type exit to quit): Show transactions for merchant Amazon.
+
+Answer:
+Here are the transactions for the merchant Amazon:
+
+* TXN_ID: 202206010026584027729108450789079, TX_DATETIME: 2022-06-01 00:26:58, TX_AMOUNT: 85.12, merchant_name: Amazon, transaction_type: Credit, card_number: **** **** **** ****
+* TXN_ID: 202206010030352276257532603320042, TX_DATETIME: 2022-06-01 00:30:35, TX_AMOUNT: 84.35, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+* TXN_ID: 202206010056304054647548954788024, TX_DATETIME: 2022-06-01 00:56:30, TX_AMOUNT: 160.58, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+* TXN_ID: 202206010136152510932480861312080, TX_DATETIME: 2022-06-01 01:36:15, TX_AMOUNT: 85.38, merchant_name: Amazon, transaction_type: Credit, card_number: **** **** **** ****
+* TXN_ID: 202206010216042467137718862636048, TX_DATETIME: 2022-06-01 02:16:04, TX_AMOUNT: 29.79, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+* TXN_ID: 202206010219194027729108450789087, TX_DATETIME: 2022-06-01 02:19:19, TX_AMOUNT: 110.15, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+* TXN_ID: 202206010243342230120471372718035, TX_DATETIME: 2022-06-01 02:43:34, TX_AMOUNT: 74.47, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+* TXN_ID: 202206010300544081721436438134071, TX_DATETIME: 2022-06-01 03:00:54, TX_AMOUNT: 34.07, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+* TXN_ID: 202206010307534948045073567481079, TX_DATETIME: 2022-06-01 03:07:53, TX_AMOUNT: 6.1, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+* TXN_ID: 202206010316162248252129328964064, TX_DATETIME: 2022-06-01 03:16:16, TX_AMOUNT: 175.36, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+* TXN_ID: 202206010422522333414111593197049, TX_DATETIME: 2022-06-01 04:22:52, TX_AMOUNT: 13.03, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+* TXN_ID: 202206010430502601644037341678032, TX_DATETIME: 2022-06-01 04:30:50, TX_AMOUNT: 37.3, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+* TXN_ID: 202206010450042297076604641975074, TX_DATETIME: 2022-06-01 04:50:04, TX_AMOUNT: 96.52, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+* TXN_ID: 202206010456564791971112125908010, TX_DATETIME: 2022-06-01 04:56:56, TX_AMOUNT: 42.75, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+* TXN_ID: 202206010519452224302927640546070, TX_DATETIME: 2022-06-01 05:19:45, TX_AMOUNT: 4.02, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+* TXN_ID: 202206010519495485374741124905065, TX_DATETIME: 2022-06-01 05:19:49, TX_AMOUNT: 18.69, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+* TXN_ID: 202206010524575492855445189526065, TX_DATETIME: 2022-06-01 05:24:57, TX_AMOUNT: 34.55, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+* TXN_ID: 202206010529572240089317342060024, TX_DATETIME: 2022-06-01 05:29:57, TX_AMOUNT: 20.99, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+* TXN_ID: 202206010535514204413845960948015, TX_DATETIME: 2022-06-01 05:35:51, TX_AMOUNT: 133.18, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+* TXN_ID: 202206010538094848426483336793086, TX_DATETIME: 2022-06-01 05:38:09, TX_AMOUNT: 76.35, merchant_name: Amazon, transaction_type: Debit, card_number: **** **** **** ****
+
+These transactions are for the merchant Amazon, with various transaction amounts, dates, and card numbers, which have been anonymized for security purposes.
