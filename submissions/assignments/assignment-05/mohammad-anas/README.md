@@ -18,7 +18,7 @@ Two implementations are included:
 # Project Structure
 
 ```text
-ccms_langgraph_agent/
+assignment-05/mohammad-anas/
 
 │
 ├── app.py
@@ -74,7 +74,7 @@ The database contains the following tables:
 
 ```bash
 git clone <repository_url>
-cd ccms_langgraph_agent
+cd assignment-05/mohammad-anas
 ```
 
 ## 2. Create Virtual Environment
