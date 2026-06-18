@@ -1,0 +1,7 @@
+{
+  "user_question": "Show statement summary for customer 91",
+  "answer": "The statement summary for customer 91 is as follows:\n- Customer ID: 91\n- Total Amount Due: $23,322.29\n- Statement Date: September 8, 2022\n- Due Date: September 23, 2022\n- Minimum Amount Due: $1,166.11\n- Risk Level: Medium",
+  "implementation_choice": "prebuilt_react_agent",
+  "sensitive_data_masked": true,
+  "limitations": []
+}
