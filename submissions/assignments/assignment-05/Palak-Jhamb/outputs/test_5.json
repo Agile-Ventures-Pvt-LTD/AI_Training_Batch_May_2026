@@ -1,0 +1,4 @@
+{
+    "question": "Which customers have the highest amount due?",
+    "response": "I’m sorry, but I don’t have a way to retrieve statement‑summary data for every customer in one request. If you can provide a specific customer ID (or email, phone number, or name), I can look up that customer’s statement summary and tell you the amount due."
+}

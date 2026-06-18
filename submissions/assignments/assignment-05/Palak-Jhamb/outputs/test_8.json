@@ -1,0 +1,4 @@
+{
+    "question": "Show reward points for customer with id 1.",
+    "error": "Error code: 400 - {'error': {'message': 'Tool call validation failed: tool call validation failed: parameters for tool get_rewards_summary did not match schema: errors: [`/cust_id`: expected string, but got number]', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '{\"name\": \"get_rewards_summary\", \"arguments\": {\"cust_id\": 1}}'}}"
+}
