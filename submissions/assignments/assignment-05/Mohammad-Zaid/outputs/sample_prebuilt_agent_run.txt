@@ -1,0 +1,106 @@
+
+===================================================
+User's Question: 
+Show customer profile for customer 101
+
+Answer: 
+The customer profile for customer 101 is:
+Name: Paul Patterson
+Email: paulpatterson15@yahoo.com
+Phone: 518-602-9810
+City: Fresno
+State: CA
+
+
+============================================================
+User's Question: 
+ Show card details for customer 786.
+
+Answer: 
+No records were found for customer 786.
+
+============================================================
+User's Question: 
+ Show card details for customer 11.
+
+Answer: 
+The customer with ID 11 has two cards: 
+
+1. A MasterCard Gold card with the number ending in 6593, valid from May 2021 to May 2031.
+2. A VISA Silver card with the number ending in 1882, valid from July 2015 to July 2025.
+
+============================================================
+User's Question: 
+Show the last 5 transactions for customer 1.
+
+Answer: 
+The last 5 transactions for customer 1 are:
+
+1. TXN_ID: 202209081450114279862398471697042, Date: 2022-09-08 14:50:11, Amount: $45.73, Merchant: Kroger
+2. TXN_ID: 202209081334124279862398471697015, Date: 2022-09-08 13:34:12, Amount: $27.67, Merchant: Best Buy
+3. TXN_ID: 202209081008224279862398471697053, Date: 2022-09-08 10:08:22, Amount: $17.07, Merchant: Publix
+4. TXN_ID: 202209080626474279862398471697015, Date: 2022-09-08 06:26:47, Amount: $25.11, Merchant: Amazon
+5. TXN_ID: 202209071534594279862398471697064, Date: 2022-09-07 15:34:59, Amount: $0.56, Merchant: Best Buy
+
+============================================================
+User's Question: 
+show me database schema
+
+Answer: 
+The database schema includes the following tables: 
+- card
+- card_type
+- customer
+- merchant
+- merchant_type
+- netbanking
+- transaction
+- transaction_terminal
+- transaction_type
+
+============================================================
+User's Question: 
+ Show statement summary for customer 100.
+
+Answer: 
+The statement summary for customer 100 shows a total of 267 transactions with a total amount of $14,749.21.
+
+============================================================
+User's Question: 
+Which merchant type has the highest total spend?
+
+Answer: 
+The merchant type with the highest total spend is supermarket, with a total spend of $3,497,042.50 and 66,386 transactions.
+
+
+
+============================================================
+User's Question: 
+show me databse schema
+
+Answer: 
+The database schema includes the following tables: 
+- card
+- card_type
+- customer
+- merchant
+- merchant_type
+- netbanking
+- transaction
+- transaction_terminal
+- transaction_type
+
+============================================================
+User's Question: 
+Identify potentially suspicious transactions.
+
+Answer: 
+Based on the provided transaction data, there are no obvious signs of suspicious activity. However, it's worth noting that the transactions are all debits and occurred within a short time frame, which could potentially be suspicious. Further review would be required to determine if these transactions are legitimate or not.
+
+
+============================================================
+User's Question: 
+Which cards are expiring in the next 60 days?
+
+Answer: 
+No records were found in the database for cards expiring in the next 60 days.
