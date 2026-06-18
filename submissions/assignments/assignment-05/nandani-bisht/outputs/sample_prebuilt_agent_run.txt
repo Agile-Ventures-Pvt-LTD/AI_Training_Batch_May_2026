@@ -1,0 +1,173 @@
+USER:
+Show me the database schema.
+AGENT:
+Here are the tables and columns in ccms.db:
+
+Tables: customer, card, transaction, login, kyc
+
+customer: customer_id, name, email, phone, city, state, zip, age, gender
+
+card: card_id, customer_id, card_number, card_type, card_network, card_privilege,
+      valid_from, valid_till, x-coordinate, y-coordinate
+
+transaction: transaction_id, customer_id, card_id, amount, merchant, merchant_type,
+             transaction_type, locality, date_of_transaction, error, remarks
+
+login: customer_id, login_date, login_time, source_of_login
+
+kyc: customer_id, full_name, dob, security_question, security_answer, password
+
+USER:
+What is the profile of customer 1?
+AGENT:
+Here is the profile for customer 1:
+
+Name: Denise Walker
+Email: d****@gmail.com
+Phone: 90****17
+City: Anchorage
+State: AK
+
+USER:
+Show me the card details for customer 1.
+AGENT:
+Customer 1 (Denise Walker) has the following card on file:
+
+Card Number: **** **** **** 1697
+Card Type: Silver
+Network: MasterCard
+Privilege: Silver plus MasterCard benefits
+Valid From: 2013-06-01
+Expiry: 2023-06-01
+
+USER:
+Show me the last 5 transactions for customer 1.
+AGENT:
+Here are the 5 most recent transactions for customer 1 (Denise Walker):
+
+1. TXN ID: 202209081450114279862398471697042
+   Date: 2022-09-08 14:50:11
+   Amount: 45.73
+   Merchant: Kroger
+   Type: Debit
+   Category: supermarket
+
+2. TXN ID: 202209081334124279862398471697015
+   Date: 2022-09-08 13:34:12
+   Amount: 27.67
+   Merchant: Best Buy
+   Type: Debit
+   Category: electronics specialty
+
+3. TXN ID: 202209081008224279862398471697053
+   Date: 2022-09-08 10:08:22
+   Amount: 17.07
+   Merchant: Publix
+   Type: Debit
+   Category: supermarket
+
+4. TXN ID: 202209071823334279862398471697029
+   Date: 2022-09-07 18:23:33
+   Amount: 54.05
+   Merchant: Walgreens
+   Type: Debit
+   Category: drug store/pharmacy
+
+5. TXN ID: 202209071102454279862398471697061
+   Date: 2022-09-07 11:02:45
+   Amount: 33.21
+   Merchant: Home Depot
+   Type: Debit
+   Category: home improvement
+
+USER:
+Which customers have the highest amount due?
+AGENT:
+Here are the top 5 customers ranked by total debit spend:
+
+1. Customer 47  - Total Due: 14,823.61
+2. Customer 12  - Total Due: 13,551.02
+3. Customer 89  - Total Due: 12,987.45
+4. Customer 3   - Total Due: 11,334.78
+5. Customer 71  - Total Due: 10,902.33
+
+USER:
+What is the statement summary and amount due for customer 2?
+AGENT:
+Here is the statement summary for customer 2 (James Howard):
+
+Total Amount Due: 6,891.34
+Minimum Amount Due (5%): 344.57
+Statement Date: 2022-09-08
+Due Date: 2022-10-08
+Risk Level: LOW
+
+USER:
+Which merchant categories have the highest total spend?
+AGENT:
+Here is the merchant category spend summary ranked by total spend:
+
+1. supermarket             - Total Spend: 3,497,042.51  | Transactions: 87,423
+2. drug store/pharmacy     - Total Spend: 2,330,841.59  | Transactions: 58,271
+3. home improvement        - Total Spend: 2,312,799.75  | Transactions: 57,820
+4. electronics specialty   - Total Spend: 1,984,132.40  | Transactions: 49,603
+5. discount department store - Total Spend: 1,756,221.18 | Transactions: 43,906
+
+Supermarkets account for the largest share of total card spending across all customers.
+
+USER:
+How many reward points does customer 3 have?
+AGENT:
+Customer 3 (Danielle Ford) has earned reward points based on their debit transactions.
+
+Points are calculated at 1 point per 100 units spent.
+
+Total Reward Points: 67
+
+The points are computed from the 50 most recent qualifying debit transactions.
+
+USER:
+Are there any suspicious transactions in the database?
+AGENT:
+I checked the database against the following fraud detection rules:
+
+1. Transaction amount greater than 75,000
+2. Multiple transactions above 50,000 on the same card in a single day
+3. Terminal location deviates significantly from the cardholder's registered area
+
+Result: No transactions were flagged under the current rules. The maximum transaction amount
+in the database is 320.15, which is well below the high-value thresholds. The velocity and
+location rules also returned no matches.
+
+USER:
+Which cards are expiring within the next 365 days?
+AGENT:
+Cards expiring within the next 365 days (up to 10 shown):
+
+1. Card: **** **** **** 0948 | Expiry: 2026-07-01 | Type: Gold    | Network: Visa
+2. Card: **** **** **** 2992 | Expiry: 2026-07-01 | Type: Silver  | Network: MasterCard
+3. Card: **** **** **** 5810 | Expiry: 2026-07-01 | Type: Platinum| Network: Visa
+
+Total expiring within 365 days: 3 cards found.
+
+USER:
+Give me a transaction type breakdown for the entire database.
+AGENT:
+Here is the full transaction type breakdown for all 287,553 records in ccms.db:
+
+Type    | Locality      | Count   | Total Amount
+--------|---------------|---------|-------------------
+Debit   | Local         | 258,878 | 13,633,043.54
+Credit  | Local         |  22,956 |  1,201,293.31
+Debit   | International |   4,306 |    225,024.18
+Credit  | International |   1,413 |     71,701.21
+
+Total debit volume:  13,858,067.72
+Total credit volume:  1,272,994.52
+
+Local debit transactions account for 90% of all records.
+USER:
+ Which cards are expiring in the next 60 days
+AGENT:
+There are 17 cards that are expiring in the next 60 days. The list includes cards with numbers ending in 0948, 2992, 5810, 4446, 3320, 4905, 4540, 5423, 4483, 8398, 1750, 8060, 9844, 6612, 3152, 7074, and 2921, belonging to customers such as Kathryn Evans, Kylie Morales, Angela Johnson, and others, with various card types like Bronze, Platinum, Diamond, Silver, and Gold, and card networks including VISA and MasterCard.
+
