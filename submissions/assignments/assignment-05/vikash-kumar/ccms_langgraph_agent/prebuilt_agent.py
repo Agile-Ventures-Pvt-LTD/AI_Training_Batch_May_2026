@@ -1,0 +1,10 @@
+from langgraph.prebuilt import create_react_agent
+
+from config import get_llm
+from prompts import SYSTEM_PROMPT
+
+from tools import (inspect_database_schema,get_customer_profile,get_card_details,search_transactions,get_customer_transactions,get_statement_summary,get_rewards_summary,get_merchant_spend_summary,detect_suspicious_transactions)
+
+llm = get_llm()
+
+agent = create_react_agent(model=llm,tools=[inspect_database_schema,get_customer_profile,get_card_details,search_transactions,get_customer_transactions,get_statement_summary,get_rewards_summary,get_merchant_spend_summary,detect_suspicious_transactions],)

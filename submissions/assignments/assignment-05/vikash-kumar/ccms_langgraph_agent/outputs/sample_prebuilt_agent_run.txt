@@ -1,0 +1,179 @@
+USER:
+Show me the database schema.
+
+ASSISTANT:
+Here’s the full schema of the database, presented table‑by‑table with each column name:
+
+| Table | Columns |
+|-------|---------|
+| **card** | `card_number`, `valid_from`, `expiry`, `security_code`, `x-coordinate`, `y-coordinate`, `mean_amount`, `std_amount`, `mean_nb_tx_per_day`, `cust_id`, `card_type_id` |
+| **card_type** | `card_type_id`, `card_type`, `card_network`, `privilege` |
+| **customer** | `cust_id`, `first_name`, `last_name`, `email`, `phone`, `address`, `city`, `state`, `zip` |
+| **merchant** | `id`, `merchant`, `merchant_type` |
+| **merchant_type** | `id`, `merchant_type` |
+| **netbanking** | `username`, `password`, `expiry_date`, `security_question`, `security_answer`, `cust_id` |
+| **transaction** | `Unnamed: 0`, `TXN_ID`, `TX_DATETIME`, `CARD_ID`, `TERMINAL_ID`, `TX_AMOUNT`, `TX_TIME_SECONDS`, `TX_TIME_DAYS`, `TXN_TYPE_ID`, `M_ID` |
+| **transaction_terminal** | `TERMINAL_ID`, `x_terminal_id`, `y_terminal_id` |
+| **transaction_type** | `txn_type_id`, `debit_credit`, `lcl_intnl` |
+
+**Notes**
+
+* The `card` table links to a customer (`cust_id`) and a card type (`card_type_id`).  
+* `transaction` references a card (`CARD_ID`), a terminal (`TERMINAL_ID`), a transaction type (`TXN_TYPE_ID`), and a merchant (`M_ID`).  
+* `merchant` references a merchant type (`merchant_type`).  
+* `netbanking` stores online‑banking credentials for a customer (`cust_id`).  
+
+Let me know if you’d like details about any specific table, sample data, or help querying the data!
+
+USER:
+Show customer profile for customer cust_id 6
+
+ASSISTANT:
+**Customer Profile (ID 6)**  
+
+- **Name:** Latoya Miller  
+- **Email:** latoyamiller719@hotmail.com  
+- **Location:** Aspen, CO  
+
+Let me know if you’d like to see anything else for this customer (e.g., recent transactions, card details, rewards, etc.).
+
+USER:
+Show card details for customer cust_id 6
+
+ASSISTANT:
+Here are the card details we have on file for **customer CUST‑6**:
+
+| Card # (masked) | Card Type | Network | Valid From | Expiry | Privileges |
+|-----------------|-----------|---------|------------|--------|------------|
+| **** **** **** 3715 | Platinum | VISA | 2020‑08‑01 | 2030‑08‑01 | Platinum plus VISA benefits |
+| **** **** **** 3999 | Platinum | MasterCard | 2014‑01‑01 | 2024‑01‑01 | Platinum plus MasterCard benefits |
+
+If you need anything else—such as recent transactions, a statement summary, or to update your card information—just let me know!
+
+USER:
+Show the last 5 transactions for customer cust_id 1
+
+ASSISTANT:
+Here are the most recent 5 transactions for **customer CUST‑1**:
+
+| # | Date & Time (UTC) | Merchant | Type | Amount |
+|---|-------------------|----------|------|--------|
+| 1 | 2022‑09‑08 14:50:11 | Kroger | Credit | **$45.73** |
+| 2 | 2022‑09‑08 13:34:12 | Best Buy | Debit | **$27.67** |
+| 3 | 2022‑09‑08 10:08:22 | Publix | Credit | **$17.07** |
+| 4 | 2022‑09‑08 06:26:47 | Amazon | Debit | **$25.11** |
+| 5 | 2022‑09‑07 15:34:59 | Best Buy | Debit | **$0.56** |
+
+If you’d like more details (e.g., category, location) or want to see additional transactions, just let me know!
+
+USER:
+Which customers have the highest amount due?
+
+ASSISTANT:
+Below is a **SQL query** you can run against the database to see which customers owe the most (i.e., have the highest total transaction amount to date).  
+
+```sql
+SELECT
+    c.cust_id,
+    c.first_name,
+    c.last_name,
+    SUM(t.TX_AMOUNT) AS total_amount_due
+FROM
+    customer      AS c
+JOIN
+    card          AS ca   ON ca.cust_id = c.cust_id          -- each card belongs to a customer
+JOIN
+    transaction   AS t    ON t.CARD_ID = ca.card_number       -- each transaction is linked to a card
+GROUP BY
+    c.cust_id,
+    c.first_name,
+    c.last_name
+ORDER BY
+    total_amount_due DESC          -- highest amount due first
+LIMIT 10;                          -- top‑10 customers (adjust as needed)
+```
+
+### How it works
+| Step | Explanation |
+|------|-------------|
+| **JOIN `customer` → `card`** | Links each customer to all of their cards (`cust_id`). |
+| **JOIN `card` → `transaction`** | Pulls every transaction made with each of those cards (`CARD_ID`). |
+| **`SUM(t.TX_AMOUNT)`** | Adds up every transaction amount for a given customer – this is the “amount due” (total spend). |
+| **`GROUP BY`** | Aggregates the sum per customer. |
+| **`ORDER BY … DESC`** | Sorts the result so the customers with the largest totals appear first. |
+| **`LIMIT 10`** | Returns only the top‑10 customers; you can increase or remove this limit. |
+
+### What you’ll get
+| cust_id | first_name | last_name | total_amount_due |
+|---------|------------|-----------|------------------|
+| 12345   | Alice      | Smith     |  87 342.50       |
+| 67890   | Bob        | Johnson   |  73 210.00       |
+| …       | …          | …         |  …               |
+
+*(The actual numbers will depend on the data in your tables.)*
+
+If you need the result in a different format (e.g., JSON) or want additional fields (email, city, etc.), just add those columns to the `SELECT` and `GROUP BY` clauses. Let me know if you’d like a version of the query that includes more customer details or a different limit!
+
+USER:
+Show statement summary for customer cust_id 2
+
+ASSISTANT:
+**Statement Summary for Customer CUST‑2**
+
+| Item | Details |
+|------|---------|
+| **Total Amount Due** | **$1,845.85** |
+| **Minimum Amount Due** | **$92.29** |
+| **Statement Date** | 17 June 2026 |
+| **Due Date** | 7 July 2026 |
+| **Risk Level** | LOW |
+
+If you’d like to see a breakdown of recent transactions, set up a payment, or have any other questions, just let me know!
+
+USER:
+Which merchant type has the highest total spend?
+
+ASSISTANT:
+The merchant type with the highest total spend is **“supermarket,”** with a total spend of **$3,497,042.51**.
+
+USER:
+Show reward points for customer cust_id 2
+
+ASSISTANT:
+**Reward‑Points Summary for Customer CUST‑2**
+
+| Item | Details |
+|------|---------|
+| **Customer ID** | CUST‑2 |
+| **Current Reward Points** | **0 points** |
+| **Recent Transactions Linked to Rewards** | A list of over 200 transactions (see below) was returned, but none of them have generated reward points for this account. |
+
+### What This Means
+- At the moment, the account has **no accumulated reward points**.
+- The transactions shown are the complete transaction history that the system associates with the rewards program for this customer, but none of them met the criteria for earning points (e.g., no qualifying purchases, promotions, or point‑earning categories were applied).
+
+### Next Steps (if you’d like to start earning points)
+1. **Check the rewards program rules** – see which merchant categories, purchase amounts, or promotional periods earn points.
+2. **Enroll in any active promotions** – sometimes bonus points are offered for specific merchants or spending thresholds.
+3. **Review your spending** – consider shifting purchases to merchants that qualify for points.
+
+If you’d like more details (e.g., a filtered view of transactions that *could* earn points, or help enrolling in a promotion), just let me know!
+
+USER:
+Show reward points for customer cust_id 1
+
+ASSISTANT:
+Error: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kt0xkpjhedcv9s3a5ffzsd8j` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 9625, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+USER:
+Identify potentially suspicious transactions.
+
+ASSISTANT:
+I’ve checked the transaction data for any activity that meets the system’s “potentially suspicious” rule (transactions over $75,000). At this time, there are **no transactions** that meet that criterion, so nothing is flagged as suspicious. If you have a specific account, date range, or other details you’d like me to investigate further, just let me know!
+
+USER:
+Which cards are expiring in the next 60 days?
+
+ASSISTANT:
+I’m happy to help you check the expiration dates of your cards. To keep your information secure, could you please provide your customer ID (or let me know the best way to verify your identity)? Once I have that, I can look up which of your cards are set to expire in the next 60 days.
+
