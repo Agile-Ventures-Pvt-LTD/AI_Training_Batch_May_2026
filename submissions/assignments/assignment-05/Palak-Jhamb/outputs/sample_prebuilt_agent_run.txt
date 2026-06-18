@@ -1,0 +1,243 @@
+Test 1
+Question: Show me the database schema.
+Response:
+{
+  "tables": [
+    "customer",
+    "netbanking",
+    "card_type",
+    "card",
+    "transaction_type",
+    "transaction_terminal",
+    "merchant_type",
+    "merchant",
+    "transaction"
+  ],
+  "schema": {
+    "customer": [
+      "cust_id",
+      "first_name",
+      "last_name",
+      "email",
+      "phone",
+      "address",
+      "city",
+      "state",
+      "zip"
+    ],
+    "netbanking": [
+      "username",
+      "password",
+      "expiry_date",
+      "security_question",
+      "security_answer",
+      "cust_id"
+    ],
+    "card_type": [
+      "card_type_id",
+      "card_type",
+      "card_network",
+      "privilege"
+    ],
+    "card": [
+      "card_number",
+      "valid_from",
+      "expiry",
+      "security_code",
+      "x-coordinate",
+      "y-coordinate",
+      "mean_amount",
+      "std_amount",
+      "mean_nb_tx_per_day",
+      "cust_id",
+      "card_type_id"
+    ],
+    "transaction_type": [
+      "txn_type_id",
+      "debit_credit",
+      "lcl_intnl"
+    ],
+    "transaction_terminal": [
+      "TERMINAL_ID",
+      "x_terminal_id",
+      "y_terminal_id"
+    ],
+    "merchant_type": [
+      "id",
+      "merchant_type"
+    ],
+    "merchant": [
+      "id",
+      "merchant",
+      "merchant_type"
+    ],
+    "transaction": [
+      "Unnamed: 0",
+      "TXN_ID",
+      "TX_DATETIME",
+      "CARD_ID",
+      "TERMINAL_ID",
+      "TX_AMOUNT",
+      "TX_TIME_SECONDS",
+      "TX_TIME_DAYS",
+      "TXN_TYPE_ID",
+      "M_ID"
+    ]
+  }
+}
+
+Test 2
+Question: Show customer profile for customer with id 1.
+Response:
+{
+  "cust_id": 1,
+  "name": "Denise Walker",
+  "email": "denisewalker717@gmail.com",
+  "phone": "689-114-6781",
+  "city": "Anchorage",
+  "state": "AK"
+}
+
+Test 3
+Question: Show card details for customer with id 1.
+Response:
+Here are the card details for customer ID 1:
+
+- Card Number: **** **** **** 1697  
+- Valid From: 2013‑06‑01  
+- Expiry Date: 2023‑06‑01  
+- Card Type ID: 2  
+
+Test 4
+Question: Show the last 5 transactions for customer with id 1.
+Response:
+{
+  "count": 5,
+  "transactions": [
+    {
+      "txn_id": "202209081450114279862398471697042",
+      "txn_datetime": "2022-09-08 14:50:11",
+      "amount": 45.73,
+      "merchant": "Kroger",
+      "transaction_type": "Credit"
+    },
+    {
+      "txn_id": "202209081334124279862398471697015",
+      "txn_datetime": "2022-09-08 13:34:12",
+      "amount": 27.67,
+      "merchant": "Best Buy",
+      "transaction_type": "Debit"
+    },
+    {
+      "txn_id": "202209081008224279862398471697053",
+      "txn_datetime": "2022-09-08 10:08:22",
+      "amount": 17.07,
+      "merchant": "Publix",
+      "transaction_type": "Credit"
+    },
+    {
+      "txn_id": "202209080626474279862398471697015",
+      "txn_datetime": "2022-09-08 06:26:47",
+      "amount": 25.11,
+      "merchant": "Amazon",
+      "transaction_type": "Debit"
+    },
+    {
+      "txn_id": "202209071534594279862398471697064",
+      "txn_datetime": "2022-09-07 15:34:59",
+      "amount": 0.56,
+      "merchant": "Best Buy",
+      "transaction_type": "Debit"
+    }
+  ]
+}
+
+Test 5
+Question: Which customers have the highest amount due?
+Response:
+I’m sorry, but I don’t have access to a list of all customers’ statement balances, so I can’t determine which customers have the highest amount due.
+
+Test 6
+Question: Show statement summary for customer with id 1.
+Response:
+{
+  "customer_id": "1",
+  "total_amount_due": 7530.68,
+  "statement_date": "2026-06-01",
+  "risk_level": "LOW"
+}
+
+Test 7
+Question: Which merchant type has the highest total spend?
+Response:
+The merchant type with the highest total spend is **supermarket** (total spend: $3,497,042.51).
+
+Test 8
+Question: Show reward points for customer with id 1.
+Response:
+{
+  "customer_id": "1",
+  "reward_points": 0,
+  "related_transactions": [
+    {
+      "txn_id": "202206011421104279862398471697024",
+      "amount": 6.33,
+      "points_earned": 0
+    },
+    {
+      "txn_id": "202206020825354279862398471697039",
+      "amount": 30.23,
+      "points_earned": 0
+    },
+    {
+      "txn_id": "202206020956494279862398471697014",
+      "amount": 16.13,
+      "points_earned": 0
+    },
+    {
+      "txn_id": "202206021227424279862398471697015",
+      "amount": 31.64,
+      "points_earned": 0
+    },
+    {
+      "txn_id": "202206021557224279862398471697081",
+      "amount": 20.24,
+      "points_earned": 0
+    },
+    {
+      "txn_id": "202206030344044279862398471697077",
+      "amount": 32.68,
+      "points_earned": 0
+    },
+    {
+      "txn_id": "202206030651364279862398471697042",
+      "amount": 16.66,
+      "points_earned": 0
+    },
+    {
+      "txn_id": "202206040119504279862398471697063",
+      "amount": 26.57,
+      "points_earned": 0
+    },
+    {
+      "txn_id": "202206041050434279862398471697082",
+      "amount": 20.73,
+      "points_earned": 0
+    },
+    {
+      "txn_id": "202206041406014279862398471697062",
+      "amount": 24.43,
+      "points_earned": 0
+    }
+  ]
+}
+
+Test 9
+Question: Identify potentially suspicious transactions.
+Response:
+{
+  "rule_applied": "amount > 75000",
+  "count": 0,
+  "flagged_transactions": []
+}
+

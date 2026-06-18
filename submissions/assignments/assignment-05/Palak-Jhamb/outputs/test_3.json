@@ -1,4 +1,0 @@
-{
-    "question": "Show card details for customer with id 1..",
-    "response": "{\n  \"customer_id\": \"1\",\n  \"card_details\": {\n    \"card_number\": \"**** **** **** 1697\",\n    \"valid_from\": \"2013-06-01\",\n    \"expiry\": \"2023-06-01\",\n    \"card_type_id\": 2\n  }\n}"
-}

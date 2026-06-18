@@ -1,4 +1,0 @@
-{
-    "question": "Show the last 5 transactions for customer with id 1..",
-    "response": "Here are the most recent 5 transactions for customer **ID 1** (ordered from newest to oldest):\n\n```json\n{\n  \"customer_id\": \"1\",\n  \"last_5_transactions\": [\n    {\n      \"txn_id\": \"202206061006174279862398471697002\",\n      \"date\": \"2022-06-06 10:06:17\",\n      \"amount\": 34.76\n    },\n    {\n      \"txn_id\": \"202206060720554279862398471697053\",\n      \"date\": \"2022-06-06 07:20:55\",\n      \"amount\": 26.41\n    },\n    {\n      \"txn_id\": \"202206060611304279862398471697063\",\n      \"date\": \"2022-06-06 06:11:30\",\n      \"amount\": 34.47\n    },\n    {\n      \"txn_id\": \"202206060431444279862398471697008\",\n      \"date\": \"2022-06-06 04:31:44\",\n      \"amount\": 15.29\n    },\n    {\n      \"txn_id\": \"202206051514424279862398471697001\",\n      \"date\": \"2022-06-05 15:14:42\",\n      \"amount\": 18.77\n    }\n  ]\n}\n```"
-}

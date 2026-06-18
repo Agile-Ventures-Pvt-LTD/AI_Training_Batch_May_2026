@@ -1,4 +1,0 @@
-{
-    "question": "Identify potentially suspicious transactions.",
-    "response": "{\n  \"suspicious_transactions\": [],\n  \"message\": \"No potentially suspicious transactions were identified based on the current detection rules.\"\n}"
-}

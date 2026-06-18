@@ -1,4 +1,0 @@
-{
-    "question": "Which merchant type has the highest total spend?",
-    "response": "**Merchant Type with Highest Total Spend**\n\n| Merchant Type | Total Spend (USD) | Transaction Count |\n|---------------|-------------------|-------------------|\n| Supermarket   | **3,497,042.51**   | 66,386            |\n\nThe supermarket category leads all merchant types in overall spending."
-}

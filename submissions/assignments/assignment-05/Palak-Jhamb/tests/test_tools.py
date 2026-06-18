@@ -1,43 +1,36 @@
-import json
 import os
-
 from prebuilt_agent import invoke
 
 questions = [
     "Show me the database schema.",
-    "Show customer profile for customer with id 1..",
-    "Show card details for customer with id 1..",
-    "Show the last 5 transactions for customer with id 1..",
+    "Show customer profile for customer with id 1.",
+    "Show card details for customer with id 1.",
+    "Show the last 5 transactions for customer with id 1.",
     "Which customers have the highest amount due?",
-    "Show statement summary for customer with id 1..",
+    "Show statement summary for customer with id 1.",
     "Which merchant type has the highest total spend?",
     "Show reward points for customer with id 1.",
     "Identify potentially suspicious transactions."
 ]
 
-output_dir = "outputs"
-os.makedirs(output_dir, exist_ok=True)
+os.makedirs("outputs", exist_ok=True)
+output_file = "outputs/sample_prebuilt_agent_run.txt"
 
-for i, question in enumerate(questions, start=1):
-    print(f"Running Test {i}: {question}")
-    try:
-        response = invoke(question)
-        result = {
-            "question": question,
-            "response": str(response)
-        }
-    except Exception as e:
-        result = {
-            "question": question,
-            "error": str(e)
-        }
+with open(output_file, "w", encoding="utf-8") as f:
+    for i, question in enumerate(questions, start=1):
+        print(f"Running Test {i}: {question}")
+        f.write(f"Test {i}\n")
+        f.write(f"Question: {question}\n")
 
-    file_path = os.path.join(
-        output_dir,
-        f"test_{i}.json"
-    )
+        try:
+            response = invoke(question)
+            f.write("Response:\n")
+            f.write(str(response))
+            f.write("\n\n")
 
-    with open(file_path, "w", encoding="utf-8") as f:
-        json.dump(result,f,indent=4, ensure_ascii=False)
+        except Exception as e:
+            f.write("Error:\n")
+            f.write(str(e))
+            f.write("\n")
 
-print("All outputs saved successfully.")
+print(f"All outputs saved to {output_file}")

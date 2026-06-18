@@ -1,4 +1,0 @@
-{
-    "question": "Show statement summary for customer with id 1..",
-    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01ksht3kxsejjacjnzanpfk5yp` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6958, Requested 1143. Please try again in 757.5ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-}
