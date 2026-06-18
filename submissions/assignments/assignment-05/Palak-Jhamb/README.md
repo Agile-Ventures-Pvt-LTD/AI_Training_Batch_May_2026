@@ -186,7 +186,7 @@ Detail about tools:
 
 ---
 
-### 7.Sample questions
+### 8.Sample questions
 ```
 1. Show me the database schema.
 2. Show customer profile for customer CUST-1001.
@@ -200,7 +200,7 @@ Detail about tools:
 ```
 ---
 
-### 8.Sensitive data masking rules
+### 9.Sensitive data masking rules
 To hide the card details , an masked number was formed that stores only last 4 digits.
 ```python 
 card_no = str(card_detail["card_number"])
@@ -208,7 +208,7 @@ masked_card = f"**** **** **** {card_no[-4:]}"
 ```
 
 ---
-### 9. Known limitations
+### 10. Known limitations
 As number of data in databse are huge, sometimes it becomes imposible for llm to process all records because of token limit error.
 for example- to get all transaction in table
 
@@ -219,7 +219,7 @@ Error: Error code: 400 - {'error': {'message': 'Tool call validation failed: too
 ```
 
 ---
-### 10. Testing
+### 11. Testing
 
 Based on sample queries in PRD , **tests/test.py** is designed.
 It runs all sample question provided one by one and save its output at **"outputs"** folder 
@@ -229,7 +229,7 @@ It runs all sample question provided one by one and save its output at **"output
 python -m tests.test_tools
 ```
 
-### 11. Final Workflow
+### 12. Final Workflow
 1.  LangGraph Pre-built ReAct Agent
 ```
             user input
