@@ -4,8 +4,8 @@ A LangGraph agent for the Credit Card Management System database. Ask questions 
 
 Both assignment implementations are included:
 
-- **main.py** (no args) — pre-built ReAct agent using `create_react_agent` (Choice 1)
-- **main.py custom** — custom `StateGraph` with agent, tools, and reflection nodes (Choice 2)
+- **app.py** (no args) — pre-built ReAct agent using `create_react_agent`
+- **app.py custom** — custom `StateGraph` with agent, tools, and reflection nodes
 
 ---
 
@@ -162,7 +162,7 @@ pytest tests/test_tools.py -v
 
 26 test cases across all 13 tools, run against the live database.
 
----
+-----
 
 ## Known Limitations
 
