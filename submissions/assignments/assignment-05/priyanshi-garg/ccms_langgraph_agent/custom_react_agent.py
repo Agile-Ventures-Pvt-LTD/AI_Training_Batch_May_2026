@@ -61,8 +61,6 @@ reflection_prompt = ChatPromptTemplate.from_messages(
 reflector = reflection_prompt | llm
 def reflection_node(state: AgentState):
 
-    print("\n--- REFLECTION NODE ---")
-
     response = reflector.invoke(
         {
             "messages": state["messages"]
