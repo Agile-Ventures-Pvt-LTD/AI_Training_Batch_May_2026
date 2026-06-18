@@ -7,6 +7,10 @@
 Build an AI agent that can answer operational and analytical questions from a credit card management database. This agent is build to help user or any one in credit card management team.
 Here an LLM is converted into agent by adding extra functionality to llm. This method help llm answer based on its knowledge or based on databse .
 
+Method used:
+1.  LangGraph Pre-built ReAct Agent
+2.  Custom LangGraph ReAct Agent
+
 Database schema:
 ```json
 {
@@ -155,8 +159,18 @@ This will run the main application that will end only when user says exit or qui
 
 ---
 
-### 6.Tool list and purpose
-There are otal 9 tools that are provided to llm .
+### 6.How to run Custom agent
+
+To run the agent run file named as custom_app.py
+```bash
+python custom_app.py
+```
+This will run the main application that will end only when user says exit or quit.
+
+---
+
+### 7.Tool list and purpose
+There are total 9 tools that are provided to llm .
 
 Detail about tools:
 1. **inspect_database_schema:** this is a tool that helps agent to retrieve database schema
@@ -216,7 +230,7 @@ python -m tests.test_tools
 ```
 
 ### 11. Final Workflow
-
+1.  LangGraph Pre-built ReAct Agent
 ```
             user input
                 |
@@ -226,10 +240,30 @@ python -m tests.test_tools
                 /\
        (yes)   /   \  (no)
               /     \   
-        Tool call   llm respond by self
+       Tool call     llm respond by self
             |           |
             \           /
               \       /   
      Repeat until user enter exit or quit
+      
+```
+
+2. Custom LangGraph ReAct Agent
+```
+              START
+                |
+            user input
+                |
+               agent
+            (need tool)
+                |
+                /\
+       (yes)   /   \  (no)
+              /     \   
+       Tool call     Reflection
+            |           |
+    Back to agent      END
+                        
+                             
       
 ```

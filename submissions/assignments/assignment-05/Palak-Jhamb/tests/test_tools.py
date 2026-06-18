@@ -1,5 +1,6 @@
 import os
 from prebuilt_agent import invoke
+from custom_agent import run_custom_agent
 
 questions = [
     "Show me the database schema.",
@@ -27,6 +28,29 @@ with open(output_file, "w", encoding="utf-8") as f:
             f.write("Response:\n")
             f.write(str(response))
             f.write("\n\n")
+
+        except Exception as e:
+            f.write("Error:\n")
+            f.write(str(e))
+            f.write("\n")
+
+print(f"All outputs saved to {output_file}")
+
+output_file = "outputs/sample_custom_agent_run.txt"
+
+with open(output_file, "w", encoding="utf-8") as f:
+    for i, question in enumerate(questions, start=1):
+        print(f"Running Test {i}: {question}")
+        f.write(f"Test {i}\n")
+        f.write(f"Question: {question}\n")
+
+        try:
+            response = run_custom_agent(question)
+
+            f.write("Response:\n")
+            f.write(f"Answer:\n{response['answer']}\n\n")
+            f.write(f"Tools Used:\n{response['tools_used']}\n\n")
+            f.write(f"Reflection:\n{response['reflection']}\n\n")
 
         except Exception as e:
             f.write("Error:\n")
