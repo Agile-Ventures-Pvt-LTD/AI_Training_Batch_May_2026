@@ -1,0 +1,5 @@
+{
+    "rule_applied": "amount > 75000 OR amount > mean_amount + 3*std_amount",
+    "count": 0,
+    "flagged_transactions": []
+}

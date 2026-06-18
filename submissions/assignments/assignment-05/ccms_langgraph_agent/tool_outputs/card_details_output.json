@@ -1,0 +1,11 @@
+{
+    "found": true,
+    "card": {
+        "card_number": "**** **** **** 1697",
+        "valid_from": "2013-06-01",
+        "expiry": "2023-06-01",
+        "card_type": "Silver",
+        "card_network": "MasterCard",
+        "privilege": "Silver plus MasterCard benefits"
+    }
+}

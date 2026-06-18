@@ -1,0 +1,41 @@
+{
+    "customer_id": "1",
+    "transaction_count": 5,
+    "transactions": [
+        {
+            "txn_id": "202209081450114279862398471697042",
+            "txn_datetime": "2022-09-08 14:50:11",
+            "amount": 45.73,
+            "merchant": "Kroger",
+            "transaction_type": "Credit"
+        },
+        {
+            "txn_id": "202209081334124279862398471697015",
+            "txn_datetime": "2022-09-08 13:34:12",
+            "amount": 27.67,
+            "merchant": "Best Buy",
+            "transaction_type": "Debit"
+        },
+        {
+            "txn_id": "202209081008224279862398471697053",
+            "txn_datetime": "2022-09-08 10:08:22",
+            "amount": 17.07,
+            "merchant": "Publix",
+            "transaction_type": "Credit"
+        },
+        {
+            "txn_id": "202209080626474279862398471697015",
+            "txn_datetime": "2022-09-08 06:26:47",
+            "amount": 25.11,
+            "merchant": "Amazon",
+            "transaction_type": "Debit"
+        },
+        {
+            "txn_id": "202209071534594279862398471697064",
+            "txn_datetime": "2022-09-07 15:34:59",
+            "amount": 0.56,
+            "merchant": "Best Buy",
+            "transaction_type": "Debit"
+        }
+    ]
+}

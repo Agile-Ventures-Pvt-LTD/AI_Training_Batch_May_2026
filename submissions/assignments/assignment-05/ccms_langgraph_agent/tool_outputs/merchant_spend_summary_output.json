@@ -1,0 +1,50 @@
+{
+    "group_by": "merchant_type",
+    "results": [
+        {
+            "merchant_type": "supermarket",
+            "total_spend": 1733.73,
+            "transaction_count": 75
+        },
+        {
+            "merchant_type": "drug store/pharmacy",
+            "total_spend": 1310.63,
+            "transaction_count": 55
+        },
+        {
+            "merchant_type": "home improvement",
+            "total_spend": 1075.75,
+            "transaction_count": 44
+        },
+        {
+            "merchant_type": "discount store",
+            "total_spend": 772.93,
+            "transaction_count": 31
+        },
+        {
+            "merchant_type": "electronics specialty",
+            "total_spend": 678.91,
+            "transaction_count": 27
+        },
+        {
+            "merchant_type": "hypermarket/supercenter/superstore",
+            "total_spend": 619.44,
+            "transaction_count": 28
+        },
+        {
+            "merchant_type": "discount department store",
+            "total_spend": 555.06,
+            "transaction_count": 23
+        },
+        {
+            "merchant_type": "cash & carry/warehouse club",
+            "total_spend": 413.98,
+            "transaction_count": 18
+        },
+        {
+            "merchant_type": "non-store,e-commerce",
+            "total_spend": 370.25,
+            "transaction_count": 16
+        }
+    ]
+}

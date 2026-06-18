@@ -1,0 +1,126 @@
+{
+    "customer_id": "1",
+    "reward_points": 75,
+    "related_transactions": [
+        {
+            "txn_id": "202208161858014279862398471697047",
+            "txn_datetime": "2022-08-16 18:58:01",
+            "amount": 57.02,
+            "merchant": "CVS Health"
+        },
+        {
+            "txn_id": "202209030603484279862398471697015",
+            "txn_datetime": "2022-09-03 06:03:48",
+            "amount": 54.05,
+            "merchant": "Target Corporation"
+        },
+        {
+            "txn_id": "202208220814514279862398471697063",
+            "txn_datetime": "2022-08-22 08:14:51",
+            "amount": 53.68,
+            "merchant": "Publix"
+        },
+        {
+            "txn_id": "202208081047264279862398471697049",
+            "txn_datetime": "2022-08-08 10:47:26",
+            "amount": 51.7,
+            "merchant": "Best Buy"
+        },
+        {
+            "txn_id": "202207241315004279862398471697001",
+            "txn_datetime": "2022-07-24 13:15:00",
+            "amount": 49.32,
+            "merchant": "Best Buy"
+        },
+        {
+            "txn_id": "202207031854444279862398471697044",
+            "txn_datetime": "2022-07-03 18:54:44",
+            "amount": 48.57,
+            "merchant": "Dollar General"
+        },
+        {
+            "txn_id": "202206211250274279862398471697082",
+            "txn_datetime": "2022-06-21 12:50:27",
+            "amount": 47.02,
+            "merchant": "Amazon"
+        },
+        {
+            "txn_id": "202208201106574279862398471697024",
+            "txn_datetime": "2022-08-20 11:06:57",
+            "amount": 46.5,
+            "merchant": "Lowe's"
+        },
+        {
+            "txn_id": "202208111015314279862398471697042",
+            "txn_datetime": "2022-08-11 10:15:31",
+            "amount": 46.29,
+            "merchant": "Lowe's"
+        },
+        {
+            "txn_id": "202209081450114279862398471697042",
+            "txn_datetime": "2022-09-08 14:50:11",
+            "amount": 45.73,
+            "merchant": "Kroger"
+        },
+        {
+            "txn_id": "202206182012414279862398471697052",
+            "txn_datetime": "2022-06-18 20:12:41",
+            "amount": 45.43,
+            "merchant": "CVS Health"
+        },
+        {
+            "txn_id": "202206271341224279862398471697014",
+            "txn_datetime": "2022-06-27 13:41:22",
+            "amount": 43.39,
+            "merchant": "Albertsons"
+        },
+        {
+            "txn_id": "202206071003184279862398471697082",
+            "txn_datetime": "2022-06-07 10:03:18",
+            "amount": 43.19,
+            "merchant": "Best Buy"
+        },
+        {
+            "txn_id": "202207170711464279862398471697087",
+            "txn_datetime": "2022-07-17 07:11:46",
+            "amount": 43.12,
+            "merchant": "Dollar General"
+        },
+        {
+            "txn_id": "202208202216104279862398471697014",
+            "txn_datetime": "2022-08-20 22:16:10",
+            "amount": 42.58,
+            "merchant": "Albertsons"
+        },
+        {
+            "txn_id": "202208211338034279862398471697025",
+            "txn_datetime": "2022-08-21 13:38:03",
+            "amount": 42.52,
+            "merchant": "CVS Health"
+        },
+        {
+            "txn_id": "202206140331374279862398471697047",
+            "txn_datetime": "2022-06-14 03:31:37",
+            "amount": 42.44,
+            "merchant": "Target Corporation"
+        },
+        {
+            "txn_id": "202208070505384279862398471697081",
+            "txn_datetime": "2022-08-07 05:05:38",
+            "amount": 41.76,
+            "merchant": "Dollar General"
+        },
+        {
+            "txn_id": "202206130751054279862398471697011",
+            "txn_datetime": "2022-06-13 07:51:05",
+            "amount": 41.43,
+            "merchant": "Kroger"
+        },
+        {
+            "txn_id": "202209051125204279862398471697047",
+            "txn_datetime": "2022-09-05 11:25:20",
+            "amount": 41.17,
+            "merchant": "Publix"
+        }
+    ]
+}
