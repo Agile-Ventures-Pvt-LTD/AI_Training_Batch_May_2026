@@ -1,0 +1,11 @@
+{
+    "user_question": " Show reward points for customer 1",
+    "implementation_choice": "custom_react_agent",
+    "tools_used": [
+        "get_rewards_summary"
+    ],
+    "records_found": 0,
+    "answer": "The customer with ID 1 has 75 reward points and is in the SILVER reward tier.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}

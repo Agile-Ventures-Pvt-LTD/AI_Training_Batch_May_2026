@@ -1,0 +1,11 @@
+{
+    "user_question": " Show the last 5 transactions for customer 1",
+    "implementation_choice": "custom_react_agent",
+    "tools_used": [
+        "get_customer_transactions"
+    ],
+    "records_found": 0,
+    "answer": "No records were found for the last 5 transactions of customer 1.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}

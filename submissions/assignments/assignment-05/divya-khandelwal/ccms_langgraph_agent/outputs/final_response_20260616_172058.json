@@ -1,0 +1,11 @@
+{
+    "user_question": "show me the database schema",
+    "implementation_choice": "custom_react_agent",
+    "tools_used": [
+        "inspect_database_schema"
+    ],
+    "records_found": 0,
+    "answer": "The database schema consists of 9 tables: customer, netbanking, card_type, card, transaction_type, transaction_terminal, merchant_type, merchant, and transaction. Each table has several columns, which are listed in the schema.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}

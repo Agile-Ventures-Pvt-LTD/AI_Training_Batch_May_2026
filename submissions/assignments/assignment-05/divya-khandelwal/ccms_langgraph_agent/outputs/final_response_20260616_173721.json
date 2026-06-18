@@ -1,0 +1,11 @@
+{
+    "user_question": "Which merchant type has the highest total spend?",
+    "implementation_choice": "custom_react_agent",
+    "tools_used": [
+        "get_merchant_spend_summary"
+    ],
+    "records_found": 0,
+    "answer": "The merchant type with the highest total spend is \"drug store/pharmacy\" with a total spend of $797.66 at CVS Health.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
