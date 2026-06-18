@@ -1,0 +1,53 @@
+Question: Show me the database schema.
+
+Answer:
+The database schema includes the following tables:
+- customer
+- netbanking
+- card_type
+- card
+- transaction_type
+- transaction_terminal
+- merchant_type
+- merchant
+- transaction
+
+These tables contain various fields related to customer information, card details, transaction data, and merchant information.
+
+--------------------------------------------------
+Question: Show customer profile for customer 1.
+
+Answer:
+The customer profile for customer 1 is:
+
+Customer ID: 1
+First Name: Denise
+Last Name: Walker
+Email: denisewalker717@gmail.com
+Card Number: ************1697
+
+--------------------------------------------------
+Question: Show card details for customer 1.
+
+Answer:
+The card details for customer 1 are: 
+Card Number: ***** **** **** ****
+Expiry: 2023-06-01
+Card Type: Silver
+Card Network: MasterCard
+Privilege: Silver plus MasterCard benefits
+
+
+--------------------------------------------------
+Question: Which merchant type has the highest total spend?
+
+Answer:
+The merchant type with the highest total spend is Walgreens Boots Alliance, with a total spend of $1,176,250.70.
+
+--------------------------------------------------
+
+--------------------------------------------------
+Question: Show reward points for customer 1.
+
+Answer:
+The customer with ID 1 has 75 reward points.

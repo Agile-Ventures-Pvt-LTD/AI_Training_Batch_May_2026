@@ -1,0 +1,78 @@
+Question:  Show me the database schema.
+
+Answer:
+Here is the current database schema (tables and their columns):
+
+| Table | Columns |
+|-------|-----------------------------------------------------------------------------------------------------------------------------------|
+| **customer** | `cust_id`, `first_name`, `last_name`, `email`, `phone`, `address`, `city`, `state`, `zip` |
+| **netbanking** | `username`, `password`, `expiry_date`, `security_question`, `security_answer`, `cust_id` |
+| **card_type** | `card_type_id`, `card_type`, `card_network`, `privilege` |
+| **card** | `card_number`, `valid_from`, `expiry`, `security_code`, `x-coordinate`, `y-coordinate`, `mean_amount`, `std_amount`, `mean_nb_tx_per_day`, `cust_id`, `card_type_id` |
+| **transaction_type** | `txn_type_id`, `debit_credit`, `lcl_intnl` |
+| **transaction_terminal** | `TERMINAL_ID`, `x_terminal_id`, `y_terminal_id` |
+| **merchant_type** | `id`, `merchant_type` |
+| **merchant** | `id`, `merchant`, `merchant_type` |
+| **transaction** | `Unnamed: 0`, `TXN_ID`, `TX_DATETIME`, `CARD_ID`, `TERMINAL_ID`, `TX_AMOUNT`, `TX_TIME_SECONDS`, `TX_TIME_DAYS`, `TXN_TYPE_ID`, `M_ID` |
+
+These tables store customer profiles, net‑banking credentials, card details, transaction types, terminal locations, merchant information, and the transaction records themselves.
+
+--------------------------------------------------
+Question: Show customer profile for customer 1.
+
+Answer:
+**Customer Profile (ID: 1)**  
+
+- **Name:** Denise Walker  
+- **Email:** denisewalker717@gmail.com  
+- **Card Number:** ************1697  
+
+(Only the last four digits of the card number are shown for security.)
+
+--------------------------------------------------
+Question:  Show card details for customer 1.
+
+Answer:
+**Card Details (Customer 1)**  
+
+- **Card Number:** ************1697  
+- **Expiry Date:** 2023‑06‑01  
+- **Card Type:** Silver  
+- **Network:** MasterCard  
+- **Privileges:** Silver plus MasterCard benefits  
+
+(Only the last four digits of the card number are shown for security.)
+
+--------------------------------------------------
+
+
+--------------------------------------------------
+Question: Identify potentially suspicious transactions.
+
+Answer:
+The following transactions are potentially suspicious and require review:
+- TXN_ID: 202208281411154447867428021880044, Date: 2022-08-28, Amount: $320.15, Merchant: Dollar General
+- TXN_ID: 202208310731382545508428910772014, Date: 2022-08-31, Amount: $286.73, Merchant: Kroger
+- TXN_ID: 202208160507224005342408916495089, Date: 2022-08-16, Amount: $284.44, Merchant: Lowe's
+- TXN_ID: 202208091207234781367500942149080, Date: 2022-08-09, Amount: $284.11, Merchant: Kroger
+- TXN_ID: 202207261155445264890901001671012, Date: 2022-07-26, Amount: $280.81, Merchant: Costco
+- TXN_ID: 202209081309494614293968562182053, Date: 2022-09-08, Amount: $278.75, Merchant: Dollar General
+- TXN_ID: 202209031429482248252129328964063, Date: 2022-09-03, Amount: $276.69, Merchant: Publix
+- TXN_ID: 202208141317524160461540211903043, Date: 2022-08-14, Amount: $275.48, Merchant: Amazon
+- TXN_ID: 202209021224415458148769639389041, Date: 2022-09-02, Amount: $271.39, Merchant: Amazon
+- TXN_ID: 202208311241494538495163211191008, Date: 2022-08-31, Amount: $265.59, Merchant: CVS Health
+- TXN_ID: 202207261452195115819956046613049, Date: 2022-07-26, Amount: $262.99, Merchant: Walmart
+- TXN_ID: 202206030904232702567262084671062, Date: 2022-06-03, Amount: $259.78, Merchant: Best Buy
+- TXN_ID: 202209071437204226540165995304002, Date: 2022-09-07, Amount: $256.59, Merchant: Dollar General
+- TXN_ID: 202206301323355382744857086201019, Date: 2022-06-30, Amount: $255.62, Merchant: Lowe's
+- TXN_ID: 202207171706582240089317342060003, Date: 2022-07-17, Amount: $255.06, Merchant: Albertsons
+- TXN_ID: 202207281412074102776974995643031, Date: 2022-07-28, Amount: $254.71, Merchant: Publix
+- TXN_ID: 202207091006284947386463175209078, Date: 2022-07-09, Amount: $254.22, Merchant: Walgreens Boots Alliance
+
+These transactions are potentially suspicious because they exceed a certain amount and may require further review to ensure their legitimacy.
+
+--------------------------------------------------
+Question: Which merchant type has the highest total spend?
+
+Answer:
+The merchant type with the highest total spend is Walgreens Boots Alliance, with a total spend of $1,176,250.70.
