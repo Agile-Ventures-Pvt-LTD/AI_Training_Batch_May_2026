@@ -73,7 +73,18 @@ os.environ['API_KEY'] = os.getenv("API_KEY")
 
 ---
 
-### 5.How to run agent
+### 6.How to make vector store
+
+
+```bash
+python database_creation.py
+```
+This will run the main application that will end only when user says exit or quit.
+
+---
+
+
+### 6.How to run agent
 
 To run the agent run file named as app.py
 ```bash
@@ -83,7 +94,7 @@ This will run the main application that will end only when user says exit or qui
 
 ---
 
-### 6.Sample questions
+### 7.Sample questions
 ```
     'How many annual leave days can an employee carry forward?', 
     'Can I claim meals for same-day domestic business travel?', 
@@ -97,7 +108,7 @@ This will run the main application that will end only when user says exit or qui
 
 ---
 
-### 7. Testing
+### 8. Testing
 
 Based on sample queries in PRD , **tests/test.py** is designed.
 It runs all sample question provided one by one and save its output at **"outputs"** folder 
