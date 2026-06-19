@@ -1,0 +1,10 @@
+#virtual environment
+.venv
+
+#env file
+.env
+
+__pycache__/
+
+#data
+data/*
