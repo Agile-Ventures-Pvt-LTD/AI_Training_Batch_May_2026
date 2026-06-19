@@ -1,83 +1,194 @@
 import os
-from config import POLICY_DATA_PATH
+import json
+from datetime import datetime
+
 from loaders import load_policies
 from chunking import chunking
+
+from retrievers import (
+    build_vector_store
+)
+
 from prebuilt_agent import app_graph
 
-# Import required LangChain components for vector indexing
-from langchain_community.vectorstores import InMemoryVectorStore
-from langchain_groq import ChatGroq
+from config import POLICY_DATA_PATH
 
-def initialize_system():
-    """Validates data environment, loads documents, and initializes search tools."""
-    print("=== Initializing Enterprise Policy Assistant ===")
-    
-    # 1. Create source data directory if missing
+OUTPUT_DIR = "outputs"
+
+
+def initialize_output_folder():
+    """Create PRD required output files"""
+
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+    sample_output_file = os.path.join(
+        OUTPUT_DIR,
+        "sample_run_outputs.md"
+    )
+
+    evaluation_file = os.path.join(
+        OUTPUT_DIR,
+        "evaluation_results.json"
+    )
+
+    if not os.path.exists(sample_output_file):
+        with open(sample_output_file, "w", encoding="utf-8") as f:
+            f.write(
+                "# Enterprise Policy Assistant Sample Outputs\n\n"
+            )
+
+    if not os.path.exists(evaluation_file):
+        with open(evaluation_file, "w", encoding="utf-8") as f:
+            json.dump([], f, indent=2)
+
+
+def save_output(question: str, answer: str):
+    """Save chat output to markdown file"""
+
+    sample_output_file = os.path.join(
+        OUTPUT_DIR,
+        "sample_run_outputs.md"
+    )
+
+    with open(
+        sample_output_file,
+        "a",
+        encoding="utf-8"
+    ) as f:
+
+        f.write(
+            f"""
+## {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+
+### Question
+
+{question}
+
+### Answer
+
+{answer}
+
+---
+
+"""
+        )
+
+
+def save_evaluation(question: str, answer: str):
+    """Save output to evaluation json"""
+
+    evaluation_file = os.path.join(
+        OUTPUT_DIR,
+        "evaluation_results.json"
+    )
+
+    try:
+        with open(
+            evaluation_file,
+            "r",
+            encoding="utf-8"
+        ) as f:
+            data = json.load(f)
+
+    except Exception:
+        data = []
+
+    data.append(
+        {
+            "timestamp": datetime.now().isoformat(),
+            "question": question,
+            "answer": answer
+        }
+    )
+
+    with open(
+        evaluation_file,
+        "w",
+        encoding="utf-8"
+    ) as f:
+        json.dump(
+            data,
+            f,
+            indent=2,
+            ensure_ascii=False
+        )
+
+
+def initialize():
+
     if not os.path.exists(POLICY_DATA_PATH):
-        print(f"Creating directory at: {POLICY_DATA_PATH}")
+
         os.makedirs(POLICY_DATA_PATH)
-        print("Please drop your policy files (.txt, .md, .pdf) into that folder and restart.")
-        return None
 
-    # 2. Extract raw data using custom loaders
-    raw_docs = load_policies()
-    if not raw_docs:
-        print("No documents found in your policy data path. Agent will run without context.")
-        return None
+        print(
+            f"Put policy files into: "
+            f"{POLICY_DATA_PATH}"
+        )
 
-    # 3. Create document fragments via text splitters
-    chunks = chunking(raw_docs)
-    print(f"Processed {len(chunks)} text chunks.")
+        return False
 
-    # 4. Initialize embedding models and index documents
-    # (Note: Replace this with your EMBEDDING_MODEL from config if using HuggingFace/OpenAI)
-    from langchain_core.embeddings import FakeEmbeddings
-    embeddings = FakeEmbeddings(size=1536) 
-    
-    print("Building vector index storage layer...")
-    vector_store = InMemoryVectorStore.from_documents(chunks, embeddings)
-    print("Indexing complete! Vector store is ready.")
-    
-    return vector_store
+    docs = load_policies()
 
-def run_chat_loop():
-    """Runs a terminal-based interactive loop with your LangGraph prebuilt agent."""
-    # Build or retrieve vector index lookup configuration
-    vector_store = initialize_system()
-    
-    # Expose retriever reference globally or inject it if your tools.py reads it dynamically
-    # For this example implementation, the agent runs directly via graph state streaming
-    print("\n System Online!")
-    
+    if not docs:
+
+        print("No policy files found.")
+        return False
+
+    chunks = chunking(docs)
+
+    build_vector_store(chunks)
+
+    print(
+        f"Indexed {len(chunks)} chunks."
+    )
+
+    return True
+
+
+def chat():
+
     while True:
-        try:
-            user_input = input("input ").strip()
-            if not user_input:
-                continue
-            if user_input.lower() in ["exit", "quit"]:
-                print("exit!")
-                break
-                
-            print("\nAssistant : ", end="", flush=True)
-            
-            # Streaming events directly out of the compiled LangGraph reactive agent loop
-            inputs = {"messages": [("user", user_input)]}
-            config = {"configurable": {"thread_id": "policy_session_1"}}
-            
-            for chunk in app_graph.stream(inputs, config, stream_mode="values"):
-                # Always grab the last message state appended by either the agent or tools
-                if "messages" in chunk and chunk["messages"]:
-                    last_msg = chunk["messages"][-1]
-            
-            # Print final compiled text reply from the ChatGroq model block
-            if last_msg and hasattr(last_msg, "content"):
-                print(f"{last_msg.content}\n")
-                
-        except KeyboardInterrupt:
-            print("\nSession expire.")
+
+        question = input(
+            "\nQuestion: "
+        ).strip()
+
+        if not question:
+            continue
+
+        if question.lower() in [
+            "exit",
+            "quit"
+        ]:
+            print("Goodbye!")
             break
+
+        try:
+
+            result = app_graph.invoke(
+                {
+                    "messages": [
+                        ("user", question)
+                    ]
+                }
+            )
+
+            answer = result["messages"][-1].content
+
+            print("\nAssistant:\n")
+            print(answer)
+
+            # Save outputs automatically
+            save_output(question, answer)
+            save_evaluation(question, answer)
+
         except Exception as e:
-            print(f"\nAn error occurred processing request: {e}\n")
+            print(f"\nError: {e}")
+
 
 if __name__ == "__main__":
-    run_chat_loop()
+
+    initialize_output_folder()
+
+    if initialize():
+        chat()
