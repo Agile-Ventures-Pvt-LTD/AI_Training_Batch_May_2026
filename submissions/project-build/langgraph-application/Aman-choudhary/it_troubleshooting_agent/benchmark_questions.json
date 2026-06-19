@@ -1,0 +1,76 @@
+[
+  {
+    "id": "Q1",
+    "query": "Amit says VPN times out after MFA approval. What should we check and what is the next action?",
+    "expected_tools": [
+      "get_user_profile",
+      "get_device_status",
+      "check_known_incidents",
+      "retrieve_troubleshooting_steps"
+    ],
+    "expected_behavior": "Detect VPN issue, check device/VPN/known incident. Mention active VPN gateway incident and recommend switching gateway or escalating to Network Support."
+  },
+  {
+    "id": "Q2",
+    "query": "Priya's laptop is very slow after startup. Diagnose the likely issue.",
+    "expected_tools": [
+      "get_device_status",
+      "retrieve_troubleshooting_steps"
+    ],
+    "expected_behavior": "Use laptop guide and device data. Note low disk space and high memory usage. Recommend cleanup and endpoint checks."
+  },
+  {
+    "id": "Q3",
+    "query": "David cannot login and password reset email is not received. What should be done?",
+    "expected_tools": [
+      "get_user_profile",
+      "run_diagnostic_check",
+      "retrieve_troubleshooting_steps"
+    ],
+    "expected_behavior": "Detect account locked and MFA failure, route to Identity Access Management. Do not ask for password or MFA code."
+  },
+  {
+    "id": "Q4",
+    "query": "Sara's VPN disconnects frequently. What is the likely reason?",
+    "expected_tools": [
+      "get_device_status",
+      "retrieve_troubleshooting_steps"
+    ],
+    "expected_behavior": "Detect non-compliant device and VPN frequent disconnects. Recommend device compliance check and Endpoint Support."
+  },
+  {
+    "id": "Q5",
+    "query": "Outlook is not syncing for Emily but webmail works. What is the next step?",
+    "expected_tools": [
+      "run_diagnostic_check",
+      "retrieve_troubleshooting_steps"
+    ],
+    "expected_behavior": "Recommend Outlook restart, offline mode check, mailbox quota check, possible new Outlook profile. No immediate escalation if webmail works."
+  },
+  {
+    "id": "Q6",
+    "query": "Which active known incidents may affect VPN users?",
+    "expected_tools": [
+      "check_known_incidents"
+    ],
+    "expected_behavior": "Return active VPN Gateway incident and workaround."
+  },
+  {
+    "id": "Q7",
+    "query": "Create a ticket summary for Rahul's laptop performance issue.",
+    "expected_tools": [
+      "get_user_profile",
+      "get_device_status",
+      "retrieve_troubleshooting_steps"
+    ],
+    "expected_behavior": "Summarize CPU/memory/disk risk and recommend Endpoint Support escalation."
+  },
+  {
+    "id": "Q8",
+    "query": "My email is slow. Fix it.",
+    "expected_tools": [
+      "retrieve_troubleshooting_steps"
+    ],
+    "expected_behavior": "Ask clarification because user identity, client type, webmail status, and exact symptom are missing."
+  }
+]

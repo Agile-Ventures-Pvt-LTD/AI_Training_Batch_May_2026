@@ -1,0 +1,20 @@
+{
+  "dataset_name": "IT Troubleshooting Agent Dataset",
+  "knowledge_base_files": [
+    "vpn_troubleshooting_guide.md",
+    "email_outlook_troubleshooting_guide.md",
+    "laptop_performance_guide.md",
+    "password_reset_guide.md",
+    "network_connectivity_guide.md",
+    "printer_troubleshooting_guide.md"
+  ],
+  "database": "data/database/it_support.db",
+  "tables": [
+    "users",
+    "devices",
+    "tickets",
+    "known_incidents",
+    "diagnostic_snapshots"
+  ],
+  "synthetic": true
+}
