@@ -1,33 +1,73 @@
-import os
-from dotenv import load_dotenv
-from langchain_groq import ChatGroq
+# file: prebuilt_agent.py
+
 from langgraph.prebuilt import create_react_agent
+
+from langchain_groq import ChatGroq
+
+from config import (
+    GROQ_API_KEY,
+    GROQ_MODEL
+)
+
 from prompts import SYSTEM_PROMPT
 
-load_dotenv()
+from tools import (
+    retrieve_hr_policy,
+    retrieve_travel_policy,
+    retrieve_reimbursement_policy,
+    retrieve_it_security_policy,
+    retrieve_ai_usage_policy,
+    grade_context
+)
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-LLM_MODEL = "llama-3.1-8b-instant"
-LLM_TEMPERATURE = 0.0
-LLM_MAX_RETRIES = 2
 
-def initialize_llm():
-    return ChatGroq(
+def get_agent():
+
+    if not GROQ_API_KEY:
+        raise ValueError(
+            "GROQ_API_KEY not found"
+        )
+
+    llm = ChatGroq(
+        model=GROQ_MODEL,
         api_key=GROQ_API_KEY,
-        model=LLM_MODEL,
-        temperature=LLM_TEMPERATURE,
-        max_retries=LLM_MAX_RETRIES,
+        temperature=0
     )
 
+    tools = [
+        retrieve_hr_policy,
+        retrieve_travel_policy,
+        retrieve_reimbursement_policy,
+        retrieve_it_security_policy,
+        retrieve_ai_usage_policy,
+        grade_context
+    ]
 
-def create_agent(llm, tools):
-    return create_react_agent(
-        model=llm,
-        tools=tools,
-        prompt=SYSTEM_PROMPT,
+    agent = create_react_agent(
+        llm,
+        tools
     )
 
+    return agent
 
-def run_agent(agent, user_query):
-    response = agent.invoke({"messages": [{"role": "user", "content": user_query}]})
-    return response
+
+def ask_agent(question):
+
+    agent = get_agent()
+
+    response = agent.invoke(
+        {
+            "messages": [
+                (
+                    "system",
+                    SYSTEM_PROMPT
+                ),
+                (
+                    "user",
+                    question
+                )
+            ]
+        }
+    )
+
+    return response["messages"][-1].content

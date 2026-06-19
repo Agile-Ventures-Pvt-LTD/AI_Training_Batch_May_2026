@@ -49,7 +49,7 @@ enterprise_policy_agentic_rag/
 
 ### 1. Install Dependencies
 ```bash
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 ```
 
 ### 2. Set Environment Variables
@@ -69,30 +69,6 @@ Place markdown policy files in `./data/policies/`:
 ### 4. Run the Application
 ```bash
 python app.py
-```
-
-## Usage
-
-### Programmatic Usage
-```python
-from app import EnterprisePolicyRAGSystem
-
-# Initialize system
-rag_system = EnterprisePolicyRAGSystem()
-rag_system.initialize()
-
-# Ask a question
-response = rag_system.answer_question("What are the travel policy guidelines?")
-print(response)
-```
-
-### Interactive Chat Mode
-```python
-from app import EnterprisePolicyRAGSystem
-
-rag_system = EnterprisePolicyRAGSystem()
-rag_system.initialize()
-rag_system.chat()  # Start interactive mode
 ```
 
 ## System Features
@@ -183,7 +159,6 @@ VECTOR_STORE_PATH = "./vector_store"
 ## Notes
 
 - The system uses **LangGraph's PreBuilt ReAct Agent** (simple, no custom routing)
-- I had Issue with sentence-transformer as discussed so the project was not run successfully.
 
 
 
