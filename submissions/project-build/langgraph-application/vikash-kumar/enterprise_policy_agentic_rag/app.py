@@ -18,9 +18,8 @@ def setup_vector_store():
 
 def run():
     """This will give answer"""
-    question = input("Ask a policy question: \n")
+    question = input("Ask a policy question:")
     result = graph.invoke({"user_question":question,"query_type": "","required_policy_domains":[],"requires_clarification":False,"rewritten_query":"","retrieved_context":[],"context_grade":{},"answer":{},"reflection":{},"retry_count":0,"final_response":"",})
-    print("\n")
     print(result["final_response"])
 
 if __name__ == "__main__":
