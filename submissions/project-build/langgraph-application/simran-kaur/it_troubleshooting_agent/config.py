@@ -1,0 +1,10 @@
+import os
+from dotenv import load_dotenv
+load_dotenv()  
+
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+DB_PATH = os.getenv("DB_PATH", "data/database/it_support.db")
+KB_PATH = os.getenv("KB_PATH", "data/knowledge_base")
+CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "900"))
+CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "120"))
