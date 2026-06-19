@@ -1,0 +1,31 @@
+{
+"issue_type": "VPN",
+"diagnosis_summary": "Amit's VPN timeout appears related to VPN reachability rather than internet connectivity. Internet and webmail are reachable, but VPN and internal apps are not. There is also an active VPN Gateway incident in India-West.",
+"evidence_used": {
+"kb_sources": [
+"vpn_troubleshooting_guide.md"
+],
+"tools_used": [
+"get_user_profile",
+"get_device_status",
+"run_diagnostic_check",
+"check_known_incidents"
+],
+"diagnostic_signals": [
+"VPN not reachable",
+"Internet reachable",
+"MFA push successful",
+"Active VPN Gateway incident"
+]
+},
+"recommended_steps": ["Ask Amit to retry using the alternate India-South VPN gateway if available.",
+"Confirm that he is using VPN client version 5.9 or later.","If the issue continues from another network, escalate to Network Support.",
+"Do not ask Amit to share passwords, OTPs, or MFA codes."
+],
+"escalation_required": true,
+"escalation_group": "Network Support",
+"safety_notes": [
+"Do not request password, OTP, or MFA code."
+],
+"confidence": "HIGH"
+}
