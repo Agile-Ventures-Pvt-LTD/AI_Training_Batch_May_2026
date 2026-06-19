@@ -1,0 +1,479 @@
+[
+  {
+    "question": "How many annual leave days can an employee carry forward?",
+    "result": {
+      "answer": "chunk_id: 3, source_file: HR Leave Policy. \nAn employee can carry forward a maximum of **6 unused annual leave days** into the next calendar year.",
+      "policy_basis": [
+        "OTHER mentions hr_leave_policy.md_0",
+        "OTHER mentions hr_leave_policy.md_0",
+        "OTHER mentions hr_leave_policy.md_0",
+        "OTHER mentions hr_leave_policy.md_0"
+      ],
+      "sources": [
+        {
+          "source_file": "hr_leave_policy.md",
+          "policy_domain": "OTHER",
+          "chunk_id": "hr_leave_policy.md_0",
+          "snippet": "# HR Leave Policy\n**Policy ID:** HR-LV-001\n**Version:** 1.0\n**Effective Date:** 2026-01-01\n**Policy Owner:** Human Resources\n\n## 1. Purpose\nThis policy defines leave entitlement, leave approval rules,"
+        },
+        {
+          "source_file": "hr_leave_policy.md",
+          "policy_domain": "OTHER",
+          "chunk_id": "hr_leave_policy.md_0",
+          "snippet": "# HR Leave Policy\n**Policy ID:** HR-LV-001\n**Version:** 1.0\n**Effective Date:** 2026-01-01\n**Policy Owner:** Human Resources\n\n## 1. Purpose\nThis policy defines leave entitlement, leave approval rules,"
+        },
+        {
+          "source_file": "hr_leave_policy.md",
+          "policy_domain": "OTHER",
+          "chunk_id": "hr_leave_policy.md_0",
+          "snippet": "# HR Leave Policy\n**Policy ID:** HR-LV-001\n**Version:** 1.0\n**Effective Date:** 2026-01-01\n**Policy Owner:** Human Resources\n\n## 1. Purpose\nThis policy defines leave entitlement, leave approval rules,"
+        },
+        {
+          "source_file": "hr_leave_policy.md",
+          "policy_domain": "OTHER",
+          "chunk_id": "hr_leave_policy.md_0",
+          "snippet": "# HR Leave Policy\n**Policy ID:** HR-LV-001\n**Version:** 1.0\n**Effective Date:** 2026-01-01\n**Policy Owner:** Human Resources\n\n## 1. Purpose\nThis policy defines leave entitlement, leave approval rules,"
+        }
+      ],
+      "answerability": "ANSWERED",
+      "confidence": "HIGH",
+      "recommended_next_step": "Submit with manager approval if required."
+    },
+    "evaluation": {
+      "score": 7.5,
+      "breakdown": {
+        "grounding": 2,
+        "citations": 2,
+        "policy_match": 1.5,
+        "clarity": 2,
+        "hallucination_penalty": 0
+      },
+      "feedback": "Good but minor improvements needed"
+    },
+    "timestamp": "2026-06-19 11:52:56.260687"
+  },
+  {
+    "question": "Can I claim meals for same-day domestic business travel?",
+    "result": {
+      "answer": "Yes, meal reimbursement is allowed for approved business travel, including same-day domestic business travel, up to INR 800 per day, provided valid receipts are submitted (chunk_id: 5, source_file: Meal Reimbursement policy).",
+      "policy_basis": [
+        "REIMBURSEMENT mentions reimbursement_policy.md_1",
+        "REIMBURSEMENT mentions reimbursement_policy.md_1",
+        "REIMBURSEMENT mentions reimbursement_policy.md_1",
+        "REIMBURSEMENT mentions reimbursement_policy.md_1"
+      ],
+      "sources": [
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_1",
+          "snippet": "Late claims require finance approval and may be rejected if there is no valid reason for delay.\n\n## 4. Receipt Requirements\nReceipts are mandatory for:\n- hotel stays\n- local transport\n- meals above IN"
+        },
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_1",
+          "snippet": "Late claims require finance approval and may be rejected if there is no valid reason for delay.\n\n## 4. Receipt Requirements\nReceipts are mandatory for:\n- hotel stays\n- local transport\n- meals above IN"
+        },
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_1",
+          "snippet": "Late claims require finance approval and may be rejected if there is no valid reason for delay.\n\n## 4. Receipt Requirements\nReceipts are mandatory for:\n- hotel stays\n- local transport\n- meals above IN"
+        },
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_1",
+          "snippet": "Late claims require finance approval and may be rejected if there is no valid reason for delay.\n\n## 4. Receipt Requirements\nReceipts are mandatory for:\n- hotel stays\n- local transport\n- meals above IN"
+        }
+      ],
+      "answerability": "ANSWERED",
+      "confidence": "HIGH",
+      "recommended_next_step": "Submit with manager approval if required."
+    },
+    "evaluation": {
+      "score": 7.5,
+      "breakdown": {
+        "grounding": 2,
+        "citations": 2,
+        "policy_match": 1.5,
+        "clarity": 2,
+        "hallucination_penalty": 0
+      },
+      "feedback": "Good but minor improvements needed"
+    },
+    "timestamp": "2026-06-19 11:53:22.333542"
+  },
+  {
+    "question": "What documents are needed for hotel reimbursement",
+    "result": {
+      "answer": "According to chunk_id ## 4. Receipt Requirements + source_file, \nReceipts are mandatory for hotel stays. \nReceipts must clearly show date, amount, vendor name, and expense description. (chunk_id ## 4. Receipt Requirements + source_file)",
+      "policy_basis": [
+        "REIMBURSEMENT mentions reimbursement_policy.md_1",
+        "REIMBURSEMENT mentions reimbursement_policy.md_1",
+        "REIMBURSEMENT mentions reimbursement_policy.md_1",
+        "REIMBURSEMENT mentions reimbursement_policy.md_1"
+      ],
+      "sources": [
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_1",
+          "snippet": "Late claims require finance approval and may be rejected if there is no valid reason for delay.\n\n## 4. Receipt Requirements\nReceipts are mandatory for:\n- hotel stays\n- local transport\n- meals above IN"
+        },
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_1",
+          "snippet": "Late claims require finance approval and may be rejected if there is no valid reason for delay.\n\n## 4. Receipt Requirements\nReceipts are mandatory for:\n- hotel stays\n- local transport\n- meals above IN"
+        },
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_1",
+          "snippet": "Late claims require finance approval and may be rejected if there is no valid reason for delay.\n\n## 4. Receipt Requirements\nReceipts are mandatory for:\n- hotel stays\n- local transport\n- meals above IN"
+        },
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_1",
+          "snippet": "Late claims require finance approval and may be rejected if there is no valid reason for delay.\n\n## 4. Receipt Requirements\nReceipts are mandatory for:\n- hotel stays\n- local transport\n- meals above IN"
+        }
+      ],
+      "answerability": "ANSWERED",
+      "confidence": "HIGH",
+      "recommended_next_step": "Submit with manager approval if required."
+    },
+    "evaluation": {
+      "score": 7.5,
+      "breakdown": {
+        "grounding": 2,
+        "citations": 2,
+        "policy_match": 1.5,
+        "clarity": 2,
+        "hallucination_penalty": 0
+      },
+      "feedback": "Good but minor improvements needed"
+    },
+    "timestamp": "2026-06-19 11:54:13.539257"
+  },
+  {
+    "question": "Can I use my personal laptop for office work?",
+    "result": {
+      "answer": "According to chunk_id 3, source_file: company policy (3. Personal Laptop Restrictions), employees should not use personal laptops for regular office work. However, there are exceptions when certain conditions are met, such as temporary business need, manager approval, IT security approval, no confidential or customer data stored locally, and the device meeting minimum security requirements (chunk_id 3, source_file: company policy).",
+      "policy_basis": [
+        "IT_SECURITY mentions it_security_policy.md_1",
+        "IT_SECURITY mentions it_security_policy.md_1",
+        "IT_SECURITY mentions it_security_policy.md_1",
+        "IT_SECURITY mentions it_security_policy.md_1"
+      ],
+      "sources": [
+        {
+          "source_file": "it_security_policy.md",
+          "policy_domain": "IT_SECURITY",
+          "chunk_id": "it_security_policy.md_1",
+          "snippet": "## 3. Personal Laptop Restrictions\nEmployees should not use personal laptops for regular office work.\n\nPersonal laptop use is allowed only when:\n- there is a temporary business need\n- manager approval"
+        },
+        {
+          "source_file": "it_security_policy.md",
+          "policy_domain": "IT_SECURITY",
+          "chunk_id": "it_security_policy.md_1",
+          "snippet": "## 3. Personal Laptop Restrictions\nEmployees should not use personal laptops for regular office work.\n\nPersonal laptop use is allowed only when:\n- there is a temporary business need\n- manager approval"
+        },
+        {
+          "source_file": "it_security_policy.md",
+          "policy_domain": "IT_SECURITY",
+          "chunk_id": "it_security_policy.md_1",
+          "snippet": "## 3. Personal Laptop Restrictions\nEmployees should not use personal laptops for regular office work.\n\nPersonal laptop use is allowed only when:\n- there is a temporary business need\n- manager approval"
+        },
+        {
+          "source_file": "it_security_policy.md",
+          "policy_domain": "IT_SECURITY",
+          "chunk_id": "it_security_policy.md_1",
+          "snippet": "## 3. Personal Laptop Restrictions\nEmployees should not use personal laptops for regular office work.\n\nPersonal laptop use is allowed only when:\n- there is a temporary business need\n- manager approval"
+        }
+      ],
+      "answerability": "ANSWERED",
+      "confidence": "HIGH",
+      "recommended_next_step": "Submit with manager approval if required."
+    },
+    "evaluation": {
+      "score": 7.5,
+      "breakdown": {
+        "grounding": 2,
+        "citations": 2,
+        "policy_match": 1.5,
+        "clarity": 2,
+        "hallucination_penalty": 0
+      },
+      "feedback": "Good but minor improvements needed"
+    },
+    "timestamp": "2026-06-19 11:54:34.659538"
+  },
+  {
+    "question": "What approvals are needed for international travel?",
+    "result": {
+      "answer": "chunk_id: 5, source_file: International Business Travel \nInternational business travel requires: \n- reporting manager approval \n- business unit head approval \n- finance approval \n- travel desk confirmation before ticket booking.",
+      "policy_basis": [
+        "TRAVEL mentions travel_policy.md_1",
+        "TRAVEL mentions travel_policy.md_1",
+        "TRAVEL mentions travel_policy.md_1",
+        "TRAVEL mentions travel_policy.md_1"
+      ],
+      "sources": [
+        {
+          "source_file": "travel_policy.md",
+          "policy_domain": "TRAVEL",
+          "chunk_id": "travel_policy.md_1",
+          "snippet": "For same-day domestic travel:\n- manager approval is required before travel\n- meal reimbursement is governed by the Reimbursement Policy\n- local transport reimbursement requires receipts\n- hotel reimbu"
+        },
+        {
+          "source_file": "travel_policy.md",
+          "policy_domain": "TRAVEL",
+          "chunk_id": "travel_policy.md_1",
+          "snippet": "For same-day domestic travel:\n- manager approval is required before travel\n- meal reimbursement is governed by the Reimbursement Policy\n- local transport reimbursement requires receipts\n- hotel reimbu"
+        },
+        {
+          "source_file": "travel_policy.md",
+          "policy_domain": "TRAVEL",
+          "chunk_id": "travel_policy.md_1",
+          "snippet": "For same-day domestic travel:\n- manager approval is required before travel\n- meal reimbursement is governed by the Reimbursement Policy\n- local transport reimbursement requires receipts\n- hotel reimbu"
+        },
+        {
+          "source_file": "travel_policy.md",
+          "policy_domain": "TRAVEL",
+          "chunk_id": "travel_policy.md_1",
+          "snippet": "For same-day domestic travel:\n- manager approval is required before travel\n- meal reimbursement is governed by the Reimbursement Policy\n- local transport reimbursement requires receipts\n- hotel reimbu"
+        }
+      ],
+      "answerability": "ANSWERED",
+      "confidence": "HIGH",
+      "recommended_next_step": "Submit with manager approval if required."
+    },
+    "evaluation": {
+      "score": 7.5,
+      "breakdown": {
+        "grounding": 2,
+        "citations": 2,
+        "policy_match": 1.5,
+        "clarity": 2,
+        "hallucination_penalty": 0
+      },
+      "feedback": "Good but minor improvements needed"
+    },
+    "timestamp": "2026-06-19 11:55:10.474487"
+  },
+  {
+    "question": "Can customer data be uploaded to a public AI tool?",
+    "result": {
+      "answer": "NOT FOUND (chunk_id: NOT PROVIDED, source_file: NOT PROVIDED) \n\nHowever, according to the provided context (chunk_id: NOT PROVIDED, source_file: NOT PROVIDED), Confidential information must not be entered into public AI systems, and customer names and contact details are considered confidential information. Therefore, it can be inferred that customer data should not be uploaded to a public AI tool.",
+      "policy_basis": [
+        "AI_USAGE mentions ai_usage_policy.md_1",
+        "AI_USAGE mentions ai_usage_policy.md_1",
+        "AI_USAGE mentions ai_usage_policy.md_1",
+        "AI_USAGE mentions ai_usage_policy.md_1"
+      ],
+      "sources": [
+        {
+          "source_file": "ai_usage_policy.md",
+          "policy_domain": "AI_USAGE",
+          "chunk_id": "ai_usage_policy.md_1",
+          "snippet": "Customer data may be used with an approved internal AI tool only if:\n- the use case is approved by the AI Governance Committee\n- data minimization is followed\n- access controls are applied\n- the outpu"
+        },
+        {
+          "source_file": "ai_usage_policy.md",
+          "policy_domain": "AI_USAGE",
+          "chunk_id": "ai_usage_policy.md_1",
+          "snippet": "Customer data may be used with an approved internal AI tool only if:\n- the use case is approved by the AI Governance Committee\n- data minimization is followed\n- access controls are applied\n- the outpu"
+        },
+        {
+          "source_file": "ai_usage_policy.md",
+          "policy_domain": "AI_USAGE",
+          "chunk_id": "ai_usage_policy.md_1",
+          "snippet": "Customer data may be used with an approved internal AI tool only if:\n- the use case is approved by the AI Governance Committee\n- data minimization is followed\n- access controls are applied\n- the outpu"
+        },
+        {
+          "source_file": "ai_usage_policy.md",
+          "policy_domain": "AI_USAGE",
+          "chunk_id": "ai_usage_policy.md_1",
+          "snippet": "Customer data may be used with an approved internal AI tool only if:\n- the use case is approved by the AI Governance Committee\n- data minimization is followed\n- access controls are applied\n- the outpu"
+        }
+      ],
+      "answerability": "ANSWERED",
+      "confidence": "HIGH",
+      "recommended_next_step": "Submit with manager approval if required."
+    },
+    "evaluation": {
+      "score": 7.5,
+      "breakdown": {
+        "grounding": 2,
+        "citations": 2,
+        "policy_match": 1.5,
+        "clarity": 2,
+        "hallucination_penalty": 0
+      },
+      "feedback": "Good but minor improvements needed"
+    },
+    "timestamp": "2026-06-19 11:55:51.018235"
+  },
+  {
+    "question": "Will my reimbursement definitely be approved?",
+    "result": {
+      "answer": "chunk_id: 2, source_file: Reimbursement Policy \nReimbursement approval is not guaranteed. Finance may reject claims that do not meet policy conditions.",
+      "policy_basis": [
+        "REIMBURSEMENT mentions reimbursement_policy.md_0",
+        "REIMBURSEMENT mentions reimbursement_policy.md_0",
+        "REIMBURSEMENT mentions reimbursement_policy.md_0",
+        "REIMBURSEMENT mentions reimbursement_policy.md_0"
+      ],
+      "sources": [
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_0",
+          "snippet": "# Reimbursement Policy\n**Policy ID:** FIN-REIM-001\n**Version:** 1.0\n**Effective Date:** 2026-01-01\n**Policy Owner:** Finance\n\n## 1. Purpose\nThis policy defines reimbursement eligibility, documentation"
+        },
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_0",
+          "snippet": "# Reimbursement Policy\n**Policy ID:** FIN-REIM-001\n**Version:** 1.0\n**Effective Date:** 2026-01-01\n**Policy Owner:** Finance\n\n## 1. Purpose\nThis policy defines reimbursement eligibility, documentation"
+        },
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_0",
+          "snippet": "# Reimbursement Policy\n**Policy ID:** FIN-REIM-001\n**Version:** 1.0\n**Effective Date:** 2026-01-01\n**Policy Owner:** Finance\n\n## 1. Purpose\nThis policy defines reimbursement eligibility, documentation"
+        },
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_0",
+          "snippet": "# Reimbursement Policy\n**Policy ID:** FIN-REIM-001\n**Version:** 1.0\n**Effective Date:** 2026-01-01\n**Policy Owner:** Finance\n\n## 1. Purpose\nThis policy defines reimbursement eligibility, documentation"
+        }
+      ],
+      "answerability": "ANSWERED",
+      "confidence": "HIGH",
+      "recommended_next_step": "Submit with manager approval if required."
+    },
+    "evaluation": {
+      "score": 7.5,
+      "breakdown": {
+        "grounding": 2,
+        "citations": 2,
+        "policy_match": 1.5,
+        "clarity": 2,
+        "hallucination_penalty": 0
+      },
+      "feedback": "Good but minor improvements needed"
+    },
+    "timestamp": "2026-06-19 11:56:26.718069"
+  },
+  {
+    "question": "What should I do if the policy does not mention my scenario?",
+    "result": {
+      "answer": "chunk_id: NOT PROVIDED, source_file: NOT PROVIDED. \nIf the policy does not mention your specific scenario, the provided context does not offer guidance on what to do in such cases. Therefore, the information is NOT FOUND.",
+      "policy_basis": [
+        "TRAVEL mentions travel_policy.md_0",
+        "TRAVEL mentions travel_policy.md_0",
+        "TRAVEL mentions travel_policy.md_0",
+        "TRAVEL mentions travel_policy.md_0"
+      ],
+      "sources": [
+        {
+          "source_file": "travel_policy.md",
+          "policy_domain": "TRAVEL",
+          "chunk_id": "travel_policy.md_0",
+          "snippet": "# Travel Policy\n**Policy ID:** TRV-001\n**Version:** 1.0\n**Effective Date:** 2026-01-01\n**Policy Owner:** Administration and Finance\n\n## 1. Purpose\nThis policy defines rules for domestic travel, intern"
+        },
+        {
+          "source_file": "travel_policy.md",
+          "policy_domain": "TRAVEL",
+          "chunk_id": "travel_policy.md_0",
+          "snippet": "# Travel Policy\n**Policy ID:** TRV-001\n**Version:** 1.0\n**Effective Date:** 2026-01-01\n**Policy Owner:** Administration and Finance\n\n## 1. Purpose\nThis policy defines rules for domestic travel, intern"
+        },
+        {
+          "source_file": "travel_policy.md",
+          "policy_domain": "TRAVEL",
+          "chunk_id": "travel_policy.md_0",
+          "snippet": "# Travel Policy\n**Policy ID:** TRV-001\n**Version:** 1.0\n**Effective Date:** 2026-01-01\n**Policy Owner:** Administration and Finance\n\n## 1. Purpose\nThis policy defines rules for domestic travel, intern"
+        },
+        {
+          "source_file": "travel_policy.md",
+          "policy_domain": "TRAVEL",
+          "chunk_id": "travel_policy.md_0",
+          "snippet": "# Travel Policy\n**Policy ID:** TRV-001\n**Version:** 1.0\n**Effective Date:** 2026-01-01\n**Policy Owner:** Administration and Finance\n\n## 1. Purpose\nThis policy defines rules for domestic travel, intern"
+        }
+      ],
+      "answerability": "ANSWERED",
+      "confidence": "HIGH",
+      "recommended_next_step": "Submit with manager approval if required."
+    },
+    "evaluation": {
+      "score": 7.5,
+      "breakdown": {
+        "grounding": 2,
+        "citations": 2,
+        "policy_match": 1.5,
+        "clarity": 2,
+        "hallucination_penalty": 0
+      },
+      "feedback": "Good but minor improvements needed"
+    },
+    "timestamp": "2026-06-19 11:57:09.782010"
+  },
+  {
+    "question": "Can I claim meals during same-day business travel",
+    "result": {
+      "answer": "According to chunk_id ## 5. Meal Reimbursement (source_file: NOT FOUND), yes, meal reimbursement is allowed for approved business travel, including same-day domestic business travel, up to INR 800 per day, provided valid receipts are submitted.",
+      "policy_basis": [
+        "reimbursement_policy.md_1",
+        "reimbursement_policy.md_1",
+        "reimbursement_policy.md_1",
+        "reimbursement_policy.md_1"
+      ],
+      "sources": [
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_1",
+          "snippet": "Late claims require finance approval and may be rejected if there is no valid reason for delay.\n\n## 4. Receipt Requirements\nReceipts are mandatory for:\n- hotel stays\n- local transport\n- meals above INR 500\n- client entertainment\n- any claim above INR 1,000\n\nReceipts must clearly show date, amount, v"
+        },
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_1",
+          "snippet": "Late claims require finance approval and may be rejected if there is no valid reason for delay.\n\n## 4. Receipt Requirements\nReceipts are mandatory for:\n- hotel stays\n- local transport\n- meals above INR 500\n- client entertainment\n- any claim above INR 1,000\n\nReceipts must clearly show date, amount, v"
+        },
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_1",
+          "snippet": "Late claims require finance approval and may be rejected if there is no valid reason for delay.\n\n## 4. Receipt Requirements\nReceipts are mandatory for:\n- hotel stays\n- local transport\n- meals above INR 500\n- client entertainment\n- any claim above INR 1,000\n\nReceipts must clearly show date, amount, v"
+        },
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_1",
+          "snippet": "Late claims require finance approval and may be rejected if there is no valid reason for delay.\n\n## 4. Receipt Requirements\nReceipts are mandatory for:\n- hotel stays\n- local transport\n- meals above INR 500\n- client entertainment\n- any claim above INR 1,000\n\nReceipts must clearly show date, amount, v"
+        }
+      ],
+      "answerability": "ANSWERED",
+      "confidence": "HIGH",
+      "recommended_next_step": "Follow policy rules and get required approvals if applicable."
+    },
+    "evaluation": {
+      "score": 7.5,
+      "breakdown": {
+        "grounding": 2,
+        "citations": 2,
+        "policy_match": 1.5,
+        "clarity": 2,
+        "hallucination_penalty": 0
+      },
+      "feedback": "Good but minor improvements needed"
+    },
+    "timestamp": "2026-06-19 13:54:54.175409"
+  }
+]
