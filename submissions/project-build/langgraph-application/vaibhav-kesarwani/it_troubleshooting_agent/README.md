@@ -111,6 +111,12 @@ Did the basic testing using the `deepeval` framework.
 
 ---
 
+## Graph API Diagram
+
+![Custom_agent](./assets/custom_agent2.png)
+
+---
+
 ## Technology Stack
 
 | Component              | Technology            |
