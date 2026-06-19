@@ -1,15 +1,20 @@
-from langchain.tools.retriever import create_retriever_tool
 from db_utils import run_query
 from retrievers import get_vector_store
+import json
 
+try:
+    retriever = get_vector_store()
+except Exception as e:
+    print(f"Warning: Vector store not initialized: {e}")
+    retriever = None
 
-retriever = get_vector_store()
-
-# unfortunately Embedding model is not working else the whole logic is as per the Instruction.
 def retrieve_troubleshooting_steps(query: str):
     """Retrieve troubleshooting steps from knowledge base"""
+    if not retriever:
+        return "No KB available"
     docs = retriever.invoke(query)
-    return "\n\n".join([f"Source: {doc.metadata.get('source_file')}\n{doc.page_content}" for doc in docs])
+    response = "\n\n".join([f"Source: {doc.metadata.get('source_file', 'unknown')}\n{doc.page_content[:400]}" for doc in docs])
+    return response if response else "No matching documents found"
 
 
 def get_user_profile(user_id: str):
