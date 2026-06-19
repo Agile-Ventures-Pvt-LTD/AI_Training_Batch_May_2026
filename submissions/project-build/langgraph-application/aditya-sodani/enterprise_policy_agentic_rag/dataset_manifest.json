@@ -1,0 +1,13 @@
+{
+  "dataset_name": "Enterprise Policy Agentic RAG Sample Dataset",
+  "policy_files": [
+    "hr_leave_policy.md",
+    "travel_policy.md",
+    "reimbursement_policy.md",
+    "it_security_policy.md",
+    "ai_usage_policy.md"
+  ],
+  "benchmark_file": "benchmark_questions.json",
+  "reference_file": "expected_outputs_reference.md",
+  "synthetic": true
+}
