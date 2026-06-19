@@ -1,0 +1,735 @@
+[
+  {
+    "timestamp": "2026-06-19T17:02:13.737840",
+    "source": "app-batch",
+    "count": 1,
+    "results": [
+      {
+        "timestamp": "2026-06-19T17:02:13.737840",
+        "query": "my vpn is not connectinggg",
+        "user_identifier": null,
+        "sample_id": null,
+        "result": {
+          "issue_type": "VPN",
+          "diagnosis_summary": "Issue classified as VPN (confidence=HIGH).",
+          "evidence_used": {
+            "kb_sources": [
+              "vpn_troubleshooting_guide.md",
+              "email_outlook_troubleshooting_guide.md",
+              "network_connectivity_guide.md"
+            ],
+            "tools_used": [
+              "classify_issue",
+              "retrieve_troubleshooting_steps",
+              "get_user_profile",
+              "get_device_status",
+              "check_known_incidents",
+              "run_diagnostic_check",
+              "get_ticket_details"
+            ],
+            "diagnostic_signals": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ]
+          },
+          "recommended_steps": [
+            "Consult KB: # VPN Troubleshooting Guide\n**Document ID:** IT-KB-VPN-001\n**Owner:** IT Network Support\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nEmployees may report that VPN is not connecting, disconnects frequently, asks for MFA repeatedly, or shows authentication failure.\n\n## 2. First-Level Checks",
+            "Consult KB: # Outlook and Email Troubleshooting Guide\n**Document ID:** IT-KB-EMAIL-001\n**Owner:** Messaging Support\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nEmployees may report Outlook not syncing, email stuck in outbox, missing emails, repeated password prompts, calendar not updating, or mobile e",
+            "Consult KB: ked.\n3. Ask the user to retry MFA approval.\n4. If MFA fails repeatedly, route to Identity Access Management.\n\n## 4. Connection Timeout\nIf VPN shows timeout:\n1. Ask the user to switch network, if possible.\n2. Check whether public Wi-Fi is blocking VPN.\n3. Ask the user to restart VPN client.\n4. Check",
+            "Verify VPN gateway reachability and ask user to switch networks."
+          ],
+          "escalation_required": false,
+          "escalation_group": "",
+          "safety_notes": [],
+          "confidence": "HIGH",
+          "ticket_summary": {
+            "ticket_summary": "Ticket for Unknown user: VPN",
+            "issue_type": "VPN",
+            "observed_signals": [],
+            "diagnostics_checked": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ],
+            "recommended_assignment_group": "",
+            "next_action": "Consult KB: # VPN Troubleshooting Guide\n**Document ID:** IT-KB-VPN-001\n**Owner:** IT Network Support\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nEmployees may report that VPN is not connecting, disconnects frequently, asks for MFA repeatedly, or shows authentication failure.\n\n## 2. First-Level Checks"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-19T17:14:59.095097",
+    "source": "app-batch",
+    "count": 2,
+    "results": [
+      {
+        "timestamp": "2026-06-19T17:14:59.093974",
+        "query": "David cannot login and password reset email is not received.",
+        "user_identifier": null,
+        "sample_id": null,
+        "result": {
+          "issue_type": "OUTLOOK_EMAIL",
+          "diagnosis_summary": "Issue classified as OUTLOOK_EMAIL (confidence=MEDIUM).",
+          "evidence_used": {
+            "kb_sources": [
+              "password_reset_guide.md",
+              "email_outlook_troubleshooting_guide.md",
+              "network_connectivity_guide.md"
+            ],
+            "tools_used": [
+              "classify_issue",
+              "retrieve_troubleshooting_steps",
+              "get_user_profile",
+              "get_device_status",
+              "check_known_incidents",
+              "run_diagnostic_check",
+              "get_ticket_details"
+            ],
+            "diagnostic_signals": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ]
+          },
+          "recommended_steps": [
+            "Consult KB: # Password Reset and Account Access Guide\n**Document ID:** IT-KB-PWD-001\n**Owner:** Identity Access Management\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nUsers may report forgotten password, password reset link not received, account locked, MFA failure, or inability to access company port",
+            "Consult KB: # Outlook and Email Troubleshooting Guide\n**Document ID:** IT-KB-EMAIL-001\n**Owner:** Messaging Support\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nEmployees may report Outlook not syncing, email stuck in outbox, missing emails, repeated password prompts, calendar not updating, or mobile e",
+            "Consult KB: to Messaging Support if webmail also fails.\n\n## 4. Email Stuck in Outbox\nIf email is stuck in outbox:\n- Check attachment size.\n- Company maximum attachment size is 25 MB.\n- Ask user to remove large attachments and use approved file sharing.\n- Restart Outlook.\n- Check mailbox connectivity.\n\n## 5. Rep",
+            "Verify VPN gateway reachability and ask user to switch networks."
+          ],
+          "escalation_required": false,
+          "escalation_group": "",
+          "safety_notes": [],
+          "confidence": "MEDIUM",
+          "ticket_summary": {
+            "ticket_summary": "Ticket for Unknown user: OUTLOOK_EMAIL",
+            "issue_type": "OUTLOOK_EMAIL",
+            "observed_signals": [],
+            "diagnostics_checked": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ],
+            "recommended_assignment_group": "",
+            "next_action": "Consult KB: # Password Reset and Account Access Guide\n**Document ID:** IT-KB-PWD-001\n**Owner:** Identity Access Management\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nUsers may report forgotten password, password reset link not received, account locked, MFA failure, or inability to access company port"
+          }
+        }
+      },
+      {
+        "timestamp": "2026-06-19T17:14:59.095097",
+        "query": "should be done?",
+        "user_identifier": null,
+        "sample_id": null,
+        "result": {
+          "issue_type": "UNKNOWN",
+          "diagnosis_summary": "Issue classified as UNKNOWN (confidence=LOW).",
+          "evidence_used": {
+            "kb_sources": [
+              "password_reset_guide.md",
+              "laptop_performance_guide.md",
+              "printer_troubleshooting_guide.md"
+            ],
+            "tools_used": [
+              "classify_issue",
+              "retrieve_troubleshooting_steps",
+              "get_user_profile",
+              "get_device_status",
+              "check_known_incidents",
+              "run_diagnostic_check",
+              "get_ticket_details"
+            ],
+            "diagnostic_signals": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ]
+          },
+          "recommended_steps": [
+            "Consult KB: # Password Reset and Account Access Guide\n**Document ID:** IT-KB-PWD-001\n**Owner:** Identity Access Management\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nUsers may report forgotten password, password reset link not received, account locked, MFA failure, or inability to access company port",
+            "Consult KB: Endpoint Support if slowness continues after cleanup.\n\n## 4. High CPU or Memory\nIf CPU or memory is consistently high:\n- Identify top resource-consuming processes.\n- Close unnecessary applications.\n- Check for browser tabs consuming excessive memory.\n- Run malware scan if suspicious process is detec",
+            "Consult KB: # 4. Account Locked\nIf account is locked:\n- User should wait 15 minutes after multiple failed attempts.\n- If urgent, Identity Access Management can unlock the account after verification.\n- The support agent must never ask for the user's current password.\n\n## 5. MFA Failure\nIf MFA is failing:\n1. Conf",
+            "Verify VPN gateway reachability and ask user to switch networks."
+          ],
+          "escalation_required": false,
+          "escalation_group": "",
+          "safety_notes": [],
+          "confidence": "LOW",
+          "ticket_summary": {
+            "ticket_summary": "Ticket for Unknown user: UNKNOWN",
+            "issue_type": "UNKNOWN",
+            "observed_signals": [],
+            "diagnostics_checked": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ],
+            "recommended_assignment_group": "",
+            "next_action": "Consult KB: # Password Reset and Account Access Guide\n**Document ID:** IT-KB-PWD-001\n**Owner:** Identity Access Management\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nUsers may report forgotten password, password reset link not received, account locked, MFA failure, or inability to access company port"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-19T17:16:09.182800",
+    "source": "app-batch",
+    "count": 2,
+    "results": [
+      {
+        "timestamp": "2026-06-19T17:16:09.182800",
+        "query": "avid cannot login and password reset email is not received. What",
+        "user_identifier": null,
+        "sample_id": null,
+        "result": {
+          "issue_type": "OUTLOOK_EMAIL",
+          "diagnosis_summary": "Issue classified as OUTLOOK_EMAIL (confidence=MEDIUM).",
+          "evidence_used": {
+            "kb_sources": [
+              "password_reset_guide.md",
+              "email_outlook_troubleshooting_guide.md",
+              "network_connectivity_guide.md"
+            ],
+            "tools_used": [
+              "classify_issue",
+              "retrieve_troubleshooting_steps",
+              "get_user_profile",
+              "get_device_status",
+              "check_known_incidents",
+              "run_diagnostic_check",
+              "get_ticket_details"
+            ],
+            "diagnostic_signals": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ]
+          },
+          "recommended_steps": [
+            "Consult KB: # Password Reset and Account Access Guide\n**Document ID:** IT-KB-PWD-001\n**Owner:** Identity Access Management\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nUsers may report forgotten password, password reset link not received, account locked, MFA failure, or inability to access company port",
+            "Consult KB: # Outlook and Email Troubleshooting Guide\n**Document ID:** IT-KB-EMAIL-001\n**Owner:** Messaging Support\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nEmployees may report Outlook not syncing, email stuck in outbox, missing emails, repeated password prompts, calendar not updating, or mobile e",
+            "Consult KB: to Messaging Support if webmail also fails.\n\n## 4. Email Stuck in Outbox\nIf email is stuck in outbox:\n- Check attachment size.\n- Company maximum attachment size is 25 MB.\n- Ask user to remove large attachments and use approved file sharing.\n- Restart Outlook.\n- Check mailbox connectivity.\n\n## 5. Rep",
+            "Verify VPN gateway reachability and ask user to switch networks."
+          ],
+          "escalation_required": false,
+          "escalation_group": "",
+          "safety_notes": [],
+          "confidence": "MEDIUM",
+          "ticket_summary": {
+            "ticket_summary": "Ticket for Unknown user: OUTLOOK_EMAIL",
+            "issue_type": "OUTLOOK_EMAIL",
+            "observed_signals": [],
+            "diagnostics_checked": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ],
+            "recommended_assignment_group": "",
+            "next_action": "Consult KB: # Password Reset and Account Access Guide\n**Document ID:** IT-KB-PWD-001\n**Owner:** Identity Access Management\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nUsers may report forgotten password, password reset link not received, account locked, MFA failure, or inability to access company port"
+          }
+        }
+      },
+      {
+        "timestamp": "2026-06-19T17:16:09.182800",
+        "query": "should be done?",
+        "user_identifier": null,
+        "sample_id": null,
+        "result": {
+          "issue_type": "UNKNOWN",
+          "diagnosis_summary": "Issue classified as UNKNOWN (confidence=LOW).",
+          "evidence_used": {
+            "kb_sources": [
+              "password_reset_guide.md",
+              "laptop_performance_guide.md",
+              "printer_troubleshooting_guide.md"
+            ],
+            "tools_used": [
+              "classify_issue",
+              "retrieve_troubleshooting_steps",
+              "get_user_profile",
+              "get_device_status",
+              "check_known_incidents",
+              "run_diagnostic_check",
+              "get_ticket_details"
+            ],
+            "diagnostic_signals": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ]
+          },
+          "recommended_steps": [
+            "Consult KB: # Password Reset and Account Access Guide\n**Document ID:** IT-KB-PWD-001\n**Owner:** Identity Access Management\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nUsers may report forgotten password, password reset link not received, account locked, MFA failure, or inability to access company port",
+            "Consult KB: Endpoint Support if slowness continues after cleanup.\n\n## 4. High CPU or Memory\nIf CPU or memory is consistently high:\n- Identify top resource-consuming processes.\n- Close unnecessary applications.\n- Check for browser tabs consuming excessive memory.\n- Run malware scan if suspicious process is detec",
+            "Consult KB: # 4. Account Locked\nIf account is locked:\n- User should wait 15 minutes after multiple failed attempts.\n- If urgent, Identity Access Management can unlock the account after verification.\n- The support agent must never ask for the user's current password.\n\n## 5. MFA Failure\nIf MFA is failing:\n1. Conf",
+            "Verify VPN gateway reachability and ask user to switch networks."
+          ],
+          "escalation_required": false,
+          "escalation_group": "",
+          "safety_notes": [],
+          "confidence": "LOW",
+          "ticket_summary": {
+            "ticket_summary": "Ticket for Unknown user: UNKNOWN",
+            "issue_type": "UNKNOWN",
+            "observed_signals": [],
+            "diagnostics_checked": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ],
+            "recommended_assignment_group": "",
+            "next_action": "Consult KB: # Password Reset and Account Access Guide\n**Document ID:** IT-KB-PWD-001\n**Owner:** Identity Access Management\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nUsers may report forgotten password, password reset link not received, account locked, MFA failure, or inability to access company port"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-19T17:23:03.883026",
+    "source": "app-batch",
+    "count": 1,
+    "results": [
+      {
+        "timestamp": "2026-06-19T17:23:03.883026",
+        "query": "which active known incident will affect users?",
+        "user_identifier": null,
+        "sample_id": null,
+        "result": {
+          "issue_type": "UNKNOWN",
+          "diagnosis_summary": "Issue classified as UNKNOWN (confidence=LOW).",
+          "evidence_used": {
+            "kb_sources": [
+              "network_connectivity_guide.md",
+              "vpn_troubleshooting_guide.md"
+            ],
+            "tools_used": [
+              "classify_issue",
+              "retrieve_troubleshooting_steps",
+              "get_user_profile",
+              "get_device_status",
+              "check_known_incidents",
+              "run_diagnostic_check",
+              "get_ticket_details"
+            ],
+            "diagnostic_signals": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ]
+          },
+          "recommended_steps": [
+            "Consult KB: t mobile hotspot.\n5. Escalate to Network Support if issue affects multiple users.\n\n## 4. Internal Application Not Accessible\nIf public internet works but internal app fails:\n- Confirm whether VPN is connected.\n- Check known incidents for the application.\n- Check whether the app requires corporate ne",
+            "Consult KB: ked.\n3. Ask the user to retry MFA approval.\n4. If MFA fails repeatedly, route to Identity Access Management.\n\n## 4. Connection Timeout\nIf VPN shows timeout:\n1. Ask the user to switch network, if possible.\n2. Check whether public Wi-Fi is blocking VPN.\n3. Ask the user to restart VPN client.\n4. Check",
+            "Consult KB: # Network Connectivity Troubleshooting Guide\n**Document ID:** IT-KB-NET-001\n**Owner:** Network Support\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nEmployees may report no internet, slow internet, application connectivity errors, DNS failure, Wi-Fi disconnects, or inability to access intern",
+            "Verify VPN gateway reachability and ask user to switch networks."
+          ],
+          "escalation_required": false,
+          "escalation_group": "",
+          "safety_notes": [],
+          "confidence": "LOW",
+          "ticket_summary": {
+            "ticket_summary": "Ticket for Unknown user: UNKNOWN",
+            "issue_type": "UNKNOWN",
+            "observed_signals": [],
+            "diagnostics_checked": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ],
+            "recommended_assignment_group": "",
+            "next_action": "Consult KB: t mobile hotspot.\n5. Escalate to Network Support if issue affects multiple users.\n\n## 4. Internal Application Not Accessible\nIf public internet works but internal app fails:\n- Confirm whether VPN is connected.\n- Check known incidents for the application.\n- Check whether the app requires corporate ne"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-19T17:29:37.711980",
+    "source": "app-batch",
+    "count": 1,
+    "results": [
+      {
+        "timestamp": "2026-06-19T17:29:37.711980",
+        "query": "my email is slow. fix it.",
+        "user_identifier": null,
+        "sample_id": null,
+        "result": {
+          "issue_type": "OUTLOOK_EMAIL",
+          "diagnosis_summary": "Issue classified as OUTLOOK_EMAIL (confidence=MEDIUM).",
+          "evidence_used": {
+            "kb_sources": [
+              "email_outlook_troubleshooting_guide.md",
+              "laptop_performance_guide.md",
+              "password_reset_guide.md"
+            ],
+            "tools_used": [
+              "classify_issue",
+              "retrieve_troubleshooting_steps",
+              "get_user_profile",
+              "get_device_status",
+              "check_known_incidents",
+              "run_diagnostic_check",
+              "get_ticket_details"
+            ],
+            "diagnostic_signals": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ]
+          },
+          "recommended_steps": [
+            "Consult KB: # Outlook and Email Troubleshooting Guide\n**Document ID:** IT-KB-EMAIL-001\n**Owner:** Messaging Support\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nEmployees may report Outlook not syncing, email stuck in outbox, missing emails, repeated password prompts, calendar not updating, or mobile e",
+            "Consult KB: Endpoint Support if slowness continues after cleanup.\n\n## 4. High CPU or Memory\nIf CPU or memory is consistently high:\n- Identify top resource-consuming processes.\n- Close unnecessary applications.\n- Check for browser tabs consuming excessive memory.\n- Run malware scan if suspicious process is detec",
+            "Consult KB: # Password Reset and Account Access Guide\n**Document ID:** IT-KB-PWD-001\n**Owner:** Identity Access Management\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nUsers may report forgotten password, password reset link not received, account locked, MFA failure, or inability to access company port",
+            "Verify VPN gateway reachability and ask user to switch networks."
+          ],
+          "escalation_required": false,
+          "escalation_group": "",
+          "safety_notes": [],
+          "confidence": "MEDIUM",
+          "ticket_summary": {
+            "ticket_summary": "Ticket for Unknown user: OUTLOOK_EMAIL",
+            "issue_type": "OUTLOOK_EMAIL",
+            "observed_signals": [],
+            "diagnostics_checked": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ],
+            "recommended_assignment_group": "",
+            "next_action": "Consult KB: # Outlook and Email Troubleshooting Guide\n**Document ID:** IT-KB-EMAIL-001\n**Owner:** Messaging Support\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nEmployees may report Outlook not syncing, email stuck in outbox, missing emails, repeated password prompts, calendar not updating, or mobile e"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-19T17:33:36.679948",
+    "source": "app-batch",
+    "count": 1,
+    "results": [
+      {
+        "timestamp": "2026-06-19T17:33:36.679948",
+        "query": "create a ticket summary for rahul's laptop performace issue.",
+        "user_identifier": null,
+        "sample_id": null,
+        "result": {
+          "issue_type": "UNKNOWN",
+          "diagnosis_summary": "Issue classified as UNKNOWN (confidence=LOW).",
+          "evidence_used": {
+            "kb_sources": [
+              "email_outlook_troubleshooting_guide.md",
+              "laptop_performance_guide.md",
+              "password_reset_guide.md"
+            ],
+            "tools_used": [
+              "classify_issue",
+              "retrieve_troubleshooting_steps",
+              "get_user_profile",
+              "get_device_status",
+              "check_known_incidents",
+              "run_diagnostic_check",
+              "get_ticket_details"
+            ],
+            "diagnostic_signals": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ]
+          },
+          "recommended_steps": [
+            "Consult KB: to Messaging Support if webmail also fails.\n\n## 4. Email Stuck in Outbox\nIf email is stuck in outbox:\n- Check attachment size.\n- Company maximum attachment size is 25 MB.\n- Ask user to remove large attachments and use approved file sharing.\n- Restart Outlook.\n- Check mailbox connectivity.\n\n## 5. Rep",
+            "Consult KB: # Laptop Performance Troubleshooting Guide\n**Document ID:** IT-KB-LAPTOP-001\n**Owner:** Endpoint Support\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nEmployees may report slow startup, high CPU, high memory usage, freezing, overheating, poor battery performance, or applications taking too l",
+            "Consult KB: Endpoint Support if slowness continues after cleanup.\n\n## 4. High CPU or Memory\nIf CPU or memory is consistently high:\n- Identify top resource-consuming processes.\n- Close unnecessary applications.\n- Check for browser tabs consuming excessive memory.\n- Run malware scan if suspicious process is detec",
+            "Verify VPN gateway reachability and ask user to switch networks."
+          ],
+          "escalation_required": false,
+          "escalation_group": "",
+          "safety_notes": [],
+          "confidence": "LOW",
+          "ticket_summary": {
+            "ticket_summary": "Ticket for Unknown user: UNKNOWN",
+            "issue_type": "UNKNOWN",
+            "observed_signals": [],
+            "diagnostics_checked": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ],
+            "recommended_assignment_group": "",
+            "next_action": "Consult KB: to Messaging Support if webmail also fails.\n\n## 4. Email Stuck in Outbox\nIf email is stuck in outbox:\n- Check attachment size.\n- Company maximum attachment size is 25 MB.\n- Ask user to remove large attachments and use approved file sharing.\n- Restart Outlook.\n- Check mailbox connectivity.\n\n## 5. Rep"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-19T17:37:22.748784",
+    "source": "app-batch",
+    "count": 1,
+    "results": [
+      {
+        "timestamp": "2026-06-19T17:37:22.748784",
+        "query": "Outlook is not syncing for Emily but webmail works. What is the next step?",
+        "user_identifier": null,
+        "sample_id": null,
+        "result": {
+          "issue_type": "OUTLOOK_EMAIL",
+          "diagnosis_summary": "Issue classified as OUTLOOK_EMAIL (confidence=HIGH).",
+          "evidence_used": {
+            "kb_sources": [
+              "email_outlook_troubleshooting_guide.md",
+              "vpn_troubleshooting_guide.md",
+              "network_connectivity_guide.md"
+            ],
+            "tools_used": [
+              "classify_issue",
+              "retrieve_troubleshooting_steps",
+              "get_user_profile",
+              "get_device_status",
+              "check_known_incidents",
+              "run_diagnostic_check",
+              "get_ticket_details"
+            ],
+            "diagnostic_signals": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ]
+          },
+          "recommended_steps": [
+            "Consult KB: # Outlook and Email Troubleshooting Guide\n**Document ID:** IT-KB-EMAIL-001\n**Owner:** Messaging Support\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nEmployees may report Outlook not syncing, email stuck in outbox, missing emails, repeated password prompts, calendar not updating, or mobile e",
+            "Consult KB: # VPN Troubleshooting Guide\n**Document ID:** IT-KB-VPN-001\n**Owner:** IT Network Support\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nEmployees may report that VPN is not connecting, disconnects frequently, asks for MFA repeatedly, or shows authentication failure.\n\n## 2. First-Level Checks",
+            "Consult KB: t mobile hotspot.\n5. Escalate to Network Support if issue affects multiple users.\n\n## 4. Internal Application Not Accessible\nIf public internet works but internal app fails:\n- Confirm whether VPN is connected.\n- Check known incidents for the application.\n- Check whether the app requires corporate ne",
+            "Verify VPN gateway reachability and ask user to switch networks."
+          ],
+          "escalation_required": false,
+          "escalation_group": "",
+          "safety_notes": [],
+          "confidence": "HIGH",
+          "ticket_summary": {
+            "ticket_summary": "Ticket for Unknown user: OUTLOOK_EMAIL",
+            "issue_type": "OUTLOOK_EMAIL",
+            "observed_signals": [],
+            "diagnostics_checked": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ],
+            "recommended_assignment_group": "",
+            "next_action": "Consult KB: # Outlook and Email Troubleshooting Guide\n**Document ID:** IT-KB-EMAIL-001\n**Owner:** Messaging Support\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nEmployees may report Outlook not syncing, email stuck in outbox, missing emails, repeated password prompts, calendar not updating, or mobile e"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-19T17:40:51.806694",
+    "source": "app-batch",
+    "count": 1,
+    "results": [
+      {
+        "timestamp": "2026-06-19T17:40:51.806694",
+        "query": "Sara's VPN disconnects frequently. What is the likely reason?",
+        "user_identifier": null,
+        "sample_id": null,
+        "result": {
+          "issue_type": "VPN",
+          "diagnosis_summary": "Issue classified as VPN (confidence=HIGH).",
+          "evidence_used": {
+            "kb_sources": [
+              "vpn_troubleshooting_guide.md",
+              "network_connectivity_guide.md",
+              "printer_troubleshooting_guide.md"
+            ],
+            "tools_used": [
+              "classify_issue",
+              "retrieve_troubleshooting_steps",
+              "get_user_profile",
+              "get_device_status",
+              "check_known_incidents",
+              "run_diagnostic_check",
+              "get_ticket_details"
+            ],
+            "diagnostic_signals": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ]
+          },
+          "recommended_steps": [
+            "Consult KB: # VPN Troubleshooting Guide\n**Document ID:** IT-KB-VPN-001\n**Owner:** IT Network Support\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nEmployees may report that VPN is not connecting, disconnects frequently, asks for MFA repeatedly, or shows authentication failure.\n\n## 2. First-Level Checks",
+            "Consult KB: ked.\n3. Ask the user to retry MFA approval.\n4. If MFA fails repeatedly, route to Identity Access Management.\n\n## 4. Connection Timeout\nIf VPN shows timeout:\n1. Ask the user to switch network, if possible.\n2. Check whether public Wi-Fi is blocking VPN.\n3. Ask the user to restart VPN client.\n4. Check",
+            "Consult KB: t mobile hotspot.\n5. Escalate to Network Support if issue affects multiple users.\n\n## 4. Internal Application Not Accessible\nIf public internet works but internal app fails:\n- Confirm whether VPN is connected.\n- Check known incidents for the application.\n- Check whether the app requires corporate ne",
+            "Verify VPN gateway reachability and ask user to switch networks."
+          ],
+          "escalation_required": false,
+          "escalation_group": "",
+          "safety_notes": [],
+          "confidence": "HIGH",
+          "ticket_summary": {
+            "ticket_summary": "Ticket for Unknown user: VPN",
+            "issue_type": "VPN",
+            "observed_signals": [],
+            "diagnostics_checked": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ],
+            "recommended_assignment_group": "",
+            "next_action": "Consult KB: # VPN Troubleshooting Guide\n**Document ID:** IT-KB-VPN-001\n**Owner:** IT Network Support\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nEmployees may report that VPN is not connecting, disconnects frequently, asks for MFA repeatedly, or shows authentication failure.\n\n## 2. First-Level Checks"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-19T17:44:41.413926",
+    "source": "app-batch",
+    "count": 1,
+    "results": [
+      {
+        "timestamp": "2026-06-19T17:44:41.413926",
+        "query": "Priya's laptop is very slow after startup. Diagnose the likely issue.",
+        "user_identifier": null,
+        "sample_id": null,
+        "result": {
+          "issue_type": "LAPTOP_PERFORMANCE",
+          "diagnosis_summary": "Issue classified as LAPTOP_PERFORMANCE (confidence=MEDIUM).",
+          "evidence_used": {
+            "kb_sources": [
+              "vpn_troubleshooting_guide.md",
+              "laptop_performance_guide.md",
+              "network_connectivity_guide.md"
+            ],
+            "tools_used": [
+              "classify_issue",
+              "retrieve_troubleshooting_steps",
+              "get_user_profile",
+              "get_device_status",
+              "check_known_incidents",
+              "run_diagnostic_check",
+              "get_ticket_details"
+            ],
+            "diagnostic_signals": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ]
+          },
+          "recommended_steps": [
+            "Consult KB: # VPN Troubleshooting Guide\n**Document ID:** IT-KB-VPN-001\n**Owner:** IT Network Support\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nEmployees may report that VPN is not connecting, disconnects frequently, asks for MFA repeatedly, or shows authentication failure.\n\n## 2. First-Level Checks",
+            "Consult KB: # Laptop Performance Troubleshooting Guide\n**Document ID:** IT-KB-LAPTOP-001\n**Owner:** Endpoint Support\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nEmployees may report slow startup, high CPU, high memory usage, freezing, overheating, poor battery performance, or applications taking too l",
+            "Consult KB: t mobile hotspot.\n5. Escalate to Network Support if issue affects multiple users.\n\n## 4. Internal Application Not Accessible\nIf public internet works but internal app fails:\n- Confirm whether VPN is connected.\n- Check known incidents for the application.\n- Check whether the app requires corporate ne",
+            "Verify VPN gateway reachability and ask user to switch networks."
+          ],
+          "escalation_required": false,
+          "escalation_group": "",
+          "safety_notes": [],
+          "confidence": "MEDIUM",
+          "ticket_summary": {
+            "ticket_summary": "Ticket for Unknown user: LAPTOP_PERFORMANCE",
+            "issue_type": "LAPTOP_PERFORMANCE",
+            "observed_signals": [],
+            "diagnostics_checked": [
+              "user_id=",
+              "vpn_reachable=False",
+              "internet_reachable=True",
+              "webmail_reachable=True",
+              "internal_apps_reachable=False",
+              "account_locked=False",
+              "mfa_push_success=True"
+            ],
+            "recommended_assignment_group": "",
+            "next_action": "Consult KB: # VPN Troubleshooting Guide\n**Document ID:** IT-KB-VPN-001\n**Owner:** IT Network Support\n**Effective Date:** 2026-01-01\n\n## 1. Common Symptoms\nEmployees may report that VPN is not connecting, disconnects frequently, asks for MFA repeatedly, or shows authentication failure.\n\n## 2. First-Level Checks"
+          }
+        }
+      }
+    ]
+  }
+]
