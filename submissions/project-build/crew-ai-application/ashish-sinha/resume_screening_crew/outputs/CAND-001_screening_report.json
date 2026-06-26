@@ -1,0 +1,14 @@
+{
+  "status": "PARTIAL_OUTPUT_DUE_TO_RATE_LIMIT",
+  "executive_summary": "Pipeline execution was interrupted by API limits. Review raw logs.",
+  "strengths": [],
+  "gaps": [
+    "Unable to fully analyze profile due to token constraints."
+  ],
+  "overall_score": 0,
+  "percentage": 0.0,
+  "recommendation": "NEEDS_MANUAL_REVIEW",
+  "human_review_note": "This is an AI-assisted screening report based on the provided resume and job description. A human reviewer should validate the recommendation before making any recruitment decision.",
+  "candidate_id": "CAND-001",
+  "candidate_name": "Rohan Mehta"
+}
