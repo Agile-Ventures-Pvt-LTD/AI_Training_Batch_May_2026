@@ -1,0 +1,81 @@
+{
+  "destination": "Jaipur",
+  "region": "Rajasthan",
+  "country": "India",
+  "forecast_days": 3,
+  "current_weather": {
+    "temperature_c": 37.0,
+    "humidity": 37,
+    "precipitation_mm": 0.0,
+    "wind_speed_kmph": 13.0,
+    "weather_description": "Haze"
+  },
+  "daily_forecast": [
+    {
+      "date": "2026-06-26",
+      "max_temp_c": 39.0,
+      "min_temp_c": 30.0,
+      "avg_temp_c": 35.0,
+      "total_precipitation_mm": 0.1,
+      "max_wind_kmph": 21.0,
+      "max_chance_of_rain": 17.0,
+      "weather_description": "Clear "
+    },
+    {
+      "date": "2026-06-27",
+      "max_temp_c": 40.0,
+      "min_temp_c": 31.0,
+      "avg_temp_c": 36.0,
+      "total_precipitation_mm": 0.6,
+      "max_wind_kmph": 26.0,
+      "max_chance_of_rain": 36.0,
+      "weather_description": "Moderate rain at times"
+    },
+    {
+      "date": "2026-06-28",
+      "max_temp_c": 40.0,
+      "min_temp_c": 31.0,
+      "avg_temp_c": 36.0,
+      "total_precipitation_mm": 0.0,
+      "max_wind_kmph": 31.0,
+      "max_chance_of_rain": 1.0,
+      "weather_description": "Clear "
+    }
+  ],
+  "weather_risk": "HIGH",
+  "risk_factors": [
+    "Extreme heat risk: Maximum temperature is expected to reach 40\u00b0C or above.",
+    "Wind speed may be moderately high during the forecast period."
+  ],
+  "recommended_actions": [
+    "Avoid outdoor exposure during peak afternoon hours and stay hydrated.",
+    "Use caution if travelling outdoors."
+  ],
+  "packing_suggestions": [
+    "Standard clothing",
+    "Mobile charger",
+    "Personal toiletries",
+    "First-aid kit",
+    "Water bottle",
+    "Light cotton clothing"
+  ],
+  "travel_readiness_advisory": "Travel to Jaipur is currently risky due to severe weather conditions. Non-essential outdoor activities should be reconsidered or planned with extreme caution.",
+  "weather_risk_explanation": "The risk level is high because of: Extreme heat risk: Maximum temperature is expected to reach 40\u00b0C or above. and Wind speed may be moderately high during the forecast period.. These conditions may impact outdoor safety and transit.",
+  "resources_used": [
+    "resource://travel/checklist",
+    "resource://travel/advisory-rules",
+    "resource://weather/normalized-forecast-schema"
+  ],
+  "tools_used": [
+    "validate_city_input_tool",
+    "get_weather_forecast_tool",
+    "normalize_weather_data_tool",
+    "calculate_weather_risk_tool",
+    "save_travel_advisory_tool"
+  ],
+  "prompts_used": [
+    "travel_readiness_prompt",
+    "weather_risk_summary_prompt",
+    "packing_recommendation_prompt"
+  ]
+}
