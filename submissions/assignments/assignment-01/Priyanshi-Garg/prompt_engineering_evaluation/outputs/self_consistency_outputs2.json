@@ -1,0 +1,7 @@
+{
+  "risk_level": "MEDIUM",
+  "triggered_rules": [
+    "Rule 2: Login outside business hours and MFA failure"
+  ],
+  "reasoning": "Germany is listed in the user's known countries and also as a known VPN country, so it is not a new country; therefore the HIGH risk condition (new country + >5 downloads) is not met. The login occurred at 8:15\u202fPM, which is outside the defined business hours of 9\u202fAM\u20136\u202fPM, and there was one MFA failure, satisfying the MEDIUM risk condition. Since only the MEDIUM condition is true and the HIGH condition is false, the escalation to CRITICAL does not apply. The final classification is MEDIUM."
+}

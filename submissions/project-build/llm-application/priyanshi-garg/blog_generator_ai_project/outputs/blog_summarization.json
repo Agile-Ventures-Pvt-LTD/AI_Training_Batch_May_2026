@@ -1,0 +1,27 @@
+{
+  "clean_summary": "The user is planning a medium\u2011length (\u2248900\u2011word) blog post for a SaaS audience, targeting customer support leaders, CX heads, and operations managers. The post will promote an AI\u2011powered support assistant that summarizes tickets, drafts replies, flags escalation risks, and reduces repetitive work, while emphasizing that AI augments\u2014not replaces\u2014human agents. The tone should be professional, practical, and business\u2011oriented, avoiding hype, guaranteed cost\u2011reduction claims, full automation promises, or case studies. SEO keywords include \u201cAI customer support,\u201d \u201csupport automation,\u201d and \u201ccustomer service AI.\u201d The call\u2011to\u2011action is to book a demo.",
+  "main_message": "AI can enhance customer support operations by helping agents work faster and more consistently, without replacing them, while ensuring careful handling of sensitive data.",
+  "important_points": [
+    "Support teams face rising ticket volumes and lengthy conversations.",
+    "Agents spend significant time reading and processing tickets.",
+    "AI can provide concise ticket summaries and draft response suggestions.",
+    "The AI tool is designed to assist agents, improving consistency and response speed.",
+    "Sensitive customer data must be managed securely.",
+    "The blog should maintain a trustworthy, practical tone and avoid exaggerated claims."
+  ],
+  "missing_information": [
+    "Specific brand or product name to be referenced.",
+    "Key differentiators of the AI assistant compared to competitors.",
+    "Any statistical data or research to support the problem statement.",
+    "Preferred structure or headings for the blog (e.g., intro, challenges, solution, benefits, CTA).",
+    "Details on how data privacy is ensured (e.g., compliance standards).",
+    "Any visual assets or examples to be included (e.g., screenshots, diagrams)."
+  ],
+  "possible_risks": [
+    "Accidentally implying guaranteed cost savings or full automation, which violates the \u201cavoid_claims\u201d guideline.",
+    "Including vague or unsubstantiated statements that could be perceived as hype.",
+    "Potential mishandling of sensitive data if the blog suggests data usage without clear privacy safeguards.",
+    "Overlooking SEO best practices, such as keyword stuffing, which could affect search rankings.",
+    "Missing the word\u2011count target, leading to a blog that is too short or too long for the intended medium length."
+  ]
+}

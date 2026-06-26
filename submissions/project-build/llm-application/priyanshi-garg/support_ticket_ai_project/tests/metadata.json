@@ -1,0 +1,45 @@
+{
+  "ticket_id": "TCKT-20260605-001",
+  "customer_name": "Amit",
+  "customer_type": "Premium",
+  "priority": "High",
+  "issue_category": "Billing and subscription",
+  "issue_sub_category": "Duplicate charge / Cancellation not reflected",
+  "sla_tier": "Premium",
+  "sla_deadline_utc": "2026-06-05T12:00:00Z",
+  "response_tone": "Professional and empathetic",
+  "required_information": [
+    "Invoice ID for the duplicated charge",
+    "Registered account email address",
+    "Confirmation of cancellation request date"
+  ],
+  "required_actions": [
+    "Verify that the premium subscription was cancelled as requested.",
+    "Validate the duplicate charge on the customer's account.",
+    "Check payment processor logs for the second charge.",
+    "Prepare a response that acknowledges the issue, apologizes, and outlines next steps without promising a refund until verification is complete.",
+    "Escalate the ticket to Billing Support for further investigation and possible refund."
+  ],
+  "escalation_required": true,
+  "escalation_target_team": "Billing Support",
+  "business_rules_applied": [
+    "Do not promise refund before verification.",
+    "Do not confirm cancellation unless verified.",
+    "Ask for invoice ID or registered account email if required.",
+    "Escalate premium customer billing issues to billing support."
+  ],
+  "customer_communication_history": [
+    {
+      "date": "2026-05-29",
+      "channel": "Support Ticket",
+      "summary": "First contact regarding duplicate charge \u2013 no response received."
+    },
+    {
+      "date": "2026-05-31",
+      "channel": "Support Ticket",
+      "summary": "Second contact \u2013 still no proper response."
+    }
+  ],
+  "customer_urgency_note": "Customer threatens public escalation on LinkedIn and requests immediate refund.",
+  "metadata_generated_at_utc": "2026-06-05T08:15:00Z"
+}

@@ -1,0 +1,51 @@
+{
+    "candidate_id": "CAND-001",
+    "candidate_name": "Rohan Mehta",
+    "role_title": "AI Engineer",
+    "overall_score": 28,
+    "max_score": 40,
+    "percentage": 70.0,
+    "recommendation": "MODERATE_MATCH",
+    "executive_summary": "Rohan Mehta is a competent AI Application Developer with 3.5 years of experience specializing in building Python-based LLM architectures, RAG systems, and agentic workflows. He shows solid foundational strength across core modern engineering frameworks but requires slight validation vetting around complex integration environments and automated enterprise application scaling.",
+    "strengths": [
+        "Strong Python background with hands-on experience in building REST APIs, FastAPI, and data transformation scripts.",
+        "Demonstrated practical exposure to building end-to-end RAG systems using LangChain, Chroma, and Groq/OpenAI APIs.",
+        "Proactively experimented with agent frameworks including LangGraph basics and CrewAI role-based execution.",
+        "Solid software testing practices using pytest and structure enforcement through JSON schema validations."
+    ],
+    "gaps": [
+        "Lacks deep production-level deployment experience with complex agentic framework routing mechanisms.",
+        "Database experience is centered around lightweight options like SQLite, requiring validation on production-grade database systems.",
+        "Familiarity with RAG optimization models is introductory, with limited exposure to advanced search reranking techniques."
+    ],
+    "interview_focus_areas": [
+        "Advanced Agentic Application Engineering architectures",
+        "Enterprise-grade Relational Database management scaling",
+        "Comprehensive Retrieval-Augmented Generation evaluation pipelines"
+    ],
+    "interview_questions": {
+        "technical_questions": [
+            "Explain how Global Interpreter Lock (GIL) restrictions affect processing throughput in high-volume vectorized data pipelines in Python, and how you design around them.",
+            "Can you explain the structural routing differences between state management in LangGraph workflows and standard linear task execution in basic CrewAI agent chains?",
+            "How would you set up metadata-based filtering structures in Chroma vector databases to optimize retrieval accuracy for large multi-format document sets?"
+        ],
+        "project_deep_dive_questions": [
+            "Walk us through your Enterprise Policy Assistant architecture. What chunking strategies and overlap thresholds did you implement to preserve contextual boundaries?",
+            "In your Helpdesk Ticket Summarizer, how did you handle edge cases where the ticket summary text was empty or failed validation against your structural SQLite table constraints?"
+        ],
+        "scenario_questions": [
+            "Your production application experiences a 400% latency spike immediately following an upgrade to your LLM API service tier. How do you isolate and debug the root cause?",
+            "An open-source orchestration library used heavily inside your core AI stack changes its license model overnight. How do you assess risk and plan a technical pivot?"
+        ],
+        "gap_validation_questions": [
+            "Since you noted familiarity with manual LLM evaluation checklists, how do you handle automation scripts to safely prevent hallucination patterns at scale?",
+            "Given that your database history focuses on SQLite and PostgreSQL use cases, how would you design an architecture to handle high-concurrency database queries?"
+        ]
+    },
+    "evidence": [
+        "Built a policy Q&A assistant using Python, LangChain, Groq API, Chroma, and Markdown files.",
+        "Created an Agentic Workflow Prototype using LangGraph for classification, retrieval, and answer review processes.",
+        "Added explicit pytest testing layers for programmatic text processing utilities and output schema validation steps."
+    ],
+    "human_review_note": "This is an AI-assisted screening report based on the provided resume and job description. A human reviewer should validate the recommendation before making any recruitment decision."
+}

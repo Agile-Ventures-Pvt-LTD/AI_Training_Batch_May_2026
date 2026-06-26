@@ -1,0 +1,13 @@
+{
+  "priority": "URGENT",
+  "escalation_risk": "CRITICAL",
+  "risk_triggers": [
+    "Double charge on premium subscription",
+    "No response to previous support contacts",
+    "Threat of public escalation on LinkedIn",
+    "Payment/financial impact",
+    "Premium customer tier"
+  ],
+  "recommended_sla_action": "Immediately route the ticket to the Billing Support Manager for premium customers. Acknowledge the issue within 30\u202fminutes, request the invoice ID or account email for verification, and begin the refund verification process. Provide a concrete update to the customer within 2\u202fhours and keep them informed of each step. If verification confirms the duplicate charge, process the refund promptly and confirm cancellation status. Escalate to the Customer Success Lead if no resolution is achieved within 4\u202fhours.",
+  "reasoning_summary": "The customer is a Premium subscriber facing a duplicate charge\u2014a direct payment impact\u2014and has already made two unsuccessful support attempts. They have explicitly threatened a public escalation, increasing reputational risk. Given the high business value of a Premium account, the financial nature of the issue, and the urgency expressed (\"resolve today\"), the ticket warrants an URGENT priority. The combination of payment impact, repeated unanswered contacts, and public escalation threat elevates the escalation risk to CRITICAL. The recommended SLA action focuses on rapid acknowledgment, verification, escalation to senior billing support, and continuous communication to mitigate both financial loss and reputational damage."
+}

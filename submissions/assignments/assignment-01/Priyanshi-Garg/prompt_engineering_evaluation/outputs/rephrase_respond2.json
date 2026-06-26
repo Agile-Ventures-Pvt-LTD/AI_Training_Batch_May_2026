@@ -1,0 +1,59 @@
+{
+  "rephrased_requirement": "Implement a web\u2011based AI assistant that allows authenticated users to upload documents (e.g., PDF, DOCX, TXT) and then ask natural\u2011language questions about the content of those documents. The system must return answers that are grounded in the uploaded material, include citations, indicate confidence, and explicitly refuse or say \"I don't know\" when the answer cannot be reliably derived. The service must enforce strong security controls, handle requests with low latency, and operate at production scale.",
+  "functional_requirements": [
+    "Provide a secure file\u2011upload endpoint supporting common document formats (PDF, DOCX, TXT) with configurable size limits.",
+    "Validate uploaded files for malware and format correctness before processing.",
+    "Extract text and metadata from uploaded files using OCR for scanned PDFs when needed.",
+    "Index extracted content into a vector store to enable semantic retrieval.",
+    "Expose a question\u2011answer API where users submit a query and receive a response.",
+    "Perform retrieval\u2011augmented generation (RAG) to produce answers grounded in the indexed content.",
+    "Attach source citations (e.g., file name, page number, text snippet) to each answer.",
+    "Return a confidence score (0\u20111) with each answer and a flag indicating whether the system is confident enough to answer.",
+    "If confidence is below a configurable threshold (e.g., 0.7), respond with a predefined fallback message such as \"I don't have enough information to answer that question.\"",
+    "Log all user actions (upload, query, response) for audit and monitoring.",
+    "Allow users to delete their uploaded documents, which triggers removal from storage and the vector index.",
+    "Provide an admin dashboard to monitor system health, usage metrics, and security events."
+  ],
+  "non_functional_requirements": [
+    "Latency: 95th percentile end\u2011to\u2011end response time \u2264 2 seconds for queries on a typical 10\u2011page document.",
+    "Throughput: Support at least 200 concurrent user sessions with graceful degradation.",
+    "Scalability: Horizontal scaling of ingestion and query services via container orchestration (Kubernetes).",
+    "Availability: 99.9% uptime SLA for the API layer.",
+    "Data retention: Delete user data on request within 24\u202fhours.",
+    "Observability: Emit structured logs, metrics (latency, error rates), and traces compatible with Prometheus/Grafana.",
+    "Compliance: Meet GDPR/CCPA requirements for personal data handling."
+  ],
+  "security_requirements": [
+    "Authentication: OAuth 2.0 / OpenID Connect with JWT access tokens.",
+    "Authorization: Role\u2011based access control (RBAC) ensuring users can only access their own documents.",
+    "Transport security: Enforce TLS\u202f1.2+ for all network traffic.",
+    "At\u2011rest encryption: Encrypt files in object storage (AES\u2011256) and encrypt vector embeddings in the database.",
+    "File isolation: Store each user's uploads in a separate bucket/prefix with bucket policies.",
+    "Malware scanning: Run uploaded files through an anti\u2011virus engine (e.g., ClamAV) before processing.",
+    "Rate limiting: 10 requests/second per user to prevent abuse.",
+    "Audit logging: Record upload, delete, and query events with user ID, timestamps, and outcome.",
+    "Secret management: Store API keys and model credentials in a vault (e.g., HashiCorp Vault or KMS)."
+  ],
+  "acceptance_criteria": [
+    "A user can successfully upload a PDF \u2264 20\u202fMB and receive a 201 response.",
+    "Uploaded files are scanned, encrypted, and indexed within 5 seconds.",
+    "When a user asks a question that is answerable from the document, the system returns an answer with a citation and a confidence \u2265 0.8 within 2 seconds.",
+    "When confidence < 0.7, the system returns the fallback \"I don't have enough information...\" message.",
+    "All API calls require a valid JWT; unauthorized requests receive 401.",
+    "Data in transit is encrypted (verified via TLS scan) and at rest is encrypted (verified via storage bucket settings).",
+    "Deletion of a document removes it from storage and the vector index, confirmed by a subsequent query returning the fallback response.",
+    "Load test of 200 concurrent users shows \u2264 2\u202fs 95th\u2011percentile latency and \u2264 1% error rate.",
+    "Audit logs contain entries for every upload, query, and delete action.",
+    "Security scan reports no critical vulnerabilities in the deployed containers."
+  ],
+  "recommended_solution_approach": "Build a microservice\u2011based architecture deployed on Kubernetes. The front\u2011end (React or similar) talks to an API gateway (e.g., Kong or Envoy) that enforces authentication and rate limiting. The gateway routes to three core services: (1) Upload Service \u2013 receives files, runs virus scanning, extracts text (using Apache Tika + Tesseract OCR), stores encrypted blobs in an S3\u2011compatible bucket, and pushes embeddings to a vector store (FAISS or managed Pinecone). (2) Retrieval Service \u2013 queries the vector store, fetches relevant passages, and returns them with scores. (3) Generation Service \u2013 calls a hosted LLM (e.g., OpenAI GPT\u20114o or an on\u2011premise Llama 2) with retrieved passages as context, requests citations, and receives a confidence score. A post\u2011processor formats the response, attaches citations, and applies the confidence threshold logic. Monitoring (Prometheus, Grafana) and logging (ELK) are integrated. Secrets are managed via Kubernetes Secrets backed by a vault. The solution can be iteratively expanded to support additional file types and multi\u2011tenant isolation.",
+  "open_questions": [
+    "What is the maximum acceptable file size and total storage quota per user?",
+    "Which specific LLM model and provider should be used (cloud vs. on\u2011premise) to meet latency and cost targets?",
+    "What confidence threshold is acceptable for the target audience?",
+    "Are there any domain\u2011specific compliance requirements (e.g., HIPAA) that would affect data handling?",
+    "Should the system support real\u2011time collaborative editing of documents, or is upload\u2011only sufficient?",
+    "What is the expected SLA for model inference latency, and does it require dedicated GPU nodes?",
+    "Will users need versioning of uploaded documents, and how should that be managed?"
+  ]
+}

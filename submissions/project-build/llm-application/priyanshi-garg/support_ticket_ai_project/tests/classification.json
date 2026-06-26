@@ -1,0 +1,8 @@
+{
+  "primary_category": "CANCELLATION_OR_REFUND",
+  "secondary_categories": [
+    "BILLING_ISSUE"
+  ],
+  "category_reasoning_summary": "The customer reports that after cancelling their premium subscription they were charged again and see a duplicate invoice, and they are demanding an immediate refund. This directly relates to a cancellation that was not properly processed and a refund request, making CANCELLATION_OR_REFUND the primary issue. The duplicate charge also constitutes a billing problem, so BILLING_ISSUE is added as a secondary category.",
+  "confidence_score": 0.96
+}

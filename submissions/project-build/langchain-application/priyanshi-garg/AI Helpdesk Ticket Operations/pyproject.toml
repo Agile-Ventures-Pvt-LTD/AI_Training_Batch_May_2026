@@ -1,0 +1,21 @@
+[project]
+name = "ai-helpdesk-ticket-operations"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "groq>=0.30.0,<1.0.0",
+    "ipykernel>=7.2.0",
+    "langchain==0.3.27",
+    "langchain-community>=0.3.0,<0.4.0",
+    "langchain-core>=0.3.75,<1.0.0",
+    "langchain-experimental==0.3.4",
+    "langchain-groq==0.3.8",
+    "pydantic>=2.13.4",
+    "python-dotenv>=1.2.2",
+    "rich>=15.0.0",
+    "sqlalchemy>=2.0.50",
+    "tabulate>=0.10.0",
+    "tenacity>=9.1.4",
+]

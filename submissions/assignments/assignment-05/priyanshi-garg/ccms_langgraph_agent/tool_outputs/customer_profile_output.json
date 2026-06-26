@@ -1,0 +1,11 @@
+{
+    "found": true,
+    "customer": {
+        "cust_id": 1,
+        "name": "Denise Walker",
+        "email": "denisewalker717@gmail.com",
+        "phone": "689-114-6781",
+        "city": "Anchorage",
+        "state": "AK"
+    }
+}

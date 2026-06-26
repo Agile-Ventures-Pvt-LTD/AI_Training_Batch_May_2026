@@ -1,0 +1,110 @@
+{
+  "ticket_summary": {
+    "short_summary": "Amit, a premium customer, was charged twice after canceling his subscription and has not received a response from support; he demands an immediate refund and threatens public escalation.",
+    "customer_problem": "Duplicate billing for a cancelled premium subscription and lack of response from support.",
+    "business_impact": "Financial loss for the customer, risk of public reputation damage, potential loss of trust from a premium client, and possible blockage of future payments.",
+    "customer_requested_action": "Refund the incorrect charge immediately and resolve the issue today.",
+    "important_context": [
+      "Premium customer (high‑value account).",
+      "Previous two support contacts with no proper response.",
+      "SLA tier: Premium.",
+      "Product area: Billing and subscription.",
+      "Threat to escalate publicly on LinkedIn and to block future payments."
+    ],
+    "missing_information": [
+      "Invoice ID or reference number for the duplicate charge.",
+      "Registered account email or other account identifier to verify the cancellation.",
+      "Exact date of the original cancellation request."
+    ]
+  },
+  "classification": {
+    "primary_category": "BILLING_ISSUE",
+    "secondary_categories": [
+      "ESCALATION_COMPLAINT"
+    ],
+    "category_reasoning_summary": "The core of the ticket is a duplicate charge after a cancellation, which is a billing problem. The customer explicitly threatens public escalation, which justifies adding ESCALATION_COMPLAINT as a secondary category.",
+    "confidence_score": 0.96
+  },
+  "sentiment_analysis": {
+    "sentiment": "FRUSTRATED",
+    "emotion_signals": [
+      "Repeated follow‑ups without response",
+      "Threat of public escalation",
+      "Urgent language (\"if this is not resolved today\")",
+      "Strong dissatisfaction"
+    ],
+    "sentiment_reasoning_summary": "The language conveys high frustration and urgency, with explicit threats to escalate on LinkedIn, indicating a frustrated and urgent sentiment.",
+    "confidence_score": 0.94
+  },
+  "priority_and_risk": {
+    "priority": "URGENT",
+    "escalation_risk": "HIGH",
+    "risk_triggers": [
+      "Duplicate charge affecting a premium customer",
+      "No response to previous support contacts",
+      "Explicit threat of public escalation",
+      "Potential blockage of future payments"
+    ],
+    "recommended_sla_action": "Escalate immediately to Billing Support and respond within 2 business hours.",
+    "reasoning_summary": "Given the premium status, financial impact, and public escalation threat, the ticket requires urgent handling and carries a high escalation risk."
+  },
+  "sensitive_information_check": {
+    "sensitive_information_detected": true,
+    "sensitive_categories": [
+      "PAYMENT_INFORMATION"
+    ],
+    "evidence_summary": "The ticket mentions being charged twice and references invoice amounts on the bank statement, which constitutes payment information.",
+    "handling_recommendations": [
+      "Route to Billing Support with restricted visibility.",
+      "Do not include payment details in any outbound communication.",
+      "Verify the charge before any refund is promised, following data‑protection policies."
+    ]
+  },
+  "routing_recommendation": {
+    "recommended_team": "BILLING_SUPPORT",
+    "routing_reason": "The issue is a duplicate billing charge for a premium customer and includes escalation risk; billing support is the appropriate team per business rules.",
+    "internal_note": "Premium customer with unresolved billing dispute; requires fast escalation and verification of invoice details.",
+    "required_follow_up_information": [
+      "Invoice ID or reference number for the duplicate charge.",
+      "Registered account email or customer ID to confirm cancellation.",
+      "Date of the original cancellation request."
+    ]
+  },
+  "draft_customer_response": {
+    "draft_response": "Hi Amit,\n\nThank you for reaching out and I’m sorry to hear about the duplicate charge and the delay in getting a response – I understand how frustrating this must be.\n\nI’ve escalated your case to our Billing Support team as a priority. To investigate and correct the billing error, could you please provide the invoice ID (or the reference number) for the charge you see duplicated, as well as the email address associated with your account? This will allow us to verify the cancellation date and confirm the exact amount that needs to be refunded.\n\nOnce we have that information, we’ll review the transaction and get back to you with a resolution within the next 2 hours.\n\nWe appreciate your patience and will do everything we can to resolve this quickly.\n\nBest regards,\n[Your Name]\nCustomer Success – Premium Support",
+    "response_strategy": "Acknowledge frustration, express empathy, summarize the duplicate‑billing issue, request missing invoice ID and account email for verification, set a clear 2‑hour response window, and avoid promising a refund until verification is complete.",
+    "assumptions": [
+      "The customer’s account is indeed a premium tier.",
+      "The duplicate charge relates to the cancelled subscription."
+    ],
+    "information_needed_before_sending": [
+      "Invoice ID or reference number for the duplicated charge.",
+      "Registered account email or customer ID to confirm cancellation."
+    ]
+  },
+  "response_quality_review": {
+    "scores": {
+      "empathy": 0.95,
+      "correctness": 0.98,
+      "actionability": 0.94,
+      "policy_safety": 1.0,
+      "tone_alignment": 0.97,
+      "completeness": 0.96
+    },
+    "strengths": [
+      "Strong empathetic opening that acknowledges frustration.",
+      "Clear request for missing information needed to verify the issue.",
+      "Sets a concrete next‑step timeline (2‑hour response).",
+      "Fully complies with business rules (no refund promise, no cancellation confirmation)."
+    ],
+    "improvement_areas": [
+      "Could include a brief reassurance that the escalation will be handled by senior billing staff."
+    ],
+    "final_review_summary": "The draft response meets all policy and tone requirements, accurately reflects the ticket details, and provides actionable next steps while maintaining empathy and safety. Minor wording tweaks could add extra reassurance, but overall it is ready for agent review."
+  },
+  "generation_metadata": {
+    "model_used": "gpt-4o",
+    "temperature": 0.2,
+    "total_steps_completed": 10
+  }
+}

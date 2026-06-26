@@ -1,0 +1,7 @@
+{
+  "action": "CANCEL_LEAVE",
+  "parameters": {},
+  "requires_clarification": true,
+  "clarification_question": "Please provide the exact date for next Friday.",
+  "confidence": 0.75
+}

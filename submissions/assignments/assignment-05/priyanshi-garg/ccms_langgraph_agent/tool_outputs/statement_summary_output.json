@@ -1,0 +1,8 @@
+{
+    "customer_id": "1",
+    "total_amount_due": 7530.68,
+    "min_amount_due": 376.53,
+    "statement_date": "2022-09-08 14:50:11",
+    "due_date": "2022-09-23",
+    "risk_level": "LOW"
+}

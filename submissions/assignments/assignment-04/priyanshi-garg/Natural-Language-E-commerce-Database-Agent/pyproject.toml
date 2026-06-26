@@ -1,0 +1,16 @@
+[project]
+name = "natural-language-e-commerce-database-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "faker>=40.22.0",
+    "groq>=0.37.1",
+    "langchain>=1.0",
+    "langchain-community>=0.3.31",
+    "langchain-groq>=0.3.8",
+    "langchain-openai>=0.3.35",
+    "pytest>=9.0.3",
+    "python-dotenv>=1.2.2",
+]

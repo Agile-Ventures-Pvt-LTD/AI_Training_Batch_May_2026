@@ -1,0 +1,15 @@
+{
+  "sensitive_information_detected": true,
+  "sensitive_categories": [
+    "PAYMENT_INFORMATION",
+    "PERSONAL_INFORMATION"
+  ],
+  "evidence_summary": "The ticket contains the customer's name and references a duplicate charge, invoice amounts, and a bank statement, indicating personal and payment-related data.",
+  "handling_recommendations": [
+    "Escalate the issue to the specialized billing support team as per business rules.",
+    "Verify the disputed charge and request the invoice ID or registered account email before proceeding with any refund.",
+    "Do not promise a refund until verification is complete.",
+    "Avoid including the customer's personal or payment details in any outbound communication.",
+    "Follow data protection and privacy protocols when handling the customer's financial information."
+  ]
+}
