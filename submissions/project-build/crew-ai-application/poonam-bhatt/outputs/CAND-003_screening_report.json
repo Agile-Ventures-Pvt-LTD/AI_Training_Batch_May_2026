@@ -1,21 +1,50 @@
 {
- "candidate_id": "003",
- "candidate_name": "neha gupta",
- "role_title": "ai engineer",
- "overall_score": 21,
- "max_score": 40,
- "percentage": 52.5,
- "recommendation": "MODERATE_MATCH",
- "executive_summary": "",
- "strengths": ["API-Integration"],
- "gaps": [],
- "interview_focus_areas": ["LLM"],
- "interview_questions": {
- "technical_questions": ["Compare transformers vs. RNNs and when would you choose one over the other?"],
- "project_deep_dive_questions": [],
- "scenario_questions": ["Give an example of a successful project you were part of. What was your role in its success?"],
- "gap_validation_questions": ["How do you ensure that your work complies with industry standards and regulations?"]
- },
- "evidence": [],
- "human_review_note": "This is an AI-assisted screening report based on the provided resume and job description. A human reviewer should validate the recommendation before making any recruitment decision."
+  "candidate_id": "CAND-003",
+  "candidate_name": "Neha Gupta",
+  "role_title": "AI Engineer",
+  "overall_score": 25,
+  "max_score": 40,
+  "percentage": 62.5,
+  "recommendation": "MODERATE_MATCH",
+  "executive_summary": "Neha Gupta is currently working as a Data Analyst with 3.0 years of experience. The evaluation indicates key competencies in SQL and Database Skills, LLM Application Development, Testing and Quality Assurance. The candidate is recommended as a MODERATE_MATCH for the AI Engineer role.",
+  "strengths": [
+    "SQL and Database Skills",
+    "LLM Application Development",
+    "Testing and Quality Assurance"
+  ],
+  "gaps": [
+    "Agentic Frameworks",
+    "RAG Understanding",
+    "Technical Communication"
+  ],
+  "interview_focus_areas": [
+    "Agentic Frameworks",
+    "RAG Understanding",
+    "Technical Communication"
+  ],
+  "interview_questions": {
+    "technical_questions": [
+      "How do you manage state and handle routing loops in complex agentic workflows?",
+      "Describe how you optimize chunking strategies and embedding retrievals for domain-specific RAG applications.",
+      "How do you document technical trade-offs and communicate application limitations to non-technical stakeholders?"
+    ],
+    "project_deep_dive_questions": [
+      "In your project 'Candidate Portfolio Projects', what were the main technical challenges you faced, and how did you resolve them?",
+      "Could you explain the system architecture design decisions you made for 'Candidate Portfolio Projects'?"
+    ],
+    "scenario_questions": [
+      "Describe a situation where you had to work with a team member who had a very different technical approach. How did you align?",
+      "How do you handle unexpected shifts in project requirements or priorities under tight deadlines?"
+    ],
+    "gap_validation_questions": [
+      "Your profile indicates less hands-on experience in 'Agentic Frameworks'. How would you plan to bridge this gap if selected?",
+      "Your profile indicates less hands-on experience in 'RAG Understanding'. How would you plan to bridge this gap if selected?"
+    ]
+  },
+  "evidence": [
+    "Evaluated skills against synonyms: python_programming (3/5), sql_database_skills (5/5), api_integration (3/5), llm_application_development (4/5), agent_frameworks (2/5), rag_understanding (2/5), testing_and_quality (4/5), communication (2/5).",
+    "Primary skills listed: SQL; Python; pandas; Power BI; SQLite; business reporting; basic prompt engineering",
+    "Analyzed projects: Candidate Portfolio Projects"
+  ],
+  "human_review_note": "Automated screening evaluation. Please verify findings during the technical interview phase."
 }

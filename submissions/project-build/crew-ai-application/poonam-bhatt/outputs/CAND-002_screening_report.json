@@ -1,22 +1,48 @@
 {
- "candidate_id": "002",
- "candidate_name": "priya sharma",
- "role_title": "ai engineer",
- "overall_score": 34,
- "max_score": 40,
- "percentage": 85,
- "recommendation": "STRONG_MATCH",
- "executive_summary": "",
- "strengths": ["LLM"],
- "gaps": [],
- "interview_focus_areas": ["Neural Network"],
- "interview_questions": {
- "technical_questions": ["Explain how backpropagation works and what happens if you don’t initialize weights properly."],
- 
- "project_deep_dive_questions": [],
- "scenario_questions": ["How would you build a relationship with a new team, especially in a remote setting?"],
- "gap_validation_questions": ["Tell me about your background and experience in verification and validation engineering."]
- },
- "evidence": [],
- "human_review_note": "This is an AI-assisted screening report based on the provided resume and job description. A human reviewer should validate the recommendation before making any recruitment decision."
+  "candidate_id": "CAND-002",
+  "candidate_name": "Priya Sharma",
+  "role_title": "AI Engineer",
+  "overall_score": 27,
+  "max_score": 40,
+  "percentage": 67.5,
+  "recommendation": "MODERATE_MATCH",
+  "executive_summary": "Priya Sharma is currently working as a Backend Python Developer with 4.0 years of experience. The evaluation indicates key competencies in SQL and Database Skills, REST API Integration, LLM Application Development. The candidate is recommended as a MODERATE_MATCH for the AI Engineer role.",
+  "strengths": [
+    "SQL and Database Skills",
+    "REST API Integration",
+    "LLM Application Development",
+    "Testing and Quality Assurance"
+  ],
+  "gaps": [
+    "Agentic Frameworks",
+    "Technical Communication"
+  ],
+  "interview_focus_areas": [
+    "Agentic Frameworks",
+    "Technical Communication"
+  ],
+  "interview_questions": {
+    "technical_questions": [
+      "How do you manage state and handle routing loops in complex agentic workflows?",
+      "How do you document technical trade-offs and communicate application limitations to non-technical stakeholders?"
+    ],
+    "project_deep_dive_questions": [
+      "In your project 'Candidate Portfolio Projects', what were the main technical challenges you faced, and how did you resolve them?",
+      "Could you explain the system architecture design decisions you made for 'Candidate Portfolio Projects'?"
+    ],
+    "scenario_questions": [
+      "Describe a situation where you had to work with a team member who had a very different technical approach. How did you align?",
+      "How do you handle unexpected shifts in project requirements or priorities under tight deadlines?"
+    ],
+    "gap_validation_questions": [
+      "Your profile indicates less hands-on experience in 'Agentic Frameworks'. How would you plan to bridge this gap if selected?",
+      "Your profile indicates less hands-on experience in 'Technical Communication'. How would you plan to bridge this gap if selected?"
+    ]
+  },
+  "evidence": [
+    "Evaluated skills against synonyms: python_programming (3/5), sql_database_skills (5/5), api_integration (5/5), llm_application_development (4/5), agent_frameworks (2/5), rag_understanding (3/5), testing_and_quality (5/5), communication (0/5).",
+    "Primary skills listed: Python; FastAPI; REST APIs; SQL; PostgreSQL; pytest; GitHub; basic prompt engineering",
+    "Analyzed projects: Candidate Portfolio Projects"
+  ],
+  "human_review_note": "Automated screening evaluation. Please verify findings during the technical interview phase."
 }

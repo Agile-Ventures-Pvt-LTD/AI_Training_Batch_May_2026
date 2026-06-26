@@ -1,0 +1,37 @@
+{
+  "candidate_id": "CAND-UNKNOWN",
+  "candidate_name": "Candidate CAND-UNKNOWN",
+  "role_title": "AI Engineer",
+  "overall_score": 0,
+  "max_score": 40,
+  "percentage": 0.0,
+  "recommendation": "NEEDS_MANUAL_REVIEW",
+  "executive_summary": "Candidate profile not found in index.",
+  "strengths": [
+    "None identified"
+  ],
+  "gaps": [
+    "Missing candidate profile"
+  ],
+  "interview_focus_areas": [
+    "General programming foundations"
+  ],
+  "interview_questions": {
+    "technical_questions": [
+      "What is your background in software engineering?"
+    ],
+    "project_deep_dive_questions": [
+      "Can you describe a key project you worked on?"
+    ],
+    "scenario_questions": [
+      "Describe a challenge you faced and how you solved it."
+    ],
+    "gap_validation_questions": [
+      "Could you explain the gaps in your experience?"
+    ]
+  },
+  "evidence": [
+    "Candidate profile was missing from the candidate index."
+  ],
+  "human_review_note": "Profile missing. Needs manual verification."
+}

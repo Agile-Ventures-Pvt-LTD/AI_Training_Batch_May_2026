@@ -1,21 +1,47 @@
 {
- "candidate_id": "001",
- "candidate_name": "Rohan metha",
- "role_title": "ai engineer",
- "overall_score": 27,
- "max_score": 40,
- "percentage": 67.5,
- "recommendation": "MODERATE_MATCH",
- "executive_summary": "",
- "strengths": ["Python"],
- "gaps": [],
- "interview_focus_areas": ["RAG"],
- "interview_questions": {
- "technical_questions": ["Why to use rag?"],
- "project_deep_dive_questions": [],
- "scenario_questions": ["Describe a time when you had to give difficult feedback to a colleague."],
- "gap_validation_questions": [" What motivated you to pursue a career in verification and validation engineering?"]
- },
- "evidence": [],
- "human_review_note": "This is an AI-assisted screening report based on the provided resume and job description. A human reviewer should validate the recommendation before making any recruitment decision."
+  "candidate_id": "CAND-001",
+  "candidate_name": "Rohan Mehta",
+  "role_title": "AI Engineer",
+  "overall_score": 34,
+  "max_score": 40,
+  "percentage": 85.0,
+  "recommendation": "STRONG_MATCH",
+  "executive_summary": "Rohan Mehta is currently working as a AI Application Developer with 3.5 years of experience. The evaluation indicates key competencies in Python Programming, SQL and Database Skills, REST API Integration. The candidate is recommended as a STRONG_MATCH for the AI Engineer role.",
+  "strengths": [
+    "Python Programming",
+    "SQL and Database Skills",
+    "REST API Integration",
+    "LLM Application Development",
+    "Agentic Frameworks",
+    "RAG Understanding",
+    "Testing and Quality Assurance"
+  ],
+  "gaps": [
+    "Technical Communication"
+  ],
+  "interview_focus_areas": [
+    "Technical Communication"
+  ],
+  "interview_questions": {
+    "technical_questions": [
+      "How do you document technical trade-offs and communicate application limitations to non-technical stakeholders?"
+    ],
+    "project_deep_dive_questions": [
+      "In your project 'Candidate Portfolio Projects', what were the main technical challenges you faced, and how did you resolve them?",
+      "Could you explain the system architecture design decisions you made for 'Candidate Portfolio Projects'?"
+    ],
+    "scenario_questions": [
+      "Describe a situation where you had to work with a team member who had a very different technical approach. How did you align?",
+      "How do you handle unexpected shifts in project requirements or priorities under tight deadlines?"
+    ],
+    "gap_validation_questions": [
+      "Your profile indicates less hands-on experience in 'Technical Communication'. How would you plan to bridge this gap if selected?"
+    ]
+  },
+  "evidence": [
+    "Evaluated skills against synonyms: python_programming (4/5), sql_database_skills (5/5), api_integration (5/5), llm_application_development (5/5), agent_frameworks (4/5), rag_understanding (4/5), testing_and_quality (5/5), communication (2/5).",
+    "Primary skills listed: Python; SQL; REST APIs; LangChain; LangGraph; CrewAI basics; RAG; Chroma; pytest",
+    "Analyzed projects: Candidate Portfolio Projects"
+  ],
+  "human_review_note": "Automated screening evaluation. Please verify findings during the technical interview phase."
 }

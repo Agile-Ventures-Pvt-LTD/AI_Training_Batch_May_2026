@@ -1,21 +1,52 @@
 {
- "candidate_id": "004",
- "candidate_name": "arjun gupta",
- "role_title": "ai engineer",
- "overall_score": 11,
- "max_score": 40,
- "percentage": 27.5,
- "recommendation": "WEAK_MATCH",
- "executive_summary": "",
- "strengths": ["RAG"],
- "gaps": [],
- "interview_focus_areas": ["python"],
- "interview_questions": {
- "technical_questions": ["“Write Python code to normalize input features before training.”"],
- "project_deep_dive_questions": [],
- "scenario_questions": ["Describe a situation where you had to work with a difficult team member."],
- "gap_validation_questions": ["Can you explain the difference between verification and validation?"]
- },
- "evidence": [],
- "human_review_note": "This is an AI-assisted screening report based on the provided resume and job description. A human reviewer should validate the recommendation before making any recruitment decision."
+  "candidate_id": "CAND-004",
+  "candidate_name": "Arjun Nair",
+  "role_title": "AI Engineer",
+  "overall_score": 26,
+  "max_score": 40,
+  "percentage": 65.0,
+  "recommendation": "MODERATE_MATCH",
+  "executive_summary": "Arjun Nair is currently working as a Junior Python Developer with 1.2 years of experience. The evaluation indicates key competencies in SQL and Database Skills, REST API Integration, LLM Application Development. The candidate is recommended as a MODERATE_MATCH for the AI Engineer role.",
+  "strengths": [
+    "SQL and Database Skills",
+    "REST API Integration",
+    "LLM Application Development",
+    "Testing and Quality Assurance"
+  ],
+  "gaps": [
+    "Python Programming",
+    "Agentic Frameworks",
+    "RAG Understanding",
+    "Technical Communication"
+  ],
+  "interview_focus_areas": [
+    "Python Programming",
+    "Agentic Frameworks",
+    "RAG Understanding"
+  ],
+  "interview_questions": {
+    "technical_questions": [
+      "How do you optimize memory consumption when processing large datasets in Python?",
+      "How do you manage state and handle routing loops in complex agentic workflows?",
+      "Describe how you optimize chunking strategies and embedding retrievals for domain-specific RAG applications."
+    ],
+    "project_deep_dive_questions": [
+      "In your project 'Candidate Portfolio Projects', what were the main technical challenges you faced, and how did you resolve them?",
+      "Could you explain the system architecture design decisions you made for 'Candidate Portfolio Projects'?"
+    ],
+    "scenario_questions": [
+      "Describe a situation where you had to work with a team member who had a very different technical approach. How did you align?",
+      "How do you handle unexpected shifts in project requirements or priorities under tight deadlines?"
+    ],
+    "gap_validation_questions": [
+      "Your profile indicates less hands-on experience in 'Python Programming'. How would you plan to bridge this gap if selected?",
+      "Your profile indicates less hands-on experience in 'Agentic Frameworks'. How would you plan to bridge this gap if selected?"
+    ]
+  },
+  "evidence": [
+    "Evaluated skills against synonyms: python_programming (2/5), sql_database_skills (4/5), api_integration (5/5), llm_application_development (5/5), agent_frameworks (2/5), rag_understanding (2/5), testing_and_quality (4/5), communication (2/5).",
+    "Primary skills listed: Python; Flask basics; REST API basics; SQLite basics; Git basics; basic LangChain tutorials",
+    "Analyzed projects: Candidate Portfolio Projects"
+  ],
+  "human_review_note": "Automated screening evaluation. Please verify findings during the technical interview phase."
 }

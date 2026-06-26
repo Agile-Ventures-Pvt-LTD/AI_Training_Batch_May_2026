@@ -1,30 +1,26 @@
-from crewai import Crew, Process
-from agents import (
-    job_description_agent,
-    Resume_Extraction_Agent,
-    Skill_Experience_Matching_Agent,
-    Interview_Planning_Agent,
-    Final_Recommendation_Agent,
-    Gap_Analysis_Agent,
-    Report_Review_Agent
-)
-from tasks import (
-   job_description_task,
-   resume_extraction_task,
-   skill_experience_matching_task,
-   interview_planning_task,
-   recommendation_task,
-   gap_analysis_task,
-   report_review_task
-)
+import os
+import sys
+import pytest
+from unittest.mock import patch
 
-crew = Crew(
-  agents=[job_description_agent,Resume_Extraction_Agent,Skill_Experience_Matching_Agent,Interview_Planning_Agent,Final_Recommendation_Agent,Gap_Analysis_Agent,Report_Review_Agent],
-  tasks=[job_description_task,resume_extraction_task,skill_experience_matching_task,interview_planning_task,recommendation_task,gap_analysis_task,report_review_task],
-  process=Process.sequential,  # Optional: Sequential task execution is default
-  memory=False,  # Disabled: memory requires OpenAI embeddings by default
-  cache=False,   # Disabled: cache requires OpenAI embeddings by default
-  max_rpm=100,
-  share_crew=True,
-  
-)
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from src.crew import run_screening_crew
+
+def test_run_screening_crew_fallback():
+    with patch.dict(os.environ, {"GROQ_API_KEY": "..."}):
+        report = run_screening_crew("CAND-001")
+        assert isinstance(report, dict)
+        assert report["candidate_id"] == "CAND-001"
+        assert report["candidate_name"] == "Rohan Mehta"
+        assert report["recommendation"] in ["STRONG_MATCH", "MODERATE_MATCH"]
+        assert report["percentage"] >= 60.0
+        assert "strengths" in report
+        assert "interview_questions" in report
+
+def test_run_screening_crew_invalid_candidate():
+    with patch.dict(os.environ, {"GROQ_API_KEY": "..."}):
+        report = run_screening_crew("CAND-UNKNOWN")
+        assert isinstance(report, dict)
+        assert report["candidate_id"] == "CAND-UNKNOWN"
+        assert report["recommendation"] == "NEEDS_MANUAL_REVIEW"

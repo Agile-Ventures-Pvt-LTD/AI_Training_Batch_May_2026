@@ -1,43 +1,31 @@
-from langchain_chroma import Chroma
-from langchain_huggingface import HuggingFaceEmbeddings
 import os
-import pandas as pd
+import json
+from datetime import datetime
+from typing import List, Dict, Any, Union
 
-embeddings = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
-)
+REQUIRED_FIELDS = [
+    "candidate_id",
+    "candidate_name",
+    "role_title",
+    "overall_score",
+    "max_score",
+    "percentage",
+    "recommendation",
+    "executive_summary",
+    "strengths",
+    "gaps",
+    "interview_focus_areas",
+    "interview_questions",
+    "evidence",
+    "human_review_note"
+]
 
-db = Chroma(
-    persist_directory="chroma_db",
-    embedding_function=embeddings
-)
-
-jd_path="data/p004_resume_screening_crew_dataset/job_description/jd_ai_engineer.md"
-
-
-# tool - 1
-def read_job_description_tool(jd_path):
-    """
-    Reads the job description file from the given path.
-    
-    Parameters:
-    jd_path (str): Path to the job description file.
-    
-    Returns:
-    dict: {
-        "success": bool,
-        "content": str,
-        "source_file": str
-    }
-    """
-    # Initialize the response dictionary
+def read_job_description_tool(jd_path: str) -> Dict[str, Any]:
     response = {
         "success": False,
         "content": "",
         "source_file": ""
     }
-    
-    # Check if the file exists
     if os.path.exists(jd_path) and os.path.isfile(jd_path):
         try:
             with open(jd_path, 'r', encoding='utf-8') as file:
@@ -46,35 +34,38 @@ def read_job_description_tool(jd_path):
             response["content"] = content
             response["source_file"] = os.path.basename(jd_path)
         except Exception as e:
-            # Handle file reading errors
             response["content"] = f"Error reading file: {str(e)}"
     else:
-        response["content"] = "File does not exist."
-    
+        fallback_path = os.path.join("data", "p004_resume_screening_crew_dataset", "job_description", "jd_ai_engineer.md")
+        if os.path.exists(fallback_path):
+            try:
+                with open(fallback_path, 'r', encoding='utf-8') as file:
+                    content = file.read()
+                response["success"] = True
+                response["content"] = content
+                response["source_file"] = os.path.basename(fallback_path)
+            except Exception as e:
+                response["content"] = f"Error reading fallback file: {str(e)}"
+        else:
+            response["content"] = f"File does not exist: {jd_path}"
     return response
 
-
-  
-
-
-# Function to read a resume file
 def read_resume_tool(resume_path: str) -> str:
-    """
-    Reads the content of a candidate resume from the given file path.
-    
-    Parameters:
-    - resume_path (str): Path to the resume file
-    
-    Returns:
-    - str: The textual content of the resume
-    
-    Raises:
-    - FileNotFoundError: If the file does not exist at the given path
-    - ValueError: If the file is empty or unreadable
-    """
     if not os.path.exists(resume_path):
-        raise FileNotFoundError(f"Resume file not found: {resume_path}")
-    
+        filename = os.path.basename(resume_path)
+        fallback_dir = os.path.join("data", "p004_resume_screening_crew_dataset", "resumes")
+        fallback_path = os.path.join(fallback_dir, filename)
+        if os.path.exists(fallback_path):
+            resume_path = fallback_path
+        else:
+            found = False
+            for root, dirs, files in os.walk("."):
+                if filename in files:
+                    resume_path = os.path.join(root, filename)
+                    found = True
+                    break
+            if not found:
+                raise FileNotFoundError(f"Resume file not found: {resume_path}")
     try:
         with open(resume_path, "r", encoding="utf-8") as file:
             content = file.read().strip()
@@ -84,141 +75,89 @@ def read_resume_tool(resume_path: str) -> str:
     except Exception as e:
         raise ValueError(f"Error reading resume file: {e}")
 
-
-
-
-
-
-# Example Rubric Class
-class LoadScreeningRubric:
-    """
-    Tool for evaluating load screening rubric.
-    Criteria and scoring can be customized as needed.
-    """
-    def __init__(self, rubric_criteria):
-        """
-        rubric_criteria: Dict of criteria and their score thresholds
-        Example:
-        {
-            'credit_score': 700,
-            'income': 50000,
-            'loan_history': 2
-        }
-        """
-        self.rubric_criteria = rubric_criteria
-
-    def evaluate(self, load_data):
-        """
-        load_data: Pandas DataFrame with columns matching rubric_criteria
-        Returns DataFrame with evaluation results
-        """
-        results = []
-        for _, row in load_data.iterrows():
-            evaluation = {}
-            evaluation['id'] = row.get('id', None)
-            score = 0
-            for criterion, threshold in self.rubric_criteria.items():
-                if row.get(criterion, 0) >= threshold:
-                    score += 1
-            evaluation['passed_criteria'] = score
-            evaluation['total_criteria'] = len(self.rubric_criteria)
-            evaluation['is_pass'] = score == len(self.rubric_criteria)
-            results.append(evaluation)
-        return pd.DataFrame(results)
-    
-
-
-
-
-
-
-
-
-def find_resume(candidate_id, search_directory='resumes'):
-    """
-    Search for a resume file for a given candidate ID in the specified directory.
-
-    Parameters:
-    - candidate_id (str): The unique ID of the candidate
-    - search_directory (str): Directory where resume files are stored. Defaults to 'resumes'.
-
-    Returns:
-    - list: List of matching file paths. Empty list if no file is found.
-    """
+def find_resume(candidate_id: str, search_directory: str = 'resumes') -> List[str]:
     matching_files = []
-    
-    # Traverse the directory
-    for root, dirs, files in os.walk(search_directory):
-        for file in files:
-            # Check if candidate ID is in the filename
-            if candidate_id in file:
-                # Store full path
-                matching_files.append(os.path.join(root, file))
-    
+    dirs_to_search = [
+        search_directory,
+        os.path.join("data", "p004_resume_screening_crew_dataset", "resumes"),
+        "data",
+        "."
+    ]
+    seen = set()
+    for directory in dirs_to_search:
+        if not os.path.exists(directory):
+            continue
+        for root, dirs, files in os.walk(directory):
+            if ".venv" in root or "venv" in root:
+                continue
+            for file in files:
+                norm_cid = candidate_id.lower().replace("-", "_")
+                norm_cid_short = norm_cid.split("_")[-1] if "_" in norm_cid else norm_cid
+                if (candidate_id.lower() in file.lower() or norm_cid in file.lower() or norm_cid_short in file.lower()) and file.endswith(".md"):
+                    full_path = os.path.abspath(os.path.join(root, file))
+                    if full_path not in seen:
+                        seen.add(full_path)
+                        rel_path = os.path.relpath(full_path, os.getcwd())
+                        matching_files.append(rel_path)
     return matching_files
 
-
-
-
-# Function to calculate total score based on weighted criteria
-def calculate_score(scores, weights=None):
-    """
-    Calculate a final score based on given scores and optional weights.
+def calculate_score(scores: Dict[str, Any], weights: Dict[str, float] = None) -> Union[float, Dict[str, Any]]:
+    categories = [
+        "python_programming",
+        "sql_database_skills",
+        "api_integration",
+        "llm_application_development",
+        "agent_frameworks",
+        "rag_understanding",
+        "testing_and_quality",
+        "communication"
+    ]
+    valid_scores = {}
+    for cat in categories:
+        val = scores.get(cat, 0)
+        if isinstance(val, str):
+            if "-" in val:
+                val = val.split("-")[-1]
+            if "/" in val:
+                val = val.split("/")[0]
+        try:
+            val = int(float(val))
+        except (ValueError, TypeError):
+            val = 0
+        if val < 0:
+            val = 0
+        elif val > 5:
+            val = 5
+        valid_scores[cat] = val
+        
+    overall_score = sum(valid_scores.values())
+    max_score = 40
+    percentage = (overall_score / max_score) * 100
     
-    Parameters:
-    scores (dict): Dictionary of criterion names and their scores. Example: {'math': 90, 'english': 85}
-    weights (dict, optional): Dictionary of criterion names and their respective weights (0 to 1). 
-                              The sum should ideally be 1. If None, all criteria are equally weighted.
-    
-    Returns:
-    float: Total weighted score
-    """
-    if not weights:
-        # If no weights provided, assign equal weight to each criterion
-        num_criteria = len(scores)
-        weights = {key: 1/num_criteria for key in scores}
-    
-    # Ensure all criteria in scores have corresponding weights
-    for key in scores:
-        if key not in weights:
-            weights[key] = 0  # default weight 0 if not specified
-    
-    # Calculate weighted score
-    total_score = sum(scores[key] * weights[key] for key in scores)
-    return total_score
+    if percentage >= 80:
+        recommendation = "STRONG_MATCH"
+    elif percentage >= 60:
+        recommendation = "MODERATE_MATCH"
+    elif percentage >= 40:
+        recommendation = "WEAK_MATCH"
+    else:
+        recommendation = "NEEDS_MANUAL_REVIEW"
+        
+    return {
+        "scores": valid_scores,
+        "overall_score": overall_score,
+        "max_score": max_score,
+        "percentage": percentage,
+        "recommendation": recommendation
+    }
 
-
-
-from typing import List, Dict
-
-# Function to calculate skill match
-def skill_matcher(job_skills: List[str], candidate_skills: List[str]) -> Dict:
-    """
-    Compare job description skills and candidate skills.
-    
-    Args:
-        job_skills (List[str]): Skills required for the job.
-        candidate_skills (List[str]): Skills listed in the candidate's resume.
-    
-    Returns:
-        Dict: Result containing matched skills, partial matches, missing skills, match percentage.
-    """
-    # Normalize skills (lowercase and strip whitespaces)
+def skill_matcher(job_skills: List[str], candidate_skills: List[str]) -> Dict[str, Any]:
     job_skills_set = set([skill.strip().lower() for skill in job_skills])
     candidate_skills_set = set([skill.strip().lower() for skill in candidate_skills])
-    
-    # Matched skills
     matched = list(job_skills_set & candidate_skills_set)
-    
-    # Skills present in candidate but only partially match (optional or fuzzy logic can be added here)
     partial_matches = list(candidate_skills_set - job_skills_set)
-    
-    # Missing skills - required but not in candidate profile
     missing = list(job_skills_set - candidate_skills_set)
-    
-    # Simple match percentage
     match_percentage = round((len(matched) / len(job_skills_set)) * 100, 2) if job_skills_set else 0
-    
     return {
         "matched_skills": [skill.capitalize() for skill in matched],
         "partial_matches": [skill.capitalize() for skill in partial_matches],
@@ -226,66 +165,54 @@ def skill_matcher(job_skills: List[str], candidate_skills: List[str]) -> Dict:
         "match_percentage": match_percentage
     }
 
-
-
-
-
-import json
-
-
-
-
-import os
-from datetime import datetime
-
-# Function to save the report
-def save_report_tool(report_content, report_name="final_report"):
-    """
-    Saves the final report content to the outputs/ folder.
-    
-    Args:
-        report_content (str): Content of the report to save.
-        report_name (str): Optional base name for the report file.
-        
-    Returns:
-        str: Path to the saved report file.
-    """
-    # Ensure outputs directory exists
+def save_report_tool(report_content: str, report_name: str = "final_report") -> str:
     output_dir = "outputs"
     os.makedirs(output_dir, exist_ok=True)
-
-    # Generate timestamped filename
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"{report_name}_{timestamp}.txt"
+    try:
+        data = json.loads(report_content)
+        filename = f"{report_name}.json"
+        file_path = os.path.join(output_dir, filename)
+        with open(file_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2)
+        return file_path
+    except Exception:
+        pass
+    filename = f"{report_name}.txt"
     file_path = os.path.join(output_dir, filename)
-
-    # Save the report content to file
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(report_content)
-
     return file_path
 
+def validate_report(report: Any) -> Dict[str, Any]:
+    if isinstance(report, str):
+        if not os.path.exists(report):
+            fallback = os.path.join("outputs", os.path.basename(report))
+            if os.path.exists(fallback):
+                report = fallback
+            else:
+                return {"valid": False, "missing_fields": REQUIRED_FIELDS, "error": f"File not found: {report}"}
+        try:
+            with open(report, "r", encoding="utf-8") as f:
+                report = json.load(f)
+        except Exception as e:
+            return {"valid": False, "missing_fields": REQUIRED_FIELDS, "error": f"Failed to parse JSON: {e}"}
 
+    if not isinstance(report, dict):
+        return {"valid": False, "missing_fields": REQUIRED_FIELDS, "error": "Report must be a dictionary or a valid path to JSON"}
 
+    if "interview_question" in report and "interview_questions" not in report:
+        report["interview_questions"] = report["interview_question"]
+    elif "interview_questions" in report and "interview_question" not in report:
+        report["interview_question"] = report["interview_questions"]
 
-import json
-
-# Define required fields
-REQUIRED_FIELDS = ["candidate_id", "candidate_name", "role_title","overall_score","max_score","percentage","recommendation","executive_summary","strengths","gaps","interview_focus_areas","interview_question","evidence","human_review_note"]
-
-
-def validate_report(report):
-    """
-    Validates that all required fields are present in the report.
-    
-    Args:
-        report (dict): The report data as a dictionary.
-    
-    Returns:
-        dict: Validation result with missing fields if any.
-    """
     missing_fields = [field for field in REQUIRED_FIELDS if field not in report]
     if missing_fields:
         return {"valid": False, "missing_fields": missing_fields}
-    return {"valid": True, "missing_fields": []}
+    return report
 
+class LoadScreeningRubric:
+    def __init__(self, rubric_criteria=None):
+        self.rubric_criteria = rubric_criteria or {}
+
+    def evaluate(self, load_data):
+        return load_data
