@@ -1,0 +1,79 @@
+{
+  "destination": "Jaipur",
+  "region": "Rajasthan",
+  "country": "India",
+  "forecast_days": 3,
+  "current_weather": {
+    "temperature_c": 37.0,
+    "humidity": 37,
+    "precipitation_mm": 0.0,
+    "wind_speed_kmph": 15.0,
+    "weather_description": "Haze"
+  },
+  "daily_forecast": [
+    {
+      "date": "2026-06-26",
+      "max_temp_c": 39.0,
+      "min_temp_c": 30.0,
+      "avg_temp_c": 35.0,
+      "total_precipitation_mm": 0.1,
+      "max_wind_kmph": 21.0,
+      "max_chance_of_rain": 17,
+      "weather_description": "Clear "
+    },
+    {
+      "date": "2026-06-27",
+      "max_temp_c": 40.0,
+      "min_temp_c": 31.0,
+      "avg_temp_c": 36.0,
+      "total_precipitation_mm": 0.6,
+      "max_wind_kmph": 26.0,
+      "max_chance_of_rain": 36,
+      "weather_description": "Moderate rain at times"
+    },
+    {
+      "date": "2026-06-28",
+      "max_temp_c": 40.0,
+      "min_temp_c": 31.0,
+      "avg_temp_c": 36.0,
+      "total_precipitation_mm": 0.0,
+      "max_wind_kmph": 31.0,
+      "max_chance_of_rain": 1,
+      "weather_description": "Clear "
+    }
+  ],
+  "weather_risk": "HIGH",
+  "risk_factors": [
+    "High heat",
+    "Extreme heat",
+    "Extreme heat"
+  ],
+  "recommended_actions": [
+    "Avoid outdoor travel"
+  ],
+  "packing_suggestions": [
+    "Water bottle",
+    "Umbrella",
+    "Avoid heavy outdoor gear",
+    "Light comfortable clothes"
+  ],
+  "travel_readiness_advisory": "Travel advisory for Jaipur:\nWeather risk is HIGH.\nTravel is risky due to weather conditions.",
+  "weather_risk_explanation": "The overall weather risk for Jaipur is HIGH.\nReason: High heat, Extreme heat, Extreme heat",
+  "resources_used": [
+    "resource://travel/checklist",
+    "resource://travel/advisory-rules",
+    "resource://weather/normalized-forecast-schema"
+  ],
+  "tools_used": [
+    "validate_city_input_tool",
+    "get_weather_forecast_tool",
+    "normalize_weather_data_tool",
+    "calculate_weather_risk_tool",
+    "save_travel_advisory_tool"
+  ],
+  "prompts_used": [
+    "travel_readiness_prompt",
+    "weather_risk_summary_prompt",
+    "packing_recommendation_prompt"
+  ]
+}
