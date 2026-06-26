@@ -1,0 +1,24 @@
+{
+    "candidate_id": "CAND-004",
+    "candidate_name": "Arjun Nair",
+    "role_title": "AI Engineer",
+    "overall_score": 0,
+    "max_score": 40,
+    "percentage": 0,
+    "recommendation": "NEEDS_MANUAL_REVIEW",
+    "executive_summary": "Initial screening report generated.",
+    "strengths": [],
+    "gaps": [],
+    "interview_focus_areas": [],
+    "interview_questions": {
+        "technical_questions": [],
+        "project_deep_dive_questions": [],
+        "scenario_questions": [],
+        "gap_validation_questions": []
+    },
+    "evidence": [
+        "jd_ai_engineer.md",
+        "candidate_004_arjun_nair.md"
+    ],
+    "human_review_note": "This is an AI-assisted screening report based on the provided resume and job description. A human reviewer should validate the recommendation before making any recruitment decision."
+}
