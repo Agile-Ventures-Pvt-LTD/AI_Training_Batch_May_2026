@@ -7,10 +7,10 @@ I have  built a Model Context Protocol MCP server that exposes weather-related t
 ## 2. Business use case
 A traveler wants to check whether the weather is suitable for travel to a city.
 Example questions:
-Should I travel to Jaipur this weekend?
-What should I pack for Pune based on the weather?
-Is Mumbai risky for outdoor travel?
-Can I travel comfortably to New Delhi over the next few days?
+-Should I travel to Jaipur this weekend?
+-What should I pack for Pune based on the weather?
+-Is Mumbai risky for outdoor travel?
+-Can I travel comfortably to New Delhi over the next few days?
 The MCP server does not behave like a generic weather chatbot. It exposes well-defined MCP tools, resources and prompts.
 
 ## 3. Technology stack
@@ -28,7 +28,7 @@ The MCP server does not behave like a generic weather chatbot. It exposes well-d
 Weather data is retrieved from wttr.in
 - **Primary URL:** `https://wttr.in`
 -  **Fallback URL:** `https://wttr.is`
--  **Format:** Querying `?format=j1` returns the weather in a structured JSON layout containing:
+-  **Format:** Querying `?format=j1` returns the weather in a structured JSON layout
 for more formats like png, html and so on, we can refer to the github of this api (https://github.com/chubin/wttr.in)
 
 ---
@@ -90,6 +90,7 @@ To run it in development mode with the Model Context Protocol Inspector:
 ```bash
 uv run mcp dev src/server.py
 ```
+
 This opens a local developer portal at `http://localhost:5173` that is MCP inspector, I have attatched test case screenshots that i implemented during the development as reference.
 ---
 
@@ -166,7 +167,9 @@ The final advisory output adheres to the `TravelAdvisoryReport` Pydantic model
 
 ## Reference screenshots
 ![Resources](image.png)
+---
 ![Prompts](image-1.png)
+---
 ![Tools](image-2.png)
 
 These screenshots showcase that the Resources, prompts and tools have been implemented and tested during the implementation of this project.
