@@ -1,0 +1,54 @@
+{
+  "candidate_id": "CAND-001",
+  "candidate_name": "Rohan Mehta",
+  "role_title": "AI Engineer",
+  "overall_score": 30,
+  "max_score": 40,
+  "percentage": 75,
+  "recommendation": "MODERATE_MATCH",
+  "executive_summary": "Rohan is a capable AI Application Developer with 3.5 years of experience specializing in Python, LangChain, and Retrieval-Augmented Generation (RAG). He demonstrates solid practical experience building internal automation tools, proof-of-concepts, and multi-agent prototypes using modern LLM frameworks. He is a strong match for mid-level application development, though he lacks deep exposure to cloud-scale deployments, production ML infrastructure, and advanced custom model tuning.",
+  "strengths": [
+    "Proficient in Python ecosystem tools (FastAPI, Streamlit, pytest).",
+    "Hands-on experience building functional RAG pipelines using LangChain, Chroma, and FAISS.",
+    "Proactive exploration of advanced agentic frameworks like LangGraph and CrewAI.",
+    "Strong foundational focus on automated testing and JSON schema output validation."
+  ],
+  "gaps": [
+    "Limited evidence of managing production-grade LLM applications at high scale.",
+    "Lacks explicit experience with enterprise cloud platforms (AWS, Azure, GCP) or CI/CD pipelines.",
+    "No mentioned background in traditional Machine Learning modeling, fine-tuning, or training workflows.",
+    "Evaluation experience is mostly limited to manual checklists rather than automated LLM-as-a-judge frameworks."
+  ],
+  "interview_focus_areas": [
+    "RAG optimization and handling production retrieval challenges.",
+    "Architectural scalability and API design patterns.",
+    "Agentic state management and error-handling in LangGraph loops.",
+    "Enterprise readiness, security constraints, and deployment strategies."
+  ],
+  "interview_questions": {
+    "technical_questions": [
+      "How do you handle the chunking strategy in your RAG pipelines when dealing with highly dense, multi-page PDFs to prevent losing context?",
+      "Can you explain how you handle state management and prevent infinite loops in your LangGraph workflow prototypes?",
+      "How do you enforce strict JSON schema output validation when an upstream LLM returns malformed responses despite prompt engineering?"
+    ],
+    "project_deep_dive_questions": [
+      "In your Enterprise Policy Assistant project, how did you handle document access control or filter retrieval results based on user metadata?",
+      "What specific metrics did you use during your manual LLM evaluation checklist to determine if the Helpdesk Ticket Summarizer was ready for a demo?"
+    ],
+    "scenario_questions": [
+      "If your Enterprise Policy Assistant starts suffering from high latency due to large context windows or slow embedding generation, what steps would you take to optimize it?",
+      "Imagine your Agentic Workflow Prototype misclassifies a critical support ticket, routing it to the wrong path. How would you design a fallback or human-in-the-loop mechanism to catch this?"
+    ],
+    "gap_validation_questions": [
+      "Your experience highlights internal tools and prototypes. What challenges do you anticipate when moving these applications to an external, client-facing production environment?",
+      "Have you worked with cloud-based vector databases or deployment tools like Docker and Kubernetes to scale your Python scripts?"
+    ]
+  },
+  "evidence": [
+    "2 years as an AI Application Developer at TechNova Solutions building RAG pipelines and LLM assistants.",
+    "1.5 years as a Python Developer at DataBridge Labs focused on data processing and REST APIs.",
+    "Completed projects utilizing Groq API, OpenAI API, LangChain, and SQLite.",
+    "Holds a Bachelor of Technology in Computer Science."
+  ],
+  "human_review_note": "Candidate has excellent baseline engineering hygiene (testing, schema validation) which makes them highly trainable. Recommend proceeding to a technical interview focused on system design and scalability to assess potential for growth into a senior engineering role."
+}

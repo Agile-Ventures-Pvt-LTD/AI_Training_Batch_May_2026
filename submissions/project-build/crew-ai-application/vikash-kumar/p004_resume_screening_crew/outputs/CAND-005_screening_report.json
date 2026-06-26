@@ -1,0 +1,53 @@
+{
+  "candidate_id": "CAND-005",
+  "candidate_name": "Sara Khan",
+  "role_title": "AI Engineer",
+  "overall_score": 32,
+  "max_score": 40,
+  "percentage": 80,
+  "recommendation": "STRONG_MATCH",
+  "executive_summary": "Sara is a highly capable MLOps Engineer with 5 years of experience spanning machine learning infrastructure, data engineering, and production deployment. She brings elite software hygiene, structured CI/CD automation, and critical observability skills that are rare in pure AI prototyping roles. While her core LLM application design experience (RAG and agent frameworks) is moderate and mostly focused on deployment support rather than standalone architecture, her exceptionally strong production engineering foundation makes her highly qualified to scale and stabilize enterprise AI workflows.",
+  "strengths": [
+    "Production-grade experience containerizing and deploying services with Docker and FastAPI.",
+    "Strong proficiency in building and maintaining robust automation infrastructure via GitHub Actions and CI/CD pipelines.",
+    "Deep expertise in observability, operational logging, and system monitoring (MLflow, drift tracking).",
+    "Solid backend foundations with a data engineering background in ETL pipelines and SQL databases."
+  ],
+  "gaps": [
+    "Moderate hands-on experience designing core algorithmic AI application logic from scratch (e.g., advanced chunking, hybrid retrieval).",
+    "Familiarity with vector databases and agent frameworks is primarily conceptual and limited to deployment integration.",
+    "Evaluation experience is heavily focused on infrastructure metrics (latency, error rates) rather than LLM-specific quality evaluation (faithfulness, relevancy)."
+  ],
+  "interview_focus_areas": [
+    "Ability to bridge operational infrastructure expertise with upstream LLM application architecture.",
+    "Depth of conceptual understanding regarding vector search index management and embedding updates.",
+    "Strategies for monitoring LLM specific risks like prompt injection, cost tracking, and response drift.",
+    "System scaling bottlenecks for heavy RAG workloads vs traditional machine learning APIs."
+  ],
+  "interview_questions": {
+    "technical_questions": [
+      "Given your background in MLflow and logging, how would you design an observability pipeline specifically for tracking LLM token consumption, costs, and response latencies across multiple internal teams?",
+      "When deploying an LLM application using Docker and FastAPI, what strategies do you use to safely manage sensitive runtime secrets like OpenAI or Hugging Face API keys across different environments?",
+      "In traditional ML, you monitor for data drift. How would you approach monitoring for semantic or topic drift in user queries hitting a production RAG application?"
+    ],
+    "project_deep_dive_questions": [
+      "During your GenAI Prototype Deployment project, what specific bottlenecks or environment configuration issues did you run into when containerizing the LLM document assistant?",
+      "In your Model Monitoring Dashboard project, how did you decouple the collection of telemetry data from the main API execution path to prevent adding latency to user requests?"
+    ],
+    "scenario_questions": [
+      "We want to move a LangChain-based RAG application from a local prototype to a production environment. Walk me through how you would set up the automated CI/CD pipeline and automated testing strategy to make this process seamless.",
+      "Imagine our production vector database is experiencing high search latency during peak traffic hours. Given your infrastructure and data engineering experience, what steps would you take to diagnose and remediate the issue?"
+    ],
+    "gap_validation_questions": [
+      "You have supported the packaging of a RAG proof of concept. While you didn't build the pipeline itself, how would you conceptually approach choosing between a fixed-size chunking strategy and a semantic chunking strategy for complex engineering documents?",
+      "What motivated your shift from data engineering to MLOps, and how are you planning to expand your direct development skills in advanced agentic workflows like LangGraph?"
+    ]
+  },
+  "evidence": [
+    "3 years of experience as an MLOps Engineer at ModelWorks AI deploying ML services, building CI/CD automation, and containerizing GenAI prototypes.",
+    "2 years of experience as a Data Engineer at InsightGrid Technologies focusing on Python ETL frameworks and relational SQL databases.",
+    "Successfully supported the deployment, configuration, and monitoring infrastructure of an internal document assistant.",
+    "Holds a Master of Computer Applications degree."
+  ],
+  "human_review_note": "Sara is an outstanding candidate who solves a major pain point for most AI teams: moving models from a local laptop into production. Her exceptional engineering hygiene, CI/CD mastery, and infrastructure background mean she will instantly elevate the deployment standards of the team. She is highly recommended, especially if the team already has pure data scientists or algorithmic developers and needs an engineer to stabilize and scale the architecture."
+}

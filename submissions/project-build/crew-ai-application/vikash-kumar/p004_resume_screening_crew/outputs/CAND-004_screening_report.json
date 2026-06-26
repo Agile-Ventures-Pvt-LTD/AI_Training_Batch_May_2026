@@ -1,0 +1,54 @@
+{
+  "candidate_id": "CAND-004",
+  "candidate_name": "Arjun Nair",
+  "role_title": "AI Engineer",
+  "overall_score": 12,
+  "max_score": 40,
+  "percentage": 30,
+  "recommendation": "NOT_RECOMMENDED",
+  "executive_summary": "Arjun is an early-career Junior Python Developer with 1.2 years of professional experience focused on foundational scripting, basic web endpoints, and simple automation. While he shows a proactive interest in modern tech stacks through personal projects and introductory generative AI coursework, his profile has severe gaps across core software engineering competencies and advanced AI application architecture. He currently lacks the depth required to design or maintain production RAG pipelines, database systems, or agent frameworks.",
+  "strengths": [
+    "Familiar with core Python scripting and basic web development protocols (Flask).",
+    "Hands-on exposure to building simple user interfaces for internal tools using Streamlit.",
+    "Proactive self-learner who has explored basic prompt engineering and introductory LangChain concepts.",
+    "Possesses fundamental version control discipline using Git in a team environment."
+  ],
+  "gaps": [
+    "Very limited professional experience (1.2 years), resulting in a lack of exposure to production-grade software lifecycle management.",
+    "No practical experience with enterprise RAG pipelines, vector search engines, embeddings, or chunking strategies.",
+    "Lacks depth in data management, with experience restricted to very basic, local SQLite configurations.",
+    "Minimal exposure to rigorous automated software testing (pytest) and no experience with LLM evaluation frameworks."
+  ],
+  "interview_focus_areas": [
+    "Foundational software engineering hygiene, error handling, and clean code principles.",
+    "Basic knowledge of relational databases and data persistence modeling.",
+    "Conceptual understanding of web APIs, request-response lifecycles, and state management.",
+    "Theoretical understanding of generative AI mechanics beyond basic prompt inputs."
+  ],
+  "interview_questions": {
+    "technical_questions": [
+      "In your Flask Expense Tracker, how did you handle user input validation to prevent invalid data or malicious scripts from entering your SQLite database?",
+      "Can you explain the difference between a GET request and a POST request when designing a REST API, and when you would use each?",
+      "When working with LLM APIs, network timeouts are common. What basic Python strategies would you implement to ensure a script handles a dropped connection gracefully?"
+    ],
+    "project_deep_dive_questions": [
+      "Your Resume Keyword Matcher project relies on string matching. What are the limitations of this approach compared to semantic search using text embeddings?",
+      "In your FAQ Chatbot Demo, how did you structure your prompt to make sure the LLM stuck to answering the FAQ without wandering off-topic?"
+    ],
+    "scenario_questions": [
+      "If you were asked to add a small SQLite database to your FAQ Chatbot Demo to save the chat history of each user session, how would you structure that table?",
+      "Imagine a python script you wrote is running too slowly because it processes files one by one. Without using complex parallel processing, what basic debugging steps would you take to find the bottleneck?"
+    ],
+    "gap_validation_questions": [
+      "You have completed introductory tutorials for LangChain. What specific concepts or components within the framework did you experiment with, and what did you find most challenging?",
+      "Given your experience with writing simple unit tests, how would you approach writing a test for a function that formats raw string outputs into structured text?"
+    ]
+  },
+  "evidence": [
+    "1.2 years of experience as a Junior Python Developer at CodeCraft Services building automation scripts and fixing utility bugs.",
+    "Developed a basic prompt-only FAQ chatbot demo utilizing a public LLM API.",
+    "Completed introductory certificates in Python Basics and Generative AI.",
+    "Holds a Bachelor of Computer Applications degree."
+  ],
+  "human_review_note": "Arjun is a promising entry-level developer, but he is too junior for a core AI Engineer position. He lacks foundational experience in both robust backend engineering and complex AI application design. He would be an excellent candidate for a Junior Python Developer role or a structured Graduate Engineering Program where he can build core development muscle under senior supervision."
+}

@@ -1,0 +1,111 @@
+[
+  {
+    "candidate_id": "CAND-001",
+    "candidate_name": "Rohan Mehta",
+    "role_title": "AI Engineer",
+    "overall_score": 30,
+    "max_score": 40,
+    "percentage": 75,
+    "recommendation": "MODERATE_MATCH",
+    "executive_summary": "Rohan is a capable AI Application Developer with 3.5 years of experience specializing in Python, LangChain, and Retrieval-Augmented Generation (RAG). He demonstrates solid practical experience building internal automation tools, proof-of-concepts, and multi-agent prototypes using modern LLM frameworks. He is a strong match for mid-level application development, though he lacks deep exposure to cloud-scale deployments, production ML infrastructure, and advanced custom model tuning.",
+    "strengths": [
+      "Proficient in Python ecosystem tools (FastAPI, Streamlit, pytest).",
+      "Hands-on experience building functional RAG pipelines using LangChain, Chroma, and FAISS.",
+      "Proactive exploration of advanced agentic frameworks like LangGraph and CrewAI.",
+      "Strong foundational focus on automated testing and JSON schema output validation."
+    ],
+    "gaps": [
+      "Limited evidence of managing production-grade LLM applications at high scale.",
+      "Lacks explicit experience with enterprise cloud platforms (AWS, Azure, GCP) or CI/CD pipelines.",
+      "No mentioned background in traditional Machine Learning modeling, fine-tuning, or training workflows.",
+      "Evaluation experience is mostly limited to manual checklists rather than automated LLM-as-a-judge frameworks."
+    ]
+  },
+  {
+    "candidate_id": "CAND-002",
+    "candidate_name": "Priya Sharma",
+    "role_title": "AI Engineer",
+    "overall_score": 24,
+    "max_score": 40,
+    "percentage": 60,
+    "recommendation": "LOW_TO_MODERATE_MATCH",
+    "executive_summary": "Priya is a structurally sound Backend Python Developer with 4 years of solid experience in API development, database management, and testing frameworks. While her core software engineering skills, API security practices, and development hygiene are excellent, her exposure to Artificial Intelligence is limited to foundational prompt engineering and basic LLM API wrappers. She currently lacks hands-on experience with production RAG architectures, vector databases, and multi-agent orchestration frameworks.",
+    "strengths": [
+      "Strong backend proficiency with Python frameworks like FastAPI and Flask.",
+      "Solid production-grade experience with relational databases (PostgreSQL, SQL optimization).",
+      "Excellent software engineering practices, including structured logging, robust error handling, and pytest pipelines.",
+      "Familiarity with containerization basics (Docker) and CI/CD integration (GitHub Actions)."
+    ],
+    "gaps": [
+      "Minimal exposure to the Generative AI ecosystem, lacking experience with orchestration tools like LangChain or LangGraph.",
+      "No hands-on experience with vector search engines, chunking strategies, or embeddings (RAG pipelines).",
+      "AI projects are limited to basic, non-grounded prompt-based text generation tools.",
+      "Lacks foundational experience with evaluation metrics for unstructured LLM outputs."
+    ]
+  },
+  {
+    "candidate_id": "CAND-003",
+    "candidate_name": "Neha Gupta",
+    "role_title": "AI Engineer",
+    "overall_score": 16,
+    "max_score": 40,
+    "percentage": 40,
+    "recommendation": "NOT_RECOMMENDED",
+    "executive_summary": "Neha is a capable Data Analyst with 3 years of experience specializing in business intelligence, SQL reporting, and structured data manipulation using Python and pandas. However, her background lacks core software engineering primitives (such as robust API design, structured error handling, asynchronous patterns, and production deployment) and features minimal exposure to the Generative AI ecosystem. Her AI experience is confined to introductory self-study and basic, non-integrated prompt scripts.",
+    "strengths": [
+      "Strong proficiency in SQL query design, data extraction, and relational database concepts.",
+      "Solid data manipulation, cleaning, and analysis capabilities using Python and pandas.",
+      "Proven track record of translating messy data into structured business metrics and stakeholder dashboards.",
+      "Familiarity with foundational prompt engineering basics from independent study."
+    ],
+    "gaps": [
+      "Lacks backend software engineering experience, including API development frameworks (FastAPI, Flask) and web protocols.",
+      "No practical exposure to production AI engineering concepts, including RAG pipelines, vector databases, and embedding models.",
+      "No experience with production-level LLM orchestration frameworks like LangChain, LangGraph, or CrewAI.",
+      "Deficient in software quality assurance standards, lacking experience with automated testing tools like pytest and CI/CD workflows."
+    ]
+  },
+  {
+    "candidate_id": "CAND-004",
+    "candidate_name": "Arjun Nair",
+    "role_title": "AI Engineer",
+    "overall_score": 12,
+    "max_score": 40,
+    "percentage": 30,
+    "recommendation": "NOT_RECOMMENDED",
+    "executive_summary": "Arjun is an early-career Junior Python Developer with 1.2 years of professional experience focused on foundational scripting, basic web endpoints, and simple automation. While he shows a proactive interest in modern tech stacks through personal projects and introductory generative AI coursework, his profile has severe gaps across core software engineering competencies and advanced AI application architecture. He currently lacks the depth required to design or maintain production RAG pipelines, database systems, or agent frameworks.",
+    "strengths": [
+      "Familiar with core Python scripting and basic web development protocols (Flask).",
+      "Hands-on exposure to building simple user interfaces for internal tools using Streamlit.",
+      "Proactive self-learner who has explored basic prompt engineering and introductory LangChain concepts.",
+      "Possesses fundamental version control discipline using Git in a team environment."
+    ],
+    "gaps": [
+      "Very limited professional experience (1.2 years), resulting in a lack of exposure to production-grade software lifecycle management.",
+      "No practical experience with enterprise RAG pipelines, vector search engines, embeddings, or chunking strategies.",
+      "Lacks depth in data management, with experience restricted to very basic, local SQLite configurations.",
+      "Minimal exposure to rigorous automated software testing (pytest) and no experience with LLM evaluation frameworks."
+    ]
+  },
+  {
+    "candidate_id": "CAND-005",
+    "candidate_name": "Sara Khan",
+    "role_title": "AI Engineer",
+    "overall_score": 32,
+    "max_score": 40,
+    "percentage": 80,
+    "recommendation": "STRONG_MATCH",
+    "executive_summary": "Sara is a highly capable MLOps Engineer with 5 years of experience spanning machine learning infrastructure, data engineering, and production deployment. She brings elite software hygiene, structured CI/CD automation, and critical observability skills that are rare in pure AI prototyping roles. While her core LLM application design experience (RAG and agent frameworks) is moderate and mostly focused on deployment support rather than standalone architecture, her exceptionally strong production engineering foundation makes her highly qualified to scale and stabilize enterprise AI workflows.",
+    "strengths": [
+      "Production-grade experience containerizing and deploying services with Docker and FastAPI.",
+      "Strong proficiency in building and maintaining robust automation infrastructure via GitHub Actions and CI/CD pipelines.",
+      "Deep expertise in observability, operational logging, and system monitoring (MLflow, drift tracking).",
+      "Solid backend foundations with a data engineering background in ETL pipelines and SQL databases."
+    ],
+    "gaps": [
+      "Moderate hands-on experience designing core algorithmic AI application logic from scratch (e.g., advanced chunking, hybrid retrieval).",
+      "Familiarity with vector databases and agent frameworks is primarily conceptual and limited to deployment integration.",
+      "Evaluation experience is heavily focused on infrastructure metrics (latency, error rates) rather than LLM-specific quality evaluation (faithfulness, relevancy)."
+    ]
+  }
+]

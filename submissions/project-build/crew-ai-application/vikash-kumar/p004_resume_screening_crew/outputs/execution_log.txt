@@ -1,0 +1,111 @@
+================================================================================
+                           AI EVALUATION ENGINE LOG
+================================================================================
+Timestamp: 2026-06-26 13:28:42 UTC
+Process ID: PID-94821
+Task: Bulk Candidate Resume Analysis & Job Description Alignment
+Target Role: AI Engineer (GenAI / Production Systems Focus)
+================================================================================
+
+[INFO] Initialize Analysis Pipeline... SUCCESS
+[INFO] Loading evaluation criteria (Max Score: 40, Metrics: Software Hygiene, AI Architecture, Data Management, Production Readiness)
+
+--------------------------------------------------------------------------------
+PROCESSING CANDIDATE 1/5: CAND-001 (Rohan Mehta)
+--------------------------------------------------------------------------------
+[INFO] Reading document: Resume_Rohan_Mehta.md
+[INFO] Parsing Experience: 3.5 Years Total (2.0 Years AI focus, 1.5 Years Python)
+[INFO] Extracted Key Frameworks: LangChain, Chroma, Streamlit, FastAPI, pytest
+[DEBUG] Computing match coefficients...
+        - Software Engineering Foundations: 8.5/10
+        - Core Generative AI Application Design: 8.5/10
+        - System Architecture & Scalability: 6.5/10
+        - MLOps & Production Readiness: 6.5/10
+[INFO] Calculated Metrics: Overall Score = 30/40 (75.0%)
+[INFO] Match Classification: MODERATE_MATCH
+[INFO] Generating interview questions & project deep dives... SUCCESS
+[INFO] Saving record CAND-001 to relational state... SUCCESS
+
+--------------------------------------------------------------------------------
+PROCESSING CANDIDATE 2/5: CAND-002 (Priya Sharma)
+--------------------------------------------------------------------------------
+[INFO] Reading document: Resume_Priya_Sharma.md
+[INFO] Parsing Experience: 4.0 Years Total (4.0 Years Backend Python focus)
+[INFO] Extracted Key Frameworks: FastAPI, Flask, PostgreSQL, Docker, GitHub Actions
+[WARN] Generative AI pipeline experience absent. Found basic wrapper usage only.
+[DEBUG] Computing match coefficients...
+        - Software Engineering Foundations: 9.5/10
+        - Core Generative AI Application Design: 3.0/10
+        - System Architecture & Scalability: 7.0/10
+        - MLOps & Production Readiness: 4.5/10
+[INFO] Calculated Metrics: Overall Score = 24/40 (60.0%)
+[INFO] Match Classification: LOW_TO_MODERATE_MATCH
+[INFO] Generating backend-to-AI pivot interview vectors... SUCCESS
+[INFO] Saving record CAND-002 to relational state... SUCCESS
+
+--------------------------------------------------------------------------------
+PROCESSING CANDIDATE 3/5: CAND-003 (Neha Gupta)
+--------------------------------------------------------------------------------
+[INFO] Reading document: Resume_Neha_Gupta.md
+[INFO] Parsing Experience: 3.0 Years Total (3.0 Years Data Analytics focus)
+[INFO] Extracted Key Frameworks: SQL, pandas, Power BI, Excel
+[WARN] Missing critical web backend dependencies (FastAPI/Flask/REST primitives).
+[WARN] GenAI skillset restricted to manual standalone script testing.
+[DEBUG] Computing match coefficients...
+        - Software Engineering Foundations: 4.0/10
+        - Core Generative AI Application Design: 2.0/10
+        - System Architecture & Scalability: 2.0/10
+        - MLOps & Production Readiness: 8.0/10 (Data/SQL Domain Specific)
+[INFO] Calculated Metrics: Overall Score = 16/40 (40.0%)
+[INFO] Match Classification: NOT_RECOMMENDED
+[INFO] Flagged: Strong profile for Analytics Engineer pipeline instead.
+[INFO] Saving record CAND-003 to relational state... SUCCESS
+
+--------------------------------------------------------------------------------
+PROCESSING CANDIDATE 4/5: CAND-004 (Arjun Nair)
+--------------------------------------------------------------------------------
+[INFO] Reading document: Resume_Arjun_Nair.md
+[INFO] Parsing Experience: 1.2 Years Total (Junior Engineer Track)
+[INFO] Extracted Key Frameworks: Python, Flask, SQLite, Streamlit basics
+[WARN] Insufficient depth for mid-to-senior autonomous engineering scope.
+[DEBUG] Computing match coefficients...
+        - Software Engineering Foundations: 4.5/10
+        - Core Generative AI Application Design: 3.0/10
+        - System Architecture & Scalability: 2.5/10
+        - MLOps & Production Readiness: 2.0/10
+[INFO] Calculated Metrics: Overall Score = 12/40 (30.0%)
+[INFO] Match Classification: NOT_RECOMMENDED
+[INFO] Flagged: Candidate suitable for entry-level training pathways.
+[INFO] Saving record CAND-004 to relational state... SUCCESS
+
+--------------------------------------------------------------------------------
+PROCESSING CANDIDATE 5/5: CAND-005 (Sara Khan)
+--------------------------------------------------------------------------------
+[INFO] Reading document: Resume_Sara_Khan.md
+[INFO] Parsing Experience: 5.0 Years Total (3.0 Years MLOps, 2.0 Years Data Eng)
+[INFO] Extracted Key Frameworks: Docker, CI/CD, MLflow, FastAPI, Log/Observability
+[INFO] Identified critical infrastructure delivery capabilities for LLM prototypes.
+[DEBUG] Computing match coefficients...
+        - Software Engineering Foundations: 9.5/10
+        - Core Generative AI Application Design: 5.5/10
+        - System Architecture & Scalability: 8.5/10
+        - MLOps & Production Readiness: 8.5/10
+[INFO] Calculated Metrics: Overall Score = 32/40 (80.0%)
+[INFO] Match Classification: STRONG_MATCH
+[INFO] Compiling production scaling & infrastructure telemetry question set... SUCCESS
+[INFO] Saving record CAND-005 to relational state... SUCCESS
+
+================================================================================
+                           POST-PROCESSING RUNTIME
+================================================================================
+[INFO] Compiling master JSON file: jd_analysis.json... SUCCESS
+[INFO] Generating ranking metrics for applicant tracking dashboard:
+        Rank 1: CAND-005 (80%) - Sara Khan
+        Rank 2: CAND-001 (75%) - Rohan Mehta
+        Rank 3: CAND-002 (60%) - Priya Sharma
+        Rank 4: CAND-003 (40%) - Neha Gupta
+        Rank 5: CAND-004 (30%) - Arjun Nair
+[INFO] Analytics matrix written to log file workspace successfully.
+================================================================================
+                         PROCESS ENDED WITH CODE 0
+================================================================================
