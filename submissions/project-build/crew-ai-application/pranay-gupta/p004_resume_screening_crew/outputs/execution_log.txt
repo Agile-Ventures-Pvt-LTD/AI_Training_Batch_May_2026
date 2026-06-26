@@ -1,0 +1,16 @@
+[2026-06-26 14:15:00] Session Started
+[2026-06-26 14:15:00] Starting screening for CAND-001
+[2026-06-26 14:15:02] [Principal Job Description Analyst] Working on Task: Analyze Job Description...
+[2026-06-26 14:15:10] [Expert Talent Profile Extractor] Working on Task: Extract Resume Profile...
+[2026-06-26 14:15:25] [Senior Technical Fitment Evaluator] Executing tool: score_calculator_tool...
+[2026-06-26 14:15:26] [Senior Technical Fitment Evaluator] Result: {"overall_score": 36, "percentage": 90.0, "recommendation_band": "STRONG_MATCH"}
+[2026-06-26 14:15:40] [Chief Talent Acquisition Officer] Executing tool: save_report_tool...
+[2026-06-26 14:15:41] Successfully processed CAND-001: Written to outputs/CAND-001_screening_report.json
+
+[2026-06-26 14:15:42] Starting screening for CAND-002
+[2026-06-26 14:16:15] Successfully processed CAND-002: Written to outputs/CAND-002_screening_report.json
+
+[2026-06-26 14:16:16] Starting screening for CAND-003
+[2026-06-26 14:16:48] Successfully processed CAND-003: Written to outputs/CAND-003_screening_report.json
+
+[2026-06-26 14:16:50] All screenings finalized. Ready for evaluation phase.
