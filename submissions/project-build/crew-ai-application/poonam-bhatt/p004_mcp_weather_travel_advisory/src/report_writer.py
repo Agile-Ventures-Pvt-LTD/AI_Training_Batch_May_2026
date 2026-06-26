@@ -1,6 +1,6 @@
 import os
 from src.schemas import TravelAdvisoryReport, CurrentWeather, DailyForecast
-from src.tools import save_travel_advisory_tool
+
 
 def build_travel_advisory_report(
     normalized_data: dict,

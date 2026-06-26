@@ -1,6 +1,6 @@
 import sys
 import os
-import pytest
+import pytestn
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from src.resources import get_checklist, get_advisory_rules, get_forecast_schema
