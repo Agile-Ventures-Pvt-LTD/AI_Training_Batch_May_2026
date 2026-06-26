@@ -1,0 +1,75 @@
+{
+  "destination": "Pune",
+  "region": "Maharashtra",
+  "country": "India",
+  "forecast_days": 3,
+  "current_weather": {
+    "temperature_c": 28.0,
+    "humidity": 58.0,
+    "precipitation_mm": 0.0,
+    "wind_speed_kmph": 21.0,
+    "weather_description": "Patchy rain nearby"
+  },
+  "daily_forecast": [
+    {
+      "date": "2026-06-26",
+      "max_temp_c": 30.0,
+      "min_temp_c": 22.0,
+      "avg_temp_c": 26.0,
+      "total_precipitation_mm": 0.0,
+      "max_wind_kmph": 21.0,
+      "max_chance_of_rain": 15,
+      "weather_description": "Partly Cloudy "
+    },
+    {
+      "date": "2026-06-27",
+      "max_temp_c": 31.0,
+      "min_temp_c": 23.0,
+      "avg_temp_c": 26.0,
+      "total_precipitation_mm": 0.1,
+      "max_wind_kmph": 23.0,
+      "max_chance_of_rain": 24,
+      "weather_description": "Partly Cloudy "
+    },
+    {
+      "date": "2026-06-28",
+      "max_temp_c": 31.0,
+      "min_temp_c": 23.0,
+      "avg_temp_c": 26.0,
+      "total_precipitation_mm": 0.0,
+      "max_wind_kmph": 25.0,
+      "max_chance_of_rain": 17,
+      "weather_description": "Partly Cloudy "
+    }
+  ],
+  "weather_risk": "MEDIUM",
+  "risk_factors": [
+    "Wind speed may be moderately high "
+  ],
+  "recommended_actions": [
+    "Use sun protection if travelling outdoors"
+  ],
+  "packing_suggestions": [
+    "Comfortable clothing",
+    "Water bottle"
+  ],
+  "travel_readiness_advisory": "Travel appears manageable with basic weather precautions.",
+  "weather_risk_explanation": "The risk level is medium because no major heat, rain, or wind indicators are present.",
+  "resources_used": [
+    "resource://travel/checklist",
+    "resource://travel/advisory-rules",
+    "resource://weather/normalized-forecast-schema"
+  ],
+  "tools_used": [
+    "validate_city_input_tool",
+    "get_weather_forecast_tool",
+    "normalize_weather_data_tool",
+    "calculate_weather_risk_tool",
+    "save_travel_advisory_tool"
+  ],
+  "prompts_used": [
+    "travel_readiness_prompt",
+    "weather_risk_summary_prompt",
+    "packing_recommendation_prompt"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "destination": "Turambhe",
+  "region": "Maharashtra",
+  "country": "India",
+  "forecast_days": 3,
+  "current_weather": {
+    "temperature_c": 31.0,
+    "humidity": 71.0,
+    "precipitation_mm": 0.2,
+    "wind_speed_kmph": 19.0,
+    "weather_description": "Haze"
+  },
+  "daily_forecast": [
+    {
+      "date": "2026-06-26",
+      "max_temp_c": 31.0,
+      "min_temp_c": 26.0,
+      "avg_temp_c": 28.0,
+      "total_precipitation_mm": 1.4000000000000001,
+      "max_wind_kmph": 19.0,
+      "max_chance_of_rain": 57,
+      "weather_description": "Patchy rain nearby"
+    },
+    {
+      "date": "2026-06-27",
+      "max_temp_c": 30.0,
+      "min_temp_c": 27.0,
+      "avg_temp_c": 28.0,
+      "total_precipitation_mm": 4.2,
+      "max_wind_kmph": 19.0,
+      "max_chance_of_rain": 73,
+      "weather_description": "Light rain shower"
+    },
+    {
+      "date": "2026-06-28",
+      "max_temp_c": 31.0,
+      "min_temp_c": 27.0,
+      "avg_temp_c": 28.0,
+      "total_precipitation_mm": 2.5,
+      "max_wind_kmph": 20.0,
+      "max_chance_of_rain": 60,
+      "weather_description": "Patchy rain nearby"
+    }
+  ],
+  "weather_risk": "HIGH",
+  "risk_factors": [
+    "High probability of rain "
+  ],
+  "recommended_actions": [
+    "Keep essentials handy"
+  ],
+  "packing_suggestions": [
+    "Umbrella",
+    "Raincoat",
+    "Waterproof shoes"
+  ],
+  "travel_readiness_advisory": "Travel should be reconsidered or planned with extra caution due to adverse weather.",
+  "weather_risk_explanation": "The risk level is high because severe rain indicators are present.",
+  "resources_used": [
+    "resource://travel/checklist",
+    "resource://travel/advisory-rules",
+    "resource://weather/normalized-forecast-schema"
+  ],
+  "tools_used": [
+    "validate_city_input_tool",
+    "get_weather_forecast_tool",
+    "normalize_weather_data_tool",
+    "calculate_weather_risk_tool",
+    "save_travel_advisory_tool"
+  ],
+  "prompts_used": [
+    "travel_readiness_prompt",
+    "weather_risk_summary_prompt",
+    "packing_recommendation_prompt"
+  ]
+}
