@@ -1,0 +1,10 @@
+{
+    "mcpServers": {
+        "travel_weather": {
+            "command": "python",
+            "args": [
+                "C:\\Training\\Assignments\\AI_Training_Batch_May_2026\\submissions\\project-build\\crew-ai-application\\Mohammad Zaid\\p004_mcp_weather_travel_advisory\\src\\server.py"
+            ]
+        }
+    }
+}
