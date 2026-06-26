@@ -1,0 +1,21 @@
+{
+ "candidate_id": "003",
+ "candidate_name": "neha gupta",
+ "role_title": "ai engineer",
+ "overall_score": 21,
+ "max_score": 40,
+ "percentage": 52.5,
+ "recommendation": "MODERATE_MATCH",
+ "executive_summary": "",
+ "strengths": ["API-Integration"],
+ "gaps": [],
+ "interview_focus_areas": ["LLM"],
+ "interview_questions": {
+ "technical_questions": ["Compare transformers vs. RNNs and when would you choose one over the other?"],
+ "project_deep_dive_questions": [],
+ "scenario_questions": ["Give an example of a successful project you were part of. What was your role in its success?"],
+ "gap_validation_questions": ["How do you ensure that your work complies with industry standards and regulations?"]
+ },
+ "evidence": [],
+ "human_review_note": "This is an AI-assisted screening report based on the provided resume and job description. A human reviewer should validate the recommendation before making any recruitment decision."
+}

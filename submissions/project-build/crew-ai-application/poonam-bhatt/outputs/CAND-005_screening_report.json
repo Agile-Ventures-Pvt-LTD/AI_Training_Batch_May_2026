@@ -1,0 +1,21 @@
+{
+ "candidate_id": "005",
+ "candidate_name": "sara khan",
+ "role_title": "ai engineer",
+ "overall_score": 9,
+ "max_score": 40,
+ "percentage": 22.5,
+ "recommendation": "NEED_MANUAL_REVIEW",
+ "executive_summary": "Need alot of improvements",
+ "strengths": ["Communication"],
+ "gaps": ["technical skills"],
+ "interview_focus_areas": ["Python","RAG"],
+ "interview_questions": {
+ "technical_questions": ["what is python ?","Why to use RAG?","How to intergrate API?"],
+ "project_deep_dive_questions": ["Explain your Project technical Aspects."],
+ "scenario_questions": ["Tell me about a time you had a conflict with a coworker. How did you resolve it?"],
+ "gap_validation_questions": [" How do you stay updated on the latest developments in verification and validation engineering?"]
+ },
+ "evidence": [],
+ "human_review_note": "This is an AI-assisted screening report based on the provided resume and job description. A human reviewer should validate the recommendation before making any recruitment decision."
+}

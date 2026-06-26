@@ -1,0 +1,21 @@
+{
+ "candidate_id": "004",
+ "candidate_name": "arjun gupta",
+ "role_title": "ai engineer",
+ "overall_score": 11,
+ "max_score": 40,
+ "percentage": 27.5,
+ "recommendation": "WEAK_MATCH",
+ "executive_summary": "",
+ "strengths": ["RAG"],
+ "gaps": [],
+ "interview_focus_areas": ["python"],
+ "interview_questions": {
+ "technical_questions": ["“Write Python code to normalize input features before training.”"],
+ "project_deep_dive_questions": [],
+ "scenario_questions": ["Describe a situation where you had to work with a difficult team member."],
+ "gap_validation_questions": ["Can you explain the difference between verification and validation?"]
+ },
+ "evidence": [],
+ "human_review_note": "This is an AI-assisted screening report based on the provided resume and job description. A human reviewer should validate the recommendation before making any recruitment decision."
+}
