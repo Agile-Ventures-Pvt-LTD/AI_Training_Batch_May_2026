@@ -1,0 +1,51 @@
+{
+    "candidate_id": "CAND-002",
+    "candidate_name": "Priya Sharma",
+    "role_title": "AI Engineer",
+    "overall_score": 22,
+    "max_score": 40,
+    "percentage": 55.0,
+    "recommendation": "WEAK_MATCH",
+    "executive_summary": "Priya Sharma is an experienced Backend Python Developer with 4 years of experience specializing in building FastAPI services, database integrations, and web automation scripts. While she shows strong proficiency in traditional backend architectures, software testing, and production-grade engineering principles, her hands-on implementation experience with generative AI workflows, custom RAG pipelines, and multi-agent systems is heavily constrained.",
+    "strengths": [
+        "Strong production-grade engineering practices with 3 years of experience maintaining operational FastAPI and Flask backend systems.",
+        "Solid command over relational database architectures including writing and optimizing queries for PostgreSQL and SQLite dashboards.",
+        "Demonstrated software quality rigor with extensive experience implementing unit tests via pytest and deploying GitHub Actions CI loops.",
+        "Familiar with structured error handling, environment-based configuration parameters, and API security token authentications."
+    ],
+    "gaps": [
+        "Lacks practical experience with Retrieval-Augmented Generation (RAG) architectures and embedding workflows.",
+        "Zero hands-on exposure to production vector databases such as Chroma, FAISS, or pgvector.",
+        "No experience building multi-agent systems or utilizing orchestration frameworks like LangGraph or CrewAI."
+    ],
+    "interview_focus_areas": [
+        "Transition pathways from core backend systems to AI application engineering architectures",
+        "Retrieval-Augmented Generation conceptual foundations and vector storage layers",
+        "Orchestration patterns for standalone language model workflow pipelines"
+    ],
+    "interview_questions": {
+        "technical_questions": [
+            "Given your strong experience with FastAPI, how would you design an asynchronous endpoint handler to manage streaming text completions from an LLM API to prevent thread blocking?",
+            "If you were tasked with introducing a vector database like pgvector into your existing PostgreSQL setup, how would you approach table schemas and index choices?",
+            "How do standard REST API error-handling patterns differ from handling conversational faults or unexpected JSON structural failures from non-deterministic LLMs?"
+        ],
+        "project_deep_dive_questions": [
+            "In your Customer Support API, how did you decouple endpoint logic from high-frequency database read-write loops to maintain consistent system latencies?",
+            "Walk us through your GenAI Email Draft Prototype. How did you handle runtime exceptions if the external LLM API threw credential or network connection timeouts?"
+        ],
+        "scenario_questions": [
+            "Your backend service experiences a high volume of concurrent database connections during automated sales reporting. How do you design connection pools to avoid failure?",
+            "A generative model in your pipeline begins drifting and returns completely ungrounded or poorly formatted answers. How do you implement automated programmatic checks to intercept this before it reaches a user?"
+        ],
+        "gap_validation_questions": [
+            "Since you have strong backend practices but limited RAG experience, how would you conceptually approach splitting raw textual data into distinct chunks for an AI application?",
+            "How would you integrate a prompt configuration workflow into an automated continuous integration pipeline using your existing GitHub Actions infrastructure?"
+        ]
+    },
+    "evidence": [
+        "Built and maintained FastAPI services for core order and inventory management applications at CloudCart Systems.",
+        "Created a basic prompt-based email drafting prototype using a native LLM API integration layer.",
+        "Designed SQL-based monthly revenue reporting loops using production-grade PostgreSQL and Python automation scripts."
+    ],
+    "human_review_note": "This is an AI-assisted screening report based on the provided resume and job description. A human reviewer should validate the recommendation before making any recruitment decision."
+}

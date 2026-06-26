@@ -1,0 +1,51 @@
+{
+    "candidate_id": "CAND-003",
+    "candidate_name": "Neha Gupta",
+    "role_title": "AI Engineer",
+    "overall_score": 11,
+    "max_score": 40,
+    "percentage": 27.5,
+    "recommendation": "NEEDS_MANUAL_REVIEW",
+    "executive_summary": "Neha Gupta is a Data Analyst with 3 years of experience specializing in SQL query design, business reporting, and dashboard development using Power BI. While she possesses strong core capabilities in data cleaning, tabular data structures, and Python data manipulation using pandas, she lacks the required hands-on software engineering discipline, production testing methodologies, and architectural experience in RAG, vector storage, and multi-agent systems required for an AI Engineering position.",
+    "strengths": [
+        "Proficient in structuring complex SQL queries for relational databases like SQLite and PostgreSQL to pull business metrics.",
+        "Solid Python scripting skills applied directly to data cleaning, manipulation, and report automation tasks via pandas.",
+        "Strong data visualization experience building operational Power BI dashboards for business stakeholders.",
+        "Academic foundation in analytical and structured reasoning with a Bachelor of Science degree in Statistics."
+    ],
+    "gaps": [
+        "Lacks practical experience with software engineering quality standards such as pytest, logging, and formal error handling.",
+        "No hands-on implementation history with Retrieval-Augmented Generation (RAG) frameworks or embedding pipelines.",
+        "Zero exposure to enterprise vector databases, LLM evaluation frameworks, or orchestration frameworks like LangGraph and CrewAI."
+    ],
+    "interview_focus_areas": [
+        "Transition pathways from analytics-driven scripting to modular production software engineering",
+        "Retrieval-Augmented Generation concept mechanics and chunking workflows",
+        "Language model orchestration layers and programmatic context handling"
+    ],
+    "interview_questions": {
+        "technical_questions": [
+            "Given your strong statistics background, how do you conceptually understand token embeddings, and how do they differ from standard multi-dimensional tabular feature vectors?",
+            "In Python scripting, how would you transition a script from a raw procedural Jupyter Notebook format into a modular package structure that uses proper logging and exception handling?",
+            "How do relational database operations in SQL compare to indexing and finding high-similarity semantic structures inside a non-relational vector database?"
+        ],
+        "project_deep_dive_questions": [
+            "Walk us through your Inventory Alert Script. How did you handle runtime exceptions if the tabular source context data structure was corrupted or had missing data columns?",
+            "In your LLM Study Notes Assistant notebook, how did you handle large blocks of text that exceeded the native token window context limit of the target LLM API model?"
+        ],
+        "scenario_questions": [
+            "You are migrating an automation script from manual Excel tracking into a multi-agent workflow. What structural steps do you take to design the system roles?",
+            "An enterprise LLM application begins providing conflicting or hallucinatory output during data analysis reporting. How would you design a programmatic checklist to flag this pattern automatically?"
+        ],
+        "gap_validation_questions": [
+            "Since your background focuses on manual validation, how would you design an automated test using basic Python assertions to verify that an API's JSON output matches an expected schema structure?",
+            "Given your limited history with RAG, how would you handle splitting a 100-page unstructured document into distinct segments to build a semantic search tool?"
+        ]
+    },
+    "evidence": [
+        "Automated weekly business inventory and performance reporting workflows using custom Python scripts and the pandas library.",
+        "Created an LLM Study Notes Assistant using a basic python notebook to interface directly with an external LLM API text-generation layer.",
+        "Engineered SQL queries and extracts to pull data for business stake-holder dashboards using SQLite and PostgreSQL environments."
+    ],
+    "human_review_note": "This is an AI-assisted screening report based on the provided resume and job description. A human reviewer should validate the recommendation before making any recruitment decision."
+}
