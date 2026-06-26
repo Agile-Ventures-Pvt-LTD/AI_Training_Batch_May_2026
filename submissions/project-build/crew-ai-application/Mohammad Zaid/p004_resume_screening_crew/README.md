@@ -1,46 +1,3 @@
-<!-- 1. Project overview.
-2. Business use case.
-3. Technology stack.
-4. Dataset description.
-5. Setup instructions.
-6. Environment variables.
-7. How to run candidate screening.
-8. How to run sample screening.
-9. How to run pytest tests.
-10. How to run evaluation checks.
-11. Agent list and responsibilities.
-12. Tool list and responsibilities.
-13. Sequential orchestration explanation.
-14. Output report format.
-15. Known limitations.
-16. Future improvements. -->
-
-
-# Output
-```python
-{
- "candidate_id": "",
- "candidate_name": "",
- "role_title": "",
- "overall_score": 0,
- "max_score": 40,
- "percentage": 0,
- "recommendation": "",
- "executive_summary": "",
- "strengths": [],
- "gaps": [],
- "interview_focus_areas": [],
- "interview_questions": {
- "technical_questions": [],
- "project_deep_dive_questions": [],
- "scenario_questions": [],
- "gap_validation_questions": []
- },
- "evidence": [],
- "human_review_note": ""
-}
-```
-
 # P004 Resume Screening Crew Dataset
 
 This is a synthetic dataset for **P004: AI Resume Screening and Interview Planning Crew Using CrewAI**.
@@ -124,7 +81,6 @@ CAND-002
 CAND-003
 ```
 
-Strong submissions may screen all five candidates.
 
 ## Scoring Rubric
 
@@ -167,3 +123,74 @@ crewai
 crewai[tools]
 
 ```
+# Output
+
+```python
+{
+ "candidate_id": "",
+ "candidate_name": "",
+ "role_title": "",
+ "overall_score": 0,
+ "max_score": 40,
+ "percentage": 0,
+ "recommendation": "",
+ "executive_summary": "",
+ "strengths": [],
+ "gaps": [],
+ "interview_focus_areas": [],
+ "interview_questions": {
+ "technical_questions": [],
+ "project_deep_dive_questions": [],
+ "scenario_questions": [],
+ "gap_validation_questions": []
+ },
+ "evidence": [],
+ "human_review_note": ""
+}
+```
+
+# Output screenshots are attached:
+```txt
+outpts/
+```
+
+# Requirements
+```bash
+langchain>=1.3.6
+langchain_community>=0.4.2
+langchain_groq==1.1.3
+python-dotenv>=1.2.2
+ipykernel>=7.3.0
+groq>=0.30.0,<1.0.0
+crewai
+crewai[tools]
+
+```
+
+# setup 
+create .ven 
+```bash
+uv venv
+```
+add the requirements.txt
+```txt
+uv pip install requirements.txt
+```
+# Flow
+```txt
+Input: Job Description + Candidate Resume
+   ↓
+Job Description Analyst Agent
+   ↓
+Resume Extraction Agent
+   ↓
+Skill and Experience Matching Agent
+   ↓
+Interview Planning Agent
+   ↓
+Final Recommendation Agent
+   ↓
+Output: Candidate Screening Report
+The final report must depend on the outputs of the earlier agents
+```
+---
