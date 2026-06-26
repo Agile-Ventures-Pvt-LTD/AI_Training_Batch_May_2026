@@ -1,0 +1,81 @@
+{
+  "success": true,
+  "destination": "Jaipur",
+  "region": "Rajasthan",
+  "country": "India",
+  "forecast_days": 3,
+  "current_weather": {
+    "temperature_c": 42.0,
+    "humidity": 25,
+    "precipitation_mm": 0.0,
+    "wind_speed_kmph": 15.0,
+    "weather_description": "Sunny and Hot"
+  },
+  "daily_forecast": [
+    {
+      "date": "2026-06-26",
+      "max_temp_c": 43.0,
+      "min_temp_c": 31.0,
+      "avg_temp_c": 37.0,
+      "total_precipitation_mm": 0.0,
+      "max_wind_kmph": 20.0,
+      "max_chance_of_rain": 0,
+      "weather_description": "Sunny"
+    },
+    {
+      "date": "2026-06-27",
+      "max_temp_c": 44.0,
+      "min_temp_c": 32.0,
+      "avg_temp_c": 38.0,
+      "total_precipitation_mm": 0.0,
+      "max_wind_kmph": 18.0,
+      "max_chance_of_rain": 5,
+      "weather_description": "Sunny"
+    },
+    {
+      "date": "2026-06-28",
+      "max_temp_c": 41.0,
+      "min_temp_c": 30.0,
+      "avg_temp_c": 36.0,
+      "total_precipitation_mm": 0.0,
+      "max_wind_kmph": 26.0,
+      "max_chance_of_rain": 10,
+      "weather_description": "Clear"
+    }
+  ],
+  "weather_risk": "HIGH",
+  "risk_factors": [
+    "Maximum temperature is expected to be critically high (>= 40°C).",
+    "Wind speed may be moderately high during the forecast period."
+  ],
+  "recommended_actions": [
+    "Avoid long outdoor exposure during afternoon hours and maximize hydration.",
+    "Secure dynamic loose objects or outdoor items."
+  ],
+  "packing_suggestions": [
+    "Lightweight cotton clothing",
+    "High-SPF sunscreen",
+    "UV protection sunglasses",
+    "Electrolyte hydration packets",
+    "Wide-brimmed sun hat"
+  ],
+  "travel_readiness_advisory": "Travel looks risky due to severe ambient heat conditions. Outdoor exploration during mid-day is strongly discouraged.",
+  "weather_risk_explanation": "The risk level is flagged as HIGH because the maximum forecast temperature reaches 44°C, breaching the critical 40°C threshold safety rule safety baseline.",
+  "resources_used": [
+    "resource://travel/checklist",
+    "resource://travel/advisory-rules",
+    "resource://weather/normalized-forecast-schema"
+  ],
+  "tools_used": [
+    "validate_city_input_tool",
+    "get_weather_forecast_tool",
+    "normalize_weather_data_tool",
+    "calculate_weather_risk_tool",
+    "save_travel_advisory_tool"
+  ],
+  "prompts_used": [
+    "travel_readiness_prompt",
+    "weather_risk_summary_prompt",
+    "packing_recommendation_prompt"
+  ]
+}
