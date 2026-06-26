@@ -1,0 +1,27 @@
+
+
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+from src.tools import read_job_description_tool,read_resume_tool,candidate_index_lookup_tool
+
+
+def test_read_job_description_tool_success():
+    result = read_job_description_tool.invoke({"jd_path": "data/p004_resume_screening_crew_dataset/job_description/jd_ai_engineer.md"})
+    assert result["success"] is True
+    
+
+def test_read_resume_tool_success():
+    result = read_resume_tool.invoke({"resume_path": "fdata/p004_resume_screening_crew_dataset/resumes/candidate_001_rohan_mehta"})
+    assert result["success"] is True
+
+def test_candidate_index_lookup_valid_candidate():
+    result = candidate_index_lookup_tool.invoke({"id": 1})
+    assert result["found"] is True
+    assert "Rohan Mehta" in result["candidate_name"]
+
+
+def test_candidate_index_lookup_valid_candidate():
+    result = candidate_index_lookup_tool.invoke({"id": 9})
+    assert result["found"] is False
