@@ -1,0 +1,81 @@
+{
+  "destination": "Mumbai",
+  "region": "Maharashtra",
+  "country": "India",
+  "forecast_days": 3,
+  "current_weather": {
+    "temperature_c": 28.0,
+    "humidity": 80,
+    "precipitation_mm": 11.5,
+    "wind_speed_kmph": 28.0,
+    "weather_description": "Moderate rain"
+  },
+  "daily_forecast": [
+    {
+      "date": "2026-06-27",
+      "max_temp_c": 30.0,
+      "min_temp_c": 27.0,
+      "avg_temp_c": 28.5,
+      "total_precipitation_mm": 17.4,
+      "max_wind_kmph": 31.0,
+      "max_chance_of_rain": 63,
+      "weather_description": "Heavy rain"
+    },
+    {
+      "date": "2026-06-28",
+      "max_temp_c": 29.0,
+      "min_temp_c": 25.0,
+      "avg_temp_c": 27.0,
+      "total_precipitation_mm": 21.1,
+      "max_wind_kmph": 40.0,
+      "max_chance_of_rain": 86,
+      "weather_description": "Thunderstorms"
+    },
+    {
+      "date": "2026-06-29",
+      "max_temp_c": 32.0,
+      "min_temp_c": 28.0,
+      "avg_temp_c": 30.0,
+      "total_precipitation_mm": 15.2,
+      "max_wind_kmph": 23.0,
+      "max_chance_of_rain": 57,
+      "weather_description": "Light rain"
+    }
+  ],
+  "weather_risk": "HIGH",
+  "risk_factors": [
+    "High rain risk: Heavy precipitation expected.",
+    "High rain probability detected.",
+    "High wind risk: Heavy winds expected."
+  ],
+  "recommended_actions": [
+    "Avoid outdoor visit.",
+    "Reschedule outdoor tours.",
+    "Avoid exposed high-altitude outdoor areas."
+  ],
+  "packing_suggestions": [
+    "Heavy protection layers",
+    "Emergency kit",
+    "Powerbank",
+    "Waterproof documents container"
+  ],
+  "travel_readiness_advisory": "Travel looks risky due to severe weather. Postpone non-essential transit.",
+  "weather_risk_explanation": "The risk is high because critical limits for heat, rain or winds have been crossed.",
+  "resources_used": [
+    "resource://travel/checklist",
+    "resource://travel/advisory-rules",
+    "resource://weather/normalized-forecast-schema"
+  ],
+  "tools_used": [
+    "validate_city_input_tool",
+    "get_weather_forecast_tool",
+    "normalize_weather_data_tool",
+    "calculate_weather_risk_tool",
+    "save_travel_advisory_tool"
+  ],
+  "prompts_used": [
+    "travel_readiness_prompt",
+    "weather_risk_summary_prompt",
+    "packing_recommendation_prompt"
+  ]
+}

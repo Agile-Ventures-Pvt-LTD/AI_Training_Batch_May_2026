@@ -1,0 +1,76 @@
+{
+  "destination": "Pune",
+  "region": "Maharashtra",
+  "country": "India",
+  "forecast_days": 3,
+  "current_weather": {
+    "temperature_c": 26.0,
+    "humidity": 74,
+    "precipitation_mm": 2.1,
+    "wind_speed_kmph": 18.0,
+    "weather_description": "Light drizzle"
+  },
+  "daily_forecast": [
+    {
+      "date": "2026-06-27",
+      "max_temp_c": 28.0,
+      "min_temp_c": 21.0,
+      "avg_temp_c": 24.5,
+      "total_precipitation_mm": 3.6,
+      "max_wind_kmph": 23.0,
+      "max_chance_of_rain": 32,
+      "weather_description": "Overcast"
+    },
+    {
+      "date": "2026-06-28",
+      "max_temp_c": 29.0,
+      "min_temp_c": 21.0,
+      "avg_temp_c": 25.0,
+      "total_precipitation_mm": 4.6,
+      "max_wind_kmph": 20.0,
+      "max_chance_of_rain": 39,
+      "weather_description": "Light rain"
+    },
+    {
+      "date": "2026-06-29",
+      "max_temp_c": 27.0,
+      "min_temp_c": 21.0,
+      "avg_temp_c": 24.0,
+      "total_precipitation_mm": 1.7,
+      "max_wind_kmph": 18.0,
+      "max_chance_of_rain": 19,
+      "weather_description": "Partly cloudy"
+    }
+  ],
+  "weather_risk": "LOW",
+  "risk_factors": [
+    "No severe weather conditions expected."
+  ],
+  "recommended_actions": [
+    "Enjoy your trip and check standard updates."
+  ],
+  "packing_suggestions": [
+    "Standard travel clothes",
+    "Sunglasses",
+    "Camera"
+  ],
+  "travel_readiness_advisory": "Travel looks comfortable with standard open conditions.",
+  "weather_risk_explanation": "The risk level is low because weather parameters are within normal bands.",
+  "resources_used": [
+    "resource://travel/checklist",
+    "resource://travel/advisory-rules",
+    "resource://weather/normalized-forecast-schema"
+  ],
+  "tools_used": [
+    "validate_city_input_tool",
+    "get_weather_forecast_tool",
+    "normalize_weather_data_tool",
+    "calculate_weather_risk_tool",
+    "save_travel_advisory_tool"
+  ],
+  "prompts_used": [
+    "travel_readiness_prompt",
+    "weather_risk_summary_prompt",
+    "packing_recommendation_prompt"
+  ]
+}
