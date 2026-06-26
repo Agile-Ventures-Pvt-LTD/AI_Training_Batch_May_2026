@@ -1,5 +1,12 @@
 # P004 Case Study 2: Weather and Travel Advisory MCP Server Using wttr.in API
 
+
+## Participant Name
+
+
+Nandani Bisht
+
+
 ## 1. Project Overview
 This project implements a Model Context Protocol (MCP) server that provides weather-based travel advisory tools, resources, and prompts. It accepts a destination city, retrieves weather forecasts from the public `wttr.in` JSON API, normalizes the data, determines potential weather-related travel risks, and generates a structured JSON travel advisory report.
 
