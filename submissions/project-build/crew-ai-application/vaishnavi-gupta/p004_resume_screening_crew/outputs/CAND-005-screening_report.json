@@ -1,0 +1,21 @@
+{
+ "candidate_id": "CAND-005",
+ "candidate_name": "Sara Khan",
+ "role_title": "AI Engineer",
+ "overall_score":32,
+ "max_score": 40,
+ "percentage": 80,
+ "recommendation": "Needs improvement in both technical as well as soft skills",
+ "executive_summary": "Overall highly skilled.",
+ "strengths": [],
+ "gaps": [],
+ "interview_focus_areas": [],
+ "interview_questions": {
+ "technical_questions": [],
+ "project_deep_dive_questions": [],
+ "scenario_questions": [],
+ "gap_validation_questions": []
+ },
+ "evidence": [],
+ "human_review_note": ""
+}

@@ -1,0 +1,21 @@
+{
+ "candidate_id": "CAND-002",
+ "candidate_name": "Priya Sharma",
+ "role_title": "AI Engineer",
+ "overall_score": 10,
+ "max_score": 40,
+ "percentage": 25,
+ "recommendation": "Must work hard",
+ "executive_summary": "very weak technical skills",
+ "strengths": ["Moderate communication"],
+ "gaps": ["Weak technical skills"],
+ "interview_focus_areas": [],
+ "interview_questions": {
+ "technical_questions": [],
+ "project_deep_dive_questions": [],
+ "scenario_questions": [],
+ "gap_validation_questions": []
+ },
+ "evidence": [],
+ "human_review_note": ""
+}

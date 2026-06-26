@@ -1,0 +1,21 @@
+{
+ "candidate_id": "CAND-003",
+ "candidate_name": "Neha Gupta",
+ "role_title": "AI Engineer",
+ "overall_score": 30,
+ "max_score": 40,
+ "percentage": 75,
+ "recommendation": "Slight focus on soft skills.",
+ "executive_summary": "Overall good performance, slight focus is needed on soft skills.",
+ "strengths": ["Strong technical skills"],
+ "gaps": ["Communication skills"],
+ "interview_focus_areas": [],
+ "interview_questions": {
+ "technical_questions": [],
+ "project_deep_dive_questions": [],
+ "scenario_questions": [],
+ "gap_validation_questions": []
+ },
+ "evidence": [],
+ "human_review_note": ""
+}

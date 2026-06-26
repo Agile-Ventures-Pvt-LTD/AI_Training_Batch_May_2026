@@ -1,0 +1,21 @@
+{
+ "candidate_id": "CAND-004",
+ "candidate_name": "Arjun-Nair",
+ "role_title": "AI Engineer",
+ "overall_score": 36,
+ "max_score": 40,
+ "percentage": 90,
+ "recommendation": "Slight improvement in RAG",
+ "executive_summary": "Overall very appreciable performance.",
+ "strengths": [],
+ "gaps": [],
+ "interview_focus_areas": [],
+ "interview_questions": {
+ "technical_questions": [],
+ "project_deep_dive_questions": [],
+ "scenario_questions": [],
+ "gap_validation_questions": []
+ },
+ "evidence": [],
+ "human_review_note": ""
+}
