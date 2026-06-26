@@ -1,0 +1,75 @@
+{
+  "destination": "Bangalore",
+  "region": "Karnataka",
+  "country": "India",
+  "forecast_days": 3,
+  "current_weather": {
+    "temperature_c": 30.0,
+    "humidity": 55,
+    "precipitation_mm": 0.0,
+    "wind_speed_kmph": 22.0,
+    "weather_description": "Partly cloudy"
+  },
+  "daily_forecast": [
+    {
+      "date": "2026-06-26",
+      "max_temp_c": 31.0,
+      "min_temp_c": 21.0,
+      "avg_temp_c": 26.0,
+      "total_precipitation_mm": 0.0,
+      "max_wind_kmph": 22.0,
+      "max_chance_of_rain": 11,
+      "weather_description": "Clear "
+    },
+    {
+      "date": "2026-06-27",
+      "max_temp_c": 31.0,
+      "min_temp_c": 21.0,
+      "avg_temp_c": 26.0,
+      "total_precipitation_mm": 0.4,
+      "max_wind_kmph": 21.0,
+      "max_chance_of_rain": 36,
+      "weather_description": "Clear "
+    },
+    {
+      "date": "2026-06-28",
+      "max_temp_c": 29.0,
+      "min_temp_c": 21.0,
+      "avg_temp_c": 25.0,
+      "total_precipitation_mm": 2.6,
+      "max_wind_kmph": 22.0,
+      "max_chance_of_rain": 59,
+      "weather_description": "Patchy rain nearby"
+    }
+  ],
+  "weather_risk": "MEDIUM",
+  "risk_factors": [
+    "Chance of rain may increase during the forecast period."
+  ],
+  "recommended_actions": [
+    "No specific high/moderate risks; preserve basic precautions."
+  ],
+  "packing_suggestions": [
+    "Water bottle",
+    "Appropriate weather gear"
+  ],
+  "travel_readiness_advisory": "Travel to Bangalore evaluated as MEDIUM.",
+  "weather_risk_explanation": "Risk profiles verified as MEDIUM based on raw constraints.",
+  "resources_used": [
+    "resource://travel/checklist",
+    "resource://travel/advisory-rules",
+    "resource://weather/normalized-forecast-schema"
+  ],
+  "tools_used": [
+    "validate_city_input_tool",
+    "get_weather_forecast_tool",
+    "normalize_weather_data_tool",
+    "calculate_weather_risk_tool",
+    "save_travel_advisory_tool"
+  ],
+  "prompts_used": [
+    "travel_readiness_prompt",
+    "weather_risk_summary_prompt",
+    "packing_recommendation_prompt"
+  ]
+}

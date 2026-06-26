@@ -1,0 +1,22 @@
+[
+    {
+        "timestamp": "2026-06-12T17:05:07.159622",
+        "user_query": "which ticket are overdue?",
+        "plan": {
+            "user_goal": "which ticket are overdue?",
+            "steps": [
+                "Understand request",
+                "Select required tool",
+                "Fetch data from SQLite",
+                "Validate output",
+                "Generate response"
+            ]
+        },
+        "tools_used": "LangChain ReAct Agent",
+        "reflection": {
+            "tool_result_available": false,
+            "answer_complete": false
+        },
+        "final_answer": ""
+    }
+]

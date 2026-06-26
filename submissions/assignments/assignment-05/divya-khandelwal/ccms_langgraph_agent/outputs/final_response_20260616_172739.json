@@ -1,0 +1,12 @@
+{
+    "user_question": " Show statement summary for customer 1",
+    "implementation_choice": "custom_react_agent",
+    "tools_used": [
+        "get_statement_summary",
+        "get_customer_transactions"
+    ],
+    "records_found": 0,
+    "answer": "No records were found for customer 1.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}

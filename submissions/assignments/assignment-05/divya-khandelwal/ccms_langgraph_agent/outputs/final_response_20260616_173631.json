@@ -1,0 +1,15 @@
+{
+    "user_question": " Which customers have the highest amount due?",
+    "implementation_choice": "custom_react_agent",
+    "tools_used": [
+        "get_customer_profile",
+        "get_card_details",
+        "search_transactions",
+        "get_customer_transactions",
+        "get_statement_summary"
+    ],
+    "records_found": 0,
+    "answer": "This operation is not supported by current tools.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}

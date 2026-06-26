@@ -1,0 +1,39 @@
+{
+    "candidate_id": "CAND-003",
+    "candidate_name": "Arjun Verma",
+    "role_title": "AI Engineer",
+    "overall_score": 11,
+    "max_score": 40,
+    "percentage": 27,
+    "recommendation": "NEEDS_MANUAL_REVIEW",
+    "executive_summary": "Arjun's profile is highly skewed toward front-end web presentation layouts and basic user interface interactivity. He lacks the core technical backends, data engineering frameworks, and large-scale architectural capabilities required for a dedicated production AI Systems position.",
+    "strengths": [
+        "Excellent asynchronous integration experience connecting frontend components to remote endpoints.",
+        "Clear understanding of clean code presentation layer practices and user experience testing."
+    ],
+    "gaps": [
+        "Critical lack of data layer capabilities, system architecture patterns, or complex Python backend programming.",
+        "No experience with database scaling, indexing optimization, or persistent metadata storage strategies.",
+        "Zero background exposure to generative AI workflows, RAG patterns, vector databases, or agentic lifecycle loops."
+    ],
+    "interview_focus_areas": [
+        "Determine if the candidate has any underlying backend or algorithmic foundations not represented in the resume text.",
+        "Assess suitability for potential internal cross-functional realignment toward frontend-focused UI positions."
+    ],
+    "interview_questions": [
+        {
+            "question": "The resume lists significant React and JavaScript experience. What is your actual practical background building backend services using Python?",
+            "intent": "Gauge depth of baseline programming versatility to see if a career track shift is realistic."
+        },
+        {
+            "question": "If you had to integrate a third-party AI assistant widget into a web application layout, how would you manage state and security credentials on the client side?",
+            "intent": "Verify technical competency within his comfort zone while testing security boundary awareness."
+        }
+    ],
+    "evidence": {
+        "python_programming": "Completed basic script updates, but historical work is primarily centered on JavaScript/TypeScript web architectures.",
+        "sql_database_skills": "Basic query execution knowledge; no experience with database normalization or index optimization.",
+        "rag_understanding": "No mention of semantic search, context injection, or document parsing mechanisms."
+    },
+    "human_review_note": "Does not meet the baseline criteria for the AI Engineer role. We recommend rejecting this candidate for this specific track or routing his profile over to the web engineering team for review."
+}

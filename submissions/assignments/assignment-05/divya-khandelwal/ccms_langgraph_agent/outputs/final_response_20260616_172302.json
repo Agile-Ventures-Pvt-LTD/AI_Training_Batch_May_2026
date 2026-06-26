@@ -1,0 +1,11 @@
+{
+    "user_question": "Show card details for customer 1",
+    "implementation_choice": "custom_react_agent",
+    "tools_used": [
+        "get_card_details"
+    ],
+    "records_found": 0,
+    "answer": "The customer with ID 1 has one card. The card details are: \nCard Number: **** **** **** 1697\nValid From: 2013-06-01\nExpiry: 2023-06-01\nCard Type ID: 2",
+    "sensitive_data_masked": true,
+    "limitations": []
+}

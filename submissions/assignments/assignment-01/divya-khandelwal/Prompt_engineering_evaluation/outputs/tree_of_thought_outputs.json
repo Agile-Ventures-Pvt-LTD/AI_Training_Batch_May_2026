@@ -1,0 +1,141 @@
+[
+    {
+        "options_evaluated": [
+            {
+                "option": "AI customer support assistant",
+                "business_value_score": 5,
+                "feasibility_score": 3,
+                "risk_score": 2,
+                "pilot_suitability_score": 3,
+                "adoption_score": 3,
+                "overall_score": 16,
+                "trade_offs": [
+                    "High cost\u2011saving potential but involves personal customer data, raising privacy and compliance risk.",
+                    "Moderate implementation effort may stretch a 90\u2011day timeline.",
+                    "User adoption is only medium, so change\u2011management effort is needed."
+                ]
+            },
+            {
+                "option": "AI sales proposal generator",
+                "business_value_score": 4,
+                "feasibility_score": 5,
+                "risk_score": 3,
+                "pilot_suitability_score": 5,
+                "adoption_score": 5,
+                "overall_score": 22,
+                "trade_offs": [
+                    "Revenue impact is promising but not guaranteed; depends on sales team uptake.",
+                    "Requires brand and legal review, adding a gating step before full rollout.",
+                    "Low data sensitivity and simple integration make it ideal for a quick pilot."
+                ]
+            },
+            {
+                "option": "AI contract risk analyzer",
+                "business_value_score": 5,
+                "feasibility_score": 2,
+                "risk_score": 1,
+                "pilot_suitability_score": 2,
+                "adoption_score": 3,
+                "overall_score": 13,
+                "trade_offs": [
+                    "Very high business value but extreme legal sensitivity and need for auditability increase risk.",
+                    "Implementation complexity is high, likely exceeding a 90\u2011day pilot window.",
+                    "Potential resistance from legal/compliance teams due to accuracy concerns."
+                ]
+            },
+            {
+                "option": "AI internal HR policy assistant",
+                "business_value_score": 4,
+                "feasibility_score": 4,
+                "risk_score": 3,
+                "pilot_suitability_score": 5,
+                "adoption_score": 5,
+                "overall_score": 21,
+                "trade_offs": [
+                    "Broad employee usage drives adoption, but business value is primarily cost\u2011saving rather than revenue generation.",
+                    "Medium data sensitivity (employee info) introduces some privacy considerations.",
+                    "Low implementation effort makes it pilot\u2011ready, yet impact may be perceived as less strategic."
+                ]
+            }
+        ],
+        "recommended_option": "AI sales proposal generator",
+        "why_not_others": {
+            "AI customer support assistant": "Privacy risk and moderate implementation effort reduce pilot feasibility despite high cost savings.",
+            "AI contract risk analyzer": "Legal risk, high complexity, and low pilot suitability outweigh its business value for a short\u2011term test.",
+            "AI internal HR policy assistant": "While easy to pilot and well\u2011adopted, its strategic impact is lower than the sales generator."
+        },
+        "final_recommendation": "Select the AI sales proposal generator for the 90\u2011day pilot. It offers strong business impact, excellent feasibility, low risk, and high user adoption, making it the most balanced and high\u2011scoring option for a rapid, low\u2011friction rollout."
+    },
+    {
+        "architecture_scores": [
+            {
+                "architecture": "Option A",
+                "scores": {
+                    "accuracy": 4,
+                    "cost": 3,
+                    "privacy": 2,
+                    "timeline_feasibility": 5,
+                    "scalability": 4,
+                    "citation_reliability": 4
+                }
+            },
+            {
+                "architecture": "Option B",
+                "scores": {
+                    "accuracy": 3,
+                    "cost": 2,
+                    "privacy": 4,
+                    "timeline_feasibility": 2,
+                    "scalability": 3,
+                    "citation_reliability": 3
+                }
+            },
+            {
+                "architecture": "Option C",
+                "scores": {
+                    "accuracy": 2,
+                    "cost": 5,
+                    "privacy": 5,
+                    "timeline_feasibility": 5,
+                    "scalability": 3,
+                    "citation_reliability": 2
+                }
+            },
+            {
+                "architecture": "Option D",
+                "scores": {
+                    "accuracy": 5,
+                    "cost": 2,
+                    "privacy": 3,
+                    "timeline_feasibility": 2,
+                    "scalability": 4,
+                    "citation_reliability": 5
+                }
+            }
+        ],
+        "recommended_architecture": "Option A",
+        "implementation_rationale": "Option A delivers a strong balance of accuracy, cost, and speed of delivery within the 6\u2011week MVP window. By using a locally hosted vector store for embeddings and a hosted LLM API for generation, we achieve high citation reliability and acceptable accuracy while keeping infrastructure simple. Privacy concerns are mitigated by encrypting documents at rest and only sending short, anonymized query contexts to the LLM. The approach scales from 500 to 20,000 users with modest vector\u2011DB growth and predictable API pricing, making it the most feasible choice given budget and timeline constraints.",
+        "risks": [
+            "Confidential data may be exposed when sending query context to external LLM API.",
+            "API usage costs could exceed budget if query volume grows rapidly.",
+            "Citation mismatches if chunking or metadata are not managed correctly.",
+            "Vendor downtime or rate\u2011limit throttling could impact availability.",
+            "Vector database performance degradation as document volume increases."
+        ],
+        "mitigations": [
+            "Encrypt PDFs at rest; extract embeddings locally using an open\u2011source model; send only short, sanitized query snippets to the LLM.",
+            "Implement token\u2011usage monitoring and per\u2011user quotas; negotiate volume discounts with the LLM provider.",
+            "Use deterministic chunking (e.g., 500\u2011word overlapping windows) and store source page numbers in metadata for reliable citation linking.",
+            "Cache recent LLM responses; design fallback to keyword search if API fails; use multi\u2011region API endpoints for redundancy.",
+            "Choose a managed vector DB with auto\u2011scaling (e.g., Pinecone, Qdrant) and monitor index latency; re\u2011index periodically as documents are added."
+        ],
+        "mvp_plan": [
+            "Week 1: Project kickoff, define data schema, set up secure storage (encrypted S3/Blob). Implement PDF ingestion pipeline and chunking logic.",
+            "Week 2: Deploy local embedding model (e.g., sentence\u2011transformers) and integrate with chosen vector DB; ingest initial 500 user documents.",
+            "Week 3: Connect to hosted LLM API (e.g., OpenAI gpt\u20114o-mini); build query handling service with context extraction and citation metadata attachment.",
+            "Week 4: Implement front\u2011end for document upload, question input, and result display with clickable citations; add basic usage monitoring and rate limiting.",
+            "Week 5: Conduct internal QA, accuracy testing against a curated question set; iterate on chunk size and retrieval parameters; set up cost\u2011tracking dashboards.",
+            "Week 6: Beta release to pilot users (500), collect feedback, finalize privacy/security checklist, and prepare scaling plan for 20k users."
+        ]
+    }
+]

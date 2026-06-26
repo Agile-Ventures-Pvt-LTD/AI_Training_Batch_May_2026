@@ -1,0 +1,43 @@
+[
+    [
+        {
+            "ticket": "I was charged twice this month and your support team has not replied for five days. I am going to post this on social media if this is not fixed today.",
+            "category": "BILLING_ISSUE",
+            "priority": "URGENT",
+            "justification": "Duplicate charge with no response and public escalation threat; requires immediate resolution."
+        },
+        {
+            "ticket": "The export button stopped working after your latest update. Our reporting team is blocked.",
+            "category": "TECHNICAL_BUG",
+            "priority": "HIGH",
+            "justification": "Core functionality broken, blocking reporting workflow."
+        },
+        {
+            "ticket": "Can you add approval workflows before invoices are submitted?",
+            "category": "FEATURE_REQUEST",
+            "priority": "LOW",
+            "justification": "Customer is requesting a new capability; not impacting current operations."
+        },
+        {
+            "ticket": "We need confirmation that our customer data is not being used to train your AI models.",
+            "category": "COMPLIANCE_CONCERN",
+            "priority": "HIGH",
+            "justification": "Data privacy concern requiring formal compliance assurance."
+        },
+        {
+            "ticket": "My admin account is locked and the password reset email never arrives.",
+            "category": "ACCOUNT_ACCESS",
+            "priority": "URGENT",
+            "justification": "Critical admin access blocked; immediate action needed."
+        }
+    ],
+    {
+        "action": "CREATE_LEAVE_REQUEST",
+        "parameters": {
+            "leave_type": "SICK"
+        },
+        "requires_clarification": true,
+        "clarification_question": "Please provide the exact leave date.",
+        "confidence": 0.85
+    }
+]
