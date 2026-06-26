@@ -1,0 +1,10 @@
+{
+    "mcpServers": {
+        "job_search": {
+            "command": "C:\\Users\\Simran Kumar\\Documents\\PROJECT BUILDS\\Project-Build-8\\.venv\\Scripts\\python.exe",
+            "args": [
+                "C:\\Users\\Simran Kumar\\Documents\\PROJECT BUILDS\\Project-Build-8\\src\\server.py"
+            ]
+        }
+    }
+}
