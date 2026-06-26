@@ -1,0 +1,79 @@
+{
+    "destination": "Bara Bazar",
+    "region": "West Bengal",
+    "country": "India",
+    "forecast_days": 3,
+    "current_weather": {
+        "temperature_c": 33.0,
+        "humidity": 71,
+        "precipitation_mm": 0.0,
+        "wind_speed_kmph": 29.0,
+        "weather_description": "Haze"
+    },
+    "daily_forecast": [
+        {
+            "date": "2026-06-26",
+            "max_temp_c": 39.0,
+            "min_temp_c": 29.0,
+            "avg_temp_c": 33.0,
+            "total_precipitation_mm": 0.0,
+            "max_wind_kmph": 27.0,
+            "max_chance_of_rain": 9,
+            "weather_description": "Clear "
+        },
+        {
+            "date": "2026-06-27",
+            "max_temp_c": 38.0,
+            "min_temp_c": 29.0,
+            "avg_temp_c": 33.0,
+            "total_precipitation_mm": 0.0,
+            "max_wind_kmph": 28.0,
+            "max_chance_of_rain": 10,
+            "weather_description": "Clear "
+        },
+        {
+            "date": "2026-06-28",
+            "max_temp_c": 36.0,
+            "min_temp_c": 29.0,
+            "avg_temp_c": 32.0,
+            "total_precipitation_mm": 0.1,
+            "max_wind_kmph": 27.0,
+            "max_chance_of_rain": 17,
+            "weather_description": "Cloudy "
+        }
+    ],
+    "weather_risk": "MEDIUM",
+    "risk_factors": [
+        "Moderate heat risk",
+        "Moderate wind risk"
+    ],
+    "recommended_actions": [
+        "Be cautious during outdoor high-elevation excursions.",
+        "Carry water and avoid long outdoor exposure during afternoon hours."
+    ],
+    "packing_suggestions": [
+        "Identity Verification Card",
+        "Power Supply Bank Charger",
+        "Raincoat Windcheater Umbrella",
+        "Insulated Cold Water Flask"
+    ],
+    "travel_readiness_advisory": "The trip destination readiness evaluation for Bara Bazar is MEDIUM.",
+    "weather_risk_explanation": "Risk factor flags registered are: Moderate heat risk, Moderate wind risk.",
+    "resources_used": [
+        "resource://weather/normalized-forecast-schema",
+        "resource://travel/checklist",
+        "resource://travel/advisory-rules"
+    ],
+    "tools_used": [
+        "validate_city_input_tool",
+        "get_weather_forecast_tool",
+        "normalize_weather_data_tool",
+        "calculate_weather_risk_tool",
+        "save_travel_advisory_tool"
+    ],
+    "prompts_used": [
+        "travel_readiness_prompt",
+        "weather_risk_summary_prompt",
+        "packing_recommendation_prompt"
+    ]
+}

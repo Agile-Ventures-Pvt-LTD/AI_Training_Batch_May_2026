@@ -1,0 +1,77 @@
+{
+    "destination": "Pune",
+    "region": "Maharashtra",
+    "country": "India",
+    "forecast_days": 3,
+    "current_weather": {
+        "temperature_c": 29.0,
+        "humidity": 55,
+        "precipitation_mm": 0.0,
+        "wind_speed_kmph": 21.0,
+        "weather_description": "Patchy rain nearby"
+    },
+    "daily_forecast": [
+        {
+            "date": "2026-06-26",
+            "max_temp_c": 30.0,
+            "min_temp_c": 22.0,
+            "avg_temp_c": 26.0,
+            "total_precipitation_mm": 0.0,
+            "max_wind_kmph": 21.0,
+            "max_chance_of_rain": 15,
+            "weather_description": "Partly Cloudy "
+        },
+        {
+            "date": "2026-06-27",
+            "max_temp_c": 31.0,
+            "min_temp_c": 23.0,
+            "avg_temp_c": 26.0,
+            "total_precipitation_mm": 0.1,
+            "max_wind_kmph": 23.0,
+            "max_chance_of_rain": 24,
+            "weather_description": "Partly Cloudy "
+        },
+        {
+            "date": "2026-06-28",
+            "max_temp_c": 31.0,
+            "min_temp_c": 23.0,
+            "avg_temp_c": 26.0,
+            "total_precipitation_mm": 0.0,
+            "max_wind_kmph": 25.0,
+            "max_chance_of_rain": 17,
+            "weather_description": "Partly Cloudy "
+        }
+    ],
+    "weather_risk": "MEDIUM",
+    "risk_factors": [
+        "Moderate wind risk"
+    ],
+    "recommended_actions": [
+        "Be cautious during outdoor high-elevation excursions."
+    ],
+    "packing_suggestions": [
+        "Identification ID Documents",
+        "Mobile Devices Charger",
+        "Raincoat/Umbrella protection gear",
+        "Hydration Thermos Flask Bottle"
+    ],
+    "travel_readiness_advisory": "Travel to Pune is evaluated as MEDIUM. Please proceed by implementing the recommended action protocols safely.",
+    "weather_risk_explanation": "The current calculated risk profile is set to MEDIUM primarily driven by monitored elements: Moderate wind risk.",
+    "resources_used": [
+        "resource://weather/normalized-forecast-schema",
+        "resource://travel/checklist",
+        "resource://travel/advisory-rules"
+    ],
+    "tools_used": [
+        "validate_city_input_tool",
+        "get_weather_forecast_tool",
+        "normalize_weather_data_tool",
+        "calculate_weather_risk_tool",
+        "save_travel_advisory_tool"
+    ],
+    "prompts_used": [
+        "travel_readiness_prompt",
+        "weather_risk_summary_prompt",
+        "packing_recommendation_prompt"
+    ]
+}
