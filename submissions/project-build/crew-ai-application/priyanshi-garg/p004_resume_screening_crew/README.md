@@ -59,28 +59,18 @@ It includes requirements around:
 8. Testing practices
 9. Git/GitHub familiarity
 10.Communication and problem-solving skills
+
 ### Candidate Resumes
 The dataset includes five synthetic candidate resumes.
-Candidate ID
-Candidate Name
-Resume File
-CAND-001
-CAND-002
-CAND-003
-CAND-004
-CAND-005
-Rohan Mehta
-Priya Sharma
-Neha Gupta
-Arjun Nair
-Sara Khan
 
 ### Candidate Index
 File:
 *metadata/candidate_index.csv*
+
 Expected columns:
 candidate_id,candidate_name,resume_file,years_experience,current_role,
 primary_skills
+
 Purpose:
 The candidate index helps the system locate the correct resume file for a given 
 candidate ID.
