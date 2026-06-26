@@ -1,0 +1,36 @@
+{
+  "candidate_id": "CAND-001",
+  "candidate_name": "Rohan Mehta",
+  "role_title": "AI Engineer",
+  "overall_score": 32,
+  "max_score": 40,
+  "percentage": 80.0,
+  "recommendation": "STRONG_MATCH",
+  "executive_summary": "Rohan Mehta is a AI Application Developer with 3.5 years of experience. Score: 80.0% - STRONG_MATCH.",
+  "strengths": [],
+  "gaps": [],
+  "interview_focus_areas": [
+    "General"
+  ],
+  "interview_questions": {
+    "technical_questions": [
+      "Q1",
+      "Q2",
+      "Q3"
+    ],
+    "project_deep_dive_questions": [
+      "Q4",
+      "Q5"
+    ],
+    "scenario_questions": [
+      "Q6",
+      "Q7"
+    ],
+    "gap_validation_questions": [
+      "Q8",
+      "Q9"
+    ]
+  },
+  "evidence": [],
+  "human_review_note": "This is an AI-assisted screening report based on the provided resume and job description. A human reviewer should validate the recommendation before making any recruitment decision."
+}

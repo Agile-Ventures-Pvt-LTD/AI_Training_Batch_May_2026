@@ -1,0 +1,36 @@
+{
+  "candidate_id": "CAND-003",
+  "candidate_name": "Neha Gupta",
+  "role_title": "AI Engineer",
+  "overall_score": 13,
+  "max_score": 40,
+  "percentage": 32.5,
+  "recommendation": "NEEDS_MANUAL_REVIEW",
+  "executive_summary": "Neha Gupta is a Data Analyst with 3 years of experience. Score: 32.5% - NEEDS_MANUAL_REVIEW.",
+  "strengths": [],
+  "gaps": [],
+  "interview_focus_areas": [
+    "General"
+  ],
+  "interview_questions": {
+    "technical_questions": [
+      "Q1",
+      "Q2",
+      "Q3"
+    ],
+    "project_deep_dive_questions": [
+      "Q4",
+      "Q5"
+    ],
+    "scenario_questions": [
+      "Q6",
+      "Q7"
+    ],
+    "gap_validation_questions": [
+      "Q8",
+      "Q9"
+    ]
+  },
+  "evidence": [],
+  "human_review_note": "This is an AI-assisted screening report based on the provided resume and job description. A human reviewer should validate the recommendation before making any recruitment decision."
+}
