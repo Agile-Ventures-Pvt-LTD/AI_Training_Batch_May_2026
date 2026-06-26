@@ -1,0 +1,10 @@
+crewai
+crewai-tools
+litellm
+python-dotenv
+groq
+pydantic
+pytest
+pandas
+rich
+deepeval
