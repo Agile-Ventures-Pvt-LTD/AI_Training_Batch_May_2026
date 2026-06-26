@@ -1,0 +1,45 @@
+{
+    "destination": "Jaipur",
+    "region": "Rajasthan",
+    "country": "India",
+    "forecast_days": 3,
+    "current_weather": {
+        "temperature_c": 31.0,
+        "humidity": 48,
+        "precipitation_mm": 0.0,
+        "wind_speed_kmph": 12.0,
+        "weather_description": "Sunny"
+    },
+    "daily_forecast": [],
+    "weather_risk": "MEDIUM",
+    "risk_factors": [
+        "Maximum temperature is expected to be above 35°C."
+    ],
+    "recommended_actions": [
+        "Carry water and stay hydrated."
+    ],
+    "packing_suggestions": [
+        "Water bottle",
+        "Sunscreen",
+        "Hat"
+    ],
+    "travel_readiness_advisory": "Travel appears manageable with basic precautions.",
+    "weather_risk_explanation": "Moderate heat conditions are expected.",
+    "resources_used": [
+        "resource://travel/checklist",
+        "resource://travel/advisory-rules",
+        "resource://weather/normalized-forecast-schema"
+    ],
+    "tools_used": [
+        "validate_city_input_tool",
+        "get_weather_forecast_tool",
+        "normalize_weather_data_tool",
+        "calculate_weather_risk_tool",
+        "save_travel_advisory_tool"
+    ],
+    "prompts_used": [
+        "travel_readiness_prompt",
+        "weather_risk_summary_prompt",
+        "packing_recommendation_prompt"
+    ]
+}

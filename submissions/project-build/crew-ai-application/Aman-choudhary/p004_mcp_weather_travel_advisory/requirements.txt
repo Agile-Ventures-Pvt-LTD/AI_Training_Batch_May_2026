@@ -1,0 +1,9 @@
+mcp
+httpx
+rich
+pytest-mock
+requests
+pydantic
+pytest
+python-dotenv
+
