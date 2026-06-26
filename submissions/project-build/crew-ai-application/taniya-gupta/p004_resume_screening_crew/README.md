@@ -1,6 +1,7 @@
 # P004: AI Resume Screening and Interview Planning Using CrewAI
 
 A system built using CrewAI that does screening candidate resumes against a job description, calculates scores based on 8-categories, performs gap analysis and prepares personalized interview questions.
+
 ---
 
 ## 1. Project Overview
@@ -37,7 +38,7 @@ It uses **7 specialized agents** executing in a sequential process:
 | **Resume Information Extractor** | `read_resume_tool` |
 | **Skill and Experience Matcher** | `load_screening_rubric_tool`, `score_calculator_tool`, `skill_matcher_tool` |
 | **Gap Analyst** | `skill_matcher_tool` |
-| **Technical Interview Planner** | None (Uses LLM) |
+| **Technical Interview Planner** | `read_job_description_tool` |
 | **Quality Assurance Reviewer** | `validate_report_schema_tool` |
 | **Final Recommendation Specialist** | `save_report_tool`, `validate_report_schema_tool` |
 
