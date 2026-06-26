@@ -1,0 +1,23 @@
+{
+    "candidate_id": "CAND_001",
+    "candidate_name": "Rohan Mehta",
+    "role_title": "AI Engineer",
+    "overall_score": 35,
+    "max_score": 40,
+    "percentage": 87,
+    "recommendation": "STRONG_MATCH",
+    "executive_summary": "Extensive LLM application deployment background...",
+    "strengths": ["Python Expert", "Advanced RAG Pipelines"],
+    "gaps": ["No production experience with multi-agent orchestration frameworks"],
+    "interview_focus_areas": ["Validate autonomous state recovery tracking mechanisms"],
+    "interview_questions": [
+        {
+            "question": "How do you handle cyclic graph dependencies in custom agent networks?",
+            "intent": "Verify production readiness for multi-agent systems"
+        }
+    ],
+    "evidence": {
+        "python_programming": "Maintained core enterprise frameworks for 4 years."
+    },
+    "human_review_note": "Excellent technical fit; baseline compensation requirements match senior banding limits."
+}

@@ -1,0 +1,40 @@
+{
+    "candidate_id": "CAND-002",
+    "candidate_name": "Priya Sharma",
+    "role_title": "AI Engineer",
+    "overall_score": 26,
+    "max_score": 40,
+    "percentage": 65,
+    "recommendation": "MODERATE_MATCH",
+    "executive_summary": "Priya shows strong foundational core engineering capabilities with 3+ years of experience working with backend frameworks and classical machine learning models. However, she has limited direct exposure to building large-scale modern GenAI production apps, vector data structures, or advanced agentic loops.",
+    "strengths": [
+        "Strong Python programming and test-driven architecture background.",
+        "Excellent SQL database management and structural query tuning history.",
+        "Solid REST API development using FastAPI and cloud deployment patterns."
+    ],
+    "gaps": [
+        "Lacks production experience deploying large language model (LLM) workflows.",
+        "No explicit mention or evidence of working with orchestrator toolkits like LangChain or CrewAI.",
+        "Missing background in advanced vector search, embedding optimization, or semantic caching strategies."
+    ],
+    "interview_focus_areas": [
+        "Evaluate her theoretical knowledge of LLM integration parameters and context window management.",
+        "Verify her willingness and capacity to quickly upskill in multi-agent orchestration frameworks."
+    ],
+    "interview_questions": [
+        {
+            "question": "You have built extensive REST APIs with FastAPI. How would you design an API to handle streaming text responses from an LLM chat endpoint efficiently?",
+            "intent": "Verify ability to adapt standard backend architecture skills to meet performance needs of GenAI applications."
+        },
+        {
+            "question": "Can you explain the main architectural differences between a standard relational database query and a semantic similarity vector search?",
+            "intent": "Test conceptual baseline understanding of vector storage dynamics despite a lack of direct production exposure."
+        }
+    ],
+    "evidence": {
+        "python_programming": "Maintained clean enterprise backend engines using FastAPI for 3 years at DataTech Solutions.",
+        "sql_database_skills": "Optimized complex analytical queries and migration schemas across PostgreSQL instances.",
+        "llm_application_development": "Limited to local experimentation using open-source models via Hugging Face pipelines."
+    },
+    "human_review_note": "A very capable software engineer who easily checks our baseline system programming boxes. She will require additional training and ramp-up time on our specific multi-agent AI stack."
+}
