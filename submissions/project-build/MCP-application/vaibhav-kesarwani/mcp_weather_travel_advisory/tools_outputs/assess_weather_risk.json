@@ -1,0 +1,10 @@
+{
+    "success": true,
+    "weather_risk": "MEDIUM",
+    "risk_factors": [
+        "Maximum temperature is expected to be above 35°C."
+    ],
+    "recommended_actions": [
+        "Carry water and avoid long outdoor exposure during afternoon hours."
+    ]
+}

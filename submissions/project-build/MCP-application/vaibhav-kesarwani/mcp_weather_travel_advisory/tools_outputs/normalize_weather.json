@@ -1,0 +1,26 @@
+{
+    "success": true,
+    "destination": "Jaipur",
+    "region": "Rajasthan",
+    "country": "India",
+    "forecast_days": 1,
+    "current_weather": {
+        "temperature_c": 37.0,
+        "humidity": 37,
+        "precipitation_mm": 0.0,
+        "wind_speed_kmph": 15.0,
+        "weather_description": "Haze"
+    },
+    "daily_forecast": [
+        {
+            "date": "2026-06-26",
+            "max_temp_c": 39.0,
+            "min_temp_c": 30.0,
+            "avg_temp_c": 35.0,
+            "total_precipitation_mm": 0.0,
+            "max_wind_kmph": 11.0,
+            "max_chance_of_rain": 2,
+            "weather_description": "Clear "
+        }
+    ]
+}
