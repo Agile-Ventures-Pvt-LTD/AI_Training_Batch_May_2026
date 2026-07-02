@@ -1,0 +1,26 @@
+{
+  "user_query": "summarize the issue ROH-1",
+  "tools_used": [
+    "get_issue_details"
+  ],
+  "final_answer": "The issue ROH-1 is a task with the summary \"Login Page Bug\" and is currently in the \"To Do\" status. The issue was created by Rohitkumar on July 1, 2026, and has one comment from Rohitkumar stating that \"QA validation is pending\". The issue has not been assigned to anyone and has no work logs.",
+  "write_action_performed": false
+}
+
+{
+  "user_query": "Add comments \" validation is done \" to issue ROH-2",
+  "tools_used": [
+    "add_issue_comment"
+  ],
+  "final_answer": "I have added the comment \"validation is done\" to the issue ROH-2.",
+  "write_action_performed": true
+}
+
+{
+  "user_query": "show me the comment for issue ROH-2",
+  "tools_used": [
+    "get_issue_comments"
+  ],
+  "final_answer": "The comment for issue ROH-2 is: \"validation is done\"",
+  "write_action_performed": false
+}
