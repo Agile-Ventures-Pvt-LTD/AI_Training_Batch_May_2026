@@ -1,0 +1,73 @@
+[
+    {
+        "user_query": "List all Jira projects",
+        "tools_used": [
+            "list_projects"
+        ],
+        "final_answer": "List of Jira projects:\n1. My-AG-Team - key: SCRUM\n2. Agentic-AI - key: AA\n3. MCP-Server-Jira - key: MCPSER\n4. MCP Project - key: MCP",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Show all open high-priority issues.",
+        "tools_used": [
+            "search_issues"
+        ],
+        "final_answer": "The open high-priority issues are: \n- MCP-5: Create a login page, which is currently In Progress.",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Summarize issue MCP-2",
+        "tools_used": [
+            "search_issues",
+            "get_issue_details"
+        ],
+        "final_answer": "The issue MCP-2 is about fixing the password reset email, which is not being delivered. The issue is currently in the \"Done\" status and was assigned to Mohd Zaid Ansari.",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Which issues are assigned to Mohd Zaid Ansari.",
+        "tools_used": [
+            "search_issues",
+            "get_issue_details",
+            "search_issues"
+        ],
+        "final_answer": "The issues assigned to Mohd Zaid Ansari are: \n- MCP-6: Improve interface of web page (To Do, Medium)\n- MCP-5: Create a login page (In Progress, High)\n- MCP-4: Updating the report document (In Progress, Low)\n- MCP-3: Complete the database creation task (To Do, Medium)\n- MCP-2: Fix password reset email (Done, Medium)\n- MCP-1: Having error in login page (In Progress, Highest)\n- AA-5: Include LangGraph Router (To Do, Highest)",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Show unresolved bugs.",
+        "tools_used": [
+            "search_issues",
+            "get_issue_details",
+            "search_issues",
+            "search_issues"
+        ],
+        "final_answer": "The unresolved bugs are: \n- MCPSER-1: fix the stdio bug (To Do, Medium)\n- MCP-1: Having error in login page (In Progress, Highest)",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Add a comment to MCP-4 saying please solve the problem fast.",
+        "tools_used": [
+            "search_issues",
+            "get_issue_details",
+            "search_issues",
+            "search_issues",
+            "add_issue_comment"
+        ],
+        "final_answer": "A comment has been added to MCP-4: \"please solve the problem fast\". \nwrite_action_performed: True \nThe update was successful.",
+        "write_action_performed": true
+    },
+    {
+        "user_query": "Update issue status of MCP-3 to In Review.",
+        "tools_used": [
+            "search_issues",
+            "get_issue_details",
+            "search_issues",
+            "search_issues",
+            "add_issue_comment",
+            "update_issue_status"
+        ],
+        "final_answer": "The status of issue MCP-3 has been updated to \"In Review\". \nwrite_action_performed: True \nThe update was successful.",
+        "write_action_performed": true
+    }
+]
