@@ -63,7 +63,7 @@ a006_mcp_host_jira_assistant/
 │   ├── host.py                
 │   ├── llm.py                
 │   ├── mcp_client.py          
-│   └── prompts.py             )
+│   └── prompts.py            
 ├── tests/
 │   ├── test_mcp_server_runs.py
 │   ├── test_tool_discovery.py
@@ -97,7 +97,6 @@ GROQ_MODEL=llama-3.3-70b-versatile
 JIRA_BASE_URL=https://<your-site>.atlassian.net
 JIRA_EMAIL=<your atlassian account email>
 JIRA_API_TOKEN=<your atlassian api token>
-JIRA_DEFAULT_MAX_RESULTS=25
 ```
 
 ### 3.3 Create dummy Jira issues
