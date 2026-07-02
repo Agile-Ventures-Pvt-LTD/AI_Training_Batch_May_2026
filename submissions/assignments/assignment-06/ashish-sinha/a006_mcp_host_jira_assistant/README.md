@@ -49,6 +49,8 @@ pip install -r requirements.txt
 a006_mcp_host_jira_assistant/
 ├── .env
 ├── requirements.txt
+├── README.md
+├── sample_queries.md
 ├── output/
 │   └── query_outputs.json
 ├── server/
