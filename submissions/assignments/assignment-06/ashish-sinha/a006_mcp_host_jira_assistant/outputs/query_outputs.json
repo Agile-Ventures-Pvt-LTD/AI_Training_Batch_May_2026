@@ -1,0 +1,76 @@
+[
+  {
+    "user_query": "Show all issues",
+    "tools_used": [
+      "search_issues"
+    ],
+    "final_answer": "Here are the issues returned by the search:\n\n1. LT-5 - API Error (Status: To Do, Priority: Highest)\n2. LT-4 - MCP Client Development (Status: In Progress, Priority: Highest)\n3. LT-3 - Server Development (Status: In Progress, Priority: High)\n4. LT-2 - ABC-12 (Status: To Do, Priority: Medium)\n5. LT-1 - MCP Learning (Status: To Do, Priority: Highest)\n\nPlease let me know if you would like to view the details of any of these issues or perform any other action.",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "Show todo status in Project LT",
+    "tools_used": [
+      "search_issues"
+    ],
+    "final_answer": "**To‑Do issues in Project **`LT`** (as of the latest query):**\n\n| Issue Key | Summary            | Priority |\n|-----------|--------------------|----------|\n| LT‑5      | API Error          | Highest |\n| LT‑2      | ABC‑12             | Medium |\n| LT‑1      | MCP Learning       | Highest |\n\nThese are the only issues in project **LT** that currently have the status **“To Do.”**",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "List all Jira Projects",
+    "tools_used": [
+      "list_projects"
+    ],
+    "final_answer": "Here are the Jira projects available in the connected instance:\n\n1. (Example) Advanced Modeling Techniques - SAM1\n2. AI Team - KAN\n3. Learning Team - LT\n\nLet me know if you need any further assistance.",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "Show high-priority issues",
+    "tools_used": [
+      "search_issues"
+    ],
+    "final_answer": "Based on the search results, there is one high-priority issue: LT-3, which is currently in progress.",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "Summarize an issue LT-01",
+    "tools_used": [
+      "get_issues_details"
+    ],
+    "final_answer": "The issue LT-01 has a summary of \"MCP Learning\", is currently in the \"To Do\" status, and has a priority of \"Highest\". The description of the issue is \"Lets learn MCP in detail\".",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "Show comments for the issue LT-02",
+    "tools_used": [
+      "get_issue_comments"
+    ],
+    "final_answer": "The issue LT-02 has a comment from Ashish Sinha that says \"Project app issue came.\"",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "Show assigned issues for me",
+    "tools_used": [
+      "search_issues"
+    ],
+    "final_answer": "You have been assigned to 5 issues. The issues are:\n\n1. LT-5 - API Error (Status: To Do, Priority: Highest)\n2. LT-4 - MCP Client Development (Status: In Progress, Priority: Highest)\n3. LT-3 - Server Development (Status: In Progress, Priority: High)\n4. LT-2 - ABC-12 (Status: To Do, Priority: Medium)\n5. LT-1 - MCP Learning (Status: To Do, Priority: Highest)",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "Add a comment saying 'Client.py are successfully created and tested' to the issue LT-04",
+    "tools_used": [
+      "add_issue_comment"
+    ],
+    "final_answer": "The comment 'Client.py are successfully created and tested' has been added to the issue LT-04.",
+    "write_action_performed": true
+  },
+  {
+    "user_query": "Update issue status for LT-03  to Done",
+    "tools_used": [
+      "update_issue_status",
+      "search_issues",
+      "get_issues_details"
+    ],
+    "final_answer": "Issue LT-03 has been successfully updated to \"Done\".",
+    "write_action_performed": true
+  }
+]
