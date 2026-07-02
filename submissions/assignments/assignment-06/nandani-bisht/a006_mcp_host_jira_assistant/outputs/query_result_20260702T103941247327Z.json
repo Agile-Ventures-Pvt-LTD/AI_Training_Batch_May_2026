@@ -1,9 +1,0 @@
-{
-  "user_query": "Show comments on ABC-12",
-  "tools_used": [
-    "get_issue_comments",
-    "get_issue_details"
-  ],
-  "final_answer": "The issue ABC-12 does not exist in Jira. Therefore, it is not possible to show comments on this issue.",
-  "write_action_performed": false
-}

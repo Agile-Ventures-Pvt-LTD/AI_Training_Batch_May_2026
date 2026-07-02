@@ -1,9 +1,0 @@
-{
-  "user_query": "Add a comment to ABC-5 saying QA validation is pending.",
-  "tools_used": [
-    "add_issue_comment",
-    "get_issue_details"
-  ],
-  "final_answer": "I was unable to add a comment to issue ABC-5 because it does not exist in Jira. I performed a write action to attempt to add the comment, but it failed. I then attempted to retrieve the issue details to verify its existence, but this also failed, confirming that the issue does not exist.",
-  "write_action_performed": true
-}

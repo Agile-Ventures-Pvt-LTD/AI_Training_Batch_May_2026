@@ -2,7 +2,7 @@
 
 An MCP Host that lets a project manager query and update Jira using natural language. A Groq-powered LLM interprets the query, selects the right MCP tool(s) exposed by a self-built Jira MCP Server, and turns tool results into a plain-language answer. The LLM never talks to Jira directly — it only sees tool schemas and tool results.
 
-# Participant Name
+# Participant Name:
 Nandani Bisht
 
 ## 1. Architecture
