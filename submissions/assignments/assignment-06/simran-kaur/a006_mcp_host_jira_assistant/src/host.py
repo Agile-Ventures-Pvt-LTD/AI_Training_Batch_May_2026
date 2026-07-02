@@ -1,8 +1,20 @@
 
+from mcp_use import MCPAgent
 import asyncio
-from src.mcp_client import host_agent
 from src.utils import save_output
 import json
+from src.llm import model_llm
+from src.mcp_client import config
+from src.prompts import system_prompt
+
+
+host_agent = MCPAgent(
+    llm = model_llm,
+    client = config,
+    max_steps = 30,
+    system_prompt = system_prompt
+
+)
 
 
 async def main():

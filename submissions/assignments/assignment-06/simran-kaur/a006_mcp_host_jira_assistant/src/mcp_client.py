@@ -1,6 +1,4 @@
-from mcp_use import MCPAgent, MCPClient
-from src.llm import model_llm
-from src.prompts import system_prompt
+from mcp_use import MCPClient
 from pathlib import Path
 
 
@@ -24,13 +22,7 @@ config = MCPClient({
 })
 
 
-host_agent = MCPAgent(
-    llm = model_llm,
-    client = config,
-    max_steps = 30,
-    system_prompt = system_prompt
 
-)
 
 
 

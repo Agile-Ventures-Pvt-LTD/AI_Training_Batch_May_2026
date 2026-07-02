@@ -1,4 +1,5 @@
-from src.mcp_client import host_agent, config
+from src.mcp_client import config
+from src.host import host_agent
 from src.llm import model_llm
 
 
