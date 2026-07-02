@@ -1,0 +1,8 @@
+{
+    "user_query": "Add the comment 'Automated pytest comment.' to issue AIT-13.",
+    "tools_used": [
+        "add_issue_comment"
+    ],
+    "final_answer": "The comment **“Automated pytest comment.”** has been successfully added to issue **AIT‑13**.",
+    "write_action_performed": true
+}
