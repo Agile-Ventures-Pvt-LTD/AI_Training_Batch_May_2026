@@ -1,0 +1,90 @@
+[
+  {
+    "user_query": "list all projects",
+    "tools_used": [
+      "list_projects"
+    ],
+    "final_answer": "Here are the Jira projects:\n- SCRUM: MCP training \n\nLet me know if you need any further assistance.",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "show all projects",
+    "tools_used": [
+      "list_projects"
+    ],
+    "final_answer": "Here are all the projects:\n\n* SCRUM: MCP training \n\nLet me know if you need any further assistance.",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "show all issues",
+    "tools_used": [
+      "search_issues"
+    ],
+    "final_answer": "Here are the search results:\n\n* SCRUM-4: Subtask 2.1 (To Do)\n* SCRUM-3: Task 3 (In Progress)\n* SCRUM-2: Task 2 (In Progress)\n* SCRUM-1: Assignment 06 (To Do)",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "show to do issues",
+    "tools_used": [
+      "search_issues"
+    ],
+    "final_answer": "Here are the 'To Do' issues:\n\n* SCRUM-4: Subtask 2.1\n* SCRUM-1: Assignment 06",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "show high priority issues",
+    "tools_used": [
+      "search_issues"
+    ],
+    "final_answer": "No high priority issues were found. Here is a list of all issues:\n\n* SCRUM-4: Subtask 2.1 (To Do)\n* SCRUM-3: Task 3 (In Progress)\n* SCRUM-2: Task 2 (In Progress)\n* SCRUM-1: Assignment 06 (To Do)",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "summarize issue SCRUM-1",
+    "tools_used": [
+      "get_issue_details"
+    ],
+    "final_answer": "The issue SCRUM-1 is currently in the 'To Do' status, with a summary of 'Assignment 06' and a description that mentions testing assignment 06 for the MCP server for Jira.",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "show comments of SCRUM-1",
+    "tools_used": [
+      "get_issue_comments"
+    ],
+    "final_answer": "The comments for SCRUM-1 are:\n\n1. Adding comments to this MCP task\n2. This is a new comment\n3. This is to test Assignment-06",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "Add a comment \"New comment added\" to SCRUM-1",
+    "tools_used": [
+      "add_issue_comment"
+    ],
+    "final_answer": "I have added a comment \"New comment added\" to the issue SCRUM-1.",
+    "write_action_performed": true
+  },
+  {
+    "user_query": "show comments of SCRUM-1",
+    "tools_used": [
+      "get_issue_comments"
+    ],
+    "final_answer": "Here are the comments for SCRUM-1:\n\n1. Adding comments to this MCP task\n2. This is a new comment\n3. This is to test Assignment-06\n4. New comment added",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "update issue status of SCRUM-1 to done",
+    "tools_used": [
+      "update_issue_status"
+    ],
+    "final_answer": "I have performed a write action to update the status of SCRUM-1 to 'Done'.",
+    "write_action_performed": true
+  },
+  {
+    "user_query": "show assigned status to me",
+    "tools_used": [
+      "search_issues"
+    ],
+    "final_answer": "Here are the issues with their respective status:\n\n* SCRUM-4: To Do\n* SCRUM-3: In Progress\n* SCRUM-2: In Progress\n* SCRUM-1: Done",
+    "write_action_performed": false
+  }
+]
