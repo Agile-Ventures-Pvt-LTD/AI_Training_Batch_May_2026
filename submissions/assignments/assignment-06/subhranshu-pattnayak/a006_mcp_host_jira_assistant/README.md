@@ -67,7 +67,14 @@ LLM generates answer
 
 ---
 
-# Environment Variables (Jira and Groq Configuration)
+# Environment Variables (Virtual Environment, Jira and Groq Configuration)
+
+Make a virtual environment and run it.
+
+```
+uv venv
+.venv/Scripts/activate
+```
 
 Before running the project, you'll need access to a Jira Cloud workspace and will need to create a Jira Api token. Copy Jira Base URL, Jira Email, Jira Api Token.
 
