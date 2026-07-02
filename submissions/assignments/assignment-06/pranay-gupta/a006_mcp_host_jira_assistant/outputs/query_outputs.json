@@ -1,0 +1,60 @@
+[
+  {
+    "user_query": "list all Jira Projects",
+    "tools_used": [
+      "list_projects"
+    ],
+    "final_answer": "The Jira instance has 2 projects: \n\n1. Agile (Key: AG)\n2. Agile Team (Key: SCRUM)",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "Summarize AG-2  including comments",
+    "tools_used": [
+      "get_issue_comments",
+      "get_issues_details"
+    ],
+    "final_answer": "The issue AG-2 is currently in the \"To Do\" status and has a medium priority. The issue is about improving validation for the profile update form and displaying clear error messages. There are no comments attached to this issue.",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "Summarize AG-3  including comments",
+    "tools_used": [
+      "get_issue_comments",
+      "get_issues_details"
+    ],
+    "final_answer": "Issue AG-3 is currently in the \"To Do\" status and has a high priority. The issue is related to a login redirect problem, where users are being redirected to the wrong page after a successful login. There is one comment on the issue from Pranay Gupta, who thinks that the hyperlink might be incorrect.",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "add a comment saying 'your dark mode icon is very creative' to the issue AG-4",
+    "tools_used": [
+      "add_issue_comment"
+    ],
+    "final_answer": "The comment 'your dark mode icon is very creative' has been added to the issue AG-4.",
+    "write_action_performed": true
+  },
+  {
+    "user_query": "Which issues are assigned to me?",
+    "tools_used": [
+      "search_issues"
+    ],
+    "final_answer": "The issues assigned to you are:\n\n* AG-6: Optimize dashboard loading (Status: To Do, Priority: Medium)\n* AG-5: Update project documentation (Status: To Do, Priority: Low)\n* AG-4: Add dark mode toggle (Status: To Do, Priority: Low)\n* AG-3: Fix login redirect issue (Status: To Do, Priority: High)\n* AG-2: Update user profile validation (Status: To Do, Priority: Medium)",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "Show all open high-priority issues",
+    "tools_used": [
+      "search_issues"
+    ],
+    "final_answer": "Based on the search results, there is one open high-priority issue: \n\n[AG-3] Fix login redirect issue (Status: To Do, Priority: High)",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "Show unresolved bugs",
+    "tools_used": [
+      "search_issues"
+    ],
+    "final_answer": "Based on the search results, there is 1 unresolved bug: \n\n* [AG-3] Fix login redirect issue (Status: To Do, Priority: High) \n\nPlease note that the results are based on the actual data returned from the Jira instance and might not reflect real-time information.",
+    "write_action_performed": false
+  }
+]
