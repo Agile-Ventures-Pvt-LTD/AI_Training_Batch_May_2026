@@ -120,10 +120,10 @@ To run a query, pass your natural language querry argument directly to the host 
 python src/host.py 
 ```
 
-### Output Logs & Automated File Dumping
+### 6.1 Output Logs & Automated File Dumping
 When execution completes, the host prints the unified JSON schema response to your terminal window and automatically saves it to local file storage:
 
-```
+```json
 {
     "user_query": "List all Jira Projects",
     "tools_used": [
@@ -133,7 +133,19 @@ When execution completes, the host prints the unified JSON schema response to yo
     "write_action_performed": false
 }
 ```
+### 6.2 Running Automated Verification Test Cases
+Execute the following shell commands from the project root folder to run the validation framework:
 
+```powershell
+# Run the entire test suite with standard coverage indicators
+pytest tests/
+
+# Execute verification runs in detailed, verbose logging mode
+pytest -v tests/test_jira_assistant.py
+
+# Run verification and allow live console print blocks to stream in real-time
+pytest -v -s tests/test_jira_assistant.py
+```
 ---
 
 ## 7. Sample Queries
