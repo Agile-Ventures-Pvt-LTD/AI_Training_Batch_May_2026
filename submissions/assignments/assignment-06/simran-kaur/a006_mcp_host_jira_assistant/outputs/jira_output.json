@@ -1,0 +1,53 @@
+[
+    {
+        "user_query": "Show all projects",
+        "tools_used": [
+            "list_projects"
+        ],
+        "final_answer": "The only project available is MCP Learning (key: SCRUM).",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "show open issue",
+        "tools_used": [
+            "search_issues"
+        ],
+        "final_answer": "Open issues in the SCRUM project are: SCRUM-8 (MCP Client Learning, High priority, To Do), SCRUM-6 (Test REST API, Medium priority, In Progress), SCRUM-5 (Learn FastMCP, Medium priority, To Do), and SCRUM-3 (Task 3, no priority, In Progress).",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Show SCRUM-6 comment",
+        "tools_used": [
+            "get_issue_comments"
+        ],
+        "final_answer": "The comment on SCRUM-6 is: \"This is  a comment added in the test rest API ISSUE\".",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "list all issue assigned to me",
+        "tools_used": [
+            "list_projects",
+            "search_issues"
+        ],
+        "final_answer": "No issues assigned to you were found in the SCRUM project.",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "list all issue assigned to me",
+        "tools_used": [
+            "list_projects",
+            "search_issues",
+            "get_issue_details"
+        ],
+        "final_answer": "Here are the issues currently assigned to you:\n\nSCRUM-8 \u2013 MCP Client Learning \u2013 Status: To Do \u2013 Priority: High\nSCRUM-7 \u2013 Build MCP Server \u2013 Status: Done \u2013 Priority: Medium\nSCRUM-6 \u2013 Test REST API \u2013 Status: In Progress \u2013 Priority: Medium\nSCRUM-5 \u2013 Learn FastMCP \u2013 Status: To Do \u2013 Priority: Medium\nSCRUM-3 \u2013 Task 3 \u2013 Status: In Progress \u2013 Priority: (none specified)",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "list project",
+        "tools_used": [
+            "list_projects"
+        ],
+        "final_answer": "The only project available is MCP Learning with key SCRUM.",
+        "write_action_performed": false
+    }
+]
