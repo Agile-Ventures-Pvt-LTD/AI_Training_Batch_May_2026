@@ -71,7 +71,7 @@ Start the host:
 python src/host.py
 ```
 
-When started the host connects to the Jira MCP server, and runs the assignment through CLI loop. Type "exit" to exit from loop. All query results are saved to `outputs/query_output.json`.
+When started the host connects to the Jira MCP server, and runs the assignment through CLI loop. Type "exit" to exit from loop. All query results are saved to `outputs/query_output.json`
 
 ---
 
@@ -102,9 +102,13 @@ Here are sample queries that I tested on for this assignment:
 
 ## 8. Challenges Faced
 
-1. **Python Environment path**: Running the MCP server using sys.executable ensures that dependencies like `fastmcp` are found instead of using global Python to run the server.
-2. **Transition matching**: Transitioning issue status (update issue status) requires mapping the user's status description (like 'Done') to Jira's internal transition ID, requiring query matching, also modified original system prompt for proper error handling. 
+1. **Python Environment path**: Running the MCP server using sys.executable ensures that dependencies like `fastmcp` are found instead of using global Python to run the server
+2. **Transition matching**: Transitioning issue status (update issue status) requires mapping the user's status description (like 'Done') to Jira's internal transition ID, requiring query matching, also modified original system prompt for proper error handling
+
+## 9. Future improvements
+- To implement Streamlit UI for better user interaction with the jira assistant
 
 # Author
 Taniya Gupta
+
 
