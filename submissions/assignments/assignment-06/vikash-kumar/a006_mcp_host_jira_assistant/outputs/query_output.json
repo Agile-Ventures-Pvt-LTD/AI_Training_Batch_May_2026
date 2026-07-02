@@ -1,0 +1,26 @@
+[
+  {
+    "user_query": "list all jira products",
+    "tools_used": [
+      "list_projects"
+    ],
+    "final_answer": "The Jira products are:\n1. (Example) Advanced Modeling Techniques - SAM1\n2. Training MCP - TM",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "list all open issues",
+    "tools_used": [
+      "search_issues"
+    ],
+    "final_answer": "The list of open issues are:\n- TM-5: ABC-5\n- TM-4: Assignment 6\n- TM-3: ABC-12 \n\nNo write actions were performed.",
+    "write_action_performed": false
+  },
+  {
+    "user_query": "which issues are assigned to me",
+    "tools_used": [
+      "search_issues"
+    ],
+    "final_answer": "You have three issues assigned to you:\n\n1. TM-3: ABC-12 (In Progress)\n2. TM-2: agent.py (In Progress)\n3. TM-1: Server.py (In Progress)",
+    "write_action_performed": false
+  }
+]
