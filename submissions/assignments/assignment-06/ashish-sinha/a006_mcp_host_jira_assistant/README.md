@@ -44,7 +44,7 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-### 2.3 Workspace Directory Verification
+### 2.3 Workspace Directory
 ```text
 a006_mcp_host_jira_assistant/
 ├── .env
