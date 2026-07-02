@@ -44,11 +44,13 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-### 2.3 Workspace Directory Verification
+### 2.3 Workspace Directory
 ```text
 a006_mcp_host_jira_assistant/
 ├── .env
 ├── requirements.txt
+├── README.md
+├── sample_queries.md
 ├── output/
 │   └── query_outputs.json
 ├── server/
@@ -83,7 +85,7 @@ JIRA_API_TOKEN=your_jira_api_token
 * **`GROQ_API_KEY`**: Your unique authorization key provisioned via the Groq Console panel.
 * **`GROQ_MODEL`**:  `llama-3.3-70b-versatile`.
 
-### Environment Sample Configuration (`.env`)
+### Environment Configuration (`.env`)
 ```
 GROQ_API_KEY=your_groq_api_ey
 GROQ_MODEL=llama-3.3-70b-versatile
@@ -118,20 +120,50 @@ To run a query, pass your natural language querry argument directly to the host 
 python src/host.py 
 ```
 
-### Output Logs & Automated File Dumping
+### 6.1 Output Logs 
 When execution completes, the host prints the unified JSON schema response to your terminal window and automatically saves it to local file storage:
 
-```
-{
+```json
+[
+  {
+    "user_query": "Show all issues",
+    "tools_used": [
+      "search_issues"
+    ],
+    "final_answer": "Here are the issues returned by the search:\n\n1. LT-5 - API Error (Status: To Do, Priority: Highest)\n2. LT-4 - MCP Client Development (Status: In Progress, Priority: Highest)\n3. LT-3 - Server Development (Status: In Progress, Priority: High)\n4. LT-2 - ABC-12 (Status: To Do, Priority: Medium)\n5. LT-1 - MCP Learning (Status: To Do, Priority: Highest)\n\nPlease let me know if you would like to view the details of any of these issues or perform any other action.",
+    "write_action_performed": false
+  },
+  {
     "user_query": "List all Jira Projects",
     "tools_used": [
       "list_projects"
     ],
     "final_answer": "Here are the Jira projects available in the connected instance:\n\n1. (Example) Advanced Modeling Techniques - SAM1\n2. AI Team - KAN\n3. Learning Team - LT\n\nLet me know if you need any further assistance.",
     "write_action_performed": false
-}
+  },
+  {
+    "user_query": "Show high-priority issues",
+    "tools_used": [
+      "search_issues"
+    ],
+    "final_answer": "Based on the search results, there is one high-priority issue: LT-3, which is currently in progress.",
+    "write_action_performed": false
+  }
+]
 ```
+### 6.2 Running Test Cases
+Execute the following shell commands from the project root folder to run the validation framework:
 
+```powershell
+# Run the entire test suite with standard coverage indicators
+pytest tests/
+
+# Execute verification runs in detailed, verbose logging mode
+pytest -v tests/test_jira_assistant.py
+
+# Run verification and allow live console print blocks to stream in real-time
+pytest -v -s tests/test_jira_assistant.py
+```
 ---
 
 ## 7. Sample Queries
