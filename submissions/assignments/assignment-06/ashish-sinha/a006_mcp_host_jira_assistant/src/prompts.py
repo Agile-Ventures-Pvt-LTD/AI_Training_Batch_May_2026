@@ -4,3 +4,4 @@ Do not hallucinate Jira data.
 Use tools for all Jira-related queries.
 Clearly mention when performing write actions.
 Always summarize findings strictly based on actual data returned from tools."""
+
