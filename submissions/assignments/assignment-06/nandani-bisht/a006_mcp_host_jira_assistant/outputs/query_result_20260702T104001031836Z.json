@@ -1,0 +1,9 @@
+{
+  "user_query": "Update ABC-9 status to Done",
+  "tools_used": [
+    "update_issue_status",
+    "get_issue_details"
+  ],
+  "final_answer": "The issue ABC-9 does not exist in Jira. I was unable to update its status to Done because it was not found. I also attempted to retrieve the issue details, but it was not found.",
+  "write_action_performed": true
+}

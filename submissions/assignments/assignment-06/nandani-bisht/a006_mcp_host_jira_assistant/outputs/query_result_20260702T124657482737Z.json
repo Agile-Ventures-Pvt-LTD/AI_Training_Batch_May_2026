@@ -1,0 +1,8 @@
+{
+  "user_query": "list al jira projects",
+  "tools_used": [
+    "list_projects"
+  ],
+  "final_answer": "There are no Jira projects visible to the configured account.",
+  "write_action_performed": false
+}
