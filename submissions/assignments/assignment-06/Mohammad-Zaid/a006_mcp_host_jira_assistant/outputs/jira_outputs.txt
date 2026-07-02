@@ -1,0 +1,223 @@
+================================================================================
+User Query:
+Show all open high-priority issues.
+
+Jira Agent Response:
+{
+  "user_query": "Show all open high-priority issues.",
+  "tools_used": [
+    {
+      "name": "search_issues",
+      "arguments": {
+        "jql": "status != Done AND priority = High"
+      },
+      "response": [
+        {
+          "key": null,
+          "summary": null,
+          "status": null,
+          "priority": null,
+          "assignee": null
+        }
+      ]
+    }
+  ],
+  "final_answer": "I couldn't find any open high-priority issues in the system.",
+  "write_action_performed": false
+}
+
+================================================================================
+User Query:
+Summarize issue AA-1
+
+Jira Agent Response:
+{
+  "user_query": "Summarize issue AA-1",
+  "tools_used": [
+    {
+      "name": "get_issue_details",
+      "arguments": {
+        "issue_key": "AA-1"
+      },
+      "response": {
+        "key": "AA-1",
+        "summary": "tavilysearch",
+        "description": "Create Tavily search tool using the CrewAI for searching the relevant information from web to user query and later Integrate it to CrewAI Agent and corresponding Task",
+        "status": "Done",
+        "priority": "High",
+        "assignee": "Itz_Anonymous_AG",
+        "reporter": "Itz_Anonymous_AG",
+        "due_date": "2026-07-08"
+      }
+    }
+  ],
+  "final_answer": "Issue AA-1 \"tavilysearch\" is a high‑priority task that has been completed. It involves creating a Tavily search tool with CrewAI to fetch relevant web information for user queries and integrating it into a CrewAI Agent and its tasks. The issue is assigned to Itz_Anonymous_AG, was reported by the same user, and had a due date of July 8, 2026.",
+  "write_action_performed": false
+}
+
+================================================================================
+User Query:
+Show all open high-priority issues.
+
+Jira Agent Response:
+{
+  "user_query": "Show all open high-priority issues.",
+  "tools_used": [
+    {
+      "name": "search_issues",
+      "arguments": {
+        "jql": "statusCategory != Done AND priority = High"
+      },
+      "response": [
+        {
+          "id": "10119"
+        }
+      ]
+    },
+    {
+      "name": "get_issue_details",
+      "arguments": {
+        "issue_key": "10119"
+      },
+      "response": {
+        "key": "MCP-5",
+        "summary": "Create a login page",
+        "description": "Build the login page for the user profile information.",
+        "status": "In Progress",
+        "priority": "High",
+        "assignee": "Mohd Zaid Ansari",
+        "reporter": "Mohd Zaid Ansari",
+        "due_date": null
+      }
+    }
+  ],
+  "final_answer": "Here are the open high‑priority issues:\n\n1. **MCP-5** – *Create a login page*\n   - Status: In Progress\n   - Priority: High\n   - Assignee: Mohd Zaid Ansari\n   - Reporter: Mohd Zaid Ansari\n   - Due date: Not set\n\nNo other open high‑priority issues were found.",
+  "write_action_performed": false
+}
+
+================================================================================
+User Query:
+- List all Jira projects
+
+Jira Agent Response:
+{
+  "user_query": "- List all Jira projects",
+  "tools_used": [
+    {
+      "name": "list_projects",
+      "arguments": {},
+      "response": [
+        {
+          "key": "AA",
+          "id": "10033",
+          "name": "Agentic-AI",
+          "type": "business"
+        },
+        {
+          "key": "MCP",
+          "id": "10132",
+          "name": "MCP Project",
+          "type": "software"
+        },
+        {
+          "key": "MCPSER",
+          "id": "10066",
+          "name": "MCP-Server-Jira",
+          "type": "software"
+        },
+        {
+          "key": "SCRUM",
+          "id": "10000",
+          "name": "My-AG-Team",
+          "type": "software"
+        }
+      ]
+    }
+  ],
+  "final_answer": "Here are all the Jira projects in your account:\n\n1. **Agentic-AI** (Key: AA) – Business type\n2. **MCP Project** (Key: MCP) – Software type\n3. **MCP-Server-Jira** (Key: MCPSER) – Software type\n4. **My-AG-Team** (Key: SCRUM) – Software type",
+  "write_action_performed": false
+}
+
+================================================================================
+User Query:
+Show comments for AA-1
+
+Jira Agent Response:
+{
+  "user_query": "Show comments for AA-1",
+  "tools_used": [
+    {
+      "name": "get_issue_comments",
+      "arguments": {
+        "issue_key": "AA-1"
+      },
+      "response": {
+        "id": "10000",
+        "author": "Itz_Anonymous_AG",
+        "author_comment": "Going forward with the very first sprint following the Waterfall practice",
+        "updated_by": "Itz_Anonymous_AG"
+      }
+    }
+  ],
+  "final_answer": "Comments for issue **AA-1**:\n\n- **Author:** Itz_Anonymous_AG\n- **Comment:** \"Going forward with the very first sprint following the Waterfall practice\"\n- **Updated by:** Itz_Anonymous_AG",
+  "write_action_performed": false
+}
+
+================================================================================
+User Query:
+Add comment to AA-1 saying Testing completed
+
+Jira Agent Response:
+{
+  "user_query": "Add comment to AA-1 saying Testing completed",
+  "tools_used": [
+    {
+      "name": "add_issue_comment",
+      "arguments": {
+        "comment": "Testing completed",
+        "issue_key": "AA-1"
+      },
+      "response": {
+        "status": "Success",
+        "id": "10175",
+        "author": "Itz_Anonymous_AG",
+        "comment_text": "Testing completed",
+        "updated_by": "Itz_Anonymous_AG"
+      }
+    }
+  ],
+  "final_answer": "Comment added successfully to issue **AA-1**. The new comment \"Testing completed\" has been posted.",
+  "write_action_performed": true
+}
+
+================================================================================
+User Query:
+Move AA-1 to Done
+
+Jira Agent Response:
+{
+  "user_query": "Move AA-1 to Done",
+  "tools_used": [
+    {
+      "name": "update_issue_status",
+      "arguments": {
+        "issue_key": "AA-1",
+        "status": "Done"
+      },
+      "response": {
+        "status": "Success",
+        "transition_id": "41"
+      }
+    }
+  ],
+  "final_answer": "Issue **AA-1** has been successfully transitioned to the **Done** status.",
+  "write_action_performed": true
+}
+
+================================================================================
+User Query:
+Which issues are assigned to me?
+
+Jira Agent Response:
+No output generated
+
