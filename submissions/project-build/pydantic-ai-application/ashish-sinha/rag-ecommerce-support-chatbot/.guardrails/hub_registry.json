@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "validators": {
+    "guardrails/profanity_free": {
+      "import_path": "guardrails_grhub_profanity_free",
+      "exports": [
+        "ProfanityFree"
+      ],
+      "installed_at": "2026-07-03T08:05:44.806964+00:00",
+      "package_name": "guardrails-grhub-profanity-free"
+    },
+    "guardrails/toxic_language": {
+      "import_path": "guardrails_grhub_toxic_language",
+      "exports": [
+        "ToxicLanguage"
+      ],
+      "installed_at": "2026-07-03T08:07:28.105411+00:00",
+      "package_name": "guardrails-grhub-toxic-language"
+    }
+  }
+}
