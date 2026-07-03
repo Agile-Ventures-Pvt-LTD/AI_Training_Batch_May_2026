@@ -86,7 +86,7 @@ The evaluation is managed via **pytest** and **DeepEval** as per case study requ
 
 To run tests:
 ```bash
-deepeval test run tests/test_agent_metrics.py
+uv run pytest
 ```
 
 ## Sample query
