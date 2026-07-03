@@ -247,5 +247,5 @@ if __name__ == "__main__":
 
 
 
-# Project: P005 RAG Travel Booking Agent
+# Project: P005 Travel Booking Agent
 # Author: Poonam Bhatt
