@@ -20,3 +20,10 @@ def get_weather_forecast(destination: str, dates: str = None) -> str:
         return "Mild and overcast, typical London drizzle expected, high of 19°C, low of 12°C."
     else:
         return f"Weather forecast for {destination} is currently sunny and clear, average temperature 22°C."
+
+
+
+
+
+# Project: P005 RAG Travel Booking Agent
+# Author: Poonam Bhatt

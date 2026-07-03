@@ -38,3 +38,9 @@ class SQLProductDatabase:
     def get_user_travels(self, user_name: str) -> List[Dict[str, Any]]:
         """Retrieve travel data for a customer."""
         return self.query_db("SELECT id, booking_id, user_name, destination, travel_dates, hotel_details FROM bookings WHERE user_name LIKE ?", (f"%{user_name}%",))
+
+
+
+
+# Project: P005 RAG Ecommerce support chatbot
+# Author: Poonam Bhatt
