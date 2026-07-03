@@ -1,0 +1,13 @@
+groq>=1.2.0
+ipykernel>=7.2.0
+python-dotenv>=1.2.2
+tiktoken==0.9.0
+pytest
+pydantic-ai
+guardrails-ai>=0.6.7
+deepeval
+pandas
+openmeteo-requests
+requests-cache 
+retry-requests 
+numpy 
