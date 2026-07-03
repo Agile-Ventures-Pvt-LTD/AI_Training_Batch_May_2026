@@ -20,10 +20,21 @@ Open your terminal in the project folder and run:
 uv venv
 uv pip install -r requirements.txt
 ```
-
-
-
-## How to Run Tests
+## Project Structure
+```bash
+ ─ rag-ecommerce-support-chatbot/ 
+    ├── data/                  # Must contain the downloaded seller_guide.pdf 
+    ├── chroma_db/             # Local persistent Chroma database store 
+    ├── src/                   # Core application source code 
+    │   ├── agent.py 
+    │   ├── guardrails_config.py 
+    │   └── database.py 
+    ├── tests/                 # DeepEval testing suites 
+    │   └── test_rag_metrics.py 
+    ├── README.md              # Setup, architecture, and run instructions 
+    └── requirements.txt       # Hardened dependency definitions
+```
+## How to run Tests
 
 To check if the chatbot is answering questions accurately, run:
 ```bash
