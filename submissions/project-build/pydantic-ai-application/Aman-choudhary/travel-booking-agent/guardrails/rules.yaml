@@ -1,0 +1,9 @@
+schema:
+  type: object
+  properties:
+    intent:
+      type: string
+      enum: ["book_flight", "book_hotel", "get_weather", "general_info"]
+    response:
+      type: string
+  required: ["intent", "response"]
