@@ -1,0 +1,11 @@
+pydantic-ai
+chromadb
+sentence-transformers
+pypdf
+python-dotenv
+pymupdf
+guardrails-ai
+langchain
+langchain-community
+langchain-groq
+langchain_chroma
