@@ -1,0 +1,19 @@
+[project]
+name = "travel-booking-agent"
+version = "0.1.0"
+description = "Intelligent Travel Booking Assistant Agent"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "database-pydantic-ai>=0.0.1",
+    "guardrails-ai>=0.6.7",
+    "ipykernel>=7.3.0",
+    "langchain>=0.3.20",
+    "langchain-groq>=0.3.8",
+    "pydantic-ai>=2.3.0",
+    "python-dotenv>=1.2.2",
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "deepeval>=1.0.0",
+    "tokenizers>=0.22.0,<=0.23.0",
+]
