@@ -123,5 +123,5 @@ async def check_db_output(query: str, answer: str, sql_result_summary: str) -> D
 
 
 
-# Project: P005 RAG Travel Booking Agent
+# Project: P005 Travel Booking Agent
 # Author: Poonam Bhatt

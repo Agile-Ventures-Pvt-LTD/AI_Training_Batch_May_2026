@@ -108,5 +108,5 @@ Or run with DeepEval CLI (will print evaluation tables and logs):
 deepeval test run tests/test_db_evaluation.py
 ```
 
-# Project: P005 RAG Travel Booking Agent
+# Project: P005 Travel Booking Agent
 # Author: Poonam Bhatt

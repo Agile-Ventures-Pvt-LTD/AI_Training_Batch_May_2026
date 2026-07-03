@@ -42,5 +42,5 @@ class SQLProductDatabase:
 
 
 
-# Project: P005 RAG Ecommerce support chatbot
+# Project: P005 Travel Booking Agent
 # Author: Poonam Bhatt

@@ -25,5 +25,5 @@ def get_weather_forecast(destination: str, dates: str = None) -> str:
 
 
 
-# Project: P005 RAG Travel Booking Agent
+# Project: P005 Travel Booking Agent
 # Author: Poonam Bhatt

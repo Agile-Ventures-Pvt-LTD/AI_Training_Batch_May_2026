@@ -85,5 +85,5 @@ async def test_db_travel_relevancy():
 
 
 
-# Project: P005 RAG Travel Booking Agent
+# Project: P005 Travel Booking Agent
 # Author: Poonam Bhatt
