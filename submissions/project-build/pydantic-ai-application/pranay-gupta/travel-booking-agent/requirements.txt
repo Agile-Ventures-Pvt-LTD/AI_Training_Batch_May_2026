@@ -1,0 +1,10 @@
+ipykernel>=7.3.0
+python-dotenv>=1.2.2
+openmeteo-requests
+guardrails-ai>=0.6.7
+presidio-analyzer 
+presidio-anonymizer
+pydantic-ai>=2.4.0
+deepeval>=4.0.5
+groq
+pytest>=8.2.0
