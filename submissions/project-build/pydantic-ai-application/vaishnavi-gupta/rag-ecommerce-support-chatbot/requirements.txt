@@ -1,0 +1,16 @@
+guardrails>=2.0.0 
+pydantic-ai>=0.0.18
+langchain>=0.3.25
+langchain-community>=0.3.24
+langchain-text-splitters>=0.3.8
+langchain-chroma>=0.2.4
+langchain-huggingface>=0.2.0
+langchain-groq>=0.3.7
+chromadb>=1.0.15
+sentence-transformers>=4.1.0
+python-dotenv>=1.1.0
+pydantic>=2.11.7
+rich>=14.0.0
+markdown>=3.8
+tqdm>=4.67.1
+deepeval>=4.0.7
