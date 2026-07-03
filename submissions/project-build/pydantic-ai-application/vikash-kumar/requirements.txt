@@ -1,0 +1,9 @@
+pydantic-ai
+chromadb
+pypdf
+deepeval
+pytest
+guardrails-ai
+sentence-transformers
+ipykernel
+groq
