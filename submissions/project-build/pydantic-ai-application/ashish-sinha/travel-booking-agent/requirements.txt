@@ -1,0 +1,7 @@
+pydantic-ai>= 2.4.0
+guardrails-ai>= 0.10.2
+deepeval>=4.0.7
+database-pydantic-ai>=0.0.1
+openmeteo-requests >= 1.7.5
+aiohttp>= 3.14.1
+sqlite3
