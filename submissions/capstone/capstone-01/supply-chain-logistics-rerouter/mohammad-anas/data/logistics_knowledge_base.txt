@@ -1,0 +1,11 @@
+Any alternative route exceeding 120 hours of total added transit delay must be 
+classified as CRITICAL_DELAY.
+
+Cargo exceeding 500 tons and routed through Port-South requires a 
+WAREHOUSE_FIT_CHECK.
+
+A warehouse operating above 85 percent utilization cannot accept a new automated 
+cargo shipment.
+
+If a warehouse has an ELEVATED risk tier, another route or alternative facility 
+must be checked before finalizing the route.
