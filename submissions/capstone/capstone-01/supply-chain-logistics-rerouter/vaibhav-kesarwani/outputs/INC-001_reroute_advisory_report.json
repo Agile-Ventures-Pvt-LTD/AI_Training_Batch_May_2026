@@ -1,0 +1,68 @@
+{
+    "incident_id": "INC-001",
+    "origianl_incident_summary": "A cargo container, SH-4002, carrying 550 tons of industrial electronics, is stranded outside the Port of Seattle due to a worker strike, with a limited 72-hour window to avoid spoilage.",
+    "parsed_metadata": {
+        "shipment_id": "SH-4002",
+        "cargo_weight_tons": "550",
+        "cargo_type": "industrial electronics",
+        "target_warehouse_id": "WH-WEST-202",
+        "has_perishables": "true",
+        "maximum_tolerable_delay_hours": "72"
+    },
+    "rag_validation_rules_applied": [
+        {
+            "page_content": "Cargo exceeding 500 tons and routed through",
+            "metadata": {}
+        },
+        {
+            "page_content": "Cargo exceeding 500 tons and routed through",
+            "metadata": {}
+        },
+        {
+            "page_content": "Cargo exceeding 500 tons and routed through",
+            "metadata": {}
+        },
+        {
+            "page_content": "Cargo exceeding 500 tons and routed through",
+            "metadata": {}
+        }
+    ],
+    "routes_evaluated": [
+        {
+            "route_id": "ROUTE-WEST-01",
+            "alternative_port": "Port-West",
+            "warehouse_id": "WH-WEST-202",
+            "added_delay_hours": 48
+        },
+        {
+            "route_id": "ROUTE-SOUTH-02",
+            "alternative_port": "Port-South",
+            "warehouse_id": "WH-SOUTH-303",
+            "added_delay_hours": 72
+        },
+        {
+            "route_id": "ROUTE-CENTRAL-03",
+            "alternative_port": "Port-Central",
+            "warehouse_id": "WH-CENTRAL-404",
+            "added_delay_hours": 96
+        }
+    ],
+    "final_selected_route": {
+        "route_id": "ROUTE-WEST-01",
+        "alternative_port": "Port-West",
+        "warehouse_id": "WH-WEST-202",
+        "added_delay_hours": 48
+    },
+    "queried_warehouse_metrics": {
+        "warehouse_name": "Pacific Gateway Storage",
+        "current_utilization_pct": 68,
+        "operational_status": "ACTIVE",
+        "risk_tier": "ELEVATED"
+    },
+    "graph_routing_metadata": {
+        "loops_executed": 2,
+        "final_decision_state": "escalate_incident",
+        "reroute_impact_score": 25
+    },
+    "final_operations_brief": "**Logistics Team Summary: Critical Disruption SH-4002**\n\n**Incident:** Cargo container SH-4002, carrying 550 tons of industrial electronics, is stranded outside the Port of Seattle due to an active worker strike. The shipment, originally scheduled for delivery to WH-WEST-202, contains perishable cooling components.\n\n**Escalation and Route Selection:** Due to the strike and the shipment's perishable nature, with a maximum tolerable delay of 72 hours, the incident was escalated. The logistics team selected **ROUTE-WEST-01**, diverting the shipment to the **Port-West** and then to the target warehouse **WH-WEST-202**. This alternative route adds 48 hours of delay.\n\n**Key Factors:** The major factors influencing this decision were the active worker strike at the Port of Seattle and the warehouse condition that **WH-WEST-202** (Pacific Gateway Storage) is operational with an elevated risk tier and 68% current utilization. The team aimed to mitigate risks and ensure timely delivery within the 72-hour window."
+}
