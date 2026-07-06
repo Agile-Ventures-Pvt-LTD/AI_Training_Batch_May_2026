@@ -18,7 +18,7 @@ The logistic team needs to quickly determine different parameters:
 
 2. ## Solution Approach
 
-
+```
 We will approach with incident id and moving forward with langchain extraction.
 
 In langchain extraction we will start with the given data groq llm setup, generate prompt templates, used to get structured output, extract shipment information from incident and to generate final operational breif.
@@ -30,11 +30,12 @@ We added two major python tools:
 - get_alternative_routes_tool
 
 Langgraph is the crucial step in this project as will manage shared application state, handle execution of the workflow node, conditional routing, route retry logic, route finalization and incident escalation.
- 
+ ```
 
 
 3. ## Architecture:
 
+```
 We will approach with incident id and moving forward with langchain extraction.
 
 In langchain extraction we will start with the given data groq llm setup, generate prompt templates, used to get structured output, extract shipment information from incident and to generate final operational breif.
@@ -47,7 +48,7 @@ We added two major python tools:
 
 Langgraph is the crucial step in this project as will manage shared application state, handle execution of the workflow node, conditional routing, route retry logic, route finalization and incident escalation.
 
-```
+
 Incident
  ↓
 LangChain Extraction
@@ -152,6 +153,8 @@ The application will take 3 major inputs:
 ```bash 
 pytest tests/
 ```
+
+```
 (supply-chain-logistics-rerouter) C:\Users\Poonam Bhatt\Desktop\supply-chain-logistics-rerouter>pytest tests/
 ================================================== test session starts ==================================================
 platform win32 -- Python 3.13.13, pytest-9.1.1, pluggy-1.6.0
@@ -178,7 +181,7 @@ tests\test_nodes.py:4
 ============================================ 13 passed, 2 warnings in 18.79s ============================================
 
 (supply-chain-logistics-rerouter) C:\Users\Poonam Bhatt\Desktop\supply-chain-logistics-rerouter>
-
+```
 
 - ### for running incident
 
@@ -186,7 +189,7 @@ tests\test_nodes.py:4
 python -m run_incidents
 ```
 
-
+```
 Output: 
 (supply-chain-logistics-rerouter) C:\Users\Poonam Bhatt\Desktop\supply-chain-logistics-rerouter>python -m run_incidents
 Running automated incident execution script...
@@ -341,12 +344,15 @@ Here is a short, professional final operations brief for the logistics team:
 
 The primary maritime route for cargo SH-4208, containing 700 tons of industrial machinery, was unavailable, prompting an evaluation of alternative routes. The alternative route selected was ROUTE-SOUTH-02, with a destination of WH-SOUTH-303, due to its acceptable warehouse and route conditions. The decision was influenced by RULE-02: Port South Fit Check, which required verification of heavy machinery compatibility and structural floor load capacity for cargo exceeding 500 tons routed through Port-South. The chosen route met all necessary conditions, including a warehouse utilization of 72%, which is below the 85% limit outlined in RULE-03: Warehouse Utilization Limits.
 Incident INC-003 complete. Decision: OPTIMAL_PATH_FOUND
+```
 
 
 - ### for running main file:
 
 ```bash
 python -m src.main      
+```
+
 ```
 Output:
 
@@ -363,6 +369,7 @@ SUPPLY CHAIN CRISIS & LOGISTICS RE-ROUTER
 
 Select Option > 
 
+```
 
 
 9. ## Langgraph Workflow:
@@ -425,12 +432,14 @@ Retriever
 
 11. ## Tools Implemented
 
+
+```
 We implemented two major python tools:
 
 - query_warehouse_inventory_tool: Queries warehouse inventory database to retrieve utilization, status, and risk tier.
 
 - get_alternative_routes_tool: Queries alternative routes database to retrieve available routes for a disrupted port.
-
+```
 
 
 12. ## Testing 
@@ -438,7 +447,7 @@ We implemented two major python tools:
 ```bash 
 pytest tests/
 ```
-
+```
 (supply-chain-logistics-rerouter) C:\Users\Poonam Bhatt\Desktop\supply-chain-logistics-rerouter>pytest tests/
 ================================================== test session starts ==================================================
 platform win32 -- Python 3.13.13, pytest-9.1.1, pluggy-1.6.0
@@ -463,12 +472,11 @@ tests\test_nodes.py:4
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
 ============================================ 13 passed, 2 warnings in 18.79s ============================================
-
-(supply-chain-logistics-rerouter) C:\Users\Poonam Bhatt\Desktop\supply-chain-logistics-rerouter>
-
+```
 
 
 13. ## Test Results:
+
 
 All the file under tests/ folder are runnable and the results are saved in outputs/ folder
 
@@ -505,6 +513,8 @@ outputs/INC-003_reroute_advisory_report.json
 
 15. ## Known Limitation:
 
+
+```
 This project may contain few limitation:
 
 - Uses local operational data - Worked on the given local small data.
@@ -512,14 +522,16 @@ This project may contain few limitation:
 - Uses a fixed route dataset  - Routing depends on fixed dataset not a real time data.
 - LLM output may vary slightly - LLM output may vary after few number of runs.
 - No web UI interaction - This project currently doesnot support Web interaction (streamlit, FastAPI etc).
+```
 
 
 16. ## Future Plan:
- 
+
+```
  - Add a web design or interaction of chatbot rather than the CLI dependency.
  - Use live port data rather than local static data.
  - Enable dynamic routing for datasets.
-
+```
 
 
 
