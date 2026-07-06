@@ -1,0 +1,32 @@
+{
+  "incident_id": "INC-003",
+  "original_incident_summary": "Incident ID: INC-003, Cargo SH-4208 containing 700 tons of industrial machinery is delayed due to primary maritime route unavailability.",
+  "parsed_metadata": {
+    "shipment_id": "SH-4208",
+    "target_warehouse_id": "WHEAST-101",
+    "cargo_weight_tons": 700,
+    "cargo_type": "industrial machinery",
+    "has_perishables": false,
+    "maximum_tolerable_delay_hours": 0
+  },
+  "rag_validation_rules_applied": [],
+  "routes_evaluated": [],
+  "final_selected_route": {
+    "route_id": "ROUTE-CENTRAL-03",
+    "alternative_port": "Port-Central",
+    "warehouse_id": "WH-CENTRAL-404",
+    "added_delay_hours": 96
+  },
+  "queried_warehouse_metrics": {
+    "warehouse_name": "Central Micro Hub",
+    "current_utilization_pct": 54,
+    "operational_status": "ACTIVE",
+    "risk_tier": "NORMAL"
+  },
+  "graph_routing_metadata": {
+    "loops_executed": 3,
+    "final_decision_state": "CRITICAL_DELAY",
+    "reroute_impact_score": 25
+  },
+  "final_operations_brief": "Selected Route: ROUTE-CENTRAL-03, alternative port: Port-Central, warehouse id: WH-CENTRAL-404, added delay: 96 hours, warehouse utilization: 54%, operational status: ACTIVE, risk tier: NORMAL, impact score: 25"
+}
