@@ -1,0 +1,52 @@
+{
+    "incident_id": "INC-003",
+    "original_incident_summary": "Cargo SH-4208, carrying 700 tons of industrial machinery, is facing a delivery disruption due to the unavailability of the primary maritime route, which was originally planned for WHEAST-101.",
+    "parsed_metadata": {
+        "shipment_id": "SH-4208",
+        "cargo_weight_tons": 700,
+        "cargo_type": "industrial machinery",
+        "target_warehouse_id": "WHEAST-101",
+        "has_perishables": false,
+        "maximum_tolerable_delay_hours": 0
+    },
+    "rag_validation_rules_applied": [
+        "Any alternative route exceeding 120 hours of total added transit delay must be",
+        "classified as CRITICAL_DELAY.",
+        "Cargo exceeding 500 tons and routed through Port-South requires a",
+        "WAREHOUSE_FIT_CHECK.",
+        "A warehouse operating above 85 percent utilization cannot accept a new automated",
+        "cargo shipment.",
+        "If a warehouse has an ELEVATED risk tier, another route or alternative facility",
+        "must be checked before finalizing the route."
+    ],
+    "routes_evaluated": [
+        {
+            "route_id": "ROUTE-WEST-01",
+            "decision": "ROUTE_CLARIFICATION",
+            "reason": "Warehouse risk tier is elevated"
+        },
+        {
+            "route_id": "ROUTE-SOUTH-02",
+            "decision": "OPTIMAL_PATH_FOUND",
+            "reason": "All conditions are successful"
+        }
+    ],
+    "final_selected_route": {
+        "route_id": "ROUTE-SOUTH-02",
+        "alternative_port": "Port-South",
+        "warehouse_id": "WH-SOUTH-303",
+        "added_delay_hours": 72
+    },
+    "queried_warehouse_metrics": {
+        "warehouse_name": "Southern Distribution Hub",
+        "current_utilization_pct": 72,
+        "operational_status": "ACTIVE",
+        "risk_tier": "NORMAL"
+    },
+    "graph_routing_metadata": {
+        "loops_executed": 1,
+        "final_decision_state": "OPTIMAL_PATH_FOUND",
+        "reroute_impact_score": 0
+    },
+    "final_operations_brief": "**Incident Summary:**\nThe incident (INC-003) involved the transportation of 700 tons of industrial machinery (Cargo SH-4208) with the primary maritime route being unavailable. The planned delivery was for WHEAST-101.\n\n**Selected Route:**\nThe final selected route was \"ROUTE-SOUTH-02\" with the following details:\n- Alternative port: Port-South\n- Warehouse ID: WH-SOUTH-303\n- Added delay hours: 72 hours\n\n**Key Rule or Warehouse Condition Driving the Decision:**\nThe key rules and conditions that drove this decision include:\n1. **Warehouse Utilization**: The selected warehouse (WH-SOUTH-303), part of the Southern Distribution Hub, had a current utilization percentage of 72%, which is below the 85% threshold. This allowed it to accept the new automated cargo shipment.\n2. **Risk Tier**: The warehouse had a \"NORMAL\" risk tier, which meant there was no need to seek an alternative route or facility due to elevated risk.\n3. **WAREHOUSE_FIT_CHECK**: Since the cargo exceeded 500 tons and was routed through Port-South, a WAREHOUSE_FIT_CHECK was presumably required. However, the details of this check are not provided, but it can be inferred that the warehouse (WH-SOUTH-303) was deemed suitable.\n4. **Total Added Transit Delay**: The added delay of 72 hours was well below the 120 hours threshold for being classified as a CRITICAL_DELAY, making ROUTE-SOUTH-02 a viable option.\n\nOther routes, like ROUTE-WEST-01, were considered but rejected due to the warehouse having an elevated risk tier, prompting the search for an alternative. ROUTE-SOUTH-02 met all the necessary conditions, leading to the decision of OPTIMAL_PATH_FOUND."
+}

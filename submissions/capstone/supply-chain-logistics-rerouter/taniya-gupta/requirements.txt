@@ -1,0 +1,16 @@
+ipykernel>=7.3.0
+python-dotenv>=1.2.2
+langchain>=0.3.20
+langchain-groq>=0.3.8
+langchain-community>=0.3.19
+sentence-transformers>=5.1.2
+chromadb>=0.5.0
+langchain-chroma>=0.1.4
+pydantic-ai>=2.3.0
+langchain-text-splitters>=1.1.2
+tiktoken>=0.9.0
+langchain-core>=0.3.86
+faiss-cpu>=1.14.3
+langchain-huggingface>=1.2.2
+langchainhub>=0.1.21
+pytest>=9.1.1
