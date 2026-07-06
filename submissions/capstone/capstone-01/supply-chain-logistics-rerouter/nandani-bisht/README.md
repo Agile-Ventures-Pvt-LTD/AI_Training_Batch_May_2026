@@ -76,10 +76,6 @@ uv venv
 uv add -r requirements.txt
 ```
 
-## Running the Application:
-```
-uv run python src/main.py
-```
 
 ## input:
 The application receive the following inputs:
@@ -93,7 +89,7 @@ The application receive the following inputs:
 ## Output:
 
 The final json output looks like that:
-`{
+```{
   "incident_id": "INC-001",
   "original_incident_summary": "A critical disruption has occurred due to a worker strike at the Port of Seattle, stranding cargo container SH-4002.",
   "parsed_metadata": {
@@ -139,7 +135,7 @@ The final json output looks like that:
   },
   "final_operations_brief": "Incident ID: INC-001 - A worker strike at the Port of Seattle has disrupted cargo container SH-4002, prompting a rerouting decision. The alternative route selected is ROUTE-SOUTH-02, utilizing Port-South and warehouse WH-SOUTH-303, driven by the need to avoid elevated risk tiers and stay within the 72-hour maximum tolerable delay limit. This decision was guided by the acceptable warehouse and route conditions, including a normal risk tier and active operational status at the Southern Distribution Hub."
 }
-`
+```
 
 ## LangGraph Workflow:
 **Nodes**: Receives the current graph state as input , Perform some processing and returns updates to the state.
@@ -191,7 +187,7 @@ The final json output looks like that:
     "added_delay_hours": 48
 }
     
-## Test Case Run Command:
+## Run Command:
 ``` uv run pytest tests/ -v ```
 and the test output is saved in the `test_results.txt` file.
 
