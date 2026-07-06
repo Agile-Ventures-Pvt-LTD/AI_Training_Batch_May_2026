@@ -1,0 +1,41 @@
+{
+  "incident_id": "INC-003",
+  "original_incident_summary": "Shipment SH-9999 has critical cargo and cannot sustain delays exceeding 10 hours.",
+  "parsed_metadata": {
+    "shipment_id": "SH-9999",
+    "cargo_weight_tons": 0,
+    "cargo_type": "critical cargo",
+    "target_warehouse_id": "WH-WEST-202",
+    "has_perishables": false,
+    "maximum_tolerable_delay_hours": 10
+  },
+  "rag_validation_rules_applied": [
+    "Any alternative route exceeding 120 hours of total added transit delay must be \nclassified as CRITICAL_DELAY.",
+    "Cargo exceeding 500 tons and routed through Port-South requires a \nWAREHOUSE_FIT_CHECK."
+  ],
+  "routes_evaluated": [
+    {
+      "route_id": "ROUTE-WEST-01",
+      "decision": "ROUTE_CLARIFICATION",
+      "reason": "Warehouse risk tier is ELEVATED, Added route delay exceeds shipment delay limit"
+    },
+    {
+      "route_id": "ROUTE-SOUTH-02",
+      "decision": "ROUTE_CLARIFICATION",
+      "reason": "Added route delay exceeds shipment delay limit"
+    }
+  ],
+  "final_selected_route": {},
+  "queried_warehouse_metrics": {
+    "warehouse_name": "Southern Distribution Hub",
+    "current_utilization_pct": 72,
+    "operational_status": "ACTIVE",
+    "risk_tier": "NORMAL"
+  },
+  "graph_routing_metadata": {
+    "loops_executed": 2,
+    "final_decision_state": "CRITICAL_DELAY",
+    "reroute_impact_score": 25
+  },
+  "final_operations_brief": "Incident ID: INC-003 - Shipment SH-9999, carrying critical cargo, was impacted by a disruption at PORT-SEATTLE-02, necessitating a rerouting decision to avoid exceeding the 10-hour delay limit. Due to elevated risk tiers and potential delays exceeding the shipment's tolerable limit on evaluated routes, the incident was escalated with a CRITICAL_DELAY decision. The final decision was driven by the shipment's maximum tolerable delay of 10 hours and the need to prioritize timely delivery of critical cargo."
+}

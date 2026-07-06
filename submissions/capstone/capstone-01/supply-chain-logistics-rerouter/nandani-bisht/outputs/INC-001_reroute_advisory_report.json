@@ -1,0 +1,46 @@
+{
+  "incident_id": "INC-001",
+  "original_incident_summary": "Cargo container SH-4002 is stranded outside the Port of Seattle due to a worker strike, threatening timely delivery of its perishable electronics cargo.",
+  "parsed_metadata": {
+    "shipment_id": "SH-4002",
+    "cargo_weight_tons": 550,
+    "cargo_type": "industrial electronics",
+    "target_warehouse_id": "WH-WEST-202",
+    "has_perishables": true,
+    "maximum_tolerable_delay_hours": 72
+  },
+  "rag_validation_rules_applied": [
+    "Cargo exceeding 500 tons and routed through Port-South requires a \nWAREHOUSE_FIT_CHECK.",
+    "A warehouse operating above 85 percent utilization cannot accept a new automated \ncargo shipment."
+  ],
+  "routes_evaluated": [
+    {
+      "route_id": "ROUTE-WEST-01",
+      "decision": "ROUTE_CLARIFICATION",
+      "reason": "Warehouse risk tier is ELEVATED"
+    },
+    {
+      "route_id": "ROUTE-SOUTH-02",
+      "decision": "OPTIMAL_PATH_FOUND",
+      "reason": "Warehouse and route conditions are acceptable"
+    }
+  ],
+  "final_selected_route": {
+    "route_id": "ROUTE-SOUTH-02",
+    "alternative_port": "Port-South",
+    "warehouse_id": "WH-SOUTH-303",
+    "added_delay_hours": 72
+  },
+  "queried_warehouse_metrics": {
+    "warehouse_name": "Southern Distribution Hub",
+    "current_utilization_pct": 72,
+    "operational_status": "ACTIVE",
+    "risk_tier": "NORMAL"
+  },
+  "graph_routing_metadata": {
+    "loops_executed": 1,
+    "final_decision_state": "OPTIMAL_PATH_FOUND",
+    "reroute_impact_score": 0
+  },
+  "final_operations_brief": "Incident ID: INC-001 - Cargo container SH-4002 has been rerouted via ROUTE-SOUTH-02 to Port-South and warehouse WH-SOUTH-303 due to the worker strike at the Port of Seattle. This decision was driven by the need to minimize delays for perishable electronics cargo, with the selected route and warehouse meeting the required conditions, including a normal risk tier and operational status. The rerouting adds a 72-hour delay, which is within the maximum tolerable delay limit of 72 hours."
+}
