@@ -1,0 +1,17 @@
+[
+{
+"incident_id": "INC-001",
+"manifest_text": "CRITICAL DISRUPTION: Cargo container SH-4002 is stranded outside the Port of Seattle due to an active worker strike. The vessel is carrying 550 tons of industrial electronics originally scheduled for delivery to WH-WEST-202. The shipment contains perishable cooling components and cannot sustain delays exceeding 72 hours.",
+"disrupted_port_id": "PORT-SEATTLE-02"
+},
+{
+"incident_id": "INC-002",
+"manifest_text": "Shipment SH-4105 is delayed because the primary port is temporarily closed. The shipment contains 250 tons of consumer electronics and is scheduled for WH-SOUTH-303.",
+"disrupted_port_id": "PORT-SEATTLE-02"
+},
+{
+"incident_id": "INC-003",
+"manifest_text": "Cargo SH-4208 contains 700 tons of industrial machinery.The primary maritime route is unavailable and delivery was planned for WH-EAST-101.",
+"disrupted_port_id": "PORT-SEATTLE-02"
+}
+]
