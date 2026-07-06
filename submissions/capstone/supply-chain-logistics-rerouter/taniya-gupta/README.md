@@ -214,6 +214,7 @@ Two tools are implemented:
 ## Testing
 
 I have implemented 12 testcases and they have been passed by the project.
+I had also added checks to validate the input.
 to run the pytest,
 ```bash
 pytest

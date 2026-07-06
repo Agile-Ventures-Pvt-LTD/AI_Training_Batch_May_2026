@@ -19,8 +19,6 @@ try:
             print("Invalid input. Please enter a number.")
             
         idx = int(selection) - 1
-        if idx < 0 or idx >= len(incidents):
-            print("Selection out of range.")
           
         selected_inc = incidents[idx]
         
@@ -57,6 +55,6 @@ try:
         print(f"Latest report saved to outputs/reroute_advisory_report.json")
         
 except KeyboardInterrupt:
-        print("\nOperation cancelled.")
+        print("\nExited")
 except Exception as e:
-        print(f"\nAn error occurred during execution: {e}")
+        print(f"\nerror occurred during execution: {e}")
