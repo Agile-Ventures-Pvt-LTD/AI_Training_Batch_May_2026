@@ -1,0 +1,47 @@
+{
+  "incident_id": "INC-002",
+  "original_incident_summary": "Shipment SH-4105 is delayed because the primary port is temporarily closed. The shipment contains 250 tons of consumer electronics and is scheduled for WH-SOUTH-303.",
+  "parsed_metadata": {
+    "shipment_id": "SH-4105",
+    "cargo_weight_tons": 250,
+    "cargo_type": "consumer electronics",
+    "target_warehouse_id": "WH-SOUTH-303",
+    "has_perishables": false,
+    "maximum_tolerable_delay_hours": null
+  },
+  "rag_validation_rules_applied": [
+    "RULE-01: Delay Limits and Critical Delays\nAny alternative route exceeding 120 hours of total added transit delay must be classified as CRITICAL_DELAY. Critical delays trigger immediate escalation to the port logistics director.",
+    "RULE-03: Warehouse Utilization Limits\nA warehouse operating above 85 percent utilization cannot accept a new automated cargo shipment. Any route assigned to a warehouse exceeding 85% utilization must be rejected, triggering a ROUTE_CLARIFICATION.",
+    "RULE-02: Port South Fit Check\nCargo exceeding 500 tons and routed through Port-South requires a WAREHOUSE_FIT_CHECK to verify heavy machinery compatibility and structural floor load capacity."
+  ],
+  "routes_evaluated": [
+    {
+      "route_id": "ROUTE-WEST-01",
+      "decision": "ROUTE_CLARIFICATION",
+      "reason": "Warehouse risk tier is ELEVATED"
+    },
+    {
+      "route_id": "ROUTE-SOUTH-02",
+      "decision": "OPTIMAL_PATH_FOUND",
+      "reason": "Warehouse and route conditions are acceptable"
+    }
+  ],
+  "final_selected_route": {
+    "route_id": "ROUTE-SOUTH-02",
+    "alternative_port": "Port-South",
+    "warehouse_id": "WH-SOUTH-303",
+    "added_delay_hours": 72
+  },
+  "queried_warehouse_metrics": {
+    "warehouse_name": "Southern Distribution Hub",
+    "current_utilization_pct": 72,
+    "operational_status": "ACTIVE",
+    "risk_tier": "NORMAL"
+  },
+  "graph_routing_metadata": {
+    "loops_executed": 1,
+    "final_decision_state": "OPTIMAL_PATH_FOUND",
+    "reroute_impact_score": 0
+  },
+  "final_operations_brief": "Here is a short, professional final operations brief for the logistics team:\n\nThe shipment SH-4105, containing 250 tons of consumer electronics, was delayed due to the temporary closure of the primary port. An alternative route, ROUTE-SOUTH-02, was selected, which adds 72 hours of transit delay, well below the 120-hour critical delay threshold outlined in RULE-01. The decision was influenced by RULE-03, which requires warehouses to be below 85% utilization to accept new shipments, and fortunately, WH-SOUTH-303 is currently operating at 72% utilization, making it an acceptable destination."
+}

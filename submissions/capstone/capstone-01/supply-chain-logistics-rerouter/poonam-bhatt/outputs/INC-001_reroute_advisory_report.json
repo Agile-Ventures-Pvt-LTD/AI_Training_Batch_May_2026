@@ -1,0 +1,47 @@
+{
+  "incident_id": "INC-001",
+  "original_incident_summary": "CRITICAL DISRUPTION: Cargo container SH-4002 is stranded outside the Port of Seattle due to an active worker strike. The vessel is carrying 550 tons of industrial electronics originally scheduled for delivery to WH-WEST-202. The shipment contains perishable cooling components and cannot sustain delays exceeding 72 hours.",
+  "parsed_metadata": {
+    "shipment_id": "SH-4002",
+    "cargo_weight_tons": 550,
+    "cargo_type": "industrial electronics",
+    "target_warehouse_id": "WH-WEST-202",
+    "has_perishables": true,
+    "maximum_tolerable_delay_hours": 72
+  },
+  "rag_validation_rules_applied": [
+    "RULE-02: Port South Fit Check\nCargo exceeding 500 tons and routed through Port-South requires a WAREHOUSE_FIT_CHECK to verify heavy machinery compatibility and structural floor load capacity.",
+    "RULE-03: Warehouse Utilization Limits\nA warehouse operating above 85 percent utilization cannot accept a new automated cargo shipment. Any route assigned to a warehouse exceeding 85% utilization must be rejected, triggering a ROUTE_CLARIFICATION.",
+    "RULE-07: Perishable Cargo Processing\nPerishable cooling components and general perishable cargo require immediate priority routing. If no acceptable alternative route under the delay limit is found, the incident must be escalated."
+  ],
+  "routes_evaluated": [
+    {
+      "route_id": "ROUTE-WEST-01",
+      "decision": "ROUTE_CLARIFICATION",
+      "reason": "Warehouse risk tier is ELEVATED"
+    },
+    {
+      "route_id": "ROUTE-SOUTH-02",
+      "decision": "OPTIMAL_PATH_FOUND",
+      "reason": "Warehouse and route conditions are acceptable"
+    }
+  ],
+  "final_selected_route": {
+    "route_id": "ROUTE-SOUTH-02",
+    "alternative_port": "Port-South",
+    "warehouse_id": "WH-SOUTH-303",
+    "added_delay_hours": 72
+  },
+  "queried_warehouse_metrics": {
+    "warehouse_name": "Southern Distribution Hub",
+    "current_utilization_pct": 72,
+    "operational_status": "ACTIVE",
+    "risk_tier": "NORMAL"
+  },
+  "graph_routing_metadata": {
+    "loops_executed": 1,
+    "final_decision_state": "OPTIMAL_PATH_FOUND",
+    "reroute_impact_score": 0
+  },
+  "final_operations_brief": "Here is a concise final operations brief for the logistics team:\n\nA critical disruption occurred due to a worker strike at the Port of Seattle, stranding cargo container SH-4002 carrying 550 tons of industrial electronics. The alternative route selected was ROUTE-SOUTH-02, diverting to Port-South and warehouse WH-SOUTH-303, as it met the necessary conditions, including compliance with RULE-02: Port South Fit Check. The decision was largely influenced by RULE-07: Perishable Cargo Processing, which required immediate priority routing to prevent delays exceeding 72 hours, and the fact that WH-SOUTH-303's utilization was below the 85% threshold, allowing for acceptance of the shipment."
+}

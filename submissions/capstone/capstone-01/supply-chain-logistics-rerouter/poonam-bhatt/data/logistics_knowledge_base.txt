@@ -1,0 +1,23 @@
+RULE-01: Delay Limits and Critical Delays
+Any alternative route exceeding 120 hours of total added transit delay must be classified as CRITICAL_DELAY. Critical delays trigger immediate escalation to the port logistics director.
+
+RULE-02: Port South Fit Check
+Cargo exceeding 500 tons and routed through Port-South requires a WAREHOUSE_FIT_CHECK to verify heavy machinery compatibility and structural floor load capacity.
+
+RULE-03: Warehouse Utilization Limits
+A warehouse operating above 85 percent utilization cannot accept a new automated cargo shipment. Any route assigned to a warehouse exceeding 85% utilization must be rejected, triggering a ROUTE_CLARIFICATION.
+
+RULE-04: Elevated Risk Check
+If a warehouse has an ELEVATED risk tier, another route or alternative facility must be checked before finalizing the route. The route is rejected and results in a ROUTE_CLARIFICATION.
+
+RULE-05: Non-Active Operational Status
+A warehouse with an operational_status that is not ACTIVE cannot receive any cargo shipments. The route assigned to it must be rejected under ROUTE_CLARIFICATION.
+
+RULE-06: Shipment Tolerable Delay Rule
+If the added delay hours of an alternative route exceeds the maximum tolerable delay hours specified in the shipment manifest, the route is unsuitable and must be rejected under ROUTE_CLARIFICATION.
+
+RULE-07: Perishable Cargo Processing
+Perishable cooling components and general perishable cargo require immediate priority routing. If no acceptable alternative route under the delay limit is found, the incident must be escalated.
+
+
+

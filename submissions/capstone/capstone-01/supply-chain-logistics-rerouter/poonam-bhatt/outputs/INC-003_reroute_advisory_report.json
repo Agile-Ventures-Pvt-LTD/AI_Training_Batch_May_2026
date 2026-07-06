@@ -1,0 +1,47 @@
+{
+  "incident_id": "INC-003",
+  "original_incident_summary": "Cargo SH-4208 contains 700 tons of industrial machinery. The primary maritime route is unavailable and delivery was planned for WH-EAST-101.",
+  "parsed_metadata": {
+    "shipment_id": "SH-4208",
+    "cargo_weight_tons": 700,
+    "cargo_type": "industrial machinery",
+    "target_warehouse_id": "WH-EAST-101",
+    "has_perishables": false,
+    "maximum_tolerable_delay_hours": null
+  },
+  "rag_validation_rules_applied": [
+    "RULE-03: Warehouse Utilization Limits\nA warehouse operating above 85 percent utilization cannot accept a new automated cargo shipment. Any route assigned to a warehouse exceeding 85% utilization must be rejected, triggering a ROUTE_CLARIFICATION.",
+    "RULE-02: Port South Fit Check\nCargo exceeding 500 tons and routed through Port-South requires a WAREHOUSE_FIT_CHECK to verify heavy machinery compatibility and structural floor load capacity.",
+    "RULE-05: Non-Active Operational Status\nA warehouse with an operational_status that is not ACTIVE cannot receive any cargo shipments. The route assigned to it must be rejected under ROUTE_CLARIFICATION."
+  ],
+  "routes_evaluated": [
+    {
+      "route_id": "ROUTE-WEST-01",
+      "decision": "ROUTE_CLARIFICATION",
+      "reason": "Warehouse risk tier is ELEVATED"
+    },
+    {
+      "route_id": "ROUTE-SOUTH-02",
+      "decision": "OPTIMAL_PATH_FOUND",
+      "reason": "Warehouse and route conditions are acceptable"
+    }
+  ],
+  "final_selected_route": {
+    "route_id": "ROUTE-SOUTH-02",
+    "alternative_port": "Port-South",
+    "warehouse_id": "WH-SOUTH-303",
+    "added_delay_hours": 72
+  },
+  "queried_warehouse_metrics": {
+    "warehouse_name": "Southern Distribution Hub",
+    "current_utilization_pct": 72,
+    "operational_status": "ACTIVE",
+    "risk_tier": "NORMAL"
+  },
+  "graph_routing_metadata": {
+    "loops_executed": 1,
+    "final_decision_state": "OPTIMAL_PATH_FOUND",
+    "reroute_impact_score": 0
+  },
+  "final_operations_brief": "Here is a short, professional final operations brief for the logistics team:\n\nThe primary maritime route for cargo SH-4208, containing 700 tons of industrial machinery, was unavailable, prompting an evaluation of alternative routes. The alternative route selected was ROUTE-SOUTH-02, with a destination of WH-SOUTH-303, due to its acceptable warehouse and route conditions. The decision was influenced by RULE-02: Port South Fit Check, which required verification of heavy machinery compatibility and structural floor load capacity for cargo exceeding 500 tons routed through Port-South. The chosen route met all necessary conditions, including a warehouse utilization of 72%, which is below the 85% limit outlined in RULE-03: Warehouse Utilization Limits."
+}
