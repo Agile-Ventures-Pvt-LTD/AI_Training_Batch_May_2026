@@ -1,0 +1,34 @@
+{
+  "incident_id": "INC-002",
+  "original_incident_summary": "Shipment SH-4105 is delayed because the primary port is temporarily closed. The shipment contains 250 tons of consumer electronics and is scheduled for WH-SOUTH...",
+  "parsed_metadata": {
+    "shipment_id": "SH-4105",
+    "cargo_weight_tons": 250,
+    "cargo_type": "consumer electronics",
+    "target_warehouse_id": "WH-SOUTH-303",
+    "has_perishables": false,
+    "maximum_tolerable_delay_hours": null
+  },
+  "rag_validation_rules_applied": [
+    "Any alternative route exceeding 120 hours of total added transit delay must be classified as CRITICAL_DELAY.Cargo exceeding 500 tons and routed through Port-South requires a WAREHOUSE_FIT_CHECK.A warehouse operating above 85 percent utilization cannot accept a new automated cargo shipment.If a warehouse has an ELEVATED risk tier, another route or\n---\nan ELEVATED risk tier, another route or alternative facility must be checked before finalizing the route"
+  ],
+  "routes_evaluated": [],
+  "final_selected_route": {
+    "route_id": "ROUTE-SOUTH-02",
+    "alternative_port": "Port-South",
+    "warehouse_id": "WH-SOUTH-303",
+    "added_delay_hours": 72
+  },
+  "queried_warehouse_metrics": {
+    "warehouse_name": "Southern Distribution Hub",
+    "current_utilization_pct": 72,
+    "operational_status": "ACTIVE",
+    "risk_tier": "NORMAL"
+  },
+  "graph_routing_metadata": {
+    "loops_executed": 1,
+    "final_decision_state": "OPTIMAL_PATH_FOUND",
+    "reroute_impact_score": 0
+  },
+  "final_operations_brief": "**Incident Resolution Summary: Shipment SH-4105**\n\n**Incident:** Shipment SH-4105, containing 250 tons of consumer electronics, was delayed due to the temporary closure of the primary port.\n\n**Resolution:** An optimal alternative route (ROUTE-SOUTH-02) was found, utilizing Port-South and warehouse WH-SOUTH-303, with an added transit delay of 72 hours.\n\n**Key Considerations:**\n\n* The alternative route does not exceed the 120-hour critical delay threshold.\n* The shipment is under the 500-ton threshold, eliminating the need for a WAREHOUSE_FIT_CHECK.\n* The target storage facility, Southern Distribution Hub, has a utilization rate of 72% and a NORMAL risk tier, allowing for safe and efficient storage.\n\n**Outcome:** The shipment has been successfully rerouted, minimizing delays and ensuring timely delivery to the customer."
+}

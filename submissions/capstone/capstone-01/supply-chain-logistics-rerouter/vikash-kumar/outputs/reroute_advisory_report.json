@@ -1,0 +1,34 @@
+{
+  "incident_id": "TST-001",
+  "original_incident_summary": "Disruption text manifest configuration context payload string....",
+  "parsed_metadata": {
+    "shipment_id": "SH-4002",
+    "cargo_weight_tons": 10,
+    "cargo_type": "Electronics",
+    "target_warehouse_id": "WH-WEST-202",
+    "has_perishables": false,
+    "maximum_tolerable_delay_hours": null
+  },
+  "rag_validation_rules_applied": [
+    "Any alternative route exceeding 120 hours of total added transit delay must be classified as CRITICAL_DELAY.Cargo exceeding 500 tons and routed through Port-South requires a WAREHOUSE_FIT_CHECK.A warehouse operating above 85 percent utilization cannot accept a new automated cargo shipment.If a warehouse has an ELEVATED risk tier, another route or\n---\nan ELEVATED risk tier, another route or alternative facility must be checked before finalizing the route"
+  ],
+  "routes_evaluated": [],
+  "final_selected_route": {
+    "route_id": "ROUTE-SOUTH-02",
+    "alternative_port": "Port-South",
+    "warehouse_id": "WH-SOUTH-303",
+    "added_delay_hours": 72
+  },
+  "queried_warehouse_metrics": {
+    "warehouse_name": "Southern Distribution Hub",
+    "current_utilization_pct": 72,
+    "operational_status": "ACTIVE",
+    "risk_tier": "NORMAL"
+  },
+  "graph_routing_metadata": {
+    "loops_executed": 1,
+    "final_decision_state": "OPTIMAL_PATH_FOUND",
+    "reroute_impact_score": 0
+  },
+  "final_operations_brief": "**Incident Resolution Summary**\n\nA cargo shipment was impacted by a disruption, prompting a review of the manifest configuration context payload string. Following an assessment of alternative routes, the **OPTIMAL_PATH_FOUND** decision was made, selecting **ROUTE-SOUTH-02** with a 72-hour added transit delay. The chosen route utilizes **Port-South** and **WH-SOUTH-303** warehouse, which has a **NORMAL** risk tier and 72% utilization, well below the 85% threshold. The selected warehouse, **Southern Distribution Hub**, is operational and can accommodate the shipment without requiring a **WAREHOUSE_FIT_CHECK** or alternative facility. The resolution ensures timely and secure delivery of the cargo, avoiding **CRITICAL_DELAY** classification."
+}

@@ -1,0 +1,46 @@
+{
+  "incident_id": "INC-003",
+  "original_incident_summary": "Cargo SH-4208 contains 700 tons of industrial machinery. The primary maritime route is unavailable and delivery was planned for WH-EAST-101....",
+  "parsed_metadata": {
+    "shipment_id": "SH-4208",
+    "cargo_weight_tons": 700,
+    "cargo_type": "industrial machinery",
+    "target_warehouse_id": "WH-EAST-101",
+    "has_perishables": false,
+    "maximum_tolerable_delay_hours": null
+  },
+  "rag_validation_rules_applied": [
+    "Any alternative route exceeding 120 hours of total added transit delay must be classified as CRITICAL_DELAY.Cargo exceeding 500 tons and routed through Port-South requires a WAREHOUSE_FIT_CHECK.A warehouse operating above 85 percent utilization cannot accept a new automated cargo shipment.If a warehouse has an ELEVATED risk tier, another route or\n---\nan ELEVATED risk tier, another route or alternative facility must be checked before finalizing the route"
+  ],
+  "routes_evaluated": [
+    "Extracted structured shipping manifest metadata properties via LLM.",
+    "Retrieved contextual operational parameters via local RAG.",
+    "Loaded 3 potential alternate routing path assets from index tracks.",
+    "Selecting Candidate Route Target Index [0]: ID 'ROUTE-WEST-01'",
+    "Inspected warehouse tracking dataset parameters for: WH-WEST-202",
+    "Calculated Route Metrics. Impact Score: 25. Path State Decision: ROUTE_CLARIFICATION",
+    "Advancing execution tracker index pointer down to path choice location: 1",
+    "Selecting Candidate Route Target Index [1]: ID 'ROUTE-SOUTH-02'",
+    "Inspected warehouse tracking dataset parameters for: WH-SOUTH-303",
+    "Calculated Route Metrics. Impact Score: 0. Path State Decision: OPTIMAL_PATH_FOUND",
+    "Optimal alternative target trajectory configurations locked."
+  ],
+  "final_selected_route": {
+    "route_id": "ROUTE-SOUTH-02",
+    "alternative_port": "Port-South",
+    "warehouse_id": "WH-SOUTH-303",
+    "added_delay_hours": 72
+  },
+  "queried_warehouse_metrics": {
+    "warehouse_name": "Southern Distribution Hub",
+    "current_utilization_pct": 72,
+    "operational_status": "ACTIVE",
+    "risk_tier": "NORMAL"
+  },
+  "graph_routing_metadata": {
+    "loops_executed": 1,
+    "final_decision_state": "OPTIMAL_PATH_FOUND",
+    "reroute_impact_score": 0
+  },
+  "final_operations_brief": "**Operations Summary: Incident Resolution for Cargo SH-4208**\n\nFollowing the unavailability of the primary maritime route for Cargo SH-4208, containing 700 tons of industrial machinery, an alternative route was successfully identified. The selected route, ROUTE-SOUTH-02, utilizes Port-South and warehouse WH-SOUTH-303, adding 72 hours to the total transit delay. \n\nKey considerations:\n- The added delay is within the 120-hour threshold, avoiding a CRITICAL_DELAY classification.\n- A WAREHOUSE_FIT_CHECK was deemed necessary due to the cargo exceeding 500 tons and being routed through Port-South.\n- The target storage facility, Southern Distribution Hub (WH-SOUTH-303), has a current utilization of 72%, which is below the 85% threshold, allowing for the acceptance of the new automated cargo shipment.\n- The facility's risk tier is classified as NORMAL, eliminating the need for further route or facility alternatives.\n\nThe OPTIMAL_PATH_FOUND decision confirms that the chosen route meets all governance parameters, ensuring the efficient and safe delivery of Cargo SH-4208 to its destination."
+}
