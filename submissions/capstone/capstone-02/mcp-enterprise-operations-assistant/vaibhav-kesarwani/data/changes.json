@@ -1,0 +1,59 @@
+{
+  "changes": [
+    {
+      "change_id": "CHG-2001",
+      "service_name": "Payment API",
+      "change_type": "APPLICATION_RELEASE",
+      "status": "COMPLETED",
+      "risk": "HIGH",
+      "implemented_at": "2026-07-08T09:10:00",
+      "implemented_by": "Payments Engineering",
+      "summary": "Released payment-service changes for timeout handling and retry logic.",
+      "rollback_available": true
+    },
+    {
+      "change_id": "CHG-2002",
+      "service_name": "Order Service",
+      "change_type": "CONFIGURATION",
+      "status": "COMPLETED",
+      "risk": "LOW",
+      "implemented_at": "2026-07-06T16:30:00",
+      "implemented_by": "Order Platform Team",
+      "summary": "Updated order retention configuration.",
+      "rollback_available": true
+    },
+    {
+      "change_id": "CHG-2003",
+      "service_name": "Identity Service",
+      "change_type": "SECURITY_PATCH",
+      "status": "COMPLETED",
+      "risk": "MEDIUM",
+      "implemented_at": "2026-07-07T21:00:00",
+      "implemented_by": "Identity Engineering",
+      "summary": "Applied authentication service security patch.",
+      "rollback_available": true
+    },
+    {
+      "change_id": "CHG-2004",
+      "service_name": "Checkout Service",
+      "change_type": "APPLICATION_RELEASE",
+      "status": "COMPLETED",
+      "risk": "MEDIUM",
+      "implemented_at": "2026-07-05T11:00:00",
+      "implemented_by": "Commerce Platform",
+      "summary": "Released checkout UI and validation updates.",
+      "rollback_available": true
+    },
+    {
+      "change_id": "CHG-2005",
+      "service_name": "Notification Service",
+      "change_type": "CONFIGURATION",
+      "status": "COMPLETED",
+      "risk": "LOW",
+      "implemented_at": "2026-07-07T13:45:00",
+      "implemented_by": "Messaging Support",
+      "summary": "Updated email queue worker configuration.",
+      "rollback_available": true
+    }
+  ]
+}
