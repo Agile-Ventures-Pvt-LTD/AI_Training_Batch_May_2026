@@ -1,0 +1,2229 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.13, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Poonam Bhatt\Desktop\mcp_enterprise_operations_assistant\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Poonam Bhatt\Desktop\mcp_enterprise_operations_assistant
+configfile: pyproject.toml
+plugins: anyio-4.14.1, langsmith-0.9.8, asyncio-1.4.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 14 items
+
+tests/test_change_tools.py::test_get_changes_for_payment_api PASSED      [  7%]
+tests/test_change_tools.py::test_get_change_details_valid_change PASSED  [ 14%]
+tests/test_host_queries.py::test_host_payment_api_change_query FAILED    [ 21%]
+tests/test_host_queries.py::test_host_ticket_service_health_query FAILED [ 28%]
+tests/test_host_queries.py::test_host_multi_server_operations_summary FAILED [ 35%]
+tests/test_mcp_discovery.py::test_mcp_server_tool_discovery PASSED       [ 42%]
+tests/test_service_health_tools.py::test_list_services_returns_services PASSED [ 50%]
+tests/test_service_health_tools.py::test_get_service_health_payment_api PASSED [ 57%]
+tests/test_service_health_tools.py::test_get_service_health_unknown_service PASSED [ 64%]
+tests/test_service_health_tools.py::test_get_active_incidents_payment_api PASSED [ 71%]
+tests/test_ticket_tools.py::test_search_open_payment_tickets PASSED      [ 78%]
+tests/test_ticket_tools.py::test_get_ticket_details_valid_ticket PASSED  [ 85%]
+tests/test_ticket_tools.py::test_get_ticket_details_invalid_ticket PASSED [ 92%]
+tests/test_ticket_tools.py::test_high_priority_tickets_only_returns_p1_p2 PASSED [100%]
+
+================================== FAILURES ===================================
+_____________________ test_host_payment_api_change_query ______________________
+
+self = <mcp_use.agents.mcpagent.MCPAgent object at 0x00000292C163C980>
+query = HumanMessage(content='Why is the Payment API unhealthy and is there any recent change that may be related?', additional_kwargs={}, response_metadata={}, id='89cda635-857b-4e74-ba06-d3bd2f330a1f')
+max_steps = None, manage_connector = True, external_history = None
+track_execution = False, output_schema = <class 'src.host.OperationsResponse'>
+
+    async def stream(
+        self,
+        query: QueryInput,
+        max_steps: int | None = None,
+        manage_connector: bool = True,
+        external_history: list[BaseMessage] | None = None,
+        track_execution: bool = True,
+        output_schema: type[T] | None = None,
+    ) -> AsyncGenerator[tuple[AgentAction, str] | str | T, None]:
+        """Async generator using LangChain 1.0.0's create_agent and astream.
+    
+        This method leverages the LangChain 1.0.0 API where create_agent returns
+        a CompiledStateGraph that handles the agent loop internally via astream.
+    
+        **Tool Updates with Server Manager:**
+        When using server_manager mode, this method handles dynamic tool updates:
+        - **Before execution:** Updates are applied immediately to the new stream
+        - **During execution:** When tools change, we wait for a "safe restart point"
+          (after tool results complete), then interrupt the stream, recreate the agent
+          with new tools, and resume execution with accumulated messages.
+        - **Safe restart points:** Only restart after tool results to ensure message
+          pairs (tool_use + tool_result) are complete, satisfying LLM API requirements.
+        - **Max restarts:** Limited to 3 restarts to prevent infinite loops
+    
+        This interrupt-and-restart approach ensures that tools added mid-execution
+        (e.g., via connect_to_mcp_server) are immediately available to the agent,
+        maintaining the same behavior as the legacy implementation while respecting
+        API constraints.
+    
+        Args:
+            query: The query to run. Accepts a plain string or a ``HumanMessage`` when
+                you need to include richer content (e.g., multi-part messages or files).
+            manage_connector: Whether to handle the connector lifecycle internally.
+            external_history: Optional external history to use instead of the
+                internal conversation history.
+            output_schema: Optional Pydantic BaseModel class for structured output.
+    
+        Yields:
+            Intermediate steps and final result from the agent execution.
+        """
+        # Delegate to remote agent if in remote mode
+        if self._is_remote and self._remote_agent:
+            query_str: str = query if isinstance(query, str) else self._message_text(query)
+            async for item in self._remote_agent.stream(query_str, max_steps, external_history, output_schema):
+                yield item
+            return
+    
+        human_query = self._ensure_human_message(query)
+        initialized_here = False
+        start_time = time.time()
+        success = False
+        final_output = None
+        steps_taken = 0
+    
+        try:
+            # 1. Initialize if needed
+            if manage_connector and not self._initialized:
+                await self.initialize()
+                initialized_here = True
+            elif not self._initialized and self.auto_initialize:
+                await self.initialize()
+                initialized_here = True
+    
+            if not self._agent_executor:
+                raise RuntimeError("MCP agent failed to initialize")
+    
+            # Check for tool updates before starting execution (if using server manager)
+            if self.use_server_manager and self.server_manager:
+                current_tools = self.server_manager.tools
+                current_tool_names = {tool.name for tool in current_tools}
+                existing_tool_names = {tool.name for tool in self._tools}
+    
+                if current_tool_names != existing_tool_names:
+                    logger.info(
+                        f"\U0001f504 Tools changed before execution, updating agent. New tools: {', '.join(current_tool_names)}"
+                    )
+                    self._tools = current_tools
+                    # Regenerate system message with ALL current tools
+                    await self._create_system_message_from_tools(self._tools)
+                    # Recreate the agent executor with the new tools and system message
+                    self._agent_executor = self._create_agent()
+    
+            # 2. Build inputs for the agent
+            history_to_use = external_history if external_history is not None else self._conversation_history
+    
+            # Convert messages to format expected by LangChain agent
+            langchain_history = []
+            for msg in history_to_use:
+                if isinstance(msg, HumanMessage | AIMessage | ToolMessage):
+                    langchain_history.append(msg)
+    
+            inputs = {"messages": [*langchain_history, human_query]}
+    
+            display_query = self._message_preview(human_query)
+            logger.info(f"\U0001f4ac Received query: '{display_query}'")
+            logger.info("\U0001f3c1 Starting agent execution")
+    
+            # 3. Stream using the built-in astream from CompiledStateGraph
+            # The agent graph handles the loop internally
+            # With dynamic tool reload: if tools change mid-execution, we interrupt and restart
+            max_restarts = 3  # Prevent infinite restart loops
+            restart_count = 0
+            accumulated_messages = list(langchain_history) + [human_query]
+            pending_tool_calls = {}  # Map tool_call_id -> AgentAction
+    
+            while restart_count <= max_restarts:
+                # Update inputs with accumulated messages
+                inputs = {"messages": accumulated_messages}
+                should_restart = False
+    
+                async for chunk in self._agent_executor.astream(
+                    inputs,
+                    stream_mode="updates",  # Get updates as they happen
+                    config={
+                        "callbacks": self.callbacks,
+                        "recursion_limit": self.recursion_limit,
+                    },
+                ):
+                    # chunk is a dict with node names as keys
+                    # The agent node will have 'messages' with the AI response
+                    # The tools node will have 'messages' with tool calls and results
+    
+                    for node_name, node_output in chunk.items():
+                        logger.debug(f"\U0001f4e6 Node '{node_name}' output: {node_output}")
+    
+                        # Extract messages from the node output and accumulate them
+                        if node_output is not None and "messages" in node_output:
+                            messages = node_output["messages"]
+                            if not isinstance(messages, list):
+                                messages = [messages]
+    
+                            # Add new messages to accumulated messages for potential restart
+                            for msg in messages:
+                                if msg not in accumulated_messages:
+                                    accumulated_messages.append(msg)
+                            for message in messages:
+                                # Track tool calls
+                                if hasattr(message, "tool_calls") and message.tool_calls:
+                                    # Extract text content from message for the log
+                                    log_text = ""
+                                    if hasattr(message, "content"):
+                                        if isinstance(message.content, str):
+                                            log_text = message.content
+                                        elif isinstance(message.content, list):
+                                            # Extract text blocks from content array
+                                            text_parts = [
+                                                (block.get("text", "") if isinstance(block, dict) else str(block))
+                                                for block in message.content
+                                                if isinstance(block, dict) and block.get("type") == "text"
+                                            ]
+                                            log_text = "\n".join(text_parts)
+    
+                                    for tool_call in message.tool_calls:
+                                        tool_name = tool_call.get("name", "unknown")
+                                        tool_input = tool_call.get("args", {})
+                                        tool_call_id = tool_call.get("id")
+    
+                                        action = AgentAction(
+                                            tool=tool_name,
+                                            tool_input=tool_input,
+                                            log=log_text,
+                                        )
+                                        if tool_call_id:
+                                            pending_tool_calls[tool_call_id] = action
+    
+                                        self.tools_used_names.append(tool_name)
+                                        steps_taken += 1
+    
+                                        tool_input_str = str(tool_input)
+                                        if len(tool_input_str) > 100:
+                                            tool_input_str = tool_input_str[:97] + "..."
+    
+                                # Track tool results and yield AgentStep
+                                if isinstance(message, ToolMessage):
+                                    observation = message.content
+                                    tool_call_id = message.tool_call_id
+    
+                                    if tool_call_id and tool_call_id in pending_tool_calls:
+                                        action = pending_tool_calls.pop(tool_call_id)
+                                        item = (action, str(observation))
+                                        log_agent_step(item, pretty_print=self.pretty_print)
+                                        yield item
+    
+                                    observation_str = str(observation)
+                                    if len(observation_str) > 100:
+                                        observation_str = observation_str[:97] + "..."
+                                    observation_str = observation_str.replace("\n", " ")
+    
+                                    # --- Check for tool updates after tool results (safe restart point) ---
+                                    if self.use_server_manager and self.server_manager:
+                                        current_tools = self.server_manager.tools
+                                        current_tool_names = {tool.name for tool in current_tools}
+                                        existing_tool_names = {tool.name for tool in self._tools}
+    
+                                        if current_tool_names != existing_tool_names:
+                                            logger.info(
+                                                f"\U0001f504 Tools changed during execution. "
+                                                f"New tools: {', '.join(current_tool_names)}"
+                                            )
+                                            self._tools = current_tools
+                                            # Regenerate system message with ALL current tools
+                                            await self._create_system_message_from_tools(self._tools)
+                                            # Recreate the agent executor with the new tools and system message
+                                            self._agent_executor = self._create_agent()
+    
+                                            # Set restart flag - safe to restart now after tool results
+                                            should_restart = True
+                                            restart_count += 1
+                                            logger.info(
+                                                f"\U0001f503 Restarting execution with updated tools "
+                                                f"(restart {restart_count}/{max_restarts})"
+                                            )
+                                            break  # Break out of the message loop
+    
+                                # Track final AI message (without tool calls = final response)
+                                if isinstance(message, AIMessage) and not message.tool_calls:
+                                    final_output = self._normalize_output(message.content)
+                                    logger.info("\u2705 Agent finished with output")
+    
+                        # Break out of node loop if restarting
+                        if should_restart:
+                            break
+    
+                    # Break out of chunk loop if restarting
+                    if should_restart:
+                        break
+    
+                # Check if we should restart or if execution completed
+                if not should_restart:
+                    # Execution completed successfully without tool changes
+                    break
+    
+                # If we've hit max restarts, log warning and continue
+                if restart_count > max_restarts:
+                    logger.warning(f"\u26a0\ufe0f Max restarts ({max_restarts}) reached. Continuing with current tools.")
+                    break
+    
+            # 4. Update conversation history (store full transcript including tool exchange)
+            if self.memory_enabled and external_history is None:
+                self._conversation_history = [msg for msg in accumulated_messages if not isinstance(msg, SystemMessage)]
+    
+            # 5. Handle structured output if requested
+            if output_schema and final_output:
+                try:
+                    logger.info("\U0001f527 Attempting structured output...")
+                    structured_llm = self.llm.with_structured_output(output_schema)
+    
+                    # Get schema description
+                    schema_fields = []
+                    for field_name, field_info in output_schema.model_fields.items():
+                        description = getattr(field_info, "description", "") or field_name
+                        required = not hasattr(field_info, "default") or field_info.default is None
+                        schema_fields.append(
+                            f"- {field_name}: {description} " + ("(required)" if required else "(optional)")
+                        )
+                    schema_description = "\n".join(schema_fields)
+    
+>                   structured_result = await self._attempt_structured_output(
+                        final_output, structured_llm, output_schema, schema_description
+                    )
+
+.venv\Lib\site-packages\mcp_use\agents\mcpagent.py:898: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\mcp_use\agents\mcpagent.py:595: in _attempt_structured_output
+    structured_result = await structured_llm.ainvoke(format_prompt)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\langchain_core\runnables\base.py:3484: in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\langchain_core\runnables\base.py:6017: in ainvoke
+    return await self.bound.ainvoke(
+.venv\Lib\site-packages\langchain_core\language_models\chat_models.py:499: in ainvoke
+    llm_result = await self.agenerate_prompt(
+.venv\Lib\site-packages\langchain_core\language_models\chat_models.py:1860: in agenerate_prompt
+    return await self.agenerate(
+.venv\Lib\site-packages\langchain_core\language_models\chat_models.py:1818: in agenerate
+    raise exceptions[0]
+.venv\Lib\site-packages\langchain_core\language_models\chat_models.py:2151: in _agenerate_with_cache
+    result = await self._agenerate(
+.venv\Lib\site-packages\langchain_groq\chat_models.py:648: in _agenerate
+    response = await self.async_client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\groq\resources\chat\completions.py:941: in create
+    return await self._post(
+.venv\Lib\site-packages\groq\_base_client.py:1762: in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <groq.AsyncGroq object at 0x00000292C1157CB0>
+cast_to = <class 'groq.types.chat.chat_completion.ChatCompletion'>
+options = FinalRequestOptions(method='post', url='/openai/v1/chat/completions', params={}, headers=NOT_GIVEN, max_retries=NOT_GI...ry', 'possible_change_correlation', 'recommended_next_actions', 'limitations'], 'type': 'object'}}}]}, extra_json=None)
+stream = False
+stream_cls = groq.AsyncStream[groq.types.chat.chat_completion_chunk.ChatCompletionChunk]
+
+    async def request(
+        self,
+        cast_to: Type[ResponseT],
+        options: FinalRequestOptions,
+        *,
+        stream: bool = False,
+        stream_cls: type[_AsyncStreamT] | None = None,
+    ) -> ResponseT | _AsyncStreamT:
+        if self._platform is None:
+            # `get_platform` can make blocking IO calls so we
+            # execute it earlier while we are in an async context
+            self._platform = await asyncify(get_platform)()
+    
+        cast_to = self._maybe_override_cast_to(cast_to, options)
+    
+        # create a copy of the options we were given so that if the
+        # options are mutated later & we then retry, the retries are
+        # given the original options
+        input_options = model_copy(options)
+        if input_options.idempotency_key is None and input_options.method.lower() != "get":
+            # ensure the idempotency key is reused between requests
+            input_options.idempotency_key = self._idempotency_key()
+    
+        response: httpx.Response | None = None
+        max_retries = input_options.get_max_retries(self.max_retries)
+    
+        retries_taken = 0
+        for retries_taken in range(max_retries + 1):
+            options = model_copy(input_options)
+            options = await self._prepare_options(options)
+    
+            remaining_retries = max_retries - retries_taken
+            request = self._build_request(options, retries_taken=retries_taken)
+            await self._prepare_request(request)
+    
+            kwargs: HttpxSendArgs = {}
+            if self.custom_auth is not None:
+                kwargs["auth"] = self.custom_auth
+    
+            if options.follow_redirects is not None:
+                kwargs["follow_redirects"] = options.follow_redirects
+    
+            log.debug("Sending HTTP Request: %s %s", request.method, request.url)
+    
+            response = None
+            try:
+                response = await self._client.send(
+                    request,
+                    stream=stream or self._should_stream_response_body(request=request),
+                    **kwargs,
+                )
+            except httpx.TimeoutException as err:
+                log.debug("Encountered httpx.TimeoutException", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising timeout error")
+                raise APITimeoutError(request=request) from err
+            except Exception as err:
+                log.debug("Encountered Exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising connection error")
+                raise APIConnectionError(request=request) from err
+    
+            log.debug(
+                'HTTP Response: %s %s "%i %s" %s',
+                request.method,
+                request.url,
+                response.status_code,
+                response.reason_phrase,
+                response.headers,
+            )
+    
+            try:
+                response.raise_for_status()
+            except httpx.HTTPStatusError as err:  # thrown on 4xx and 5xx status code
+                log.debug("Encountered httpx.HTTPStatusError", exc_info=True)
+    
+                if remaining_retries > 0 and self._should_retry(err.response):
+                    await err.response.aclose()
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=response,
+                    )
+                    continue
+    
+                # If the response is streamed then we need to explicitly read the response
+                # to completion before attempting to access the response text.
+                if not err.response.is_closed:
+                    await err.response.aread()
+    
+                log.debug("Re-raising status error")
+>               raise self._make_status_error_from_response(err.response) from None
+E               groq.BadRequestError: Error code: 400 - {'error': {'message': 'Tool choice is required, but model did not call a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '**Structured Output**\\n\\n```json\\n{\\n  "user_query": "Please format the following information according to the specified schema. Extract and structure the relevant information from the content below.",\\n  "servers_used": [],\\n  "tools_used": [],\\n  "evidence": {\\n    "service_status": {\\n      "service": "Payment API",\\n      "status": "UNHEALTHY",\\n      "error_rate_percent": 38,\\n      "average_latency_seconds": 1.85,\\n      "region": "India-West",\\n      "cpu_percent": 42,\\n      "memory_percent": 61,\\n      "resource_exhaustion": false\\n    },\\n    "active_incident": {\\n      "incident_id": "INC-OPS-101",\\n      "severity": "SEV-1",\\n      "opened_utc": "09:55",\\n      "summary": "Payment processing requests are experiencing elevated timeout failures.",\\n      "customer_impact": "Card\u2011payment transactions may fail or time\u2011out, preventing customers from completing purchases."\\n    },\\n    "high_priority_tickets": [\\n      {\\n        "ticket_id": "TKT-1001",\\n        "priority": "P1",\\n        "subject": "Card payment timeout"\\n      },\\n      {\\n        "ticket_id": "TKT-1002",\\n        "priority": "P1",\\n        "subject": "Payment requests failing"\\n      },\\n      {\\n        "ticket_id": "TKT-1003",\\n        "priority": "P2",\\n        "subject": "Intermittent payment retry failures"\\n      }\\n    ],\\n    "recent_change": {\\n      "change_id": "CHG-2001",\\n      "type": "APPLICATION_RELEASE",\\n      "risk_level": "high",\\n      "implemented_utc": "09:10",\\n      "time_before_incident_minutes": 45,\\n      "summary": "Released payment\u2011service changes for timeout handling and retry logic.",\\n      "rollback_available": true\\n    }\\n  },\\n  "operations_summary": "The Payment API in the India\u2011West region is UNHEALTHY (38\\u202f% error rate, 1.85\\u202fs avg latency). A SEV\u20111 incident (INC\u2011OPS\u2011101) started at 09:55\\u202fUTC, causing payment time\u2011outs. Two P1 tickets and one P2 ticket are open. A high\u2011risk application release (CHG\u20112001) was deployed at 09:10\\u202fUTC, 45\\u202fminutes before the incident, and modified timeout/retry logic.",\\n  "possible_change_correlation": "The timing and nature of CHG\u20112001 (modifying timeout handling) align closely with the observed increase in request time\u2011outs, making the change a strong candidate for the root cause. However, without direct log or metric proof, causality cannot be confirmed.",\\n  "recommended_next_actions": [\\n    "Validate the change: review release notes, code diff, and deployment logs for errors or warnings.",\\n    "Assess immediate mitigation: consider rolling back CHG\u20112001 (rollback is available) or temporarily increase request timeout settings.",\\n    "Gather diagnostic data: pull logs from 09:00\u201110:00\\u202fUTC, examine error messages, stack traces, latency distribution, and retry counts.",\\n    "Communicate: update incident ticket INC\u2011OPS\u2011101 with suspected correlation and mitigation steps; notify Application Support and affected customers.",\\n    "Post\u2011mortem actions (once stable): conduct root\u2011cause analysis, update change\u2011management process to add pre\u2011deployment testing for timeout logic, and add automated alerts for latency/timeout spikes."\\n  ],\\n  "limitations": [\\n    "No real\u2011time monitoring data or logs were retrieved; information is based solely on the provided text.",\\n    "No tool calls (e.g., service\u2011health, change\u2011management) were executed, so evidence cannot be verified against live systems.",\\n    "Correlation between the change and incident is speculative; definitive causality requires log/metric analysis."\\n  ]\\n}\\n```'}}
+
+.venv\Lib\site-packages\groq\_base_client.py:1576: BadRequestError
+
+The above exception was the direct cause of the following exception:
+
+    @pytest.mark.integration
+    @pytest.mark.asyncio
+    async def test_host_payment_api_change_query():
+        """Test 12 - Integration Test: Payment API and Change."""
+        groq_api_key = os.getenv("GROQ_API_KEY")
+        if not groq_api_key:
+            pytest.skip("GROQ_API_KEY not found in environment")
+    
+        llm = ChatGroq(
+            model=os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"),
+            temperature=0,
+            api_key=groq_api_key
+        )
+        client = MCPClient(MCP_CONFIG)
+        agent = MCPAgent(
+            llm=llm,
+            client=client,
+            max_steps=10,
+            system_prompt=system_prompt
+        )
+    
+        try:
+            await client.create_all_sessions()
+            query = "Why is the Payment API unhealthy and is there any recent change that may be related?"
+>           response = await agent.run(query, output_schema=OperationsResponse)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_host_queries.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\mcp_use\agents\mcpagent.py:550: in run
+    result, steps_taken = await self._consume_and_return(generator)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\mcp_use\agents\mcpagent.py:479: in _consume_and_return
+    async for item in generator:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <mcp_use.agents.mcpagent.MCPAgent object at 0x00000292C163C980>
+query = HumanMessage(content='Why is the Payment API unhealthy and is there any recent change that may be related?', additional_kwargs={}, response_metadata={}, id='89cda635-857b-4e74-ba06-d3bd2f330a1f')
+max_steps = None, manage_connector = True, external_history = None
+track_execution = False, output_schema = <class 'src.host.OperationsResponse'>
+
+    async def stream(
+        self,
+        query: QueryInput,
+        max_steps: int | None = None,
+        manage_connector: bool = True,
+        external_history: list[BaseMessage] | None = None,
+        track_execution: bool = True,
+        output_schema: type[T] | None = None,
+    ) -> AsyncGenerator[tuple[AgentAction, str] | str | T, None]:
+        """Async generator using LangChain 1.0.0's create_agent and astream.
+    
+        This method leverages the LangChain 1.0.0 API where create_agent returns
+        a CompiledStateGraph that handles the agent loop internally via astream.
+    
+        **Tool Updates with Server Manager:**
+        When using server_manager mode, this method handles dynamic tool updates:
+        - **Before execution:** Updates are applied immediately to the new stream
+        - **During execution:** When tools change, we wait for a "safe restart point"
+          (after tool results complete), then interrupt the stream, recreate the agent
+          with new tools, and resume execution with accumulated messages.
+        - **Safe restart points:** Only restart after tool results to ensure message
+          pairs (tool_use + tool_result) are complete, satisfying LLM API requirements.
+        - **Max restarts:** Limited to 3 restarts to prevent infinite loops
+    
+        This interrupt-and-restart approach ensures that tools added mid-execution
+        (e.g., via connect_to_mcp_server) are immediately available to the agent,
+        maintaining the same behavior as the legacy implementation while respecting
+        API constraints.
+    
+        Args:
+            query: The query to run. Accepts a plain string or a ``HumanMessage`` when
+                you need to include richer content (e.g., multi-part messages or files).
+            manage_connector: Whether to handle the connector lifecycle internally.
+            external_history: Optional external history to use instead of the
+                internal conversation history.
+            output_schema: Optional Pydantic BaseModel class for structured output.
+    
+        Yields:
+            Intermediate steps and final result from the agent execution.
+        """
+        # Delegate to remote agent if in remote mode
+        if self._is_remote and self._remote_agent:
+            query_str: str = query if isinstance(query, str) else self._message_text(query)
+            async for item in self._remote_agent.stream(query_str, max_steps, external_history, output_schema):
+                yield item
+            return
+    
+        human_query = self._ensure_human_message(query)
+        initialized_here = False
+        start_time = time.time()
+        success = False
+        final_output = None
+        steps_taken = 0
+    
+        try:
+            # 1. Initialize if needed
+            if manage_connector and not self._initialized:
+                await self.initialize()
+                initialized_here = True
+            elif not self._initialized and self.auto_initialize:
+                await self.initialize()
+                initialized_here = True
+    
+            if not self._agent_executor:
+                raise RuntimeError("MCP agent failed to initialize")
+    
+            # Check for tool updates before starting execution (if using server manager)
+            if self.use_server_manager and self.server_manager:
+                current_tools = self.server_manager.tools
+                current_tool_names = {tool.name for tool in current_tools}
+                existing_tool_names = {tool.name for tool in self._tools}
+    
+                if current_tool_names != existing_tool_names:
+                    logger.info(
+                        f"\U0001f504 Tools changed before execution, updating agent. New tools: {', '.join(current_tool_names)}"
+                    )
+                    self._tools = current_tools
+                    # Regenerate system message with ALL current tools
+                    await self._create_system_message_from_tools(self._tools)
+                    # Recreate the agent executor with the new tools and system message
+                    self._agent_executor = self._create_agent()
+    
+            # 2. Build inputs for the agent
+            history_to_use = external_history if external_history is not None else self._conversation_history
+    
+            # Convert messages to format expected by LangChain agent
+            langchain_history = []
+            for msg in history_to_use:
+                if isinstance(msg, HumanMessage | AIMessage | ToolMessage):
+                    langchain_history.append(msg)
+    
+            inputs = {"messages": [*langchain_history, human_query]}
+    
+            display_query = self._message_preview(human_query)
+            logger.info(f"\U0001f4ac Received query: '{display_query}'")
+            logger.info("\U0001f3c1 Starting agent execution")
+    
+            # 3. Stream using the built-in astream from CompiledStateGraph
+            # The agent graph handles the loop internally
+            # With dynamic tool reload: if tools change mid-execution, we interrupt and restart
+            max_restarts = 3  # Prevent infinite restart loops
+            restart_count = 0
+            accumulated_messages = list(langchain_history) + [human_query]
+            pending_tool_calls = {}  # Map tool_call_id -> AgentAction
+    
+            while restart_count <= max_restarts:
+                # Update inputs with accumulated messages
+                inputs = {"messages": accumulated_messages}
+                should_restart = False
+    
+                async for chunk in self._agent_executor.astream(
+                    inputs,
+                    stream_mode="updates",  # Get updates as they happen
+                    config={
+                        "callbacks": self.callbacks,
+                        "recursion_limit": self.recursion_limit,
+                    },
+                ):
+                    # chunk is a dict with node names as keys
+                    # The agent node will have 'messages' with the AI response
+                    # The tools node will have 'messages' with tool calls and results
+    
+                    for node_name, node_output in chunk.items():
+                        logger.debug(f"\U0001f4e6 Node '{node_name}' output: {node_output}")
+    
+                        # Extract messages from the node output and accumulate them
+                        if node_output is not None and "messages" in node_output:
+                            messages = node_output["messages"]
+                            if not isinstance(messages, list):
+                                messages = [messages]
+    
+                            # Add new messages to accumulated messages for potential restart
+                            for msg in messages:
+                                if msg not in accumulated_messages:
+                                    accumulated_messages.append(msg)
+                            for message in messages:
+                                # Track tool calls
+                                if hasattr(message, "tool_calls") and message.tool_calls:
+                                    # Extract text content from message for the log
+                                    log_text = ""
+                                    if hasattr(message, "content"):
+                                        if isinstance(message.content, str):
+                                            log_text = message.content
+                                        elif isinstance(message.content, list):
+                                            # Extract text blocks from content array
+                                            text_parts = [
+                                                (block.get("text", "") if isinstance(block, dict) else str(block))
+                                                for block in message.content
+                                                if isinstance(block, dict) and block.get("type") == "text"
+                                            ]
+                                            log_text = "\n".join(text_parts)
+    
+                                    for tool_call in message.tool_calls:
+                                        tool_name = tool_call.get("name", "unknown")
+                                        tool_input = tool_call.get("args", {})
+                                        tool_call_id = tool_call.get("id")
+    
+                                        action = AgentAction(
+                                            tool=tool_name,
+                                            tool_input=tool_input,
+                                            log=log_text,
+                                        )
+                                        if tool_call_id:
+                                            pending_tool_calls[tool_call_id] = action
+    
+                                        self.tools_used_names.append(tool_name)
+                                        steps_taken += 1
+    
+                                        tool_input_str = str(tool_input)
+                                        if len(tool_input_str) > 100:
+                                            tool_input_str = tool_input_str[:97] + "..."
+    
+                                # Track tool results and yield AgentStep
+                                if isinstance(message, ToolMessage):
+                                    observation = message.content
+                                    tool_call_id = message.tool_call_id
+    
+                                    if tool_call_id and tool_call_id in pending_tool_calls:
+                                        action = pending_tool_calls.pop(tool_call_id)
+                                        item = (action, str(observation))
+                                        log_agent_step(item, pretty_print=self.pretty_print)
+                                        yield item
+    
+                                    observation_str = str(observation)
+                                    if len(observation_str) > 100:
+                                        observation_str = observation_str[:97] + "..."
+                                    observation_str = observation_str.replace("\n", " ")
+    
+                                    # --- Check for tool updates after tool results (safe restart point) ---
+                                    if self.use_server_manager and self.server_manager:
+                                        current_tools = self.server_manager.tools
+                                        current_tool_names = {tool.name for tool in current_tools}
+                                        existing_tool_names = {tool.name for tool in self._tools}
+    
+                                        if current_tool_names != existing_tool_names:
+                                            logger.info(
+                                                f"\U0001f504 Tools changed during execution. "
+                                                f"New tools: {', '.join(current_tool_names)}"
+                                            )
+                                            self._tools = current_tools
+                                            # Regenerate system message with ALL current tools
+                                            await self._create_system_message_from_tools(self._tools)
+                                            # Recreate the agent executor with the new tools and system message
+                                            self._agent_executor = self._create_agent()
+    
+                                            # Set restart flag - safe to restart now after tool results
+                                            should_restart = True
+                                            restart_count += 1
+                                            logger.info(
+                                                f"\U0001f503 Restarting execution with updated tools "
+                                                f"(restart {restart_count}/{max_restarts})"
+                                            )
+                                            break  # Break out of the message loop
+    
+                                # Track final AI message (without tool calls = final response)
+                                if isinstance(message, AIMessage) and not message.tool_calls:
+                                    final_output = self._normalize_output(message.content)
+                                    logger.info("\u2705 Agent finished with output")
+    
+                        # Break out of node loop if restarting
+                        if should_restart:
+                            break
+    
+                    # Break out of chunk loop if restarting
+                    if should_restart:
+                        break
+    
+                # Check if we should restart or if execution completed
+                if not should_restart:
+                    # Execution completed successfully without tool changes
+                    break
+    
+                # If we've hit max restarts, log warning and continue
+                if restart_count > max_restarts:
+                    logger.warning(f"\u26a0\ufe0f Max restarts ({max_restarts}) reached. Continuing with current tools.")
+                    break
+    
+            # 4. Update conversation history (store full transcript including tool exchange)
+            if self.memory_enabled and external_history is None:
+                self._conversation_history = [msg for msg in accumulated_messages if not isinstance(msg, SystemMessage)]
+    
+            # 5. Handle structured output if requested
+            if output_schema and final_output:
+                try:
+                    logger.info("\U0001f527 Attempting structured output...")
+                    structured_llm = self.llm.with_structured_output(output_schema)
+    
+                    # Get schema description
+                    schema_fields = []
+                    for field_name, field_info in output_schema.model_fields.items():
+                        description = getattr(field_info, "description", "") or field_name
+                        required = not hasattr(field_info, "default") or field_info.default is None
+                        schema_fields.append(
+                            f"- {field_name}: {description} " + ("(required)" if required else "(optional)")
+                        )
+                    schema_description = "\n".join(schema_fields)
+    
+                    structured_result = await self._attempt_structured_output(
+                        final_output, structured_llm, output_schema, schema_description
+                    )
+    
+                    if self.memory_enabled and external_history is None:
+                        self.add_to_history(AIMessage(content=f"Structured result: {structured_result}"))
+    
+                    logger.info("\u2705 Structured output successful")
+                    success = True
+                    yield structured_result
+                    return
+                except Exception as e:
+                    logger.error(f"\u274c Structured output failed: {e}")
+>                   raise RuntimeError(f"Failed to generate structured output: {str(e)}") from e
+E                   RuntimeError: Failed to generate structured output: Error code: 400 - {'error': {'message': 'Tool choice is required, but model did not call a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '**Structured Output**\\n\\n```json\\n{\\n  "user_query": "Please format the following information according to the specified schema. Extract and structure the relevant information from the content below.",\\n  "servers_used": [],\\n  "tools_used": [],\\n  "evidence": {\\n    "service_status": {\\n      "service": "Payment API",\\n      "status": "UNHEALTHY",\\n      "error_rate_percent": 38,\\n      "average_latency_seconds": 1.85,\\n      "region": "India-West",\\n      "cpu_percent": 42,\\n      "memory_percent": 61,\\n      "resource_exhaustion": false\\n    },\\n    "active_incident": {\\n      "incident_id": "INC-OPS-101",\\n      "severity": "SEV-1",\\n      "opened_utc": "09:55",\\n      "summary": "Payment processing requests are experiencing elevated timeout failures.",\\n      "customer_impact": "Card\u2011payment transactions may fail or time\u2011out, preventing customers from completing purchases."\\n    },\\n    "high_priority_tickets": [\\n      {\\n        "ticket_id": "TKT-1001",\\n        "priority": "P1",\\n        "subject": "Card payment timeout"\\n      },\\n      {\\n        "ticket_id": "TKT-1002",\\n        "priority": "P1",\\n        "subject": "Payment requests failing"\\n      },\\n      {\\n        "ticket_id": "TKT-1003",\\n        "priority": "P2",\\n        "subject": "Intermittent payment retry failures"\\n      }\\n    ],\\n    "recent_change": {\\n      "change_id": "CHG-2001",\\n      "type": "APPLICATION_RELEASE",\\n      "risk_level": "high",\\n      "implemented_utc": "09:10",\\n      "time_before_incident_minutes": 45,\\n      "summary": "Released payment\u2011service changes for timeout handling and retry logic.",\\n      "rollback_available": true\\n    }\\n  },\\n  "operations_summary": "The Payment API in the India\u2011West region is UNHEALTHY (38\\u202f% error rate, 1.85\\u202fs avg latency). A SEV\u20111 incident (INC\u2011OPS\u2011101) started at 09:55\\u202fUTC, causing payment time\u2011outs. Two P1 tickets and one P2 ticket are open. A high\u2011risk application release (CHG\u20112001) was deployed at 09:10\\u202fUTC, 45\\u202fminutes before the incident, and modified timeout/retry logic.",\\n  "possible_change_correlation": "The timing and nature of CHG\u20112001 (modifying timeout handling) align closely with the observed increase in request time\u2011outs, making the change a strong candidate for the root cause. However, without direct log or metric proof, causality cannot be confirmed.",\\n  "recommended_next_actions": [\\n    "Validate the change: review release notes, code diff, and deployment logs for errors or warnings.",\\n    "Assess immediate mitigation: consider rolling back CHG\u20112001 (rollback is available) or temporarily increase request timeout settings.",\\n    "Gather diagnostic data: pull logs from 09:00\u201110:00\\u202fUTC, examine error messages, stack traces, latency distribution, and retry counts.",\\n    "Communicate: update incident ticket INC\u2011OPS\u2011101 with suspected correlation and mitigation steps; notify Application Support and affected customers.",\\n    "Post\u2011mortem actions (once stable): conduct root\u2011cause analysis, update change\u2011management process to add pre\u2011deployment testing for timeout logic, and add automated alerts for latency/timeout spikes."\\n  ],\\n  "limitations": [\\n    "No real\u2011time monitoring data or logs were retrieved; information is based solely on the provided text.",\\n    "No tool calls (e.g., service\u2011health, change\u2011management) were executed, so evidence cannot be verified against live systems.",\\n    "Correlation between the change and incident is speculative; definitive causality requires log/metric analysis."\\n  ]\\n}\\n```'}}
+
+.venv\Lib\site-packages\mcp_use\agents\mcpagent.py:911: RuntimeError
+---------------------------- Captured stdout call -----------------------------
+2026-07-08 17:43:43,837 - mcp_use - INFO - \U0001f680 Initializing MCP agent and connecting to services...\n2026-07-08 17:43:43,838 - mcp_use - INFO - \U0001f50c Found 3 existing sessions\n2026-07-08 17:43:43,896 - mcp_use - INFO - \U0001f6e0\ufe0f Created 9 LangChain tools from client: 9 tools, 0 resources, 0 prompts\n2026-07-08 17:43:43,896 - mcp_use - INFO - \U0001f9f0 Found 9 tools across all connectors\n2026-07-08 17:43:43,896 - mcp_use - INFO - \U0001f9e0 Agent ready with tools: list_services, get_service_health, get_active_incidents, search_tickets, get_ticket_details, get_high_priority_tickets, list_recent_changes, get_change_details, get_changes_for_service\n2026-07-08 17:43:43,914 - mcp_use - INFO - \u2728 Agent initialization complete\n2026-07-08 17:43:43,914 - mcp_use - INFO - \U0001f4ac Received query: 'Why is the Payment API unhealthy and is there any ...'\n2026-07-08 17:43:43,914 - mcp_use - INFO - \U0001f3c1 Starting agent execution\n2026-07-08 17:43:44,633 - mcp_use.agents.display - INFO - \U0001f527 Tool call: get_service_health with input: {'service_name': 'Payment API'}\n2026-07-08 17:43:44,633 - mcp_use.agents.display - INFO - \U0001f4c4 Tool result: {"found":true,"service":{"service_name":"Payment API","service_id":"SVC-PAY-01","status":"UNHEALT...\n2026-07-08 17:43:45,159 - mcp_use.agents.display - INFO - \U0001f527 Tool call: get_active_incidents with input: {'service_name': 'Payment API'}\n2026-07-08 17:43:45,159 - mcp_use.agents.display - INFO - \U0001f4c4 Tool result: {"count":1,"incidents":[{"incident_id":"INC-OPS-101","service_name":"Payment API","severity":"SEV...\n2026-07-08 17:43:45,681 - mcp_use.agents.display - INFO - \U0001f527 Tool call: get_changes_for_service with input: {'service_name': 'Payment API'}\n2026-07-08 17:43:45,681 - mcp_use.agents.display - INFO - \U0001f4c4 Tool result: {"service_name":"Payment API","count":1,"changes":[{"change_id":"CHG-2001","change_type":"APPLICA...\n2026-07-08 17:43:46,378 - mcp_use.agents.display - INFO - \U0001f527 Tool call: get_high_priority_tickets with input: {'service_name': 'Payment API'}\n2026-07-08 17:43:46,378 - mcp_use.agents.display - INFO - \U0001f4c4 Tool result: {"count":3,"tickets":[{"ticket_id":"TKT-1001","service_name":"Payment API","priority":"P1","statu...\n2026-07-08 17:43:49,205 - mcp_use - INFO - \u2705 Agent finished with output\n2026-07-08 17:43:49,207 - mcp_use - INFO - \U0001f527 Attempting structured output...\n2026-07-08 17:43:51,921 - mcp_use - ERROR - \u274c Structured output failed: Error code: 400 - {'error': {'message': 'Tool choice is required, but model did not call a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '**Structured Output**\\n\\n```json\\n{\\n  "user_query": "Please format the following information according to the specified schema. Extract and structure the relevant information from the content below.",\\n  "servers_used": [],\\n  "tools_used": [],\\n  "evidence": {\\n    "service_status": {\\n      "service": "Payment API",\\n      "status": "UNHEALTHY",\\n      "error_rate_percent": 38,\\n      "average_latency_seconds": 1.85,\\n      "region": "India-West",\\n      "cpu_percent": 42,\\n      "memory_percent": 61,\\n      "resource_exhaustion": false\\n    },\\n    "active_incident": {\\n      "incident_id": "INC-OPS-101",\\n      "severity": "SEV-1",\\n      "opened_utc": "09:55",\\n      "summary": "Payment processing requests are experiencing elevated timeout failures.",\\n      "customer_impact": "Card\u2011payment transactions may fail or time\u2011out, preventing customers from completing purchases."\\n    },\\n    "high_priority_tickets": [\\n      {\\n        "ticket_id": "TKT-1001",\\n        "priority": "P1",\\n        "subject": "Card payment timeout"\\n      },\\n      {\\n        "ticket_id": "TKT-1002",\\n        "priority": "P1",\\n        "subject": "Payment requests failing"\\n      },\\n      {\\n        "ticket_id": "TKT-1003",\\n        "priority": "P2",\\n        "subject": "Intermittent payment retry failures"\\n      }\\n    ],\\n    "recent_change": {\\n      "change_id": "CHG-2001",\\n      "type": "APPLICATION_RELEASE",\\n      "risk_level": "high",\\n      "implemented_utc": "09:10",\\n      "time_before_incident_minutes": 45,\\n      "summary": "Released payment\u2011service changes for timeout handling and retry logic.",\\n      "rollback_available": true\\n    }\\n  },\\n  "operations_summary": "The Payment API in the India\u2011West region is UNHEALTHY (38\\u202f% error rate, 1.85\\u202fs avg latency). A SEV\u20111 incident (INC\u2011OPS\u2011101) started at 09:55\\u202fUTC, causing payment time\u2011outs. Two P1 tickets and one P2 ticket are open. A high\u2011risk application release (CHG\u20112001) was deployed at 09:10\\u202fUTC, 45\\u202fminutes before the incident, and modified timeout/retry logic.",\\n  "possible_change_correlation": "The timing and nature of CHG\u20112001 (modifying timeout handling) align closely with the observed increase in request time\u2011outs, making the change a strong candidate for the root cause. However, without direct log or metric proof, causality cannot be confirmed.",\\n  "recommended_next_actions": [\\n    "Validate the change: review release notes, code diff, and deployment logs for errors or warnings.",\\n    "Assess immediate mitigation: consider rolling back CHG\u20112001 (rollback is available) or temporarily increase request timeout settings.",\\n    "Gather diagnostic data: pull logs from 09:00\u201110:00\\u202fUTC, examine error messages, stack traces, latency distribution, and retry counts.",\\n    "Communicate: update incident ticket INC\u2011OPS\u2011101 with suspected correlation and mitigation steps; notify Application Support and affected customers.",\\n    "Post\u2011mortem actions (once stable): conduct root\u2011cause analysis, update change\u2011management process to add pre\u2011deployment testing for timeout logic, and add automated alerts for latency/timeout spikes."\\n  ],\\n  "limitations": [\\n    "No real\u2011time monitoring data or logs were retrieved; information is based solely on the provided text.",\\n    "No tool calls (e.g., service\u2011health, change\u2011management) were executed, so evidence cannot be verified against live systems.",\\n    "Correlation between the change and incident is speculative; definitive causality requires log/metric analysis."\\n  ]\\n}\\n```'}}\n2026-07-08 17:43:51,922 - mcp_use - ERROR - \u274c Error running query: Failed to generate structured output: Error code: 400 - {'error': {'message': 'Tool choice is required, but model did not call a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '**Structured Output**\\n\\n```json\\n{\\n  "user_query": "Please format the following information according to the specified schema. Extract and structure the relevant information from the content below.",\\n  "servers_used": [],\\n  "tools_used": [],\\n  "evidence": {\\n    "service_status": {\\n      "service": "Payment API",\\n      "status": "UNHEALTHY",\\n      "error_rate_percent": 38,\\n      "average_latency_seconds": 1.85,\\n      "region": "India-West",\\n      "cpu_percent": 42,\\n      "memory_percent": 61,\\n      "resource_exhaustion": false\\n    },\\n    "active_incident": {\\n      "incident_id": "INC-OPS-101",\\n      "severity": "SEV-1",\\n      "opened_utc": "09:55",\\n      "summary": "Payment processing requests are experiencing elevated timeout failures.",\\n      "customer_impact": "Card\u2011payment transactions may fail or time\u2011out, preventing customers from completing purchases."\\n    },\\n    "high_priority_tickets": [\\n      {\\n        "ticket_id": "TKT-1001",\\n        "priority": "P1",\\n        "subject": "Card payment timeout"\\n      },\\n      {\\n        "ticket_id": "TKT-1002",\\n        "priority": "P1",\\n        "subject": "Payment requests failing"\\n      },\\n      {\\n        "ticket_id": "TKT-1003",\\n        "priority": "P2",\\n        "subject": "Intermittent payment retry failures"\\n      }\\n    ],\\n    "recent_change": {\\n      "change_id": "CHG-2001",\\n      "type": "APPLICATION_RELEASE",\\n      "risk_level": "high",\\n      "implemented_utc": "09:10",\\n      "time_before_incident_minutes": 45,\\n      "summary": "Released payment\u2011service changes for timeout handling and retry logic.",\\n      "rollback_available": true\\n    }\\n  },\\n  "operations_summary": "The Payment API in the India\u2011West region is UNHEALTHY (38\\u202f% error rate, 1.85\\u202fs avg latency). A SEV\u20111 incident (INC\u2011OPS\u2011101) started at 09:55\\u202fUTC, causing payment time\u2011outs. Two P1 tickets and one P2 ticket are open. A high\u2011risk application release (CHG\u20112001) was deployed at 09:10\\u202fUTC, 45\\u202fminutes before the incident, and modified timeout/retry logic.",\\n  "possible_change_correlation": "The timing and nature of CHG\u20112001 (modifying timeout handling) align closely with the observed increase in request time\u2011outs, making the change a strong candidate for the root cause. However, without direct log or metric proof, causality cannot be confirmed.",\\n  "recommended_next_actions": [\\n    "Validate the change: review release notes, code diff, and deployment logs for errors or warnings.",\\n    "Assess immediate mitigation: consider rolling back CHG\u20112001 (rollback is available) or temporarily increase request timeout settings.",\\n    "Gather diagnostic data: pull logs from 09:00\u201110:00\\u202fUTC, examine error messages, stack traces, latency distribution, and retry counts.",\\n    "Communicate: update incident ticket INC\u2011OPS\u2011101 with suspected correlation and mitigation steps; notify Application Support and affected customers.",\\n    "Post\u2011mortem actions (once stable): conduct root\u2011cause analysis, update change\u2011management process to add pre\u2011deployment testing for timeout logic, and add automated alerts for latency/timeout spikes."\\n  ],\\n  "limitations": [\\n    "No real\u2011time monitoring data or logs were retrieved; information is based solely on the provided text.",\\n    "No tool calls (e.g., service\u2011health, change\u2011management) were executed, so evidence cannot be verified against live systems.",\\n    "Correlation between the change and incident is speculative; definitive causality requires log/metric analysis."\\n  ]\\n}\\n```'}}\n2026-07-08 17:43:51,923 - mcp_use - INFO - \U0001f9f9 Cleaning up resources after error\n2026-07-08 17:43:51,923 - mcp_use - INFO - \U0001f50c Closing agent and cleaning up resources...\n2026-07-08 17:43:51,923 - mcp_use - INFO - \U0001f504 Closing sessions through client\n2026-07-08 17:43:52,650 - mcp_use - INFO - \U0001f44b Agent closed successfully\n2026-07-08 17:43:52,650 - mcp_use - ERROR - \u274c Error during agent execution: Failed to generate structured output: Error code: 400 - {'error': {'message': 'Tool choice is required, but model did not call a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '**Structured Output**\\n\\n```json\\n{\\n  "user_query": "Please format the following information according to the specified schema. Extract and structure the relevant information from the content below.",\\n  "servers_used": [],\\n  "tools_used": [],\\n  "evidence": {\\n    "service_status": {\\n      "service": "Payment API",\\n      "status": "UNHEALTHY",\\n      "error_rate_percent": 38,\\n      "average_latency_seconds": 1.85,\\n      "region": "India-West",\\n      "cpu_percent": 42,\\n      "memory_percent": 61,\\n      "resource_exhaustion": false\\n    },\\n    "active_incident": {\\n      "incident_id": "INC-OPS-101",\\n      "severity": "SEV-1",\\n      "opened_utc": "09:55",\\n      "summary": "Payment processing requests are experiencing elevated timeout failures.",\\n      "customer_impact": "Card\u2011payment transactions may fail or time\u2011out, preventing customers from completing purchases."\\n    },\\n    "high_priority_tickets": [\\n      {\\n        "ticket_id": "TKT-1001",\\n        "priority": "P1",\\n        "subject": "Card payment timeout"\\n      },\\n      {\\n        "ticket_id": "TKT-1002",\\n        "priority": "P1",\\n        "subject": "Payment requests failing"\\n      },\\n      {\\n        "ticket_id": "TKT-1003",\\n        "priority": "P2",\\n        "subject": "Intermittent payment retry failures"\\n      }\\n    ],\\n    "recent_change": {\\n      "change_id": "CHG-2001",\\n      "type": "APPLICATION_RELEASE",\\n      "risk_level": "high",\\n      "implemented_utc": "09:10",\\n      "time_before_incident_minutes": 45,\\n      "summary": "Released payment\u2011service changes for timeout handling and retry logic.",\\n      "rollback_available": true\\n    }\\n  },\\n  "operations_summary": "The Payment API in the India\u2011West region is UNHEALTHY (38\\u202f% error rate, 1.85\\u202fs avg latency). A SEV\u20111 incident (INC\u2011OPS\u2011101) started at 09:55\\u202fUTC, causing payment time\u2011outs. Two P1 tickets and one P2 ticket are open. A high\u2011risk application release (CHG\u20112001) was deployed at 09:10\\u202fUTC, 45\\u202fminutes before the incident, and modified timeout/retry logic.",\\n  "possible_change_correlation": "The timing and nature of CHG\u20112001 (modifying timeout handling) align closely with the observed increase in request time\u2011outs, making the change a strong candidate for the root cause. However, without direct log or metric proof, causality cannot be confirmed.",\\n  "recommended_next_actions": [\\n    "Validate the change: review release notes, code diff, and deployment logs for errors or warnings.",\\n    "Assess immediate mitigation: consider rolling back CHG\u20112001 (rollback is available) or temporarily increase request timeout settings.",\\n    "Gather diagnostic data: pull logs from 09:00\u201110:00\\u202fUTC, examine error messages, stack traces, latency distribution, and retry counts.",\\n    "Communicate: update incident ticket INC\u2011OPS\u2011101 with suspected correlation and mitigation steps; notify Application Support and affected customers.",\\n    "Post\u2011mortem actions (once stable): conduct root\u2011cause analysis, update change\u2011management process to add pre\u2011deployment testing for timeout logic, and add automated alerts for latency/timeout spikes."\\n  ],\\n  "limitations": [\\n    "No real\u2011time monitoring data or logs were retrieved; information is based solely on the provided text.",\\n    "No tool calls (e.g., service\u2011health, change\u2011management) were executed, so evidence cannot be verified against live systems.",\\n    "Correlation between the change and incident is speculative; definitive causality requires log/metric analysis."\\n  ]\\n}\\n```'}}
+---------------------------- Captured stderr call -----------------------------
+
+
++-----------------------------------------------------------------------------+
+|                                                                             |
+|                                                                             |
+|                        \u2584\u2580\u2580 \u2584\u2580\u2588 \u2588\u2580\u2580 \u2580\u2588\u2580 \u2588\u2580\u2584\u2580\u2588 \u2588\u2580\u2580 \u2588\u2580\u2588                        |
+|                        \u2588\u2580  \u2588\u2580\u2588 \u2584\u2584\u2588  \u2588  \u2588 \u2580 \u2588 \u2588\u2584\u2584 \u2588\u2580\u2580                        |
+|                                                                             |
+|                                                                             |
+|                                                                             |
+|                                FastMCP 3.4.3                                |
+|                            https://gofastmcp.com                            |
+|                                                                             |
+|                 \U0001f5a5  Server:      service-health, 3.4.3                       |
+|                 \U0001f680 Deploy free: https://horizon.prefect.io                  |
+|                                                                             |
++-----------------------------------------------------------------------------+
+
+
+[07/08/26 17:43:37] INFO     Starting MCP server               transport.py:223
+                             'service-health' with transport                   
+                             'stdio'                                           
+
+
++-----------------------------------------------------------------------------+
+|                                                                             |
+|                                                                             |
+|                        \u2584\u2580\u2580 \u2584\u2580\u2588 \u2588\u2580\u2580 \u2580\u2588\u2580 \u2588\u2580\u2584\u2580\u2588 \u2588\u2580\u2580 \u2588\u2580\u2588                        |
+|                        \u2588\u2580  \u2588\u2580\u2588 \u2584\u2584\u2588  \u2588  \u2588 \u2580 \u2588 \u2588\u2584\u2584 \u2588\u2580\u2580                        |
+|                                                                             |
+|                                                                             |
+|                                                                             |
+|                                FastMCP 3.4.3                                |
+|                            https://gofastmcp.com                            |
+|                                                                             |
+|                 \U0001f5a5  Server:      support-ticket, 3.4.3                       |
+|                 \U0001f680 Deploy free: https://horizon.prefect.io                  |
+|                                                                             |
++-----------------------------------------------------------------------------+
+
+
+[07/08/26 17:43:40] INFO     Starting MCP server               transport.py:223
+                             'support-ticket' with transport                   
+                             'stdio'                                           
+
+
++-----------------------------------------------------------------------------+
+|                                                                             |
+|                                                                             |
+|                        \u2584\u2580\u2580 \u2584\u2580\u2588 \u2588\u2580\u2580 \u2580\u2588\u2580 \u2588\u2580\u2584\u2580\u2588 \u2588\u2580\u2580 \u2588\u2580\u2588                        |
+|                        \u2588\u2580  \u2588\u2580\u2588 \u2584\u2584\u2588  \u2588  \u2588 \u2580 \u2588 \u2588\u2584\u2584 \u2588\u2580\u2580                        |
+|                                                                             |
+|                                                                             |
+|                                                                             |
+|                                FastMCP 3.4.3                                |
+|                            https://gofastmcp.com                            |
+|                                                                             |
+|                 \U0001f5a5  Server:      change-management, 3.4.3                    |
+|                 \U0001f680 Deploy free: https://horizon.prefect.io                  |
+|                                                                             |
++-----------------------------------------------------------------------------+
+
+
+[07/08/26 17:43:43] INFO     Starting MCP server               transport.py:223
+                             'change-management' with                          
+                             transport 'stdio'                                 
+------------------------------ Captured log call ------------------------------
+INFO     mcp_use:mcpagent.py:182 \U0001f680 Initializing MCP agent and connecting to services...\nINFO     mcp_use:mcpagent.py:200 \U0001f50c Found 3 existing sessions\nINFO     mcp_use:mcpagent.py:212 \U0001f6e0\ufe0f Created 9 LangChain tools from client: 9 tools, 0 resources, 0 prompts\nINFO     mcp_use:mcpagent.py:241 \U0001f9f0 Found 9 tools across all connectors\nINFO     mcp_use:mcpagent.py:359 \U0001f9e0 Agent ready with tools: list_services, get_service_health, get_active_incidents, search_tickets, get_ticket_details, get_high_priority_tickets, list_recent_changes, get_change_details, get_changes_for_service\nINFO     mcp_use:mcpagent.py:249 \u2728 Agent initialization complete\nINFO     mcp_use:mcpagent.py:735 \U0001f4ac Received query: 'Why is the Payment API unhealthy and is there any ...'\nINFO     mcp_use:mcpagent.py:736 \U0001f3c1 Starting agent execution\nINFO     mcp_use.agents.display:display.py:340 \U0001f527 Tool call: get_service_health with input: {'service_name': 'Payment API'}\nINFO     mcp_use.agents.display:display.py:346 \U0001f4c4 Tool result: {"found":true,"service":{"service_name":"Payment API","service_id":"SVC-PAY-01","status":"UNHEALT...\nINFO     mcp_use.agents.display:display.py:340 \U0001f527 Tool call: get_active_incidents with input: {'service_name': 'Payment API'}\nINFO     mcp_use.agents.display:display.py:346 \U0001f4c4 Tool result: {"count":1,"incidents":[{"incident_id":"INC-OPS-101","service_name":"Payment API","severity":"SEV...\nINFO     mcp_use.agents.display:display.py:340 \U0001f527 Tool call: get_changes_for_service with input: {'service_name': 'Payment API'}\nINFO     mcp_use.agents.display:display.py:346 \U0001f4c4 Tool result: {"service_name":"Payment API","count":1,"changes":[{"change_id":"CHG-2001","change_type":"APPLICA...\nINFO     mcp_use.agents.display:display.py:340 \U0001f527 Tool call: get_high_priority_tickets with input: {'service_name': 'Payment API'}\nINFO     mcp_use.agents.display:display.py:346 \U0001f4c4 Tool result: {"count":3,"tickets":[{"ticket_id":"TKT-1001","service_name":"Payment API","priority":"P1","statu...\nINFO     mcp_use:mcpagent.py:858 \u2705 Agent finished with output\nINFO     mcp_use:mcpagent.py:885 \U0001f527 Attempting structured output...\nERROR    mcp_use:mcpagent.py:910 \u274c Structured output failed: Error code: 400 - {'error': {'message': 'Tool choice is required, but model did not call a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '**Structured Output**\\n\\n```json\\n{\\n  "user_query": "Please format the following information according to the specified schema. Extract and structure the relevant information from the content below.",\\n  "servers_used": [],\\n  "tools_used": [],\\n  "evidence": {\\n    "service_status": {\\n      "service": "Payment API",\\n      "status": "UNHEALTHY",\\n      "error_rate_percent": 38,\\n      "average_latency_seconds": 1.85,\\n      "region": "India-West",\\n      "cpu_percent": 42,\\n      "memory_percent": 61,\\n      "resource_exhaustion": false\\n    },\\n    "active_incident": {\\n      "incident_id": "INC-OPS-101",\\n      "severity": "SEV-1",\\n      "opened_utc": "09:55",\\n      "summary": "Payment processing requests are experiencing elevated timeout failures.",\\n      "customer_impact": "Card\u2011payment transactions may fail or time\u2011out, preventing customers from completing purchases."\\n    },\\n    "high_priority_tickets": [\\n      {\\n        "ticket_id": "TKT-1001",\\n        "priority": "P1",\\n        "subject": "Card payment timeout"\\n      },\\n      {\\n        "ticket_id": "TKT-1002",\\n        "priority": "P1",\\n        "subject": "Payment requests failing"\\n      },\\n      {\\n        "ticket_id": "TKT-1003",\\n        "priority": "P2",\\n        "subject": "Intermittent payment retry failures"\\n      }\\n    ],\\n    "recent_change": {\\n      "change_id": "CHG-2001",\\n      "type": "APPLICATION_RELEASE",\\n      "risk_level": "high",\\n      "implemented_utc": "09:10",\\n      "time_before_incident_minutes": 45,\\n      "summary": "Released payment\u2011service changes for timeout handling and retry logic.",\\n      "rollback_available": true\\n    }\\n  },\\n  "operations_summary": "The Payment API in the India\u2011West region is UNHEALTHY (38\\u202f% error rate, 1.85\\u202fs avg latency). A SEV\u20111 incident (INC\u2011OPS\u2011101) started at 09:55\\u202fUTC, causing payment time\u2011outs. Two P1 tickets and one P2 ticket are open. A high\u2011risk application release (CHG\u20112001) was deployed at 09:10\\u202fUTC, 45\\u202fminutes before the incident, and modified timeout/retry logic.",\\n  "possible_change_correlation": "The timing and nature of CHG\u20112001 (modifying timeout handling) align closely with the observed increase in request time\u2011outs, making the change a strong candidate for the root cause. However, without direct log or metric proof, causality cannot be confirmed.",\\n  "recommended_next_actions": [\\n    "Validate the change: review release notes, code diff, and deployment logs for errors or warnings.",\\n    "Assess immediate mitigation: consider rolling back CHG\u20112001 (rollback is available) or temporarily increase request timeout settings.",\\n    "Gather diagnostic data: pull logs from 09:00\u201110:00\\u202fUTC, examine error messages, stack traces, latency distribution, and retry counts.",\\n    "Communicate: update incident ticket INC\u2011OPS\u2011101 with suspected correlation and mitigation steps; notify Application Support and affected customers.",\\n    "Post\u2011mortem actions (once stable): conduct root\u2011cause analysis, update change\u2011management process to add pre\u2011deployment testing for timeout logic, and add automated alerts for latency/timeout spikes."\\n  ],\\n  "limitations": [\\n    "No real\u2011time monitoring data or logs were retrieved; information is based solely on the provided text.",\\n    "No tool calls (e.g., service\u2011health, change\u2011management) were executed, so evidence cannot be verified against live systems.",\\n    "Correlation between the change and incident is speculative; definitive causality requires log/metric analysis."\\n  ]\\n}\\n```'}}\nERROR    mcp_use:mcpagent.py:919 \u274c Error running query: Failed to generate structured output: Error code: 400 - {'error': {'message': 'Tool choice is required, but model did not call a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '**Structured Output**\\n\\n```json\\n{\\n  "user_query": "Please format the following information according to the specified schema. Extract and structure the relevant information from the content below.",\\n  "servers_used": [],\\n  "tools_used": [],\\n  "evidence": {\\n    "service_status": {\\n      "service": "Payment API",\\n      "status": "UNHEALTHY",\\n      "error_rate_percent": 38,\\n      "average_latency_seconds": 1.85,\\n      "region": "India-West",\\n      "cpu_percent": 42,\\n      "memory_percent": 61,\\n      "resource_exhaustion": false\\n    },\\n    "active_incident": {\\n      "incident_id": "INC-OPS-101",\\n      "severity": "SEV-1",\\n      "opened_utc": "09:55",\\n      "summary": "Payment processing requests are experiencing elevated timeout failures.",\\n      "customer_impact": "Card\u2011payment transactions may fail or time\u2011out, preventing customers from completing purchases."\\n    },\\n    "high_priority_tickets": [\\n      {\\n        "ticket_id": "TKT-1001",\\n        "priority": "P1",\\n        "subject": "Card payment timeout"\\n      },\\n      {\\n        "ticket_id": "TKT-1002",\\n        "priority": "P1",\\n        "subject": "Payment requests failing"\\n      },\\n      {\\n        "ticket_id": "TKT-1003",\\n        "priority": "P2",\\n        "subject": "Intermittent payment retry failures"\\n      }\\n    ],\\n    "recent_change": {\\n      "change_id": "CHG-2001",\\n      "type": "APPLICATION_RELEASE",\\n      "risk_level": "high",\\n      "implemented_utc": "09:10",\\n      "time_before_incident_minutes": 45,\\n      "summary": "Released payment\u2011service changes for timeout handling and retry logic.",\\n      "rollback_available": true\\n    }\\n  },\\n  "operations_summary": "The Payment API in the India\u2011West region is UNHEALTHY (38\\u202f% error rate, 1.85\\u202fs avg latency). A SEV\u20111 incident (INC\u2011OPS\u2011101) started at 09:55\\u202fUTC, causing payment time\u2011outs. Two P1 tickets and one P2 ticket are open. A high\u2011risk application release (CHG\u20112001) was deployed at 09:10\\u202fUTC, 45\\u202fminutes before the incident, and modified timeout/retry logic.",\\n  "possible_change_correlation": "The timing and nature of CHG\u20112001 (modifying timeout handling) align closely with the observed increase in request time\u2011outs, making the change a strong candidate for the root cause. However, without direct log or metric proof, causality cannot be confirmed.",\\n  "recommended_next_actions": [\\n    "Validate the change: review release notes, code diff, and deployment logs for errors or warnings.",\\n    "Assess immediate mitigation: consider rolling back CHG\u20112001 (rollback is available) or temporarily increase request timeout settings.",\\n    "Gather diagnostic data: pull logs from 09:00\u201110:00\\u202fUTC, examine error messages, stack traces, latency distribution, and retry counts.",\\n    "Communicate: update incident ticket INC\u2011OPS\u2011101 with suspected correlation and mitigation steps; notify Application Support and affected customers.",\\n    "Post\u2011mortem actions (once stable): conduct root\u2011cause analysis, update change\u2011management process to add pre\u2011deployment testing for timeout logic, and add automated alerts for latency/timeout spikes."\\n  ],\\n  "limitations": [\\n    "No real\u2011time monitoring data or logs were retrieved; information is based solely on the provided text.",\\n    "No tool calls (e.g., service\u2011health, change\u2011management) were executed, so evidence cannot be verified against live systems.",\\n    "Correlation between the change and incident is speculative; definitive causality requires log/metric analysis."\\n  ]\\n}\\n```'}}\nINFO     mcp_use:mcpagent.py:921 \U0001f9f9 Cleaning up resources after error\nINFO     mcp_use:mcpagent.py:1079 \U0001f50c Closing agent and cleaning up resources...\nINFO     mcp_use:mcpagent.py:1087 \U0001f504 Closing sessions through client\nINFO     mcp_use:mcpagent.py:1102 \U0001f44b Agent closed successfully\nERROR    mcp_use:mcpagent.py:555 \u274c Error during agent execution: Failed to generate structured output: Error code: 400 - {'error': {'message': 'Tool choice is required, but model did not call a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '**Structured Output**\\n\\n```json\\n{\\n  "user_query": "Please format the following information according to the specified schema. Extract and structure the relevant information from the content below.",\\n  "servers_used": [],\\n  "tools_used": [],\\n  "evidence": {\\n    "service_status": {\\n      "service": "Payment API",\\n      "status": "UNHEALTHY",\\n      "error_rate_percent": 38,\\n      "average_latency_seconds": 1.85,\\n      "region": "India-West",\\n      "cpu_percent": 42,\\n      "memory_percent": 61,\\n      "resource_exhaustion": false\\n    },\\n    "active_incident": {\\n      "incident_id": "INC-OPS-101",\\n      "severity": "SEV-1",\\n      "opened_utc": "09:55",\\n      "summary": "Payment processing requests are experiencing elevated timeout failures.",\\n      "customer_impact": "Card\u2011payment transactions may fail or time\u2011out, preventing customers from completing purchases."\\n    },\\n    "high_priority_tickets": [\\n      {\\n        "ticket_id": "TKT-1001",\\n        "priority": "P1",\\n        "subject": "Card payment timeout"\\n      },\\n      {\\n        "ticket_id": "TKT-1002",\\n        "priority": "P1",\\n        "subject": "Payment requests failing"\\n      },\\n      {\\n        "ticket_id": "TKT-1003",\\n        "priority": "P2",\\n        "subject": "Intermittent payment retry failures"\\n      }\\n    ],\\n    "recent_change": {\\n      "change_id": "CHG-2001",\\n      "type": "APPLICATION_RELEASE",\\n      "risk_level": "high",\\n      "implemented_utc": "09:10",\\n      "time_before_incident_minutes": 45,\\n      "summary": "Released payment\u2011service changes for timeout handling and retry logic.",\\n      "rollback_available": true\\n    }\\n  },\\n  "operations_summary": "The Payment API in the India\u2011West region is UNHEALTHY (38\\u202f% error rate, 1.85\\u202fs avg latency). A SEV\u20111 incident (INC\u2011OPS\u2011101) started at 09:55\\u202fUTC, causing payment time\u2011outs. Two P1 tickets and one P2 ticket are open. A high\u2011risk application release (CHG\u20112001) was deployed at 09:10\\u202fUTC, 45\\u202fminutes before the incident, and modified timeout/retry logic.",\\n  "possible_change_correlation": "The timing and nature of CHG\u20112001 (modifying timeout handling) align closely with the observed increase in request time\u2011outs, making the change a strong candidate for the root cause. However, without direct log or metric proof, causality cannot be confirmed.",\\n  "recommended_next_actions": [\\n    "Validate the change: review release notes, code diff, and deployment logs for errors or warnings.",\\n    "Assess immediate mitigation: consider rolling back CHG\u20112001 (rollback is available) or temporarily increase request timeout settings.",\\n    "Gather diagnostic data: pull logs from 09:00\u201110:00\\u202fUTC, examine error messages, stack traces, latency distribution, and retry counts.",\\n    "Communicate: update incident ticket INC\u2011OPS\u2011101 with suspected correlation and mitigation steps; notify Application Support and affected customers.",\\n    "Post\u2011mortem actions (once stable): conduct root\u2011cause analysis, update change\u2011management process to add pre\u2011deployment testing for timeout logic, and add automated alerts for latency/timeout spikes."\\n  ],\\n  "limitations": [\\n    "No real\u2011time monitoring data or logs were retrieved; information is based solely on the provided text.",\\n    "No tool calls (e.g., service\u2011health, change\u2011management) were executed, so evidence cannot be verified against live systems.",\\n    "Correlation between the change and incident is speculative; definitive causality requires log/metric analysis."\\n  ]\\n}\\n```'}}
+____________________ test_host_ticket_service_health_query ____________________
+
+self = <mcp_use.agents.mcpagent.MCPAgent object at 0x00000292C168CCD0>
+query = HumanMessage(content='Show the details of ticket TKT-1001 and check the health of its related service.', additional_kwargs={}, response_metadata={}, id='190f3dfe-1eaf-488c-b655-8c8d0c79081a')
+max_steps = None, manage_connector = True, external_history = None
+track_execution = False, output_schema = <class 'src.host.OperationsResponse'>
+
+    async def stream(
+        self,
+        query: QueryInput,
+        max_steps: int | None = None,
+        manage_connector: bool = True,
+        external_history: list[BaseMessage] | None = None,
+        track_execution: bool = True,
+        output_schema: type[T] | None = None,
+    ) -> AsyncGenerator[tuple[AgentAction, str] | str | T, None]:
+        """Async generator using LangChain 1.0.0's create_agent and astream.
+    
+        This method leverages the LangChain 1.0.0 API where create_agent returns
+        a CompiledStateGraph that handles the agent loop internally via astream.
+    
+        **Tool Updates with Server Manager:**
+        When using server_manager mode, this method handles dynamic tool updates:
+        - **Before execution:** Updates are applied immediately to the new stream
+        - **During execution:** When tools change, we wait for a "safe restart point"
+          (after tool results complete), then interrupt the stream, recreate the agent
+          with new tools, and resume execution with accumulated messages.
+        - **Safe restart points:** Only restart after tool results to ensure message
+          pairs (tool_use + tool_result) are complete, satisfying LLM API requirements.
+        - **Max restarts:** Limited to 3 restarts to prevent infinite loops
+    
+        This interrupt-and-restart approach ensures that tools added mid-execution
+        (e.g., via connect_to_mcp_server) are immediately available to the agent,
+        maintaining the same behavior as the legacy implementation while respecting
+        API constraints.
+    
+        Args:
+            query: The query to run. Accepts a plain string or a ``HumanMessage`` when
+                you need to include richer content (e.g., multi-part messages or files).
+            manage_connector: Whether to handle the connector lifecycle internally.
+            external_history: Optional external history to use instead of the
+                internal conversation history.
+            output_schema: Optional Pydantic BaseModel class for structured output.
+    
+        Yields:
+            Intermediate steps and final result from the agent execution.
+        """
+        # Delegate to remote agent if in remote mode
+        if self._is_remote and self._remote_agent:
+            query_str: str = query if isinstance(query, str) else self._message_text(query)
+            async for item in self._remote_agent.stream(query_str, max_steps, external_history, output_schema):
+                yield item
+            return
+    
+        human_query = self._ensure_human_message(query)
+        initialized_here = False
+        start_time = time.time()
+        success = False
+        final_output = None
+        steps_taken = 0
+    
+        try:
+            # 1. Initialize if needed
+            if manage_connector and not self._initialized:
+                await self.initialize()
+                initialized_here = True
+            elif not self._initialized and self.auto_initialize:
+                await self.initialize()
+                initialized_here = True
+    
+            if not self._agent_executor:
+                raise RuntimeError("MCP agent failed to initialize")
+    
+            # Check for tool updates before starting execution (if using server manager)
+            if self.use_server_manager and self.server_manager:
+                current_tools = self.server_manager.tools
+                current_tool_names = {tool.name for tool in current_tools}
+                existing_tool_names = {tool.name for tool in self._tools}
+    
+                if current_tool_names != existing_tool_names:
+                    logger.info(
+                        f"\U0001f504 Tools changed before execution, updating agent. New tools: {', '.join(current_tool_names)}"
+                    )
+                    self._tools = current_tools
+                    # Regenerate system message with ALL current tools
+                    await self._create_system_message_from_tools(self._tools)
+                    # Recreate the agent executor with the new tools and system message
+                    self._agent_executor = self._create_agent()
+    
+            # 2. Build inputs for the agent
+            history_to_use = external_history if external_history is not None else self._conversation_history
+    
+            # Convert messages to format expected by LangChain agent
+            langchain_history = []
+            for msg in history_to_use:
+                if isinstance(msg, HumanMessage | AIMessage | ToolMessage):
+                    langchain_history.append(msg)
+    
+            inputs = {"messages": [*langchain_history, human_query]}
+    
+            display_query = self._message_preview(human_query)
+            logger.info(f"\U0001f4ac Received query: '{display_query}'")
+            logger.info("\U0001f3c1 Starting agent execution")
+    
+            # 3. Stream using the built-in astream from CompiledStateGraph
+            # The agent graph handles the loop internally
+            # With dynamic tool reload: if tools change mid-execution, we interrupt and restart
+            max_restarts = 3  # Prevent infinite restart loops
+            restart_count = 0
+            accumulated_messages = list(langchain_history) + [human_query]
+            pending_tool_calls = {}  # Map tool_call_id -> AgentAction
+    
+            while restart_count <= max_restarts:
+                # Update inputs with accumulated messages
+                inputs = {"messages": accumulated_messages}
+                should_restart = False
+    
+                async for chunk in self._agent_executor.astream(
+                    inputs,
+                    stream_mode="updates",  # Get updates as they happen
+                    config={
+                        "callbacks": self.callbacks,
+                        "recursion_limit": self.recursion_limit,
+                    },
+                ):
+                    # chunk is a dict with node names as keys
+                    # The agent node will have 'messages' with the AI response
+                    # The tools node will have 'messages' with tool calls and results
+    
+                    for node_name, node_output in chunk.items():
+                        logger.debug(f"\U0001f4e6 Node '{node_name}' output: {node_output}")
+    
+                        # Extract messages from the node output and accumulate them
+                        if node_output is not None and "messages" in node_output:
+                            messages = node_output["messages"]
+                            if not isinstance(messages, list):
+                                messages = [messages]
+    
+                            # Add new messages to accumulated messages for potential restart
+                            for msg in messages:
+                                if msg not in accumulated_messages:
+                                    accumulated_messages.append(msg)
+                            for message in messages:
+                                # Track tool calls
+                                if hasattr(message, "tool_calls") and message.tool_calls:
+                                    # Extract text content from message for the log
+                                    log_text = ""
+                                    if hasattr(message, "content"):
+                                        if isinstance(message.content, str):
+                                            log_text = message.content
+                                        elif isinstance(message.content, list):
+                                            # Extract text blocks from content array
+                                            text_parts = [
+                                                (block.get("text", "") if isinstance(block, dict) else str(block))
+                                                for block in message.content
+                                                if isinstance(block, dict) and block.get("type") == "text"
+                                            ]
+                                            log_text = "\n".join(text_parts)
+    
+                                    for tool_call in message.tool_calls:
+                                        tool_name = tool_call.get("name", "unknown")
+                                        tool_input = tool_call.get("args", {})
+                                        tool_call_id = tool_call.get("id")
+    
+                                        action = AgentAction(
+                                            tool=tool_name,
+                                            tool_input=tool_input,
+                                            log=log_text,
+                                        )
+                                        if tool_call_id:
+                                            pending_tool_calls[tool_call_id] = action
+    
+                                        self.tools_used_names.append(tool_name)
+                                        steps_taken += 1
+    
+                                        tool_input_str = str(tool_input)
+                                        if len(tool_input_str) > 100:
+                                            tool_input_str = tool_input_str[:97] + "..."
+    
+                                # Track tool results and yield AgentStep
+                                if isinstance(message, ToolMessage):
+                                    observation = message.content
+                                    tool_call_id = message.tool_call_id
+    
+                                    if tool_call_id and tool_call_id in pending_tool_calls:
+                                        action = pending_tool_calls.pop(tool_call_id)
+                                        item = (action, str(observation))
+                                        log_agent_step(item, pretty_print=self.pretty_print)
+                                        yield item
+    
+                                    observation_str = str(observation)
+                                    if len(observation_str) > 100:
+                                        observation_str = observation_str[:97] + "..."
+                                    observation_str = observation_str.replace("\n", " ")
+    
+                                    # --- Check for tool updates after tool results (safe restart point) ---
+                                    if self.use_server_manager and self.server_manager:
+                                        current_tools = self.server_manager.tools
+                                        current_tool_names = {tool.name for tool in current_tools}
+                                        existing_tool_names = {tool.name for tool in self._tools}
+    
+                                        if current_tool_names != existing_tool_names:
+                                            logger.info(
+                                                f"\U0001f504 Tools changed during execution. "
+                                                f"New tools: {', '.join(current_tool_names)}"
+                                            )
+                                            self._tools = current_tools
+                                            # Regenerate system message with ALL current tools
+                                            await self._create_system_message_from_tools(self._tools)
+                                            # Recreate the agent executor with the new tools and system message
+                                            self._agent_executor = self._create_agent()
+    
+                                            # Set restart flag - safe to restart now after tool results
+                                            should_restart = True
+                                            restart_count += 1
+                                            logger.info(
+                                                f"\U0001f503 Restarting execution with updated tools "
+                                                f"(restart {restart_count}/{max_restarts})"
+                                            )
+                                            break  # Break out of the message loop
+    
+                                # Track final AI message (without tool calls = final response)
+                                if isinstance(message, AIMessage) and not message.tool_calls:
+                                    final_output = self._normalize_output(message.content)
+                                    logger.info("\u2705 Agent finished with output")
+    
+                        # Break out of node loop if restarting
+                        if should_restart:
+                            break
+    
+                    # Break out of chunk loop if restarting
+                    if should_restart:
+                        break
+    
+                # Check if we should restart or if execution completed
+                if not should_restart:
+                    # Execution completed successfully without tool changes
+                    break
+    
+                # If we've hit max restarts, log warning and continue
+                if restart_count > max_restarts:
+                    logger.warning(f"\u26a0\ufe0f Max restarts ({max_restarts}) reached. Continuing with current tools.")
+                    break
+    
+            # 4. Update conversation history (store full transcript including tool exchange)
+            if self.memory_enabled and external_history is None:
+                self._conversation_history = [msg for msg in accumulated_messages if not isinstance(msg, SystemMessage)]
+    
+            # 5. Handle structured output if requested
+            if output_schema and final_output:
+                try:
+                    logger.info("\U0001f527 Attempting structured output...")
+                    structured_llm = self.llm.with_structured_output(output_schema)
+    
+                    # Get schema description
+                    schema_fields = []
+                    for field_name, field_info in output_schema.model_fields.items():
+                        description = getattr(field_info, "description", "") or field_name
+                        required = not hasattr(field_info, "default") or field_info.default is None
+                        schema_fields.append(
+                            f"- {field_name}: {description} " + ("(required)" if required else "(optional)")
+                        )
+                    schema_description = "\n".join(schema_fields)
+    
+>                   structured_result = await self._attempt_structured_output(
+                        final_output, structured_llm, output_schema, schema_description
+                    )
+
+.venv\Lib\site-packages\mcp_use\agents\mcpagent.py:898: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\mcp_use\agents\mcpagent.py:595: in _attempt_structured_output
+    structured_result = await structured_llm.ainvoke(format_prompt)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\langchain_core\runnables\base.py:3484: in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\langchain_core\runnables\base.py:6017: in ainvoke
+    return await self.bound.ainvoke(
+.venv\Lib\site-packages\langchain_core\language_models\chat_models.py:499: in ainvoke
+    llm_result = await self.agenerate_prompt(
+.venv\Lib\site-packages\langchain_core\language_models\chat_models.py:1860: in agenerate_prompt
+    return await self.agenerate(
+.venv\Lib\site-packages\langchain_core\language_models\chat_models.py:1818: in agenerate
+    raise exceptions[0]
+.venv\Lib\site-packages\langchain_core\language_models\chat_models.py:2151: in _agenerate_with_cache
+    result = await self._agenerate(
+.venv\Lib\site-packages\langchain_groq\chat_models.py:648: in _agenerate
+    response = await self.async_client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\groq\resources\chat\completions.py:941: in create
+    return await self._post(
+.venv\Lib\site-packages\groq\_base_client.py:1762: in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <groq.AsyncGroq object at 0x00000292C168E490>
+cast_to = <class 'groq.types.chat.chat_completion.ChatCompletion'>
+options = FinalRequestOptions(method='post', url='/openai/v1/chat/completions', params={}, headers=NOT_GIVEN, max_retries=NOT_GI...ry', 'possible_change_correlation', 'recommended_next_actions', 'limitations'], 'type': 'object'}}}]}, extra_json=None)
+stream = False
+stream_cls = groq.AsyncStream[groq.types.chat.chat_completion_chunk.ChatCompletionChunk]
+
+    async def request(
+        self,
+        cast_to: Type[ResponseT],
+        options: FinalRequestOptions,
+        *,
+        stream: bool = False,
+        stream_cls: type[_AsyncStreamT] | None = None,
+    ) -> ResponseT | _AsyncStreamT:
+        if self._platform is None:
+            # `get_platform` can make blocking IO calls so we
+            # execute it earlier while we are in an async context
+            self._platform = await asyncify(get_platform)()
+    
+        cast_to = self._maybe_override_cast_to(cast_to, options)
+    
+        # create a copy of the options we were given so that if the
+        # options are mutated later & we then retry, the retries are
+        # given the original options
+        input_options = model_copy(options)
+        if input_options.idempotency_key is None and input_options.method.lower() != "get":
+            # ensure the idempotency key is reused between requests
+            input_options.idempotency_key = self._idempotency_key()
+    
+        response: httpx.Response | None = None
+        max_retries = input_options.get_max_retries(self.max_retries)
+    
+        retries_taken = 0
+        for retries_taken in range(max_retries + 1):
+            options = model_copy(input_options)
+            options = await self._prepare_options(options)
+    
+            remaining_retries = max_retries - retries_taken
+            request = self._build_request(options, retries_taken=retries_taken)
+            await self._prepare_request(request)
+    
+            kwargs: HttpxSendArgs = {}
+            if self.custom_auth is not None:
+                kwargs["auth"] = self.custom_auth
+    
+            if options.follow_redirects is not None:
+                kwargs["follow_redirects"] = options.follow_redirects
+    
+            log.debug("Sending HTTP Request: %s %s", request.method, request.url)
+    
+            response = None
+            try:
+                response = await self._client.send(
+                    request,
+                    stream=stream or self._should_stream_response_body(request=request),
+                    **kwargs,
+                )
+            except httpx.TimeoutException as err:
+                log.debug("Encountered httpx.TimeoutException", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising timeout error")
+                raise APITimeoutError(request=request) from err
+            except Exception as err:
+                log.debug("Encountered Exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising connection error")
+                raise APIConnectionError(request=request) from err
+    
+            log.debug(
+                'HTTP Response: %s %s "%i %s" %s',
+                request.method,
+                request.url,
+                response.status_code,
+                response.reason_phrase,
+                response.headers,
+            )
+    
+            try:
+                response.raise_for_status()
+            except httpx.HTTPStatusError as err:  # thrown on 4xx and 5xx status code
+                log.debug("Encountered httpx.HTTPStatusError", exc_info=True)
+    
+                if remaining_retries > 0 and self._should_retry(err.response):
+                    await err.response.aclose()
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=response,
+                    )
+                    continue
+    
+                # If the response is streamed then we need to explicitly read the response
+                # to completion before attempting to access the response text.
+                if not err.response.is_closed:
+                    await err.response.aread()
+    
+                log.debug("Re-raising status error")
+>               raise self._make_status_error_from_response(err.response) from None
+E               groq.BadRequestError: Error code: 400 - {'error': {'message': 'Tool choice is required, but model did not call a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '```json\\n{\\n  "user_query": "Please format the following information according to the specified schema. Extract and structure the relevant information from the content below.",\\n  "servers_used": [],\\n  "tools_used": [],\\n  "evidence": {\\n    "tickets": [\\n      {\\n        "id": "TKT-1001",\\n        "service": "Payment API",\\n        "priority": "P1 (high)",\\n        "status": "OPEN",\\n        "subject": "Card payment timeout",\\n        "description": "Customers report payment failures and timeout errors.",\\n        "created": "2026-07-08T09:58:00Z",\\n        "customer_impact": "High",\\n        "assigned_group": "Application Support"\\n      }\\n    ],\\n    "services": [\\n      {\\n        "name": "Payment API",\\n        "overall_status": "UNHEALTHY",\\n        "region": "India-West",\\n        "error_rate_percent": 38,\\n        "average_latency_ms": 1850,\\n        "cpu_usage_percent": 42,\\n        "memory_usage_percent": 61,\\n        "last_checked": "2026-07-08T10:00:00Z",\\n        "active_incidents": ["INC-OPS-101"]\\n      }\\n    ],\\n    "incidents": [\\n      {\\n        "id": "INC-OPS-101",\\n        "status": "Active",\\n        "related_service": "Payment API"\\n      }\\n    ]\\n  },\\n  "operations_summary": "The Payment API in the India\u2011West region is currently UNHEALTHY with a 38\\u202f% error rate and average latency of 1.85\\u202fs. A high\u2011priority (P1) ticket (TKT\u20111001) reports card payment timeouts, and an active incident (INC\u2011OPS\u2011101) is linked to the same service.",\\n  "possible_change_correlation": "Recent deployments or configuration changes to the Payment API could have introduced the error\u2011rate spike, leading to the observed timeouts. While the exact change is not yet identified, the timing of the incident suggests a possible correlation between a recent change and the degraded service health.",\\n  "recommended_next_actions": [\\n    "Investigate active incident INC\u2011OPS\u2011101 for root cause details.",\\n    "Escalate ticket TKT\u20111001 to the incident response team if not already done.",\\n    "Review recent change history (deployments, config updates) for the Payment API.",\\n    "Consider immediate mitigation: throttle traffic, roll back the most recent change, or scale resources to reduce latency.",\\n    "Communicate status updates to affected customers and internal stakeholders."\\n  ],\\n  "limitations": [\\n    "No real\u2011time access to the full change\u2011management logs; only a suggestion to view recent changes.",\\n    "Incident details are limited to the identifier (INC\u2011OPS\u2011101) without full description.",\\n    "Metrics are a snapshot taken at 2026\u201107\u201108\\u202f10:00\\u202fUTC and may have changed since."\\n  ]\\n}\\n```'}}
+
+.venv\Lib\site-packages\groq\_base_client.py:1576: BadRequestError
+
+The above exception was the direct cause of the following exception:
+
+    @pytest.mark.integration
+    @pytest.mark.asyncio
+    async def test_host_ticket_service_health_query():
+        """Test 13 - Integration Test: Ticket and Service Health."""
+        groq_api_key = os.getenv("GROQ_API_KEY")
+        if not groq_api_key:
+            pytest.skip("GROQ_API_KEY not found in environment")
+    
+        llm = ChatGroq(
+            model=os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"),
+            temperature=0,
+            api_key=groq_api_key
+        )
+        client = MCPClient(MCP_CONFIG)
+        agent = MCPAgent(
+            llm=llm,
+            client=client,
+            max_steps=10,
+            system_prompt=system_prompt
+        )
+    
+        try:
+            await client.create_all_sessions()
+            query = "Show the details of ticket TKT-1001 and check the health of its related service."
+>           response = await agent.run(query, output_schema=OperationsResponse)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_host_queries.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\mcp_use\agents\mcpagent.py:550: in run
+    result, steps_taken = await self._consume_and_return(generator)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\mcp_use\agents\mcpagent.py:479: in _consume_and_return
+    async for item in generator:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <mcp_use.agents.mcpagent.MCPAgent object at 0x00000292C168CCD0>
+query = HumanMessage(content='Show the details of ticket TKT-1001 and check the health of its related service.', additional_kwargs={}, response_metadata={}, id='190f3dfe-1eaf-488c-b655-8c8d0c79081a')
+max_steps = None, manage_connector = True, external_history = None
+track_execution = False, output_schema = <class 'src.host.OperationsResponse'>
+
+    async def stream(
+        self,
+        query: QueryInput,
+        max_steps: int | None = None,
+        manage_connector: bool = True,
+        external_history: list[BaseMessage] | None = None,
+        track_execution: bool = True,
+        output_schema: type[T] | None = None,
+    ) -> AsyncGenerator[tuple[AgentAction, str] | str | T, None]:
+        """Async generator using LangChain 1.0.0's create_agent and astream.
+    
+        This method leverages the LangChain 1.0.0 API where create_agent returns
+        a CompiledStateGraph that handles the agent loop internally via astream.
+    
+        **Tool Updates with Server Manager:**
+        When using server_manager mode, this method handles dynamic tool updates:
+        - **Before execution:** Updates are applied immediately to the new stream
+        - **During execution:** When tools change, we wait for a "safe restart point"
+          (after tool results complete), then interrupt the stream, recreate the agent
+          with new tools, and resume execution with accumulated messages.
+        - **Safe restart points:** Only restart after tool results to ensure message
+          pairs (tool_use + tool_result) are complete, satisfying LLM API requirements.
+        - **Max restarts:** Limited to 3 restarts to prevent infinite loops
+    
+        This interrupt-and-restart approach ensures that tools added mid-execution
+        (e.g., via connect_to_mcp_server) are immediately available to the agent,
+        maintaining the same behavior as the legacy implementation while respecting
+        API constraints.
+    
+        Args:
+            query: The query to run. Accepts a plain string or a ``HumanMessage`` when
+                you need to include richer content (e.g., multi-part messages or files).
+            manage_connector: Whether to handle the connector lifecycle internally.
+            external_history: Optional external history to use instead of the
+                internal conversation history.
+            output_schema: Optional Pydantic BaseModel class for structured output.
+    
+        Yields:
+            Intermediate steps and final result from the agent execution.
+        """
+        # Delegate to remote agent if in remote mode
+        if self._is_remote and self._remote_agent:
+            query_str: str = query if isinstance(query, str) else self._message_text(query)
+            async for item in self._remote_agent.stream(query_str, max_steps, external_history, output_schema):
+                yield item
+            return
+    
+        human_query = self._ensure_human_message(query)
+        initialized_here = False
+        start_time = time.time()
+        success = False
+        final_output = None
+        steps_taken = 0
+    
+        try:
+            # 1. Initialize if needed
+            if manage_connector and not self._initialized:
+                await self.initialize()
+                initialized_here = True
+            elif not self._initialized and self.auto_initialize:
+                await self.initialize()
+                initialized_here = True
+    
+            if not self._agent_executor:
+                raise RuntimeError("MCP agent failed to initialize")
+    
+            # Check for tool updates before starting execution (if using server manager)
+            if self.use_server_manager and self.server_manager:
+                current_tools = self.server_manager.tools
+                current_tool_names = {tool.name for tool in current_tools}
+                existing_tool_names = {tool.name for tool in self._tools}
+    
+                if current_tool_names != existing_tool_names:
+                    logger.info(
+                        f"\U0001f504 Tools changed before execution, updating agent. New tools: {', '.join(current_tool_names)}"
+                    )
+                    self._tools = current_tools
+                    # Regenerate system message with ALL current tools
+                    await self._create_system_message_from_tools(self._tools)
+                    # Recreate the agent executor with the new tools and system message
+                    self._agent_executor = self._create_agent()
+    
+            # 2. Build inputs for the agent
+            history_to_use = external_history if external_history is not None else self._conversation_history
+    
+            # Convert messages to format expected by LangChain agent
+            langchain_history = []
+            for msg in history_to_use:
+                if isinstance(msg, HumanMessage | AIMessage | ToolMessage):
+                    langchain_history.append(msg)
+    
+            inputs = {"messages": [*langchain_history, human_query]}
+    
+            display_query = self._message_preview(human_query)
+            logger.info(f"\U0001f4ac Received query: '{display_query}'")
+            logger.info("\U0001f3c1 Starting agent execution")
+    
+            # 3. Stream using the built-in astream from CompiledStateGraph
+            # The agent graph handles the loop internally
+            # With dynamic tool reload: if tools change mid-execution, we interrupt and restart
+            max_restarts = 3  # Prevent infinite restart loops
+            restart_count = 0
+            accumulated_messages = list(langchain_history) + [human_query]
+            pending_tool_calls = {}  # Map tool_call_id -> AgentAction
+    
+            while restart_count <= max_restarts:
+                # Update inputs with accumulated messages
+                inputs = {"messages": accumulated_messages}
+                should_restart = False
+    
+                async for chunk in self._agent_executor.astream(
+                    inputs,
+                    stream_mode="updates",  # Get updates as they happen
+                    config={
+                        "callbacks": self.callbacks,
+                        "recursion_limit": self.recursion_limit,
+                    },
+                ):
+                    # chunk is a dict with node names as keys
+                    # The agent node will have 'messages' with the AI response
+                    # The tools node will have 'messages' with tool calls and results
+    
+                    for node_name, node_output in chunk.items():
+                        logger.debug(f"\U0001f4e6 Node '{node_name}' output: {node_output}")
+    
+                        # Extract messages from the node output and accumulate them
+                        if node_output is not None and "messages" in node_output:
+                            messages = node_output["messages"]
+                            if not isinstance(messages, list):
+                                messages = [messages]
+    
+                            # Add new messages to accumulated messages for potential restart
+                            for msg in messages:
+                                if msg not in accumulated_messages:
+                                    accumulated_messages.append(msg)
+                            for message in messages:
+                                # Track tool calls
+                                if hasattr(message, "tool_calls") and message.tool_calls:
+                                    # Extract text content from message for the log
+                                    log_text = ""
+                                    if hasattr(message, "content"):
+                                        if isinstance(message.content, str):
+                                            log_text = message.content
+                                        elif isinstance(message.content, list):
+                                            # Extract text blocks from content array
+                                            text_parts = [
+                                                (block.get("text", "") if isinstance(block, dict) else str(block))
+                                                for block in message.content
+                                                if isinstance(block, dict) and block.get("type") == "text"
+                                            ]
+                                            log_text = "\n".join(text_parts)
+    
+                                    for tool_call in message.tool_calls:
+                                        tool_name = tool_call.get("name", "unknown")
+                                        tool_input = tool_call.get("args", {})
+                                        tool_call_id = tool_call.get("id")
+    
+                                        action = AgentAction(
+                                            tool=tool_name,
+                                            tool_input=tool_input,
+                                            log=log_text,
+                                        )
+                                        if tool_call_id:
+                                            pending_tool_calls[tool_call_id] = action
+    
+                                        self.tools_used_names.append(tool_name)
+                                        steps_taken += 1
+    
+                                        tool_input_str = str(tool_input)
+                                        if len(tool_input_str) > 100:
+                                            tool_input_str = tool_input_str[:97] + "..."
+    
+                                # Track tool results and yield AgentStep
+                                if isinstance(message, ToolMessage):
+                                    observation = message.content
+                                    tool_call_id = message.tool_call_id
+    
+                                    if tool_call_id and tool_call_id in pending_tool_calls:
+                                        action = pending_tool_calls.pop(tool_call_id)
+                                        item = (action, str(observation))
+                                        log_agent_step(item, pretty_print=self.pretty_print)
+                                        yield item
+    
+                                    observation_str = str(observation)
+                                    if len(observation_str) > 100:
+                                        observation_str = observation_str[:97] + "..."
+                                    observation_str = observation_str.replace("\n", " ")
+    
+                                    # --- Check for tool updates after tool results (safe restart point) ---
+                                    if self.use_server_manager and self.server_manager:
+                                        current_tools = self.server_manager.tools
+                                        current_tool_names = {tool.name for tool in current_tools}
+                                        existing_tool_names = {tool.name for tool in self._tools}
+    
+                                        if current_tool_names != existing_tool_names:
+                                            logger.info(
+                                                f"\U0001f504 Tools changed during execution. "
+                                                f"New tools: {', '.join(current_tool_names)}"
+                                            )
+                                            self._tools = current_tools
+                                            # Regenerate system message with ALL current tools
+                                            await self._create_system_message_from_tools(self._tools)
+                                            # Recreate the agent executor with the new tools and system message
+                                            self._agent_executor = self._create_agent()
+    
+                                            # Set restart flag - safe to restart now after tool results
+                                            should_restart = True
+                                            restart_count += 1
+                                            logger.info(
+                                                f"\U0001f503 Restarting execution with updated tools "
+                                                f"(restart {restart_count}/{max_restarts})"
+                                            )
+                                            break  # Break out of the message loop
+    
+                                # Track final AI message (without tool calls = final response)
+                                if isinstance(message, AIMessage) and not message.tool_calls:
+                                    final_output = self._normalize_output(message.content)
+                                    logger.info("\u2705 Agent finished with output")
+    
+                        # Break out of node loop if restarting
+                        if should_restart:
+                            break
+    
+                    # Break out of chunk loop if restarting
+                    if should_restart:
+                        break
+    
+                # Check if we should restart or if execution completed
+                if not should_restart:
+                    # Execution completed successfully without tool changes
+                    break
+    
+                # If we've hit max restarts, log warning and continue
+                if restart_count > max_restarts:
+                    logger.warning(f"\u26a0\ufe0f Max restarts ({max_restarts}) reached. Continuing with current tools.")
+                    break
+    
+            # 4. Update conversation history (store full transcript including tool exchange)
+            if self.memory_enabled and external_history is None:
+                self._conversation_history = [msg for msg in accumulated_messages if not isinstance(msg, SystemMessage)]
+    
+            # 5. Handle structured output if requested
+            if output_schema and final_output:
+                try:
+                    logger.info("\U0001f527 Attempting structured output...")
+                    structured_llm = self.llm.with_structured_output(output_schema)
+    
+                    # Get schema description
+                    schema_fields = []
+                    for field_name, field_info in output_schema.model_fields.items():
+                        description = getattr(field_info, "description", "") or field_name
+                        required = not hasattr(field_info, "default") or field_info.default is None
+                        schema_fields.append(
+                            f"- {field_name}: {description} " + ("(required)" if required else "(optional)")
+                        )
+                    schema_description = "\n".join(schema_fields)
+    
+                    structured_result = await self._attempt_structured_output(
+                        final_output, structured_llm, output_schema, schema_description
+                    )
+    
+                    if self.memory_enabled and external_history is None:
+                        self.add_to_history(AIMessage(content=f"Structured result: {structured_result}"))
+    
+                    logger.info("\u2705 Structured output successful")
+                    success = True
+                    yield structured_result
+                    return
+                except Exception as e:
+                    logger.error(f"\u274c Structured output failed: {e}")
+>                   raise RuntimeError(f"Failed to generate structured output: {str(e)}") from e
+E                   RuntimeError: Failed to generate structured output: Error code: 400 - {'error': {'message': 'Tool choice is required, but model did not call a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '```json\\n{\\n  "user_query": "Please format the following information according to the specified schema. Extract and structure the relevant information from the content below.",\\n  "servers_used": [],\\n  "tools_used": [],\\n  "evidence": {\\n    "tickets": [\\n      {\\n        "id": "TKT-1001",\\n        "service": "Payment API",\\n        "priority": "P1 (high)",\\n        "status": "OPEN",\\n        "subject": "Card payment timeout",\\n        "description": "Customers report payment failures and timeout errors.",\\n        "created": "2026-07-08T09:58:00Z",\\n        "customer_impact": "High",\\n        "assigned_group": "Application Support"\\n      }\\n    ],\\n    "services": [\\n      {\\n        "name": "Payment API",\\n        "overall_status": "UNHEALTHY",\\n        "region": "India-West",\\n        "error_rate_percent": 38,\\n        "average_latency_ms": 1850,\\n        "cpu_usage_percent": 42,\\n        "memory_usage_percent": 61,\\n        "last_checked": "2026-07-08T10:00:00Z",\\n        "active_incidents": ["INC-OPS-101"]\\n      }\\n    ],\\n    "incidents": [\\n      {\\n        "id": "INC-OPS-101",\\n        "status": "Active",\\n        "related_service": "Payment API"\\n      }\\n    ]\\n  },\\n  "operations_summary": "The Payment API in the India\u2011West region is currently UNHEALTHY with a 38\\u202f% error rate and average latency of 1.85\\u202fs. A high\u2011priority (P1) ticket (TKT\u20111001) reports card payment timeouts, and an active incident (INC\u2011OPS\u2011101) is linked to the same service.",\\n  "possible_change_correlation": "Recent deployments or configuration changes to the Payment API could have introduced the error\u2011rate spike, leading to the observed timeouts. While the exact change is not yet identified, the timing of the incident suggests a possible correlation between a recent change and the degraded service health.",\\n  "recommended_next_actions": [\\n    "Investigate active incident INC\u2011OPS\u2011101 for root cause details.",\\n    "Escalate ticket TKT\u20111001 to the incident response team if not already done.",\\n    "Review recent change history (deployments, config updates) for the Payment API.",\\n    "Consider immediate mitigation: throttle traffic, roll back the most recent change, or scale resources to reduce latency.",\\n    "Communicate status updates to affected customers and internal stakeholders."\\n  ],\\n  "limitations": [\\n    "No real\u2011time access to the full change\u2011management logs; only a suggestion to view recent changes.",\\n    "Incident details are limited to the identifier (INC\u2011OPS\u2011101) without full description.",\\n    "Metrics are a snapshot taken at 2026\u201107\u201108\\u202f10:00\\u202fUTC and may have changed since."\\n  ]\\n}\\n```'}}
+
+.venv\Lib\site-packages\mcp_use\agents\mcpagent.py:911: RuntimeError
+---------------------------- Captured stdout call -----------------------------
+2026-07-08 17:44:02,578 - mcp_use - INFO - \U0001f680 Initializing MCP agent and connecting to services...\n2026-07-08 17:44:02,578 - mcp_use - INFO - \U0001f50c Found 3 existing sessions\n2026-07-08 17:44:02,633 - mcp_use - INFO - \U0001f6e0\ufe0f Created 9 LangChain tools from client: 9 tools, 0 resources, 0 prompts\n2026-07-08 17:44:02,633 - mcp_use - INFO - \U0001f9f0 Found 9 tools across all connectors\n2026-07-08 17:44:02,633 - mcp_use - INFO - \U0001f9e0 Agent ready with tools: list_services, get_service_health, get_active_incidents, search_tickets, get_ticket_details, get_high_priority_tickets, list_recent_changes, get_change_details, get_changes_for_service\n2026-07-08 17:44:02,643 - mcp_use - INFO - \u2728 Agent initialization complete\n2026-07-08 17:44:02,643 - mcp_use - INFO - \U0001f4ac Received query: 'Show the details of ticket TKT-1001 and check the ...'\n2026-07-08 17:44:02,644 - mcp_use - INFO - \U0001f3c1 Starting agent execution\n2026-07-08 17:44:03,832 - mcp_use.agents.display - INFO - \U0001f527 Tool call: get_ticket_details with input: {'ticket_id': 'TKT-1001'}\n2026-07-08 17:44:03,832 - mcp_use.agents.display - INFO - \U0001f4c4 Tool result: {"found":true,"ticket":{"ticket_id":"TKT-1001","service_name":"Payment API","priority":"P1","stat...\n2026-07-08 17:44:04,334 - mcp_use.agents.display - INFO - \U0001f527 Tool call: get_service_health with input: {'service_name': 'Payment API'}\n2026-07-08 17:44:04,335 - mcp_use.agents.display - INFO - \U0001f4c4 Tool result: {"found":true,"service":{"service_name":"Payment API","service_id":"SVC-PAY-01","status":"UNHEALT...\n2026-07-08 17:44:07,649 - mcp_use - INFO - \u2705 Agent finished with output\n2026-07-08 17:44:07,650 - mcp_use - INFO - \U0001f527 Attempting structured output...\n2026-07-08 17:44:17,771 - mcp_use - ERROR - \u274c Structured output failed: Error code: 400 - {'error': {'message': 'Tool choice is required, but model did not call a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '```json\\n{\\n  "user_query": "Please format the following information according to the specified schema. Extract and structure the relevant information from the content below.",\\n  "servers_used": [],\\n  "tools_used": [],\\n  "evidence": {\\n    "tickets": [\\n      {\\n        "id": "TKT-1001",\\n        "service": "Payment API",\\n        "priority": "P1 (high)",\\n        "status": "OPEN",\\n        "subject": "Card payment timeout",\\n        "description": "Customers report payment failures and timeout errors.",\\n        "created": "2026-07-08T09:58:00Z",\\n        "customer_impact": "High",\\n        "assigned_group": "Application Support"\\n      }\\n    ],\\n    "services": [\\n      {\\n        "name": "Payment API",\\n        "overall_status": "UNHEALTHY",\\n        "region": "India-West",\\n        "error_rate_percent": 38,\\n        "average_latency_ms": 1850,\\n        "cpu_usage_percent": 42,\\n        "memory_usage_percent": 61,\\n        "last_checked": "2026-07-08T10:00:00Z",\\n        "active_incidents": ["INC-OPS-101"]\\n      }\\n    ],\\n    "incidents": [\\n      {\\n        "id": "INC-OPS-101",\\n        "status": "Active",\\n        "related_service": "Payment API"\\n      }\\n    ]\\n  },\\n  "operations_summary": "The Payment API in the India\u2011West region is currently UNHEALTHY with a 38\\u202f% error rate and average latency of 1.85\\u202fs. A high\u2011priority (P1) ticket (TKT\u20111001) reports card payment timeouts, and an active incident (INC\u2011OPS\u2011101) is linked to the same service.",\\n  "possible_change_correlation": "Recent deployments or configuration changes to the Payment API could have introduced the error\u2011rate spike, leading to the observed timeouts. While the exact change is not yet identified, the timing of the incident suggests a possible correlation between a recent change and the degraded service health.",\\n  "recommended_next_actions": [\\n    "Investigate active incident INC\u2011OPS\u2011101 for root cause details.",\\n    "Escalate ticket TKT\u20111001 to the incident response team if not already done.",\\n    "Review recent change history (deployments, config updates) for the Payment API.",\\n    "Consider immediate mitigation: throttle traffic, roll back the most recent change, or scale resources to reduce latency.",\\n    "Communicate status updates to affected customers and internal stakeholders."\\n  ],\\n  "limitations": [\\n    "No real\u2011time access to the full change\u2011management logs; only a suggestion to view recent changes.",\\n    "Incident details are limited to the identifier (INC\u2011OPS\u2011101) without full description.",\\n    "Metrics are a snapshot taken at 2026\u201107\u201108\\u202f10:00\\u202fUTC and may have changed since."\\n  ]\\n}\\n```'}}\n2026-07-08 17:44:17,771 - mcp_use - ERROR - \u274c Error running query: Failed to generate structured output: Error code: 400 - {'error': {'message': 'Tool choice is required, but model did not call a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '```json\\n{\\n  "user_query": "Please format the following information according to the specified schema. Extract and structure the relevant information from the content below.",\\n  "servers_used": [],\\n  "tools_used": [],\\n  "evidence": {\\n    "tickets": [\\n      {\\n        "id": "TKT-1001",\\n        "service": "Payment API",\\n        "priority": "P1 (high)",\\n        "status": "OPEN",\\n        "subject": "Card payment timeout",\\n        "description": "Customers report payment failures and timeout errors.",\\n        "created": "2026-07-08T09:58:00Z",\\n        "customer_impact": "High",\\n        "assigned_group": "Application Support"\\n      }\\n    ],\\n    "services": [\\n      {\\n        "name": "Payment API",\\n        "overall_status": "UNHEALTHY",\\n        "region": "India-West",\\n        "error_rate_percent": 38,\\n        "average_latency_ms": 1850,\\n        "cpu_usage_percent": 42,\\n        "memory_usage_percent": 61,\\n        "last_checked": "2026-07-08T10:00:00Z",\\n        "active_incidents": ["INC-OPS-101"]\\n      }\\n    ],\\n    "incidents": [\\n      {\\n        "id": "INC-OPS-101",\\n        "status": "Active",\\n        "related_service": "Payment API"\\n      }\\n    ]\\n  },\\n  "operations_summary": "The Payment API in the India\u2011West region is currently UNHEALTHY with a 38\\u202f% error rate and average latency of 1.85\\u202fs. A high\u2011priority (P1) ticket (TKT\u20111001) reports card payment timeouts, and an active incident (INC\u2011OPS\u2011101) is linked to the same service.",\\n  "possible_change_correlation": "Recent deployments or configuration changes to the Payment API could have introduced the error\u2011rate spike, leading to the observed timeouts. While the exact change is not yet identified, the timing of the incident suggests a possible correlation between a recent change and the degraded service health.",\\n  "recommended_next_actions": [\\n    "Investigate active incident INC\u2011OPS\u2011101 for root cause details.",\\n    "Escalate ticket TKT\u20111001 to the incident response team if not already done.",\\n    "Review recent change history (deployments, config updates) for the Payment API.",\\n    "Consider immediate mitigation: throttle traffic, roll back the most recent change, or scale resources to reduce latency.",\\n    "Communicate status updates to affected customers and internal stakeholders."\\n  ],\\n  "limitations": [\\n    "No real\u2011time access to the full change\u2011management logs; only a suggestion to view recent changes.",\\n    "Incident details are limited to the identifier (INC\u2011OPS\u2011101) without full description.",\\n    "Metrics are a snapshot taken at 2026\u201107\u201108\\u202f10:00\\u202fUTC and may have changed since."\\n  ]\\n}\\n```'}}\n2026-07-08 17:44:17,771 - mcp_use - INFO - \U0001f9f9 Cleaning up resources after error\n2026-07-08 17:44:17,771 - mcp_use - INFO - \U0001f50c Closing agent and cleaning up resources...\n2026-07-08 17:44:17,771 - mcp_use - INFO - \U0001f504 Closing sessions through client\n2026-07-08 17:44:18,541 - mcp_use - INFO - \U0001f44b Agent closed successfully\n2026-07-08 17:44:18,541 - mcp_use - ERROR - \u274c Error during agent execution: Failed to generate structured output: Error code: 400 - {'error': {'message': 'Tool choice is required, but model did not call a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '```json\\n{\\n  "user_query": "Please format the following information according to the specified schema. Extract and structure the relevant information from the content below.",\\n  "servers_used": [],\\n  "tools_used": [],\\n  "evidence": {\\n    "tickets": [\\n      {\\n        "id": "TKT-1001",\\n        "service": "Payment API",\\n        "priority": "P1 (high)",\\n        "status": "OPEN",\\n        "subject": "Card payment timeout",\\n        "description": "Customers report payment failures and timeout errors.",\\n        "created": "2026-07-08T09:58:00Z",\\n        "customer_impact": "High",\\n        "assigned_group": "Application Support"\\n      }\\n    ],\\n    "services": [\\n      {\\n        "name": "Payment API",\\n        "overall_status": "UNHEALTHY",\\n        "region": "India-West",\\n        "error_rate_percent": 38,\\n        "average_latency_ms": 1850,\\n        "cpu_usage_percent": 42,\\n        "memory_usage_percent": 61,\\n        "last_checked": "2026-07-08T10:00:00Z",\\n        "active_incidents": ["INC-OPS-101"]\\n      }\\n    ],\\n    "incidents": [\\n      {\\n        "id": "INC-OPS-101",\\n        "status": "Active",\\n        "related_service": "Payment API"\\n      }\\n    ]\\n  },\\n  "operations_summary": "The Payment API in the India\u2011West region is currently UNHEALTHY with a 38\\u202f% error rate and average latency of 1.85\\u202fs. A high\u2011priority (P1) ticket (TKT\u20111001) reports card payment timeouts, and an active incident (INC\u2011OPS\u2011101) is linked to the same service.",\\n  "possible_change_correlation": "Recent deployments or configuration changes to the Payment API could have introduced the error\u2011rate spike, leading to the observed timeouts. While the exact change is not yet identified, the timing of the incident suggests a possible correlation between a recent change and the degraded service health.",\\n  "recommended_next_actions": [\\n    "Investigate active incident INC\u2011OPS\u2011101 for root cause details.",\\n    "Escalate ticket TKT\u20111001 to the incident response team if not already done.",\\n    "Review recent change history (deployments, config updates) for the Payment API.",\\n    "Consider immediate mitigation: throttle traffic, roll back the most recent change, or scale resources to reduce latency.",\\n    "Communicate status updates to affected customers and internal stakeholders."\\n  ],\\n  "limitations": [\\n    "No real\u2011time access to the full change\u2011management logs; only a suggestion to view recent changes.",\\n    "Incident details are limited to the identifier (INC\u2011OPS\u2011101) without full description.",\\n    "Metrics are a snapshot taken at 2026\u201107\u201108\\u202f10:00\\u202fUTC and may have changed since."\\n  ]\\n}\\n```'}}
+---------------------------- Captured stderr call -----------------------------
+
+
++-----------------------------------------------------------------------------+
+|                                                                             |
+|                                                                             |
+|                        \u2584\u2580\u2580 \u2584\u2580\u2588 \u2588\u2580\u2580 \u2580\u2588\u2580 \u2588\u2580\u2584\u2580\u2588 \u2588\u2580\u2580 \u2588\u2580\u2588                        |
+|                        \u2588\u2580  \u2588\u2580\u2588 \u2584\u2584\u2588  \u2588  \u2588 \u2580 \u2588 \u2588\u2584\u2584 \u2588\u2580\u2580                        |
+|                                                                             |
+|                                                                             |
+|                                                                             |
+|                                FastMCP 3.4.3                                |
+|                            https://gofastmcp.com                            |
+|                                                                             |
+|                 \U0001f5a5  Server:      service-health, 3.4.3                       |
+|                 \U0001f680 Deploy free: https://horizon.prefect.io                  |
+|                                                                             |
++-----------------------------------------------------------------------------+
+
+
+[07/08/26 17:43:56] INFO     Starting MCP server               transport.py:223
+                             'service-health' with transport                   
+                             'stdio'                                           
+
+
++-----------------------------------------------------------------------------+
+|                                                                             |
+|                                                                             |
+|                        \u2584\u2580\u2580 \u2584\u2580\u2588 \u2588\u2580\u2580 \u2580\u2588\u2580 \u2588\u2580\u2584\u2580\u2588 \u2588\u2580\u2580 \u2588\u2580\u2588                        |
+|                        \u2588\u2580  \u2588\u2580\u2588 \u2584\u2584\u2588  \u2588  \u2588 \u2580 \u2588 \u2588\u2584\u2584 \u2588\u2580\u2580                        |
+|                                                                             |
+|                                                                             |
+|                                                                             |
+|                                FastMCP 3.4.3                                |
+|                            https://gofastmcp.com                            |
+|                                                                             |
+|                 \U0001f5a5  Server:      support-ticket, 3.4.3                       |
+|                 \U0001f680 Deploy free: https://horizon.prefect.io                  |
+|                                                                             |
++-----------------------------------------------------------------------------+
+
+
+[07/08/26 17:43:59] INFO     Starting MCP server               transport.py:223
+                             'support-ticket' with transport                   
+                             'stdio'                                           
+
+
++-----------------------------------------------------------------------------+
+|                                                                             |
+|                                                                             |
+|                        \u2584\u2580\u2580 \u2584\u2580\u2588 \u2588\u2580\u2580 \u2580\u2588\u2580 \u2588\u2580\u2584\u2580\u2588 \u2588\u2580\u2580 \u2588\u2580\u2588                        |
+|                        \u2588\u2580  \u2588\u2580\u2588 \u2584\u2584\u2588  \u2588  \u2588 \u2580 \u2588 \u2588\u2584\u2584 \u2588\u2580\u2580                        |
+|                                                                             |
+|                                                                             |
+|                                                                             |
+|                                FastMCP 3.4.3                                |
+|                            https://gofastmcp.com                            |
+|                                                                             |
+|                 \U0001f5a5  Server:      change-management, 3.4.3                    |
+|                 \U0001f680 Deploy free: https://horizon.prefect.io                  |
+|                                                                             |
++-----------------------------------------------------------------------------+
+
+
+[07/08/26 17:44:02] INFO     Starting MCP server               transport.py:223
+                             'change-management' with                          
+                             transport 'stdio'                                 
+------------------------------ Captured log call ------------------------------
+INFO     mcp_use:mcpagent.py:182 \U0001f680 Initializing MCP agent and connecting to services...\nINFO     mcp_use:mcpagent.py:200 \U0001f50c Found 3 existing sessions\nINFO     mcp_use:mcpagent.py:212 \U0001f6e0\ufe0f Created 9 LangChain tools from client: 9 tools, 0 resources, 0 prompts\nINFO     mcp_use:mcpagent.py:241 \U0001f9f0 Found 9 tools across all connectors\nINFO     mcp_use:mcpagent.py:359 \U0001f9e0 Agent ready with tools: list_services, get_service_health, get_active_incidents, search_tickets, get_ticket_details, get_high_priority_tickets, list_recent_changes, get_change_details, get_changes_for_service\nINFO     mcp_use:mcpagent.py:249 \u2728 Agent initialization complete\nINFO     mcp_use:mcpagent.py:735 \U0001f4ac Received query: 'Show the details of ticket TKT-1001 and check the ...'\nINFO     mcp_use:mcpagent.py:736 \U0001f3c1 Starting agent execution\nINFO     mcp_use.agents.display:display.py:340 \U0001f527 Tool call: get_ticket_details with input: {'ticket_id': 'TKT-1001'}\nINFO     mcp_use.agents.display:display.py:346 \U0001f4c4 Tool result: {"found":true,"ticket":{"ticket_id":"TKT-1001","service_name":"Payment API","priority":"P1","stat...\nINFO     mcp_use.agents.display:display.py:340 \U0001f527 Tool call: get_service_health with input: {'service_name': 'Payment API'}\nINFO     mcp_use.agents.display:display.py:346 \U0001f4c4 Tool result: {"found":true,"service":{"service_name":"Payment API","service_id":"SVC-PAY-01","status":"UNHEALT...\nINFO     mcp_use:mcpagent.py:858 \u2705 Agent finished with output\nINFO     mcp_use:mcpagent.py:885 \U0001f527 Attempting structured output...\nERROR    mcp_use:mcpagent.py:910 \u274c Structured output failed: Error code: 400 - {'error': {'message': 'Tool choice is required, but model did not call a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '```json\\n{\\n  "user_query": "Please format the following information according to the specified schema. Extract and structure the relevant information from the content below.",\\n  "servers_used": [],\\n  "tools_used": [],\\n  "evidence": {\\n    "tickets": [\\n      {\\n        "id": "TKT-1001",\\n        "service": "Payment API",\\n        "priority": "P1 (high)",\\n        "status": "OPEN",\\n        "subject": "Card payment timeout",\\n        "description": "Customers report payment failures and timeout errors.",\\n        "created": "2026-07-08T09:58:00Z",\\n        "customer_impact": "High",\\n        "assigned_group": "Application Support"\\n      }\\n    ],\\n    "services": [\\n      {\\n        "name": "Payment API",\\n        "overall_status": "UNHEALTHY",\\n        "region": "India-West",\\n        "error_rate_percent": 38,\\n        "average_latency_ms": 1850,\\n        "cpu_usage_percent": 42,\\n        "memory_usage_percent": 61,\\n        "last_checked": "2026-07-08T10:00:00Z",\\n        "active_incidents": ["INC-OPS-101"]\\n      }\\n    ],\\n    "incidents": [\\n      {\\n        "id": "INC-OPS-101",\\n        "status": "Active",\\n        "related_service": "Payment API"\\n      }\\n    ]\\n  },\\n  "operations_summary": "The Payment API in the India\u2011West region is currently UNHEALTHY with a 38\\u202f% error rate and average latency of 1.85\\u202fs. A high\u2011priority (P1) ticket (TKT\u20111001) reports card payment timeouts, and an active incident (INC\u2011OPS\u2011101) is linked to the same service.",\\n  "possible_change_correlation": "Recent deployments or configuration changes to the Payment API could have introduced the error\u2011rate spike, leading to the observed timeouts. While the exact change is not yet identified, the timing of the incident suggests a possible correlation between a recent change and the degraded service health.",\\n  "recommended_next_actions": [\\n    "Investigate active incident INC\u2011OPS\u2011101 for root cause details.",\\n    "Escalate ticket TKT\u20111001 to the incident response team if not already done.",\\n    "Review recent change history (deployments, config updates) for the Payment API.",\\n    "Consider immediate mitigation: throttle traffic, roll back the most recent change, or scale resources to reduce latency.",\\n    "Communicate status updates to affected customers and internal stakeholders."\\n  ],\\n  "limitations": [\\n    "No real\u2011time access to the full change\u2011management logs; only a suggestion to view recent changes.",\\n    "Incident details are limited to the identifier (INC\u2011OPS\u2011101) without full description.",\\n    "Metrics are a snapshot taken at 2026\u201107\u201108\\u202f10:00\\u202fUTC and may have changed since."\\n  ]\\n}\\n```'}}\nERROR    mcp_use:mcpagent.py:919 \u274c Error running query: Failed to generate structured output: Error code: 400 - {'error': {'message': 'Tool choice is required, but model did not call a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '```json\\n{\\n  "user_query": "Please format the following information according to the specified schema. Extract and structure the relevant information from the content below.",\\n  "servers_used": [],\\n  "tools_used": [],\\n  "evidence": {\\n    "tickets": [\\n      {\\n        "id": "TKT-1001",\\n        "service": "Payment API",\\n        "priority": "P1 (high)",\\n        "status": "OPEN",\\n        "subject": "Card payment timeout",\\n        "description": "Customers report payment failures and timeout errors.",\\n        "created": "2026-07-08T09:58:00Z",\\n        "customer_impact": "High",\\n        "assigned_group": "Application Support"\\n      }\\n    ],\\n    "services": [\\n      {\\n        "name": "Payment API",\\n        "overall_status": "UNHEALTHY",\\n        "region": "India-West",\\n        "error_rate_percent": 38,\\n        "average_latency_ms": 1850,\\n        "cpu_usage_percent": 42,\\n        "memory_usage_percent": 61,\\n        "last_checked": "2026-07-08T10:00:00Z",\\n        "active_incidents": ["INC-OPS-101"]\\n      }\\n    ],\\n    "incidents": [\\n      {\\n        "id": "INC-OPS-101",\\n        "status": "Active",\\n        "related_service": "Payment API"\\n      }\\n    ]\\n  },\\n  "operations_summary": "The Payment API in the India\u2011West region is currently UNHEALTHY with a 38\\u202f% error rate and average latency of 1.85\\u202fs. A high\u2011priority (P1) ticket (TKT\u20111001) reports card payment timeouts, and an active incident (INC\u2011OPS\u2011101) is linked to the same service.",\\n  "possible_change_correlation": "Recent deployments or configuration changes to the Payment API could have introduced the error\u2011rate spike, leading to the observed timeouts. While the exact change is not yet identified, the timing of the incident suggests a possible correlation between a recent change and the degraded service health.",\\n  "recommended_next_actions": [\\n    "Investigate active incident INC\u2011OPS\u2011101 for root cause details.",\\n    "Escalate ticket TKT\u20111001 to the incident response team if not already done.",\\n    "Review recent change history (deployments, config updates) for the Payment API.",\\n    "Consider immediate mitigation: throttle traffic, roll back the most recent change, or scale resources to reduce latency.",\\n    "Communicate status updates to affected customers and internal stakeholders."\\n  ],\\n  "limitations": [\\n    "No real\u2011time access to the full change\u2011management logs; only a suggestion to view recent changes.",\\n    "Incident details are limited to the identifier (INC\u2011OPS\u2011101) without full description.",\\n    "Metrics are a snapshot taken at 2026\u201107\u201108\\u202f10:00\\u202fUTC and may have changed since."\\n  ]\\n}\\n```'}}\nINFO     mcp_use:mcpagent.py:921 \U0001f9f9 Cleaning up resources after error\nINFO     mcp_use:mcpagent.py:1079 \U0001f50c Closing agent and cleaning up resources...\nINFO     mcp_use:mcpagent.py:1087 \U0001f504 Closing sessions through client\nINFO     mcp_use:mcpagent.py:1102 \U0001f44b Agent closed successfully\nERROR    mcp_use:mcpagent.py:555 \u274c Error during agent execution: Failed to generate structured output: Error code: 400 - {'error': {'message': 'Tool choice is required, but model did not call a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '```json\\n{\\n  "user_query": "Please format the following information according to the specified schema. Extract and structure the relevant information from the content below.",\\n  "servers_used": [],\\n  "tools_used": [],\\n  "evidence": {\\n    "tickets": [\\n      {\\n        "id": "TKT-1001",\\n        "service": "Payment API",\\n        "priority": "P1 (high)",\\n        "status": "OPEN",\\n        "subject": "Card payment timeout",\\n        "description": "Customers report payment failures and timeout errors.",\\n        "created": "2026-07-08T09:58:00Z",\\n        "customer_impact": "High",\\n        "assigned_group": "Application Support"\\n      }\\n    ],\\n    "services": [\\n      {\\n        "name": "Payment API",\\n        "overall_status": "UNHEALTHY",\\n        "region": "India-West",\\n        "error_rate_percent": 38,\\n        "average_latency_ms": 1850,\\n        "cpu_usage_percent": 42,\\n        "memory_usage_percent": 61,\\n        "last_checked": "2026-07-08T10:00:00Z",\\n        "active_incidents": ["INC-OPS-101"]\\n      }\\n    ],\\n    "incidents": [\\n      {\\n        "id": "INC-OPS-101",\\n        "status": "Active",\\n        "related_service": "Payment API"\\n      }\\n    ]\\n  },\\n  "operations_summary": "The Payment API in the India\u2011West region is currently UNHEALTHY with a 38\\u202f% error rate and average latency of 1.85\\u202fs. A high\u2011priority (P1) ticket (TKT\u20111001) reports card payment timeouts, and an active incident (INC\u2011OPS\u2011101) is linked to the same service.",\\n  "possible_change_correlation": "Recent deployments or configuration changes to the Payment API could have introduced the error\u2011rate spike, leading to the observed timeouts. While the exact change is not yet identified, the timing of the incident suggests a possible correlation between a recent change and the degraded service health.",\\n  "recommended_next_actions": [\\n    "Investigate active incident INC\u2011OPS\u2011101 for root cause details.",\\n    "Escalate ticket TKT\u20111001 to the incident response team if not already done.",\\n    "Review recent change history (deployments, config updates) for the Payment API.",\\n    "Consider immediate mitigation: throttle traffic, roll back the most recent change, or scale resources to reduce latency.",\\n    "Communicate status updates to affected customers and internal stakeholders."\\n  ],\\n  "limitations": [\\n    "No real\u2011time access to the full change\u2011management logs; only a suggestion to view recent changes.",\\n    "Incident details are limited to the identifier (INC\u2011OPS\u2011101) without full description.",\\n    "Metrics are a snapshot taken at 2026\u201107\u201108\\u202f10:00\\u202fUTC and may have changed since."\\n  ]\\n}\\n```'}}
+__________________ test_host_multi_server_operations_summary __________________
+
+    @pytest.mark.integration
+    @pytest.mark.asyncio
+    async def test_host_multi_server_operations_summary():
+        """Test 14 - Integration Test: Operations summary of all unhealthy services, incidents, and tickets."""
+        groq_api_key = os.getenv("GROQ_API_KEY")
+        if not groq_api_key:
+            pytest.skip("GROQ_API_KEY not found in environment")
+    
+        llm = ChatGroq(
+            model=os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"),
+            temperature=0,
+            api_key=groq_api_key
+        )
+        client = MCPClient(MCP_CONFIG)
+        agent = MCPAgent(
+            llm=llm,
+            client=client,
+            max_steps=10,
+            system_prompt=system_prompt
+        )
+    
+        try:
+            await client.create_all_sessions()
+            query = "Give me an operations summary of all unhealthy or degraded services, active incidents, and high-priority tickets."
+>           response = await agent.run(query, output_schema=OperationsResponse)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_host_queries.py:115: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\mcp_use\agents\mcpagent.py:550: in run
+    result, steps_taken = await self._consume_and_return(generator)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\mcp_use\agents\mcpagent.py:479: in _consume_and_return
+    async for item in generator:
+.venv\Lib\site-packages\mcp_use\agents\mcpagent.py:751: in stream
+    async for chunk in self._agent_executor.astream(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <langgraph.graph.state.CompiledStateGraph object at 0x00000292C27A96D0>
+input = {'messages': [HumanMessage(content='Give me an operations summary of all unhealthy or degraded services, active incide...32, 'total_tokens': 956, 'input_token_details': {'cache_read': 512}, 'output_token_details': {'reasoning': 15}}), ...]}
+config = {'tags': [], 'metadata': {'ls_integration': 'langchain_create_agent'}, 'callbacks': None, 'recursion_limit': 20, ...}
+context = None, stream_mode = 'updates', print_mode = ()
+output_keys = ['messages', 'jump_to', 'structured_response', 'thread_model_call_count', 'run_model_call_count']
+interrupt_before = None, interrupt_after = None, durability = None
+control = None, subgraphs = False, debug = None, version = 'v1', kwargs = {}
+
+    async def astream(
+        self,
+        input: InputT | Command | None,
+        config: RunnableConfig | None = None,
+        *,
+        context: ContextT | None = None,
+        stream_mode: StreamMode | Sequence[StreamMode] | None = None,
+        print_mode: StreamMode | Sequence[StreamMode] = (),
+        output_keys: str | Sequence[str] | None = None,
+        interrupt_before: All | Sequence[str] | None = None,
+        interrupt_after: All | Sequence[str] | None = None,
+        durability: Durability | None = None,
+        control: RunControl | None = None,
+        subgraphs: bool = False,
+        debug: bool | None = None,
+        version: Literal["v1", "v2"] = "v1",
+        **kwargs: Unpack[DeprecatedKwargs],
+    ) -> AsyncIterator[dict[str, Any] | Any]:
+        """Asynchronously stream graph steps for a single input.
+    
+        Args:
+            input: The input to the graph.
+            config: The configuration to use for the run.
+            context: The static context to use for the run.
+                !!! version-added "Added in version 0.6.0"
+            stream_mode: The mode to stream output, defaults to `self.stream_mode`.
+    
+                Options are:
+    
+                - `"values"`: Emit all values in the state after each step, including interrupts.
+                    When used with functional API, values are emitted once at the end of the workflow.
+                - `"updates"`: Emit only the node or task names and updates returned by the nodes or tasks after each step.
+                    If multiple updates are made in the same step (e.g. multiple nodes are run) then those updates are emitted separately.
+                - `"custom"`: Emit custom data from inside nodes or tasks using `StreamWriter`.
+                - `"messages"`: Emit LLM messages token-by-token together with metadata for any LLM invocations inside nodes or tasks.
+                    - Will be emitted as 2-tuples `(LLM token, metadata)`.
+                - `"checkpoints"`: Emit an event when a checkpoint is created, in the same format as returned by `get_state()`.
+                - `"tasks"`: Emit events when tasks start and finish, including their results and errors.
+                - `"debug"`: Emit debug events with as much information as possible for each step.
+    
+                You can pass a list as the `stream_mode` parameter to stream multiple modes at once.
+                The streamed outputs will be tuples of `(mode, data)`.
+    
+                See [LangGraph streaming guide](https://docs.langchain.com/oss/python/langgraph/streaming) for more details.
+            print_mode: Accepts the same values as `stream_mode`, but only prints the output to the console, for debugging purposes.
+    
+                Does not affect the output of the graph in any way.
+            output_keys: The keys to stream, defaults to all non-context channels.
+            interrupt_before: Nodes to interrupt before, defaults to all nodes in the graph.
+            interrupt_after: Nodes to interrupt after, defaults to all nodes in the graph.
+            durability: The durability mode for the graph execution, defaults to `"async"`.
+    
+                Options are:
+    
+                - `"sync"`: Changes are persisted synchronously before the next step starts.
+                - `"async"`: Changes are persisted asynchronously while the next step executes.
+                - `"exit"`: Changes are persisted only when the graph exits.
+            control: Optional run control used to request cooperative drain.
+            subgraphs: Whether to stream events from inside subgraphs, defaults to `False`.
+    
+                If `True`, the events will be emitted as tuples `(namespace, data)`,
+                or `(namespace, mode, data)` if `stream_mode` is a list,
+                where `namespace` is a tuple with the path to the node where a subgraph is invoked,
+                e.g. `("parent_node:<task_id>", "child_node:<task_id>")`.
+    
+                See [LangGraph streaming guide](https://docs.langchain.com/oss/python/langgraph/streaming) for more details.
+    
+        Yields:
+            The output of each step in the graph. The output shape depends on the `stream_mode`.
+        """
+        if (checkpoint_during := kwargs.get("checkpoint_during")) is not None:
+            warnings.warn(
+                "`checkpoint_during` is deprecated and will be removed. Please use `durability` instead.",
+                category=LangGraphDeprecatedSinceV10,
+                stacklevel=2,
+            )
+            if durability is not None:
+                raise ValueError(
+                    "Cannot use both `checkpoint_during` and `durability` parameters. Please use `durability` instead."
+                )
+            durability = "async" if checkpoint_during else "exit"
+    
+        if stream_mode is None:
+            # if being called as a node in another graph, default to values mode
+            # but don't overwrite stream_mode arg if provided
+            stream_mode = (
+                "values"
+                if config is not None and CONFIG_KEY_TASK_ID in config.get(CONF, {})
+                else self.stream_mode
+            )
+        if debug or self.debug:
+            print_mode = ["updates", "values"]
+    
+        stream = AsyncQueue()
+        aioloop = asyncio.get_running_loop()
+        stream_put = cast(
+            Callable[[StreamChunk], None],
+            partial(aioloop.call_soon_threadsafe, stream.put_nowait),
+        )
+    
+        config = ensure_config(self.config, config)
+        run_manager = None
+        try:
+            # assign defaults
+            (
+                stream_modes,
+                output_keys,
+                interrupt_before_,
+                interrupt_after_,
+                checkpointer,
+                store,
+                cache,
+                durability_,
+            ) = self._defaults(
+                config,
+                stream_mode=stream_mode,
+                print_mode=print_mode,
+                output_keys=output_keys,
+                interrupt_before=interrupt_before,
+                interrupt_after=interrupt_after,
+                durability=durability,
+            )
+            callback_manager = get_async_callback_manager_for_config(config)
+            if "messages" in stream_modes and version != "v2":
+                # Strip any inherited v2 messages handler so a v1 stream
+                # does not get routed through the content-block event
+                # protocol. Leave v1 handlers in place — an outer
+                # astream(stream_mode="messages", subgraphs=True) relies
+                # on its inheritable handler to observe events emitted
+                # by inner astream(stream_mode="messages") calls.
+                callback_manager.handlers = [
+                    h
+                    for h in callback_manager.handlers
+                    if not isinstance(h, StreamMessagesHandlerV2)
+                ]
+                callback_manager.inheritable_handlers = [
+                    h
+                    for h in callback_manager.inheritable_handlers
+                    if not isinstance(h, StreamMessagesHandlerV2)
+                ]
+            if "ls_integration" not in callback_manager.metadata:
+                callback_manager.add_metadata({"ls_integration": "langgraph"})
+            run_manager = await callback_manager.on_chain_start(
+                None,
+                input,
+                name=config.get("run_name", self.get_name()),
+                run_id=config.get("run_id"),
+            )
+            graph_callback_manager = get_async_graph_callback_manager_for_config(
+                config,
+                run_id=run_manager.run_id,
+            )
+            # if running from astream_log() run each proc with streaming
+            do_stream = (
+                next(
+                    (
+                        True
+                        for h in run_manager.handlers
+                        if isinstance(h, _StreamingCallbackHandler)
+                        and not isinstance(h, StreamMessagesHandler)
+                    ),
+                    False,
+                )
+                if _StreamingCallbackHandler is not None
+                else False
+            )
+            if checkpointer is None and durability is not None:
+                warnings.warn(
+                    "`durability` has no effect when no checkpointer is present.",
+                )
+            # set up subgraph checkpointing
+            if self.checkpointer is True:
+                ns = cast(str, config[CONF][CONFIG_KEY_CHECKPOINT_NS])
+                config[CONF][CONFIG_KEY_CHECKPOINT_NS] = recast_checkpoint_ns(ns)
+            # set up messages stream mode
+            if "messages" in stream_modes:
+                # namespace can be None in a root level graph?
+                ns_ = cast(str | None, config[CONF].get(CONFIG_KEY_CHECKPOINT_NS))
+                use_stream_messages_v2 = bool(
+                    version == "v2" and config[CONF].get(CONFIG_KEY_STREAM_MESSAGES_V2)
+                )
+                messages_handler_cls = (
+                    StreamMessagesHandlerV2
+                    if use_stream_messages_v2
+                    else StreamMessagesHandler
+                )
+                run_manager.inheritable_handlers.append(
+                    messages_handler_cls(
+                        stream_put,
+                        subgraphs,
+                        parent_ns=tuple(ns_.split(NS_SEP)) if ns_ else None,
+                    )
+                )
+    
+            # set up tools stream mode
+            if "tools" in stream_modes:
+                ns_tools = cast(str | None, config[CONF].get(CONFIG_KEY_CHECKPOINT_NS))
+                run_manager.inheritable_handlers.append(
+                    StreamToolCallHandler(
+                        stream_put,
+                        subgraphs,
+                        parent_ns=tuple(ns_tools.split(NS_SEP)) if ns_tools else None,
+                    )
+                )
+    
+            # set up custom stream mode
+            def stream_writer(c: Any) -> None:
+                aioloop.call_soon_threadsafe(
+                    stream.put_nowait,
+                    (
+                        tuple(
+                            get_config()[CONF][CONFIG_KEY_CHECKPOINT_NS].split(NS_SEP)[
+                                :-1
+                            ]
+                        ),
+                        "custom",
+                        c,
+                    ),
+                )
+    
+            if "custom" in stream_modes:
+    
+                def stream_writer(c: Any) -> None:
+                    aioloop.call_soon_threadsafe(
+                        stream.put_nowait,
+                        (
+                            tuple(
+                                get_config()[CONF][CONFIG_KEY_CHECKPOINT_NS].split(
+                                    NS_SEP
+                                )[:-1]
+                            ),
+                            "custom",
+                            c,
+                        ),
+                    )
+            elif CONFIG_KEY_STREAM in config[CONF]:
+                stream_writer = config[CONF][CONFIG_KEY_RUNTIME].stream_writer
+            else:
+    
+                def stream_writer(c: Any) -> None:
+                    pass
+    
+            # set durability mode for subgraphs
+            if durability is not None:
+                config[CONF][CONFIG_KEY_DURABILITY] = durability_
+    
+            # build server_info from metadata + parent runtime
+            parent_runtime = config[CONF].get(CONFIG_KEY_RUNTIME, DEFAULT_RUNTIME)
+            server_info = _build_server_info(config, parent_runtime)
+    
+            runtime = Runtime(
+                context=_coerce_context(self.context_schema, context),
+                store=store,
+                stream_writer=stream_writer,
+                previous=None,
+                execution_info=None,
+                server_info=server_info,
+                control=control or parent_runtime.control or RunControl(),
+            )
+            runtime = parent_runtime.merge(runtime)
+            config[CONF][CONFIG_KEY_RUNTIME] = runtime
+    
+            # resolve mappers for v2 stream coercion
+            _output_mapper = self._output_mapper if version == "v2" else None
+            _state_mapper = self._state_mapper if version == "v2" else None
+    
+            async def aemit_graph_lifecycle_events(loop: AsyncPregelLoop) -> None:
+                while (event := loop._pop_lifecycle_event()) is not None:
+                    if isinstance(event, GraphResumeEvent):
+                        await graph_callback_manager.on_resume(
+                            GraphResumeEvent(
+                                run_id=graph_callback_manager.run_id,
+                                status=event.status,
+                                checkpoint_id=event.checkpoint_id,
+                                checkpoint_ns=event.checkpoint_ns,
+                            )
+                        )
+                    else:
+                        await graph_callback_manager.on_interrupt(
+                            GraphInterruptEvent(
+                                run_id=graph_callback_manager.run_id,
+                                status=event.status,
+                                checkpoint_id=event.checkpoint_id,
+                                checkpoint_ns=event.checkpoint_ns,
+                                interrupts=event.interrupts,
+                            )
+                        )
+    
+            async with AsyncPregelLoop(
+                input,
+                stream=StreamProtocol(stream.put_nowait, stream_modes),
+                config=config,
+                store=store,
+                cache=cache,
+                checkpointer=checkpointer,
+                nodes=self.nodes,
+                specs=self.channels,
+                output_keys=output_keys,
+                input_keys=self.input_channels,
+                stream_keys=self.stream_channels_asis,
+                interrupt_before=interrupt_before_,
+                interrupt_after=interrupt_after_,
+                manager=run_manager,
+                durability=durability_,
+                trigger_to_nodes=self.trigger_to_nodes,
+                migrate_checkpoint=self._migrate_checkpoint,
+                retry_policy=self.retry_policy,
+                cache_policy=self.cache_policy,
+                has_graph_lifecycle_callbacks=bool(graph_callback_manager.handlers),
+            ) as loop:
+                await aemit_graph_lifecycle_events(loop)
+                # create runner
+                runner = PregelRunner(
+                    submit=config[CONF].get(
+                        CONFIG_KEY_RUNNER_SUBMIT, weakref.WeakMethod(loop.submit)
+                    ),
+                    put_writes=weakref.WeakMethod(loop.put_writes),
+                    use_astream=do_stream,
+                    node_finished=config[CONF].get(CONFIG_KEY_NODE_FINISHED),
+                    node_error_handler_map=self.node_error_handler_map,
+                    aschedule_error_handler=loop.aschedule_error_handler,
+                )
+                # enable subgraph streaming
+                if subgraphs:
+                    loop.config[CONF][CONFIG_KEY_STREAM] = StreamProtocol(
+                        stream_put, stream_modes
+                    )
+                # enable concurrent streaming
+                get_waiter: Callable[[], asyncio.Task[None]] | None = None
+                _cleanup_waiter: Callable[[], Awaitable[None]] | None = None
+                if (
+                    self.stream_eager
+                    or subgraphs
+                    or "messages" in stream_modes
+                    or "custom" in stream_modes
+                ):
+                    # Keep a single waiter task alive; ensure cleanup on exit.
+                    waiter: asyncio.Task[None] | None = None
+    
+                    def get_waiter() -> asyncio.Task[None]:
+                        nonlocal waiter
+                        if waiter is None or waiter.done():
+                            waiter = aioloop.create_task(stream.wait())
+    
+                            def _clear(t: asyncio.Task[None]) -> None:
+                                nonlocal waiter
+                                if waiter is t:
+                                    waiter = None
+    
+                            waiter.add_done_callback(_clear)
+                        return waiter
+    
+                    async def _cleanup_waiter() -> None:
+                        """Wake pending waiter and/or cancel+await to avoid pending tasks."""
+                        nonlocal waiter
+                        # Try to wake via semaphore like SyncPregelLoop
+                        with contextlib.suppress(Exception):
+                            if hasattr(stream, "_count"):
+                                stream._count.release()
+                        t = waiter
+                        waiter = None
+                        if t is not None and not t.done():
+                            t.cancel()
+                            with contextlib.suppress(asyncio.CancelledError):
+                                await t
+    
+                # Similarly to Bulk Synchronous Parallel / Pregel model
+                # computation proceeds in steps, while there are channel updates
+                # channel updates from step N are only visible in step N+1
+                # channels are guaranteed to be immutable for the duration of the step,
+                # with channel updates applied only at the transition between steps
+                try:
+                    while loop.tick():
+                        for task in await loop.amatch_cached_writes():
+                            loop.output_writes(task.id, task.writes, cached=True)
+                        async for _ in runner.atick(
+                            [t for t in loop.tasks.values() if not t.writes],
+                            timeout=self.step_timeout,
+                            get_waiter=get_waiter,
+                            schedule_task=loop.aaccept_push,
+                        ):
+                            # emit output
+                            for o in _output(
+                                stream_mode,
+                                print_mode,
+                                subgraphs,
+                                stream.get_nowait,
+                                asyncio.QueueEmpty,
+                                version,
+                                _output_mapper,
+                                _state_mapper,
+                            ):
+                                yield o
+                        loop.after_tick()
+                        await aemit_graph_lifecycle_events(loop)
+                        # wait for checkpoint
+                        if durability_ == "sync":
+                            await cast(asyncio.Future, loop._put_checkpoint_fut)
+                finally:
+                    # ensure waiter doesn't remain pending on cancel/shutdown
+                    if _cleanup_waiter is not None:
+                        await _cleanup_waiter()
+    
+            await aemit_graph_lifecycle_events(loop)
+    
+            # emit output
+            for o in _output(
+                stream_mode,
+                print_mode,
+                subgraphs,
+                stream.get_nowait,
+                asyncio.QueueEmpty,
+                version,
+                _output_mapper,
+                _state_mapper,
+            ):
+                yield o
+            # handle exit
+            if loop.status == "out_of_steps":
+                msg = create_error_message(
+                    message=(
+                        f"Recursion limit of {config['recursion_limit']} reached "
+                        "without hitting a stop condition. You can increase the "
+                        "limit by setting the `recursion_limit` config key."
+                    ),
+                    error_code=ErrorCode.GRAPH_RECURSION_LIMIT,
+                )
+>               raise GraphRecursionError(msg)
+E               langgraph.errors.GraphRecursionError: Recursion limit of 20 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+E               For troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT
+
+.venv\Lib\site-packages\langgraph\pregel\main.py:3459: GraphRecursionError
+---------------------------- Captured stdout call -----------------------------
+2026-07-08 17:44:28,460 - mcp_use - INFO - \U0001f680 Initializing MCP agent and connecting to services...\n2026-07-08 17:44:28,460 - mcp_use - INFO - \U0001f50c Found 3 existing sessions\n2026-07-08 17:44:28,507 - mcp_use - INFO - \U0001f6e0\ufe0f Created 9 LangChain tools from client: 9 tools, 0 resources, 0 prompts\n2026-07-08 17:44:28,507 - mcp_use - INFO - \U0001f9f0 Found 9 tools across all connectors\n2026-07-08 17:44:28,507 - mcp_use - INFO - \U0001f9e0 Agent ready with tools: list_services, get_service_health, get_active_incidents, search_tickets, get_ticket_details, get_high_priority_tickets, list_recent_changes, get_change_details, get_changes_for_service\n2026-07-08 17:44:28,516 - mcp_use - INFO - \u2728 Agent initialization complete\n2026-07-08 17:44:28,516 - mcp_use - INFO - \U0001f4ac Received query: 'Give me an operations summary of all unhealthy or ...'\n2026-07-08 17:44:28,516 - mcp_use - INFO - \U0001f3c1 Starting agent execution\n2026-07-08 17:44:29,133 - mcp_use.agents.display - INFO - \U0001f527 Tool call: list_services with input: {}\n2026-07-08 17:44:29,134 - mcp_use.agents.display - INFO - \U0001f4c4 Tool result: {"count":5,"services":[{"service_name":"Payment API","status":"UNHEALTHY","region":"India-West"},...\n2026-07-08 17:44:29,894 - mcp_use.agents.display - INFO - \U0001f527 Tool call: get_active_incidents with input: {}\n2026-07-08 17:44:29,894 - mcp_use.agents.display - INFO - \U0001f4c4 Tool result: {"count":2,"incidents":[{"incident_id":"INC-OPS-101","service_name":"Payment API","severity":"SEV...\n2026-07-08 17:44:34,496 - mcp_use.agents.display - INFO - \U0001f527 Tool call: get_high_priority_tickets with input: {}\n2026-07-08 17:44:34,496 - mcp_use.agents.display - INFO - \U0001f4c4 Tool result: {"count":6,"tickets":[{"ticket_id":"TKT-1001","service_name":"Payment API","priority":"P1","statu...\n2026-07-08 17:44:35,208 - mcp_use.agents.display - INFO - \U0001f527 Tool call: get_changes_for_service with input: {'service_name': 'Payment API'}\n2026-07-08 17:44:35,208 - mcp_use.agents.display - INFO - \U0001f4c4 Tool result: {"service_name":"Payment API","count":1,"changes":[{"change_id":"CHG-2001","change_type":"APPLICA...\n2026-07-08 17:44:50,052 - mcp_use.agents.display - INFO - \U0001f527 Tool call: get_changes_for_service with input: {'service_name': 'Checkout Service'}\n2026-07-08 17:44:50,053 - mcp_use.agents.display - INFO - \U0001f4c4 Tool result: {"service_name":"Checkout Service","count":1,"changes":[{"change_id":"CHG-2004","change_type":"AP...\n2026-07-08 17:44:50,053 - mcp_use - ERROR - \u274c Error running query: Recursion limit of 20 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT\n2026-07-08 17:44:50,053 - mcp_use - INFO - \U0001f9f9 Cleaning up resources after error\n2026-07-08 17:44:50,054 - mcp_use - INFO - \U0001f50c Closing agent and cleaning up resources...\n2026-07-08 17:44:50,054 - mcp_use - INFO - \U0001f504 Closing sessions through client\n2026-07-08 17:44:50,857 - mcp_use - INFO - \U0001f44b Agent closed successfully\n2026-07-08 17:44:50,857 - mcp_use - ERROR - \u274c Error during agent execution: Recursion limit of 20 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT
+---------------------------- Captured stderr call -----------------------------
+
+
++-----------------------------------------------------------------------------+
+|                                                                             |
+|                                                                             |
+|                        \u2584\u2580\u2580 \u2584\u2580\u2588 \u2588\u2580\u2580 \u2580\u2588\u2580 \u2588\u2580\u2584\u2580\u2588 \u2588\u2580\u2580 \u2588\u2580\u2588                        |
+|                        \u2588\u2580  \u2588\u2580\u2588 \u2584\u2584\u2588  \u2588  \u2588 \u2580 \u2588 \u2588\u2584\u2584 \u2588\u2580\u2580                        |
+|                                                                             |
+|                                                                             |
+|                                                                             |
+|                                FastMCP 3.4.3                                |
+|                            https://gofastmcp.com                            |
+|                                                                             |
+|                 \U0001f5a5  Server:      service-health, 3.4.3                       |
+|                 \U0001f680 Deploy free: https://horizon.prefect.io                  |
+|                                                                             |
++-----------------------------------------------------------------------------+
+
+
+[07/08/26 17:44:22] INFO     Starting MCP server               transport.py:223
+                             'service-health' with transport                   
+                             'stdio'                                           
+
+
++-----------------------------------------------------------------------------+
+|                                                                             |
+|                                                                             |
+|                        \u2584\u2580\u2580 \u2584\u2580\u2588 \u2588\u2580\u2580 \u2580\u2588\u2580 \u2588\u2580\u2584\u2580\u2588 \u2588\u2580\u2580 \u2588\u2580\u2588                        |
+|                        \u2588\u2580  \u2588\u2580\u2588 \u2584\u2584\u2588  \u2588  \u2588 \u2580 \u2588 \u2588\u2584\u2584 \u2588\u2580\u2580                        |
+|                                                                             |
+|                                                                             |
+|                                                                             |
+|                                FastMCP 3.4.3                                |
+|                            https://gofastmcp.com                            |
+|                                                                             |
+|                 \U0001f5a5  Server:      support-ticket, 3.4.3                       |
+|                 \U0001f680 Deploy free: https://horizon.prefect.io                  |
+|                                                                             |
++-----------------------------------------------------------------------------+
+
+
+[07/08/26 17:44:25] INFO     Starting MCP server               transport.py:223
+                             'support-ticket' with transport                   
+                             'stdio'                                           
+
+
++-----------------------------------------------------------------------------+
+|                                                                             |
+|                                                                             |
+|                        \u2584\u2580\u2580 \u2584\u2580\u2588 \u2588\u2580\u2580 \u2580\u2588\u2580 \u2588\u2580\u2584\u2580\u2588 \u2588\u2580\u2580 \u2588\u2580\u2588                        |
+|                        \u2588\u2580  \u2588\u2580\u2588 \u2584\u2584\u2588  \u2588  \u2588 \u2580 \u2588 \u2588\u2584\u2584 \u2588\u2580\u2580                        |
+|                                                                             |
+|                                                                             |
+|                                                                             |
+|                                FastMCP 3.4.3                                |
+|                            https://gofastmcp.com                            |
+|                                                                             |
+|                 \U0001f5a5  Server:      change-management, 3.4.3                    |
+|                 \U0001f680 Deploy free: https://horizon.prefect.io                  |
+|                                                                             |
++-----------------------------------------------------------------------------+
+
+
+[07/08/26 17:44:28] INFO     Starting MCP server               transport.py:223
+                             'change-management' with                          
+                             transport 'stdio'                                 
+------------------------------ Captured log call ------------------------------
+INFO     mcp_use:mcpagent.py:182 \U0001f680 Initializing MCP agent and connecting to services...\nINFO     mcp_use:mcpagent.py:200 \U0001f50c Found 3 existing sessions\nINFO     mcp_use:mcpagent.py:212 \U0001f6e0\ufe0f Created 9 LangChain tools from client: 9 tools, 0 resources, 0 prompts\nINFO     mcp_use:mcpagent.py:241 \U0001f9f0 Found 9 tools across all connectors\nINFO     mcp_use:mcpagent.py:359 \U0001f9e0 Agent ready with tools: list_services, get_service_health, get_active_incidents, search_tickets, get_ticket_details, get_high_priority_tickets, list_recent_changes, get_change_details, get_changes_for_service\nINFO     mcp_use:mcpagent.py:249 \u2728 Agent initialization complete\nINFO     mcp_use:mcpagent.py:735 \U0001f4ac Received query: 'Give me an operations summary of all unhealthy or ...'\nINFO     mcp_use:mcpagent.py:736 \U0001f3c1 Starting agent execution\nINFO     mcp_use.agents.display:display.py:340 \U0001f527 Tool call: list_services with input: {}\nINFO     mcp_use.agents.display:display.py:346 \U0001f4c4 Tool result: {"count":5,"services":[{"service_name":"Payment API","status":"UNHEALTHY","region":"India-West"},...\nINFO     mcp_use.agents.display:display.py:340 \U0001f527 Tool call: get_active_incidents with input: {}\nINFO     mcp_use.agents.display:display.py:346 \U0001f4c4 Tool result: {"count":2,"incidents":[{"incident_id":"INC-OPS-101","service_name":"Payment API","severity":"SEV...\nINFO     mcp_use.agents.display:display.py:340 \U0001f527 Tool call: get_high_priority_tickets with input: {}\nINFO     mcp_use.agents.display:display.py:346 \U0001f4c4 Tool result: {"count":6,"tickets":[{"ticket_id":"TKT-1001","service_name":"Payment API","priority":"P1","statu...\nINFO     mcp_use.agents.display:display.py:340 \U0001f527 Tool call: get_changes_for_service with input: {'service_name': 'Payment API'}\nINFO     mcp_use.agents.display:display.py:346 \U0001f4c4 Tool result: {"service_name":"Payment API","count":1,"changes":[{"change_id":"CHG-2001","change_type":"APPLICA...\nINFO     mcp_use.agents.display:display.py:340 \U0001f527 Tool call: get_changes_for_service with input: {'service_name': 'Checkout Service'}\nINFO     mcp_use.agents.display:display.py:346 \U0001f4c4 Tool result: {"service_name":"Checkout Service","count":1,"changes":[{"change_id":"CHG-2004","change_type":"AP...\nERROR    mcp_use:mcpagent.py:919 \u274c Error running query: Recursion limit of 20 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT\nINFO     mcp_use:mcpagent.py:921 \U0001f9f9 Cleaning up resources after error\nINFO     mcp_use:mcpagent.py:1079 \U0001f50c Closing agent and cleaning up resources...\nINFO     mcp_use:mcpagent.py:1087 \U0001f504 Closing sessions through client\nINFO     mcp_use:mcpagent.py:1102 \U0001f44b Agent closed successfully\nERROR    mcp_use:mcpagent.py:555 \u274c Error during agent execution: Recursion limit of 20 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT
+============================== warnings summary ===============================
+.venv\Lib\site-packages\mcp_use\client\auth\oauth.py:26
+  C:\Users\Poonam Bhatt\Desktop\mcp_enterprise_operations_assistant\.venv\Lib\site-packages\mcp_use\client\auth\oauth.py:26: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    class ServerOAuthMetadata(BaseModel):
+
+.venv\Lib\site-packages\mcp_use\client\auth\oauth.py:99
+  C:\Users\Poonam Bhatt\Desktop\mcp_enterprise_operations_assistant\.venv\Lib\site-packages\mcp_use\client\auth\oauth.py:99: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    class ClientRegistrationResponse(BaseModel):
+
+.venv\Lib\site-packages\mcp_use\__init__.py:19
+  C:\Users\Poonam Bhatt\Desktop\mcp_enterprise_operations_assistant\.venv\Lib\site-packages\mcp_use\__init__.py:19: DeprecationWarning: mcp_use.config is deprecated. Use mcp_use.client.config. This import will be removed in version 2.0.0
+    from .config import load_config_file
+
+.venv\Lib\site-packages\mcp_use\__init__.py:20
+  C:\Users\Poonam Bhatt\Desktop\mcp_enterprise_operations_assistant\.venv\Lib\site-packages\mcp_use\__init__.py:20: DeprecationWarning: mcp_use.connectors is deprecated. Use mcp_use.client.connectors. This import will be removed in version 2.0.0
+    from .connectors import BaseConnector, HttpConnector, StdioConnector, WebSocketConnector
+
+.venv\Lib\site-packages\mcp_use\__init__.py:22
+  C:\Users\Poonam Bhatt\Desktop\mcp_enterprise_operations_assistant\.venv\Lib\site-packages\mcp_use\__init__.py:22: DeprecationWarning: mcp_use.session.MCPSession is deprecated. Use mcp_use.client.session.MCPSession. This import will be removed in version 2.0.0
+    from .session import MCPSession
+
+tests\test_host_queries.py:13
+  C:\Users\Poonam Bhatt\Desktop\mcp_enterprise_operations_assistant\tests\test_host_queries.py:13: PytestUnknownMarkWarning: Unknown pytest.mark.integration - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.integration
+
+tests\test_host_queries.py:54
+  C:\Users\Poonam Bhatt\Desktop\mcp_enterprise_operations_assistant\tests\test_host_queries.py:54: PytestUnknownMarkWarning: Unknown pytest.mark.integration - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.integration
+
+tests\test_host_queries.py:91
+  C:\Users\Poonam Bhatt\Desktop\mcp_enterprise_operations_assistant\tests\test_host_queries.py:91: PytestUnknownMarkWarning: Unknown pytest.mark.integration - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.integration
+
+tests/test_host_queries.py: 27 warnings
+  C:\Users\Poonam Bhatt\Desktop\mcp_enterprise_operations_assistant\.venv\Lib\site-packages\mcp_use\agents\adapters\base.py:324: DeprecationWarning: The 'tools' property is deprecated and may return stale data. Use 'await list_tools()' instead to ensure fresh data.
+    return bool(getattr(connector, "tools", None))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_host_queries.py::test_host_payment_api_change_query - Runti...
+FAILED tests/test_host_queries.py::test_host_ticket_service_health_query - Ru...
+FAILED tests/test_host_queries.py::test_host_multi_server_operations_summary
+============ 3 failed, 11 passed, 35 warnings in 91.48s (0:01:31) =============
