@@ -1,0 +1,51 @@
+[
+  {
+    "user_query": "Why is the Payment API unhealthy and is there any recent change that may be related?",
+    "operations_summary": "The Payment API is currently unhealthy with a 38% error rate and 1850ms average latency. There is an active incident INC-OPS-101. A recent high-risk application release change CHG-2001 was implemented at 09:10:00 on 2026-07-08, which may be related to the current unhealthy status.",
+    "servers_used": [
+      "MCP servers"
+    ],
+    "tools_used": [
+      "get_service_health",
+      "get_changes_for_service"
+    ],
+    "status": "PASS",
+    "evidence": {
+      "services": [
+        {
+          "service_name": "Payment API",
+          "status": "UNHEALTHY",
+          "error_rate_percent": 38.0,
+          "average_latency_ms": 1850,
+          "cpu_usage_percent": 42,
+          "memory_usage_percent": 61
+        }
+      ],
+      "incidents": [
+        {
+          "incident_id": "INC-OPS-101"
+        }
+      ],
+      "tickets": [],
+      "changes": [
+        {
+          "change_id": "CHG-2001",
+          "change_type": "APPLICATION_RELEASE",
+          "risk": "HIGH",
+          "implemented_at": "2026-07-08T09:10:00",
+          "summary": "Released payment-service changes for timeout handling and retry logic.",
+          "rollback_available": true
+        }
+      ]
+    },
+    "possible_change_correlation": "The recent application release change CHG-2001 may be correlated with the Payment API's unhealthy status, given its high risk and proximity in time.",
+    "recommended_next_actions": [
+      "Investigate the incident INC-OPS-101",
+      "Review the change CHG-2001 and consider rollback if necessary",
+      "Monitor the Payment API's health and adjust as needed"
+    ],
+    "limitations": [
+      "No direct root cause confirmation without further investigation"
+    ]
+  }
+]
