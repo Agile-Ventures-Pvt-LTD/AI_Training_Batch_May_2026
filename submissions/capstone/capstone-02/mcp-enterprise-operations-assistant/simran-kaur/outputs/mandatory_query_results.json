@@ -1,0 +1,334 @@
+[
+    {
+        "user_query": "Why is the Payment API unhealthy and is there any recent change that may be related?",
+        "servers_used": [
+            "MCP servers"
+        ],
+        "tools_used": [
+            "get_service_health",
+            "get_changes_for_service"
+        ],
+        "evidence": {
+            "services": [
+                {
+                    "service_name": "Payment API",
+                    "status": "UNHEALTHY"
+                }
+            ],
+            "incidents": [],
+            "tickets": [],
+            "changes": [
+                {
+                    "change_id": "CHG-2001",
+                    "service_name": "Payment API",
+                    "change_type": "APPLICATION_RELEASE",
+                    "status": "COMPLETED",
+                    "risk": "HIGH",
+                    "implemented_at": "2026-07-08T09:10:00",
+                    "implemented_by": "Payments Engineering",
+                    "summary": "Released payment-service changes for timeout handling and retry logic.",
+                    "rollback_available": true
+                }
+            ]
+        },
+        "operations_summary": "The Payment API is currently unhealthy. A recent high-risk change (CHG-2001) was implemented for the Payment API, which may be related to its current status.",
+        "possible_change_correlation": "The recent change (CHG-2001) for the Payment API, which included updates for timeout handling and retry logic, may be correlated with the API's current unhealthy status due to its high risk and recent implementation.",
+        "recommended_next_actions": [
+            "Investigate the recent change (CHG-2001) and its potential impact on the Payment API's health",
+            "Consider rolling back the change if it is deemed to be the root cause of the issue"
+        ],
+        "limitations": [
+            "No incident or ticket information is available to provide further context"
+        ]
+    },
+    {
+        "user_query": "Show high-priority open tickets for services that are currently unhealthy or degraded.",
+        "servers_used": [
+            "MCP servers"
+        ],
+        "tools_used": [
+            "list_services",
+            "get_active_incidents",
+            "search_ticket"
+        ],
+        "evidence": {
+            "services": [
+                {
+                    "service_name": "Payment API",
+                    "status": "UNHEALTHY"
+                },
+                {
+                    "service_name": "Checkout Service",
+                    "status": "DEGRADED"
+                }
+            ],
+            "incidents": [],
+            "tickets": [],
+            "changes": []
+        },
+        "operations_summary": "There are two services that are currently unhealthy or degraded: Payment API and Checkout Service. However, no high-priority open tickets are available for these services.",
+        "possible_change_correlation": "No recent changes are available to correlate with the current unhealthy or degraded status of the services.",
+        "recommended_next_actions": [
+            "Investigate the root cause of the unhealthy or degraded status of the Payment API and Checkout Service",
+            "Create high-priority tickets for these services if necessary"
+        ],
+        "limitations": [
+            "No incident or ticket information is available to provide further context"
+        ]
+    },
+    {
+        "user_query": "Summarize the current Payment API incident and the related support ticket impact.",
+        "servers_used": [
+            "MCP servers"
+        ],
+        "tools_used": [
+            "get_service_health",
+            "get_active_incidents",
+            "search_ticket"
+        ],
+        "evidence": {
+            "services": [
+                {
+                    "service_name": "Payment API",
+                    "status": "UNHEALTHY"
+                }
+            ],
+            "incidents": [
+                {
+                    "incident_id": "INC-OPS-101",
+                    "service_name": "Payment API",
+                    "severity": "SEV-1",
+                    "status": "ACTIVE",
+                    "started_at": "2026-07-08T09:55:00",
+                    "summary": "Payment processing requests are experiencing elevated timeout failures.",
+                    "customer_impact": "Customers may be unable to complete card payments.",
+                    "assigned_group": "Application Support"
+                }
+            ],
+            "tickets": [],
+            "changes": []
+        },
+        "operations_summary": "There is an active SEV-1 incident (INC-OPS-101) for the Payment API, which is currently unhealthy. The incident is causing customers to be unable to complete card payments. However, no related support tickets are available.",
+        "possible_change_correlation": "No recent changes are available to correlate with the current incident.",
+        "recommended_next_actions": [
+            "Investigate the root cause of the incident and restore the Payment API to a healthy state",
+            "Create a support ticket for the incident if necessary"
+        ],
+        "limitations": [
+            "No support ticket information is available to provide further context"
+        ]
+    },
+    {
+        "user_query": "Was there any recent change for Checkout Service that may explain the current degradation?",
+        "servers_used": [
+            "MCP servers"
+        ],
+        "tools_used": [
+            "get_service_health",
+            "get_changes_for_service"
+        ],
+        "evidence": {
+            "services": [
+                {
+                    "service_name": "Checkout Service",
+                    "status": "DEGRADED"
+                }
+            ],
+            "incidents": [],
+            "tickets": [],
+            "changes": [
+                {
+                    "change_id": "CHG-2004",
+                    "service_name": "Checkout Service",
+                    "change_type": "APPLICATION_RELEASE",
+                    "status": "COMPLETED",
+                    "risk": "MEDIUM",
+                    "implemented_at": "2026-07-05T11:00:00",
+                    "implemented_by": "Commerce Platform",
+                    "summary": "Released checkout UI and validation updates.",
+                    "rollback_available": true
+                }
+            ]
+        },
+        "operations_summary": "The Checkout Service is currently degraded. A recent medium-risk change (CHG-2004) was implemented for the Checkout Service, which may be related to its current status.",
+        "possible_change_correlation": "The recent change (CHG-2004) for the Checkout Service, which included updates for checkout UI and validation, may be correlated with the service's current degraded status due to its medium risk and recent implementation.",
+        "recommended_next_actions": [
+            "Investigate the recent change (CHG-2004) and its potential impact on the Checkout Service's health",
+            "Consider rolling back the change if it is deemed to be the root cause of the issue"
+        ],
+        "limitations": [
+            "No incident or ticket information is available to provide further context"
+        ]
+    },
+    {
+        "user_query": "Give me an operations summary of all unhealthy or degraded services, active incidents, and high-priority tickets.",
+        "servers_used": [
+            "MCP servers"
+        ],
+        "tools_used": [
+            "list_services",
+            "get_active_incidents",
+            "search_ticket"
+        ],
+        "evidence": {
+            "services": [
+                {
+                    "service_name": "Payment API",
+                    "status": "UNHEALTHY"
+                },
+                {
+                    "service_name": "Checkout Service",
+                    "status": "DEGRADED"
+                }
+            ],
+            "incidents": [],
+            "tickets": [],
+            "changes": []
+        },
+        "operations_summary": "There are two services that are currently unhealthy or degraded: Payment API and Checkout Service. However, no active incidents or high-priority tickets are available for these services.",
+        "possible_change_correlation": "No recent changes are available to correlate with the current unhealthy or degraded status of the services.",
+        "recommended_next_actions": [
+            "Investigate the root cause of the unhealthy or degraded status of the Payment API and Checkout Service",
+            "Create high-priority tickets for these services if necessary"
+        ],
+        "limitations": [
+            "No incident or ticket information is available to provide further context"
+        ]
+    },
+    {
+        "user_query": "Which recent changes were made to services that currently have active incidents?",
+        "servers_used": [
+            "MCP servers"
+        ],
+        "tools_used": [
+            "list_services",
+            "get_active_incidents",
+            "get_changes_for_service"
+        ],
+        "evidence": {
+            "services": [
+                {
+                    "service_name": "Payment API",
+                    "status": "UNHEALTHY"
+                },
+                {
+                    "service_name": "Checkout Service",
+                    "status": "DEGRADED"
+                }
+            ],
+            "incidents": [],
+            "tickets": [],
+            "changes": [
+                {
+                    "change_id": "CHG-2001",
+                    "service_name": "Payment API",
+                    "change_type": "APPLICATION_RELEASE",
+                    "status": "COMPLETED",
+                    "risk": "HIGH",
+                    "implemented_at": "2026-07-08T09:10:00",
+                    "implemented_by": "Payments Engineering",
+                    "summary": "Released payment-service changes for timeout handling and retry logic.",
+                    "rollback_available": true
+                },
+                {
+                    "change_id": "CHG-2004",
+                    "service_name": "Checkout Service",
+                    "change_type": "APPLICATION_RELEASE",
+                    "status": "COMPLETED",
+                    "risk": "MEDIUM",
+                    "implemented_at": "2026-07-05T11:00:00",
+                    "implemented_by": "Commerce Platform",
+                    "summary": "Released checkout UI and validation updates.",
+                    "rollback_available": true
+                }
+            ]
+        },
+        "operations_summary": "There are two services that currently have active incidents: Payment API and Checkout Service. Recent changes were made to these services, including a high-risk change (CHG-2001) for the Payment API and a medium-risk change (CHG-2004) for the Checkout Service.",
+        "possible_change_correlation": "The recent changes (CHG-2001 and CHG-2004) for the Payment API and Checkout Service may be correlated with the current active incidents due to their high and medium risk, respectively.",
+        "recommended_next_actions": [
+            "Investigate the recent changes (CHG-2001 and CHG-2004) and their potential impact on the Payment API and Checkout Service",
+            "Consider rolling back the changes if they are deemed to be the root cause of the incidents"
+        ],
+        "limitations": [
+            "No incident or ticket information is available to provide further context"
+        ]
+    },
+    {
+        "user_query": "Show the details of ticket TKT-1001 and check the health of its related service.",
+        "servers_used": [
+            "MCP servers"
+        ],
+        "tools_used": [
+            "get_ticket_details",
+            "get_service_health"
+        ],
+        "evidence": {
+            "services": [
+                {
+                    "service_name": "Payment API",
+                    "status": "UNHEALTHY"
+                }
+            ],
+            "incidents": [],
+            "tickets": [
+                {
+                    "ticket_id": "TKT-1001",
+                    "service_name": "Payment API",
+                    "priority": "P1",
+                    "status": "OPEN",
+                    "subject": "Card payment timeout",
+                    "description": "Customers report payment failures and timeout errors.",
+                    "created_at": "2026-07-08T09:58:00",
+                    "customer_impact": "High",
+                    "assigned_group": "Application Support"
+                }
+            ],
+            "changes": []
+        },
+        "operations_summary": "The ticket TKT-1001 is related to the Payment API service, which is currently unhealthy. The ticket is high-priority and open, with a subject of 'Card payment timeout' and a description of 'Customers report payment failures and timeout errors.'",
+        "possible_change_correlation": "No recent changes are available to correlate with the current unhealthy status of the Payment API service.",
+        "recommended_next_actions": [
+            "Investigate the root cause of the unhealthy status of the Payment API service",
+            "Consider rolling back any recent changes if they are deemed to be the root cause of the issue"
+        ],
+        "limitations": [
+            "No incident information is available to provide further context"
+        ]
+    },
+    {
+        "user_query": "List recent changes for Payment API and summarize whether rollback information is available.",
+        "servers_used": [
+            "MCP servers"
+        ],
+        "tools_used": [
+            "get_changes_for_service"
+        ],
+        "evidence": {
+            "services": [],
+            "incidents": [],
+            "tickets": [],
+            "changes": [
+                {
+                    "change_id": "CHG-2001",
+                    "service_name": "Payment API",
+                    "change_type": "APPLICATION_RELEASE",
+                    "status": "COMPLETED",
+                    "risk": "HIGH",
+                    "implemented_at": "2026-07-08T09:10:00",
+                    "implemented_by": "Payments Engineering",
+                    "summary": "Released payment-service changes for timeout handling and retry logic.",
+                    "rollback_available": true
+                }
+            ]
+        },
+        "operations_summary": "There is one recent change (CHG-2001) for the Payment API service, which is an application release with a high risk. The change was implemented on 2026-07-08T09:10:00 by Payments Engineering.",
+        "possible_change_correlation": "The recent change (CHG-2001) for the Payment API service may be correlated with the current unhealthy status of the service due to its high risk.",
+        "recommended_next_actions": [
+            "Investigate the recent change (CHG-2001) and its potential impact on the Payment API service",
+            "Consider rolling back the change if it is deemed to be the root cause of the issue"
+        ],
+        "limitations": [
+            "No incident or ticket information is available to provide further context"
+        ]
+    }
+]

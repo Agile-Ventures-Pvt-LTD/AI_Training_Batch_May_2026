@@ -1,0 +1,67 @@
+{
+  "mandatory_queries": [
+    {
+      "id": "Q1",
+      "query": "Why is the Payment API unhealthy and is there any recent change that may be related?",
+      "expected_servers": [
+        "service-health",
+        "change-management"
+      ]
+    },
+    {
+      "id": "Q2",
+      "query": "Show high-priority open tickets for services that are currently unhealthy or degraded.",
+      "expected_servers": [
+        "service-health",
+        "support-ticket"
+      ]
+    },
+    {
+      "id": "Q3",
+      "query": "Summarize the current Payment API incident and the related support ticket impact.",
+      "expected_servers": [
+        "service-health",
+        "support-ticket"
+      ]
+    },
+    {
+      "id": "Q4",
+      "query": "Was there any recent change for Checkout Service that may explain the current degradation?",
+      "expected_servers": [
+        "service-health",
+        "change-management"
+      ]
+    },
+    {
+      "id": "Q5",
+      "query": "Give me an operations summary of all unhealthy or degraded services, active incidents, and high-priority tickets.",
+      "expected_servers": [
+        "service-health",
+        "support-ticket"
+      ]
+    },
+    {
+      "id": "Q6",
+      "query": "Which recent changes were made to services that currently have active incidents?",
+      "expected_servers": [
+        "service-health",
+        "change-management"
+      ]
+    },
+    {
+      "id": "Q7",
+      "query": "Show the details of ticket TKT-1001 and check the health of its related service.",
+      "expected_servers": [
+        "support-ticket",
+        "service-health"
+      ]
+    },
+    {
+      "id": "Q8",
+      "query": "List recent changes for Payment API and summarize whether rollback information is available.",
+      "expected_servers": [
+        "change-management"
+      ]
+    }
+  ]
+}
