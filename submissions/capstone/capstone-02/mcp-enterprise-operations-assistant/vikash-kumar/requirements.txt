@@ -1,0 +1,10 @@
+# Model Context Protocol Core Framework
+fastmcp>=0.4.1
+
+# Large Language Model & Orchestration Ecosystem
+langchain-groq>=0.1.9
+python-dotenv>=1.0.1
+
+# Testing Lifecycle & Automation Infrastructure
+pytest>=8.0.0
+pytest-asyncio>=0.23.5
