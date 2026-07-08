@@ -1,0 +1,6 @@
+Unit and MCP tests executed: 12
+Passed: 12
+Failed: 0
+Integration tests executed: 3
+Passed: 3
+Failed: 0
