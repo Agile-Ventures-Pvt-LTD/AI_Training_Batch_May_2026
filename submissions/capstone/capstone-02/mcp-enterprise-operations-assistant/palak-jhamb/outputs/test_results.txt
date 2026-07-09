@@ -1,0 +1,49 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Palak\Desktop\capstone-2\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Palak\Desktop\capstone-2
+configfile: pyproject.toml
+plugins: anyio-4.14.1, langsmith-0.9.8, logfire-4.37.0
+collecting ... collected 11 items
+
+tests/test_change_tools.py::test_get_changes_for_payment_api PASSED      [  9%]
+tests/test_change_tools.py::test_get_change_details_valid_change PASSED  [ 18%]
+tests/test_host_queries.py::test_host_payment_api_change_query PASSED    [ 27%]
+tests/test_service_health_tools.py::test_list_services_returns_services PASSED [ 36%]
+tests/test_service_health_tools.py::test_get_service_health_payment_api PASSED [ 45%]
+tests/test_service_health_tools.py::test_get_service_health_unknown_service PASSED [ 54%]
+tests/test_service_health_tools.py::test_get_active_incidents_payment_api PASSED [ 63%]
+tests/test_ticket_tools.py::test_search_open_payment_tickets PASSED      [ 72%]
+tests/test_ticket_tools.py::test_get_ticket_details_valid_ticket PASSED  [ 81%]
+tests/test_ticket_tools.py::test_get_ticket_details_invalid_ticket PASSED [ 90%]
+tests/test_ticket_tools.py::test_high_priority_tickets_only_returns_p1_p2 PASSED [100%]
+
+============================== warnings summary ===============================
+.venv\Lib\site-packages\mcp_use\client\auth\oauth.py:26
+  C:\Users\Palak\Desktop\capstone-2\.venv\Lib\site-packages\mcp_use\client\auth\oauth.py:26: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    class ServerOAuthMetadata(BaseModel):
+
+.venv\Lib\site-packages\mcp_use\client\auth\oauth.py:99
+  C:\Users\Palak\Desktop\capstone-2\.venv\Lib\site-packages\mcp_use\client\auth\oauth.py:99: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    class ClientRegistrationResponse(BaseModel):
+
+.venv\Lib\site-packages\mcp_use\__init__.py:19
+  C:\Users\Palak\Desktop\capstone-2\.venv\Lib\site-packages\mcp_use\__init__.py:19: DeprecationWarning: mcp_use.config is deprecated. Use mcp_use.client.config. This import will be removed in version 2.0.0
+    from .config import load_config_file
+
+.venv\Lib\site-packages\mcp_use\__init__.py:20
+  C:\Users\Palak\Desktop\capstone-2\.venv\Lib\site-packages\mcp_use\__init__.py:20: DeprecationWarning: mcp_use.connectors is deprecated. Use mcp_use.client.connectors. This import will be removed in version 2.0.0
+    from .connectors import BaseConnector, HttpConnector, StdioConnector, WebSocketConnector
+
+.venv\Lib\site-packages\mcp_use\__init__.py:22
+  C:\Users\Palak\Desktop\capstone-2\.venv\Lib\site-packages\mcp_use\__init__.py:22: DeprecationWarning: mcp_use.session.MCPSession is deprecated. Use mcp_use.client.session.MCPSession. This import will be removed in version 2.0.0
+    from .session import MCPSession
+
+tests/test_host_queries.py::test_host_payment_api_change_query
+  C:\Users\Palak\Desktop\capstone-2\.venv\Lib\site-packages\_pytest\python.py:167: RuntimeWarning: coroutine 'MCPAgent.run' was never awaited
+    result = testfunction(**testargs)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 11 passed, 6 warnings in 7.19s ========================
