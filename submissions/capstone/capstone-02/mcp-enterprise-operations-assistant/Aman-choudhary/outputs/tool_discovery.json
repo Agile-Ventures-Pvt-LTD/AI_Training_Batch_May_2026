@@ -1,0 +1,53 @@
+{
+"user_query":
+"Why is the Payment API unhealthy and is there any recent change that may be 
+related?",
+"servers_used": [
+"service-health",
+"change-management"
+],
+"tools_used": [
+"get_service_health",],
+"evidence": {
+"services": [
+{
+"service_name": "Payment API",
+"status": "UNHEALTHY",
+"error_rate_percent": 38.0,
+"average_latency_ms": 1850
+}
+],
+"incidents": [
+{
+"incident_id": "INC-OPS-101",
+"severity": "SEV-1",
+"status": "ACTIVE"
+}
+],
+"tickets": [],
+"changes": [
+{
+"change_id": "CHG-2001",
+"risk": "HIGH",
+"implemented_at": "2026-07-08T09:10:00"
+}
+30
+]
+},
+"operations_summary": "The Payment API is unhealthy with a 38 percent error 
+rate and elevated latency. A SEV-1 incident is active for payment timeout 
+failures.",
+"possible_change_correlation": "A high-risk Payment API release was completed 
+before the incident began. The service and timing indicate a possible 
+correlation, but the available data does not confirm the release as the root 
+cause.",
+"recommended_next_actions": [
+"Review CHG-2001 with Payments Engineering.",
+"Compare the release changes with current timeout failures.",
+"Review rollback readiness because rollback information is available.",
+"Continue SEV-1 incident handling with Application Support."
+],
+"limitations": [
+"The dataset does not contain application logs or distributed traces."
+]
+}
