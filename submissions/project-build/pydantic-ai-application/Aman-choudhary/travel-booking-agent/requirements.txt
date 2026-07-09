@@ -1,0 +1,15 @@
+groq
+pydantic
+guardrails-ai
+requests
+python-dotenv
+langgraph
+langchain-core
+langchain-groq
+python-dotenv
+pydantic
+pandas
+tabulate
+rich
+fastapi
+uvicorn

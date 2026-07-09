@@ -1,0 +1,16 @@
+crewai
+crewai-tools
+groq
+langchain-groq
+langchain
+langchain-core
+python-dotenv
+pandas
+numpy
+pydantic
+pytest
+pytest-mock
+deepeval
+rich
+jinja2
+orjson

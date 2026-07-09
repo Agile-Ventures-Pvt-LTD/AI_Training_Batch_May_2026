@@ -1,0 +1,48 @@
+{
+  "database_file": "/mnt/data/helpdesk_agent.db",
+  "source_csv": "/mnt/data/customer_support_tickets.csv",
+  "tables": [
+    "archival_memory",
+    "conversation_logs",
+    "conversation_summaries",
+    "customers",
+    "raw_customer_support_tickets",
+    "sla_policies",
+    "sqlite_sequence",
+    "ticket_comments",
+    "tickets",
+    "tool_audit_logs"
+  ],
+  "views": [
+    "open_tickets",
+    "overdue_tickets",
+    "ticket_work_queue"
+  ],
+  "counts": {
+    "raw_customer_support_tickets": 8469,
+    "customers": 8320,
+    "tickets": 8469,
+    "ticket_comments": 14119,
+    "sla_policies": 4,
+    "archival_memory": 3
+  },
+  "ticket_status_counts": {
+    "Closed": 2769,
+    "Open": 2819,
+    "Pending Customer Response": 2881
+  },
+  "priority_counts": {
+    "High": 2085,
+    "Low": 2063,
+    "Medium": 2192,
+    "Urgent": 2129
+  },
+  "category_counts": {
+    "Billing": 1634,
+    "Cancellation": 1695,
+    "Product Inquiry": 1641,
+    "Refund": 1752,
+    "Technical Support": 1747
+  },
+  "training_reference_time": "2026-06-12 09:00:00"
+}

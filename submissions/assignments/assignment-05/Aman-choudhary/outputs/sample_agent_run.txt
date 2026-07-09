@@ -1,0 +1,209 @@
+
+================================================================================
+QUESTION:
+show me the databases schema 
+
+RESPONSE:
+{
+    "user_question": "show me the databases schema ",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "inspect_database_schema"
+    ],
+    "records_found": 1,
+    "answer": "The database schema includes the following tables: \n- customer\n- netbanking\n- card_type\n- card\n- transaction_type\n- transaction_terminal\n- merchant_type\n- merchant\n- transaction\n\nEach table has the following columns:\n- customer: cust_id, first_name, last_name, email, phone, address, city, state, zip\n- netbanking: username, password, expiry_date, security_question, security_answer, cust_id\n- card_type: card_type_id, card_type, card_network, privilege\n- card: card_number, valid_from, expiry, security_code, x-coordinate, y-coordinate, mean_amount, std_amount, mean_nb_tx_per_day, cust_id, card_type_id\n- transaction_type: txn_type_id, debit_credit, lcl_intnl\n- transaction_terminal: TERMINAL_ID, x_terminal_id, y_terminal_id\n- merchant_type: id, merchant_type\n- merchant: id, merchant, merchant_type\n- transaction: Unnamed: 0, TXN_ID, TX_DATETIME, CARD_ID, TERMINAL_ID, TX_AMOUNT, TX_TIME_SECONDS, TX_TIME_DAYS, TXN_TYPE_ID, M_ID",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+show customer profile for customer 100
+
+RESPONSE:
+{
+    "user_question": "show customer profile for customer 100",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_customer_profile"
+    ],
+    "records_found": 1,
+    "answer": "The customer profile for customer 100 is: \nName: Steven Farmer\nEmail: st***@hotmail.com\nPhone: ******6658\nAddress: 22 South Duncan Avenue #420, Fayetteville, AR 72701",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+show card details for customer 100
+
+RESPONSE:
+{
+    "user_question": "show card details for customer 100",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_card_details"
+    ],
+    "records_found": 1,
+    "answer": "The customer with ID 100 has three cards. The first card has a card number ending in 5878, valid from September 1, 2014, and expiring on September 1, 2024. The second card has a card number ending in 9059, valid from June 1, 2014, and expiring on June 1, 2024. The third card has a card number ending in 9866, valid from February 1, 2015, and expiring on February 1, 2025.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+show the last five transction for the 100
+
+RESPONSE:
+{
+    "user_question": "show the last five transction for the 100",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_customer_transactions"
+    ],
+    "records_found": 1,
+    "answer": "The last five transactions for customer 100 are:\n\n1. Transaction ID: 202209081426334335494651909866062, Date: 2022-09-08 14:26:33, Amount: 113.4, Merchant: Walmart\n2. Transaction ID: 202209080644414122355216505878059, Date: 2022-09-08 06:44:41, Amount: 76.36, Merchant: Publix\n3. Transaction ID: 202209071841174335494651909866021, Date: 2022-09-07 18:41:17, Amount: 94.69, Merchant: Target Corporation\n4. Transaction ID: 202209070952304122355216505878068, Date: 2022-09-07 09:52:30, Amount: 26.2, Merchant: Best Buy\n5. Transaction ID: 202209062130294335494651909866095, Date: 2022-09-06 21:30:29, Amount: 44.21, Merchant: The Home Depot",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+which customer has the higest amount due 
+
+RESPONSE:
+{
+    "user_question": "which customer has the higest amount due ",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_statement_summary"
+    ],
+    "records_found": 1,
+    "answer": "The requested data could not be retrieved because the database schema differs from the expected structure.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+show  statement summary for the customer 100
+
+RESPONSE:
+{
+    "user_question": "show  statement summary for the customer 100",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_statement_summary"
+    ],
+    "records_found": 1,
+    "answer": "The requested data could not be retrieved because the database schema differs from the expected structure.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+which merchant type has the highest total spend 
+
+RESPONSE:
+{
+    "user_question": "which merchant type has the highest total spend ",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [],
+    "records_found": 0,
+    "answer": "Unable to process request: Error code: 400 - {'error': {'message': 'tool call validation failed: parameters for tool get_merchant_spend_summary did not match schema: errors: [`/limit`: expected integer, but got string]', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '<function=get_merchant_spend_summary>{\"limit\": \"1\"}</function>'}}",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+show reward point for customer 100
+
+RESPONSE:
+{
+    "user_question": "show reward point for customer 100",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_rewards_summary"
+    ],
+    "records_found": 1,
+    "answer": "The requested data could not be retrieved because the database schema differs from the expected structure.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+indentify potentially suspicious transaction .
+
+RESPONSE:
+{
+    "user_question": "indentify potentially suspicious transaction .",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [],
+    "records_found": 0,
+    "answer": "Unable to process request: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01kvb9etf4eq89sdpeekkad683` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 13308, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+exit 
+
+RESPONSE:
+{
+    "user_question": "exit ",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [],
+    "records_found": 1,
+    "answer": "Goodbye.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+exit 
+
+RESPONSE:
+{
+    "user_question": "exit ",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [],
+    "records_found": 1,
+    "answer": "Goodbye.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+exit 
+
+RESPONSE:
+{
+    "user_question": "exit ",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [],
+    "records_found": 1,
+    "answer": "Goodbye.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+goodbye 
+
+RESPONSE:
+{
+    "user_question": "goodbye ",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [],
+    "records_found": 1,
+    "answer": "Goodbye. It was a pleasure assisting you with your credit card management system inquiries. If you have any further questions or need assistance in the future, don't hesitate to reach out. Have a great day.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}

@@ -1,0 +1,22 @@
+{
+"incident_id": "INC-001",
+"original_incident_summary": "CRITICAL DISRUPTION: Cargo container SH-4002 is strandedoutside the Port of Seattle due to an active worker strike. The vessel iscarrying 550 tons of industrial electronics originally scheduled for delivery toWH-WEST-202. The shipment contains perishable cooling components and cannotsustain delays exceeding 72 hours.",
+"parsed_metadata": {
+"shipment_id": "SH-4002",
+"target_warehouse_id": "WH-WEST-202",
+"cargo_weight_tons": 550,
+"cargo_type": "industrial electronics",
+"has_perishables": true,
+"maximum_tolerable_delay_hours": 72
+},
+"rag_validation_rules_applied": [],
+"routes_evaluated": [],
+"final_selected_route": {},
+"queried_warehouse_metrics": {},
+"graph_routing_metadata": {
+"loops_executed": 0,
+"final_decision_state": "",
+"reroute_impact_score": 0
+},
+"final_operations_brief": ""
+}

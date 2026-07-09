@@ -1,0 +1,190 @@
+[
+    {
+        "question": "What approvals are needed for international travel?",
+        "response": {
+            "answer": "Based on the retrieved policy content, relevant guidance has been found.",
+            "policy_basis": [
+                "For same-day domestic travel:\n- manager approval is required before travel\n- meal reimbursement is governed by the Reimbursement Policy\n- local transp",
+                "For same-day domestic travel:\n- manager approval is required before travel\n- meal reimbursement is governed by the Reimbursement Policy\n- local transp",
+                "For same-day domestic travel:\n- manager approval is required before travel\n- meal reimbursement is governed by the Reimbursement Policy\n- local transp",
+                "For same-day domestic travel:\n- manager approval is required before travel\n- meal reimbursement is governed by the Reimbursement Policy\n- local transp"
+            ],
+            "sources": [
+                {
+                    "source_file": "travel_policy.md",
+                    "policy_domain": "TRAVEL",
+                    "chunk_id": "chunk_0015"
+                },
+                {
+                    "source_file": "travel_policy.md",
+                    "policy_domain": "TRAVEL",
+                    "chunk_id": "chunk_0015"
+                },
+                {
+                    "source_file": "travel_policy.md",
+                    "policy_domain": "TRAVEL",
+                    "chunk_id": "chunk_0015"
+                },
+                {
+                    "source_file": "travel_policy.md",
+                    "policy_domain": "TRAVEL",
+                    "chunk_id": "chunk_0015"
+                }
+            ],
+            "answerability": "ANSWERED",
+            "confidence": "HIGH",
+            "recommended_next_step": "Review policy citations and follow the approval process where required."
+        }
+    },
+    {
+        "question": "",
+        "response": {
+            "answer": "The requested information could not be found in the available policy documents.",
+            "policy_basis": [],
+            "sources": [],
+            "answerability": "NOT_FOUND",
+            "confidence": "LOW",
+            "recommended_next_step": "Contact the policy owner or HR/Finance/IT support team."
+        }
+    },
+    {
+        "question": "",
+        "response": {
+            "answer": "The requested information could not be found in the available policy documents.",
+            "policy_basis": [],
+            "sources": [],
+            "answerability": "NOT_FOUND",
+            "confidence": "LOW",
+            "recommended_next_step": "Contact the policy owner or HR/Finance/IT support team."
+        }
+    },
+    {
+        "question": "",
+        "response": {
+            "answer": "The requested information could not be found in the available policy documents.",
+            "policy_basis": [],
+            "sources": [],
+            "answerability": "NOT_FOUND",
+            "confidence": "LOW",
+            "recommended_next_step": "Contact the policy owner or HR/Finance/IT support team."
+        }
+    },
+    {
+        "question": "",
+        "response": {
+            "answer": "The requested information could not be found in the available policy documents.",
+            "policy_basis": [],
+            "sources": [],
+            "answerability": "NOT_FOUND",
+            "confidence": "LOW",
+            "recommended_next_step": "Contact the policy owner or HR/Finance/IT support team."
+        }
+    },
+    {
+        "question": "",
+        "response": {
+            "answer": "The requested information could not be found in the available policy documents.",
+            "policy_basis": [],
+            "sources": [],
+            "answerability": "NOT_FOUND",
+            "confidence": "LOW",
+            "recommended_next_step": "Contact the policy owner or HR/Finance/IT support team."
+        }
+    },
+    {
+        "question": "",
+        "response": {
+            "answer": "The requested information could not be found in the available policy documents.",
+            "policy_basis": [],
+            "sources": [],
+            "answerability": "NOT_FOUND",
+            "confidence": "LOW",
+            "recommended_next_step": "Contact the policy owner or HR/Finance/IT support team."
+        }
+    },
+    {
+        "question": "",
+        "response": {
+            "answer": "The requested information could not be found in the available policy documents.",
+            "policy_basis": [],
+            "sources": [],
+            "answerability": "NOT_FOUND",
+            "confidence": "LOW",
+            "recommended_next_step": "Contact the policy owner or HR/Finance/IT support team."
+        }
+    },
+    {
+        "question": "Can I claim meals for same-day domestic business travel?",
+        "response": {
+            "answer": "Based on the retrieved policy content, relevant guidance has been found.",
+            "policy_basis": [
+                "Late claims require finance approval and may be rejected if there is no valid reason for delay.\n\n## 4. Receipt Requirements\nReceipts are mandatory for",
+                "Late claims require finance approval and may be rejected if there is no valid reason for delay.\n\n## 4. Receipt Requirements\nReceipts are mandatory for",
+                "Late claims require finance approval and may be rejected if there is no valid reason for delay.\n\n## 4. Receipt Requirements\nReceipts are mandatory for",
+                "Late claims require finance approval and may be rejected if there is no valid reason for delay.\n\n## 4. Receipt Requirements\nReceipts are mandatory for"
+            ],
+            "sources": [
+                {
+                    "source_file": "reimbursement_policy.md",
+                    "policy_domain": "REIMBURSEMENT",
+                    "chunk_id": "chunk_0011"
+                },
+                {
+                    "source_file": "reimbursement_policy.md",
+                    "policy_domain": "REIMBURSEMENT",
+                    "chunk_id": "chunk_0011"
+                },
+                {
+                    "source_file": "reimbursement_policy.md",
+                    "policy_domain": "REIMBURSEMENT",
+                    "chunk_id": "chunk_0011"
+                },
+                {
+                    "source_file": "reimbursement_policy.md",
+                    "policy_domain": "REIMBURSEMENT",
+                    "chunk_id": "chunk_0011"
+                }
+            ],
+            "answerability": "ANSWERED",
+            "confidence": "HIGH",
+            "recommended_next_step": "Review policy citations and follow the approval process where required."
+        }
+    },
+    {
+        "question": "Can I use my personal laptop for office work?",
+        "response": {
+            "answer": "Based on the retrieved policy content, relevant guidance has been found.",
+            "policy_basis": [
+                "## 3. Personal Laptop Restrictions\nEmployees should not use personal laptops for regular office work.\n\nPersonal laptop use is allowed only when:\n- the",
+                "## 3. Personal Laptop Restrictions\nEmployees should not use personal laptops for regular office work.\n\nPersonal laptop use is allowed only when:\n- the",
+                "## 3. Personal Laptop Restrictions\nEmployees should not use personal laptops for regular office work.\n\nPersonal laptop use is allowed only when:\n- the",
+                "## 3. Personal Laptop Restrictions\nEmployees should not use personal laptops for regular office work.\n\nPersonal laptop use is allowed only when:\n- the"
+            ],
+            "sources": [
+                {
+                    "source_file": "it_security_policy.md",
+                    "policy_domain": "IT_SECURITY",
+                    "chunk_id": "chunk_0008"
+                },
+                {
+                    "source_file": "it_security_policy.md",
+                    "policy_domain": "IT_SECURITY",
+                    "chunk_id": "chunk_0008"
+                },
+                {
+                    "source_file": "it_security_policy.md",
+                    "policy_domain": "IT_SECURITY",
+                    "chunk_id": "chunk_0008"
+                },
+                {
+                    "source_file": "it_security_policy.md",
+                    "policy_domain": "IT_SECURITY",
+                    "chunk_id": "chunk_0008"
+                }
+            ],
+            "answerability": "ANSWERED",
+            "confidence": "HIGH",
+            "recommended_next_step": "Review policy citations and follow the approval process where required."
+        }
+    }
+]
