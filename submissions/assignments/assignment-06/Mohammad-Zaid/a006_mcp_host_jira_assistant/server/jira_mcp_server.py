@@ -93,7 +93,7 @@ def search_issues(jql: str):
     # return response
     import json
 
-    print(json.dumps(response, indent=4))
+    # print(json.dumps(response, indent=4))
     issues = response.get("issues", [])
 
     return response.get("issues", [])
