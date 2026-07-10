@@ -1,0 +1,50 @@
+{
+  "PORT_LA_001": [
+    {
+      "route_id": "RT_LA_ALT_01",
+      "description": "Divert to Long Beach overflow lane, short haul truck to warehouse.",
+      "warehouse_id": "WH_LAX_02",
+      "added_delay_hours": 18
+    },
+    {
+      "route_id": "RT_LA_ALT_02",
+      "description": "Rail transfer to Oakland Distribution Hub.",
+      "warehouse_id": "WH_OAK_01",
+      "added_delay_hours": 36
+    },
+    {
+      "route_id": "RT_LA_ALT_03",
+      "description": "Extended coastal shipping to Seattle Gateway Warehouse.",
+      "warehouse_id": "WH_SEA_01",
+      "added_delay_hours": 72
+    }
+  ],
+  "PORT_ROTTERDAM_002": [
+    {
+      "route_id": "RT_RTM_ALT_01",
+      "description": "Short barge transfer within Rotterdam terminal network.",
+      "warehouse_id": "WH_RTM_02",
+      "added_delay_hours": 12
+    },
+    {
+      "route_id": "RT_RTM_ALT_02",
+      "description": "Truck reroute to Antwerp backup facility.",
+      "warehouse_id": "WH_ANT_01",
+      "added_delay_hours": 30
+    },
+    {
+      "route_id": "RT_RTM_ALT_03",
+      "description": "Long-haul rail to Rotterdam main terminal via inland corridor.",
+      "warehouse_id": "WH_RTM_01",
+      "added_delay_hours": 54
+    }
+  ],
+  "PORT_SHANGHAI_003": [
+    {
+      "route_id": "RT_SH_ALT_01",
+      "description": "Emergency air freight substitution, extreme cost, extreme delay.",
+      "warehouse_id": "WH_SEA_01",
+      "added_delay_hours": 144
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+LOGISTICS REROUTING POLICY HANDBOOK
+
+RULE SET 1: WAREHOUSE_FIT_CHECK
+Before a shipment can be redirected to an alternate warehouse, the system must run a
+WAREHOUSE_FIT_CHECK. A warehouse passes this check only if:
+  - current_utilization_pct is at or below 85%.
+  - operational_status is ACTIVE (not DEGRADED or OFFLINE).
+  - risk_tier is NORMAL (not ELEVATED).
+Any failure on these conditions requires route clarification before a shipment can be
+committed to that warehouse.
+
+RULE SET 2: DELAY_TOLERANCE_POLICY
+Every shipment manifest may specify a maximum_tolerable_delay_hours. If the alternate
+route's added_delay_hours exceeds this value, the route is not acceptable and an
+alternate route must be evaluated. If no maximum_tolerable_delay_hours is specified,
+a default ceiling of 96 hours applies for standard cargo and 48 hours for perishable
+cargo (has_perishables = true).
+
+RULE SET 3: CRITICAL_DELAY_ESCALATION
+If a proposed reroute would add more than 120 hours of transit delay, the incident must
+be escalated immediately as CRITICAL_DELAY regardless of warehouse conditions. Escalated
+incidents skip further warehouse fit checks and are routed to a human logistics operator.
+
+RULE SET 4: PERISHABLE_CARGO_HANDLING
+Shipments flagged has_perishables = true require the tightest scrutiny. Any candidate
+warehouse with risk_tier ELEVATED is automatically disqualified for perishable cargo,
+even if utilization and operational status otherwise pass.
+
+RULE SET 5: REROUTE_IMPACT_SCORING
+The reroute_impact_score (0-100) quantifies the operational risk of a rerouting
+decision. Contributing factors include warehouse utilization above 85%, elevated risk
+tier, non-active operational status, delay exceeding shipment tolerance, and delay
+exceeding the 120-hour critical threshold. Scores are capped at 100. Scores above 70
+should be flagged for manager review even when a route is technically viable.
+
+RULE SET 6: CLARIFICATION_LOOP_LIMITS
+When a candidate route/warehouse pair fails WAREHOUSE_FIT_CHECK or DELAY_TOLERANCE_POLICY,
+the system may attempt up to max_clarification_attempts additional candidate routes
+before escalating the incident as CRITICAL_DELAY. This prevents infinite looping when no
+viable alternate route exists.
+
+RULE SET 7: PORT_DISRUPTION_CLASSIFICATION
+Disrupted ports are classified by disrupted_port_id. Each disrupted port maps to a
+pre-vetted list of alternate routes, ordered by preference (lowest added delay first).
+Routes further down the list generally carry higher delay and should only be used after
+higher-preference routes are exhausted or disqualified.

@@ -1,0 +1,17 @@
+[
+  {
+    "incident_id": "INC-2026-001",
+    "disrupted_port_id": "PORT_LA_001",
+    "manifest_text": "Shipment SHP-88213 consisting of 42.5 tons of packaged electronics is currently held at the Port of Los Angeles due to a berth closure following a crane malfunction. Cargo is destined for target warehouse WH_LAX_02. No perishable goods on this manifest. Maximum tolerable delay for this shipment is 24 hours before downstream retail commitments are affected."
+  },
+  {
+    "incident_id": "INC-2026-002",
+    "disrupted_port_id": "PORT_ROTTERDAM_002",
+    "manifest_text": "Shipment SHP-77410 carrying 18 tons of refrigerated pharmaceutical cargo is stuck at Rotterdam due to a labor strike affecting terminal operations. This is a perishable, temperature-sensitive load bound for warehouse WH_RTM_02. Maximum tolerable delay is 20 hours given cold-chain constraints."
+  },
+  {
+    "incident_id": "INC-2026-003",
+    "disrupted_port_id": "PORT_SHANGHAI_003",
+    "manifest_text": "Shipment SHP-91002 with 60 tons of industrial machinery parts is delayed at Shanghai due to a severe typhoon closing the port indefinitely. Cargo is destined for warehouse WH_SEA_01. Not perishable. No explicit maximum tolerable delay was specified in the manifest."
+  }
+]

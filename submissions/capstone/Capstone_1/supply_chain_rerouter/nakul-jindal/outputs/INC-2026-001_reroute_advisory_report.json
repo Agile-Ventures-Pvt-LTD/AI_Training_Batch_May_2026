@@ -1,0 +1,44 @@
+{
+  "incident_id": "INC-2026-001",
+  "original_incident_summary": "Shipment SHP-88213 consisting of 42.5 tons of packaged electronics is currently held at the Port of Los Angeles due to a berth closure following a crane malfunction. Cargo is destined for target wareh",
+  "parsed_metadata": {
+    "shipment_id": "SHP-88213",
+    "cargo_weight_tons": 42.5,
+    "cargo_type": "packaged electronics",
+    "target_warehouse_id": "WH_LAX_02",
+    "has_perishables": false,
+    "maximum_tolerable_delay_hours": 24
+  },
+  "rag_validation_rules_applied": "RULE SET 4: PERISHABLE_CARGO_HANDLING\nShipments flagged has_perishables = true require the tightest scrutiny. Any candidate\nwarehouse with risk_tier ELEVATED is automatically disqualified for perishable cargo,\neven if utilization and operational status otherwise pass.\n\nLOGISTICS REROUTING POLICY HANDBOOK\n\nRULE SET 1: WAREHOUSE_FIT_CHECK\nBefore a shipment can be redirected to an alternate warehouse, the system must run a\nWAREHOUSE_FIT_CHECK. A warehouse passes this check only if:\n  - current_utilization_pct is at or below 85%.\n  - operational_status is ACTIVE (not DEGRADED or OFFLINE).\n  - risk_tier is NORMAL (not ELEVATED).\nAny failure on these conditions requires route clarification before a shipment can be\ncommitted to that warehouse.\n\nRULE SET 3: CRITICAL_DELAY_ESCALATION\nIf a proposed reroute would add more than 120 hours of transit delay, the incident must\nbe escalated immediately as CRITICAL_DELAY regardless of warehouse conditions. Escalated\nincidents skip further warehouse fit checks and are routed to a human logistics operator.\n\nRULE SET 2: DELAY_TOLERANCE_POLICY\nEvery shipment manifest may specify a maximum_tolerable_delay_hours. If the alternate\nroute's added_delay_hours exceeds this value, the route is not acceptable and an\nalternate route must be evaluated. If no maximum_tolerable_delay_hours is specified,\na default ceiling of 96 hours applies for standard cargo and 48 hours for perishable\ncargo (has_perishables = true).",
+  "routes_evaluated": [
+    {
+      "route_id": "RT_LA_ALT_01",
+      "decision": "ROUTE_CLARIFICATION",
+      "reason": "Warehouse utilization above 85 percent."
+    },
+    {
+      "route_id": "RT_LA_ALT_02",
+      "decision": "ROUTE_CLARIFICATION",
+      "reason": "Warehouse risk tier is elevated."
+    },
+    {
+      "route_id": "RT_LA_ALT_03",
+      "decision": "ROUTE_CLARIFICATION",
+      "reason": "Route delay exceeds shipment tolerance."
+    }
+  ],
+  "final_selected_route": {},
+  "queried_warehouse_metrics": {
+    "warehouse_name": "Seattle Gateway Warehouse",
+    "current_utilization_pct": 55,
+    "risk_tier": "NORMAL",
+    "operational_status": "ACTIVE",
+    "capacity_tons": 3500
+  },
+  "graph_routing_metadata": {
+    "loops_executed": 3,
+    "final_decision_state": "CRITICAL_DELAY",
+    "reroute_impact_score": 25
+  },
+  "final_operations_brief": "Incident INC-2026-001 has resulted in a CRITICAL_DELAY, prompting an urgent review of logistics operations. Due to the critical nature of the delay, a route selection process was initiated, but a specific route has not yet been determined. The Seattle Gateway Warehouse, currently operating at 55% utilization, has been identified as a key factor in mitigating the delay, with its normal risk tier and active operational status making it an ideal location for redirected shipments. The warehouse's capacity of 3500 tons is expected to play a crucial role in managing the backlog and getting operations back on track."
+}
