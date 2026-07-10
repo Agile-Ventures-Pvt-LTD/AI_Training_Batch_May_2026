@@ -1,14 +1,13 @@
 from pathlib import Path
 import json
 
-def save_report(report: dict, incident_id: str):
+OUTPUT_DIR = Path("outputs")
 
-    output_dir = Path("outputs")
-    output_dir.mkdir(exist_ok=True)
+def save_report(state: dict) -> Path:
+    OUTPUT_DIR.mkdir(exist_ok=True)
+    report_path = (OUTPUT_DIR / f"{state['incident_id']}_reroute_advisory_report.json")
 
-    output_file = output_dir / f"{incident_id}_reroute_advisory_report.json"
+    with open(report_path, "w", encoding="utf-8") as f:
+        json.dump(state["final_report"], f, indent=4, ensure_ascii=False,)
 
-    with open(output_file, "w") as f:
-        json.dump(report, f, indent=4)
-
-    return output_file
+    return report_path

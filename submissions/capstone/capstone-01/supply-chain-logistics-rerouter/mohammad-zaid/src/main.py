@@ -55,9 +55,9 @@ initial_state = {
 
 # Execute the Graph
 
-final_state = app.invoke(
-    input = initial_state
-    ) 
+final_state = app.invoke(input = initial_state)
+ 
+ # for debugging purpose
 print(f"Final State of Graph:\n {final_state}")
 
 # Save the Report

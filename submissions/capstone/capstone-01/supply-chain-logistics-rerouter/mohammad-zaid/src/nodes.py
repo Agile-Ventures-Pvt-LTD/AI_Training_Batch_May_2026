@@ -8,10 +8,10 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 
-from schemas import ShipmentMetadata
-from tools import (query_warehouse_inventory_tool, get_alternative_routes_tool)
+from src.schemas import ShipmentMetadata
+from src.tools import (query_warehouse_inventory_tool, get_alternative_routes_tool)
 import os
-from rag import retrieve_rules
+from src.rag import retrieve_rules
 
 load_dotenv()
 
@@ -44,7 +44,6 @@ def parse_incident(state):
     return state
 
 # RAG retrieval
-
 def retrieve_Logistics_rules(state):
 
     metadata = state["extracted_metadata"]
@@ -62,7 +61,6 @@ def retrieve_Logistics_rules(state):
     return state
 
 # Loading Routes
-
 def load_alternative_routes(state):
 
     routes = get_alternative_routes_tool(state["disrupted_port_id"])
@@ -77,7 +75,6 @@ def load_alternative_routes(state):
     return state
 
 # Select Route
-
 def select_route(state):
 
     index = state["current_route_index"]
@@ -93,7 +90,6 @@ def select_route(state):
     return state
 
 # Warehouse Check
-
 def check_assigned_warehouse(state):
 
     warehouse_id = state["selected_route"]["warehouse_id"]
@@ -105,7 +101,6 @@ def check_assigned_warehouse(state):
     return state
 
 # Route Analysis
-
 def analyze_route(state):
 
     metadata = state["extracted_metadata"]
@@ -145,10 +140,10 @@ def analyze_route(state):
         decision = "ROUTE_CLARIFICATION"
         reason = "Shipment delay exceeded."
 
-        state["reroute_impact_score"] = min(score, 100)
-        state["routing_decision"] = decision
+    state["reroute_impact_score"] = min(score, 100)
+    state["routing_decision"] = decision
 
-        state["routes_evaluated"].append(
+    state["routes_evaluated"].append(
             {
                 "route_id": route["route_id"],
                 "decision": decision,
@@ -161,7 +156,6 @@ def analyze_route(state):
     return state
 
 # Retry Route
-
 def route_clarification(state):
 
     state["clarification_attempts"] += 1
@@ -178,7 +172,6 @@ def route_clarification(state):
 
 
 # Finalize
-
 def finalize_route(state):
 
     state["logs"].append("Route finalized")
@@ -186,7 +179,6 @@ def finalize_route(state):
     return state
 
 # Escalate
-
 def escalate_incident(state):
 
     state["selected_route"] = {}
@@ -196,7 +188,6 @@ def escalate_incident(state):
 
 
 # Final Report
-
 def generate_report(state):
 
     prompt = ChatPromptTemplate.from_messages([

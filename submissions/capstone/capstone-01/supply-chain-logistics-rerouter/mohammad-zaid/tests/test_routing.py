@@ -34,7 +34,6 @@ def test_routing_elevated_risk():
 
 
 def test_routing_valid_route():
-
     warehouse = {
         "current_utilization_pct": 60,
         "operational_status": "ACTIVE",

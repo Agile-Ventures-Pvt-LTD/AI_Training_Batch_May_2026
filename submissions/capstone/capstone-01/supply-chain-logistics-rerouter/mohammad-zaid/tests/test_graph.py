@@ -2,7 +2,7 @@ from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from src.nodes import route_clarification
-from schemas import ShipmentMetadata
+from src.schemas import ShipmentMetadata
 
 def test_graph_retry_selects_next_route():
     state = {
