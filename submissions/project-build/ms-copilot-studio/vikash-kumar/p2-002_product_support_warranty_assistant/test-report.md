@@ -9,7 +9,7 @@
 | **Platform** | Microsoft Copilot Studio |
 | **Chatbot Name** | NovaRetail Product Support & Warranty Assistant |
 | **Tested By** | Vikash Kumar |
-| **Test Date** | <DD/MM/YYYY> |
+| **Test Date** | 24/07/2026 |
 
 ---
 
@@ -44,10 +44,10 @@ The objective of testing was to verify that the chatbot correctly performs:
 
 | Metric | Result |
 |--------|--------|
-| Total Test Cases | 15 |
-| Passed | 15 |
-| Failed | 0 |
-| Pass Rate | 100% |
+| Total Test Cases | 40 |
+| Passed | 23 |
+| Failed | 17 |
+| Pass Rate | 56% |
 
 ---
 
