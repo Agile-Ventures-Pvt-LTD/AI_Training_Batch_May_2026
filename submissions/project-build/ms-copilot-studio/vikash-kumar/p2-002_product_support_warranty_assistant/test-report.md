@@ -47,7 +47,7 @@ The objective of testing was to verify that the chatbot correctly performs:
 | Total Test Cases | 40 |
 | Passed | 23 |
 | Failed | 17 |
-| Pass Rate | 56% |
+| Pass Rate | 57% |
 
 ---
 
