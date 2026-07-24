@@ -10,7 +10,7 @@ This document provides the deployment and access details for the **NovaRetail Pr
 
 | Item | Details |
 |------|---------|
-| **Copilot Studio URL** |  |
+| **Copilot Studio URL** | [AgentLink](https://copilotstudio.microsoft.com/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/f9757893-4987-f111-8076-000d3af21e08/overview) |
 | **Environment** | Agile Consulting Pvt. Ltd. |
 | **Authentication Required** | Yes |
 | **Sharing Method** | Link |
