@@ -33,6 +33,45 @@ The assistant provides structured troubleshooting, safety guidance, warranty cla
 
 ---
 
+## Submission Report
+
+**Project ID:** P2-002
+
+**Participant Name:** Aditya Sodani
+
+**GitHub Username:** Aditya-Sodani
+
+**Chatbot Name:** NovaRetail Support Assistant
+
+**Copilot Studio URL:** https://copilotstudio.microsoft.com/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/59655d90-4c87-f111-8076-000d3af21e08/overview
+
+**Sharing Method:** Shared with Ankur Saxena via Microsoft Copilot Studio
+
+**Authentication Required:** No
+
+**Supported Laptop Model:** Lenovo Laptop
+
+**Supported Printer Model:** HP Printer
+
+**Knowledge Sources Configured:** Lenovo Product Manuals, HP Product Manuals , HP Online Support , Lenova Online Support 
+
+**Custom Topics Completed:** Guided Product Troubleshooting, Warranty Eligibility and Service Route Assessment
+
+**Reusable Subtopics Completed:** Safety Assessment, Support Case Summary, Warranty Summary, Escalation Flow
+
+**Number of Test Cases Executed:** 30
+
+**Number of Passed Test Cases:** 26
+
+**Number of Failed Test Cases:** 4
+
+**Known Limitations:** Supports only Lenovo laptops and HP printers; no live warranty database integration; no repair status tracking; warranty assessment is preliminary only; final decisions require human review.
+
+**AI Tools Used:** Microsoft Copilot Studio, ChatGPT (OpenAI)
+
+**Submission Date:** 24-07-2026
+
+
 # Supported Products
 
 | Product Family | Support |
