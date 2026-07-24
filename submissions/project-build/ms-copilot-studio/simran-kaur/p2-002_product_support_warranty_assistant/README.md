@@ -4,7 +4,7 @@
 
 **Project ID:** P2-002
 
-**Project Name:** NovaCare Product Support and Warranty Assistant
+**Project Name:** Product Support and Warranty Assistant
 
 **Participant:** Simran Kaur
 
