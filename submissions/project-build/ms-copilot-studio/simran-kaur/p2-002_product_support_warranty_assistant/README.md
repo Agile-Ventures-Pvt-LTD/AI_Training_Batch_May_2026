@@ -1,4 +1,4 @@
-# NovaCare Product Support and Warranty Assistant
+#  Product Support and Warranty Assistant
 
 ## Project Information
 
@@ -14,7 +14,7 @@
 
 # Project Overview
 
-The **NovaCare Product Support and Warranty Assistant** is an AI-powered customer support chatbot developed using Microsoft Copilot Studio. It assists customers with product-related questions, guided troubleshooting, product safety checks, and preliminary warranty eligibility assessments for supported Lenovo laptops and HP printers.
+The **Product Support and Warranty Assistant** is an AI-powered customer support chatbot developed using Microsoft Copilot Studio. It assists customers with product-related questions, guided troubleshooting, product safety checks, and preliminary warranty eligibility assessments for supported Lenovo laptops and HP printers.
 
 The assistant uses official product documentation, NovaCare warranty policies, and company-defined support procedures to provide accurate and grounded responses. It is designed to improve the customer support experience while ensuring that all recommendations remain within defined business policies.
 
