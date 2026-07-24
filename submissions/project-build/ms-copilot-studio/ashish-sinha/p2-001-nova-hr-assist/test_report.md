@@ -15,9 +15,6 @@
 |---------|-------|
 | Total Test Cases Required | 15 |
 | Total Test Cases Executed | 15 |
-| Passed | |
-| Failed | |
-| Success Rate | |
 
 ---
 
