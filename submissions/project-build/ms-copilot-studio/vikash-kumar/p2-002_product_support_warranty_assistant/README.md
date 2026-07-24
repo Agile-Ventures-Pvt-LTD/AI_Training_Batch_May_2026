@@ -1,75 +1,83 @@
-# P2-002 Product Support and Warranty Assistant
+# P2-002 Product Support & Warranty Assistant
 
 ## Project Information
 
 | Field | Details |
-|-------|---------|
+|--------|---------|
 | **Project ID** | P2-002 |
-| **Project Title** | Product Support and Warranty Assistant |
-| **Participant** | Vikash Kumar |
+| **Participant Name** | Vikash Kumar |
+| **GitHub Username** | Vikash-agile |
 | **Chatbot Name** | NovaRetail Product Support & Warranty Assistant |
-| **Platform** | Microsoft Copilot Studio |
+| **Microsoft Copilot Studio URL** | *Refer to `chatbot-url.md`* |
+| **Sharing Method** | Published through Microsoft Copilot Studio Demo Website and shared with the evaluator (Ankur Saxena). |
+| **Authentication Required** | No (Public Demo Website) |
 
 ---
 
-# Objective
+# Project Overview
 
-Develop an AI-powered Product Support and Warranty Assistant using Microsoft Copilot Studio that provides safe, knowledge-grounded troubleshooting and preliminary warranty guidance for supported Lenovo and HP products.
+The **NovaRetail Product Support & Warranty Assistant** is an AI-powered chatbot built using **Microsoft Copilot Studio**. It provides safe, knowledge-grounded troubleshooting, preliminary warranty eligibility assessment, and service route recommendations for supported Lenovo laptops and HP printers.
 
-The assistant helps customers troubleshoot common issues, assess warranty eligibility, identify safety-critical situations, and prepare information for human support while remaining within defined safety and business boundaries.
+The chatbot uses Retrieval-Augmented Generation (RAG) with official knowledge sources and reusable conversational topics to deliver consistent and policy-compliant responses.
 
 ---
 
 # Supported Products
 
-## Laptops
+## Supported Laptop Model
 
 - Lenovo ThinkPad E14 Gen 5
 
-## Printers
+## Supported Printer Model
 
 - HP LaserJet Pro MFP M428-M429
 
-## Accessories
+## Supported Accessories
 
-- Bundled Lenovo Charger
-- Bundled Lenovo Power Cable
-
----
-
-# Features
-
-- Guided product troubleshooting
-- Product model validation
-- Safety assessment before troubleshooting
-- Preliminary warranty eligibility assessment
-- Human escalation guidance
-- Support case summary generation
-- Unsupported product handling
-- Conversation cancellation and restart
-- Optional repair escalation and appointment preparation
-- Knowledge-grounded responses using official documentation
+- Bundled Laptop Battery
+- Bundled Charger
+- Bundled Power Cable
 
 ---
 
-# Custom Topics
+# Knowledge Sources Configured
 
-## Main Topics
+The chatbot is grounded using the following official knowledge sources:
 
-1. Guided Product Troubleshooting and Safety Triage
-2. Warranty Eligibility and Service Route Assessment
-3. Repair Escalation and Appointment Preparation *(Optional Advanced Topic)*
+### Markdown Documents
+
+- NovaCare Limited Warranty Policy
+- Product Support Scope
+- Product Safety and Escalation Policy
+
+### Product Documentation
+
+- Lenovo ThinkPad E14 Gen 5 User Guide (PDF)
+- HP LaserJet Pro MFP M428-M429 User Guide (PDF)
+
+### Official Websites
+
+- Lenovo Support
+- HP Support
 
 ---
 
-## Reusable Topics
+# Custom Topics Completed
+
+- Guided Product Troubleshooting and Safety Triage
+- Warranty Eligibility and Service Route Assessment
+- Repair Escalation and Appointment Preparation *(Optional Advanced Topic)*
+
+---
+
+# Reusable Subtopics Completed
 
 - Product Safety Assessment
 - Support Case Summary
 
 ---
 
-## Utility Topics
+# Utility Topics
 
 - Unsupported Product Handler
 - Human Escalation
@@ -77,90 +85,42 @@ The assistant helps customers troubleshoot common issues, assess warranty eligib
 
 ---
 
-# Knowledge Sources
+# Testing Summary
 
-## Markdown Documents
+| Metric | Value |
+|--------|------:|
+| **Number of Test Cases Executed** | 40 |
+| **Passed Test Cases** | 6 |
+| **Failed Test Cases** | 33 |
+| **Errors** | 1 |
 
-- NovaCare Limited Warranty Policy
-- Product Support Scope
-- Product Safety and Escalation Policy
-
-## Product Documentation
-
-- Lenovo ThinkPad E14 Gen 5 User Guide (PDF)
-- HP LaserJet Pro MFP M428-M429 User Guide (PDF)
-
-## Official Websites
-
-- Lenovo Support
-- HP Support
-
----
-
-# Safety Controls
-
-- Mandatory safety assessment before troubleshooting
-- Detection of safety-critical conditions
-- Immediate escalation for Level 4 safety issues
-- No unsafe troubleshooting instructions
-- No device dismantling guidance
-- No remote access instructions
-- No requests to reproduce hazardous conditions
-
----
-
-# Decision Boundaries
-
-The assistant does **not**:
-
-- Approve or reject warranty claims
-- Create support cases
-- Book repair appointments
-- Assign technicians
-- Reserve replacement products
-- Perform live inventory lookups
-- Provide repair status updates
-- Access customer account records
-- Make final warranty decisions
-
-All warranty decisions remain the responsibility of authorised NovaRetail representatives.
-
----
-
-# Chatbot URL
-
-The published chatbot URL is provided in:
-
-**chatbot-url.md**
-
----
-
-# Project Status
-
-**Status:** Completed
-
-The chatbot includes:
-
-- Supported product validation
-- Safety assessment
-- Guided troubleshooting
-- Warranty assessment
-- Human escalation
-- Reusable subtopics
-- Knowledge-grounded responses
+> *These values should match the latest evaluation results in Copilot Studio. Update them if you re-run the evaluation.*
 
 ---
 
 # Known Limitations
 
-- Supports only the products defined in the project scope.
+- Supports only products defined in the project scope.
+- Provides preliminary warranty assessment only.
+- Does not approve or reject warranty claims.
+- Does not create support tickets or repair appointments.
+- Does not access live warranty databases or customer records.
+- Does not integrate with CRM or ERP systems.
 - Uses only configured knowledge sources.
-- Does not integrate with live CRM, ERP, or ticketing systems.
-- Cannot create appointments or service requests.
-- Cannot provide repair tracking or inventory availability.
-- Cannot make final warranty approval decisions.
+- Requires human review for final warranty decisions.
 
 Refer to **known-limitations.md** for complete details.
+
+---
+
+# AI Tools Used
+
+The following AI tools were used during development:
+
+- Microsoft Copilot Studio
+- ChatGPT (OpenAI)
+
+AI assistance was used for documentation, workflow planning, prompt refinement, and implementation guidance. All chatbot configuration, testing, validation, and final review were completed by the participant.
 
 ---
 
@@ -176,21 +136,44 @@ custom-topic-design.md
 test-report.md
 known-limitations.md
 ai-usage-declaration.md
+screenshots.md
+screenshots/
 ```
 
 ---
 
 # Submission Checklist
 
-- Microsoft Copilot Studio chatbot created
-- Knowledge sources configured
-- Required custom topics implemented
-- Reusable subtopics implemented
-- Test cases executed
-- Chatbot published
-- Documentation completed
+- Repository path verified
+-  Chatbot published
+-  Chatbot URL shared with Ankur Saxena
+-  Chatbot URL accessible with required permissions
+-  Required Markdown files included
+-  Official knowledge-source links documented
+-  Required screenshots captured and readable
+-  No confidential information committed
+-  Repository structure follows project requirements
 
 ---
+
+# Submission Date
+
+**Date:** 24/07/2026
+
+---
+
+# Final Submission Condition
+
+I confirm that:
+
+- The repository path is correct.
+- The chatbot URL has been shared with **Ankur Saxena**.
+- The published chatbot is accessible with the documented permissions.
+- All required Markdown documents are included.
+- All screenshots are readable.
+- Official knowledge-source links are recorded.
+- No confidential or sensitive information has been committed.
+- The solution is ready for evaluation according to the P2-002 project requirements.
 
 # Author
 
