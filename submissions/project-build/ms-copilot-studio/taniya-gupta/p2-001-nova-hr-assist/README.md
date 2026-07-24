@@ -25,7 +25,7 @@ The chatbot provides **authoritative, policy-grounded guidance**. It is explicit
 4. **Evaluation:** 
    - Tested the agent against a custom Copilot Studio test set covering conflicting info, out-of-domain rejection, prompt injection and custom topic triggers.
    - For testing, I have tested against 'Compare meaning' method of Copilot studio evaluation with 70 percent passing threshold. Duration of evaluation was 6 mins.
-   - The agent has passed 100% test cases.
+   - The agent has passed 97% test cases.
 
 ---
 
