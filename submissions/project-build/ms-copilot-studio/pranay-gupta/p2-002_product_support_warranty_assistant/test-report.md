@@ -14,18 +14,6 @@
 
 ---
 
-# Test Summary
-
-| Metric | Result |
-|---------|--------|
-| Total Mandatory Test Cases | 40 |
-| Executed Test Cases | 40 |
-| Passed | 37 |
-| Failed | 3 |
-| Overall Status | Passed after corrections |
-
----
-
 # Detailed Test Cases
 
 | ID | User Scenario | Expected Behaviour | Actual Result | Pass/Fail |
