@@ -44,13 +44,14 @@ def get_retriever():
     
     vectorstore = FAISS.from_documents(
         documents=chunks,
-        embedding=embeddings,
-        
+        embedding=embeddings,    
     )
     
 
     _retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
     return _retriever
+
+
 
 def retrieve_logistics_rules(query: str) -> str:
     """Retrieves logistics rules from the knowledge base relevant to the query."""
@@ -60,6 +61,9 @@ def retrieve_logistics_rules(query: str) -> str:
         return "\n\n".join([doc.page_content for doc in docs])
     except Exception as e:
         return f"Error retrieving rules: {str(e)}"
+
+
+
 
 
 
