@@ -1,4 +1,4 @@
-# Project Build 02 - HR Employee Assistance RAG Chatbot
+# Project Build - HR Employee Assistance RAG Chatbot
 
 ## Project Title
 **HR Employee Assistance RAG Chatbot**
