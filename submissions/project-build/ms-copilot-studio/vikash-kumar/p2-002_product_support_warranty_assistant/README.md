@@ -90,9 +90,9 @@ The chatbot is grounded using the following official knowledge sources:
 | Metric | Value |
 |--------|------:|
 | **Number of Test Cases Executed** | 40 |
-| **Passed Test Cases** | 6 |
-| **Failed Test Cases** | 33 |
-| **Errors** | 1 |
+| **Passed Test Cases** | 23 |
+| **Failed Test Cases** | 17 |
+| **Errors** | 0 |
 
 > *These values should match the latest evaluation results in Copilot Studio. Update them if you re-run the evaluation.*
 
