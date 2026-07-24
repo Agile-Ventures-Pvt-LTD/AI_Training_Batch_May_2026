@@ -189,3 +189,9 @@ ai-usage-declaration.md
 - Test cases executed
 - Chatbot published
 - Documentation completed
+
+---
+
+# Author
+
+Vikash Kumar
