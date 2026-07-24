@@ -98,6 +98,11 @@ The chatbot is grounded using the following official knowledge sources:
 
 ---
 
+# Evaluation
+
+![Evaluation](submissions\project-build\ms-copilot-studio\vikash-kumar\p2-002_product_support_warranty_assistant\screenshots\evaluation.png)
+---
+
 # Known Limitations
 
 - Supports only products defined in the project scope.
