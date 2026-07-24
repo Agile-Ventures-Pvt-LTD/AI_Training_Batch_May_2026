@@ -8,7 +8,7 @@ An AI-powered HR Employee Assistance chatbot developed using **Microsoft Copilot
 
 # Project Information
 
-| Field | Details |![alt text](image.png)
+| Field | Details |
 |--------|---------|
 | **Project ID** | P2-001 |
 | **Participant Name** | Ashish Sinha |
