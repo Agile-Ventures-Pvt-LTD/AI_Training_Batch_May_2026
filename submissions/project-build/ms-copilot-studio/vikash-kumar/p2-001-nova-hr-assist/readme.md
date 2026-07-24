@@ -210,10 +210,10 @@ Requests requiring employee-specific information or approvals must be handled by
 
 | File | Description |
 |------|-------------|
-| README.md | Project overview and implementation summary |
+| readme.md | Project overview and implementation summary |
 | test_report.md | Results of the required test cases |
 | ai_usage_declaration.md | AI usage declaration for the project |
-| screenshots.docx | Screenshots of the completed implementation |
+| screenshots.md | Screenshots of the completed implementation |
 
 
 ---
