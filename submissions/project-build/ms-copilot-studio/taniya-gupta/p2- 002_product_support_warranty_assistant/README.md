@@ -118,7 +118,7 @@ submissions/project-build/ms-copilot-studio/taniya-gupta/p2-002_product_support_
 | Knowledge sources uploaded and tested | Complete |
 | Custom topics built | Complete |
 | Reusable subtopics built | Complete |
-| Test cases executed | In Progress |
-| Agent published | Pending |
-| URL shared with Ankur Saxena | Pending |
-| GitHub artifacts committed | Pending |
+| Test cases executed | Complete |
+| Agent published | Complete |
+| URL shared with Ankur Saxena | Complete |
+| GitHub artifacts committed | Complete |

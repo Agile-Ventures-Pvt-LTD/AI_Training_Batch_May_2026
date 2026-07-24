@@ -1,9 +1,9 @@
 # Known Limitations
 
-**Project ID:** P2-002
-**Agent Name:** NovaCare Assist
-**Participant:** Taniya Gupta
-**Date:** 24 July 2026
+- **Project ID:** P2-002
+- **Agent Name:** NovaCare Assist
+- **Participant:** Taniya Gupta
+- **Date:** 24 July 2026
 
 ---
 

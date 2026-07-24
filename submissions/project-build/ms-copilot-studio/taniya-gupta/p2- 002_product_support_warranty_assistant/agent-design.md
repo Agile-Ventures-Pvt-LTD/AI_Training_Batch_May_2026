@@ -1,10 +1,10 @@
 # Agent Design Document
 
-**Project ID:** P2-002
-**Agent Name:** NovaCare Assist
-**Platform:** Microsoft Copilot Studio
-**Participant:** Taniya Gupta
-**Date:** 24 July 2026
+- **Project ID:** P2-002
+- **Agent Name:** NovaCare Assist
+- **Platform:** Microsoft Copilot Studio
+- **Participant:** Taniya Gupta
+- **Date:** 24 July 2026
 
 ---
 

@@ -1,11 +1,9 @@
 # Solution Summary
 
-**Project ID:** P2-002
-**Project Title:** Product Support and Warranty Assistant
-**Agent Name:** NovaCare Assist
-**Participant:** Taniya Gupta
-**Platform:** Microsoft Copilot Studio
-**Date:** 24 July 2026
+- **Project ID:** P2-002
+- **Agent Name:** NovaCare Assist
+- **Participant:** Taniya Gupta
+- **Date:** 24 July 2026
 
 ---
 
