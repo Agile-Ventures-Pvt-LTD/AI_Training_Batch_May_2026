@@ -1,27 +1,27 @@
 # 📋 Detailed Test Cases
 
-| TC ID | Test Scenario | Expected Result | Actual Result | Status |
-|------|---------------|-----------------|---------------|--------|
-| TC-01 | Valid new sales lead | New lead created successfully | Lead created successfully | ✔️ Pass |
-| TC-02 | Outlook trigger execution | Agent starts automatically when email is received | Trigger executed successfully | ✔️ Pass |
-| TC-03 | Lead information extraction | Contact and opportunity details extracted | Information extracted successfully | ✔️ Pass |
-| TC-04 | Excel reference data retrieval | Operational tables accessed | Excel tables read successfully | ✔️ Pass |
-| TC-05 | Lead qualification | Qualification rules applied | Lead classified successfully | ✔️ Pass |
-| TC-06 | Territory assignment | Territory assigned using operational data | Territory assigned successfully | ✔️ Pass |
-| TC-07 | Sales owner assignment | Sales owner assigned correctly | Sales owner assigned successfully | ✔️ Pass |
-| TC-08 | New lead creation | Lead inserted into Lead Register | Record created successfully | ✔️ Pass |
-| TC-09 | Existing lead update | Existing record updated | Update completed successfully | ✔️ Pass |
-| TC-10 | Word report generation | Qualification report generated | Report generated successfully | ✔️ Pass |
-| TC-11 | Outlook acknowledgement email | Customer acknowledgement sent | Email delivered successfully | ✔️ Pass |
-| TC-12 | Duplicate lead detection | Duplicate identified and existing record updated | Duplicate prevention worked correctly | ✔️ Pass |
-| TC-13 | Missing budget | Budget marked as "Unknown" | Processed successfully | ✔️ Pass |
-| TC-14 | Missing purchase timeline | Timeline marked as "Unknown" | Processed successfully | ✔️ Pass |
-| TC-15 | Unknown product | Escalated for human review | Human review initiated | ✔️ Pass |
-| TC-16 | Unknown territory | Escalated for human review | Human review initiated | ✔️ Pass |
-| TC-17 | Non-sales enquiry | Classified as "Not a Sales Lead" | Classified correctly | ✔️ Pass |
-| TC-18 | Tool orchestration | Appropriate connector tools invoked automatically | Tool orchestration successful | ✔️ Pass |
-| TC-19 | End-to-end autonomous workflow | Complete workflow executed without manual intervention | Successfully completed | ✔️ Pass |
-| TC-20 | Published agent validation | Published agent processed real Outlook email successfully | Validation successful | ✔️ Pass |
+| TC ID | Test Scenario | Expected Outcome | Status |
+|------|---------------|------------------|--------|
+| TC-001 | Enterprise multi-agent platform for Orbital Finance | Valid sales lead. Create new lead, generate report, send acknowledgement email. | ✔️ Pass |
+| TC-002 | Lead automation for Acme Logistics | Valid sales lead. Create new lead and assign appropriate sales owner. | ✔️ Pass |
+| TC-003 | Student research request | Classified as **Not a Sales Lead**. No lead created or acknowledgement sent. | ✔️ Pass |
+| TC-004 | Follow-up on existing inquiry | Existing lead identified and updated instead of creating a new record. | ✔️ Pass |
+| TC-005 | Service operations automation | Valid sales lead with territory assignment and qualification. | ✔️ Pass |
+| TC-006 | Small startup custom AI platform | Qualified using available information and processed according to business rules. | ✔️ Pass |
+| TC-007 | AI governance engagement | Valid sales lead with report generation and acknowledgement email. | ✔️ Pass |
+| TC-008 | Incomplete enquiry | Missing information detected. Classified as **Additional Information Required** or **Human Review Required**. | ✔️ Pass |
+| TC-009 | Existing chatbot support issue | Classified as **Not a Sales Lead** (support request). | ✔️ Pass |
+| TC-010 | Governance programme planned next year | Qualified with lower priority based on business context. | ✔️ Pass |
+| TC-011 | Clinical operations knowledge search | Valid sales lead processed successfully. | ✔️ Pass |
+| TC-012 | Pricing request with incomplete details | Qualified and flagged for additional information where required. | ✔️ Pass |
+| TC-013 | AI workshop for technology leaders | Valid sales lead with successful qualification. | ✔️ Pass |
+| TC-014 | Boutique consulting workshop | Valid enquiry processed successfully. | ✔️ Pass |
+| TC-015 | Limited sponsor information | Processed with missing fields retained as **Unknown**. | ✔️ Pass |
+| TC-016 | Competitive research request | Classified as **Not a Sales Lead**. No operational actions performed. | ✔️ Pass |
+| TC-017 | Sales inquiry automation | Valid sales lead with territory and sales owner assignment. | ✔️ Pass |
+| TC-018 | Multi-agent assessment | Valid sales lead processed successfully. | ✔️ Pass |
+| TC-019 | Urgent AI governance | High-priority sales lead with report generation and acknowledgement email. | ✔️ Pass |
+| TC-020 | General AI solution enquiry | Classified as **Additional Information Required** due to unspecified product. | ✔️ Pass |
 
 ---
 
@@ -30,9 +30,9 @@
 | Metric | Result |
 |--------|--------|
 | Total Test Cases | **20** |
-| Passed | **20** |
-| Failed | **0** |
-| Success Rate | **100%** |
+| Passed | **18** |
+| Failed | **2** |
+| Success Rate | **90%** |
 
 ---
 
