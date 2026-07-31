@@ -20,8 +20,8 @@
 | TC-016 | Competitive research request | Classified as **Not a Sales Lead**. No operational actions performed. | ✔️ Pass |
 | TC-017 | Sales inquiry automation | Valid sales lead with territory and sales owner assignment. | ✔️ Pass |
 | TC-018 | Multi-agent assessment | Valid sales lead processed successfully. | ✔️ Pass |
-| TC-019 | Urgent AI governance | High-priority sales lead with report generation and acknowledgement email. | ✔️ Pass |
-| TC-020 | General AI solution enquiry | Classified as **Additional Information Required** due to unspecified product. | ✔️ Pass |
+| TC-019 | Urgent AI governance | High-priority sales lead with report generation and acknowledgement email. | Fail |
+| TC-020 | General AI solution enquiry | Classified as **Additional Information Required** due to unspecified product. | Fail |
 
 ---
 
