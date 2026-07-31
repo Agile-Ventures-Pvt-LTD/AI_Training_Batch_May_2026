@@ -13,7 +13,7 @@ The agent is published and accessible inside Microsoft Copilot Studio.
 **Publication Date:** 2026-07-31
 
 > The direct Copilot Studio agent URL is:
-> `https://copilotstudio.microsoft.com/environments/[environment-id]/bots/[bot-id]/`
+> `https://copilotstudio.microsoft.com/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/567df0da-a28c-f111-8077-000d3af21e08/overview`
 
 ## Access Limitations
 
