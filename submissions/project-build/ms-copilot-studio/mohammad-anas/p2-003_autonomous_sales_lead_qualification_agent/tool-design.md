@@ -61,7 +61,7 @@ Each tool performs a specific business function before control passes to the nex
 | Excel – Add a Row into a Table | Creates new lead records |
 | Excel – Update a Row | Updates existing lead records |
 | Word – Populate a Microsoft Word Template | Generates qualification reports |
-| Outlook – Reply to Email (V3) / Send Email | Sends customer and internal communications |
+| Outlook – Send an Email (V2) | Sends customer and internal communications |
 
 ---
 
@@ -206,7 +206,7 @@ Executed only after successful qualification and classification.
 
 ---
 
-# Tool 6 – Outlook Communication
+# Outlook – Send an Email (V2)
 
 ## Purpose
 

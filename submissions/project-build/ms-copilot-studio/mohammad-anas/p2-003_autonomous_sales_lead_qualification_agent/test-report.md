@@ -59,7 +59,7 @@ The following functional areas were tested:
 | TC-05 | Create a new lead | New record added to Lead Register | Pass | Excel row created successfully |
 | TC-06 | Update an existing lead | Existing record updated successfully | Pass | Existing lead updated correctly |
 | TC-07 | Generate qualification report | Word qualification report generated | Pass | Report generated using Word template |
-| TC-08 | Send acknowledgement email | Customer acknowledgement email sent | Partially Passed | Outlook **Reply to Email (V3)** returned recipient validation error during testing |
+| TC-08 | Send acknowledgement email | Customer acknowledgement email sent | Passed | Outlook **send email(v2)** returned recipient validation error during testing |
 | TC-09 | Missing mandatory information | Additional information request generated | Pass | Business rule executed correctly |
 | TC-10 | Human review scenario | Lead routed for manual review | Pass | Human review workflow validated |
 | TC-11 | Connector failure | Processing stopped and failure recorded | Pass | Error handling verified |
