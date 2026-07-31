@@ -1,0 +1,13 @@
+﻿RuleID,Category,Condition,RiskLevel,GapPoints,RecommendedAction
+R-01,RTO,Current RTO > Required RTO,High,3,Reduce recovery time or revise approved requirement
+R-02,RPO,Current RPO > Required RPO,High,3,Improve backup/replication frequency
+R-03,Backup,BackupConfigured = No,Critical,5,Implement approved backup capability
+R-04,DR,DRConfigured = No AND Criticality = Mission Critical,Critical,5,Design and validate DR capability
+R-05,DR Test,Last DR test > 12 months ago,High,3,Schedule and complete recovery test
+R-06,Backup Test,Last backup test > 6 months ago,Medium,2,Validate backup restore procedure
+R-07,Documentation,RecoveryProcedureAvailable = No,High,3,Create and approve recovery procedure
+R-08,Workaround,ManualWorkaround = No AND Criticality in Mission/Business Critical,High,3,Define business continuity workaround
+R-09,Dependency,Critical dependency missing or unclear,Medium,2,Complete dependency mapping
+R-10,Evidence,Mandatory technical evidence unavailable,Medium,2,Route for manual technical review
+R-11,MCP,MCP lookup unavailable,Medium,2,Mark technical evidence unavailable and escalate
+R-12,Criticality,Current criticality conflicts with business impact data,Medium,2,Request business owner validation
