@@ -1,5 +1,7 @@
 # P2-004 Autonomous Multi-Agent BC/DR Readiness System
 
+Agent url : https://copilotstudio.microsoft.com/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/d9db2db2-ce8c-f111-8077-000d3af21e08/overview
+
 ## Executive Overview
 The **P2-004 Autonomous Multi-Agent Business Continuity and Disaster Recovery (BC/DR) Readiness System** is built in **Microsoft Copilot Studio**. It automates end-to-end BC/DR assessments for corporate applications by coordinating a central **Supervisor Agent** with **6 Specialized Child Agents** and integrating live technical information via the **Microsoft Learn Model Context Protocol (MCP)** server.
 
