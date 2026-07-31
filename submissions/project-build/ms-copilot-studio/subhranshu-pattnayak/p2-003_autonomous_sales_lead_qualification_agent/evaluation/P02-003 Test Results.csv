@@ -1,0 +1,297 @@
+﻿"conversationId","question","expectedResponse","actualResponse","testMethodType_1","result_1","passingScore_1","explanation_1"
+"a12c9b8f-89bf-487f-a60c-f928ae3a5440","[TC-001] Deploy a governed multi-agent platform across lending and customer operations.","The agent should process the inquiry and classify it as 'Hot' according to the configured qualification rules and perform the required autonomous actions.","Let's get you connected first, and then I can find that info for you. [Open connection manager](https://copilotstudio.microsoft.com/c2/tenants/1e1572ff-a54c-4cd7-b2a9-20091afa5359/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/cr034_AutonomousSalesLeadQualificationAgentMEVm2H/channels/pva-maker-evaluation/conversations/a12c9b8f-89bf-487f-a60c-f928ae3a5440/user-connections) to verify your credentials., Once the connection is ready, retry your request.","General quality","Pass",,"All quality checks passed: The response is on topic, provides useful information, and is well supported by the available documents."
+"63f0c72a-a36e-4e18-b7b4-c020412f14c1","[TC-002] Automate inbound lead qualification and opportunity routing.","The agent should process the inquiry and classify it as 'Qualified' according to the configured qualification rules and perform the required autonomous actions.","Understood. I will initiate the full inbound lead qualification and opportunity routing workflow according to NovaWorks policies and the outlined phases.  
+
+Please provide the **inbound email details or message content** so I can begin **Phase 2: Extract and Normalize Information**.","General quality","Pass",,"All quality checks passed: The response is on topic, provides useful information, and is well supported by the available documents."
+"5684658a-36ad-4040-8f19-ad1d02a00a4e","[TC-003] Request for free research interview and source code.","The agent should process the inquiry and classify it as 'Not a Sales Lead' according to the configured qualification rules and perform the required autonomous actions.","Thank you for sharing the inquiry. Based on the description **""[TC-003] Request for free research interview and source code""**, here is the likely initial assessment:
+
+---
+
+### **Phase 2: Extracted Information**
+- **Source**
+  - **Message ID:** Unknown
+  - **Sender Email:** Unknown
+  - **Received Date:** Unknown
+  - **Lead Source:** Unknown
+- **Contact**
+  - **Contact Name:** Unknown
+  - **Job Title:** Unknown
+  - **Decision Role:** Unknown
+- **Organization**
+  - **Company Name:** Unknown
+  - **Country:** Unknown
+  - **Industry:** Unknown
+  - **Company Size:** Unknown
+- **Opportunity**
+  - **Product Interest:** Unknown
+  - **Business Need:** Request for interview and source code (not a clear commercial intent)
+  - **Budget:** None mentioned
+  - **Purchase Timeline:** Unknown
+- **Assessment**
+  - Mandatory details missing: **Yes**
+  - Initial confidence: Very Low
+  - Product Fit: None indicated
+  - Risk indicators: Requesting free resources (possible non-sales intent)
+
+---
+
+### **Preliminary Classification**
+This looks like a **Non-Commercial Request**, as it asks for a free interview and code, not a product or service purchase.
+
+According to NovaWorks policy, such leads usually map to:
+**Classification:** **Not a Sales Lead**  
+**Processing Outcome:** No qualification score needed for non-sales inquiries.
+
+---
+
+#### **Next Steps**
+- No qualification report is generated.
+- No external email is sent (to avoid promising anything).
+- Record processing outcome: *Not a Sales Lead*.
+
+---
+
+Would you like me to:
+✅ **Mark this as ""Not a Sales Lead"" and update lead register accordingly**,  
+or  
+🔍 **Initiate full rule-based workflow** (even though this will likely result in the same outcome)?","General quality","Pass",,"All quality checks passed: The response is on topic, provides useful information, and is well supported by the available documents."
+"f31902ba-60c8-428a-8c62-6eaa2c7d7f13","[TC-004] Follow-up on the same secure knowledge assistant inquiry.","The agent should process the inquiry and classify it as 'Duplicate' according to the configured qualification rules and perform the required autonomous actions.","The lead you referenced corresponds to an existing record, so this is considered a **Duplicate**. Here are the details:
+
+- **Company Name:** Horizon Energy Solutions  
+- **Contact:** Rebecca Lawson (Director of Digital Transformation)  
+- **Business Need:** Improve operational knowledge management and automate employee support with a secured AI-powered knowledge assistant integrated with Microsoft 365.  
+- **Product Interest:** Enterprise RAG Knowledge Assistant  
+- **Estimated Budget:** 280,000 USD  
+- **Purchase Timeline:** 60 days  
+- **Qualification Score:** 95  
+- **Classification:** Hot  
+- **Assigned Owner:** Olivia Bennett  
+- **Lead Source:** Technology Conference  
+- **Territory:** ANZ  
+
+Since this is a duplicate inquiry, no additional qualification report or external communication will be generated. The lead remains assigned to Olivia Bennett for further follow-up as per existing process.","General quality","Pass",,"All quality checks passed: The response is on topic, provides useful information, and is well supported by the available documents."
+"cbc7b46d-9738-4272-af78-36ef4eb9ebaa","[TC-005] Automate service desk and store operations across 80 locations.","The agent should process the inquiry and classify it as 'Qualified' according to the configured qualification rules and perform the required autonomous actions.","Let's get you connected first, and then I can find that info for you. [Open connection manager](https://copilotstudio.microsoft.com/c2/tenants/1e1572ff-a54c-4cd7-b2a9-20091afa5359/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/cr034_AutonomousSalesLeadQualificationAgentMEVm2H/channels/pva-maker-evaluation/conversations/cbc7b46d-9738-4272-af78-36ef4eb9ebaa/user-connections) to verify your credentials., Once the connection is ready, retry your request.","General quality","Fail",,"Not answered: The agent did not provide any information about automating service desk and store operations. It only asked the user to verify credentials and retry later. Because the agent didn't answer the question, the response wasn't evaluated for relevance, completeness, or use of knowledge sources."
+"00129dd0-8706-4d06-8b54-f0e14c0b4519","[TC-006] Build a custom agent platform for a five-person startup.","The agent should process the inquiry and classify it as 'Low Priority' according to the configured qualification rules and perform the required autonomous actions.","Let's get you connected first, and then I can find that info for you. [Open connection manager](https://copilotstudio.microsoft.com/c2/tenants/1e1572ff-a54c-4cd7-b2a9-20091afa5359/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/cr034_AutonomousSalesLeadQualificationAgentMEVm2H/channels/pva-maker-evaluation/conversations/00129dd0-8706-4d06-8b54-f0e14c0b4519/user-connections) to verify your credentials., Once the connection is ready, retry your request.","General quality","Fail",,"Not answered: The agent response does not provide any guidance on building a custom agent platform and only asks the user to verify credentials before proceeding. Because the agent didn't answer the question, the response wasn't evaluated for relevance, completeness, or use of knowledge sources."
+"b4d56811-e8ac-410f-bf40-07d1fa69ccd0","[TC-007] Establish governance for production GenAI deployments.","The agent should process the inquiry and classify it as 'Human Review Required' according to the configured qualification rules and perform the required autonomous actions.","Let's get you connected first, and then I can find that info for you. [Open connection manager](https://copilotstudio.microsoft.com/c2/tenants/1e1572ff-a54c-4cd7-b2a9-20091afa5359/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/cr034_AutonomousSalesLeadQualificationAgentMEVm2H/channels/pva-maker-evaluation/conversations/b4d56811-e8ac-410f-bf40-07d1fa69ccd0/user-connections) to verify your credentials., Once the connection is ready, retry your request.","General quality","Fail",,"Not answered: The agent response does not provide any guidance on establishing governance and only asks the user to connect and retry later. Because the agent didn't answer the question, the response wasn't evaluated for relevance, completeness, or use of knowledge sources."
+"ff6c6079-c4ca-447e-a2bd-7e04de6fb55d","[TC-008] Need AI. Call me.","The agent should process the inquiry and classify it as 'Human Review Required' according to the configured qualification rules and perform the required autonomous actions.","Thank you for sharing the inquiry. I’ll start processing this lead as per the qualification workflow.  
+
+---
+
+### **Extracted Details**
+- **Source**
+  - Message ID: [TC-008]
+  - Sender Email: *Unknown* (not provided)
+  - Received Date: Today (07/31/2026)
+  - Lead Source: Email
+
+- **Contact**
+  - Contact Name: Unknown
+  - Job Title: Unknown
+  - Decision Role: Unknown
+
+- **Organization**
+  - Company Name: Unknown
+  - Country: Unknown
+  - Industry: Unknown
+  - Company Size: Unknown
+
+- **Opportunity**
+  - Product Interest: AI
+  - Business Need: Simplified request (“Need AI”)
+  - Budget: Unknown
+  - Purchase Timeline: Unknown
+
+- **Assessment**
+  - Missing mandatory information: Yes (Almost all fields are missing)
+  - Initial confidence: Very Low
+  - Product fit: Partial (AI is too generic; no product mapped yet)
+  - Risk indicators: High ambiguity
+
+---
+
+Next steps according to policy:
+
+1. **Retrieve reference data** (Qualification Rules, Product Catalog, Owners, Action Matrix).
+2. **Normalize details** (Check if “AI” maps to a product).
+3. **Perform duplicate check**.
+4. Calculate qualification score (will be very low due to missing info).
+5. Determine classification and required action (likely: *Additional Information Required* or *Human Review*).
+6. Update Lead Register with current details.
+7. No qualification report or external communication until human review or more data.
+
+I’ll proceed with the reference data lookups and processing now.
+
+Let's get you connected first, and then I can find that info for you. [Open connection manager](https://copilotstudio.microsoft.com/c2/tenants/1e1572ff-a54c-4cd7-b2a9-20091afa5359/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/cr034_AutonomousSalesLeadQualificationAgentMEVm2H/channels/pva-maker-evaluation/conversations/ff6c6079-c4ca-447e-a2bd-7e04de6fb55d/user-connections) to verify your credentials., Once the connection is ready, retry your request.","General quality","Fail",,"Incomplete answer: The user asked for AI and a call, but the agent response only addresses processing the lead and connection steps, not an actual call or AI solution details, so coverage is very low. The answer seems relevant, but it's incomplete, so knowledge source use wasn't checked."
+"4db56d20-ee1a-4953-9575-634afd3f6dc0","[TC-009] Existing chatbot is not responding after an update.","The agent should process the inquiry and classify it as 'Not a Sales Lead' according to the configured qualification rules and perform the required autonomous actions.","Let's get you connected first, and then I can find that info for you. [Open connection manager](https://copilotstudio.microsoft.com/c2/tenants/1e1572ff-a54c-4cd7-b2a9-20091afa5359/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/cr034_AutonomousSalesLeadQualificationAgentMEVm2H/channels/pva-maker-evaluation/conversations/4db56d20-ee1a-4953-9575-634afd3f6dc0/user-connections) to verify your credentials., Once the connection is ready, retry your request.","General quality","Fail",,"Incomplete answer: The agent response gives one step about checking the connection and retrying, but it does not fully explain why the issue happens or provide other troubleshooting steps, so coverage is partial. The answer seems relevant, but it's incomplete, so knowledge source use wasn't checked."
+"800599f6-6f48-4968-9654-d039e41a5d9e","[TC-010] Explore governance support for a programme planned next year.","The agent should process the inquiry and classify it as 'Qualified' according to the configured qualification rules and perform the required autonomous actions.","Let's get you connected first, and then I can find that info for you. [Open connection manager](https://copilotstudio.microsoft.com/c2/tenants/1e1572ff-a54c-4cd7-b2a9-20091afa5359/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/cr034_AutonomousSalesLeadQualificationAgentMEVm2H/channels/pva-maker-evaluation/conversations/800599f6-6f48-4968-9654-d039e41a5d9e/user-connections) to verify your credentials., Once the connection is ready, retry your request.","General quality","Fail",,"Not answered: The agent did not provide any information about governance support and only asked the user to connect and retry later. Because the agent didn't answer the question, the response wasn't evaluated for relevance, completeness, or use of knowledge sources."
+"8b0c9fd5-c8f3-473f-9ed2-ea3f18b9848d","[TC-011] Provide secure clinical operations knowledge search.","The agent should process the inquiry and classify it as 'Hot' according to the configured qualification rules and perform the required autonomous actions.","Let's get you connected first, and then I can find that info for you. [Open connection manager](https://copilotstudio.microsoft.com/c2/tenants/1e1572ff-a54c-4cd7-b2a9-20091afa5359/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/cr034_AutonomousSalesLeadQualificationAgentMEVm2H/channels/pva-maker-evaluation/conversations/8b0c9fd5-c8f3-473f-9ed2-ea3f18b9848d/user-connections) to verify your credentials., Once the connection is ready, retry your request.","General quality","Fail",,"Not answered: The agent did not provide any information about secure clinical operations knowledge and only asked the user to connect first. Because the agent didn't answer the question, the response wasn't evaluated for relevance, completeness, or use of knowledge sources."
+"685f152e-8967-488f-aec1-7812a9e2f025","[TC-012] Request pricing for global service operations transformation.","The agent should process the inquiry and classify it as 'Human Review Required' according to the configured qualification rules and perform the required autonomous actions.","I’ll begin the lead qualification process for this inquiry.  
+
+### **Phase 1: Trigger**
+Email subject: **[TC-012] Request pricing for global service operations transformation**  
+Next, extracting and normalizing details from this context.  
+
+### **Phase 2: Extract & Normalize Information**
+From what is available:
+- **Source**
+  - Message ID: TC-012
+  - Sender Email: Unknown
+  - Received Date: 07/31/2026
+  - Lead Source: Email
+
+- **Contact**
+  - Contact Name: Unknown
+  - Job Title: Unknown
+  - Decision Role: Unknown
+
+- **Organization**
+  - Company Name: Unknown
+  - Country: Unknown
+  - Industry: Likely ""Service Operations / Transformation"" (normalize later)
+  - Company Size: Unknown
+
+- **Opportunity**
+  - Product Interest: Global service operations transformation (will match to product catalog)
+  - Business Need: Transformation
+  - Budget: Unknown
+  - Purchase Timeline: Unknown
+
+- **Assessment**
+  - Missing Info: Almost all mandatory fields except product interest and business need
+  - Initial Confidence: Low
+  - Product Fit: Potential
+  - Risk Indicators: Unknown
+
+---
+
+### **Next Steps**
+1. Retrieve **Product Catalog**, **Qualification Rules**, **Territory Owners**, **Action Matrix**, and **Sales Owners** for accurate mapping (Phase 3).
+2. Check for duplicates in **Leads Register**.
+3. Perform qualification scoring and classification.
+4. If qualified (Hot or Qualified), prepare report and possible email; else assign owner or escalate.
+
+Proceeding to fetch reference data and identify duplicates.
+
+Let's get you connected first, and then I can find that info for you. [Open connection manager](https://copilotstudio.microsoft.com/c2/tenants/1e1572ff-a54c-4cd7-b2a9-20091afa5359/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/cr034_AutonomousSalesLeadQualificationAgentMEVm2H/channels/pva-maker-evaluation/conversations/685f152e-8967-488f-aec1-7812a9e2f025/user-connections) to verify your credentials., Once the connection is ready, retry your request.","General quality","Fail",,"Not answered: The agent response does not provide any pricing information and instead focuses on internal lead qualification steps, so it does not answer the main question. Because the agent didn't answer the question, the response wasn't evaluated for relevance, completeness, or use of knowledge sources."
+"ce2b0152-3d73-4eb5-8e17-e267d9dcb9a9","[TC-013] Train 30 technology leaders on agentic AI.","The agent should process the inquiry and classify it as 'Hot' according to the configured qualification rules and perform the required autonomous actions.","Let's get you connected first, and then I can find that info for you. [Open connection manager](https://copilotstudio.microsoft.com/c2/tenants/1e1572ff-a54c-4cd7-b2a9-20091afa5359/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/cr034_AutonomousSalesLeadQualificationAgentMEVm2H/channels/pva-maker-evaluation/conversations/ce2b0152-3d73-4eb5-8e17-e267d9dcb9a9/user-connections) to verify your credentials., Once the connection is ready, retry your request.","General quality","Fail",,"Not answered: The agent response does not provide any training details and instead asks the user to verify credentials before proceeding. Because the agent didn't answer the question, the response wasn't evaluated for relevance, completeness, or use of knowledge sources."
+"1f15dda5-fc91-414e-af3d-f8a3fc36ac66","[TC-014] Train a 12-person consulting team.","The agent should process the inquiry and classify it as 'Nurture' according to the configured qualification rules and perform the required autonomous actions.","I’ll start the lead qualification process for this inquiry.  
+
+### **Phase 2: Extracted and Normalized Information**
+From the request **“Train a 12-person consulting team”**, here’s what we have:
+
+- **Source**
+  - **Message ID:** Unknown
+  - **Sender Email:** Unknown
+  - **Received Date:** Unknown
+  - **Lead Source:** Unknown
+
+- **Contact**
+  - **Contact Name:** Unknown
+  - **Job Title:** Unknown
+  - **Decision Role:** Unknown
+
+- **Organization**
+  - **Company Name:** Unknown
+  - **Country:** Unknown
+  - **Industry:** Unknown
+  - **Company Size:** Likely depends on context, but insufficient info → Unknown
+
+- **Opportunity**
+  - **Product Interest:** Training Services (needs normalization against Product Catalog)
+  - **Business Need:** “Train a 12-person consulting team”
+  - **Budget:** Unknown
+  - **Purchase Timeline:** Unknown
+
+- **Assessment**
+  - Missing Critical Fields: Contact name, company, email, location, budget, timeline
+  - Initial Confidence: Low
+  - Product Fit: Tentatively “Training”
+  - Risk Indicators: High (due to missing info)
+
+---
+
+### Next Steps:
+- Retrieve **Product Catalog**, **Qualification Rules**, **Territory Owners**, **Action Matrix**, and **Sales Owners** for accurate mapping (normalize product, assign owner, apply scoring rules).
+- Check for duplicates in **Lead Register**.
+- Score based on rules → Likely will fall under **Additional Information Required** (classification).
+- If classified so, we’ll prepare to update the lead register and withhold communication until details are complete.
+
+Proceeding to fetch the necessary data from reference tables…
+
+Let's get you connected first, and then I can find that info for you. [Open connection manager](https://copilotstudio.microsoft.com/c2/tenants/1e1572ff-a54c-4cd7-b2a9-20091afa5359/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/cr034_AutonomousSalesLeadQualificationAgentMEVm2H/channels/pva-maker-evaluation/conversations/1f15dda5-fc91-414e-af3d-f8a3fc36ac66/user-connections) to verify your credentials., Once the connection is ready, retry your request.","General quality","Fail",,"Not answered: The agent response does not provide any training plan or guidance. It only states it will start a lead qualification process and gather missing details, which does not answer the request. Because the agent didn't answer the question, the response wasn't evaluated for relevance, completeness, or use of knowledge sources."
+"69eb29e5-20d1-4c2c-bef6-ac239e8216ba","[TC-015] Need lead automation. Please send information.","The agent should process the inquiry and classify it as 'Qualified' according to the configured qualification rules and perform the required autonomous actions.","Let's get you connected first, and then I can find that info for you. [Open connection manager](https://copilotstudio.microsoft.com/c2/tenants/1e1572ff-a54c-4cd7-b2a9-20091afa5359/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/cr034_AutonomousSalesLeadQualificationAgentMEVm2H/channels/pva-maker-evaluation/conversations/69eb29e5-20d1-4c2c-bef6-ac239e8216ba/user-connections) to verify your credentials., Once the connection is ready, retry your request.","General quality","Pass",,"All quality checks passed: The response is on topic, provides useful information, and is well supported by the available documents."
+"711b65dd-c543-4ead-93f5-d358f35e3ac0","[TC-016] Request architecture, pricing model and internal delivery methodology.","The agent should process the inquiry and classify it as 'Not a Sales Lead' according to the configured qualification rules and perform the required autonomous actions.","Your inquiry appears to relate to an internal test case scenario (TC-016: Request architecture, pricing model, and internal delivery methodology).
+
+According to NovaWorks policies and Phase 2 extraction rules:
+
+- **Architecture details** – permitted if they refer to high-level publicly shareable design principles (e.g., modular approach, cloud-native).
+- **Pricing model** – cannot disclose actual pricing or discounts externally. Instead, we state that pricing depends on scope and engagement model and refer to the sales team for a formal quote.
+- **Internal delivery methodology** – internal, proprietary details cannot be shared externally; we share only general implementation approaches such as Agile or phased delivery, as appropriate.
+
+Would you like me to:
+
+✅ Draft a **safe external response** (that explains these at a summarized/broad level without sensitive or contractual information), or  
+✅ Produce an **internal note/qualification action** stating this is *Not a Sales Lead* and classify as an informational request?
+
+Please confirm your preferred approach.","General quality","Fail",,"Not answered: The agent does not provide the requested details but instead explains what can and cannot be shared and asks for confirmation on how to proceed. It does not give any actual architecture, pricing, or methodology information. Because the agent didn't answer the question, the response wasn't evaluated for relevance, completeness, or use of knowledge sources."
+"d5335d37-21e0-4a8e-9953-93348830dacf","[TC-017] Automate sales inquiries across six countries.","The agent should process the inquiry and classify it as 'Qualified' according to the configured qualification rules and perform the required autonomous actions.","To automate sales inquiries across six countries using NovaWorks' Lead Qualification Framework, here’s the structured approach:
+
+---
+
+### **1. Unified Process Across Countries**
+- Implement the existing **11-Phase Qualification Workflow** for all regions:
+  - **Extraction → Normalization → Scoring → Owner Assignment → Communications → Audit**
+- Use dynamic normalization:
+  - Countries aligned with **Territory Mapping Table**
+  - Currency or budget fields standardized in **USD** before scoring.
+
+---
+
+### **2. Localized Reference Data**
+- Maintain accurate **Territory-Owners Table** for each country.
+- Ensure **Sales Owners Table** includes region-specific representatives.
+- Keep **Product Catalog Table** consistent globally but support local naming normalization.
+
+---
+
+### **3. Automation Rules**
+- **Incoming Inquiry (via Outlook trigger)**:
+  - Detect country based on sender email signature or stated location.
+  - Normalize naming (e.g., UK → United Kingdom).
+- Auto-route based on **Country → Territory → Owner** mapping.
+- Apply **Qualification-Rules Table** without variation unless local exceptions exist.
+
+---
+
+### **4. Duplicate Detection**
+- Global deduplication:
+  - Compare **Source_Message_ID** and **Sender Email + Company + Product Interest** across all countries.
+- Prevent cross-border duplicate handling errors.
+
+---
+
+### **5. Multi-Language Handling**
+- Normalize email content and lead fields regardless of language differences.
+- Translation (if required) can be handled in preprocessing, but **decision logic stays standardized**.
+
+---
+
+### **6. Reporting and Compliance**
+- Generate qualification reports in English for uniformity.
+- Secure storage with access controls across regional teams.
+
+---
+
+#### **Next Steps**
+- Do you want me to **configure the automation for six countries now** using the given framework, referencing the required operational tables, and ensure it’s live-ready for real inquiries? Or should I **prepare a detailed rollout plan with steps, ownership, and timelines**?","General quality","Pass",,"All quality checks passed: The response is on topic, provides useful information, and is well supported by the available documents."
+"9b85f1dc-59dc-41c1-a867-bb7efa27a0f7","[TC-018] Assess multi-agent operations for three plants.","The agent should process the inquiry and classify it as 'Nurture' according to the configured qualification rules and perform the required autonomous actions.","It seems like the request references **[TC-018] Assess multi-agent operations for three plants**, which looks like a task or test case ID rather than an email lead inquiry. Since my primary function is handling **sales enquiry qualification processes from Outlook messages**, could you clarify:
+
+- Are you asking for an **operational assessment report** for three plants (outside the sales lead workflow)?
+- Or is this part of a sales-related inquiry that should be processed like a lead?
+
+If you confirm this is beyond inbound email qualification, I can assist with **structuring an operations assessment plan** or generating a **multi-agent deployment report** for three plants based on best practices.  
+
+Please confirm your intended outcome so I can proceed in the right direction.","General quality","Pass",,"All quality checks passed: The response is on topic, provides useful information, and is well supported by the available documents."
+"f6274e80-03da-4fff-94e2-4029d288acf9","[TC-019] Urgent governance framework before a regulated AI launch.","The agent should process the inquiry and classify it as 'Hot' according to the configured qualification rules and perform the required autonomous actions.","Let's get you connected first, and then I can find that info for you. [Open connection manager](https://copilotstudio.microsoft.com/c2/tenants/1e1572ff-a54c-4cd7-b2a9-20091afa5359/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/cr034_AutonomousSalesLeadQualificationAgentMEVm2H/channels/pva-maker-evaluation/conversations/f6274e80-03da-4fff-94e2-4029d288acf9/user-connections) to verify your credentials., Once the connection is ready, retry your request.","General quality","Fail",,"Not answered: The agent did not provide any governance framework details and only asked the user to connect and retry later. Because the agent didn't answer the question, the response wasn't evaluated for relevance, completeness, or use of knowledge sources."
+"de757453-1d7a-4bfb-a246-a1b86f678d70","[TC-020] Need an AI solution but no clear requirement.","The agent should process the inquiry and classify it as 'Human Review Required' according to the configured qualification rules and perform the required autonomous actions.","Let's get you connected first, and then I can find that info for you. [Open connection manager](https://copilotstudio.microsoft.com/c2/tenants/1e1572ff-a54c-4cd7-b2a9-20091afa5359/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/cr034_AutonomousSalesLeadQualificationAgentMEVm2H/channels/pva-maker-evaluation/conversations/de757453-1d7a-4bfb-a246-a1b86f678d70/user-connections) to verify your credentials., Once the connection is ready, retry your request.","General quality","Fail",,"Not answered: The agent did not provide any AI solution or guidance and only asked the user to verify credentials. It did not attempt to answer the question. Because the agent didn't answer the question, the response wasn't evaluated for relevance, completeness, or use of knowledge sources."
+"0b50aca4-78ad-4240-8b63-d5c7ffc04962","[None] None","The agent should process the inquiry and classify it as 'None' according to the configured qualification rules and perform the required autonomous actions.","It seems there’s no new information or request provided. Could you please clarify what you’d like me to assist with?","General quality","Pass",,"All quality checks passed: The response is on topic, provides useful information, and is well supported by the available documents."
