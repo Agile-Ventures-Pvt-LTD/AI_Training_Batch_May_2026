@@ -66,6 +66,12 @@
 
 ---
 
+### Mail Output
+
+![output](./output.png)
+
+---
+
 ### Publish Agent
 
 ![publish](./publish.png)
