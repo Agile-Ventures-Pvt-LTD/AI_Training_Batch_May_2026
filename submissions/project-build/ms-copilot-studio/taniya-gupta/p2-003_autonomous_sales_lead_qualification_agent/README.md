@@ -22,7 +22,7 @@ See [agent-url.md](agent-url.md) for the published agent URL.
 | Generative orchestration enabled | Complete |
 | Knowledge source uploaded | Complete |
 | Outlook trigger configured | Complete |
-| Excel tools configured (Add / Get / Update rows) | Complete |
+| Excel tools configured | Complete |
 | Word Online tool configured | Complete |
 | Outlook Send email tool configured | Complete |
 | Agent published | Complete |
@@ -46,9 +46,6 @@ All PRD requirements are implemented and verified. The agent correctly handles H
 | test-report.md | Full test execution evidence |
 | known-limitations.md | Known constraints and workarounds |
 | ai-usage-declaration.md | AI tools used and validation approach |
-| result.csv | Raw Copilot Studio evaluation export |
-| P2-003_Autonomous_Sales_Lead_Qualification_Agent_PRD_Final.pdf | PRD |
-| implementation-data/ | All operational data files |
 
 ---
 
