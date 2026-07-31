@@ -1,0 +1,52 @@
+P2-003 AUTONOMOUS EMAIL CONTENT REQUIREMENTS
+
+These are business content patterns, not agent prompts. Participants must implement the required communication behaviour through Copilot Studio instructions and Outlook connector tools.
+
+1. LEAD RECEIPT ACKNOWLEDGEMENT
+Purpose: Confirm receipt of a valid Hot or Qualified lead.
+Required content:
+- Thank the sender.
+- Confirm the business requirement and product interest received.
+- State that a sales representative will review the inquiry.
+- Avoid prices, commitments, promises, or qualification scores.
+- Provide the generated Lead ID.
+
+2. MISSING INFORMATION REQUEST
+Purpose: Obtain only information required for qualification.
+Required content:
+- Confirm receipt.
+- List the specific missing fields.
+- Explain that the information is needed to route the inquiry correctly.
+- Avoid requesting passwords, payment information, government identifiers, or confidential technical material.
+
+3. INTERNAL HOT LEAD ALERT
+Purpose: Notify the assigned owner and sales operations.
+Required content:
+- Lead ID, company, contact, product, score, classification, decision confidence, timeline, budget, risk flags, assigned owner.
+- Path or link to the Word qualification report.
+- Required response priority.
+
+4. INTERNAL QUALIFIED LEAD NOTIFICATION
+Purpose: Notify the assigned owner.
+Required content:
+- Lead summary, score, classification, missing information, recommended next action, report path.
+
+5. HUMAN REVIEW ALERT
+Purpose: Route an exception without sending an external qualification result.
+Required content:
+- Exception reason, confidence, missing or conflicting information, actions completed, action that was withheld.
+
+6. NURTURE ACKNOWLEDGEMENT
+Purpose: Confirm receipt without overcommitting.
+Required content:
+- Thank the sender.
+- Confirm the area of interest.
+- State that the inquiry will be retained for follow-up.
+- Request one or two missing items only when relevant.
+
+7. NON-SALES / SUPPORT ROUTING
+Purpose: Prevent sales processing of a support, recruitment, or academic request.
+Required content:
+- Do not reveal internal classification.
+- Do not create a qualification report.
+- Route internally only when an approved internal recipient is configured.
