@@ -7,6 +7,7 @@
 | Project ID | P2-004 |
 | Project Name | Autonomous Multi-Agent BC/DR Readiness Assessment System |
 | Platform | Microsoft Copilot Studio |
+| Agent link | https://copilotstudio.microsoft.com/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/a0d36156-ce8c-f111-8077-000d3af21e08/overview |
 | Architecture | Multi-Agent AI System |
 | AI Model | Microsoft Copilot Studio |
 | Knowledge Source | NovaSphere_BCDR_Policy.docx |
