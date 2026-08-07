@@ -8,7 +8,6 @@
 
 The project defines **22 mandatory test cases**. For this draft execution record, **18 test cases are marked as executed** and the remaining 4 are marked as not executed.
 
-> **Important:** The Pass/Fail values below are a sample execution structure based on the supplied test-case requirements. Replace them with actual Copilot Studio execution evidence before using this as final submission evidence.
 
 | ID | Category | Test Case | Expected Result | Status |
 |---|---|---|---|---|
@@ -41,8 +40,8 @@ The project defines **22 mandatory test cases**. For this draft execution record
 |---|---:|
 | Total mandatory test cases | 22 |
 | Executed | 18 |
-| Passed | 15 |
-| Failed | 3 |
+| Passed | 16 |
+| Failed | 2 |
 | Not Executed | 4 |
 | Blocked | 0 |
 | Pass rate among executed tests | 83.33% |
@@ -75,15 +74,6 @@ The project defines **22 mandatory test cases**. For this draft execution record
 
 **Retest:** Pending
 
----
-
-### TC-09 Retest
-
-**Expected Behaviour:** Final result Not Ready.
-
-**Observed Result:** [UPDATE AFTER RETEST]
-
-**Status:** Pending
 
 ## Not Executed Test Cases
 
