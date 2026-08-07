@@ -1,0 +1,66 @@
+﻿"conversationId","question","expectedResponse","actualResponse","testMethodType_1","result_1","passingScore_1","explanation_1","testMethodType_2","result_2","passingScore_2","explanation_2","testMethodType_3","result_3","passingScore_3","explanation_3"
+,"Complete low-risk campaign with valid data, approved budget, all assets ready, no approvals required","Validation passes, all specialists return Pass, risk Low, final readiness status = Ready.",,"General quality",,,"","Tool use",,,"","Compare meaning",,"60",""
+,"Campaign contains budget, brand, channel and asset data","Supervisor invokes Budget, Brand, Channel and Asset specialists, waits for all results before consolidation.",,"General quality",,,"","Tool use",,,"","Compare meaning",,"60",""
+"bf604577-5cf9-41f1-ad44-5784c96a1ca4","Proposed budget exceeds approved budget","Budget specialist returns approval requirement, Approval Topic identifies approver, final status not Ready until approval.","Under NovaSphere governance, a proposed budget that exceeds the approved budget is a mandatory approval issue, not a minor condition. Marketing Director approval is required before the campaign can be considered Ready. If the proposed budget is above INR 1,000,000, VP Marketing approval is also required. An outstanding mandatory budget approval is treated as a blocking control. [1]
+
+Based on the policy alone:
+- If the higher budget has not yet been approved, the readiness outcome should be at least ""Management Approval Required."" [1]
+- The campaign cannot be marked ""Ready"" until the required budget approval is obtained. [1]
+- If additional blocking issues also exist, a higher-precedence outcome such as ""Not Ready"" or ""Remediation Required"" may apply. [1]
+
+To determine the exact readiness status for a specific campaign, I would need the campaign assessment details.
+
+[1]: cite:1 ""Citation-1""","General quality","Pass",,"All quality checks passed: The response is on topic, provides useful information, and is well supported by the available documents.","Tool use","Fail",,"Unused (2/2); • Approval & Finalization; • Campaign Intake and Validation","Compare meaning","Pass","60","75/100 - Mostly same meaning; The Agent answer covers the main points from the Expected response and adds extra details about who approves and readiness status."
+,"High-sensitivity campaign with regulatory claim","Brand specialist flags escalation, approval required, supervisor prevents Ready status.",,"General quality",,,"","Tool use",,,"","Compare meaning",,"60",""
+"de6437a6-c823-44cf-85bc-d897891d43c4","Two mandatory assets missing","Asset specialist returns Block, remediation topic invoked, reassessment required.","Please provide the affected domain for the remediation and selective reassessment process.
+","General quality","Pass",,"All quality checks passed: The response is on topic, provides useful information, and is well supported by the available documents.","Tool use","Fail",,"Unused (2/2); • Approval & Finalization; • Campaign Intake and Validation","Compare meaning","Fail","60","50/100 - Some shared meaning; The Agent answer covers remediation and reassessment but leaves out details about the asset specialist returning a Block and the requirement for reassessment."
+"8556d87b-9957-431e-8d79-9aca4ab911af","Launch within 5 days and blocking issues present","Risk specialist returns elevated risk, supervisor escalates and prevents Ready status.","Based on the NovaSphere Marketing Governance Policy, if a campaign is launching within 5 days and blocking issues are present, the final readiness status must be Not Ready. The policy states that a blocking gap means the campaign cannot safely meet the launch window, and when launch is fewer than 5 calendar days away with any blocking asset or approval gap remaining, the final outcome must be Not Ready. The highest-precedence outcome must be applied and blocking findings cannot be diluted or averaged. [1]
+
+Final Readiness Status: Not Ready
+
+Reason:
+- Launch is within 5 days.
+- Blocking issues are still present.
+- Governance policy requires a Not Ready outcome under these conditions. [1]
+
+[1]: cite:1 ""Citation-1""","General quality","Pass",,"All quality checks passed: The response is on topic, provides useful information, and is well supported by the available documents.","Tool use","Fail",,"Unused (2/2); • Approval & Finalization; • Campaign Intake and Validation","Compare meaning","Fail","60","1. 🛑 Missing info: The agent answer does not mention that the risk specialist returns elevated risk and that the supervisor escalates and prevents Ready status, which are included in the expected response.; 2. 📚 Support assessment: It seems like the knowledge sources do not contain the missing details about the risk specialist and supervisor escalation steps."
+"500527d9-e9dd-45d3-aab1-b6d7ad0ec19b","APAC campaign missing regional approval","Approval Topic requires Regional Marketing Lead approval before readiness.","Intake Validation Passed for campaign CMP-002 (AI Productivity Launch). Days to launch: 949015. Status locked to 'In Assessment'.
+
+Intake Validation Passed for campaign CMP-002 (AI Productivity Launch). Days to launch: 949015. Status locked to 'In Assessment'.
+
+How many calendar days are remaining until the campaign launch?
+","General quality","Fail",,"Irrelevant answer: The agent response talks about validation status and days to launch, which does not address the user's concern about missing regional approval. It shifts to a different topic. Because the agent wasn't relevant, the response wasn't evaluated for completeness or use of knowledge sources.","Tool use","Fail",,"Used (1/2); • Campaign Intake and Validation; Unused (1/2); • Approval & Finalization","Compare meaning","Fail","60","0/100 - Different meaning; The Agent answer talks about campaign status and days to launch, but the Expected response is about needing regional approval. They don't match."
+"33eb2821-98f1-4653-bb3c-3498955ae7e5","Channel specialist returns Insufficient Evidence","Supervisor records insufficient evidence and escalates instead of assigning Ready.","**Channel Specialist Returned: Insufficient Evidence**
+
+Under the NovaSphere Marketing Governance Policy, a specialist result of ""Insufficient Evidence"" means the assessment cannot be relied upon to make a readiness determination. If a specialist output is missing or unusable, the Campaign Readiness Supervisor may retry that specialist assessment once. If the retry also fails, the campaign outcome must be treated as ""Insufficient Evidence / Manual Review"" rather than inferring or inventing a conclusion. [1]
+
+In the campaign readiness workflow:
+
+- The Channel Readiness Specialist should be retried once. [1]
+- If sufficient evidence is obtained on retry, the readiness process can continue using the updated findings.
+- If the retry still returns ""Insufficient Evidence"" (or otherwise remains unusable), the campaign should be routed for manual review and a final readiness outcome should not be derived from assumptions. [1]
+- The Supervisor must consider the missing channel evidence when determining the final outcome and document the evidence gap. [1]
+
+Therefore, an ""Insufficient Evidence"" result from the Channel Readiness Specialist is not automatically a pass, condition, or block; it triggers a single retry, followed by manual review if the evidence gap remains unresolved. [1]
+
+[1]: cite:1 ""Citation-1""","General quality","Pass",,"All quality checks passed: The response is on topic, provides useful information, and is well supported by the available documents.","Tool use","Fail",,"Unused (2/2); • Approval & Finalization; • Campaign Intake and Validation","Compare meaning","Pass","60","75/100 - Mostly same meaning; The Agent answer covers the main idea from the Expected response but adds extra details about retrying and documenting the evidence gap."
+"8ed60509-b732-41f8-a843-7f7c63c07c6c","Asset blocker resolved after remediation","Only Asset specialist is reassessed, readiness recalculated using updated result.","Please provide the Campaign ID for the campaign requiring remediation and reassessment.
+","General quality","Pass",,"All quality checks passed: The response is on topic, provides useful information, and is well supported by the available documents.","Tool use","Fail",,"Unused (2/2); • Approval & Finalization; • Campaign Intake and Validation","Compare meaning","Fail","60","25/100 - Mostly different meaning; The Agent answer asks for a Campaign ID, but the Expected response explains how reassessment works. They don't cover the same information."
+"fadb2a83-03f7-409f-b836-51665ece9fab","Campaign becomes Ready With Conditions","Reporting specialist creates readiness report and stakeholder notification.","I can’t determine which campaign should be updated to “Ready With Conditions” because no Campaign ID or campaign name was provided. Please provide the specific campaign identifier (for example, CMP-002, CMP-003, etc.) so the readiness status can be updated correctly.","General quality","Pass",,"All quality checks passed: The response is on topic, provides useful information, and is well supported by the available documents.","Tool use","Fail",,"Unused (2/2); • Approval & Finalization; • Campaign Intake and Validation","Compare meaning","Fail","60","0/100 - Different meaning; The Agent answer asks for a campaign ID to update the status, but the Expected response talks about creating a report and notifying stakeholders. The two answers are about different things."
+"4a8d2d94-d0e7-4ab3-b2df-f19d9a6d73cf","Brand specialist returns Block while Budget specialist returns Pass","Supervisor applies precedence rules, blocking outcome prevails, campaign not Ready.","If the Brand specialist returns Block and the Budget specialist returns Pass, the campaign cannot be considered Ready simply because one domain passed. Under the governance policy, blocking findings must not be averaged or diluted by positive findings from other specialists. [1]
+
+The final outcome depends on the nature of the Brand block:
+
+- If the Brand block represents an unresolved blocking readiness gap, the outcome is either:
+  - Remediation Required, if there is sufficient time to correct the issue before launch. [1]
+  - Not Ready, if the blocking gap prevents a safe launch or cannot be resolved within the launch window. [1]
+
+As Campaign Readiness Supervisor, I would give precedence to the blocking Brand finding because readiness outcomes follow a strict hierarchy and the highest-precedence applicable outcome must be used. [1]
+
+So, based solely on:
+- Brand specialist = Block
+- Budget specialist = Pass
+
+the campaign would not be Ready. The likely status would be Remediation Required or Not Ready, depending on the severity of the Brand blocking issue and the time remaining before launch. [1]
+
+[1]: cite:1 ""Citation-1""","General quality","Pass",,"All quality checks passed: The response is on topic, provides useful information, and is well supported by the available documents.","Tool use","Fail",,"Unused (2/2); • Approval & Finalization; • Campaign Intake and Validation","Compare meaning","Pass","60","75/100 - Mostly same meaning; The Agent answer covers all the main points in the Expected response but adds more detail about possible outcomes and the decision process."
