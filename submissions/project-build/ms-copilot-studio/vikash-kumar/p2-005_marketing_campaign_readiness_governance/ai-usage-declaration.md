@@ -181,6 +181,6 @@ I confirm that Artificial Intelligence was used responsibly as a development ass
 The final solution, implementation decisions, testing, validation, and submission accurately represent my work and understanding of the project requirements.
 
 ---
-**Author:** *[Your Name]*  
+**Author:** Vikash Kumar  
 **Project:** P2-005 – Marketing Campaign Readiness Governance  
 **Platform:** Microsoft Copilot Studio
