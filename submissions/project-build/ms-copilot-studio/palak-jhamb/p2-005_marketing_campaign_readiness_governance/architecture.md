@@ -369,8 +369,7 @@ The architecture follows the following design principles:
 | Reporting & Communication Specialist |  Implemented |
 | Excel Connector Tools |  Implemented |
 | AI Builder Prompt |  Implemented |
-| Topic – Remediation & Selective Reassessment | In Progress |
-| Topic – Approval & Finalization | In Progress |
+
 
 ---
 
