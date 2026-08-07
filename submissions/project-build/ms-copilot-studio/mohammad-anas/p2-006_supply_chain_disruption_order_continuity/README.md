@@ -218,7 +218,6 @@ Workflow Complete
 - Microsoft Excel Online (Business)
 - Microsoft Word Online (Business)
 - Microsoft Outlook
-- Microsoft Graph
 - Microsoft 365 Connectors
 
 ---
