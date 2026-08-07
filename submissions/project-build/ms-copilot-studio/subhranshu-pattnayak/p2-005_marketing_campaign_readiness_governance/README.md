@@ -452,3 +452,13 @@ Implementation includes:
 - Reporting and notification workflow integration
 
 ---
+
+Agent Link:
+
+[Campaign Readiness Supervisor](https://copilotstudio.microsoft.com/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/888db91c-2292-f111-b8dc-000d3af21e08/overview)
+
+---
+
+Author: Subhranshu Pattnayak
+
+---
