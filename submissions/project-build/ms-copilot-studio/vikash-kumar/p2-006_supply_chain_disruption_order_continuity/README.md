@@ -227,6 +227,97 @@ The repository includes screenshots demonstrating:
 - 📊 Excel Integration
 - ✅ End-to-End Test Execution
 
+# 📸 Solution Screenshots
+
+The following screenshots demonstrate the implementation of the **NovaSphere Supply Continuity Supervisor** built using Microsoft Copilot Studio.
+
+---
+
+## 🧭 Supervisor Agent
+
+The Supervisor Agent orchestrates the complete disruption management workflow by coordinating custom topics, specialist agents, and enterprise knowledge.
+
+![Supervisor Agent](./screenshot/supervisor-agent.png)
+
+---
+
+## 🤖 Specialist Child Agents
+
+The solution follows a Supervisor–Specialist architecture consisting of six domain-specific child agents responsible for inventory, supplier, customer, commercial, recovery planning, and reporting activities.
+
+![Child Agents](./screenshot/child-agents.png)
+
+---
+
+## 📚 Knowledge Sources
+
+The Supervisor uses enterprise knowledge to ensure policy-driven and explainable recommendations.
+
+Knowledge Sources:
+
+- NovaSphere Supply Continuity Policy
+- Supply Chain Dataset
+
+![Knowledge Sources](./screenshot/knowledge-sources.png)
+
+---
+
+## ⏰ Autonomous Recurrence Trigger
+
+The recurrence trigger enables autonomous execution by periodically initiating disruption assessments without manual intervention.
+
+> *Include this screenshot only if the trigger has been configured.*
+
+![Recurrence Trigger](./screenshot/recurrence-trigger.png)
+
+---
+
+## 🧩 Custom Topics
+
+The business workflow is divided into three reusable topics:
+
+- Disruption Intake & Validation
+- Specialist Assessment & Recovery Planning
+- Approval, Exception & Finalization
+
+![Custom Topics](./screenshot/topics.png)
+
+---
+
+## 📈 Activity History
+
+The Activity page records workflow execution and provides visibility into the orchestration performed by the Supervisor Agent.
+
+![Activity History](./screenshot/activity-history.png)
+
+---
+
+## ✅ Final Response – Example 1
+
+The Supervisor returns a structured recovery recommendation after consolidating specialist assessments.
+
+![Final Response 1](./screenshot/final-response1.png)
+
+---
+
+## ✅ Final Response – Example 2
+
+A second end-to-end execution demonstrating policy-driven recommendations and workflow completion.
+
+![Final Response 2](./screenshot/final-response2.png)
+
+---
+
+# Agent Link
+
+```bash
+https://copilotstudio.microsoft.com/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/6b62d301-5992-f111-b8dc-000d3af21e08/overview
+```
+---
+
+# Author
+
+## Vikash Kumar
 ---
 
 # 🏁 Conclusion
