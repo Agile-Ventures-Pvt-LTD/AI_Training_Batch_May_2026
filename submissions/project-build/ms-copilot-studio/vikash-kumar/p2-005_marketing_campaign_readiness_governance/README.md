@@ -346,6 +346,14 @@ Example of the campaign tracking workbook after the assessment process.
 
 ---
 
+# Copilot Agent Link
+
+```bash
+https://copilotstudio.microsoft.com/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/cd32e078-1d92-f111-b8dc-000d3af21e08/overview
+```
+
+---
+
 # 📄 License
 
 This project was developed as part of the Microsoft Copilot Studio Project Build (P2-005) for educational purposes.
