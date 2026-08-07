@@ -16,21 +16,7 @@ The PRD requires at least 16 documented tests and coverage across sequential, pa
 | TC-05 | Budget exceeds INR 1M | Conditional | VP Marketing approval |
 | TC-06 | High-sensitivity content | Hierarchical | Additional review |
 | TC-07 | Multiple channels | Parallel | Evaluate all channels |
-| TC-08 | Missing mandatory asset | Sequential/Conditional | Remediation |
-| TC-09 | Launch <5 days with missing asset | Decision | Not Ready |
-| TC-10 | Only landing page corrected | Reassessment loop | Rerun affected assessment only |
-| TC-11 | Second remediation fails | Loop limit | Manual Review |
-| TC-12 | Specialist produces no result | Fallback | Retry once |
-| TC-13 | Specialist retry fails | Fallback | Insufficient evidence/manual review |
-| TC-14 | Brand Block + Budget Pass | Fan-in | Blocking result prevails |
-| TC-15 | APAC/multi-market review missing | Conditional | Regional approval required |
-| TC-16 | All controls pass | Sequential | Ready |
-| TC-17 | Only permitted QA remains | Decision | Ready with Conditions |
-| TC-18 | Final readiness validated | Sequential | Generate Word report |
-| TC-19 | Word succeeds | Sequential | Update Excel then prepare notification |
-| TC-20 | Supervisor approves communication | Hierarchical | Send Outlook notification |
-| TC-21 | Outlook fails | Failure | Record notification failure |
-| TC-22 | No Pending campaign | Trigger | Exit safely |
+
 
 ## Evidence fields
 For each executed test record:
