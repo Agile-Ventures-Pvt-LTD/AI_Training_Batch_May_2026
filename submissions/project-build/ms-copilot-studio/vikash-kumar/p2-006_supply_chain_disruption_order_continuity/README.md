@@ -266,7 +266,6 @@ Knowledge Sources:
 
 The recurrence trigger enables autonomous execution by periodically initiating disruption assessments without manual intervention.
 
-> *Include this screenshot only if the trigger has been configured.*
 
 ![Recurrence Trigger](./screenshot/recurrence-trigger.png)
 
@@ -308,6 +307,21 @@ A second end-to-end execution demonstrating policy-driven recommendations and wo
 
 ---
 
+## ✅ Final Response – Example 3
+
+A third end-to-end execution demonstrating policy-driven recommendations and workflow completion.
+
+![Final Response 3](./screenshot/document.png)
+
+---
+
+## ✅ Final Response – Example 4
+
+A fourth end-to-end execution demonstrating policy-driven recommendations and workflow completion.
+
+![Final Response 4](./screenshot/outlook.png)
+
+---
 # Agent Link
 
 ```bash
