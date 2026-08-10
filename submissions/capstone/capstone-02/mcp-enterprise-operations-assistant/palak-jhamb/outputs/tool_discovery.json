@@ -1,0 +1,44 @@
+[
+    [
+        {
+            "tool": "list_services",
+            "tool_disc": "List enterprise services and current health status."
+        },
+        {
+            "tool": "get_service_health",
+            "tool_disc": "Return detailed health information for a service."
+        },
+        {
+            "tool": "get_active_incidents",
+            "tool_disc": "This tool is use to get active incidents based on service name"
+        }
+    ],
+    [
+        {
+            "tool": "search_tickets",
+            "tool_disc": "Search support tickets using predefined filters such as service name, priority, status\ninput optional arg:\nservice_name: str\npriority: str\nstatus: str"
+        },
+        {
+            "tool": "get_ticket_details",
+            "tool_disc": "Get full details of one support ticket"
+        },
+        {
+            "tool": "get_high_priority_tickets",
+            "tool_disc": "get high priority tickets that can be filter by service_name as well"
+        }
+    ],
+    [
+        {
+            "tool": "list_recent_changes",
+            "tool_disc": "Return all recent change records."
+        },
+        {
+            "tool": "get_change_details",
+            "tool_disc": "Return details of a specific recent change by id."
+        },
+        {
+            "tool": "get_changes_for_service",
+            "tool_disc": "This tool is use to Find recent changes for a service bsed on its service name"
+        }
+    ]
+]

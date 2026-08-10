@@ -1,0 +1,21 @@
+============================================================
+SQL TOOL TEST REPORT
+============================================================
+
+Tool Found: PASS
+Tool Name: query_ecommerce_database
+
+Tool Description:
+Use this tool to query the SQLite ecommerce database. The database contains customers, 
+products, orders, and order_items tables. Only use SELECT queries. Do not perform 
+INSERT, UPDATE, DELETE, DROP, ALTER, or TRUNCATE operations.
+
+When using query_ecommerce_database:
+
+- Generate a valid SQLite SELECT query.
+- Pass ONLY the SQL query to the tool.
+- Do not pass natural language.
+
+Tool Invocation: PASS
+Sample Result:
+[(10,)]

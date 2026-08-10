@@ -1,0 +1,4 @@
+{
+    "risk_level": "MEDIUM",
+    "reasoning_summary": "Login outside business hours and MFA failure"
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "question_id": "Q1",
+    "original_query": "Does Tesla's growth story appear more constrained by external supply risk or internal execution and cost structure? Use evidence across Risk Factors and MD&A.",
+    "expanded_queries": [
+      "From a financial analyst perspective, is Tesla's growth more limited by external supply chain risks or by its internal execution and cost structure, based on the Risk Factors and MD&A sections?",
+      "Do the Risk Factors and MD&A indicate that Tesla's growth trajectory is primarily constrained by external supply risks rather than internal operational execution and cost management?",
+      "Considering Tesla's operational performance, does the evidence in the Risk Factors and MD&A suggest that external supply constraints or internal execution and cost structure are the main barriers to growth?",
+      "Is Tesla's ability to expand hindered more by outside supply chain uncertainties or by its own execution efficiency and cost framework, according to the Risk Factors and Management Discussion & Analysis?"
+    ]
+  },
+  {
+    "question_id": "Q2",
+    "original_query": "Explain how Tesla's AI and product roadmap is reflected in spending, operational priorities, and risk disclosures. Avoid generic AI claims.",
+    "expanded_queries": [
+      "How does Tesla's 10‑K allocate capital to its AI initiatives and product development roadmap, and what does this reveal about its operational focus and disclosed risks?",
+      "What risk factors does Tesla disclose regarding its AI strategy and product roadmap, and how are these reflected in its spending and operational priorities?",
+      "In what ways do Tesla's AI and product roadmap drive its operational spending and priority setting as shown in the 10‑K, and what specific risk disclosures accompany them?",
+      "Detail how Tesla's artificial intelligence and upcoming product plans are manifested in its expense allocations, operational emphasis, and risk narrative within the filing, excluding generic AI statements.",
+      "From a financial reporting perspective, how are Tesla's AI‑driven product plans integrated into its capital expenditures, operating expenses, and risk discussion sections of the 10‑K?"
+    ]
+  },
+  {
+    "question_id": "Q3",
+    "original_query": "A supplier asks whether Tesla is exposed to concentration risk across factories, suppliers, raw materials, or geographies. Prepare a concise risk note with citations.",
+    "expanded_queries": [
+      "From a financial analyst perspective, what concentration risks does Tesla face across its manufacturing facilities, key suppliers, raw material sources, and geographic regions, and can you provide a concise risk note with citations",
+      "What are Tesla’s exposure to concentration risk regarding its factories, supplier base, raw material inputs, and geographic markets, and could you prepare a brief risk summary with references",
+      "Identify any concentration risk Tesla may have in its production plants, supplier dependencies, raw material procurement, and regional operations, and draft a short risk note with appropriate citations",
+      "Can you outline Tesla’s potential concentration risk across its manufacturing sites, critical suppliers, essential raw materials, and geographic footprint, and produce a concise risk commentary with citations"
+    ]
+  },
+  {
+    "question_id": "Q4",
+    "original_query": "Compare the strategic importance of automotive operations and energy generation/storage using evidence from the 10-K. What disclosures are needed to support a business recommendation?",
+    "expanded_queries": [
+      "From a financial analyst perspective, how does the 10‑K illustrate the relative strategic significance of the company's automotive operations versus its energy generation and storage segments, and which specific disclosures are required to justify a recommendation?",
+      "What risk‑related disclosures in the 10‑K should be examined to assess the strategic importance of the automotive business compared with the energy generation and storage activities, and how do these inform a business recommendation?",
+      "Using the 10‑K, what operational metrics and segment disclosures demonstrate the strategic priority of automotive operations versus energy generation/storage, and what additional information is needed to support a recommendation?",
+      "How does the 10‑K compare the strategic role of the company's vehicle manufacturing and power generation/storage divisions, and which disclosures must be cited to back a strategic recommendation?"
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+PASS: Database found at data\ecommerce.db
+
+Tables Found:
+- customers
+- products
+- orders
+- order_items
+
+============================================================
+TABLE: customers
+============================================================
+customer_id (INTEGER)
+name (TEXT)
+email (TEXT)
+city (TEXT)
+signup_date (TEXT)
+
+Record Count: 10
+
+============================================================
+TABLE: products
+============================================================
+product_id (INTEGER)
+name (TEXT)
+category (TEXT)
+price (REAL)
+stock_quantity (INTEGER)
+
+Record Count: 15
+
+============================================================
+TABLE: orders
+============================================================
+order_id (INTEGER)
+customer_id (INTEGER)
+order_date (TEXT)
+status (TEXT)
+total_amount (REAL)
+
+Record Count: 25
+
+============================================================
+TABLE: order_items
+============================================================
+order_item_id (INTEGER)
+order_id (INTEGER)
+product_id (INTEGER)
+quantity (INTEGER)
+unit_price (REAL)
+
+Record Count: 40

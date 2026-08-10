@@ -1,0 +1,13 @@
+{
+    "incremental_revenue_range": "$80,000 - $140,000",
+    "incremental_gross_profit_range": "$32,000 - $56,000",
+    "monthly_net_benefit_range": "$2,000 - $26,000",
+    "payback_period_range_months": "7 - 9",
+    "decision": "APPROVE",
+    "reasoning_summary": "Payback period falls within the required 12 months after go-live, considering the estimated monthly net benefit range.",
+    "key_assumptions": [
+        "Revenue uplift range of 4% to 7%",
+        "Gross margin of 40%",
+        "Monthly AI operating costs of $30,000"
+    ]
+}

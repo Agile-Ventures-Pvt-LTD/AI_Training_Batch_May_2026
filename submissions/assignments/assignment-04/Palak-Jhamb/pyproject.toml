@@ -1,0 +1,19 @@
+[project]
+name = "ass-4"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "groq>=0.30.0,<1.0.0",
+    "ipykernel>=7.2.0",
+    "kagglehub>=0.3.13",
+    "langchain>=1.0.0",
+    "langchain-core>=1.0.0",
+    "langchain-experimental>=0.3.4",
+    "langchain-groq>=1.0.0",
+    "langgraph>=0.6.0",
+    "pandas>=2.2.2",
+    "pytest>=8.0.0",
+    "python-dotenv>=1.2.2",
+]

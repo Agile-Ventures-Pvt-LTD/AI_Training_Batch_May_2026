@@ -1,0 +1,75 @@
+[
+    {
+        "user_query": "list all projects",
+        "tools_used": [
+            "list_projects"
+        ],
+        "final_answer": "[{\"id\":\"10034\",\"key\":\"MCP0\",\"name\":\"mcp-learning\",\"project_type\":\"software\"}]",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Show open issues",
+        "tools_used": [
+            "search_issues"
+        ],
+        "final_answer": "[{\"id\":\"10001\",\"key\":\"MCP-1\",\"fields\":{\"summary\":\"Test Issue\"}}]",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Show high-priority issues",
+        "tools_used": [
+            "search_issues"
+        ],
+        "final_answer": "[{\"id\":\"10073\",\"key\":\"MCP0-3\",\"summary\":\"mcp-client session\",\"status\":\"Done\",\"priority\":\"High\",\"assignee\":null},{\"id\":\"10072\",\"key\":\"MCP0-2\",\"summary\":\"MCP assignment-06\",\"status\":\"In Progress\",\"priority\":\"High\",\"assignee\":null}]",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "summarize an issue MCP0-3",
+        "tools_used": [
+            "get_issue_details"
+        ],
+        "final_answer": "{\"id\":\"10073\",\"key\":\"MCP0-3\",\"summary\":\"mcp-client session\",\"description\":null,\"status\":\"Done\",\"priority\":\"High\",\"assignee\":null,\"reporter\":\"palakjhamb17\",\"issue_type\":\"Task\",\"project\":\"MCP0\",\"due_date\":\"2026-07-04\",\"created\":\"2026-07-01T18:29:00.188+0530\",\"updated\":\"2026-07-02T16:03:53.018+0530\"}",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Show comments of issue MCP0-3",
+        "tools_used": [
+            "get_issue_comments"
+        ],
+        "final_answer": "[{\"id\":\"10033\",\"author\":\"palakjhamb17\",\"comment\":\"This is 1st comment added in mcp-client session\",\"created\":\"2026-07-02T11:55:11.271+0530\",\"updated\":\"2026-07-02T11:55:11.271+0530\"},{\"id\":\"10066\",\"author\":\"palakjhamb17\",\"comment\":\"this is comment 2\",\"created\":\"2026-07-02T13:28:55.197+0530\",\"updated\":\"2026-07-02T13:28:55.197+0530\"},{\"id\":\"10100\",\"author\":\"palakjhamb17\",\"comment\":\"this is comment 3\",\"created\":\"2026-07-02T16:03:53.018+0530\",\"updated\":\"2026-07-02T16:03:53.018+0530\"}]",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "add in MCP0-2 as 1st comment in this issue",
+        "tools_used": [
+            "add_issue_comment"
+        ],
+        "final_answer": "{\"id\":\"10135\",\"message\":\"Comment added successfully to MCP0-2\"}",
+        "write_action_performed": true
+    },
+    {
+        "user_query": "Update issue status of MCP0-1 to in progress",
+        "tools_used": [
+            "update_issue_status"
+        ],
+        "final_answer": "{\"issue_key\":\"MCP0-1\",\"updated\":true,\"new_status\":\"In Progress\",\"message\":\"MCP0-1 moved to 'In Progress'\"}",
+        "write_action_performed": true
+    },
+    {
+        "user_query": "Show issues assigned to me",
+        "tools_used": [
+            "search_issues"
+        ],
+        "final_answer": "[{\"id\":\"10072\",\"key\":\"MCP0-2\",\"summary\":\"MCP assignment-06\",\"status\":\"In Progress\",\"priority\":\"High\",\"assignee\":\"palakjhamb17\"},{\"id\":\"10039\",\"key\":\"MCP0-1\",\"summary\":\"MCP hands on practice\",\"status\":\"In Progress\",\"priority\":\"Highest\",\"assignee\":\"palakjhamb17\"}]",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Summarize MCP0-3 including comments",
+        "tools_used": [
+            "get_issue_details",
+            "get_issue_comments"
+        ],
+        "final_answer": "{\"id\":\"10073\",\"key\":\"MCP0-3\",\"summary\":\"mcp-client session\",\"description\":null,\"status\":\"Done\",\"priority\":\"High\",\"assignee\":null,\"reporter\":\"palakjhamb17\",\"issue_type\":\"Task\",\"project\":\"MCP0\",\"due_date\":\"2026-07-04\",\"created\":\"2026-07-01T18:29:00.188+0530\",\"updated\":\"2026-07-02T19:16:38.038+0530\"} Comments: [{\"id\":\"10033\",\"author\":\"palakjhamb17\",\"comment\":\"This is 1st comment added in mcp-client session\",\"created\":\"2026-07-02T11:55:11.271+0530\",\"updated\":\"2026-07-02T11:55:11.271+0530\"},{\"id\":\"10066\",\"author\":\"palakjhamb17\",\"comment\":\"this is comment 2\",\"created\":\"2026-07-02T13:28:55.197+0530\",\"updated\":\"2026-07-02T13:28:55.197+0530\"},{\"id\":\"10100\",\"author\":\"palakjhamb17\",\"comment\":\"this is comment 3\",\"created\":\"2026-07-02T16:03:53.018+0530\",\"updated\":\"2026-07-02T16:03:53.018+0530\"},{\"id\":\"10134\",\"author\":\"palakjhamb17\",\"comment\":\"1st comment in this issue\",\"created\":\"2026-07-02T19:16:38.038+0530\",\"updated\":\"2026-07-02T19:16:38.038+0530\"}]",
+        "write_action_performed": false
+    }
+]

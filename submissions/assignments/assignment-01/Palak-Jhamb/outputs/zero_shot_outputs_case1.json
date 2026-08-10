@@ -1,0 +1,19 @@
+{
+    "risk_level": "HIGH",
+    "key_risk_factors": [
+        "Multi-tenant cloud hosting",
+        "Lack of region-specific data residency",
+        "Usage of customer data for product improvement",
+        "SOC 2 Type I without Type II",
+        "Unclear API rate limits",
+        "Usage-based pricing",
+        "Limited operating history and low enterprise adoption"
+    ],
+    "missing_information": [
+        "Clear documentation of API rate limits",
+        "Detailed plan for implementing region-specific data residency",
+        "Opt-out process for customer data usage"
+    ],
+    "business_recommendation": "Proceed with caution, negotiate data residency and opt-out terms, and closely monitor usage costs and API limits",
+    "confidence_score": 0.7
+}

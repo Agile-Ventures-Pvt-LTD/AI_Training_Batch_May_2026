@@ -1,0 +1,6 @@
+crewai>=0.114.0
+crewai[tools]>=0.186.1
+python-dotenv>=1.2.1
+pytest
+langchain-community==0.3.19
+crewai[litellm]

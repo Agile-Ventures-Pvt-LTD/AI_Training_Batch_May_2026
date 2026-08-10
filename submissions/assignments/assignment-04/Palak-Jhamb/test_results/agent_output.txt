@@ -1,0 +1,284 @@
+================================================================================
+MODERN AGENT QUERY TEST REPORT
+================================================================================
+
+================================================================================
+QUERY 1
+================================================================================
+
+QUESTION:
+What is the total revenue from completed orders?
+
+ANSWER:
+The total revenue generated from all **completed** orders is **$76,183.59**. This figure represents the sum of the `total_amount` for every order that has a status of “completed.”
+
+STATUS: PASS
+
+================================================================================
+QUERY 2
+================================================================================
+
+QUESTION:
+Which customer has spent the most money?
+
+ANSWER:
+The customer who has spent the most money on completed orders is **Meera Joshi** (customer #10). She has spent a total of **$31,145.71**. This figure comes from summing the `total_amount` of all her completed orders.
+
+STATUS: PASS
+
+================================================================================
+QUERY 3
+================================================================================
+
+QUESTION:
+Show the top 5 products by quantity sold.
+
+ANSWER:
+Here are the five products that have sold the most units so far:
+
+| Rank | Product | Quantity Sold |
+|------|---------|---------------|
+| 1 | Mixer Grinder | 21 |
+| 2 | Desk Lamp | 18 |
+| 3 | Dumbbells | 15 |
+| 4 | Coffee Mug | 14 |
+| 5 | Novel Book | 9 |
+
+**What this means for the business**
+
+- **Mixer Grinder** is the top‑selling item, indicating strong demand for kitchen appliances.
+- **Desk Lamp** and **Dumbbells** are also popular, suggesting a healthy mix of home‑office and fitness products.
+- **Coffee Mug** and **Novel Book** are the next in line, showing steady sales in lifestyle and entertainment categories.
+
+These insights can help you decide where to focus inventory, promotions, or marketing efforts.
+
+STATUS: PASS
+
+================================================================================
+QUERY 4
+================================================================================
+
+QUESTION:
+Which product category generated the highest revenue?
+
+ANSWER:
+The **Electronics** category generated the highest revenue, bringing in **$123,075.00** in total sales. This means that, compared to all other product categories, electronics contributed the most to the store’s income.
+
+STATUS: PASS
+
+================================================================================
+QUERY 5
+================================================================================
+
+QUESTION:
+How many orders are pending?
+
+ANSWER:
+There are **8 orders** that are currently marked as *pending* in the system. This means those orders have been placed but not yet completed or cancelled.
+
+STATUS: PASS
+
+================================================================================
+QUERY 6
+================================================================================
+
+QUESTION:
+Show all cancelled orders with customer names.
+
+ANSWER:
+Here are all the orders that were cancelled, along with the customer who placed each order, the date it was cancelled, and the total amount that was originally billed:
+
+| Order ID | Customer Name | Cancelled On | Total Amount |
+|----------|---------------|--------------|--------------|
+| 1 | Meera Joshi | 2026‑04‑01 | $19,323.24 |
+| 2 | Amit Verma | 2025‑12‑25 | $3,189.16 |
+| 5 | Sneha Kapoor | 2026‑04‑29 | $5,125.03 |
+| 9 | Rahul Arora | 2026‑01‑06 | $6,785.38 |
+| 13 | Neha Gupta | 2026‑03‑26 | $3,907.47 |
+| 15 | Rahul Arora | 2026‑03‑10 | $6,174.56 |
+| 16 | Pooja Jain | 2026‑03‑19 | $5,271.31 |
+| 17 | Meera Joshi | 2026‑01‑28 | $11,023.64 |
+| 25 | Rahul Arora | 2025‑10‑21 | $7,974.46 |
+
+These nine records represent every cancelled order in the database. If you need more details—such as the items in each order or the reason for cancellation—let me know!
+
+STATUS: PASS
+
+================================================================================
+QUERY 7
+================================================================================
+
+QUESTION:
+Which customers are from Delhi?
+
+ANSWER:
+Here are the customers who are based in Delhi:
+
+| Customer ID | Name           | Email                |
+|-------------|----------------|----------------------|
+| 1           | Rohan Mehta    | rohan@example.com   |
+| 3           | Neha Gupta     | neha@example.com    |
+| 7           | Rahul Arora    | rahul@example.com   |
+
+These three customers have their city listed as “Delhi” in the database.
+
+STATUS: PASS
+
+================================================================================
+QUERY 8
+================================================================================
+
+QUESTION:
+Which products have stock below 10?
+
+ANSWER:
+Here are the products that are running low on inventory (stock below 10 units):
+
+| Product | Current Stock |
+|---------|---------------|
+| Wireless Mouse | 4 |
+| Laptop Stand | 8 |
+| Yoga Mat | 6 |
+| Coffee Mug | 8 |
+| Mixer Grinder | 9 |
+| Office Chair | 5 |
+
+These items should be prioritized for restocking to avoid potential sales loss.
+
+STATUS: PASS
+
+================================================================================
+QUERY 9
+================================================================================
+
+QUESTION:
+What is the average order value?
+
+ANSWER:
+The average value of an order in the store is **about $9,359**. This means that, on average, each order placed by customers brings in roughly nine thousand three hundred fifty‑nine dollars in revenue.
+
+STATUS: PASS
+
+================================================================================
+QUERY 10
+================================================================================
+
+QUESTION:
+Show total revenue by month.
+
+ANSWER:
+Here’s the total revenue generated from completed orders, broken down by month:
+
+| Month | Total Revenue |
+|-------|---------------|
+| 2025‑06 | $23,550.20 |
+| 2025‑07 | $8,268.98 |
+| 2025‑08 | $3,038.66 |
+| 2025‑11 | $8,583.58 |
+| 2025‑12 | $7,595.51 |
+| 2026‑02 | $6,429.18 |
+| 2026‑04 | $18,717.48 |
+
+**Key take‑aways**
+
+- **Peak month:** June 2025 was the highest‑earning month, bringing in over $23,000 in revenue.
+- **Lowest month:** August 2025 had the smallest revenue, just over $3,000.
+- **Recent trend:** The revenue in April 2026 ($18,717) is the second‑highest month overall, indicating a strong performance in early 2026.
+
+These figures reflect only orders that have a status of “completed.” If you’d like to see revenue for other statuses or a different time range, let me know!
+
+STATUS: PASS
+
+================================================================================
+QUERY 11
+================================================================================
+
+QUESTION:
+Which city has the highest number of customers?
+
+ANSWER:
+The city with the most customers in the database is **Delhi**, with **3 customers**.
+
+STATUS: PASS
+
+================================================================================
+QUERY 12
+================================================================================
+
+QUESTION:
+Which customers have placed more than 2 orders?
+
+ANSWER:
+Here are the customers who have placed **more than two orders**:
+
+| Customer ID | Name           | Number of Orders |
+|-------------|----------------|------------------|
+| 3           | Neha Gupta     | 3                |
+| 4           | Amit Verma     | 3                |
+| 7           | Rahul Arora    | 5                |
+| 8           | Pooja Jain     | 3                |
+| 10          | Meera Joshi    | 4                |
+
+These five customers have each made at least three purchases, indicating they are relatively active shoppers in our store.
+
+STATUS: PASS
+
+================================================================================
+QUERY 13
+================================================================================
+
+QUESTION:
+What are the top 3 most expensive products?
+
+ANSWER:
+Here are the three most expensive items in our catalog:
+
+| Rank | Product ID | Name           | Price (₹) |
+|------|------------|----------------|-----------|
+| 1    | 3          | Monitor        | 12,999.00 |
+| 2    | 14         | Office Chair   | 7,999.00  |
+| 3    | 10         | Mixer Grinder  | 3,499.00  |
+
+These are the highest‑priced products currently listed in our database.
+
+STATUS: PASS
+
+================================================================================
+QUERY 14
+================================================================================
+
+QUESTION:
+Which product has never been ordered?
+
+ANSWER:
+The only product that has never been ordered is **“Yoga Mat”** (product_id 5). This means no order item references this product in the database.
+
+STATUS: PASS
+
+================================================================================
+QUERY 15
+================================================================================
+
+QUESTION:
+Show total sales by product category.
+
+ANSWER:
+**Total sales by product category**
+
+| Category     | Total Sales (USD) |
+|--------------|-------------------|
+| Electronics  | $123,075.00 |
+| Home         | $88,370.00 |
+| Kitchen      | $80,659.00 |
+| Fitness      | $38,483.00 |
+| Books        | $10,783.00 |
+
+**What this means for the business**
+
+- **Electronics** is the top‑earning category, generating over $123k in sales. This suggests strong demand and/or higher price points for electronic items.
+- **Home** and **Kitchen** follow closely, together contributing about $169k. These categories are also solid revenue drivers.
+- **Fitness** and **Books** bring in significantly less, but still represent niche markets that could be targeted for growth or promotional campaigns.
+
+Overall, the bulk of revenue comes from Electronics, Home, and Kitchen products. Focusing marketing, inventory, and pricing strategies on these categories could help maintain or increase sales momentum.
+
+STATUS: PASS

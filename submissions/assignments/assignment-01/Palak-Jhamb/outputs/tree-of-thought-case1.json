@@ -1,0 +1,67 @@
+{
+    "options_evaluated": [
+        {
+            "option": "Option 1: AI customer support assistant",
+            "business_value_score": 4,
+            "feasibility_score": 3,
+            "risk_score": 2,
+            "pilot_suitability_score": 4,
+            "adoption_score": 3,
+            "overall_score": 3.2,
+            "trade_offs": [
+                "High ticket volume",
+                "Moderate implementation complexity",
+                "Contains personal customer data"
+            ]
+        },
+        {
+            "option": "Option 2: AI sales proposal generator",
+            "business_value_score": 4,
+            "feasibility_score": 5,
+            "risk_score": 5,
+            "pilot_suitability_score": 4,
+            "adoption_score": 5,
+            "overall_score": 4.6,
+            "trade_offs": [
+                "Medium usage frequency",
+                "Low data sensitivity",
+                "Requires brand and legal review"
+            ]
+        },
+        {
+            "option": "Option 3: AI contract risk analyzer",
+            "business_value_score": 5,
+            "feasibility_score": 2,
+            "risk_score": 1,
+            "pilot_suitability_score": 2,
+            "adoption_score": 3,
+            "overall_score": 2.6,
+            "trade_offs": [
+                "High business value",
+                "High legal sensitivity",
+                "High implementation complexity"
+            ]
+        },
+        {
+            "option": "Option 4: AI internal HR policy assistant",
+            "business_value_score": 3,
+            "feasibility_score": 5,
+            "risk_score": 4,
+            "pilot_suitability_score": 5,
+            "adoption_score": 5,
+            "overall_score": 4.4,
+            "trade_offs": [
+                "High employee usage",
+                "Medium sensitivity",
+                "Low implementation complexity"
+            ]
+        }
+    ],
+    "recommended_option": "Option 2: AI sales proposal generator",
+    "why_not_others": {
+        "Option 1": "Higher risk due to personal customer data and moderate implementation complexity",
+        "Option 3": "High implementation complexity and high legal sensitivity make it less suitable for a 90-day pilot",
+        "Option 4": "Lower business value compared to Option 2"
+    },
+    "final_recommendation": "Option 2: AI sales proposal generator is the best choice for a 90-day pilot due to its high feasibility, low risk, and high adoption likelihood, making it a well-rounded option for a pilot program."
+}

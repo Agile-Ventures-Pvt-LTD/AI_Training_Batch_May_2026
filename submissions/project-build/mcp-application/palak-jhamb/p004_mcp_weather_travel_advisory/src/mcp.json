@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "job_search": {
+      "command": "C:/Users/Palak/.local/bin/uv.exe",
+      "args": [
+        "run",
+        "C:/Users/Palak/Desktop/p004_mcp_weather_travel_advisory/src/server.py"
+      ]
+    }
+  }
+}
