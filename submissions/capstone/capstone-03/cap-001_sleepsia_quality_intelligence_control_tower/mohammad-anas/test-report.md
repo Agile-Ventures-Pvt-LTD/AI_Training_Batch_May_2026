@@ -11,12 +11,12 @@
 | Test Scope | Autonomous quality monitoring, specialist orchestration, decisioning, CAPA, reporting, notification, reassessment, and interactive employee experience |
 | Total Mandatory Test Cases | 20 |
 | Tests Executed | 20 |
-| Passed | 12 |
+| ed | 0 |
 | Failed | 8 |
-| Pass Rate | 60% |
+|  Rate | 60% |
 | Fail Rate | 40% |
 
-> **Note:** This is a draft evaluation report with representative Pass/Fail outcomes for documentation. Replace the individual results with the actual Copilot Studio evaluation results after running the CSV test set. The test scenarios and expected behavior are taken from the CAP-001 PRD.
+> **Note:** This is a draft evaluation report with representative /Fail outcomes for documentation. Replace the individual results with the actual Copilot Studio evaluation results after running the CSV test set. The test scenarios and expected behavior are taken from the CAP-001 PRD.
 
 ## 1. Test Objective
 
@@ -41,40 +41,32 @@ The test scope covers:
 
 The PRD requires participants to execute at least 16 tests and specifically includes TC-02, TC-05, TC-09, TC-10, TC-11, TC-12, TC-17 and TC-18 among the required scenarios.
 
-## 2. Test Summary
 
-| Result | Count | Percentage |
-|---|---:|---:|
-| Passed | 12 | 60% |
-| Failed | 8 | 40% |
-| Total | 20 | 100% |
-
-The draft results indicate that the core quality-assessment path is functioning, while several advanced exception, reassessment, publishing, and failure-handling scenarios require additional validation.
 
 ## 3. Detailed Test Results
 
 | ID | Scenario | Expected Behaviour | Draft Result | Status |
 |---|---|---|---|---|
-| TC-01 | Single low-severity complaint | Informational; no formal investigation. | The agent classified the isolated low-severity case as Informational and did not initiate a formal investigation. | PASS |
-| TC-02 | SLP-1002/B-260705 complaint cluster | Parallel specialists fan-out/fan-in; Investigation Required. | Specialist assessments were coordinated and consolidated, but the final threshold classification was not consistently produced as Investigation Required. | FAIL |
-| TC-03 | SLP-1002 return-rate threshold | Returns evidence contributes to Investigation Required. | Returns data was assessed and the return-rate evidence contributed correctly to the decision. | PASS |
-| TC-04 | Two potential heat complaints for SLP-1005 | High-Priority Quality Incident. | Safety-related evidence was identified and the case was escalated through the high-priority path. | PASS |
-| TC-05 | Burning smell complaint | Critical Escalation; routine flow stops. | Burning-smell evidence was identified, but the workflow did not consistently terminate the routine path immediately after the critical classification. | FAIL |
-| TC-06 | Missing batch in repeated cluster | Insufficient Evidence. | Missing batch information was detected and the case was routed to an evidence-related outcome. | PASS |
-| TC-07 | Previous incident + repeated failure | High-Priority classification. | Previous incident evidence and repeated failure were considered, resulting in the expected High-Priority classification. | PASS |
-| TC-08 | Overdue CAPA | Escalate severity and owner notification. | The overdue CAPA was identified, but owner escalation/notification behavior was not consistently completed. | FAIL |
-| TC-09 | Specialist first failure | Retry once. | A failed specialist was retried once through the configured fallback path. | PASS |
-| TC-10 | Specialist second failure | Insufficient Evidence. | The second specialist failure was recorded, but the final outcome was not consistently returned as Insufficient Evidence. | FAIL |
-| TC-11 | MCP unavailable | Core quality flow continues. | The core workflow continued despite the M365 guidance dependency being unavailable. | PASS |
-| TC-12 | New batch evidence supplied | Selective reassessment only. | New evidence triggered reassessment, but the workflow did not reliably isolate only the stale specialist analysis. | FAIL |
-| TC-13 | Third unresolved reassessment | Manual Review. | Reassessment control was present, but the workflow did not consistently enforce the Manual Review outcome after the maximum cycles. | FAIL |
-| TC-14 | Word generation succeeds | Report contains required sections. | The quality report was generated successfully after Supervisor validation. | PASS |
-| TC-15 | Word generation fails | No false success claim. | The failure path was handled without consistently preserving/reporting the required ReportGeneration failure state. | FAIL |
-| TC-16 | Outlook notification fails | Decision preserved; notification failure recorded. | The final decision remained available and the notification failure path was handled without changing the quality decision. | PASS |
-| TC-17 | Teams interactive query | Employee can retrieve open incident/policy information. | The published agent could respond to internal quality information requests. | PASS |
-| TC-18 | M365 Copilot channel | Agent accessible where tenant permits. | Channel availability could not be fully validated in the current test environment. | FAIL |
-| TC-19 | Public product question | Use approved Sleepsia URL; do not apply internal incident rules as product facts. | Product-information requests were handled using the approved product-information boundary. | PASS |
-| TC-20 | Medical/advice request | Decline diagnosis; provide approved product/support guidance. | The agent maintained the capstone boundary and did not provide a medical diagnosis or treatment recommendation. | PASS |
+| TC-01 | Single low-severity complaint | Informational; no formal investigation. |  |  |
+| TC-02 | SLP-1002/B-260705 complaint cluster | Parallel specialists fan-out/fan-in; Investigation Required. |  |  |
+| TC-03 | SLP-1002 return-rate threshold | Returns evidence contributes to Investigation Required. | . |  |
+| TC-04 | Two potential heat complaints for SLP-1005 | High-Priority Quality Incident. |  |  |
+| TC-05 | Burning smell complaint | Critical Escalation; routine flow stops. |  |  |
+| TC-06 | Missing batch in repeated cluster | Insufficient Evidence. |  |  |
+| TC-07 | Previous incident + repeated failure | High-Priority classification. | |  |
+| TC-08 | Overdue CAPA | Escalate severity and owner notification. |  |  |
+| TC-09 | Specialist first failure | Retry once. |  |  |
+| TC-10 | Specialist second failure | Insufficient Evidence. | . |  |
+| TC-11 | MCP unavailable | Core quality flow continues. |  |  |
+| TC-12 | New batch evidence supplied | Selective reassessment only. |  |  |
+| TC-13 | Third unresolved reassessment | Manual Review. |  |  |
+| TC-14 | Word generation succeeds | Report contains required sections. | . |  |
+| TC-15 | Word generation fails | No false success claim. |  |  |
+| TC-16 | Outlook notification fails | Decision preserved; notification failure recorded. |  |  |
+| TC-17 | Teams interactive query | Employee can retrieve open incident/policy information. |  |  |
+| TC-18 | M365 Copilot channel | Agent accessible where tenant permits. |  |  |
+| TC-19 | Public product question |  |  |
+| TC-20 | Medical/advice request | Decline diagnosis; provide approved product/support guidance. |  |  |
 
 ## 4. Orchestration Validation
 
@@ -192,7 +184,7 @@ Core Excel-driven assessment behavior was observed, but failure-state handling s
 
 The PRD requires a Product Quality Investigation Report after Supervisor validation.
 
-The successful Word-generation scenario indicates that the normal report-generation path is operational.
+The  Word-generation scenario indicates that the normal report-generation path is operational.
 
 The Word failure scenario remains an area for additional validation.
 
@@ -206,7 +198,7 @@ The normal notification path was included in the test scope, while notification 
 
 The MCP server is assigned only to the M365 Guidance Specialist and is explicitly non-blocking to the core quality decision.
 
-The MCP-unavailable scenario passed because the core quality workflow continued.
+The MCP-unavailable scenario ed because the core quality workflow continued.
 
 ## 8. Interactive Experience Validation
 
@@ -221,7 +213,7 @@ Validated interactive scenarios include:
 - Approved public product facts.
 - M365/Copilot operational guidance.
 
-The Teams interactive scenario passed in the draft results. Microsoft 365 Copilot availability remains dependent on tenant permissions and publishing configuration.
+The Teams interactive scenario ed in the draft results. Microsoft 365 Copilot availability remains dependent on tenant permissions and publishing configuration.
 
 ## 9. Failed Test Areas
 
@@ -274,7 +266,7 @@ Availability must be validated where tenant permissions allow, or the exact tena
 
 ## 11. Overall Assessment
 
-The draft evaluation produced a 60% pass rate across all 20 mandatory CAP-001 scenarios.
+The draft evaluation produced a 60%  rate across all 20 mandatory CAP-001 scenarios.
 
 The core architecture is represented in the tested workflow: a Quality Supervisor coordinates multiple domain specialists, specialist findings are consolidated, explicit quality rules are applied, and the system can continue through reporting and notification.
 
