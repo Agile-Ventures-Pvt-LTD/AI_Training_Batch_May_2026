@@ -6,7 +6,7 @@
 |---|---|
 | **Project ID** | CAP-001 |
 | **Participant Name** | Pranay Gupta |
-| **Agent Name** | Pranay Quality Supervisor |
+| **Agent Name** | Pranay Sleepsia Product QualitySupervisor |
 | **Agent Link** | Agent(https://copilotstudio.microsoft.com/environments/Default-1e1572ff-a54c-4cd7-b2a9-20091afa5359/bots/0c547746-8294-f111-b8dc-000d3af21e08/overview) |
 
 This project implements an autonomous product-quality and customer-experience intelligence system for the Sleepsia scenario.
@@ -36,7 +36,7 @@ The system evaluates:
 
 ### Supervisor Agent
 
-- Quality Supervisor
+- Pranay Sleepsia Product QualitySupervisor
 
 ### Specialist Child Agents
 
