@@ -1,0 +1,113 @@
+# Sample Run Outputs
+## Q1 – Payment API Health and Recent Change
+User Query:
+Why is the Payment API unhealthy and is there any recent change that may be 
+related?
+Servers Used:
+- service-health
+- change-management
+Tools Used:
+- get_active_incidents
+- get_changes_for_service
+Final Answer:
+The Payment API is currently unhealthy, with a 38% error rate and an average latency of 1850ms. There is an active SEV-1 incident (INC-OPS-101) related to elevated timeout failures for payment processing requests, which may be causing customer impact. A recent change (CHG-2001) was implemented around the same time as the incident started, which released changes for timeout handling and retry logic. This change may be related to the incident, but further investigation is needed to confirm the root cause. It is recommended to review the change details and incident report to determine the next course of action.
+
+## Q2 - High-Priority Tickets for Unhealthy Services
+
+User Query :
+Show high-priority open tickets for services that are currently unhealthy or degraded.
+
+Servers Used :
+- service-health
+- support-ticket
+
+Tools Used :
+- get_high_priority_tickets
+- get_active_incidents
+
+Final Answer :
+Based on the available data, there are high-priority open tickets for services that are currently unhealthy or degraded. The Payment API and Checkout Service are experiencing issues, with active incidents reported for both. \n\nFor the Payment API, there are three high-priority tickets: TKT-1001 (P1), TKT-1002 (P1), and TKT-1003 (P2). These tickets are related to payment failures, timeouts, and retry issues. There is an active SEV-1 incident (INC-OPS-101) for the Payment API, indicating elevated timeout failures that may be impacting customers' ability to complete card payments.\n\nFor the Checkout Service, there are three high-priority tickets: TKT-1004 (P2), TKT-1005 (P2), and TKT-1012 (P1). These tickets are related to slow checkout completion, intermittent checkout failures, and an error spike. There is an active SEV-2 incident (INC-OPS-102) for the Checkout Service, indicating slower than normal checkout requests with intermittent failures.\n\nThe recommended next action is to investigate the root cause of these issues and work on resolving the incidents and high-priority tickets to minimize customer impact. It is essential to prioritize the SEV-1 incident for the Payment API and the P1 ticket (TKT-1012) for the Checkout Service to quickly address the elevated error rates and prevent further customer impact.
+
+## Q3 - Summary of Payment API Incident
+
+User Query :
+Summarize the current Payment API incident and the related support ticket impact.
+
+Servers Used :
+- service-health
+
+Tools Used :
+- get_active_incidents
+
+Final Answer :
+The current Payment API incident (INC-OPS-101) is a SEV-1 incident that started at 09:55:00 on 2026-07-08. The incident is related to elevated timeout failures for payment processing requests, which may be preventing customers from completing card payments.\n\nThere are four related support tickets:\n\n1. TKT-1001 (P1): Card payment timeout - Customers are reporting payment failures and timeout errors.\n2. TKT-1002 (P1): Payment requests failing - Multiple merchants are reporting failed payment authorization calls.\n3. TKT-1003 (P2): Intermittent payment retry failures - Retries are not completing successfully for some transactions.\n4. TKT-1009 (P3): Payment dashboard lag - Operations dashboard metrics are delayed.\n\nThe Payment API is currently unhealthy, with an error rate of 38%, average latency of 1850ms, CPU usage of 42%, and memory usage of 61%. The customer impact for TKT-1001 and TKT-1002 is high, while the impact for TKT-1003 is medium and the impact for TKT-1009 is low.\n\nThe recommended next action is to prioritize the resolution of the SEV-1 incident and the high-priority tickets (TKT-1001 and TKT-1002) to minimize customer impact and restore normal payment processing functionality. It is essential to investigate the root cause of the issues and work on resolving them as soon as possible.
+
+## Q4 - Change for checkout services
+
+User Query :
+Was there any recent change for Checkout Service that may explain the current degradation?
+
+Servers Used :
+- sevice-health
+
+Tools Used :
+- get_active_incidents
+
+Final Answer :
+There was a recent change for the Checkout Service that may explain the current degradation. The change (CHG-2004) was an application release for checkout UI and validation updates, which was implemented on 2026-07-05 at 11:00:00 by the Commerce Platform team. This change has a medium risk level and is marked as completed.\n\nThe Checkout Service is currently degraded, with an error rate of 12%, average latency of 920ms, CPU usage of 67%, and memory usage of 74%. There is an active SEV-2 incident (INC-OPS-102) related to slow checkout requests with intermittent failures.\n\nThe recommended next action is to investigate the recent change and its potential impact on the Checkout Service, and to work on resolving the active incident to minimize customer impact. It may be necessary to roll back the change if it is determined to be the cause of the degradation.
+
+## Q5 - Operation Summary
+
+User Query :
+Give me an operations summary of all unhealthy or degraded services, active incidents, and high-priority tickets.
+
+Servers Used :
+- change_management
+
+Tools Used :
+- list_recent_changes
+
+Final Answer :
+There are two services that are currently unhealthy or degraded: Payment API (UNHEALTHY) and Checkout Service (DEGRADED). \n\nThere are two active incidents: \n1. INC-OPS-101 for Payment API with SEV-1 severity, which started at 09:55:00. The incident is about payment processing requests experiencing elevated timeout failures, and customers may be unable to complete card payments.\n2. INC-OPS-102 for Checkout Service with SEV-2 severity, which started at 09:40:00. The incident is about checkout requests being slower than normal with intermittent failures, and some customers may experience delayed checkout completion.\n\nThere are six high-priority tickets:\n1. TKT-1001 for Payment API with P1 priority, which was created at 09:58:00. The ticket is about card payment timeout, and customers report payment failures and timeout errors.\n2. TKT-1002 for Payment API with P1 priority, which was created at 10:02:00. The ticket is about payment requests failing, and multiple merchants report failed payment authorization calls.\n3. TKT-1003 for Payment API with P2 priority, which was created at 10:05:00. The ticket is about intermittent payment retry failures, and retries are not completing successfully for some transactions.\n4. TKT-1004 for Checkout Service with P2 priority, which was created at 09:45:00. The ticket is about the checkout page being slow, and checkout completion is slower than normal.\n5. TKT-1005 for Checkout Service with P2 priority, which was created at 09:50:00. The ticket is about intermittent checkout failure, and some checkout requests fail after validation.\n6. TKT-1012 for Checkout Service with P1 priority, which was created at 10:04:00. The ticket is about a checkout error spike, and it is a priority escalation for checkout failures impacting customers.\n\nRecent changes include:\n1. CHG-2001 for Payment API, which was an application release for timeout handling and retry logic. The change was implemented at 09:10:00 and has a high risk.\n2. CHG-2004 for Checkout Service, which was an application release for checkout UI and validation updates. The change was implemented at 11:00:00 and has a medium risk.\n\nPossible correlations between recent changes and incidents include:\n- The Payment API incident (INC-OPS-101) might be related to the recent application release (CHG-2001) for timeout handling and retry logic.\n- The Checkout Service incident (INC-OPS-102) might be related to the recent application release (CHG-2004) for checkout UI and validation updates.\n\nRecommended next actions:\n- Investigate the recent changes (CHG-2001 and CHG-2004) to determine if they are the root cause of the incidents.\n- Review the high-priority tickets to ensure that they are being addressed promptly.\n- Monitor the services and incidents to ensure that the issues are being resolved and that there are no further disruptions to customers.
+
+## Q6 - Recent changes made to services
+
+User Query :
+Which recent changes were made to services that currently have active incidents?
+
+Servers Used :
+- change_management
+
+Tools Used :
+- get_changes_for_service
+
+Final Answer :
+There are recent changes made to services that currently have active incidents. \n\nFor Payment API, which has an active incident INC-OPS-101, the recent change is CHG-2001. It was implemented at 09:10:00 and the change type is APPLICATION_RELEASE with a HIGH risk. The summary is \"Released payment-service changes for timeout handling and retry logic.\" Rollback is available.\n\nFor Checkout Service, which has an active incident INC-OPS-102, the recent change is CHG-2004. It was implemented at 11:00:00 on 2026-07-05 and the change type is APPLICATION_RELEASE with a MEDIUM risk. The summary is \"Released checkout UI and validation updates.\" Rollback is available.\n\nThese recent changes may be correlated with the active incidents, and further investigation is recommended.
+
+## Q7 - Showing the details of particular ticket
+
+User Query :
+Show the details of ticket TKT-1001 and check the health of its related service."
+
+Servers Used :
+- support_ticket
+
+Tools Used :
+- get_ticket_details
+
+Final Answer :
+The details of ticket TKT-1001 are:\n- Ticket ID: TKT-1001\n- Service Name: Payment API\n- Priority: P1\n- Status: OPEN\n- Subject: Card payment timeout\n- Description: Customers report payment failures and timeout errors.\n- Created At: 2026-07-08T09:58:00\n- Customer Impact: High\n- Assigned Group: Application Support\n\nThe health of the related service, Payment API, is UNHEALTHY. The error rate is 38.0%, the average latency is 1850ms, the CPU usage is 42%, and the memory usage is 61%. The service was last checked at 2026-07-08T10:00:00, and there is an active incident INC-OPS-101."
+
+## Q8 - Listing recent changes for Payment API
+
+User Query :
+List recent changes for Payment API and summarize whether rollback information is available."
+
+Servers Used :
+- change_management
+
+Tools USed :
+- get_changes_for_service
+
+Final Answer :
+There is one recent change for the Payment API service: \n\n- CHG-2001, which was an application release for timeout handling and retry logic. The change was implemented at 09:10:00 and has a high risk.\n\nRollback information is available for this change, as indicated by \"rollback_available\": true. This means that if the change is determined to be the root cause of any issues, it can be rolled back to a previous version.

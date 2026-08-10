@@ -1,0 +1,42 @@
+{
+    "incident_id": "INC-002",
+    "parsed_metadata": {
+        "shipment_id": "SH-4105",
+        "cargo_weight_tons": 250,
+        "cargo_type": "consumer electronics",
+        "target_warehouse_id": "WH-SOUTH-303",
+        "has_perishables": false,
+        "maximum_tolerable_delay_hours": null
+    },
+    "rag_validation_rules_applied": "Any alternative route exceeding 120 hours of total added transit delay must be \nclassified as CRITICAL_DELAY.\nCargo exceeding 500 tons and routed through Port-South requires a \nWAREHOUSE_FIT_CHECK.\nA warehouse operating above 85 percent utilization cannot accept a new automated \ncargo shipment.\nIf a warehouse has an ELEVATED risk tier, another route or alternative facility \nmust be checked before finalizing the route.",
+    "routes_evaluated": [
+        {
+            "route_id": "ROUTE-WEST-01",
+            "decision": "ROUTE_CLARIFICATION",
+            "reason": "Warehouse risk tier is ELEVATED"
+        },
+        {
+            "route_id": "ROUTE-SOUTH-02",
+            "decision": "OPTIMAL_PATH_FOUND",
+            "reason": "Warehouse and route conditions are acceptable"
+        }
+    ],
+    "final_selected_route": {
+        "route_id": "ROUTE-SOUTH-02",
+        "alternative_port": "Port-South",
+        "warehouse_id": "WH-SOUTH-303",
+        "added_delay_hours": 72
+    },
+    "queried_warehouse_metrics": {
+        "warehouse_name": "Southern Distribution Hub",
+        "current_utilization_pct": 72,
+        "operational_status": "ACTIVE",
+        "risk_tier": "NORMAL"
+    },
+    "graph_routing_metadata": {
+        "loops_executed": 1,
+        "final_decision_state": "OPTIMAL_PATH_FOUND",
+        "reroute_impact_score": 0
+    },
+    "final_operations_brief": "**Logistics Operation Brief**\n\n**Decision:** OPTIMAL_PATH_FOUND\n\n**Route Details:**\n\n* **Route ID:** ROUTE-SOUTH-02\n* **Alternative Port:** Port-South\n* **Warehouse ID:** WH-SOUTH-303\n* **Additional Delay:** 72 hours\n\n**Summary:**\nThe optimal logistics route has been determined as ROUTE-SOUTH-02, utilizing Port-South as the alternative port and WH-SOUTH-303 as the designated warehouse. Please note that an additional delay of 72 hours is expected. All relevant teams and stakeholders should be informed of this route and delay to ensure a smooth operation."
+}

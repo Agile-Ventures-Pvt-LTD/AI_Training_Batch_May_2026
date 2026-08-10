@@ -1,0 +1,13 @@
+# Python-generated files
+__pycache__/
+
+# Virtual environments
+.venv
+
+#Environmental variables
+.env
+
+#raw data and vectordb
+data\raw\Amazon-2025-Annual-Report.pdf
+data\vector_store\305bd028-58ab-42d7-9383-ac0a4d502902\
+data\vector_store\chroma.sqlite3

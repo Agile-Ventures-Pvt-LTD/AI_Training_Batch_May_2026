@@ -1,0 +1,282 @@
+# Sample Run Outputs
+
+## 1. Amit VPN Timeout Issue
+
+user query : 
+Amit says VPN times out after MFA approval. What should we check 
+and what is the next action?
+
+Agent response:
+{
+    "timestamp": "2026-06-19 18:06:21",
+    "query": "Amit says VPN times out after MFA approval. What should we check and what is the next action?",
+    "response": {
+      "issue_type": "VPN",
+      "diagnosis_summary": "VPN times out after MFA approval for Amit, potential known incident INC-4001 causing VPN gateway latency",
+      "evidence_used": {
+        "kb_sources": [],
+        "tools_used": [
+          "check_known_incidents",
+          "run_diagnostic_check"
+        ],
+        "diagnostic_signals": [
+          "INC-4001"
+        ]
+      },
+      "recommended_steps": [
+        "Verify MFA approval logs",
+        "Check VPN gateway latency"
+      ],
+      "escalation_required": true,
+      "escalation_group": "Network Team",
+      "safety_notes": [],
+      "confidence": "MEDIUM"
+    }
+}
+
+## 2. Priya Laptop slow
+
+user query:
+Priya's laptop is very slow after startup. Diagnose the likely issue.
+
+Agent Response:
+{
+    "timestamp": "2026-06-19 18:06:44",
+    "query": "Priya's laptop is very slow after startup. Diagnose the likely issue.",
+    "response": {
+      "issue_type": "Laptop Performance",
+      "diagnosis_summary": "The user's laptop is slow after startup. The user profile and device status have been retrieved. However, the device status could not be found. A diagnostic check has been run, which shows that the VPN, internet, and webmail are all working properly.",
+      "evidence_used": {
+        "kb_sources": [],
+        "tools_used": [
+          "classify_issue_type",
+          "get_user_profile",
+          "get_device_status",
+          "run_diagnostic_check"
+        ],
+        "diagnostic_signals": [
+          "VPN",
+          "internet",
+          "webmail"
+        ]
+      },
+      "recommended_steps": [
+        "Check for malware",
+        "Update operating system and software",
+        "Check for disk space and memory issues"
+      ],
+      "escalation_required": false,
+      "escalation_group": "",
+      "safety_notes": [
+        "Ensure all data is backed up before making any changes"
+      ],
+      "confidence": "MEDIUM"
+    }
+}
+
+## 3.  David Cannot Login
+
+user query:
+David cannot login and password reset email is not received. What should be done?
+
+Agent Response:
+{
+    "timestamp": "2026-06-19 18:07:14",
+    "query": "David cannot login and password reset email is not received. What should be done?",
+    "response": {
+      "issue_type": "Login Issue",
+      "diagnosis_summary": "David is unable to login and not receiving password reset email. His account status is locked and MFA is enabled. Diagnostic check did not find any issues, but there was a known incident earlier today related to email sync delay.",
+      "evidence_used": {
+        "kb_sources": [],
+        "tools_used": [
+          "classify_issue_type",
+          "get_user_profile",
+          "run_diagnostic_check",
+          "check_known_incidents"
+        ],
+        "diagnostic_signals": [
+          "account status locked",
+          "MFA enabled",
+          "email sync delay incident"
+        ]
+      },
+      "recommended_steps": [
+        "Try resetting password again",
+        "Check email spam folder",
+        "Verify MFA settings"
+      ],
+      "escalation_required": false,
+      "escalation_group": "",
+      "safety_notes": [
+        "Be cautious of email scams"
+      ],
+      "confidence": "MEDIUM"
+    }
+}
+
+## 4. Sara VPN Disconnects
+
+user query:
+Sara's VPN disconnects frequently. What is the likely reason?
+
+Agent Response:
+{
+    "timestamp": "2026-06-19 18:07:40",
+    "query": "Sara's VPN disconnects frequently. What is the likely reason?",
+    "response": {
+      "issue_type": "VPN",
+      "diagnosis_summary": "Unable to determine the cause of Sara's VPN disconnections due to lack of diagnostic information and device status. Further investigation is needed.",
+      "evidence_used": {
+        "kb_sources": [],
+        "tools_used": [
+          "run_diagnostic_check",
+          "get_device_status"
+        ],
+        "diagnostic_signals": []
+      },
+      "recommended_steps": [
+        "Check VPN settings",
+        "Verify network connectivity",
+        "Contact IT support for further assistance"
+      ],
+      "escalation_required": true,
+      "escalation_group": "Network Support",
+      "safety_notes": [],
+      "confidence": "LOW"
+    }
+}
+
+## 5. Emily Outlook Not Syncing
+
+user query:
+Outlook is not syncing for Emily but webmail works. What is the next step?
+
+Agent Response:
+ {
+    "timestamp": "2026-06-19 18:08:13",
+    "query": "Outlook is not syncing for Emily but webmail works. What is the next step?",
+    "response": {
+      "issue_type": "Email Sync Issue",
+      "diagnosis_summary": "Outlook is not syncing for Emily, but webmail is working. Diagnostic checks show VPN, internet, and webmail are all connected.",
+      "evidence_used": {
+        "kb_sources": [],
+        "tools_used": [
+          "Diagnostic Check"
+        ],
+        "diagnostic_signals": [
+          "VPN",
+          "Internet",
+          "Webmail"
+        ]
+      },
+      "recommended_steps": [
+        "Check Outlook settings",
+        "Restart Outlook",
+        "Check for Outlook updates"
+      ],
+      "escalation_required": false,
+      "escalation_group": "",
+      "safety_notes": [],
+      "confidence": "MEDIUM"
+    }
+}
+
+## 6. Active VPN Incidents
+
+user query:
+Which active known incidents may affect VPN users?
+
+Agent Response:
+{
+    "timestamp": "2026-06-19 18:08:31",
+    "query": "Which active known incidents may affect VPN users?",
+    "response": {
+      "issue_type": "VPN Incident",
+      "diagnosis_summary": "There is an active known incident INC-4001 affecting VPN users in the India-West region, causing gateway latency and timeouts.",
+      "evidence_used": {
+        "kb_sources": [],
+        "tools_used": [
+          "check_known_incidents"
+        ],
+        "diagnostic_signals": [
+          "INC-4001"
+        ]
+      },
+      "recommended_steps": [
+        "Contact IT support for updates on incident resolution",
+        "Consider alternative VPN gateways if available"
+      ],
+      "escalation_required": true,
+      "escalation_group": "Network Operations",
+      "safety_notes": [
+        "Be cautious of potential data breaches due to prolonged VPN disconnections"
+      ],
+      "confidence": "HIGH"
+    }
+}
+
+## 7. Rahul Laptop Ticket Summary
+
+user query:
+Create a ticket summary for Rahul's laptop performance issue.
+
+Agent Response:
+{
+    "timestamp": "2026-06-19 18:08:47",
+    "query": "Create a ticket summary for Rahul's laptop performance issue.",
+    "response": {
+      "issue_type": "LAPTOP_PERFORMANCE",
+      "diagnosis_summary": "User Rahul is experiencing laptop performance issues. The user profile and device status could not be retrieved. Diagnostic checks were not found. The issue type has been classified and troubleshooting steps have been retrieved from the knowledge base.",
+      "evidence_used": {
+        "kb_sources": [
+          "laptop_performance_guide.md"
+        ],
+        "tools_used": [
+          "classify_issue_type",
+          "retrieve_troubleshooting_steps"
+        ],
+        "diagnostic_signals": []
+      },
+      "recommended_steps": [
+        "Identify top resource-consuming processes",
+        "Close unnecessary applications",
+        "Check for browser tabs consuming excessive memory"
+      ],
+      "escalation_required": true,
+      "escalation_group": "Endpoint Support",
+      "safety_notes": [],
+      "confidence": "MEDIUM"
+    }
+}
+
+## 8. Ambiguous Email Request
+
+user query:
+My email is slow. Fix it.
+
+Agent Response:
+ {
+    "timestamp": "2026-06-19 18:09:02",
+    "query": "My email is slow. Fix it.",
+    "response": {
+      "issue_type": "Email Issue",
+      "diagnosis_summary": "The user's email is slow. There is a known incident INC-4002 related to Microsoft 365 Email, which may be the cause of the issue. However, the incident is marked as resolved. Diagnostic checks did not provide any additional information.",
+      "evidence_used": {
+        "kb_sources": [
+          "known incidents"
+        ],
+        "tools_used": [
+          "diagnostic check"
+        ],
+        "diagnostic_signals": []
+      },
+      "recommended_steps": [
+        "Try restarting the email client",
+        "Check for any email client updates"
+      ],
+      "escalation_required": false,
+      "escalation_group": "",
+      "safety_notes": [],
+      "confidence": "MEDIUM"
+    }
+}

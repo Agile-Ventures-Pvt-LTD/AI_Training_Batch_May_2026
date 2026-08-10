@@ -1,0 +1,185 @@
+
+================================================================================
+QUESTION:
+show the database schema
+
+RESPONSE:
+{
+    "user_question": "show the database schema",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "inspect_database_schema"
+    ],
+    "records_found": 1,
+    "answer": "The database schema includes the following tables:\n\n- customer\n- card\n- card_type\n- transaction\n- transaction_type\n- merchant\n- merchant_type\n- transaction_terminal\n- netbanking\n\nEach table has the following columns:\n\n- customer: cust_id, first_name, last_name, email, phone, address, city, state, zip\n- card: card_number, valid_from, expiry, security_code, x-coordinate, y-coordinate, mean_amount, std_amount, mean_nb_tx_per_day, cust_id, card_type_id\n- card_type: card_type_id, card_type, card_network, privilege\n- transaction: Unnamed: 0, TXN_ID, TX_DATETIME, CARD_ID, TERMINAL_ID, TX_AMOUNT, TX_TIME_SECONDS, TX_TIME_DAYS, TXN_TYPE_ID, M_ID\n- transaction_type: txn_type_id, debit_credit, lcl_intnl\n- merchant: id, merchant, merchant_type\n- merchant_type: id, merchant_type\n- transaction_terminal: TERMINAL_ID, x_terminal_id, y_terminal_id\n- netbanking: username, password, expiry_date, security_question, security_answer, cust_id",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+show the profile details of cust-100
+
+RESPONSE:
+{
+    "user_question": "show the profile details of cust-100",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_customer_profile"
+    ],
+    "records_found": 1,
+    "answer": "The customer profile for cust-100 is Steven Farmer.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+Show card details for customer CUST-1
+
+RESPONSE:
+{
+    "user_question": "Show card details for customer CUST-1",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_card_details"
+    ],
+    "records_found": 1,
+    "answer": "The card details for customer CUST-1 are:\n\n- Card Number: **** **** **** 1697\n- Valid From: 2013-06-01\n- Expiry: 2023-06-01\n- Security Code: ***\n- Mean Amount: $23.42\n- Standard Deviation of Amount: $11.71\n- Mean Number of Transactions per Day: 3.44",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+Show the last 5 transactions for customer CUST-100
+
+RESPONSE:
+{
+    "user_question": "Show the last 5 transactions for customer CUST-100",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_customer_transactions"
+    ],
+    "records_found": 1,
+    "answer": "The last 5 transactions for customer CUST-100 are:\n\n1. On 2022-09-08 at 14:26:33, a transaction of $113.40 was made at Walmart.\n2. On 2022-09-08 at 06:44:41, a transaction of $76.36 was made at Publix.\n3. On 2022-09-07 at 18:41:17, a transaction of $94.69 was made at Target Corporation.\n4. On 2022-09-07 at 09:52:30, a transaction of $26.20 was made at Best Buy.\n5. On 2022-09-06 at 21:30:29, a transaction of $44.21 was made at The Home Depot.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+Which customers have the highest amount due?
+
+RESPONSE:
+{
+    "user_question": "Which customers have the highest amount due?",
+    "implementation_choice": "custom_react_agent",
+    "tools_used": [],
+    "records_found": 0,
+    "answer": "Unable to process request: Error code: 400 - {'error': {'message': 'tool call validation failed: parameters for tool search_transactions did not match schema: errors: [`/limit`: expected integer, but got string, `/max_amount`: expected number, but got string, `/max_amount`: expected null, but got string, `/min_amount`: expected number, but got string, `/min_amount`: expected null, but got string]', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '<function=search_transactions>{\"cust_id\": \"all\", \"max_amount\": \"null\", \"min_amount\": \"null\", \"limit\": \"10\", \"merchant_id\": \"null\"}</function>'}}",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+Which customers have the highest amount due?
+
+RESPONSE:
+{
+    "user_question": "Which customers have the highest amount due?",
+    "implementation_choice": "custom_react_agent",
+    "tools_used": [],
+    "records_found": 0,
+    "answer": "Unable to process request: Error code: 400 - {'error': {'message': 'tool call validation failed: parameters for tool search_transactions did not match schema: errors: [`/min_amount`: expected number, but got string, `/min_amount`: expected null, but got string, `/limit`: expected integer, but got string, `/max_amount`: expected number, but got string, `/max_amount`: expected null, but got string]', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '<function=search_transactions>{\"cust_id\": \"all\", \"max_amount\": \"null\", \"min_amount\": \"null\", \"limit\": \"10\", \"merchant_id\": \"null\"}</function>'}}",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+Show statement summary for customer CUST-100
+
+RESPONSE:
+{
+    "user_question": "Show statement summary for customer CUST-100",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_statement_summary",
+        "inspect_database_schema"
+    ],
+    "records_found": 1,
+    "answer": "No records were found matching the requested criteria.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+Which merchant type has the highest total spend?
+
+RESPONSE:
+{
+    "user_question": "Which merchant type has the highest total spend?",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_merchant_spend_summary"
+    ],
+    "records_found": 1,
+    "answer": "The merchant type with the highest total spend is '13' with a total spend of $3,497,042.51.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+Show reward points for customer CUST-100
+
+RESPONSE:
+{
+    "user_question": "Show reward points for customer CUST-100",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "get_customer_profile",
+        "inspect_database_schema",
+        "get_rewards_summary"
+    ],
+    "records_found": 1,
+    "answer": "The requested dataset is not available in the current database.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+Identify potentially suspicious transactions.
+
+RESPONSE:
+{
+    "user_question": "Identify potentially suspicious transactions.",
+    "implementation_choice": "custom_react_agent",
+    "tools_used": [],
+    "records_found": 0,
+    "answer": "Unable to process request: Error code: 400 - {'error': {'message': 'tool call validation failed: parameters for tool search_transactions did not match schema: errors: [`/limit`: expected integer, but got null]', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '<function=search_transactions>{\"cust_id\": null, \"limit\": null, \"max_amount\": null, \"merchant_id\": null, \"min_amount\": null}</function>'}}",
+    "sensitive_data_masked": true,
+    "limitations": []
+}
+
+================================================================================
+QUESTION:
+which cards are expiring in the next 60 days?
+
+RESPONSE:
+{
+    "user_question": "which cards are expiring in the next 60 days?",
+    "implementation_choice": "prebuilt_react_agent",
+    "tools_used": [
+        "inspect_database_schema",
+        "get_card_details"
+    ],
+    "records_found": 1,
+    "answer": "No records were found matching the requested criteria.",
+    "sensitive_data_masked": true,
+    "limitations": []
+}

@@ -1,0 +1,17 @@
+{
+    "service-health": [
+        "list_services",
+        "get_service_health",
+        "get_active_incidents"
+    ],
+    "support-ticket": [
+        "search_tickets",
+        "get_ticket_details",
+        "get_high_priority_tickets"
+    ],
+    "change-management": [
+        "list_recent_changes",
+        "get_change_details",
+        "get_changes_for_service"
+    ]
+}

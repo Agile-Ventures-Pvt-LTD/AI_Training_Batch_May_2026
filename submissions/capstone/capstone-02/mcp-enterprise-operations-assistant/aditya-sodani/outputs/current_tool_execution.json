@@ -1,0 +1,14 @@
+{
+    "servers_used": [
+        "change_management"
+    ],
+    "tools_used": [
+        "get_changes_for_service"
+    ],
+    "evidence": {
+        "services": [],
+        "incidents": [],
+        "tickets": [],
+        "changes": []
+    }
+}

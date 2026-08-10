@@ -1,0 +1,106 @@
+{
+    "ticket_summary": {
+        "short_summary": "Premium customer charged twice after cancelling subscription",
+        "customer_problem": "Incorrect charge after subscription cancellation",
+        "business_impact": "Potential public escalation on LinkedIn and blocked future payments",
+        "customer_requested_action": "Refund the incorrect charge immediately",
+        "important_context": [
+            "Customer contacted support twice last week with no proper response",
+            "Premium customer with previous interaction history"
+        ],
+        "missing_information": [
+            "Invoice ID",
+            "Registered account email"
+        ]
+    },
+    "classification": {
+        "primary_category": "Billing Issue",
+        "secondary_categories": [
+            "Subscription Cancellation",
+            "Lack of Response from Support",
+            "Potential Double Charge"
+        ],
+        "category_reasoning_summary": "The customer is reporting being charged twice for their premium subscription after cancelling it, and not receiving a proper response from support. This indicates a billing issue that needs to be investigated and resolved. The customer's premium status and previous unsuccessful interactions with support also suggest that this issue should be escalated to billing support.",
+        "confidence_score": 0.9
+    },
+    "sentiment_analysis": {
+        "sentiment": "Negative",
+        "emotion_signals": [
+            "Frustration",
+            "Anger",
+            "Urgency"
+        ],
+        "sentiment_reasoning_summary": "The customer is expressing frustration and anger due to being charged twice and not receiving a proper response from support. The customer is also urgency-driven, threatening to escalate the issue publicly and block future payments if not resolved immediately.",
+        "confidence_score": 0.9
+    },
+    "priority_and_risk": {
+        "priority": "High",
+        "escalation_risk": "High",
+        "risk_triggers": [
+            "Previous unsuccessful support interactions",
+            "Premium customer with billing error",
+            "Threat of public escalation on LinkedIn",
+            "Potential for blocked future payments"
+        ],
+        "recommended_sla_action": "Immediate verification and resolution by billing support",
+        "reasoning_summary": "The customer's premium status, the billing error, previous unsuccessful support interactions, and explicit escalation threats necessitate a high-priority, immediate response to prevent public escalation and potential financial loss."
+    },
+    "sensitive_information_check": {
+        "sensitive_information_detected": true,
+        "sensitive_categories": [
+            "Financial Information"
+        ],
+        "evidence_summary": "The customer's ticket body mentions being charged twice, noticing duplicate invoice amounts on their bank statement, and discusses financial transactions.",
+        "handling_recommendations": [
+            "Ensure all financial discussions are kept private and secure.",
+            "Request specific invoice IDs or registered account emails if necessary for verification, without confirming any details prematurely.",
+            "Escalate the issue to billing support as per business rules for premium customers.",
+            "Respond with a professional and empathetic tone, avoiding any premature promises of refunds before verification."
+        ]
+    },
+    "routing_recommendation": {
+        "recommended_team": "Billing Support",
+        "routing_reason": "The customer is a premium user with a billing issue that requires immediate attention. They have already attempted to contact support twice without receiving a proper response, and the issue is time-sensitive due to the threat of public escalation and potential blockage of future payments.",
+        "internal_note": "The customer claims to have been charged twice for their premium subscription and is requesting a refund. Verification of the invoice and subscription status is necessary before taking any further action. Please investigate and respond promptly to resolve the issue.",
+        "required_follow_up_information": [
+            "Invoice ID or registered account email"
+        ]
+    },
+    "draft_customer_response": {
+        "draft_response": "Dear Amit, I apologize for the frustration and inconvenience you've experienced with the duplicate charge on your premium subscription. I understand that you've reached out to our support team previously and didn't receive a satisfactory response. I'm here to help you resolve this issue as quickly as possible. To better assist you, could you please provide me with your registered account email or the invoice ID associated with the duplicate charge? This will enable me to look into your account and investigate the matter further. I've also escalated your issue to our billing support team, who will work closely with me to ensure a prompt resolution. Please be assured that we're committed to resolving this issue and appreciate your patience and cooperation. I'll keep you updated on the progress and will be in touch with you soon.",
+        "response_strategy": "Acknowledge and empathize with the customer's concern, request additional information if needed, and escalate the issue to the relevant team for further investigation and resolution.",
+        "assumptions": [
+            "The customer has a legitimate issue with a duplicate charge.",
+            "The customer has already attempted to contact support and didn't receive a satisfactory response."
+        ],
+        "information_needed_before_sending": [
+            "Registered account email or invoice ID associated with the duplicate charge"
+        ]
+    },
+    "response_quality_review": {
+        "scores": {
+            "empathy": 8,
+            "correctness": 9,
+            "actionability": 9,
+            "policy_safety": 9,
+            "tone_alignment": 9,
+            "completeness": 8
+        },
+        "strengths": [
+            "The response acknowledges the customer's frustration and apologizes for the inconvenience.",
+            "The agent offers to help resolve the issue quickly and provides a clear call to action by requesting the customer's account email or invoice ID.",
+            "The response mentions escalating the issue to the billing support team, which shows a proactive approach to resolving the problem.",
+            "The tone is polite, empathetic, and professional throughout the response."
+        ],
+        "improvement_areas": [
+            "The response could be improved by providing a more specific timeline for when the customer can expect a resolution or an update on the progress.",
+            "It would be helpful to include more details about what the customer can expect from the billing support team and how they will be involved in the resolution process."
+        ],
+        "final_review_summary": "The response is well-structured, empathetic, and provides a clear call to action. The agent demonstrates a good understanding of the issue and takes proactive steps to resolve it. With a few minor improvements, such as providing a more specific timeline and additional details about the resolution process, the response could be even more effective in resolving the customer's issue and improving their overall experience."
+    },
+    "generation_metadata": {
+        "model_used": "llama-3.3-70b-versatile",
+        "temperature": 0.2,
+        "total_steps_completed": 8
+    }
+}

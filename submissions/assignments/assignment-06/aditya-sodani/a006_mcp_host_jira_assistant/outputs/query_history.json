@@ -1,0 +1,74 @@
+[
+    {
+        "user_query": "List all Jira projects",
+        "tools_used": [
+            "list_projects"
+        ],
+        "final_answer": "Here are the Jira projects available to the authenticated user:\n\n* AI Project (AP)\n* MCP Learning (ML)\n* My Software Team (SCRUM)",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Show open issues",
+        "tools_used": [
+            "search_issues"
+        ],
+        "final_answer": "Here are the open issues:\n\n* AP-13: Password Reset (Bug, Highest priority)\n* AP-11: Profile Redesign (Story, Medium priority)\n* AP-9: Email Notification (Task, Low priority)\n* AP-7: Search Bug (Bug, Highest priority)",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Show high-priority issues",
+        "tools_used": [
+            "search_issues"
+        ],
+        "final_answer": "Here are the high-priority issues:\n\n* AP-13: Password Reset (Bug, Open)\n* AP-7: Search Bug (Bug, Open)\n* AP-1: Login page crashes (Bug, To Do)",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Summarize issue AP-1",
+        "tools_used": [
+            "get_issue_details"
+        ],
+        "final_answer": "Here is a summary of issue AP-1:\n\n* Key: AP-1\n* Summary: Login page crashes\n* Status: To Do\n* Priority: Highest\n* Assignee: Aditya Sodani\n* Reporter: Aditya Sodani \n\nNote: The description of the issue is not available.",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Show comments for AP-1",
+        "tools_used": [
+            "get_issue_comments"
+        ],
+        "final_answer": "Here are the comments for issue AP-1:\n\n* Aditya Sodani: Investigating the root cause. (2026-07-01T10:49:54.841+0530)\n* Aditya Sodani: This is a new comment (2026-07-01T16:13:58.157+0530)",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Show issues assigned to me",
+        "tools_used": [
+            "search_issues"
+        ],
+        "final_answer": "Here are the issues assigned to you:\n\n* ML-1: MCP server practice (Task, To Do, Medium priority)\n* AP-15: Backend Refactoring (Task, Done, Low priority)\n* AP-13: Password Reset (Bug, Open, Highest priority)\n* AP-10: API Timeout (Bug, In Progress, High priority)\n* AP-7: Search Bug (Bug, Open, Highest priority)\n* AP-5: JWT Authentication (Story, Done, Low priority)\n* AP-4: Fix payment API (Bug, In Progress, High priority)\n* AP-2: Add chatbot (Story, In Progress, High priority)\n* AP-1: Login page crashes (Bug, To Do, Highest priority)",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Add a comment to AP-1 saying \"QA validation is pending.\"",
+        "tools_used": [
+            "add_issue_comment"
+        ],
+        "final_answer": "A comment has been added to issue AP-1: \"QA validation is pending.\"",
+        "write_action_performed": true
+    },
+    {
+        "user_query": "Update the status of AP-1 to \"In Progress\"",
+        "tools_used": [
+            "update_issue_status"
+        ],
+        "final_answer": "The status of issue AP-1 has been updated to \"In Progress\".",
+        "write_action_performed": true
+    },
+    {
+        "user_query": "list projects",
+        "tools_used": [
+            "list_projects"
+        ],
+        "final_answer": "Here are the available Jira projects:\n\n* AI Project (AP)\n* MCP Learning (ML)\n* My Software Team (SCRUM)",
+        "write_action_performed": false
+    }
+]

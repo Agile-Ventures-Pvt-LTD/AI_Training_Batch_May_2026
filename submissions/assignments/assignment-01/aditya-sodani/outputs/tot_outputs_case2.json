@@ -1,0 +1,57 @@
+{
+    "case_name": "Tree-of-Thought Architecture Selection",
+    "raw_response": "```json\n{\n  \"architecture_scores\": {\n    \"OPTION A\": {\n      \"Accuracy\": 4,\n      \"Cost\": 3,\n      \"Privacy & Security\": 4,\n      \"Timeline Feasibility\": 5,\n      \"Scalability\": 4,\n      \"Citation Reliability\": 4\n    },\n    \"OPTION B\": {\n      \"Accuracy\": 5,\n      \"Cost\": 2,\n      \"Privacy & Security\": 3,\n      \"Timeline Feasibility\": 2,\n      \"Scalability\": 3,\n      \"Citation Reliability\": 5\n    },\n    \"OPTION C\": {\n      \"Accuracy\": 2,\n      \"Cost\": 5,\n      \"Privacy & Security\": 5,\n      \"Timeline Feasibility\": 5,\n      \"Scalability\": 5,\n      \"Citation Reliability\": 2\n    },\n    \"OPTION D\": {\n      \"Accuracy\": 5,\n      \"Cost\": 1,\n      \"Privacy & Security\": 4,\n      \"Timeline Feasibility\": 1,\n      \"Scalability\": 4,\n      \"Citation Reliability\": 5\n    }\n  },\n  \"recommended_architecture\": \"OPTION A\",\n  \"implementation_rationale\": \"OPTION A balances accuracy, cost, and timeline feasibility, making it the most practical choice for the startup's MVP. It leverages a simple RAG with a vector database, retrieval pipeline, and hosted LLM API, which can be delivered within the 6-week constraint.\",\n  \"risks\": [\n    \"Hosted LLM API security risks\",\n    \"Vector database scalability limitations\",\n    \"Retrieval pipeline complexity\"\n  ],\n  \"mitigations\": [\n    \"Implement robust security measures for hosted LLM API\",\n    \"Design a scalable vector database architecture\",\n    \"Simplify retrieval pipeline with modular components\"\n  ],\n  \"mvp_plan\": [\n    \"Week 1-2: Design and implement vector database and retrieval pipeline\",\n    \"Week 3-4: Integrate hosted LLM API and develop question-answering logic\",\n    \"Week 5-6: Test and refine the MVP, ensuring accuracy and security\"\n  ]\n}\n```",
+    "parsed_response": {
+        "architecture_scores": {
+            "OPTION A": {
+                "Accuracy": 4,
+                "Cost": 3,
+                "Privacy & Security": 4,
+                "Timeline Feasibility": 5,
+                "Scalability": 4,
+                "Citation Reliability": 4
+            },
+            "OPTION B": {
+                "Accuracy": 5,
+                "Cost": 2,
+                "Privacy & Security": 3,
+                "Timeline Feasibility": 2,
+                "Scalability": 3,
+                "Citation Reliability": 5
+            },
+            "OPTION C": {
+                "Accuracy": 2,
+                "Cost": 5,
+                "Privacy & Security": 5,
+                "Timeline Feasibility": 5,
+                "Scalability": 5,
+                "Citation Reliability": 2
+            },
+            "OPTION D": {
+                "Accuracy": 5,
+                "Cost": 1,
+                "Privacy & Security": 4,
+                "Timeline Feasibility": 1,
+                "Scalability": 4,
+                "Citation Reliability": 5
+            }
+        },
+        "recommended_architecture": "OPTION A",
+        "implementation_rationale": "OPTION A balances accuracy, cost, and timeline feasibility, making it the most practical choice for the startup's MVP. It leverages a simple RAG with a vector database, retrieval pipeline, and hosted LLM API, which can be delivered within the 6-week constraint.",
+        "risks": [
+            "Hosted LLM API security risks",
+            "Vector database scalability limitations",
+            "Retrieval pipeline complexity"
+        ],
+        "mitigations": [
+            "Implement robust security measures for hosted LLM API",
+            "Design a scalable vector database architecture",
+            "Simplify retrieval pipeline with modular components"
+        ],
+        "mvp_plan": [
+            "Week 1-2: Design and implement vector database and retrieval pipeline",
+            "Week 3-4: Integrate hosted LLM API and develop question-answering logic",
+            "Week 5-6: Test and refine the MVP, ensuring accuracy and security"
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "case_name": " Business ROI Decision with Hidden Trade-Offs",
+    "raw_response": "```json\n{\n  \"incremental_revenue_range\": \"$80,000 - $140,000\",\n  \"incremental_gross_profit_range\": \"$32,000 - $56,000\",\n  \"monthly_net_benefit_range\": \"$2,000 - $26,000\",\n  \"payback_period_range_months\": \"7 - 9 months\",\n  \"decision\": \"APPROVE\",\n  \"reasoning_summary\": \"The investment is expected to generate a positive net benefit, with a payback period within the required 12 months after go-live.\",\n  \"key_assumptions\": [\n    \"The revenue uplift ranges are achievable and sustainable.\",\n    \"The implementation cost and monthly operating costs are accurate.\",\n    \"The gross margin remains constant at 40%.\"\n  ]\n}\n```",
+    "parsed_response": {
+        "incremental_revenue_range": "$80,000 - $140,000",
+        "incremental_gross_profit_range": "$32,000 - $56,000",
+        "monthly_net_benefit_range": "$2,000 - $26,000",
+        "payback_period_range_months": "7 - 9 months",
+        "decision": "APPROVE",
+        "reasoning_summary": "The investment is expected to generate a positive net benefit, with a payback period within the required 12 months after go-live.",
+        "key_assumptions": [
+            "The revenue uplift ranges are achievable and sustainable.",
+            "The implementation cost and monthly operating costs are accurate.",
+            "The gross margin remains constant at 40%."
+        ]
+    }
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "Q1",
+    "question": "How many annual leave days can an employee carry forward?",
+    "expected_policy_domains": [
+      "HR_LEAVE"
+    ],
+    "expected_answer_points": [
+      "Maximum 6 unused annual leave days",
+      "Must be used by 31 March"
+    ]
+  },
+  {
+    "id": "Q2",
+    "question": "Can I claim meals for same-day domestic business travel?",
+    "expected_policy_domains": [
+      "TRAVEL",
+      "REIMBURSEMENT"
+    ],
+    "expected_answer_points": [
+      "Manager-approved same-day domestic travel",
+      "Up to INR 800 per day",
+      "Valid receipts required"
+    ]
+  },
+  {
+    "id": "Q3",
+    "question": "What documents are needed for hotel reimbursement?",
+    "expected_policy_domains": [
+      "REIMBURSEMENT"
+    ],
+    "expected_answer_points": [
+      "Hotel invoice",
+      "Payment receipt",
+      "Approved travel request",
+      "Check-in and check-out dates",
+      "GST details where applicable"
+    ]
+  },
+  {
+    "id": "Q4",
+    "question": "Can I use my personal laptop for office work?",
+    "expected_policy_domains": [
+      "IT_SECURITY"
+    ],
+    "expected_answer_points": [
+      "Not for regular office work",
+      "Temporary use needs manager and IT security approval",
+      "No confidential or customer data stored locally"
+    ]
+  },
+  {
+    "id": "Q5",
+    "question": "What approvals are needed for international travel?",
+    "expected_policy_domains": [
+      "TRAVEL"
+    ],
+    "expected_answer_points": [
+      "Reporting manager approval",
+      "Business unit head approval",
+      "Finance approval",
+      "Travel desk confirmation"
+    ]
+  },
+  {
+    "id": "Q6",
+    "question": "Can customer data be uploaded to a public AI tool?",
+    "expected_policy_domains": [
+      "AI_USAGE",
+      "IT_SECURITY"
+    ],
+    "expected_answer_points": [
+      "No customer data in public AI tools",
+      "Approved internal AI tools require approval and controls"
+    ]
+  },
+  {
+    "id": "Q7",
+    "question": "Will my reimbursement definitely be approved?",
+    "expected_policy_domains": [
+      "REIMBURSEMENT"
+    ],
+    "expected_answer_points": [
+      "Do not guarantee approval",
+      "Depends on approval, receipts, timeline, business purpose, policy limits, and Finance review"
+    ]
+  },
+  {
+    "id": "Q8",
+    "question": "What should I do if the policy does not mention my scenario?",
+    "expected_policy_domains": [
+      "AI_USAGE",
+      "HR_LEAVE",
+      "REIMBURSEMENT",
+      "IT_SECURITY"
+    ],
+    "expected_answer_points": [
+      "Do not invent policy",
+      "Contact relevant policy owner such as HR, Finance, IT Security, or AI Governance"
+    ]
+  }
+]

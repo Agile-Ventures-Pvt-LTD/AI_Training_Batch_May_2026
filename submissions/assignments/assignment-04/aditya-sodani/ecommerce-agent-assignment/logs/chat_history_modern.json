@@ -1,0 +1,37 @@
+[
+    {
+        "timestamp": "2026-06-10 14:21:52",
+        "user_query": "What is the total revenue from completed orders?",
+        "generated_sql": "SELECT SUM(total_amount) FROM orders WHERE status = 'completed'",
+        "raw_result": "[(79275.47,)]",
+        "response": "The total revenue from completed orders is $79,275.47. This is calculated by summing up the total amount of all orders with a status of 'completed' in the orders table."
+    },
+    {
+        "timestamp": "2026-06-10 14:22:02",
+        "user_query": "bye",
+        "generated_sql": null,
+        "raw_result": null,
+        "response": "Goodbye."
+    },
+    {
+        "timestamp": "2026-06-10 14:31:07",
+        "user_query": "Which are the top 3 customers by total purchase amount?",
+        "generated_sql": "SELECT c.name, SUM(oi.quantity * oi.unit_price) as total_purchase_amount FROM customers c JOIN orders o ON c.customer_id = o.customer_id JOIN order_items oi ON o.order_id = oi.order_id GROUP BY c.name ORDER BY total_purchase_amount DESC LIMIT 3",
+        "raw_result": "[('Heather Bailey', 58294.4), ('Adam Hale', 42554.100000000006), ('Sharon Terry', 40534.09)]",
+        "response": "The top 3 customers by total purchase amount are Heather Bailey with a total purchase amount of $58,294.40, Adam Hale with a total purchase amount of $42,554.10, and Sharon Terry with a total purchase amount of $40,534.09."
+    },
+    {
+        "timestamp": "2026-06-10 16:46:41",
+        "user_query": "hi",
+        "generated_sql": null,
+        "raw_result": null,
+        "response": "Hello. How can I assist you with the e-commerce database today? Are you looking for information on customers, products, orders, or something else?"
+    },
+    {
+        "timestamp": "2026-06-10 22:15:12",
+        "user_query": " Show total sales by product category.",
+        "generated_sql": "SELECT p.category, SUM(oi.quantity * oi.unit_price) AS total_sales FROM order_items oi JOIN products p ON oi.product_id = p.product_id GROUP BY p.category",
+        "raw_result": "[('Books', 106080.0), ('Electronics', 111421.18), ('Fashion', 1410.3), ('Sports', 56365.46)]",
+        "response": "The total sales by product category are as follows: \n- Books: $106,080.00\n- Electronics: $111,421.18\n- Fashion: $1,410.30\n- Sports: $56,365.46\n\nThese figures indicate that Electronics and Books are the top-selling categories, while Fashion has the lowest sales. This information can help the company to focus on the most profitable categories and optimize their marketing strategies accordingly."
+    }
+]

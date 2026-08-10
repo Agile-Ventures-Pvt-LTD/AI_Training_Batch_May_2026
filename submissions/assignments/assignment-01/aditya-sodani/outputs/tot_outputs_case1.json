@@ -1,0 +1,67 @@
+{
+    "case_name": "Tree-of-Thought AI Automation Use Case Selection",
+    "raw_response": "```json\n{\n  \"options_evaluated\": [\n    {\n      \"option\": \"AI Customer Support Assistant\",\n      \"business_value_score\": 4,\n      \"feasibility_score\": 3,\n      \"risk_score\": 2,\n      \"pilot_suitability_score\": 4,\n      \"adoption_score\": 3,\n      \"overall_score\": 3,\n      \"trade_offs\": [\n        \"High potential cost savings but moderate implementation complexity and medium user adoption risk\",\n        \"Contains personal customer data, increasing compliance exposure and data/privacy concerns\"\n      ]\n    },\n    {\n      \"option\": \"AI Sales Proposal Generator\",\n      \"business_value_score\": 4,\n      \"feasibility_score\": 5,\n      \"risk_score\": 5,\n      \"pilot_suitability_score\": 5,\n      \"adoption_score\": 5,\n      \"overall_score\": 5,\n      \"trade_offs\": [\n        \"Medium to high potential revenue impact with low data sensitivity and low user adoption risk\",\n        \"Requires brand and legal review, but overall feasibility and pilot suitability are high\"\n      ]\n    },\n    {\n      \"option\": \"AI Contract Risk Analyzer\",\n      \"business_value_score\": 5,\n      \"feasibility_score\": 2,\n      \"risk_score\": 1,\n      \"pilot_suitability_score\": 2,\n      \"adoption_score\": 3,\n      \"overall_score\": 2,\n      \"trade_offs\": [\n        \"High business value but high implementation complexity and high legal sensitivity\",\n        \"Requires strong accuracy and auditability, increasing operational risk and reducing pilot suitability\"\n      ]\n    },\n    {\n      \"option\": \"AI Internal HR Policy Assistant\",\n      \"business_value_score\": 3,\n      \"feasibility_score\": 5,\n      \"risk_score\": 4,\n      \"pilot_suitability_score\": 4,\n      \"adoption_score\": 5,\n      \"overall_score\": 4,\n      \"trade_offs\": [\n        \"Medium potential cost savings with low implementation complexity and low user adoption risk\",\n        \"High employee usage but medium sensitivity, making it a relatively balanced option\"\n      ]\n    }\n  ],\n  \"recommended_option\": \"AI Sales Proposal Generator\",\n  \"why_not_others\": {\n    \"AI Customer Support Assistant\": \"Moderate implementation complexity and medium user adoption risk reduce its overall score\",\n    \"AI Contract Risk Analyzer\": \"High implementation complexity, high legal sensitivity, and low pilot suitability make it less desirable\",\n    \"AI Internal HR Policy Assistant\": \"While balanced, its overall business value and potential impact are lower compared to the recommended option\"\n  },\n  \"final_recommendation\": \"The AI Sales Proposal Generator is the strongest candidate for the 90-day pilot due to its high business value, feasibility, and adoption potential, combined with low risk and high pilot suitability.\"\n}\n```",
+    "parsed_response": {
+        "options_evaluated": [
+            {
+                "option": "AI Customer Support Assistant",
+                "business_value_score": 4,
+                "feasibility_score": 3,
+                "risk_score": 2,
+                "pilot_suitability_score": 4,
+                "adoption_score": 3,
+                "overall_score": 3,
+                "trade_offs": [
+                    "High potential cost savings but moderate implementation complexity and medium user adoption risk",
+                    "Contains personal customer data, increasing compliance exposure and data/privacy concerns"
+                ]
+            },
+            {
+                "option": "AI Sales Proposal Generator",
+                "business_value_score": 4,
+                "feasibility_score": 5,
+                "risk_score": 5,
+                "pilot_suitability_score": 5,
+                "adoption_score": 5,
+                "overall_score": 5,
+                "trade_offs": [
+                    "Medium to high potential revenue impact with low data sensitivity and low user adoption risk",
+                    "Requires brand and legal review, but overall feasibility and pilot suitability are high"
+                ]
+            },
+            {
+                "option": "AI Contract Risk Analyzer",
+                "business_value_score": 5,
+                "feasibility_score": 2,
+                "risk_score": 1,
+                "pilot_suitability_score": 2,
+                "adoption_score": 3,
+                "overall_score": 2,
+                "trade_offs": [
+                    "High business value but high implementation complexity and high legal sensitivity",
+                    "Requires strong accuracy and auditability, increasing operational risk and reducing pilot suitability"
+                ]
+            },
+            {
+                "option": "AI Internal HR Policy Assistant",
+                "business_value_score": 3,
+                "feasibility_score": 5,
+                "risk_score": 4,
+                "pilot_suitability_score": 4,
+                "adoption_score": 5,
+                "overall_score": 4,
+                "trade_offs": [
+                    "Medium potential cost savings with low implementation complexity and low user adoption risk",
+                    "High employee usage but medium sensitivity, making it a relatively balanced option"
+                ]
+            }
+        ],
+        "recommended_option": "AI Sales Proposal Generator",
+        "why_not_others": {
+            "AI Customer Support Assistant": "Moderate implementation complexity and medium user adoption risk reduce its overall score",
+            "AI Contract Risk Analyzer": "High implementation complexity, high legal sensitivity, and low pilot suitability make it less desirable",
+            "AI Internal HR Policy Assistant": "While balanced, its overall business value and potential impact are lower compared to the recommended option"
+        },
+        "final_recommendation": "The AI Sales Proposal Generator is the strongest candidate for the 90-day pilot due to its high business value, feasibility, and adoption potential, combined with low risk and high pilot suitability."
+    }
+}

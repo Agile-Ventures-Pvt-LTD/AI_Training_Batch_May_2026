@@ -1,0 +1,61 @@
+[
+    {
+        "question": "What are Tesla\u2019s main business segments described in the filings?",
+        "answer": "North America, International, and AWS",
+        "supporting_evidence": [
+            "We have organized our operations into three segments: North America, International, and AWS."
+        ],
+        "sources": [
+            "Results of Operations",
+            "Note 10 \u2014 SEGMENT INFORMATION"
+        ],
+        "confidence": "HIGH",
+        "answerability": "ANSWERED"
+    },
+    {
+        "question": "What risks are mentioned related to manufacturing or supply chain?",
+        "answer": "risks related to manufacturing or supply chain include supplier bankruptcies, poor economic conditions, natural or human-caused disasters, limited or single-sources of supply, and decisions by suppliers to limit or stop selling or licensing merchandise, content, components, or services.",
+        "supporting_evidence": [
+            "supplier bankruptcies due to poor economic conditions, natural or human-caused disasters",
+            "limited or single-sources of supply",
+            "decisions by our current suppliers to limit or stop selling or licensing merchandise, content, components, or services"
+        ],
+        "sources": [
+            "Our Supplier Relationships Subject Us to a Number of Risks"
+        ],
+        "confidence": "HIGH",
+        "answerability": "ANSWERED"
+    },
+    {
+        "question": "What does the document say about automotive revenue or energy ",
+        "answer": "The document does not mention automotive revenue.",
+        "supporting_evidence": [
+            "Note 10 \u2014 SEGMENT INFORMATION"
+        ],
+        "sources": [
+            "Note 10 \u2014 SEGMENT INFORMATION"
+        ],
+        "confidence": "HIGH",
+        "answerability": "ANSWERED"
+    },
+    {
+        "question": "What legal or regulatory risks are mentioned?",
+        "answer": "Local economic and political conditions, government regulation, restrictive governmental actions, nationalization, restrictions on foreign ownership, restrictions on sales or distribution of certain products or services, uncertainty regarding liability for products, services, and content, unfavorable regulations, laws, decisions, or interpretations by government or regulatory authorities, claims, litigation, government investigations, and other proceedings.",
+        "supporting_evidence": [
+            "risks, including: \u2022 local economic and political conditions;",
+            "government regulation (such as regulation of our product and service offerings and of competition);",
+            "restrictive governmental actions (such as trade protection or retaliatory measures, including export duties and quotas and custom duties and tariffs, and restrictions around the import and export of certain products, technologies, and components);",
+            "nationalization;",
+            "and restrictions on foreign ownership;",
+            "Unfavorable regulations, laws, decisions, or interpretations by government or regulatory authorities applying those laws and regulations, or inquiries, investigations, or enforcement actions threatened or initiated by them, could cause us to incur substantial costs, expose us to unanticipated civil and criminal liability or penalties (including substantial monetary fines), diminish the demand for, or availability of, our products and services, increase our cost of doing business, require us to change our business practices in a manner materially adverse to our business, damage our reputation, impede our growth, or otherwise have a material effect on our operations.",
+            "Claims, Litigation, Government Investigations, and Other Proceedings May Adversely Affect Our Business and Results of Operations"
+        ],
+        "sources": [
+            "risks",
+            "Unfavorable regulations, laws, decisions, or interpretations by government or regulatory authorities applying those laws and regulations, or inquiries, investigations, or enforcement actions threatened or initiated by them, could cause us to incur substantial costs, expose us to unanticipated civil and criminal liability or penalties (including substantial monetary fines), diminish the demand for, or availability of, our products and services, increase our cost of doing business, require us to change our business practices in a manner materially adverse to our business, damage our reputation, impede our growth, or otherwise have a material effect on our operations.",
+            "Claims, Litigation, Government Investigations, and Other Proceedings May Adversely Affect Our Business and Results of Operations"
+        ],
+        "confidence": "HIGH",
+        "answerability": "ANSWERED"
+    }
+]

@@ -1,0 +1,8 @@
+fastmcp
+mcp-use
+requests
+pydantic
+python-dotenv
+pytest
+langchain-groq
+langchain

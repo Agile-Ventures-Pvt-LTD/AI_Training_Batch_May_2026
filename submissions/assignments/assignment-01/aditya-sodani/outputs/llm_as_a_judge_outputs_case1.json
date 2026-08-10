@@ -1,0 +1,40 @@
+{
+    "case_name": "Judging AI-Generated Customer Support Responses",
+    "raw_response": "```\n{\n  \"response_a\": {\n    \"scores\": {\n      \"empathy\": 2,\n      \"helpfulness\": 2,\n      \"professionalism\": 4,\n      \"policy_compliance\": 4,\n      \"specificity\": 2\n    },\n    \"strengths\": [\"Maintains a professional tone\"],\n    \"weaknesses\": [\"Lacks empathy\", \"Does not provide actionable guidance\", \"Vague response\"]\n  },\n  \"response_b\": {\n    \"scores\": {\n      \"empathy\": 5,\n      \"helpfulness\": 5,\n      \"professionalism\": 5,\n      \"policy_compliance\": 5,\n      \"specificity\": 5\n    },\n    \"strengths\": [\"Acknowledges customer frustration\", \"Provides clear escalation steps\", \"Maintains professionalism\"],\n    \"weaknesses\": []\n  },\n  \"winner\": \"B\",\n  \"judge_reasoning_summary\": \"Response B excels in empathy, helpfulness, and specificity, making it the superior choice for customer support quality and policy compliance.\"\n}\n```",
+    "parsed_response": {
+        "response_a": {
+            "scores": {
+                "empathy": 2,
+                "helpfulness": 2,
+                "professionalism": 4,
+                "policy_compliance": 4,
+                "specificity": 2
+            },
+            "strengths": [
+                "Maintains a professional tone"
+            ],
+            "weaknesses": [
+                "Lacks empathy",
+                "Does not provide actionable guidance",
+                "Vague response"
+            ]
+        },
+        "response_b": {
+            "scores": {
+                "empathy": 5,
+                "helpfulness": 5,
+                "professionalism": 5,
+                "policy_compliance": 5,
+                "specificity": 5
+            },
+            "strengths": [
+                "Acknowledges customer frustration",
+                "Provides clear escalation steps",
+                "Maintains professionalism"
+            ],
+            "weaknesses": []
+        },
+        "winner": "B",
+        "judge_reasoning_summary": "Response B excels in empathy, helpfulness, and specificity, making it the superior choice for customer support quality and policy compliance."
+    }
+}
