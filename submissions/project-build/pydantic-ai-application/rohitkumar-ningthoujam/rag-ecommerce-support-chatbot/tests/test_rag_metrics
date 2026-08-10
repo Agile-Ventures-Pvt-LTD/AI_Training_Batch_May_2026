@@ -1,0 +1,32 @@
+import deepeval
+deepeval.login("")
+from agent import result, rag_agent, user_query, 
+from dataset import retriever
+
+from deepeval.test_case import LLMTestCase
+from deepeval.test_case import ToolCall
+
+test_case = LLMTestCase(
+
+    input=user_query             
+
+    tools_called=[ToolCall(name=get_tools_called(result)[-1])],                ### Tool called by the agent
+
+    actual_output=result.output,  
+
+    expected_output=result.output,  
+
+    expected_tools=[ToolCall(name = 'rag_agent')] 
+
+    )
+
+print(test_case.input)
+
+print(test_case.actual_output)
+
+print(test_case.expected_output)
+
+print(test_case.tools_called)
+
+print(test_case.expected_tools)
+

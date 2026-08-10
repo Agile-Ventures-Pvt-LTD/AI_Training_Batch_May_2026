@@ -1,0 +1,101 @@
+{
+    "ticket_summary": {
+        "short_summary": "Premium customer charged twice after cancelling subscription",
+        "customer_problem": "Incorrect double charge for premium subscription",
+        "business_impact": "Potential public escalation on LinkedIn and blocked future payments",
+        "customer_requested_action": "Refund the incorrect charge immediately",
+        "important_context": [
+            "Customer claims to have cancelled premium subscription last month",
+            "Customer contacted support twice last week with no proper response",
+            "Duplicate invoice amount appears on bank statement"
+        ],
+        "missing_information": [
+            "Invoice ID",
+            "Registered account email"
+        ]
+    },
+    "classification": {
+        "primary_category": "BILLING_ISSUE",
+        "secondary_categories": [
+            "CANCELLATION_OR_REFUND",
+            "ESCALATION_COMPLAINT"
+        ],
+        "category_reasoning_summary": "The customer was charged twice after canceling their premium subscription and did not receive a proper response from support, leading to frustration and a threat to escalate the issue publicly.",
+        "confidence_score": 0.9
+    },
+    "sentiment_analysis": {
+        "sentiment": "Negative",
+        "emotion_signals": [
+            "Frustration",
+            "Anger",
+            "Urgency"
+        ],
+        "sentiment_reasoning_summary": "The customer is expressing frustration and anger due to being charged twice and not receiving a proper response from support, leading to a sense of urgency in resolving the issue.",
+        "confidence_score": 0.9
+    },
+    "priority_and_risk": {
+        "priority": "High",
+        "escalation_risk": "High",
+        "risk_triggers": [
+            "Premium customer",
+            "Billing issue",
+            "Multiple unsuccessful interactions",
+            "Threat of public escalation",
+            "Threat of blocking future payments"
+        ],
+        "recommended_sla_action": "Escalate to billing support",
+        "reasoning_summary": "The customer is a premium user with a billing issue, has had multiple unsuccessful interactions, and is threatening public escalation and blocking future payments, requiring immediate attention and escalation to billing support."
+    },
+    "sensitive_information_check": {
+        "sensitive_information_detected": true,
+        "sensitive_categories": [
+            "Financial Information"
+        ],
+        "evidence_summary": "The customer mentions being charged twice and noticing the same invoice amount on their bank statement, indicating a potential financial issue.",
+        "handling_recommendations": [
+            "Verify the customer's account and billing information before responding",
+            "Escalate the issue to billing support as per business rules"
+        ]
+    },
+    "routing_recommendation": {
+        "recommended_team": "Billing Support",
+        "routing_reason": "Premium customer with billing issue",
+        "internal_note": "Customer claims to have been charged twice and did not receive a proper response from previous support interactions",
+        "required_follow_up_information": [
+            "Invoice ID or registered account email"
+        ]
+    },
+    "draft_customer_response": {
+        "draft_response": "Dear Amit, I apologize for the frustration and inconvenience caused by the double charge and lack of response from our support team. I understand that you cancelled your premium subscription last month but were still charged this month, with the same invoice amount appearing twice on your bank statement. I'm here to help you resolve this issue. To better assist you, could you please provide your registered account email or invoice ID? I will escalate your concern to our billing support team to ensure a thorough investigation and resolution.",
+        "response_strategy": "Empathize, summarize, and escalate to billing support",
+        "assumptions": [],
+        "information_needed_before_sending": [
+            "registered account email or invoice ID"
+        ]
+    },
+    "response_quality_review": {
+        "scores": {
+            "empathy": 8,
+            "correctness": 9,
+            "actionability": 8,
+            "policy_safety": 9,
+            "tone_alignment": 8,
+            "completeness": 8
+        },
+        "strengths": [
+            "Empathetic opening",
+            "Clear call to action",
+            "Adherence to business rules"
+        ],
+        "improvement_areas": [
+            "Could provide a more specific timeline for resolution",
+            "Might benefit from a statement reassuring the customer about the priority of their issue"
+        ],
+        "final_review_summary": "The response is empathetic, correct, and actionable, with a professional tone. It safely navigates policy requirements and is mostly complete. Minor improvements could enhance customer satisfaction and clarity."
+    },
+    "generation_metadata": {
+        "model_used": "llama-3.3-70b-versatile",
+        "temperature": 0.2,
+        "total_steps_completed": 8
+    }
+}

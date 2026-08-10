@@ -1,0 +1,15 @@
+langchain-huggingface
+pytest
+pytest-mock
+langgraph==1.0.1
+langchain==0.3.30
+langchain-core==0.3.86
+langchain-community==0.3.19
+langchain-groq==0.3.8
+langchain-chroma==0.2.6
+chromadb==1.5.9
+sentence-transformers==5.6.0
+python-dotenv==1.2.2
+pydantic==2.13.4
+numpy==2.3.4
+pandas

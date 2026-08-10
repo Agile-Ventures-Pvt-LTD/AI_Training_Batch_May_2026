@@ -1,0 +1,17 @@
+
+User:  Show reward points for customer 2
+
+======================================================================
+  User Question: Show reward points for customer 2
+  Agent Type: custom_react_agent
+======================================================================
+
+  [1] Tool Called: get_rewards_summary
+      Arguments: {'cust_id': '2'}
+
+  [2] Tool Result (get_rewards_summary):
+      {"customer_id": 2, "reward_points": 18, "related_transactions": 146}
+
+  [FINAL ANSWER]:
+      The customer with ID 2 has 18 reward points.
+======================================================================

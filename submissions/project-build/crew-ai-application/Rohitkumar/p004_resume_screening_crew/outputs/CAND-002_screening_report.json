@@ -1,0 +1,36 @@
+{
+  "candidate_id": "CAND-002",
+  "candidate_name": "Priya Sharma",
+  "role_title": "AI Engineer",
+  "overall_score": 17,
+  "max_score": 40,
+  "percentage": 42.5,
+  "recommendation": "WEAK_MATCH",
+  "executive_summary": "Priya Sharma is a Backend Python Developer with 4 years of experience. Score: 42.5% - WEAK_MATCH.",
+  "strengths": [],
+  "gaps": [],
+  "interview_focus_areas": [
+    "General"
+  ],
+  "interview_questions": {
+    "technical_questions": [
+      "Q1",
+      "Q2",
+      "Q3"
+    ],
+    "project_deep_dive_questions": [
+      "Q4",
+      "Q5"
+    ],
+    "scenario_questions": [
+      "Q6",
+      "Q7"
+    ],
+    "gap_validation_questions": [
+      "Q8",
+      "Q9"
+    ]
+  },
+  "evidence": [],
+  "human_review_note": "This is an AI-assisted screening report based on the provided resume and job description. A human reviewer should validate the recommendation before making any recruitment decision."
+}

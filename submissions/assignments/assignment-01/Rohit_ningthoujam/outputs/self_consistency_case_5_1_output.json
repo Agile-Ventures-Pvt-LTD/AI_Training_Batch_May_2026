@@ -1,0 +1,45 @@
+{
+  "individual_answers": [
+    [
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0
+    ],
+    [
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0
+    ],
+    [
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0
+    ],
+    [
+      30,
+      30,
+      30,
+      30,
+      30
+    ],
+    [
+      30.0,
+      30.0,
+      30.0,
+      30.0,
+      30.0
+    ]
+  ],
+  "final_reimbursable_amount": 30.0,
+  "consistency_count": {
+    "30.0": 5
+  },
+  "final_decision": "Selected most frequent value: 30.0",
+  "reasoning_summary": "Self-consistency applied using 5 independent API calls with majority voting."
+}

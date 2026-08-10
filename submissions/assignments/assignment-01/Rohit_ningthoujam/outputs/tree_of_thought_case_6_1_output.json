@@ -1,0 +1,59 @@
+{
+  "options_evaluated": [
+    {
+      "option": "AI customer support assistant",
+      "business_value_score": 4.0,
+      "feasibility_score": 4.0,
+      "risk_score": 5,
+      "pilot_suitability_score": 4.0,
+      "adoption_score": 4.0,
+      "overall_score": 4.8,
+      "trade_offs": [
+        "High initial investment",
+        "Potential job displacement"
+      ]
+    },
+    {
+      "option": "AI sales proposal generator",
+      "business_value_score": 5,
+      "feasibility_score": 5,
+      "risk_score": 5,
+      "pilot_suitability_score": 5,
+      "adoption_score": 5,
+      "overall_score": 5.8,
+      "trade_offs": [
+        "Dependence on data quality",
+        "Potential bias in generated proposals"
+      ]
+    },
+    {
+      "option": "AI contract risk analyzer",
+      "business_value_score": 4.0,
+      "feasibility_score": 4.0,
+      "risk_score": 5,
+      "pilot_suitability_score": 4.0,
+      "adoption_score": 4.0,
+      "overall_score": 4.8,
+      "trade_offs": [
+        "High complexity in implementation",
+        "Potential regulatory hurdles"
+      ]
+    },
+    {
+      "option": "AI internal HR policy assistant",
+      "business_value_score": 3.0,
+      "feasibility_score": 3.0,
+      "risk_score": 5,
+      "pilot_suitability_score": 3.0,
+      "adoption_score": 3.0,
+      "overall_score": 3.8,
+      "trade_offs": [
+        "Limited scope of application",
+        "Potential data privacy concerns"
+      ]
+    }
+  ],
+  "recommended_option": "",
+  "why_not_others": {},
+  "final_recommendation": ""
+}

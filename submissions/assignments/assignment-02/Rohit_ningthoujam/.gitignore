@@ -1,0 +1,4 @@
+.venv/
+.env
+__MACOSX/
+tesla-annual-reports.zip
