@@ -1,0 +1,17 @@
+[
+{
+"query_id": "Q1",
+"user_query": "Why is the Payment API unhealthy and is there any recent change that may be related?",
+"servers_used": [
+"service-health",
+"change-management"
+],
+"tools_used": [
+"get_service_health",
+"get_active_incidents",
+"get_changes_for_service"
+],
+"final_answer": "",
+"status": "PASS"
+}
+]

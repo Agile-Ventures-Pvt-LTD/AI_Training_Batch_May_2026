@@ -1,0 +1,66 @@
+import asyncio
+import pytest
+import json
+
+from src.graph import StateGraph
+
+
+@pytest.mark.asyncio
+async def test_graph_runs():
+    """
+    Verify that the graph runs successfully.
+    """
+
+    graph = StateGraph()
+
+    try:
+        await graph.connect()
+
+        assert graph.session is not None
+        
+    finally:
+        await graph.disconnect()
+        
+        await graph.connect()
+
+    print("=" * 70)
+    print("Supply Chain Logistics Rerouter")
+    print("Type 'exit' to quit")
+    print("=" * 70)
+
+    while True:
+
+        query = input("\nYou: ").strip()
+
+        if query.lower() in ["exit", "quit"]:
+
+            break
+
+        response = await graph.chat(query)
+        
+        output_dir = "outputs"
+        output_dir.mkdir(exist_ok=True)
+        file_path = output_dir / "test_results.txt"
+        
+
+
+        if file_path.exists():
+
+            existing_data = json.loads(file_path.read_text(encoding="utf-8"))
+        else:
+             existing_data = []
+
+        existing_data.append(response)
+
+        file_path.write_text(
+        json.dumps(existing_data, indent=4, default=str),
+        encoding="utf-8"
+)
+
+        print("\nAssistant\n")
+
+        print(json.dumps(response, indent=4))
+
+    await graph.close()
+
+    asyncio.run(graph())

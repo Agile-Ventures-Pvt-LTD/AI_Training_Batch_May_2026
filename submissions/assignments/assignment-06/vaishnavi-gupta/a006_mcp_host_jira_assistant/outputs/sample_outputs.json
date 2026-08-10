@@ -1,0 +1,66 @@
+[
+    {
+        "user_query": "List all Jira projects.",
+        "tools_used": [
+            "list_projects"
+        ],
+        "final_answer": "{\n    \"user_query\": \"List all Jira projects\",\n    \"tools_used\": [\"list_projects\"],\n    \"final_answer\": \"The available Jira projects are: (Example) Billing System Dev (SAM1), MCP training (MT), My Software Team (KAN)\",\n    \"write_action_performed\": false\n}",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Show open issues",
+        "tools_used": [
+            "search_issues"
+        ],
+        "final_answer": "{\n    \"user_query\": \"Show open issues\",\n    \"tools_used\": [\"search_issues\"],\n    \"final_answer\": \"No open issues found.\",\n    \"write_action_performed\": false\n}",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Show high-priority issues",
+        "tools_used": [
+            "search_issues"
+        ],
+        "final_answer": "{\n    \"user_query\": \"Show high-priority issues\",\n    \"tools_used\": [\"search_issues\"],\n    \"final_answer\": \"No high-priority issues found.\",\n    \"write_action_performed\": false\n}",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Summarize an issue",
+        "tools_used": [
+            "get_issue_details"
+        ],
+        "final_answer": "{\n    \"user_query\": \"Summarize an issue\",\n    \"tools_used\": [\"get_issue_details\"],\n    \"final_answer\": \"Unable to summarize the issue. The issue ID is required to retrieve the issue details.\",\n    \"write_action_performed\": false\n}",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Show comments",
+        "tools_used": [
+            "get_issue_comments"
+        ],
+        "final_answer": "{\n    \"user_query\": \"Show comments\",\n    \"tools_used\": [\"get_issue_comments\"],\n    \"final_answer\": \"Unable to retrieve comments. The get_issue_comments tool returned an error due to missing required argument 'issue_key' and unexpected keyword argument 'issue-123'.\",\n    \"write_action_performed\": false\n}",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Add a comment",
+        "tools_used": [
+            "add_issue_comment"
+        ],
+        "final_answer": "{\n    \"user_query\": \"Add a comment\",\n    \"tools_used\": [\"add_issue_comment\"],\n    \"final_answer\": \"Unable to add comment. Missing required argument 'issue_key'. For further information, visit https://errors.pydantic.dev/2.13/v/missing_argument\",\n    \"write_action_performed\": false\n}",
+        "write_action_performed": true
+    },
+    {
+        "user_query": "Update issue status",
+        "tools_used": [
+            "update_issue_status"
+        ],
+        "final_answer": "{\n    \"user_query\": \"Update issue status\",\n    \"tools_used\": [\"update_issue_status\"],\n    \"final_answer\": \"Unable to update issue status. The update_issue_status tool returned an error due to missing required arguments (issue_key and transition_name) and unexpected keyword arguments (issue_id and new_status).\",\n    \"write_action_performed\": false\n}",
+        "write_action_performed": true
+    },
+    {
+        "user_query": "Show assigned issues",
+        "tools_used": [
+            "search_issues"
+        ],
+        "final_answer": "{\n    \"user_query\": \"Show assigned issues\",\n    \"tools_used\": [\"search_issues\"],\n    \"final_answer\": \"No assigned issues found.\",\n    \"write_action_performed\": false\n}",
+        "write_action_performed": false
+    }
+]

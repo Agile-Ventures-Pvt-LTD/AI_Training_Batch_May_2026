@@ -1,0 +1,9 @@
+{
+  "case_name": "self_consistency",
+  "raw_output": "{\n \"final_amount\": 0,\n \"steps\": []\n}",
+  "parsed": {
+    "final_amount": 0,
+    "steps": []
+  },
+  "timestamp": "2026-05-28 09:53:24.672981"
+}

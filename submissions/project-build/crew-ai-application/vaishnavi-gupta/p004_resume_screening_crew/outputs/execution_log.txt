@@ -1,0 +1,12 @@
+The .json files i.e,
+- CAND-001_screening_report.json
+- CAND-003_screening_report.json
+- CAND-003_screening_report.json
+- CAND-004_screening_report.json
+- CAND-005_screening_report.json
+
+are the main output of the project.
+
+These files contain all the data about candidates that have applied for the particular job.
+
+Also, there are testing files for testing the working of the project.

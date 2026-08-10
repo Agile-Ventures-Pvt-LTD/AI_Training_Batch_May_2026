@@ -1,0 +1,206 @@
+Sample testing queries.
+
+1. Show me the database schema.
+
+2. Show customer profile for customer CUST-1001.
+
+3. Show card details for customer CUST-1001.
+
+4. Show the last 5 transactions for customer CUST-1001.
+
+5. Which customers have the highest amount due?
+
+6. Show statement summary for customer CUST-1001.
+
+7. Which merchant type has the highest total spend?
+
+8. Show reward points for customer CUST-1001.
+
+9. Identify potentially suspicious transactions.
+
+10. Which cards are expiring in the next 60 days?
+Question:
+Show me the database schema.
+
+Tool Used:
+inspect_database_schema
+
+Records Found:
+9
+
+Answer:
+The database schema consists of the following tables:
+
+- card: stores information about credit cards, including card number, validity, security code, and customer ID.
+- card_type: stores information about different types of credit cards, including card type, network, and privilege.
+- customer: stores information about customers, including first name, last name, email, phone number, and address.
+- merchant: stores information about merchants, including merchant name and type.
+- merchant_type: stores information about different types of merchants.
+- netbanking: stores information about net banking accounts, including username, password, expiry date, and customer ID.
+- transaction: stores information about transactions, including transaction ID, date, card ID, terminal ID, amount, and type.
+- transaction_terminal: stores information about transaction terminals, including terminal ID and coordinates.
+- transaction_type: stores information about different types of transactions, including debit/credit and local/international.
+
+Sensitive data, such as card numbers and passwords, is masked for security purposes.
+
+Sensitive Data Masked:
+True
+
+================================================================================
+
+Question:
+Show customer profile for customer cust_id: 1.
+
+Tool Used:
+get_customer_profile
+
+Records Found:
+1
+
+Answer:
+Customer profile for customer cust_id: 1 is Denise Walker with email de*****@gmail.com, phone ******6781, and address 1040 West 27th Avenue #APT 000401, Anchorage, AK 99503.
+
+Sensitive Data Masked:
+True
+
+================================================================================
+
+Question:
+Show card details for customer cust_id: 1.
+
+Tool Used:
+get_card_details
+
+Records Found:
+1
+
+Answer:
+The card details for customer cust_id: 1 are:
+- Card Number: **** **** **** 1697
+- Valid From: 2013-06-01
+- Expiry: 2023-06-01
+- Card Type: Silver
+- Card Network: MasterCard
+- Privilege: Silver plus MasterCard benefits
+
+Sensitive Data Masked:
+True
+
+================================================================================
+
+Question:
+Show the last 5 transactions for customer cust_id: 1.
+
+Tool Used:
+get_customer_transactions
+
+Records Found:
+5
+
+Answer:
+The last 5 transactions for customer cust_id: 1 are:
+
+- TXN_ID: 202209081450114279862398471697042, TX_DATETIME: 2022-09-08 14:50:11, TX_AMOUNT: 45.73, merchant: Kroger, debit_credit: Credit
+- TXN_ID: 202209081334124279862398471697015, TX_DATETIME: 2022-09-08 13:34:12, TX_AMOUNT: 27.67, merchant: Best Buy, debit_credit: Debit
+- TXN_ID: 202209081008224279862398471697053, TX_DATETIME: 2022-09-08 10:08:22, TX_AMOUNT: 17.07, merchant: Publix, debit_credit: Credit
+- TXN_ID: 202209080626474279862398471697015, TX_DATETIME: 2022-09-08 06:26:47, TX_AMOUNT: 25.11, merchant: Amazon, debit_credit: Debit
+- TXN_ID: 202209071534594279862398471697064, TX_DATETIME: 2022-09-07 15:34:59, TX_AMOUNT: 0.56, merchant: Best Buy, debit_credit: Debit
+
+Sensitive Data Masked:
+True
+
+================================================================================
+
+Question:
+Show statement summary for customer cust_id: 1.
+
+Tool Used:
+get_customer_profile
+
+Records Found:
+1
+
+Answer:
+Customer Denise Walker with cust_id 1 has a statement summary with the following details: 
+- First name: Denise
+- Last name: Walker
+- Email: de*****@gmail.com
+- Phone: ******6781
+- Address: 1040 West 27th Avenue #APT 000401
+- City: Anchorage
+- State: AK
+- Zip: 99503
+
+Sensitive Data Masked:
+True
+
+================================================================================
+
+Question:
+Which merchant type has the highest total spend?
+
+Tool Used:
+get_merchant_spend_summary
+
+Records Found:
+9
+
+Answer:
+The merchant type with the highest total spend is supermarket, with a total spend of $3,497,042.51.
+
+Sensitive Data Masked:
+True
+
+================================================================================
+
+Question:
+Identify potentially suspicious transactions.
+
+Tool Used:
+detect_suspicious_transactions
+
+Records Found:
+0
+
+Answer:
+No suspicious transactions were found.
+
+Sensitive Data Masked:
+True
+
+================================================================================
+
+Question:
+Which cards are expiring in the next 60 days?
+
+Tool Used:
+get_cards_expiring_soon
+
+Records Found:
+17
+
+Answer:
+There are 17 cards expiring in the next 60 days. The cards are:
+
+- **** **** **** 0948 (expiry: 2026-07-01, cust_id: 897)
+- **** **** **** 8398 (expiry: 2026-08-01, cust_id: 434)
+- **** **** **** 2992 (expiry: 2026-07-01, cust_id: 45)
+- **** **** **** 5810 (expiry: 2026-07-01, cust_id: 967)
+- **** **** **** 4446 (expiry: 2026-07-01, cust_id: 14)
+- **** **** **** 1750 (expiry: 2026-08-01, cust_id: 230)
+- **** **** **** 8060 (expiry: 2026-08-01, cust_id: 644)
+- **** **** **** 3320 (expiry: 2026-07-01, cust_id: 765)
+- **** **** **** 9844 (expiry: 2026-08-01, cust_id: 629)
+- **** **** **** 4905 (expiry: 2026-07-01, cust_id: 476)
+- **** **** **** 6612 (expiry: 2026-08-01, cust_id: 411)
+- **** **** **** 4540 (expiry: 2026-07-01, cust_id: 832)
+- **** **** **** 3152 (expiry: 2026-08-01, cust_id: 426)
+- **** **** **** 7074 (expiry: 2026-08-01, cust_id: 233)
+- **** **** **** 5423 (expiry: 2026-07-01, cust_id: 466)
+- **** **** **** 4483 (expiry: 2026-07-01, cust_id: 153)
+- **** **** **** 2921 (expiry: 2026-08-01, cust_id: 554)
+
+Sensitive Data Masked:
+True
+
+================================================================================

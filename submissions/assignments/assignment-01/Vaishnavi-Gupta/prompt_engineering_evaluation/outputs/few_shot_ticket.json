@@ -1,0 +1,13 @@
+{
+  "case_name": "few_shot_ticket",
+  "raw_output": "[\n {\n  \"ticket\": \"I was charged twice last month and I am extremely unhappy about it\",\n  \"category\": \"BILLING_ISSUE\",\n  \"priority\": \"HIGH\",\n  \"justification\": \"duplicate billing complaint and angry tone\"\n }\n]",
+  "parsed": [
+    {
+      "ticket": "I was charged twice last month and I am extremely unhappy about it",
+      "category": "BILLING_ISSUE",
+      "priority": "HIGH",
+      "justification": "duplicate billing complaint and angry tone"
+    }
+  ],
+  "timestamp": "2026-05-28 09:53:19.691128"
+}

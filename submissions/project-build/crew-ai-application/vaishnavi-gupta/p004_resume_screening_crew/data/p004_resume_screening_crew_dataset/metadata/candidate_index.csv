@@ -1,0 +1,6 @@
+candidate_id,candidate_name,resume_file,years_experience,current_role,primary_skills
+CAND-001,Rohan Mehta,candidate_001_rohan_mehta.md,3.5,AI Application Developer,Python; SQL; REST APIs; LangChain; LangGraph; CrewAI basics; RAG; Chroma; pytest
+CAND-002,Priya Sharma,candidate_002_priya_sharma.md,4,Backend Python Developer,Python; FastAPI; REST APIs; SQL; PostgreSQL; pytest; GitHub; basic prompt engineering
+CAND-003,Neha Gupta,candidate_003_neha_gupta.md,3,Data Analyst,SQL; Python; pandas; Power BI; SQLite; business reporting; basic prompt engineering
+CAND-004,Arjun Nair,candidate_004_arjun_nair.md,1.2,Junior Python Developer,Python; Flask basics; REST API basics; SQLite basics; Git basics; basic LangChain tutorials
+CAND-005,Sara Khan,candidate_005_sara_khan.md,5,MLOps Engineer,Python; SQL; FastAPI; Docker; CI/CD; MLflow; pytest; LangChain basics; RAG concepts

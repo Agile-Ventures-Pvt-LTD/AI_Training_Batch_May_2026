@@ -1,0 +1,31 @@
+{
+  "case_name": "llm_judge_code",
+  "raw_output": "```json\n{\n  \"explanation_a\": {\n    \"scores\": {\n      \"correctness\": 8,\n      \"clarity\": 7,\n      \"depth\": 6,\n      \"misleading_penalty\": 0,\n      \"beginner_friendliness\": 8\n    },\n    \"issues\": [],\n    \"overall_score\": 29\n  },\n  \"explanation_b\": {\n    \"scores\": {\n      \"correctness\": 9,\n      \"clarity\": 8,\n      \"depth\": 8,\n      \"misleading_penalty\": 0,\n      \"beginner_friendliness\": 9\n    },\n    \"issues\": [],\n    \"overall_score\": 34\n  },\n  \"winner\": \"explanation_b\",\n  \"judge_reasoning_summary\": \"Explanation B is more accurate, clear, and comprehensive, with a better balance of technical correctness, depth, and beginner friendliness. It provides a more detailed explanation of shallow and deep copying, including examples and use cases, without any misleading statements.\"\n}\n```",
+  "parsed": {
+    "explanation_a": {
+      "scores": {
+        "correctness": 8,
+        "clarity": 7,
+        "depth": 6,
+        "misleading_penalty": 0,
+        "beginner_friendliness": 8
+      },
+      "issues": [],
+      "overall_score": 29
+    },
+    "explanation_b": {
+      "scores": {
+        "correctness": 9,
+        "clarity": 8,
+        "depth": 8,
+        "misleading_penalty": 0,
+        "beginner_friendliness": 9
+      },
+      "issues": [],
+      "overall_score": 34
+    },
+    "winner": "explanation_b",
+    "judge_reasoning_summary": "Explanation B is more accurate, clear, and comprehensive, with a better balance of technical correctness, depth, and beginner friendliness. It provides a more detailed explanation of shallow and deep copying, including examples and use cases, without any misleading statements."
+  },
+  "timestamp": "2026-05-28 09:53:24.532468"
+}

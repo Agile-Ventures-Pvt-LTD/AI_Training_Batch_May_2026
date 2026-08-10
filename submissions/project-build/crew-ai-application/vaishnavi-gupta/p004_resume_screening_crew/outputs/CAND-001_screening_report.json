@@ -1,0 +1,21 @@
+{
+ "candidate_id": "CAND_001",
+ "candidate_name": "Rohan Mehta",
+ "role_title": "AI Engineer",
+ "overall_score": 20,
+ "max_score": 40,
+ "percentage": 50,
+ "recommendation": "Must work on skills",
+ "executive_summary": "Below benchmark",
+ "strengths": ["Good communication", "Bad technical skills"],
+ "gaps": ["less technical skills"],
+ "interview_focus_areas": ["technical skills", "verbal/soft skills", "confidence", "mental presence"],
+ "interview_questions": {
+ "technical_questions": [],
+ "project_deep_dive_questions": [],
+ "scenario_questions": [],
+ "gap_validation_questions": []
+ },
+ "evidence": [],
+ "human_review_note": "Should Work on technical skills more."
+}
