@@ -1,0 +1,17 @@
+{
+    "risk_level": "HIGH",
+    "key_risk_factors": [
+        "No region-specific data residency guarantees; data may be stored in any multi‑tenant location",
+        "Customer data is used for product improvement by default, requiring manual opt‑out",
+        "Only SOC 2 Type I certification (no Type II audit) limiting assurance of ongoing security controls",
+        "Vendor maturity is low (18 months, 12 enterprise customers) increasing operational and support risk"
+    ],
+    "missing_information": [
+        "Specific encryption algorithms, key management processes, and rotation schedules",
+        "Detailed API rate‑limit thresholds, throttling behavior, and error handling",
+        "Comprehensive data retention, deletion, and backup policies, especially for regulated documents",
+        "Incident response plan, breach notification timelines, and liability clauses"
+    ],
+    "business_recommendation": "Engage the vendor only after negotiating contractual safeguards: enforce data residency options, require opt‑in consent for data usage, obtain SOC 2 Type II audit evidence, clarify SLA uptime and penalties, and secure detailed API and security documentation.",
+    "confidence_score": 0.78
+}

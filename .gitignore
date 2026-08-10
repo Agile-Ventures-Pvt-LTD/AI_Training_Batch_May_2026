@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+*.sqlite
+olist.sqlite
+submissions/assignments/assignment-04/mohd-zaid-ansari/data/olist.sqlite

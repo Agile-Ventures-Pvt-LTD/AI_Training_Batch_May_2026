@@ -1,0 +1,16 @@
+== Classification ==
+- issue_type: VPN
+- confidence: HIGH
+- requires_user_lookup: True
+- requires_device_lookup: False
+- requires_known_incident_check: True
+- requires_clarification: True
+- reasoning_summary: The user reports a VPN timeout after MFA approval, which directly maps to a VPN connectivity issue. Confidence is high. We need to look up Amit's user account and recent VPN logs, and verify if there is any known incident affecting VPN services. The query ends abruptly, so clarification may be needed to provide a complete troubleshooting plan.
+
+== Troubleshooting Retrieval ==
+Issue Type: VPN
+Chunks found: 4
+1. vpn_troubleshooting_guide.md (vpn_troubleshooting_guide_chunk_001) — Before escalation, check: - Internet connection is active. - The user is using the company-approved VPN client. - The VPN client version is not older than the minimum supported version: 5.8. - Syst...
+2. vpn_troubleshooting_guide.md (vpn_troubleshooting_guide_chunk_002) — If VPN shows authentication failure: 1. Confirm the user can log in to the company portal. 2. Check if the user account is locked. 3. Ask the user to retry MFA approval. 4. If MFA fails repeatedly,...
+3. vpn_troubleshooting_guide.md (vpn_troubleshooting_guide_chunk_003) — Employees may report that VPN is not connecting, disconnects frequently, asks for MFA repeatedly, or shows authentication failure.
+4. vpn_troubleshooting_guide.md (vpn_troubleshooting_guide_chunk_004) — If VPN shows timeout: 1. Ask the user to switch network, if possible. 2. Check whether public Wi-Fi is blocking VPN. 3. Ask the user to restart VPN client. 4. Check known incidents for VPN gateway ...

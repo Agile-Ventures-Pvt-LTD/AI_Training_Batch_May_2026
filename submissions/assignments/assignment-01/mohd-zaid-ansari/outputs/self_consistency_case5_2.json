@@ -1,0 +1,15 @@
+{
+    "runs": [
+        "MEDIUM",
+        "MEDIUM",
+        "MEDIUM",
+        "MEDIUM",
+        "MEDIUM"
+    ],
+    "risk_level_votes": {
+        "MEDIUM": 5
+    },
+    "final_risk_level": "MEDIUM",
+    "disagreement_analysis": "All five runs reported the same risk level (MEDIUM). There are no conflicting assessments to discuss.",
+    "final_reasoning_summary": "Since every run consistently identified the risk as MEDIUM, the aggregated result is MEDIUM with no disagreement."
+}
