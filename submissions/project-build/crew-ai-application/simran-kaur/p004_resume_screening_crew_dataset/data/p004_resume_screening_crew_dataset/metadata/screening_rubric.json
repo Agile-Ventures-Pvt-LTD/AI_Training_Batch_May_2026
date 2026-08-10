@@ -1,0 +1,57 @@
+{
+  "rubric_name": "P004 AI Engineer Screening Rubric",
+  "score_range": {
+    "min": 0,
+    "max": 5,
+    "description": "Each category must be scored from 0 to 5."
+  },
+  "max_score": 40,
+  "categories": {
+    "python_programming": {
+      "description": "Ability to write practical, modular Python code."
+    },
+    "sql_database_skills": {
+      "description": "Ability to work with SQL databases and retrieve useful information."
+    },
+    "api_integration": {
+      "description": "Experience integrating REST APIs or LLM APIs."
+    },
+    "llm_application_development": {
+      "description": "Hands-on experience building applications using LLMs or GenAI APIs."
+    },
+    "agent_frameworks": {
+      "description": "Exposure to LangChain, LangGraph, CrewAI, or similar agent frameworks."
+    },
+    "rag_understanding": {
+      "description": "Understanding of retrieval-augmented generation, embeddings, chunking, and vector databases."
+    },
+    "testing_and_quality": {
+      "description": "Testing mindset and ability to validate application behavior."
+    },
+    "communication": {
+      "description": "Ability to communicate technical decisions and document work clearly."
+    }
+  },
+  "recommendation_bands": [
+    {
+      "min_percentage": 80,
+      "max_percentage": 100,
+      "recommendation": "STRONG_MATCH"
+    },
+    {
+      "min_percentage": 60,
+      "max_percentage": 79,
+      "recommendation": "MODERATE_MATCH"
+    },
+    {
+      "min_percentage": 40,
+      "max_percentage": 59,
+      "recommendation": "WEAK_MATCH"
+    },
+    {
+      "min_percentage": 0,
+      "max_percentage": 39,
+      "recommendation": "NEEDS_MANUAL_REVIEW"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "case_2_1": 
+  [
+    {
+      "ticket": "I was charged twice this month and your support team has not replied for five days. I am going to post this on social media if this is not fixed today.",
+      "category": "BILLING_ISSUE",
+      "priority": "URGENT",
+      "justification": "Billing discrepancy with delayed support response and threat of public complaint increases urgency and escalation risk"
+    },
+    {
+      "ticket": "The export button stopped working after your latest update. Our reporting team is blocked.",
+      "category": "TECHNICAL_BUG",
+      "priority": "HIGH",
+      "justification": "Feature malfunction after update indicates a technical regression, impacting business operations"
+    },
+    {
+      "ticket": "Can you add approval workflows before invoices are submitted?",
+      "category": "FEATURE_REQUEST",
+      "priority": "MEDIUM",
+      "justification": "Request for new functionality to enhance workflow, not a system failure"
+    },
+    {
+      "ticket": "We need confirmation that our customer data is not being used to train your AI models.",
+      "category": "COMPLIANCE_CONCERN",
+      "priority": "HIGH",
+      "justification": "Data usage policy clarification request indicates compliance sensitivity and potential regulatory implications"
+    },
+    {
+      "ticket": "My admin account is locked and the password reset email never arrives.",
+      "category": "ACCOUNT_ACCESS",
+      "priority": "URGENT",
+      "justification": "User cannot access account and recovery mechanism failing, causing immediate business disruption"
+    }
+  ],
+
+  
+  "case_2_2":
+   [
+    {
+      "input": "I want to take leave from 12th June to 15th June because I am travelling.",
+      "output": {
+        "action": "APPLY_LEAVE",
+        "parameters": {
+          "start_date": "12th June",
+          "end_date": "15th June"
+        },
+        "requires_clarification": false,
+        "clarification_question": "",
+        "confidence": 0.95
+      }
+    },
+    {
+      "input": "How many casual leaves do I have left?",
+      "output": {
+        "action": "CHECK_BALANCE",
+        "parameters": {},
+        "requires_clarification": false,
+        "clarification_question": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "input": "Cancel my leave request for next Friday.",
+      "output": {
+        "action": "CANCEL_LEAVE",
+        "parameters": {
+          "leave_date": "next Friday"
+        },
+        "requires_clarification": true,
+        "clarification_question": "Which exact date does 'next Friday' refer to?",
+        "confidence": 0.6
+      }
+    },
+    {
+      "input": "What is the policy for maternity leave?",
+      "output": {
+        "action": "GET_POLICY",
+        "parameters": {
+          "leave_type": "maternity leave"
+        },
+        "requires_clarification": false,
+        "clarification_question": "",
+        "confidence": 0.9
+      }
+    },
+    {
+      "input": "I may take off sometime next week, not sure yet.",
+      "output": {
+        "action": "APPLY_LEAVE",
+        "parameters": {},
+        "requires_clarification": true,
+        "clarification_question": "Please specify exact dates for leave request",
+        "confidence": 0.4
+      }
+    }
+  ]
+}

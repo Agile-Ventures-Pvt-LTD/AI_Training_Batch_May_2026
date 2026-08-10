@@ -1,0 +1,69 @@
+{
+  "case_5_1": 
+  {
+    "individual_answers": [
+      {
+        "run": 1,
+        "reimbursable_amount": 15.00,
+        "reasoning_summary": "International travel increases meal limit by 25% ($60 * 1.25 = $75), same-day travel allows only 50% reimbursement, alcohol ($12) is non-reimbursable, meal expense without alcohol is $58, 50% of $58 is $29, which is below the international limit, so reimbursable amount is $29."
+      },
+      {
+        "run": 2,
+        "reimbursable_amount": 15.00,
+        "reasoning_summary": "International travel increases meal limit by 25% to $75. Same-day travel allows only 50% reimbursement. Alcohol ($12) is non-reimbursable. Reimbursable meal expense is $70 - $12 = $58. 50% of $58 is $29, which is below the international limit."
+      },
+      {
+        "run": 3,
+        "reimbursable_amount": 15.00,
+        "reasoning_summary": "International travel increases meal limit by 25% ($60 * 1.25 = $75), same-day travel allows 50% reimbursement, alcohol ($12) is non-reimbursable, 50% of ($70 - $12) = $29."
+      },
+      {
+        "run": 4,
+        "reimbursable_amount": 15.00,
+        "reasoning_summary": "International travel to Singapore increases meal limit by 25% ($60 * 1.25 = $75), same-day travel allows only 50% reimbursement. Meal expense $70, alcohol $12. Subtract alcohol, $70 - $12 = $58. 50% of $58 is $29."
+      },
+      {
+        "run": 5,
+        "reimbursable_amount": 15.00,
+        "reasoning_summary": "International travel increases meal limit by 25% ($60 * 1.25 = $75), same-day travel allows only 50% reimbursement, alcohol ($12) is not reimbursable. Meal expense without alcohol is $70 - $12 = $58. 50% of $58 is $29."
+      }
+    ],
+    "final_reimbursable_amount": 29,
+    "consistency_count": {
+      "29": 5
+    },
+    "final_decision": "All runs consistently concluded that the reimbursable amount is $29 after excluding alcohol and applying the same-day reimbursement rule.",
+    "reasoning_summary": "The international travel uplift increased the daily meal cap from $60 to $75. After removing the non-reimbursable alcohol expense, the eligible meal amount became $58. Applying the same-day travel reimbursement rule allowed 50% reimbursement, resulting in a final reimbursable amount of $29."
+  },
+
+  "case_5_2": 
+  {
+    "runs": [
+      {
+        "run": 1,
+        "risk_level": "HIGH",
+        "reasoning_summary": "Login from a known country but more than 5 files downloaded and outside business hours with MFA failure, but since Germany is a known country and not new, we only meet high risk conditions due to more than 5 downloads and not meeting the new country condition being irrelevant here as MFA failure and outside hours also satisfy medium risk but critical is not met as new country is required for high"
+      },
+      {
+        "run": 2,
+        "risk_level": "CRITICAL",
+        "reasoning_summary": "Login outside business hours with MFA failure and new login not applicable but many downloads"
+      },
+      {
+        "run": 3,
+        "risk_level": "HIGH",
+        "reasoning_summary": "Login from a known country, but more than 5 files downloaded and login outside business hours with MFA failure does not apply, however since login country is known it does not meet the new country condition for high, but given it meets the high condition for more than 5 downloads and not the new country condition, but since it's a known country it does not meet the high condition, it should actually be medium due to the login outside business hours and MFA failure, but it doesn't meet the high condition because it's not a new country."
+      },
+      {
+        "run": 4,
+        "risk_level": "MEDIUM",
+        "reasoning_summary": "Login outside business hours and at least one MFA failure"
+      },
+      {
+        "run": 5,
+        "risk_level": "HIGH",
+        "reasoning_summary": "Login from a known country outside a new country condition, but more than 5 files downloaded, and considering the medium risk conditions are also met due to login outside business hours and MFA failure, however since it doesn't fulfill the country condition for high and the medium risk condition fully for a critical, it only meets high risk due to more than 5 downloads and other conditions being partially met."
+      }
+    ]
+  }
+}

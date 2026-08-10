@@ -1,0 +1,54 @@
+{
+    "results": [
+        {
+            "question_id": "Q1",
+            "original_query": "Does Tesla's growth story appear more constrained by external supply risk or internal execution?",
+            "expanded_queries": [
+                "Tesla growth constraints: external supply risk vs internal execution",
+                "Is Tesla's expansion limited more by supply chain issues or internal management?",
+                "Tesla growth challenges: supply risk versus execution capability",
+                "External supply risk or internal execution: which limits Tesla's growth?",
+                "Factors restricting Tesla's growth: supply chain problems or internal performance?",
+                "Tesla's growth story: are supply constraints or execution flaws the main barrier?"
+            ],
+            "final_answer": "Tesla\u2019s filings stress that the biggest uncertainty comes from its ability to **execute its own growth plans**\u2014ramping production, delivery, service and Super\u2011charger rollout, hiring enough staff, managing costs and meeting regulatory requirements.  The company repeatedly notes that there is \u201cno assurance that we will be able to ramp our business\u2026 that our projections\u2026 will prove accurate\u2026 if we fail to manage our growth effectively, it may harm our brand, business, prospects, financial condition and operating results.\u201d  \n\nWhile supply\u2011chain issues (e.g., continued access to lithium\u2011ion battery cells) are acknowledged, the narrative places far more emphasis on internal execution risk than on external supply risk.  Therefore, Tesla\u2019s growth story appears more constrained by **internal execution**."
+        },
+        {
+            "question_id": "Q2",
+            "original_query": "How is Tesla AI reflected in spending and strategy?",
+            "expanded_queries": [
+                "Tesla AI impact on company spending and strategic plans",
+                "How does Tesla incorporate AI into its budget and strategy?",
+                "Tesla AI influence on financial allocation and corporate strategy",
+                "What role does AI play in Tesla's spending decisions and strategic direction?",
+                "Tesla's AI initiatives and their effect on spending and overall strategy",
+                "Analysis of Tesla's AI integration in budgeting and strategic planning"
+            ],
+            "final_answer": "Tesla\u2019s artificial\u2011intelligence work is embedded in both its cost structure and its long\u2011term strategic plans.\n\n**Spending**  \n- AI\u2011related development is captured in the company\u2019s research\u2011and\u2011development (R&D) expense.  The consolidated statements show R&D outlays of\u202f$3.969\u202fbillion for 2023,\u202f$3.075\u202fbillion for 2022 and\u202f$2.593\u202fbillion for 2021.  These funds support the creation of the vision\u2011based self\u2011driving stack, neural\u2011network training, the FSD computer hardware and the software that controls vehicle performance, infotainment and over\u2011the\u2011air updates.\n\n**Strategic focus**  \n- Tesla\u2019s strategy explicitly calls out its AI capabilities in the **Self\u2011Driving Development and Artificial Intelligence** section: it is building \u201ctechnologies, systems and software to enable self\u2011driving vehicles using primarily vision\u2011based technologies,\u201d running neural networks on its FSD computer, and expanding hardware to handle the massive field data collected by its fleet.  \n- The company offers advanced driver\u2011assist features under the **Autopilot** and **Full\u2011Self\u2011Driving (FSD) Capability** options, with the driver still in control but AI providing safety and convenience functions.  \n- AI is also central to the plan for a future **autonomous Tesla ride\u2011hailing network**, which would create a new customer base and generate additional revenue as transportation modes evolve.  \n- Vehicle\u2011control and infotainment software, which \u201coptimize performance, customize vehicle behavior, manage charging and control all infotainment functions,\u201d are developed largely in\u2011house and continuously improved through over\u2011the\u2011air updates\u2014another AI\u2011driven capability.\n\nIn summary, Tesla reflects its AI ambitions by allocating billions of dollars to R&D and by positioning AI at the core of its product roadmap: self\u2011driving technology, autonomous ride\u2011hailing, and continuously updated vehicle software."
+        },
+        {
+            "question_id": "Q3",
+            "original_query": "Is Tesla exposed to supplier or geographic concentration risk?",
+            "expanded_queries": [
+                "Tesla supplier concentration risk analysis",
+                "Tesla geographic concentration risk assessment",
+                "Does Tesla face supplier concentration risk?",
+                "Tesla exposure to regional market concentration risk",
+                "Tesla risk from limited supplier or location dependence"
+            ],
+            "final_answer": "Tesla does face a supplier\u2011concentration risk.  The filing notes that the company \u201cis dependent on the continued supply of lithium\u2011ion battery cells for our vehicles and energy storage products,\u201d indicating reliance on a limited set of battery\u2011cell suppliers (e.g., Panasonic).  \n\nThe provided excerpt does not specifically call out a geographic\u2011concentration risk; it discusses global operations and the need to expand infrastructure worldwide, but no explicit risk related to geographic concentration is mentioned."
+        },
+        {
+            "question_id": "Q4",
+            "original_query": "Compare automotive vs energy business importance",
+            "expanded_queries": [
+                "automotive versus energy industry importance comparison",
+                "importance of the automotive sector compared to the energy sector",
+                "how does the automotive business rank against the energy business in importance",
+                "automotive vs energy business significance analysis",
+                "compare the economic importance of automotive and energy industries"
+            ],
+            "final_answer": "**Scale of the two businesses (2023)**  \n\n| Metric | Automotive (incl. services) | Energy generation & storage |\n|--------|----------------------------|-----------------------------|\n| Revenue | **$90,738\u202fmillion** (\u2248\u202f94\u202f% of total revenue) | **$6,035\u202fmillion** (\u2248\u202f6\u202f% of total revenue) |\n| Gross profit | **$16,519\u202fmillion** | **$1,141\u202fmillion** |\n| Gross\u2011margin (segment) | 18.2\u202f% (automotive\u202f+\u202fservices) | ~35\u202f% (cost\u2011of\u2011revenues data) |\n\n**What the numbers tell us**\n\n* **Automotive is the core driver of the company\u2019s size and earnings.**  \n  * It generates almost all of the firm\u2019s revenue and the overwhelming majority of its gross profit.  \n  * The automotive segment\u2019s gross\u2011profit margin (\u2248\u202f18\u202f%) is the main source of profitability for the whole enterprise.\n\n* **Energy generation & storage is a much smaller, emerging business.**  \n  * Its revenue is roughly 1/15th of automotive\u2019s and contributes only a single\u2011digit share of total gross profit.  \n  * Although its gross\u2011margin on cost of revenues is higher (\u2248\u202f35\u202f%), the absolute profit contribution is modest because the segment is still early\u2011stage.\n\n**Strategic context from the filing**\n\n* The company repeatedly emphasizes that **its future growth and success are tied to consumer adoption of electric vehicles**, underscoring the strategic priority of the automotive segment.  \n* It also notes that **the energy segment is a newer line of business** that \u201cincludes the design, manufacture, installation, sales and leasing of solar\u2011energy generation and storage products,\u201d but it is described as \u201cstill at an earlier stage\u201d with \u201climited resources and production relative to established competitors.\u201d  \n* Risks and competitive pressures are discussed primarily around the automotive market (competition for EVs, regulatory credits, leasing, etc.), while the energy segment is mentioned mainly as an additional growth avenue.\n\n**Bottom line**\n\n- **Automotive**: dominant in both revenue and profit; the primary engine of the company\u2019s financial performance and the focus of its competitive and operational risk discussions.  \n- **Energy**: a small, high\u2011margin but nascent business that currently plays a secondary role in the company\u2019s overall financial picture, serving more as a diversification/long\u2011term growth opportunity."
+        }
+    ]
+}
