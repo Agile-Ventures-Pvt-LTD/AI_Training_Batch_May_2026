@@ -1,0 +1,5 @@
+.env
+__pycache__/
+*.pyc
+outputs/*.json
+!outputs/sample_blog_output.json

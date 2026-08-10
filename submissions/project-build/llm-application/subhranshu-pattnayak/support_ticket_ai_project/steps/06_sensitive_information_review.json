@@ -1,0 +1,15 @@
+{
+  "sensitive_information_detected": true,
+  "sensitive_categories": [
+    "PERSONAL_INFORMATION",
+    "PAYMENT_INFORMATION"
+  ],
+  "evidence_summary": "The ticket contains the customer's name (Amit) and references a double charge and duplicate invoice amount on the customer's bank statement, indicating personal and payment-related information.",
+  "handling_recommendations": [
+    "Verify the customer's identity and payment details before taking any action.",
+    "Request the invoice ID or registered account email to locate the transaction.",
+    "Do not promise a refund until verification is completed, per business rules.",
+    "Escalate the billing issue to the billing support team as required for premium customers.",
+    "Maintain a professional and empathetic tone while ensuring no sensitive data is exposed in communications."
+  ]
+}

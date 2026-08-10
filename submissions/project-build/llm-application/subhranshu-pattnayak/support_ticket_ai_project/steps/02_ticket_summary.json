@@ -1,0 +1,17 @@
+{
+  "short_summary": "Amit reports a duplicate charge after canceling his premium subscription and has not received a response to prior support inquiries.",
+  "customer_problem": "The customer was charged for a premium subscription that was cancelled last month, and the same invoice amount appears twice on his bank statement.",
+  "business_impact": "Financial loss for the customer, potential public escalation on LinkedIn, and risk of the finance team blocking future payments.",
+  "customer_requested_action": "Refund the incorrect charge and resolve the billing issue promptly.",
+  "important_context": [
+    "Premium customer (high SLA tier)",
+    "Previous two support contacts with no proper response",
+    "Threat to escalate publicly and involve finance team",
+    "Issue falls under Billing and Subscription"
+  ],
+  "missing_information": [
+    "Invoice ID for the duplicate charge",
+    "Registered account email or username for verification",
+    "Confirmation of the cancellation request date"
+  ]
+}

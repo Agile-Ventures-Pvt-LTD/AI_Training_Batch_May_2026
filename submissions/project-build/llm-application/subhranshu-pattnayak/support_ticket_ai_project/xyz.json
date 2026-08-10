@@ -1,0 +1,19 @@
+{
+    "short_summary": "Unable to generate PDF invoices after recent platform upgrade",
+    "customer_problem": "Since the v4.2.1 upgrade (released 2024‑05‑28), the “Export as PDF” button on the Invoicing page returns a generic 500‑Internal‑Server error. The error appears for all invoice records, regardless of size or status. The customer has verified that they are using a supported browser (Chrome 124) and that their user role has the required permissions.",
+    "business_impact": "The customer (Acme Corp) processes ~2,500 invoices per week. Inability to export PDFs halts their month‑end closing process, forces manual data entry into a third‑party accounting system, and risks delayed payments to vendors. The issue is causing a projected revenue impact of $12,000\u202f–\u202f$15,000 per week for the customer and is likely to increase churn risk if not resolved quickly.",
+    "customer_requested_action": "Please investigate the root cause of the PDF generation failure, provide a fix or a temporary workaround (e.g., CSV export), and restore the PDF export functionality within the next 24\u202fhours. If a fix will take longer, we need a clear ETA and a mitigation plan so the customer can continue processing invoices.",
+    "important_context": [
+        "Upgrade logs show the PDF generation micro‑service (pdf‑gen‑svc) was redeployed with a new library version (libpdf v3.5).",
+        "The customer’s API key was rotated on 2024‑05‑30; logs show the key is still valid for other endpoints.",
+        "Error logs (see attached screenshot) contain the stack trace: `java.lang.NullPointerException at com.acme.pdf.Renderer.render(Renderer.java: 112)`.",
+        "The issue started immediately after the upgrade; prior to that PDF exports worked without incident for 18 months.",
+        "The customer has a Service Level Agreement (SLA) of 4‑hour response and 24‑hour resolution for “Critical – Business‑Impacting” incidents."
+    ],
+    "missing_information": [
+        "Exact version of the PDF generation library that was bundled with the upgrade (release notes only mention “v3.5 – minor bug fixes”).",
+        "Whether any custom PDF templates have been applied by the customer (they may have overridden default templates).",
+        "Full stack trace from the server logs (the screenshot only shows the top 5 lines).",
+        "Confirmation that no other background jobs were running at the time of the failure (e.g., nightly batch jobs that might lock resources)."
+    ]
+}

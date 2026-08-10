@@ -1,0 +1,119 @@
+[
+    {
+        "case_name": "case_6_1_tree_of_thought_ai_use_case",
+        "prompt": "You are an enterprise AI strategy advisor.\n\nYour task is to evaluate multiple AI automation opportunities and recommend the best option for a 90-day pilot program.\n\nInstructions:\n- Evaluate each option independently before comparing them.\n- Consider:\n  - business value\n  - feasibility\n  - implementation risk\n  - pilot suitability\n  - user adoption likelihood\n- Lower operational and compliance risk should receive a higher risk score.\n- Do not choose only based on business value.\n- Explicitly compare trade-offs across options.\n- Think step-by-step internally, but return only concise reasoning summaries.\n- Return ONLY valid JSON.\n- Do not include markdown formatting.\n- Do not include explanations outside JSON.\n\nScoring Rules:\n- Scores must range from 1 to 5.\n- Higher scores are better.\n\nRequired JSON Schema:\n{\n    \"options_evaluated\": [\n        {\n            \"option\": \"\",\n            \"business_value_score\": 0,\n            \"feasibility_score\": 0,\n            \"risk_score\": 0,\n            \"pilot_suitability_score\": 0,\n            \"adoption_score\": 0,\n            \"overall_score\": 0,\n            \"trade_offs\": []\n        }\n    ],\n    \"recommended_option\": \"\",\n    \"why_not_others\": {},\n    \"final_recommendation\": \"\"\n}\n\nOptions:\n\nOption 1: AI customer support assistant\n- High ticket volume\n- Moderate implementation complexity\n- Contains personal customer data\n- Potential cost saving: high\n- User adoption risk: medium\n\nOption 2: AI sales proposal generator\n- Medium usage frequency\n- Low data sensitivity\n- Potential revenue impact: medium to high\n- Requires brand and legal review\n- User adoption risk: low\n\nOption 3: AI contract risk analyzer\n- High business value\n- High legal sensitivity\n- High implementation complexity\n- Requires strong accuracy and auditability\n- User adoption risk: medium\n\nOption 4: AI internal HR policy assistant\n- High employee usage\n- Medium sensitivity\n- Low implementation complexity\n- Potential cost saving: medium\n- User adoption risk: low",
+        "raw_response": "{\n    \"options_evaluated\": [\n        {\n            \"option\": \"AI customer support assistant\",\n            \"business_value_score\": 4,\n            \"feasibility_score\": 3,\n            \"risk_score\": 2,\n            \"pilot_suitability_score\": 4,\n            \"adoption_score\": 3,\n            \"overall_score\": 3.2,\n            \"trade_offs\": [\"high ticket volume\", \"moderate implementation complexity\", \"personal customer data\"]\n        },\n        {\n            \"option\": \"AI sales proposal generator\",\n            \"business_value_score\": 4,\n            \"feasibility_score\": 5,\n            \"risk_score\": 5,\n            \"pilot_suitability_score\": 5,\n            \"adoption_score\": 5,\n            \"overall_score\": 4.8,\n            \"trade_offs\": [\"medium usage frequency\", \"low data sensitivity\"]\n        },\n        {\n            \"option\": \"AI contract risk analyzer\",\n            \"business_value_score\": 5,\n            \"feasibility_score\": 2,\n            \"risk_score\": 1,\n            \"pilot_suitability_score\": 2,\n            \"adoption_score\": 3,\n            \"overall_score\": 2.6,\n            \"trade_offs\": [\"high business value\", \"high legal sensitivity\", \"high implementation complexity\"]\n        },\n        {\n            \"option\": \"AI internal HR policy assistant\",\n            \"business_value_score\": 3,\n            \"feasibility_score\": 5,\n            \"risk_score\": 4,\n            \"pilot_suitability_score\": 5,\n            \"adoption_score\": 5,\n            \"overall_score\": 4.4,\n            \"trade_offs\": [\"high employee usage\", \"medium sensitivity\", \"low implementation complexity\"]\n        }\n    ],\n    \"recommended_option\": \"AI sales proposal generator\",\n    \"why_not_others\": {\n        \"AI customer support assistant\": \"higher risk due to personal customer data\",\n        \"AI contract risk analyzer\": \"high implementation complexity and low feasibility\",\n        \"AI internal HR policy assistant\": \"lower business value compared to AI sales proposal generator\"\n    },\n    \"final_recommendation\": \"The AI sales proposal generator is the most suitable option for the 90-day pilot program due to its high feasibility, low risk, and high potential for user adoption.\"\n}",
+        "parsed_output": {
+            "options_evaluated": [
+                {
+                    "option": "AI customer support assistant",
+                    "business_value_score": 4,
+                    "feasibility_score": 3,
+                    "risk_score": 2,
+                    "pilot_suitability_score": 4,
+                    "adoption_score": 3,
+                    "overall_score": 3.2,
+                    "trade_offs": [
+                        "high ticket volume",
+                        "moderate implementation complexity",
+                        "personal customer data"
+                    ]
+                },
+                {
+                    "option": "AI sales proposal generator",
+                    "business_value_score": 4,
+                    "feasibility_score": 5,
+                    "risk_score": 5,
+                    "pilot_suitability_score": 5,
+                    "adoption_score": 5,
+                    "overall_score": 4.8,
+                    "trade_offs": [
+                        "medium usage frequency",
+                        "low data sensitivity"
+                    ]
+                },
+                {
+                    "option": "AI contract risk analyzer",
+                    "business_value_score": 5,
+                    "feasibility_score": 2,
+                    "risk_score": 1,
+                    "pilot_suitability_score": 2,
+                    "adoption_score": 3,
+                    "overall_score": 2.6,
+                    "trade_offs": [
+                        "high business value",
+                        "high legal sensitivity",
+                        "high implementation complexity"
+                    ]
+                },
+                {
+                    "option": "AI internal HR policy assistant",
+                    "business_value_score": 3,
+                    "feasibility_score": 5,
+                    "risk_score": 4,
+                    "pilot_suitability_score": 5,
+                    "adoption_score": 5,
+                    "overall_score": 4.4,
+                    "trade_offs": [
+                        "high employee usage",
+                        "medium sensitivity",
+                        "low implementation complexity"
+                    ]
+                }
+            ],
+            "recommended_option": "AI sales proposal generator",
+            "why_not_others": {
+                "AI customer support assistant": "higher risk due to personal customer data",
+                "AI contract risk analyzer": "high implementation complexity and low feasibility",
+                "AI internal HR policy assistant": "lower business value compared to AI sales proposal generator"
+            },
+            "final_recommendation": "The AI sales proposal generator is the most suitable option for the 90-day pilot program due to its high feasibility, low risk, and high potential for user adoption."
+        },
+        "valid_json": true
+    },
+    {
+        "case_name": "case_6_2_tree_of_thought_architecture",
+        "prompt": "You are a senior AI systems architect.\n\nYour task is to evaluate multiple architecture options for an AI document question-answering system and recommend the best MVP architecture.\n\nInstructions:\n- Evaluate each architecture independently before making comparisons.\n- Consider:\n  - accuracy\n  - implementation complexity\n  - cost\n  - privacy\n  - scalability\n  - citation reliability\n  - MVP delivery timeline\n- Penalize architectures that are difficult to implement within 6 weeks.\n- Penalize unnecessary complexity for an MVP.\n- Penalize fine-tuning approaches if documents change frequently.\n- Consider phased implementation approaches when appropriate.\n- Accuracy is more important than speed.\n- Think step-by-step internally, but return only concise reasoning summaries.\n- Return ONLY valid JSON.\n- Do not include markdown formatting.\n- Do not include explanations outside JSON.\n\nRequired JSON Schema:\n{\n    \"architecture_scores\": [],\n    \"recommended_architecture\": \"\",\n    \"implementation_rationale\": \"\",\n    \"risks\": [],\n    \"mitigations\": [],\n    \"mvp_plan\": []\n}\n\nSystem Requirements:\n- Users upload PDF documents.\n- Users ask questions about uploaded documents.\n- The system must show source citations.\n- Initial users: 500\n- Expected growth: 20,000 users in 12 months\n- Budget is limited.\n- Documents may contain confidential business information.\n- Accuracy is more important than speed.\n- MVP must be delivered in 6 weeks.\n\nArchitecture Options:\n\nOption A:\nSimple RAG with vector database and hosted LLM API\n\nOption B:\nFine-tune an open-source LLM on all documents\n\nOption C:\nKeyword search only with no LLM\n\nOption D:\nAgentic multi-step retrieval with query rewriting, reranking, and citation verification",
+        "raw_response": "{\n    \"architecture_scores\": [\n        {\"option\": \"A\", \"score\": 8, \"rationale\": \"Balances accuracy and complexity\"},\n        {\"option\": \"B\", \"score\": 6, \"rationale\": \"Fine-tuning may not be feasible with frequent document changes\"},\n        {\"option\": \"C\", \"score\": 4, \"rationale\": \"Lacks accuracy due to no LLM\"},\n        {\"option\": \"D\", \"score\": 9, \"rationale\": \"High accuracy and citation reliability\"}\n    ],\n    \"recommended_architecture\": \"Option D\",\n    \"implementation_rationale\": \"Agentic multi-step retrieval provides high accuracy, citation reliability, and can handle confidential documents\",\n    \"risks\": [\n        \"High implementation complexity\",\n        \"Potential for longer MVP delivery timeline\"\n    ],\n    \"mitigations\": [\n        \"Phased implementation approach\",\n        \"Prioritizing key features for MVP\"\n    ],\n    \"mvp_plan\": [\n        \"Week 1-2: Design and planning\",\n        \"Week 3-4: Implement query rewriting and reranking\",\n        \"Week 5-6: Implement citation verification and finalize MVP\"\n    ]\n}",
+        "parsed_output": {
+            "architecture_scores": [
+                {
+                    "option": "A",
+                    "score": 8,
+                    "rationale": "Balances accuracy and complexity"
+                },
+                {
+                    "option": "B",
+                    "score": 6,
+                    "rationale": "Fine-tuning may not be feasible with frequent document changes"
+                },
+                {
+                    "option": "C",
+                    "score": 4,
+                    "rationale": "Lacks accuracy due to no LLM"
+                },
+                {
+                    "option": "D",
+                    "score": 9,
+                    "rationale": "High accuracy and citation reliability"
+                }
+            ],
+            "recommended_architecture": "Option D",
+            "implementation_rationale": "Agentic multi-step retrieval provides high accuracy, citation reliability, and can handle confidential documents",
+            "risks": [
+                "High implementation complexity",
+                "Potential for longer MVP delivery timeline"
+            ],
+            "mitigations": [
+                "Phased implementation approach",
+                "Prioritizing key features for MVP"
+            ],
+            "mvp_plan": [
+                "Week 1-2: Design and planning",
+                "Week 3-4: Implement query rewriting and reranking",
+                "Week 5-6: Implement citation verification and finalize MVP"
+            ]
+        },
+        "valid_json": true
+    }
+]

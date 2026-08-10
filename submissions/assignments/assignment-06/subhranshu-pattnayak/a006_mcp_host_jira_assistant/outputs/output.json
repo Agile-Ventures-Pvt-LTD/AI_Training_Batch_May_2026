@@ -1,0 +1,8 @@
+{
+    "user_query": "List all Jira projects",
+    "tools_used": [
+        "list_projects"
+    ],
+    "final_answer": "Here are the Jira projects currently available:\n\n| Project ID | Key | Name                | Type    |\n|------------|-----|---------------------|---------|\n| 10034      | AIT | AI Issue Tracker    | Software |\n| 10001      | MT  | MCP Training        | Software |\n| 10000      | SCRUM| My Software Team    | Software |",
+    "write_action_performed": false
+}

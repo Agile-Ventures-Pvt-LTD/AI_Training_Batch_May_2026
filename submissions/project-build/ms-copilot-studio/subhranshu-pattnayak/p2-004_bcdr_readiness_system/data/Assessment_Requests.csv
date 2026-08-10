@@ -1,0 +1,7 @@
+RequestID,ApplicationID,RequestType,RequestedBy,RequestedDate,Priority,Reason,Status
+REQ-001,APP-001,Scheduled Review,BCDR Office,2026-07-31,High,Quarterly readiness assessment,Pending
+REQ-002,APP-002,Scheduled Review,BCDR Office,2026-07-31,Medium,Quarterly readiness assessment,Pending
+REQ-003,APP-004,Exception Review,Architecture Board,2026-07-31,High,DR region not configured,Pending
+REQ-004,APP-005,Exception Review,Operations,2026-07-31,High,Backup and DR evidence missing,Pending
+REQ-005,APP-006,Scheduled Review,BCDR Office,2026-07-31,Low,Routine annual check,Pending
+REQ-006,APP-999,Ad-hoc Review,Risk Office,2026-07-31,Medium,Unknown application ID for negative test,Pending

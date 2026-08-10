@@ -1,0 +1,26 @@
+{
+    "WH-EAST-101": {
+        "warehouse_name": "East Coast Logistics Hub",
+        "current_utilization_pct": 92,
+        "operational_status": "ACTIVE",
+        "risk_tier": "NORMAL"
+    },
+    "WH-WEST-202": {
+        "warehouse_name": "Pacific Gateway Storage",
+        "current_utilization_pct": 68,
+        "operational_status": "ACTIVE",
+        "risk_tier": "ELEVATED"
+    },
+    "WH-SOUTH-303": {
+        "warehouse_name": "Southern Distribution Hub",
+        "current_utilization_pct": 72,
+        "operational_status": "ACTIVE",
+        "risk_tier": "NORMAL"
+    },
+    "WH-CENTRAL-404": {
+        "warehouse_name": "Central Micro Hub",
+        "current_utilization_pct": 54,
+        "operational_status": "ACTIVE",
+        "risk_tier": "NORMAL"
+    }
+}

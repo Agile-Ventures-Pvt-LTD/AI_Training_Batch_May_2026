@@ -1,0 +1,11 @@
+﻿{
+  "recommended_team": "BILLING_SUPPORT",
+  "routing_reason": "Critical billing error for a premium customer who was double-charged after cancellation and has threatened public escalation; requires immediate escalation per business rules.",
+  "internal_note": "Verify the customer's account email and the specific invoice/transaction IDs related to the double charge. Confirm the cancellation status before any refund is promised. Respond professionally and empathetically within the shortest possible time, adhering to the rule not to promise a refund until verification is completed.",
+  "required_follow_up_information": [
+    "Invoice ID or transaction reference for the duplicated charge",
+    "Registered account email address",
+    "Confirmation of the cancellation request date"
+  ]
+}
+

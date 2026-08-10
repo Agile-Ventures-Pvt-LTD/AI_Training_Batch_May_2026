@@ -1,0 +1,62 @@
+[
+    {
+        "case_name": "case_1_1_zero_shot_vendor_risk",
+        "prompt": "You are an enterprise AI procurement risk analyst.\n\nYour task is to evaluate the following vendor onboarding scenario and classify the overall vendor risk level.\n\nInstructions:\n- Analyze privacy, compliance, operational, pricing, scalability, and vendor maturity risks.\n- Identify implicit risks, not only explicitly stated risks.\n- Avoid generic procurement language.\n- Use only the provided information.\n- Be concise but specific.\n- Return ONLY valid JSON.\n- Do not include markdown formatting.\n- Do not include explanations outside JSON.\n\nRisk Classification Rules:\n- LOW → Minimal operational and compliance concerns.\n- MEDIUM → Noticeable risks requiring monitoring.\n- HIGH → Significant operational, compliance, or business concerns.\n- CRITICAL → Severe risks likely to block onboarding.\n\nRequired JSON Schema:\n{\n    \"risk_level\": \"LOW | MEDIUM | HIGH | CRITICAL\",\n    \"key_risk_factors\": [],\n    \"missing_information\": [],\n    \"business_recommendation\": \"\",\n    \"confidence_score\": 0.0\n}\n\nVendor Scenario:\n\nVendor: DocuMind AI\n\nThe vendor claims their solution can process invoices, contracts, and identity documents using OCR and LLM-based extraction.\n\nThey say the model is hosted in a multi-tenant cloud environment.\n\nThey do not currently provide region-specific data residency, but they are planning to add it next year.\n\nThey support encryption at rest and in transit.\n\nHowever, customer data may be used for product improvement unless customers opt out through a manual request.\n\nThey have SOC 2 Type I certification but not Type II.\n\nTheir uptime SLA is 99.5%.\n\nThe pricing is usage-based and could increase significantly if document volume grows.\n\nThe vendor provides APIs, but rate limits are not clearly documented.\n\nThey have only been operating for 18 months and have 12 enterprise customers.\n\nThe business team wants to use this vendor for processing supplier invoices and purchase contracts.",
+        "raw_response": "{\n    \"risk_level\": \"MEDIUM\",\n    \"key_risk_factors\": [\n        \"Lack of region-specific data residency\",\n        \"Insufficient SOC 2 certification (only Type I)\",\n        \"Unclear rate limits for APIs\",\n        \"Usage-based pricing with potential for significant increases\",\n        \"Limited vendor maturity (only 18 months of operation)\",\n        \"Customer data used for product improvement without explicit opt-in\"\n    ],\n    \"missing_information\": [\n        \"Clear documentation of rate limits for APIs\",\n        \"Detailed information on data encryption protocols\",\n        \"Vendor's plan for achieving SOC 2 Type II certification\"\n    ],\n    \"business_recommendation\": \"Proceed with caution, closely monitor vendor performance and pricing, and negotiate a robust SLA with clear rate limits and data protection terms\",\n    \"confidence_score\": 0.7\n}",
+        "parsed_output": {
+            "risk_level": "MEDIUM",
+            "key_risk_factors": [
+                "Lack of region-specific data residency",
+                "Insufficient SOC 2 certification (only Type I)",
+                "Unclear rate limits for APIs",
+                "Usage-based pricing with potential for significant increases",
+                "Limited vendor maturity (only 18 months of operation)",
+                "Customer data used for product improvement without explicit opt-in"
+            ],
+            "missing_information": [
+                "Clear documentation of rate limits for APIs",
+                "Detailed information on data encryption protocols",
+                "Vendor's plan for achieving SOC 2 Type II certification"
+            ],
+            "business_recommendation": "Proceed with caution, closely monitor vendor performance and pricing, and negotiate a robust SLA with clear rate limits and data protection terms",
+            "confidence_score": 0.7
+        },
+        "valid_json": true
+    },
+    {
+        "case_name": "case_1_2_zero_shot_executive_memo",
+        "prompt": "You are a senior enterprise strategy advisor preparing a decision memo for executive leadership.\n\nYour task is to evaluate the following AI deployment proposal and provide a business decision recommendation.\n\nInstructions:\n- Focus on executive-level decision making, not summarization.\n- Evaluate governance, compliance, ROI, operational impact, and organizational change risks.\n- Do not overpromise AI automation benefits.\n- Consider both financial and human impact.\n- Use only the provided information.\n- Be concise but specific.\n- Return ONLY valid JSON.\n- Do not include markdown formatting.\n- Do not include explanations outside JSON.\n\nDecision Rules:\n- APPROVE → Benefits clearly outweigh risks and major controls already exist.\n- REJECT → Risks, governance gaps, or ROI concerns make implementation unsuitable.\n- APPROVE_WITH_CONDITIONS → Implementation is viable only if specific safeguards or requirements are met.\n\nRequired JSON Schema:\n{\n    \"decision\": \"APPROVE | REJECT | APPROVE_WITH_CONDITIONS\",\n    \"rationale\": \"\",\n    \"financial_considerations\": [],\n    \"operational_considerations\": [],\n    \"people_impact\": [],\n    \"compliance_risks\": [],\n    \"conditions_for_approval\": [],\n    \"final_recommendation\": \"\"\n}\n\nScenario:\n\nThe company currently handles customer support through a team of 120 human agents.\n\nTicket volume has grown by 45% in the last 8 months.\n\nAverage response time has increased from 3 hours to 11 hours.\n\nThe AI team proposes deploying a GenAI chatbot for first-level support.\n\nIt can answer FAQs, summarize customer issues, and create draft responses for agents.\n\nThe estimated implementation cost is $250,000, with ongoing monthly cost of $30,000.\n\nThe compliance team is concerned because customer support tickets may contain personal information.\n\nThe support team is worried about job losses.\n\nThe CTO believes the chatbot can reduce ticket load by 35%.\n\nThe CFO wants payback within 12 months.\n\nThe company has not yet implemented AI governance policies.",
+        "raw_response": "{\n    \"decision\": \"APPROVE_WITH_CONDITIONS\",\n    \"rationale\": \"The proposed GenAI chatbot can help reduce the ticket load and improve response times, but concerns around compliance, job losses, and lack of AI governance policies need to be addressed.\",\n    \"financial_considerations\": [\n        \"Estimated implementation cost of $250,000\",\n        \"Ongoing monthly cost of $30,000\",\n        \"Potential ROI through reduced ticket load and improved response times\",\n        \"Payback period of 12 months as required by the CFO\"\n    ],\n    \"operational_considerations\": [\n        \"Reduction in ticket load by 35% as estimated by the CTO\",\n        \"Improved response times from 11 hours to a target of 3 hours\",\n        \"Impact on support team workflows and processes\"\n    ],\n    \"people_impact\": [\n        \"Potential job losses among the 120 human agents\",\n        \"Need for retraining or upskilling of agents to work with the chatbot\"\n    ],\n    \"compliance_risks\": [\n        \"Handling of personal information in customer support tickets\",\n        \"Need for data protection and privacy measures\"\n    ],\n    \"conditions_for_approval\": [\n        \"Implementation of AI governance policies\",\n        \"Conducting a thorough data protection and privacy impact assessment\",\n        \"Development of a retraining or upskilling plan for support agents\",\n        \"Regular review and evaluation of the chatbot's performance and impact\"\n    ],\n    \"final_recommendation\": \"Approve the deployment of the GenAI chatbot for first-level support, subject to the conditions outlined above, to ensure a balanced approach to improving customer support while addressing compliance, operational, and people impact concerns.\"\n}",
+        "parsed_output": {
+            "decision": "APPROVE_WITH_CONDITIONS",
+            "rationale": "The proposed GenAI chatbot can help reduce the ticket load and improve response times, but concerns around compliance, job losses, and lack of AI governance policies need to be addressed.",
+            "financial_considerations": [
+                "Estimated implementation cost of $250,000",
+                "Ongoing monthly cost of $30,000",
+                "Potential ROI through reduced ticket load and improved response times",
+                "Payback period of 12 months as required by the CFO"
+            ],
+            "operational_considerations": [
+                "Reduction in ticket load by 35% as estimated by the CTO",
+                "Improved response times from 11 hours to a target of 3 hours",
+                "Impact on support team workflows and processes"
+            ],
+            "people_impact": [
+                "Potential job losses among the 120 human agents",
+                "Need for retraining or upskilling of agents to work with the chatbot"
+            ],
+            "compliance_risks": [
+                "Handling of personal information in customer support tickets",
+                "Need for data protection and privacy measures"
+            ],
+            "conditions_for_approval": [
+                "Implementation of AI governance policies",
+                "Conducting a thorough data protection and privacy impact assessment",
+                "Development of a retraining or upskilling plan for support agents",
+                "Regular review and evaluation of the chatbot's performance and impact"
+            ],
+            "final_recommendation": "Approve the deployment of the GenAI chatbot for first-level support, subject to the conditions outlined above, to ensure a balanced approach to improving customer support while addressing compliance, operational, and people impact concerns."
+        },
+        "valid_json": true
+    }
+]

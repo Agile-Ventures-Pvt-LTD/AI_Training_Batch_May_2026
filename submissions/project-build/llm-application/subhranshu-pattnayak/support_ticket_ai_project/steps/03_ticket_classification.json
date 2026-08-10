@@ -1,0 +1,9 @@
+{
+  "primary_category": "CANCELLATION_OR_REFUND",
+  "secondary_categories": [
+    "BILLING_ISSUE",
+    "ESCALATION_COMPLAINT"
+  ],
+  "category_reasoning_summary": "The customer reports being charged twice after cancelling a premium subscription and requests an immediate refund. This directly relates to a cancellation and refund issue, with a clear billing discrepancy (double charge) and an escalation threat (public LinkedIn post).",
+  "confidence_score": 0.96
+}

@@ -1,0 +1,27 @@
+[project]
+name = "ai-knowledge-assistant-rag"
+version = "0.1.0"
+description = "AI Knowledge Assistant for Enterprise Document Question Answering"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "bert-score==0.3.13",
+    "datasets==3.3.2",
+    "evaluate==0.4.3",
+    "groq==0.34.1",
+    "python-dotenv>=1.2.2",
+    "torch>=2.12.0",
+    "torchaudio>=2.11.0",
+    "torchvision>=0.27.0",
+    "tqdm>=4.67.3",
+    "ipykernel>=7.2.0",
+    "tiktoken==0.9.0",
+    "pypdf==5.4.0",
+    "langchain==0.3.20",
+    "langchain-community==0.3.19",
+    "langchain-chroma==0.2.2",
+    "sentence-transformers==5.1.2",
+    "langchain-cohere==0.4.5",
+    "printdirtree>=0.1.5",
+    "langchain-groq>=0.3.8",
+]

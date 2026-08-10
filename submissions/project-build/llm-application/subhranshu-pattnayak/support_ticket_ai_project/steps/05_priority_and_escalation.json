@@ -1,0 +1,14 @@
+﻿{
+  "priority": "Critical",
+  "escalation_risk": "CRITICAL",
+  "risk_triggers": [
+    "Repeated failed support attempts",
+    "Threat of public escalation on LinkedIn",
+    "Billing error (double charge after cancellation)",
+    "Premium customer status",
+    "Urgent demand for immediate resolution"
+  ],
+  "recommended_sla_action": "Escalate immediately to the Billing Support team for premium customers, request invoice ID or account email for verification, and provide a response within the shortest possible time. Do not promise a refund until verification is completed.",
+  "reasoning_summary": "The customer is a premium subscriber who has been charged twice after cancelling their subscription and has received no satisfactory response after multiple contacts. The frustration is high, with a direct threat to publicize the issue, creating significant reputational and financial risk. Given the premium tier, repeated support failures, and urgency, the ticket warrants a Critical priority and a Critical escalation risk, requiring immediate escalation to billing support and rapid verification of the charge."
+}
+

@@ -1,0 +1,58 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+eggs/
+*.egg-info/
+parts/
+sdist/
+wheels/
+pip-wheel-metadata/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+venv.bak/
+__pypackages__/
+
+# Python tooling cache
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables and secrets
+.env
+secrets.yml
+credentials.json
+
+# Logs and databases
+logs/
+*.log
+*.sqlite3
+*.sqlite
+*.db
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Misc
+.cache/
+
+# Local settings
+local_settings.py
