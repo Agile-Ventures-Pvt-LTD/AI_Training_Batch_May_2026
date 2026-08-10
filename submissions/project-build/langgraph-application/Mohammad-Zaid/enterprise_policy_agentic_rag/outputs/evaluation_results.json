@@ -1,0 +1,37 @@
+[
+    {
+        "question": "How many annual leave days can an employee carry forward? ",
+        "answer": "According to the HR leave policy (source file: hr_leave_policy.md), an employee can carry forward a maximum of 6 unused annual leave days into the next calendar year. Carry-forward leave must be used by 31 March of the next calendar year, or it will lapse unless an exception is approved by HR.",
+        "source": "hr_leave_policy"
+    },
+    {
+        "question": " Can I claim meals for same-day domestic business travel? ",
+        "answer": "For same-day domestic business travel, you may claim meals up to INR 800 per day, provided valid receipts are submitted. This information is based on the 'reimbursement_policy.md' source file.",
+        "source": "reimbursement_policy"
+    },
+    {
+        "question": "What documents are needed for hotel reimbursement? ",
+        "answer": "For hotel reimbursement, the required documents are: \n- hotel invoice\n- payment receipt\n- approved travel request\n- check-in and check-out dates\n- GST details where applicable\n\nSource file: reimbursement_policy.md",
+        "source": "reimbursement_policy.md"
+    },
+    {
+        "question": "Can I use my personal laptop for office work? ",
+        "answer": "According to the IT Security Policy (IT-SEC-001) in the it_security_policy.md document, personal laptop use is allowed only when there is a temporary business need, manager approval is obtained, IT security approval is obtained, no confidential or customer data is stored locally, and the device meets minimum security requirements. The use of personal laptops for customer data, production access, or confidential project documents requires explicit IT security approval.",
+        "source": "it_security_policy.md"
+    },
+    {
+        "question": " What approvals are needed for international travel? ",
+        "answer": "International business travel requires reporting manager approval, business unit head approval, finance approval, and travel desk confirmation before ticket booking, as stated in the travel_policy.md document.",
+        "source": "travel_policy.md"
+    },
+    {
+        "question": "Can customer data be uploaded to a public AI tool? ",
+        "answer": "According to the AI usage policy (source file: ai_usage_policy.md), customer data cannot be uploaded to a public AI tool. The policy states that \"Employees must not upload customer data, personal data, confidential company data, source code, production logs, contracts, financial data, credentials, or security findings to public AI tools.\" (Section 3, Customer Data Restriction).",
+        "source": "Not Available"
+    },
+    {
+        "question": "Will my reimbursement definitely be approved?",
+        "answer": "I could not find this in the provided documents.",
+        "source": "Not Available"
+    }
+]

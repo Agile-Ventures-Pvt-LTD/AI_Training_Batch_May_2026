@@ -1,0 +1,300 @@
+[
+    {
+        "question_id": "HQ1",
+        "user_query": "What should a board member ask about risks that could prevent Tesla from meeting production, delivery, or scaling expectations?",
+        "retrieved_hypothetical_questions": [
+            {
+                "hypothetical_question": "What are the potential risks and uncertainties that could affect Tesla's business?",
+                "parent_chunk_id": "text_911",
+                "section": "",
+                "year": "",
+                "score": ""
+            },
+            {
+                "hypothetical_question": "What are the potential risks that could harm Tesla's business, prospects, financial condition, and operating results?",
+                "parent_chunk_id": "text_918",
+                "section": "",
+                "year": "",
+                "score": ""
+            },
+            {
+                "hypothetical_question": "What are the potential risks that could harm Tesla's business, prospects, financial condition, and operating results?",
+                "parent_chunk_id": "text_919",
+                "section": "",
+                "year": "",
+                "score": ""
+            },
+            {
+                "hypothetical_question": "What are some of the risks that could harm Tesla's business, financial condition, and operating results?",
+                "parent_chunk_id": "text_204",
+                "section": "",
+                "year": "",
+                "score": ""
+            },
+            {
+                "hypothetical_question": "What are the risks related to Tesla's ability to grow its business, and how do they impact the company's financial condition and operating results?",
+                "parent_chunk_id": "text_3025",
+                "section": "",
+                "year": "",
+                "score": ""
+            }
+        ],
+        "parent_chunks_used": [
+            {
+                "chunk_id": "text_911",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": "text_918",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": "text_919",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": "text_204",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": "text_3025",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            }
+        ],
+        "final_answer": "A board member may want to ask about the following risks that could prevent Tesla from meeting production, delivery, or scaling expectations:\n\n1. Delays in launching and ramping the production of new products and features.\n2. Unforeseen supplier issues, such as unanticipated supply chain constraints, that could lead to delays or shortages.\n3. Challenges in ramping fully automated processes, such as those experienced during the initial Model 3 production ramp.\n4. The ability to control manufacturing costs, as mentioned in the report.\n5. The potential for component shortages due to single-source suppliers or global events beyond Tesla's control.\n\nThese risks are mentioned in the report as potential factors that could harm Tesla's business, financial condition, and operating results.",
+        "citations": [],
+        "comparison_with_baseline": ""
+    },
+    {
+        "question_id": "HQ2",
+        "user_query": "How should an analyst investigate the relationship between product defects, warranty or service obligations, customer trust, and brand risk?",
+        "retrieved_hypothetical_questions": [
+            {
+                "hypothetical_question": "What are the potential risks associated with defects in the company's products or features?",
+                "parent_chunk_id": "text_2284",
+                "section": "",
+                "year": "",
+                "score": ""
+            },
+            {
+                "hypothetical_question": "What are the potential risks associated with the company's products and features having latent defects or errors?",
+                "parent_chunk_id": "text_2285",
+                "section": "",
+                "year": "",
+                "score": ""
+            },
+            {
+                "hypothetical_question": "How does the company face risks associated with the potential failure of its products or features?",
+                "parent_chunk_id": "text_2285",
+                "section": "",
+                "year": "",
+                "score": ""
+            },
+            {
+                "hypothetical_question": "What is the risk of latent defects in our products that we may be unable to detect or control for?",
+                "parent_chunk_id": "text_3041",
+                "section": "",
+                "year": "",
+                "score": ""
+            },
+            {
+                "hypothetical_question": "How do we attempt to identify and address defects in our products before they are sold to customers?",
+                "parent_chunk_id": "text_3040",
+                "section": "",
+                "year": "",
+                "score": ""
+            }
+        ],
+        "parent_chunks_used": [
+            {
+                "chunk_id": "text_2284",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": "text_2285",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": "text_3041",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": "text_3040",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            }
+        ],
+        "final_answer": "The analyst should review the following information from the report: \n\n- Product defects may cause delivery delays, product recalls, product liability, breach of warranty, and consumer protection claims.\n- The company has experienced issues with certain Tesla models, including taillights, seat belt chimes, and display screens.\n- The company has a limited frame of reference to evaluate the long-term quality, reliability, durability, and performance characteristics of their products.\n- The analyst should also consider the potential consequences of external attacks on the company's software-dependent products.\n\nThis information can help the analyst investigate the relationship between product defects, warranty or service obligations, customer trust, and brand risk.",
+        "citations": [],
+        "comparison_with_baseline": ""
+    },
+    {
+        "question_id": "HQ3",
+        "user_query": "What evidence helps determine whether future cash flow depends more on capital expenditure discipline, working capital, or operating income?",
+        "retrieved_hypothetical_questions": [
+            {
+                "hypothetical_question": "What are the significant factors that affect our cash flows from operating activities, and how do they compare to previous years?",
+                "parent_chunk_id": "text_3124",
+                "section": "",
+                "year": "",
+                "score": ""
+            },
+            {
+                "hypothetical_question": "What are the primary drivers of the company's cash flows from operating activities?",
+                "parent_chunk_id": "text_1037",
+                "section": "",
+                "year": "",
+                "score": ""
+            },
+            {
+                "hypothetical_question": "What are the primary drivers of the company's cash flows from investing activities?",
+                "parent_chunk_id": "text_1038",
+                "section": "",
+                "year": "",
+                "score": ""
+            },
+            {
+                "hypothetical_question": "What are the main drivers of the company's cash flows from operating activities?",
+                "parent_chunk_id": "text_331",
+                "section": "",
+                "year": "",
+                "score": ""
+            },
+            {
+                "hypothetical_question": "What are the key factors that will impact the company's future cash outflows?",
+                "parent_chunk_id": "text_336",
+                "section": "",
+                "year": "",
+                "score": ""
+            }
+        ],
+        "parent_chunks_used": [
+            {
+                "chunk_id": "text_3124",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": "text_1037",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": "text_1038",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": "text_331",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": "text_336",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            }
+        ],
+        "final_answer": "The evidence that helps determine whether future cash flow depends more on capital expenditure discipline, working capital, or operating income includes:\n\n- The increase in capital expenditures from $1.33 billion in 2019 to $3.16 billion in 2020, mainly for Model Y production expansion and construction of new Gigafactories.\n- The decrease in net cash provided by operating activities from $14.72 billion in 2022 to $13.26 billion in 2023, primarily due to the decrease in net income excluding non-cash expenses, gains, and losses.\n- The significant impact of working capital, especially inventory, on cash flows from operating activities, as mentioned in the report.\n- The mention of operating lease payments and interest payments on financings as offsetting cash inflows from operating activities.\n\nThese factors suggest that future cash flow may depend on a combination of capital expenditure discipline, working capital management, and operating income.",
+        "citations": [],
+        "comparison_with_baseline": ""
+    },
+    {
+        "question_id": "HQ4",
+        "user_query": "Which disclosures help evaluate technology, cybersecurity, data, or AI operational risk even if the user does not explicitly say cybersecurity?",
+        "retrieved_hypothetical_questions": [
+            {
+                "hypothetical_question": "What are the conditions under which information is disclosed?",
+                "parent_chunk_id": "text_740",
+                "section": "",
+                "year": "",
+                "score": ""
+            },
+            {
+                "hypothetical_question": "What is the purpose of evaluating disclosure controls and procedures?",
+                "parent_chunk_id": "text_551",
+                "section": "",
+                "year": "",
+                "score": ""
+            },
+            {
+                "hypothetical_question": "What is the purpose of evaluating disclosure controls and procedures?",
+                "parent_chunk_id": "text_1252",
+                "section": "",
+                "year": "",
+                "score": ""
+            },
+            {
+                "hypothetical_question": "What are the key components of evaluating the effectiveness of disclosure controls and procedures?",
+                "parent_chunk_id": "text_870",
+                "section": "",
+                "year": "",
+                "score": ""
+            },
+            {
+                "hypothetical_question": "What is the purpose of the evaluation of disclosure controls and procedures?",
+                "parent_chunk_id": "text_3264",
+                "section": "",
+                "year": "",
+                "score": ""
+            }
+        ],
+        "parent_chunks_used": [
+            {
+                "chunk_id": "text_740",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": "text_551",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": "text_1252",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": "text_870",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            },
+            {
+                "chunk_id": "text_3264",
+                "source_doc": "Tesla Annual Report",
+                "section": "",
+                "year": ""
+            }
+        ],
+        "final_answer": "The disclosures that help evaluate technology, cybersecurity, data, or AI operational risk are:\n\n- (b) Designed such internal control over financial reporting, or caused such internal control over financial reporting to be designed under our supervision, to provide reasonable assurance regarding the reliability of financial reporting and the preparation of financial statements for external purposes in accordance with generally accepted accounting principles;\n\n- (c) Evaluated the effectiveness of the registrant’s disclosure controls and procedures and presented in this report our conclusions about the effectiveness of the disclosure controls and procedures, as of the end of the period covered by this report based on such evaluation;\n\n- (d) Disclosed in this report any change in the registrant’s internal control over financial reporting that occurred during the registrant’s most recent fiscal quarter (the registrant’s fourth fiscal quarter in the case of an annual report) that has materially affected, or is reasonably likely to materially affect, the registrant’s internal control over financial reporting;\n\n- (a) All significant deficiencies and material weaknesses in the design or operation of internal control over financial reporting which are reasonably likely to adversely affect the registrant’s ability to record, process, summarize and report financial information; and\n\n- (b) Any fraud, whether or not material, that involves management or other employees who have a significant role in the registrant’s internal control over financial reporting.",
+        "citations": [],
+        "comparison_with_baseline": ""
+    }
+]

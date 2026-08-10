@@ -1,0 +1,13 @@
+{
+  "individual_answers": [
+    37.5,
+    37.5,
+    37.5
+  ],
+  "final_reimbursable_amount": 37.5,
+  "consistency_count": {
+    "37.5": 3
+  },
+  "final_decision": "Approved for reimbursement up to $37.5",
+  "reasoning_summary": "Base meal limit $60 increased 25% for international travel to $75. Same-day travel >8h without overnight reduces claim to 50% of daily limit = $37.5. Alcohol ($12) is excluded, leaving $58 eligible expenses. Receipts are provided, satisfying the >$25 receipt rule. The eligible amount exceeds the $37.5 limit, so reimbursement is capped at $37.5. All reasoning paths arrived at the same amount."
+}

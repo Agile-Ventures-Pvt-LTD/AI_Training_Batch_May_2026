@@ -1,0 +1,53 @@
+{
+  "rephrased_requirement": "Develop a secure, high-performance AI feature that lets authenticated users upload files, extracts the content, and enables them to ask natural-language questions about the uploaded material, returning accurate answers while protecting data privacy.",
+  "functional_requirements": [
+    "Provide a web UI and API endpoint for users to upload files.",
+    "Validate uploaded file types and enforce size limits.",
+    "Scan uploaded files for malware before processing.",
+    "Extract text/content from supported file formats (PDF, DOCX, TXT, images via OCR).",
+    "Store extracted content in a searchable vector store.",
+    "Expose an endpoint for users to submit natural-language queries referencing their uploaded files.",
+    "Generate answers using a Retrieval-Augmented Generation (RAG) pipeline that combines the vector store with a large language model.",
+    "Return the answer with source citations and confidence scores.",
+    "Allow users to delete their uploaded files and associated data."
+  ],
+  "non_functional_requirements": [
+    "Response latency for a query must be ≤ 2 seconds for 95 % of requests.",
+    "File upload latency must be ≤ 5 seconds for files up to 10 MB.",
+    "System must handle at least 200 concurrent users with graceful degradation.",
+    "99.9 % monthly uptime SLA.",
+    "Scalable architecture to support growth in file volume and query load."
+  ],
+  "security_requirements": [
+    "All data in transit must be encrypted with TLS 1.3.",
+    "Data at rest must be encrypted using AES-256.",
+    "User authentication via OAuth 2.0 / OpenID Connect with JWT tokens.",
+    "Authorization checks to ensure users can only access their own files and queries.",
+    "Automated malware scanning (e.g., ClamAV) on every uploaded file.",
+    "Isolation of processing environments (container sandbox) to prevent code execution from malicious files.",
+    "Audit logging of upload, query, and delete actions.",
+    "Compliance with GDPR / CCPA – ability to purge user data on request.",
+    "Annual penetration testing and adherence to ISO 27001 controls."
+  ],
+  "acceptance_criteria": [
+    "A user can successfully upload a supported file and receive a confirmation within the defined latency.",
+    "Malware-infected files are rejected and logged.",
+    "After upload, the user can ask at least three distinct questions and receive answers with source citations within 2 seconds.",
+    "Answer accuracy on a curated test set of 100 questions is ≥ 90 % (precision) and hallucination rate ≤ 5 %.",
+    "All data transfers are encrypted; storage encryption can be verified via bucket policies.",
+    "Only the file owner can retrieve or delete the file; attempts by other users are denied with a 403 response.",
+    "System meets the defined performance benchmarks under a simulated load of 200 concurrent users.",
+    "Audit logs contain timestamped entries for every upload, query, and delete operation."
+  ],
+  "recommended_solution_approach": "Implement a cloud-native RAG service. Use object storage (e.g., AWS S3) with presigned URLs for secure uploads, trigger a Lambda/Cloud Function to run virus scanning and content extraction, then index the text in a managed vector database (e.g., Pinecone or OpenSearch k-NN). Deploy a containerized LLM inference service (or use a managed LLM API) behind an API Gateway with OAuth2/JWT authentication. Cache recent query results in Redis to meet latency targets. Employ Terraform for IaC, CI/CD pipelines for automated testing, and monitoring via Prometheus/Grafana with alerts on latency and security events.",
+  "open_questions": [
+    "What is the maximum allowed file size and which additional file formats should be supported?",
+    "Should the solution use a third-party LLM (e.g., OpenAI) or a self-hosted model, and what are the cost constraints?",
+    "What is the expected retention period for uploaded files and extracted embeddings?",
+    "Are there any specific regulatory compliance requirements beyond GDPR/CCPA (e.g., HIPAA)?",
+    "What authentication provider will be used (e.g., Azure AD, Okta)?",
+    "Is there a preferred cloud provider or must the solution be multi-cloud/on-premise?",
+    "What is the budget for compute resources, especially for vector storage and LLM inference?",
+    "How will answer quality be measured and who will maintain the benchmark dataset?"
+  ]
+}

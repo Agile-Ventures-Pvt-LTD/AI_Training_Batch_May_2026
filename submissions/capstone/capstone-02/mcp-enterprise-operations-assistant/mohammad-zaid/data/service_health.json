@@ -1,0 +1,101 @@
+{
+  "services": [
+    {
+      "service_name": "Payment API",
+      "service_id": "SVC-PAY-01",
+      "status": "UNHEALTHY",
+      "region": "India-West",
+      "error_rate_percent": 38.0,
+      "average_latency_ms": 1850,
+      "cpu_usage_percent": 42,
+      "memory_usage_percent": 61,
+      "last_checked": "2026-07-08T10:00:00",
+      "active_incident_ids": [
+        "INC-OPS-101"
+      ]
+    },
+    {
+      "service_name": "Checkout Service",
+      "service_id": "SVC-CHK-02",
+      "status": "DEGRADED",
+      "region": "India-West",
+      "error_rate_percent": 12.0,
+      "average_latency_ms": 920,
+      "cpu_usage_percent": 67,
+      "memory_usage_percent": 74,
+      "last_checked": "2026-07-08T10:00:00",
+      "active_incident_ids": [
+        "INC-OPS-102"
+      ]
+    },
+    {
+      "service_name": "Order Service",
+      "service_id": "SVC-ORD-03",
+      "status": "HEALTHY",
+      "region": "India-West",
+      "error_rate_percent": 0.8,
+      "average_latency_ms": 210,
+      "cpu_usage_percent": 36,
+      "memory_usage_percent": 48,
+      "last_checked": "2026-07-08T10:00:00",
+      "active_incident_ids": []
+    },
+    {
+      "service_name": "Identity Service",
+      "service_id": "SVC-IDN-04",
+      "status": "HEALTHY",
+      "region": "India-South",
+      "error_rate_percent": 0.4,
+      "average_latency_ms": 180,
+      "cpu_usage_percent": 31,
+      "memory_usage_percent": 45,
+      "last_checked": "2026-07-08T10:00:00",
+      "active_incident_ids": []
+    },
+    {
+      "service_name": "Notification Service",
+      "service_id": "SVC-NTF-05",
+      "status": "HEALTHY",
+      "region": "India-West",
+      "error_rate_percent": 1.1,
+      "average_latency_ms": 260,
+      "cpu_usage_percent": 39,
+      "memory_usage_percent": 51,
+      "last_checked": "2026-07-08T10:00:00",
+      "active_incident_ids": []
+    }
+  ],
+  "incidents": [
+    {
+      "incident_id": "INC-OPS-101",
+      "service_name": "Payment API",
+      "severity": "SEV-1",
+      "status": "ACTIVE",
+      "started_at": "2026-07-08T09:55:00",
+      "summary": "Payment processing requests are experiencing elevated timeout failures.",
+      "customer_impact": "Customers may be unable to complete card payments.",
+      "assigned_group": "Application Support"
+    },
+    {
+      "incident_id": "INC-OPS-102",
+      "service_name": "Checkout Service",
+      "severity": "SEV-2",
+      "status": "ACTIVE",
+      "started_at": "2026-07-08T09:40:00",
+      "summary": "Checkout requests are slower than normal with intermittent failures.",
+      "customer_impact": "Some customers may experience delayed checkout completion.",
+      "assigned_group": "Platform Operations"
+    },
+    {
+      "incident_id": "INC-OPS-099",
+      "service_name": "Notification Service",
+      "severity": "SEV-3",
+      "status": "RESOLVED",
+      "started_at": "2026-07-07T14:10:00",
+      "resolved_at": "2026-07-07T15:05:00",
+      "summary": "Email notification delivery was delayed.",
+      "customer_impact": "Order confirmation emails were delayed.",
+      "assigned_group": "Messaging Support"
+    }
+  ]
+}

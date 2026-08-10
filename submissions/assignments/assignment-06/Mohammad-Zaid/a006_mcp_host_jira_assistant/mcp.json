@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "jira": {
+            "command": "python",
+            "args": [
+                "C:\\Training\\Assignments\\AI_Training_Batch_May_2026\\submissions\\assignments\\assignment-06\\Mohammad-Zaid\\a006_mcp_host_jira_assistant\\server\\jira_mcp_server.py"
+            ]
+        }
+    }
+}
+

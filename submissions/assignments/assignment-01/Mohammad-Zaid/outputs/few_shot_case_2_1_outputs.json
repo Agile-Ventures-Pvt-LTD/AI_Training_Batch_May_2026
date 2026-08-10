@@ -1,0 +1,32 @@
+[
+  {
+    "ticket": "The billing portal shows incorrect charges for last month.",
+    "category": "BILLING_ISSUE",
+    "priority": "MEDIUM",
+    "justification": "Incorrect charges displayed in billing portal"
+  },
+  {
+    "ticket": "Our VPN stopped working after the latest patch.",
+    "category": "TECHNICAL_BUG",
+    "priority": "HIGH",
+    "justification": "VPN functionality broken after update, impacting operations"
+  },
+  {
+    "ticket": "Please add dark mode to the dashboard.",
+    "category": "FEATURE_REQUEST",
+    "priority": "MEDIUM",
+    "justification": "Feature request for UI theme (dark mode)"
+  },
+  {
+    "ticket": "I am worried that your system is storing my personal ID without consent.",
+    "category": "COMPLIANCE_CONCERN",
+    "priority": "HIGH",
+    "justification": "Potential data privacy violation concern"
+  },
+  {
+    "ticket": "My account was disabled suddenly and I cannot log in.",
+    "category": "ACCOUNT_ACCESS",
+    "priority": "HIGH",
+    "justification": "Account disabled, unable to access"
+  }
+]

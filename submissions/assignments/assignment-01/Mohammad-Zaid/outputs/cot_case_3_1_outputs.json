@@ -1,0 +1,15 @@
+{
+  "incremental_revenue_range": "$80,000 - $140,000 per month",
+  "incremental_gross_profit_range": "$32,000 - $56,000 per month",
+  "monthly_net_benefit_range": "$2,000 - $26,000 per month",
+  "payback_period_range_months": "6.9 - 90 months",
+  "decision": "APPROVE_WITH_CONDITIONS",
+  "reasoning_summary": "The AI engine could generate $80k-$140k extra revenue monthly (40% margin = $32k-$56k gross profit). After subtracting $30k monthly operating costs, net benefit ranges from $2k to $26k. At the low end, payback of the $180k implementation cost would take ~90 months, far beyond the 12-month requirement; at the high end it would be ~7 months, meeting the target. Because the outcome is uncertain and the worst-case fails the leadership criterion, approval should be conditional on securing a higher-confidence uplift (e.g., minimum 5% revenue lift) or reducing costs.",
+  "key_assumptions": [
+    "Revenue uplift of 4%-7% applies consistently each month after go-live.",
+    "Gross margin remains constant at 40% for incremental sales.",
+    "Monthly AI infrastructure ($22k) and maintenance ($8k) costs are fixed.",
+    "No additional hidden costs or revenue cannibalization.",
+    "Implementation cost is incurred upfront and not amortized."
+  ]
+}

@@ -1,0 +1,101 @@
+{
+    "ticket_summary": {
+        "short_summary": "Premium customer charged twice after cancelling subscription",
+        "customer_problem": "Incorrect double charge after subscription cancellation",
+        "business_impact": "Potential public escalation on LinkedIn and blockage of future payments",
+        "customer_requested_action": "Immediate refund of incorrect charge",
+        "important_context": [
+            "Customer is a premium subscriber",
+            "Previous support interactions were unresponsive",
+            "Customer cancelled subscription last month"
+        ],
+        "missing_information": [
+            "Invoice amount",
+            "Exact dates of support interactions",
+            "Cancellation confirmation details"
+        ]
+    },
+    "classification": {
+        "primary_category": "BILLING_ISSUE",
+        "secondary_categories": [
+            "ESCALATION_COMPLAINT"
+        ],
+        "category_reasoning_summary": "The customer was charged twice and did not receive a proper response from support, which led to the threat of public escalation.",
+        "confidence_score": 0.9
+    },
+    "sentiment_analysis": {
+        "sentiment": "NEGATIVE",
+        "emotion_signals": [
+            "FRUSTRATION"
+        ],
+        "sentiment_reasoning_summary": "The customer expresses frustration due to being charged twice and not receiving a proper response from support.",
+        "confidence_score": 0.95
+    },
+    "priority_and_risk": {
+        "priority": "HIGH",
+        "escalation_risk": "HIGH",
+        "risk_triggers": [
+            "public escalation on LinkedIn",
+            "block future payments"
+        ],
+        "recommended_sla_action": "IMMEDIATE_RESPONSE",
+        "reasoning_summary": "The customer has threatened public escalation and blockage of future payments if the issue is not resolved immediately."
+    },
+    "sensitive_information_check": {
+        "sensitive_information_detected": true,
+        "sensitive_categories": [
+            "PAYMENT_INFORMATION",
+            "FINANCIAL_INFORMATION"
+        ],
+        "evidence_summary": "The customer mentions being charged twice, noticing duplicate invoice amounts on their bank statement, and threatens to involve their finance team to block future payments.",
+        "handling_recommendations": [
+            "Handle the ticket with priority due to the customer's premium status and the sensitive nature of the issue.",
+            "Verify the customer's subscription and payment history to resolve the charging issue.",
+            "Provide a timely refund for the incorrect charge and ensure the customer's billing information is updated correctly."
+        ]
+    },
+    "routing_recommendation": {
+        "recommended_team": "BILLING_SUPPORT",
+        "routing_reason": "The customer is experiencing a billing issue with a duplicate charge and requires assistance with a refund.",
+        "internal_note": "The customer has previously contacted support and did not receive a proper response, indicating a need for urgent attention due to their premium status and threat of public escalation.",
+        "required_follow_up_information": [
+            "Invoice details",
+            "Cancellation confirmation of premium subscription",
+            "Previous support ticket IDs"
+        ]
+    },
+    "draft_customer_response": {
+        "draft_response": "Dear Amit, thank you for reaching out to us about the issue with your premium subscription. We apologize for the frustration caused by the duplicate charge and the lack of response from our support team. We understand that you cancelled your subscription last month and were charged again this month. We are looking into this matter and would like to assist you in resolving the issue. Could you please provide us with your subscription ID and the invoice numbers for the duplicate charges so we can investigate further?",
+        "response_strategy": "Acknowledge and investigate",
+        "assumptions": [
+            "The customer has indeed cancelled their subscription",
+            "The customer has been charged twice for the same invoice amount"
+        ],
+        "information_needed_before_sending": [
+            "Subscription ID",
+            "Invoice numbers for the duplicate charges"
+        ]
+    },
+    "response_quality_review": {
+        "empathy_score": 8,
+        "correctness_score": 9,
+        "actionability_score": 8,
+        "policy_safety_score": 9,
+        "tone_alignment_score": 9,
+        "completeness_score": 8,
+        "strengths": [
+            "Acknowledges customer's issue and frustration",
+            "Clearly states the response strategy",
+            "Requests necessary information to investigate further"
+        ],
+        "improvement_areas": [
+            "Could provide a more detailed explanation of the investigation process",
+            "May benefit from a more personalized apology",
+            "Does not provide a clear timeline for resolution"
+        ],
+        "final_review_summary": "The response is empathetic, correct, and actionable, but could be improved with more details on the investigation process and a personalized apology."
+    },
+    "generation_metadata": {
+        "model_used": "llama-3.3-70b-versatile"
+    }
+}

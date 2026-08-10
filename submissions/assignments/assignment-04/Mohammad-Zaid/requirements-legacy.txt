@@ -1,0 +1,11 @@
+# requirements-legacy.txt
+
+langchain==0.3.27 
+langchain-core >= 5.9.1
+langchain-community >= 0.3.31
+langchain-groq >= 0.3.8
+groq >= 0.37.1
+python-dotenv >= 1.2.2
+ipykernel >= 7.3.0
+pytest >= 9.0.3
+streamlit >= 1.58.0

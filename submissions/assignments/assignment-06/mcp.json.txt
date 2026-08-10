@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "atlassian-rovo-mcp": {
+      "url": "https://mcp.atlassian.com/v1/mcp",
+      "headers": {
+        "Authorization": "cmV2aWV3YW5kZWFybjA5MkBnbWFpbC5jb206QVRBVFQzeEZmR0YwbXNyMGxmdFV0QVFuVEFfbkdh
+SVlXQlphSklrZWg2UDFzOXl6V2hqaWpUZ0J3dDZ6clBkaV9Yci1HOE42c3kwY0FkTEFpQk0xUWVE
+T2ZSX2ZmN29Wc3VUQUZhQjF0ME1SOHlWZWVhQkZUaTdyNzJFa2NoMGZjZ3QtdGVtRlczem9rcVBB
+dUFIS2s2MUxBbmtHUlVYamtMY1dpMGNzRnpUR21MM2Q1N3VkWlZZPUJFQjVGOTZB
+"
+      }
+    }
+  }
+}

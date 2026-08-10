@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment files
+.env
+
+# Project data and local vector stores
+data/
+file_path/
+logs/
+outputs/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/

@@ -1,0 +1,49 @@
+{
+    "incident_id": "INC-003",
+    "original_incident_summary": "Cargo SH-4208 contains 700 tons of industrial machinery. The primary maritime route is unavailable and delivery was planned for WH-EAST-101.",
+    "parsed_metadata": {
+        "shipment_id": "SH-4208",
+        "cargo_weight_tons": 700,
+        "cargo_type": "industrial machinery",
+        "target_warehouse_id": "WH-EAST-101",
+        "has_perishables": false,
+        "maximum_tolerable_delay_hours": null
+    },
+    "rag_validation_rules_applied": [
+        "A warehouse operating above 85 percent utilization cannot accept a new automated cargo shipment.",
+        "",
+        "Cargo exceeding 500 tons and routed through Port-South requires a WAREHOUSE_FIT_CHECK.",
+        "",
+        "delay must be classified as CRITICAL_DELAY."
+    ],
+    "routes_evaluated": [
+        {
+            "route_id": "ROUTE-WEST-01",
+            "decision": "ROUTE_CLARIFICATION",
+            "reason": "Warehouse risk is ELEVATED."
+        },
+        {
+            "route_id": "ROUTE-SOUTH-02",
+            "decision": "OPTIMAL_PATH_FOUND",
+            "reason": "Warehouse and the route conditions are acceptable."
+        }
+    ],
+    "final_selected_route": {
+        "route_id": "ROUTE-SOUTH-02",
+        "alternative_port": "Port-South",
+        "warehouse_id": "WH-SOUTH-303",
+        "added_delay_hours": 72
+    },
+    "queried_warehouse_metrics": {
+        "warehouse_name": "Southern Distribution Hub",
+        "current_utilization_pct": 72,
+        "operational_status": "ACTIVE",
+        "risk_tier": "NORMAL"
+    },
+    "graph_routing_metadata": {
+        "loops_executed": 1,
+        "final_decision_state": "OPTIMAL_PATH_FOUND",
+        "reroute_impact_score": 0
+    },
+    "final_operations_brief": "- Cargo SH‑4208 (700 t industrial machinery) rerouted from unavailable primary sea lane to **ROUTE‑SOUTH‑02**, off‑loading at **Port‑South** and forwarding to **WH‑SOUTH‑303**.  \n- Added transit time: **72 h**, classified as **CRITICAL_DELAY**.  \n- Because the load exceeds 500 t and uses Port‑South, a **WAREHOUSE_FIT_CHECK** is required to verify WH‑SOUTH‑303 can accommodate the shipment (must be ≤ 85 % utilization)."
+}

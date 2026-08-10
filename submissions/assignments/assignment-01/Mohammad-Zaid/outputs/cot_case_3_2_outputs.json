@@ -1,0 +1,25 @@
+{
+  "identified_risks": [
+    "Cross-border data processing without residency guarantees creates potential violations of data sovereignty laws (e.g., GDPR, CCPA).",
+    "Absence of GDPR, HIPAA, or ISO 27001 references raises non-compliance risk for EU personal data and protected health information.",
+    "Only SOC 2 Type I certification provides limited assurance; lack of Type II or additional certifications reduces confidence in security controls.",
+    "No defined breach notification timeline may breach regulatory requirements (e.g., GDPR 72-hour rule, HIPAA 60-day rule).",
+    "Vendor’s right to use customer data for model training unless opted out may conflict with consent requirements and data minimisation principles.",
+    "SLA of 99.5% uptime is below typical enterprise expectations (often 99.9%+), potentially impacting service availability commitments."
+  ],
+  "missing_information": [
+    "Explicit data residency or localisation guarantees.",
+    "Commitment to GDPR, HIPAA, or other relevant regulatory frameworks.",
+    "ISO 27001 certification or equivalent security standards.",
+    "SOC 2 Type II audit results or ongoing monitoring details.",
+    "Defined breach notification timeframe and incident response procedures.",
+    "Data retention and deletion policies.",
+    "List of sub-processors and rights to audit them.",
+    "Encryption standards for data at rest and in transit.",
+    "Cyber-insurance coverage details.",
+    "Opt-in mechanism for model-training usage of customer data."
+  ],
+  "decision": "APPROVE_WITH_CONDITIONS",
+  "reasoning_summary": "The contract lacks critical safeguards around data residency, regulatory compliance (GDPR/HIPAA), and breach notification, and relies on a limited SOC 2 Type I certification. These gaps expose the organization to legal, privacy, and security risks. Approval is possible only if the vendor adds contractual clauses that (1) guarantee data residency or provide adequate transfer mechanisms, (2) commit to GDPR/HIPAA compliance and obtain relevant certifications (ISO 27001, SOC 2 Type II), (3) define a breach notification timeline (e.g., 72 hours), (4) require explicit opt-in for model-training use of data, (5) improve SLA uptime, and (6) disclose missing security and operational details.",
+  "confidence": 0.86
+}

@@ -1,0 +1,23 @@
+{
+  "risk_level": "HIGH",
+  "key_risk_factors": [
+    "Multi-tenant cloud, no residency controls",
+    "SOC 2 Type I only",
+    "Customer data used for training",
+    "Limited maturity, 18 months",
+    "Small enterprise base, 12 customers",
+    "Unclear API rate limits",
+    "SLA below 99.9%"
+  ],
+  "missing_information": [
+    "Data retention policy",
+    "Breach notification timeline",
+    "Encryption algorithm details",
+    "Incident response plan",
+    "Data deletion procedures",
+    "GDPR/CCPA compliance status",
+    "Disaster recovery plan"
+  ],
+  "business_recommendation": "Proceed with caution; require data residency guarantees, SOC 2 Type II audit, and explicit data-usage opt-out terms before contracting.",
+  "confidence_score": 0.78
+}
