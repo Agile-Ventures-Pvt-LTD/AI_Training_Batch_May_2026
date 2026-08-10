@@ -1,0 +1,8 @@
+﻿ASM-0001,REQ-HIST-01,APP-003,2026-06-15,Important,Meets,Meets,Configured,Configured,Success,0,0,1,1,Ready with Minor Gaps,Low,Completed,Yes,Yes,2026-06-15
+ASM-0002,REQ-HIST-02,APP-001,2026-05-20,Mission Critical,Gap,Gap,Configured,Not Configured,Success,1,2,1,0,High Risk,Critical,Completed,Yes,Yes,2026-05-20
+ASMT-20260731-001,REQ-20260731-001,APP-001,2026-07-31,Mission Critical,Not Met,Not Met,Yes,No,Non-Compliant,2,2,1,0,High Risk,P1 – Immediate Attention,Completed,Yes,Pending,2026-07-31
+ASMT-APP-001,,APP-001,2026-07-31,Mission Critical,Exceeds Requirement,Exceeds Requirement,Pending,No DR Configuration,,,,,,High Risk,High,Completed,,No,2026-07-31
+ASMT-APP-001,,APP-001,2026-07-31,,,,,,,,,,,High Risk,,Completed,,,2026-07-31
+ASMT-APP-001,,APP-001,2026-07-31,Tier-1,Not achievable,Not achievable,,,,,,,,High Risk,Immediate,Completed,,Pending,2026-07-31
+ASMT-APP-001,,APP-001,2026-07-31,Mission Critical,Not Achieved,Not Achieved,,,,,,,,High Risk,High,Completed,,,2026-07-31
+ASMT-APP-001,,APP-001,2026-07-31,,,,,,,3,2,1,0,High Risk,Immediate,Completed,,,2026-07-31

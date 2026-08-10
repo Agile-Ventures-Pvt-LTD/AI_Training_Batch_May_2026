@@ -1,0 +1,42 @@
+[
+  {
+    "question": "Amit says VPN times out after MFA approval. What should we check and what is the next action?",
+    "status": "success",
+    "response": "Issue Type: VPN\nDiagnosis Summary: The user, Amit, is experiencing VPN timeouts after MFA approval. \nEvidence Used: classify_issue_type, get_user_profile, get_device_status, check_known_incidents, run_diagnostic_check, get_ticket_details, retrieve_troubleshooting_steps\nRecommended Steps: Check the VPN client version and ensure it is up-to-date. Restart the VPN client and try reconnecting. If the issue persists, try resetting the VPN client settings to default. \nEscalation Required and Group: Yes, Network Support\nSafety Notes: Ensure that the user's account status and MFA status are valid and not causing the issue. \nConfidence Level: MEDIUM"
+  },
+  {
+    "question": "Priya's laptop is very slow after startup. Diagnose the likely issue.",
+    "status": "success",
+    "response": "Issue Type: LAPTOP_PERFORMANCE\nDiagnosis Summary: The issue is likely related to laptop performance, possibly due to slow startup.\nEvidence Used: \n- The issue type was classified as LAPTOP_PERFORMANCE with medium confidence.\n- User profile of Priya was retrieved, showing her department, location, and account status.\n- No device status or diagnostic snapshot was found for Priya's user ID.\n- No known incidents were found.\nRecommended Steps: \n- Check for any recently installed software or updates that may be causing the slow startup.\n- Run a disk cleanup and disk defragmentation to free up space and improve performance.\n- Consider upgrading the laptop's RAM or replacing the hard drive with a solid-state drive (SSD) for better performance.\nEscalation Required and Group: \n- If the issue persists after trying the recommended steps, escalation to the Endpoint Support group may be necessary.\nSafety Notes: \n- Be cautious when installing any new software or updates to avoid introducing malware or other security risks.\n- Make sure to back up important data before attempting any hardware upgrades or replacements.\nConfidence Level: Medium\n\nPlease note that the confidence level is medium due to the lack of device status and diagnostic snapshot information. Further investigation and analysis may be necessary to provide a more accurate diagnosis and recommendation."
+  },
+  {
+    "question": "David cannot login and password reset email is not received. What should be done?",
+    "status": "success",
+    "response": "Issue Type: PASSWORD_RESET\nDiagnosis Summary: David's account is locked and he is not receiving the password reset email. \nEvidence Used: The troubleshooting guide for password reset, David's user profile, and the diagnostic snapshot show that David's account is locked and he is having trouble accessing webmail and internal apps.\nRecommended Steps: Try unlocking David's account and check if the password reset email is being sent to his spam folder or being blocked by the company's email filter. If the issue persists, contact the Email Support team for further assistance. \nEscalation Required and Group: Yes, Email Support.\nSafety Notes: Be cautious when unlocking accounts and ensure that the password reset email is being sent to the correct email address to avoid any security risks.\nConfidence Level: HIGH"
+  },
+  {
+    "question": "Sara's VPN disconnects frequently. What is the likely reason?",
+    "status": "error",
+    "error": "Error code: 400 - {'error': {'message': \"Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\", 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '<function=classify_issue_type{\"query\": \"Sara\\'s VPN disconnects frequently\"}</function>\\n'}}"
+  },
+  {
+    "question": "Outlook is not syncing for Emily but webmail works. What is the next step?",
+    "status": "success",
+    "response": "Issue Type: OUTLOOK_EMAIL\nDiagnosis Summary: The issue is likely related to the Outlook client configuration or a local issue on Emily's laptop, as webmail is working fine. \nEvidence Used: User profile, device status, known incidents, and diagnostic snapshots.\nRecommended Steps: Try restarting the Outlook client, check for any pending updates, and ensure the correct account settings are in place. If the issue persists, consider reinstalling the Outlook client or seeking further assistance from the Endpoint Support team.\nEscalation Required and Group: Not required at this stage, but may be needed if the issue persists after trying the recommended steps. The Endpoint Support team would be the relevant group for escalation.\nSafety Notes: Ensure that any troubleshooting steps taken do not compromise the security of Emily's device or account.\nConfidence Level: Medium-High, as the diagnosis is based on the information provided and the assumption that the issue is local to Emily's laptop. Further investigation may be needed to confirm the root cause."
+  },
+  {
+    "question": "Which active known incidents may affect VPN users?",
+    "status": "success",
+    "response": "There is one active known incident (INC-4001) affecting the VPN Gateway service in the India-West region, with high severity and an active status. The incident causes VPN gateway latency, resulting in timeouts for some users. A workaround is provided, suggesting that users switch to the India-South gateway if available."
+  },
+  {
+    "question": "Create a ticket summary for Rahul's laptop performance issue.",
+    "status": "error",
+    "error": "Error code: 400 - {'error': {'message': \"Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\", 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '<function=retrieve_troubleshooting_steps>{\"issue_type\": \"LAPTOP_PERFORMANCE\", \"query\": \"Rahul\\\\\\'s laptop performance issue\"}</function>'}}"
+  },
+  {
+    "question": "My email is slow. Fix it.",
+    "status": "success",
+    "response": "I apologize, but I was unable to retrieve the necessary information to diagnose your issue. Please provide more details such as your user ID or email address so I can assist you further."
+  }
+]

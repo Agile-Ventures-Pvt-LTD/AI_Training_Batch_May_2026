@@ -1,0 +1,32 @@
+[
+  {
+    "ticket": "I was charged twice this month and your support team has not replied for five days. I am going to post this on social media if this is not fixed today.",
+    "category": "ESCALATION_RISK",
+    "priority": "URGENT",
+    "justification": "Billing issue combined with escalation threat and angry tone, requires immediate attention to prevent reputational damage."
+  },
+  {
+    "ticket": "The export button stopped working after your latest update. Our reporting team is blocked.",
+    "category": "TECHNICAL_BUG",
+    "priority": "HIGH",
+    "justification": "Technical bug blocking access to a critical feature, impacts business operations, and requires prompt resolution."
+  },
+  {
+    "ticket": "Can you add approval workflows before invoices are submitted?",
+    "category": "FEATURE_REQUEST",
+    "priority": "MEDIUM",
+    "justification": "Feature request to enhance workflow efficiency, not blocking, but has potential ROI and change-management implications, warrants consideration."
+  },
+  {
+    "ticket": "We need confirmation that our customer data is not being used to train your AI models.",
+    "category": "COMPLIANCE_CONCERN",
+    "priority": "HIGH",
+    "justification": "Compliance concern with potential regulatory implications, requires prompt attention to ensure data governance and adherence to privacy standards."
+  },
+  {
+    "ticket": "My admin account is locked and the password reset email never arrives.",
+    "category": "ACCOUNT_ACCESS",
+    "priority": "MEDIUM",
+    "justification": "Account access issue, polite tone, and no escalation threat, but requires timely resolution to prevent administrative disruptions."
+  }
+]

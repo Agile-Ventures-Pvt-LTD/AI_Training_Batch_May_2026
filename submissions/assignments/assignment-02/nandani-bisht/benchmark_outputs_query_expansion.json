@@ -1,0 +1,928 @@
+[
+  {
+    "question_id": "Q1",
+    "original_query": "Does Tesla's growth story appear more constrained by external supply risk or internal execution and cost structure? Use evidence across Risk Factors and MD&A.",
+    "expanded_queries": [
+      "Does Tesla's growth story appear more constrained by external supply risk or internal execution and cost structure? Use evidence across Risk Factors and MD&A.",
+      "Is Tesla's expansion trajectory more limited by external supply chain vulnerabilities or internal operational inefficiencies and cost management?",
+      "To what extent do external supply chain disruptions and internal operational challenges impede Tesla's growth prospects?",
+      "How do internal cost structure and operational execution risks compare to external supply chain risks in constraining Tesla's growth trajectory?"
+    ],
+    "baseline_top_chunks": [
+      {
+        "chunk_id": "doc_337",
+        "section": "",
+        "year": "2019",
+        "score": null,
+        "text": "primary\tbeneficiary.\tWe\tform\tVIEs\twith\tfinancing\tfund\tinvestors\tin\tthe\tordinary\tcourse\tof\tbusiness\tin\torder\tto\tfacilitate\tthe\tfunding\tand\tmonetization\tof\nabout\telectric\tvehicles\tand\tcharging,\tmaintain\tand\tstrengthen\tthe\tTesla\tbrand,\tand\tobtain\trapid\tcustomer\tfeedback.\nWe\treevaluate\tour\tsales\tstrateg"
+      },
+      {
+        "chunk_id": "doc_1636",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "text": "billion\tand\n$\n26.88\nWe\trecognize\tthe\tpositive\timpact\tthat\tleaders\tcan\thave\ton\ttheir\tteams\tand\toffer\tfundamental\tskills\ttraining\tand\tcontinuous\tdevelopment\tto\tall\nleaders\tthrough\tvarious\tprograms\tglobally.\nWe\tdon’t\tstop\tthere.\tTesla\thas\tseveral\tother\tprograms\tstrategically\tdesigned\tto\tincrease\tpaths\t"
+      },
+      {
+        "chunk_id": "doc_483",
+        "section": "",
+        "year": "2020",
+        "score": null,
+        "text": "is\timpossible\tto\tpredict\tor\teliminate\tsuch\timpact.\tAs\ta\tresult,\tour\toperating\tresults\tmay\tbe\tharmed.\nproducts.\tIn\taddition,\tthe\tglobal\tCOVID-19\tpandemic\thas\timpacted\teconomic\tmarkets,\tmanufacturing\toperations,\tsupply\tchains,\temployment\tand\tconsumer\nbehavior\tin\tnearly\tevery\tgeographic\tregion\tand\tindu"
+      },
+      {
+        "chunk_id": "doc_1607",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "text": "We\tmay\tbe\tunable\tto\tgrow\tour\tglobal\tproduct\tsales,\tdelivery\tand\tinstallation\tcapabilities\tand\tour\tservicing\tand\tvehicle\tcharging\nSIGNATURES\nPursuant\tto\tthe\trequirements\tof\tSection\t13\tor\t15(d)\tthe\tSecurities\tExchange\tAct\tof\t1934,\tthe\tregistrant\thas\tduly\tcaused\tthis\treport\tto\tbe\tsigned\ton\nits\tbehalf\tb"
+      },
+      {
+        "chunk_id": "doc_1",
+        "section": "",
+        "year": "2019",
+        "score": null,
+        "text": "servicing\tand\tsupporting\tour\tproducts,\tany\tof\twhich\tcould\tresult\tin\tnegative\tpublicity,\tdamage\tto\tour\tbrand\tand\ta\tmaterial\tand\tadverse\teffect\ton\tour\nmanagement,\tprocurement,\tmanufacturing\texecution,\tfinance,\tsupply\tchain\tand\tsales\tand\tservice\tprocesses.\tThese\trisks\tmay\taffect\tour\tability\tto\nmanage\to"
+      }
+    ],
+    "expanded_top_chunks": [
+      {
+        "chunk_id": "doc_337",
+        "section": "",
+        "year": "2019",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "primary\tbeneficiary.\tWe\tform\tVIEs\twith\tfinancing\tfund\tinvestors\tin\tthe\tordinary\tcourse\tof\tbusiness\tin\torder\tto\tfacilitate\tthe\tfunding\tand\tmonetization\tof\nabout\telectric\tvehicles\tand\tcharging,\tmaintain\tand\tstrengthen\tthe\tTesla\tbrand,\tand\tobtain\trapid\tcustomer\tfeedback.\nWe\treevaluate\tour\tsales\tstrateg"
+      },
+      {
+        "chunk_id": "doc_1636",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "billion\tand\n$\n26.88\nWe\trecognize\tthe\tpositive\timpact\tthat\tleaders\tcan\thave\ton\ttheir\tteams\tand\toffer\tfundamental\tskills\ttraining\tand\tcontinuous\tdevelopment\tto\tall\nleaders\tthrough\tvarious\tprograms\tglobally.\nWe\tdon’t\tstop\tthere.\tTesla\thas\tseveral\tother\tprograms\tstrategically\tdesigned\tto\tincrease\tpaths\t"
+      },
+      {
+        "chunk_id": "doc_483",
+        "section": "",
+        "year": "2020",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "is\timpossible\tto\tpredict\tor\teliminate\tsuch\timpact.\tAs\ta\tresult,\tour\toperating\tresults\tmay\tbe\tharmed.\nproducts.\tIn\taddition,\tthe\tglobal\tCOVID-19\tpandemic\thas\timpacted\teconomic\tmarkets,\tmanufacturing\toperations,\tsupply\tchains,\temployment\tand\tconsumer\nbehavior\tin\tnearly\tevery\tgeographic\tregion\tand\tindu"
+      },
+      {
+        "chunk_id": "doc_1607",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "We\tmay\tbe\tunable\tto\tgrow\tour\tglobal\tproduct\tsales,\tdelivery\tand\tinstallation\tcapabilities\tand\tour\tservicing\tand\tvehicle\tcharging\nSIGNATURES\nPursuant\tto\tthe\trequirements\tof\tSection\t13\tor\t15(d)\tthe\tSecurities\tExchange\tAct\tof\t1934,\tthe\tregistrant\thas\tduly\tcaused\tthis\treport\tto\tbe\tsigned\ton\nits\tbehalf\tb"
+      },
+      {
+        "chunk_id": "doc_1",
+        "section": "",
+        "year": "2019",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "servicing\tand\tsupporting\tour\tproducts,\tany\tof\twhich\tcould\tresult\tin\tnegative\tpublicity,\tdamage\tto\tour\tbrand\tand\ta\tmaterial\tand\tadverse\teffect\ton\tour\nmanagement,\tprocurement,\tmanufacturing\texecution,\tfinance,\tsupply\tchain\tand\tsales\tand\tservice\tprocesses.\tThese\trisks\tmay\taffect\tour\tability\tto\nmanage\to"
+      },
+      {
+        "chunk_id": "doc_1487",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "retention\tof\tqualified\temployees\tand\tthe\tpace\tof\tbringing\tproduction\tequipment\tand\tprocesses\tonline\twith\tthe\tcapability\tto\tmanufacture\thigh-quality\ntouchless\tdeliveries,\tbut\tthere\tis\tno\tguarantee\tthat\tsuch\tmodels\twill\tbe\tscalable\tor\tbe\taccepted\tglobally.\tLikewise,\tas\twe\tramp\tour\tenergy\tproducts,\twe\n"
+      },
+      {
+        "chunk_id": "doc_1530",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "inventory.\tSimilarly,\tthe\tincreasing\tnumber\tof\tTesla\tvehicles\talso\trequires\tus\tto\tcontinue\tto\trapidly\tincrease\tthe\tnumber\tof\tour\tSupercharger\tstations\tand\nconnectors\tthroughout\tthe\tworld.\nThere\tis\tno\tassurance\tthat\twe\twill\tbe\table\tto\tramp\tour\tbusiness\tto\tmeet\tour\tsales,\tdelivery,\tinstallation,\tservi"
+      },
+      {
+        "chunk_id": "doc_194",
+        "section": "",
+        "year": "2019",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "China\nTesla\tAutomobile\tSales\tand\tService\t(Changsha)\tCo.,\tLtd.\n\t\nChina\nTesla\tAutomobile\tSales\tand\tService\t(Chengdu)\tCo.,\tLtd.\n\t\nChina\nTesla\tAutomobile\tSales\tand\tService\t(Chongqing)\tCo.,\tLtd.\n\t\nChina\nTesla\tAutomobile\tSales\tand\tService\t(Dalian)\tCo.,\tLtd.\n\t\nChina\nTesla\tAutomobile\tSales\tand\tService\t(Guan"
+      },
+      {
+        "chunk_id": "doc_1545",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "the\tsubject\tof\tsuch\treports\tin\tthe\tpast.\nOur\tbusiness\tmay\tbe\tadversely\taffected\tby\tany\tdisruptions\tcaused\tby\tunion\tactivities.\nIt\tis\tnot\tuncommon\tfor\temployees\tof\tcertain\ttrades\tat\tcompanies\tsuch\tas\tours\tto\tbelong\tto\ta\tunion,\twhich\tcan\tresult\tin\thigher\temployee\tcosts\tand\nincreased\trisk\tof\twork\tstopp"
+      }
+    ],
+    "final_answer": "Based on the provided context, Tesla's growth story appears to be more constrained by internal execution and cost structure rather than external supply risk.\n\nEvidence from the Risk Factors section suggests that Tesla is vulnerable to various external risks, including natural disasters, wars, health epidemics, and other events outside of their control (Source: <doc_1 | tsla-10k_20191231-gen_0.pdf | 2019 | ?>, Risk Factors, Item 1A). However, these risks are not explicitly stated as constraints on Tesla's growth story.\n\nIn contrast, the MD&A section highlights several internal execution and cost structure risks that could impact Tesla's growth. For example, the company notes that it may be unable to grow its global product sales, delivery, and installation capabilities, as well as its servicing and vehicle charging infrastructure, due to various factors such as production delays, inaccurate demand forecasting, and cost overruns (Source: <doc_1530 | tsla-20231231-gen.pdf | 2023 | ?>, MD&A, Item 1A). Additionally, Tesla's MD&A section mentions that the company's growth may be constrained by its ability to control and reduce supplier costs, as well as its ability to manage its warranty reserves and comply with regulatory requirements (Source: <doc_194 | tsla-10k_20191231-gen_0.pdf | 2019 | ?>, MD&A, Item 1A).\n\nFurthermore, Tesla's MD&A section highlights the importance of its manufacturing and supply chain operations, noting that the company's ability to meet customer demand and maintain its market position depends on its ability to manage its manufacturing and supply chain operations effectively (Source: <doc_1607 | tsla-20231231-gen.pdf | 2023 | ?>, MD&A, Item 1A). This suggests that internal execution and cost structure risks are more significant constraints on Tesla's growth story than external supply risks.\n\nIn summary, while external supply risks are present, the evidence suggests that internal execution and cost structure risks are more significant constraints on Tesla's growth story.",
+    "citations": [
+      {
+        "chunk_id": "doc_337",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_1636",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_483",
+        "source_doc": "tsla-10k_20201231-gen.pdf",
+        "section": "",
+        "year": "2020"
+      },
+      {
+        "chunk_id": "doc_1607",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_1",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_1487",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_1530",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_194",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_1545",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      }
+    ],
+    "retrieval_improvement_analysis": "Expanded retrieval returned 9 unique chunks vs 5 baseline chunks using 4 query variants."
+  },
+  {
+    "question_id": "Q2",
+    "original_query": "Explain how Tesla's AI and product roadmap is reflected in spending, operational priorities, and risk disclosures. Avoid generic AI claims.",
+    "expanded_queries": [
+      "Explain how Tesla's AI and product roadmap is reflected in spending, operational priorities, and risk disclosures. Avoid generic AI claims.",
+      "What specific line items in Tesla's 10-K filings detail the allocation of resources for AI and product development?",
+      "How does Tesla's operational budget prioritize AI-driven initiatives versus traditional product development?",
+      "What are the key risk factors related to AI and product development that Tesla discloses in its 10-K filings, and how do these risks impact the company's financial performance?"
+    ],
+    "baseline_top_chunks": [
+      {
+        "chunk_id": "doc_1128",
+        "section": "",
+        "year": "2022",
+        "score": null,
+        "text": "We\tbelieve\tthat\tthere\tis\talso\tincreasing\tcompetition\tfor\tour\tvehicle\tofferings\tas\ta\tplatform\tfor\tdelivering\tself-driving\ttechnologies,\tcharging\n\t\nsolutions\tand\tother\tfeatures\tand\tservices,\tand\twe\texpect\tto\tcompete\tin\tthis\tdeveloping\tmarket\tthrough\tcontinued\tprogress\ton\tour\tAutopilot,\tFSD\tand\n\t\nneura"
+      },
+      {
+        "chunk_id": "doc_1508",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "text": "45\nItem\t8.\nFinancial\tStatements\tand\tSupplementary\tData\n46\nItem\t9.\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n93\nItem\t9A.\nControls\tand\tProcedures\n93\nItem\t9B.\nOther\tInformation\n94\nItem\t9C.\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n94\n"
+      },
+      {
+        "chunk_id": "doc_1523",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "text": ".\n10-Q\n001-34756\n10.1\nstatements\tmade,\tin\tlight\tof\tthe\tcircumstances\tunder\twhich\tsuch\tstatements\twere\tmade,\tnot\tmisleading\twith\trespect\tto\tthe\tperiod\tcovered\tby\tthis\nreport;\n3.\nBased\ton\tmy\tknowledge,\tthe\tfinancial\tstatements,\tand\tother\tfinancial\tinformation\tincluded\tin\tthis\treport,\tfairly\tpresent\tin"
+      },
+      {
+        "chunk_id": "doc_958",
+        "section": "",
+        "year": "2020",
+        "score": null,
+        "text": "252\n\t\n\t\n\t\n91\n\t\n\t\n\t\n26\n\t\nDeferred:\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nFederal\n\t\n\t\n—\n\t\n\t\n\t\n(\n4\n)\n\t\n\t\n—\n\t\nState\n\t\n\t\n—\n\t\n\t\n\t\n—\n\t\n\t\n\t\n—\n\t\nForeign\n\t\n\t\n40\n\t\n\t\n\t\n23\n\t\n\t\n\t\n32\n\t\nTotal\tdeferred\n\t\n\t\n40\n\t\n\t\n\t\n19\n\t\n\t\n\t\n32\n\t\nTotal\tprovision\tfor\tincome\ttaxes\n\t\n$\n292\n\t\n\t\n$\n110\n\t\n\t\n$\n58\nconnectivity\tof\tour\tvehicles\talso\tallows\t"
+      },
+      {
+        "chunk_id": "doc_1645",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "text": "16\n\t\n(\n23\n)\n(\n1\n)\nAdjustment\tfor\tnet\tloss\trealized\tand\tincluded\tin\tnet\tincome\t\t\t\t\n4\n\t\n—\n\t\n—\n\t\nComprehensive\tincome\n15,192\n\t\n12,172\n\t\n5,335\n††\nPortions\tof\tthis\texhibit\thave\tbeen\tredacted\tin\tcompliance\twith\tRegulation\tS-K\tItem\t601(b)(10).\n110\nand\tparts\tused\tin\tour\tmanufacturing\tprocess,\toperating\texpe"
+      }
+    ],
+    "expanded_top_chunks": [
+      {
+        "chunk_id": "doc_1128",
+        "section": "",
+        "year": "2022",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "We\tbelieve\tthat\tthere\tis\talso\tincreasing\tcompetition\tfor\tour\tvehicle\tofferings\tas\ta\tplatform\tfor\tdelivering\tself-driving\ttechnologies,\tcharging\n\t\nsolutions\tand\tother\tfeatures\tand\tservices,\tand\twe\texpect\tto\tcompete\tin\tthis\tdeveloping\tmarket\tthrough\tcontinued\tprogress\ton\tour\tAutopilot,\tFSD\tand\n\t\nneura"
+      },
+      {
+        "chunk_id": "doc_1508",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "45\nItem\t8.\nFinancial\tStatements\tand\tSupplementary\tData\n46\nItem\t9.\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n93\nItem\t9A.\nControls\tand\tProcedures\n93\nItem\t9B.\nOther\tInformation\n94\nItem\t9C.\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n94\n"
+      },
+      {
+        "chunk_id": "doc_1523",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": ".\n10-Q\n001-34756\n10.1\nstatements\tmade,\tin\tlight\tof\tthe\tcircumstances\tunder\twhich\tsuch\tstatements\twere\tmade,\tnot\tmisleading\twith\trespect\tto\tthe\tperiod\tcovered\tby\tthis\nreport;\n3.\nBased\ton\tmy\tknowledge,\tthe\tfinancial\tstatements,\tand\tother\tfinancial\tinformation\tincluded\tin\tthis\treport,\tfairly\tpresent\tin"
+      },
+      {
+        "chunk_id": "doc_958",
+        "section": "",
+        "year": "2020",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "252\n\t\n\t\n\t\n91\n\t\n\t\n\t\n26\n\t\nDeferred:\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nFederal\n\t\n\t\n—\n\t\n\t\n\t\n(\n4\n)\n\t\n\t\n—\n\t\nState\n\t\n\t\n—\n\t\n\t\n\t\n—\n\t\n\t\n\t\n—\n\t\nForeign\n\t\n\t\n40\n\t\n\t\n\t\n23\n\t\n\t\n\t\n32\n\t\nTotal\tdeferred\n\t\n\t\n40\n\t\n\t\n\t\n19\n\t\n\t\n\t\n32\n\t\nTotal\tprovision\tfor\tincome\ttaxes\n\t\n$\n292\n\t\n\t\n$\n110\n\t\n\t\n$\n58\nconnectivity\tof\tour\tvehicles\talso\tallows\t"
+      },
+      {
+        "chunk_id": "doc_1645",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "16\n\t\n(\n23\n)\n(\n1\n)\nAdjustment\tfor\tnet\tloss\trealized\tand\tincluded\tin\tnet\tincome\t\t\t\t\n4\n\t\n—\n\t\n—\n\t\nComprehensive\tincome\n15,192\n\t\n12,172\n\t\n5,335\n††\nPortions\tof\tthis\texhibit\thave\tbeen\tredacted\tin\tcompliance\twith\tRegulation\tS-K\tItem\t601(b)(10).\n110\nand\tparts\tused\tin\tour\tmanufacturing\tprocess,\toperating\texpe"
+      },
+      {
+        "chunk_id": "doc_219",
+        "section": "",
+        "year": "2019",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "Summary\tof\tSignificant\tAccounting\tPolicies\n).\nConstruction\tin\tprogress\tis\tprimarily\tcomprised\tof\ttooling\tand\tequipment\trelated\tto\tthe\tmanufacturing\tof\tour\tproducts\tand\tGigafactory\nTotal\n\t\n$\n24,578\n\t\n\t\n$\n21,461\n\t\n\t\n$\n11,759\n\t\nThe\trevenues\tin\tcertain\tgeographic\tareas\twere\timpacted\tby\tthe\tprice\tadjustm"
+      },
+      {
+        "chunk_id": "doc_1452",
+        "section": "",
+        "year": "2022",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "payable\tto\tthe\tAdministrative\n\t\nAgent\tin\tits\tcapacity\tas\tsuch);\n(ii)\t\nsecond\n,\tto\tpayment\tof\tthat\tportion\tof\tthe\tObligations\tconstituting\tfees,\texpenses,\tindemnities\tand\tother\n\t\namounts\t(other\tthan\tprincipal,\treimbursement\tobligations\tin\trespect\tof\tLC\tDisbursements,\tinterest\tand\tLetter\tof\tCredit\n\t\nf"
+      },
+      {
+        "chunk_id": "doc_1572",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "quarter\tcomparisons\tof\tour\tfinancial\tresults,\tespecially\tin\tthe\tshort\tterm,\tare\tnot\tnecessarily\tmeaningful\tand\tthat\tthese\tcomparisons\tcannot\tbe\trelied\nJanuary\t26,\t2024\nIra\tEhrenpreis\n\t\n\t\n\t\n\t\n\t\n/s/\tJoseph\tGebbia\nDirector\nJanuary\t26,\t2024\nJoseph\tGebbia\n\t\n\t\n\t\n\t\n\t\n/s/\tJames\tMurdoch\nDirector\nJanuary\t26,\t"
+      },
+      {
+        "chunk_id": "doc_1489",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "and\tthe\tpreparation\tof\tfinancial\tstatements\tfor\texternal\tpurposes\tin\taccordance\twith\tgenerally\taccepted\taccounting\tprinciples.\tA\tcompany’s\tinternal\ncommunicated\tor\trequired\tto\tbe\tcommunicated\tto\tthe\taudit\tcommittee\tand\tthat\t(i)\trelates\tto\taccounts\tor\tdisclosures\tthat\tare\tmaterial\tto\tthe\tconsolidated"
+      },
+      {
+        "chunk_id": "doc_1636",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "billion\tand\n$\n26.88\nWe\trecognize\tthe\tpositive\timpact\tthat\tleaders\tcan\thave\ton\ttheir\tteams\tand\toffer\tfundamental\tskills\ttraining\tand\tcontinuous\tdevelopment\tto\tall\nleaders\tthrough\tvarious\tprograms\tglobally.\nWe\tdon’t\tstop\tthere.\tTesla\thas\tseveral\tother\tprograms\tstrategically\tdesigned\tto\tincrease\tpaths\t"
+      },
+      {
+        "chunk_id": "doc_51",
+        "section": "",
+        "year": "2019",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "external\tpurposes\tin\taccordance\twith\tgenerally\taccepted\taccounting\tprinciples;\n\t\n(c)\nEvaluated\tthe\teffectiveness\tof\tthe\tregistrant’s\tdisclosure\tcontrols\tand\tprocedures\tand\tpresented\tin\tthis\treport\tour\tconclusions\tabout\tthe\nDate:\tFebruary\t13,\t2020\n\t\n\t\n/s/\tZachary\tJ.\tKirkhorn\n\t\n\t\n\t\nZachary\tJ.\tKirkhorn"
+      },
+      {
+        "chunk_id": "doc_1602",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "Automotive\tsales\n$\n78,509\n\t\n$\n67,210\n\t\n$\n44,125\n\t\nAutomotive\tregulatory\tcredits\n1,790\n\t\n1,776\n\t\n1,465\n\t\nAutomotive\tleasing\n2,120\n\t\n2,476\n\t\n1,642\n\t\nTotal\tautomotive\trevenues\n82,419\n\t\n71,462\n\t\n47,232\n\t\nEnergy\tgeneration\tand\tstorage\n6,035\n\t\n3,909\n\t\n2,789\n\t\nServices\tand\tother\n8,319\n\t\n6,091\n\t\n3,802\n\t\nTot"
+      },
+      {
+        "chunk_id": "doc_1191",
+        "section": "",
+        "year": "2022",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "Circuit\tCourt\tfor\tthe\tFifth\tCircuit,\twhich\tis\tcurrently\tpending.\tAny\tunfavorable\tultimate\toutcome\tfor\tTesla\tmay\thave\ta\tnegative\timpact\ton\tthe\n\t\nperception\tof\tTesla’s\ttreatment\tof\tour\temployees.\tFurthermore,\twe\tare\tdirectly\tor\tindirectly\tdependent\tupon\tcompanies\twith\tunionized\twork\tforces,\n\t\nsuch\tas\t"
+      },
+      {
+        "chunk_id": "doc_1",
+        "section": "",
+        "year": "2019",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "servicing\tand\tsupporting\tour\tproducts,\tany\tof\twhich\tcould\tresult\tin\tnegative\tpublicity,\tdamage\tto\tour\tbrand\tand\ta\tmaterial\tand\tadverse\teffect\ton\tour\nmanagement,\tprocurement,\tmanufacturing\texecution,\tfinance,\tsupply\tchain\tand\tsales\tand\tservice\tprocesses.\tThese\trisks\tmay\taffect\tour\tability\tto\nmanage\to"
+      },
+      {
+        "chunk_id": "doc_1545",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "the\tsubject\tof\tsuch\treports\tin\tthe\tpast.\nOur\tbusiness\tmay\tbe\tadversely\taffected\tby\tany\tdisruptions\tcaused\tby\tunion\tactivities.\nIt\tis\tnot\tuncommon\tfor\temployees\tof\tcertain\ttrades\tat\tcompanies\tsuch\tas\tours\tto\tbelong\tto\ta\tunion,\twhich\tcan\tresult\tin\thigher\temployee\tcosts\tand\nincreased\trisk\tof\twork\tstopp"
+      },
+      {
+        "chunk_id": "doc_1252",
+        "section": "",
+        "year": "2022",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "4.35\naccounting\tor\tfinancial\tnature\tshall\tbe\tconstrued\tin\taccordance\twith\tGAAP,\tas\tin\teffect\tfrom\ttime\tto\ttime;\t\nprovided\n\tthat,\tif\tthe\n\t\nBorrower\tnotifies\tthe\tAdministrative\tAgent\tthat\tthe\tBorrower\trequests\tan\tamendment\tto\tany\tprovision\thereof\tto\teliminate\tthe\n\t\neffect\tof\tany\tchange\toccurring\tafter"
+      }
+    ],
+    "final_answer": "Based on the provided context, Tesla's AI and product roadmap is reflected in spending, operational priorities, and risk disclosures as follows:\n\n1.  **Spending:**\n    *   Tesla has invested heavily in developing its Autopilot and Full Self-Driving (FSD) capabilities, with a focus on neural network development and computer hardware upgrades (Source: <doc_1523 | tsla-20231231-gen.pdf | 2023 | ?>, Section 5, chunk 5).\n    *   The company has also applied its AI learnings to the field of robotics, such as through the development of Optimus, a robotic humanoid (Source: <doc_1523 | tsla-20231231-gen.pdf | 2023 | ?>, Section 5, chunk 5).\n    *   Tesla's spending on R&D has increased by $482 million, or 19%, in the year ended December 31, 2022, as compared to the year ended December 31, 2021 (Source: <doc_1191 | tsla-20221231-gen.pdf | 2022 | ?>, Section 4, chunk 44).\n\n2.  **Operational Priorities:**\n    *   Tesla's operational priorities include the development and advancement of its software capabilities for the control and optimal dispatch of energy storage systems across a wide range of markets and applications (Source: <doc_51 | tsla-10k_20191231-gen_0.pdf | 2019 | ?>, Section 2, chunk 2).\n    *   The company is also focused on ramping up production of energy storage products, improving its Solar Roof installation capability and efficiency, and increasing market share of retrofit and new build solar energy systems (Source: <doc_1191 | tsla-20221231-gen.pdf | 2022 | ?>, Section 4, chunk 44).\n\n3.  **Risk Disclosures:**\n    *   Tesla has disclosed various risks related to its AI and product roadmap, including the risk of delays in launching and ramping the production of its products and features (Source: <doc_1452 | tsla-20221231-gen.pdf | 2022 | ?>, Section 7, chunk 7).\n    *   The company has also disclosed the risk of not being able to control its manufacturing costs, which could negatively impact its financial condition and operating results (Source: <doc_1452 | tsla-20221231-gen.pdf",
+    "citations": [
+      {
+        "chunk_id": "doc_1128",
+        "source_doc": "tsla-20221231-gen.pdf",
+        "section": "",
+        "year": "2022"
+      },
+      {
+        "chunk_id": "doc_1508",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_1523",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_958",
+        "source_doc": "tsla-10k_20201231-gen.pdf",
+        "section": "",
+        "year": "2020"
+      },
+      {
+        "chunk_id": "doc_1645",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_219",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_1452",
+        "source_doc": "tsla-20221231-gen.pdf",
+        "section": "",
+        "year": "2022"
+      },
+      {
+        "chunk_id": "doc_1572",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_1489",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_1636",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_51",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_1602",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_1191",
+        "source_doc": "tsla-20221231-gen.pdf",
+        "section": "",
+        "year": "2022"
+      },
+      {
+        "chunk_id": "doc_1",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_1545",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_1252",
+        "source_doc": "tsla-20221231-gen.pdf",
+        "section": "",
+        "year": "2022"
+      }
+    ],
+    "retrieval_improvement_analysis": "Expanded retrieval returned 16 unique chunks vs 5 baseline chunks using 4 query variants."
+  },
+  {
+    "question_id": "Q3",
+    "original_query": "A supplier asks whether Tesla is exposed to concentration risk across factories, suppliers, raw materials, or geographies. Prepare a concise risk note with citations.",
+    "expanded_queries": [
+      "A supplier asks whether Tesla is exposed to concentration risk across factories, suppliers, raw materials, or geographies. Prepare a concise risk note with citations.",
+      "Is Tesla's supply chain vulnerable to concentration risk due to reliance on a limited number of suppliers or factories?",
+      "Does Tesla's exposure to concentration risk arise from its dependence on specific raw materials or geographic regions?",
+      "How does Tesla's risk management strategy address potential concentration risks in its supply chain, including supplier, factory, material, or geographic dependencies?"
+    ],
+    "baseline_top_chunks": [
+      {
+        "chunk_id": "doc_1",
+        "section": "",
+        "year": "2019",
+        "score": null,
+        "text": "servicing\tand\tsupporting\tour\tproducts,\tany\tof\twhich\tcould\tresult\tin\tnegative\tpublicity,\tdamage\tto\tour\tbrand\tand\ta\tmaterial\tand\tadverse\teffect\ton\tour\nmanagement,\tprocurement,\tmanufacturing\texecution,\tfinance,\tsupply\tchain\tand\tsales\tand\tservice\tprocesses.\tThese\trisks\tmay\taffect\tour\tability\tto\nmanage\to"
+      },
+      {
+        "chunk_id": "doc_1494",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "text": "California\nExhibit\t23.1\nCONSENT\tOF\tINDEPENDENT\tREGISTERED\tPUBLIC\tACCOUNTING\tFIRM\nWe\thereby\tconsent\tto\tthe\tincorporation\tby\treference\tin\tthe\tRegistration\tStatements\ton\tForm\tS-8\t(Nos.\t333-232079,\t333-223169,\t333-216376,\t333-\n209696,\t333-198002,\t333-187113,\t333-183033,\tand\t333-167874)\tof\tTesla,\tInc.\tof"
+      },
+      {
+        "chunk_id": "doc_1530",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "text": "inventory.\tSimilarly,\tthe\tincreasing\tnumber\tof\tTesla\tvehicles\talso\trequires\tus\tto\tcontinue\tto\trapidly\tincrease\tthe\tnumber\tof\tour\tSupercharger\tstations\tand\nconnectors\tthroughout\tthe\tworld.\nThere\tis\tno\tassurance\tthat\twe\twill\tbe\table\tto\tramp\tour\tbusiness\tto\tmeet\tour\tsales,\tdelivery,\tinstallation,\tservi"
+      },
+      {
+        "chunk_id": "doc_1628",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "text": "professionals.\tIf\twe\texperience\tdelays\tin\tadding\tservicing\tcapacity\tor\tservicing\tour\tvehicles\tefficiently,\tor\texperience\tunforeseen\tissues\twith\tthe\treliability\nof\tour\tvehicles,\tparticularly\thigher-volume\tadditions\tto\tour\tfleet\tsuch\tas\tModel\t3\tand\tModel\tY,\tit\tcould\toverburden\tour\tservicing\tcapabiliti"
+      },
+      {
+        "chunk_id": "doc_1545",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "text": "the\tsubject\tof\tsuch\treports\tin\tthe\tpast.\nOur\tbusiness\tmay\tbe\tadversely\taffected\tby\tany\tdisruptions\tcaused\tby\tunion\tactivities.\nIt\tis\tnot\tuncommon\tfor\temployees\tof\tcertain\ttrades\tat\tcompanies\tsuch\tas\tours\tto\tbelong\tto\ta\tunion,\twhich\tcan\tresult\tin\thigher\temployee\tcosts\tand\nincreased\trisk\tof\twork\tstopp"
+      }
+    ],
+    "expanded_top_chunks": [
+      {
+        "chunk_id": "doc_1",
+        "section": "",
+        "year": "2019",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "servicing\tand\tsupporting\tour\tproducts,\tany\tof\twhich\tcould\tresult\tin\tnegative\tpublicity,\tdamage\tto\tour\tbrand\tand\ta\tmaterial\tand\tadverse\teffect\ton\tour\nmanagement,\tprocurement,\tmanufacturing\texecution,\tfinance,\tsupply\tchain\tand\tsales\tand\tservice\tprocesses.\tThese\trisks\tmay\taffect\tour\tability\tto\nmanage\to"
+      },
+      {
+        "chunk_id": "doc_1494",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "California\nExhibit\t23.1\nCONSENT\tOF\tINDEPENDENT\tREGISTERED\tPUBLIC\tACCOUNTING\tFIRM\nWe\thereby\tconsent\tto\tthe\tincorporation\tby\treference\tin\tthe\tRegistration\tStatements\ton\tForm\tS-8\t(Nos.\t333-232079,\t333-223169,\t333-216376,\t333-\n209696,\t333-198002,\t333-187113,\t333-183033,\tand\t333-167874)\tof\tTesla,\tInc.\tof"
+      },
+      {
+        "chunk_id": "doc_1530",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "inventory.\tSimilarly,\tthe\tincreasing\tnumber\tof\tTesla\tvehicles\talso\trequires\tus\tto\tcontinue\tto\trapidly\tincrease\tthe\tnumber\tof\tour\tSupercharger\tstations\tand\nconnectors\tthroughout\tthe\tworld.\nThere\tis\tno\tassurance\tthat\twe\twill\tbe\table\tto\tramp\tour\tbusiness\tto\tmeet\tour\tsales,\tdelivery,\tinstallation,\tservi"
+      },
+      {
+        "chunk_id": "doc_1628",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "professionals.\tIf\twe\texperience\tdelays\tin\tadding\tservicing\tcapacity\tor\tservicing\tour\tvehicles\tefficiently,\tor\texperience\tunforeseen\tissues\twith\tthe\treliability\nof\tour\tvehicles,\tparticularly\thigher-volume\tadditions\tto\tour\tfleet\tsuch\tas\tModel\t3\tand\tModel\tY,\tit\tcould\toverburden\tour\tservicing\tcapabiliti"
+      },
+      {
+        "chunk_id": "doc_1545",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "the\tsubject\tof\tsuch\treports\tin\tthe\tpast.\nOur\tbusiness\tmay\tbe\tadversely\taffected\tby\tany\tdisruptions\tcaused\tby\tunion\tactivities.\nIt\tis\tnot\tuncommon\tfor\temployees\tof\tcertain\ttrades\tat\tcompanies\tsuch\tas\tours\tto\tbelong\tto\ta\tunion,\twhich\tcan\tresult\tin\thigher\temployee\tcosts\tand\nincreased\trisk\tof\twork\tstopp"
+      },
+      {
+        "chunk_id": "doc_194",
+        "section": "",
+        "year": "2019",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "China\nTesla\tAutomobile\tSales\tand\tService\t(Changsha)\tCo.,\tLtd.\n\t\nChina\nTesla\tAutomobile\tSales\tand\tService\t(Chengdu)\tCo.,\tLtd.\n\t\nChina\nTesla\tAutomobile\tSales\tand\tService\t(Chongqing)\tCo.,\tLtd.\n\t\nChina\nTesla\tAutomobile\tSales\tand\tService\t(Dalian)\tCo.,\tLtd.\n\t\nChina\nTesla\tAutomobile\tSales\tand\tService\t(Guan"
+      },
+      {
+        "chunk_id": "doc_1614",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "own\tretail\tand\tservice\tlocations.\tWe\texpect\tsuch\tchallenges\tto\tcontinue,\tand\twe\tintend\tto\tactively\tfight\tany\tsuch\tefforts.\nBattery\tSafety\tand\tTesting\nOur\tbattery\tpacks\tare\tsubject\tto\tvarious\tU.S.\tand\tinternational\tregulations\tthat\tgovern\ttransport\tof\t“dangerous\tgoods,”\tdefined\tto\tinclude\tlithium-\nio"
+      },
+      {
+        "chunk_id": "doc_405",
+        "section": "",
+        "year": "2020",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "determination\tfor\tother\tpurposes.\nAs\tof\tFebruary\t1,\t2021,\tthere\twere\t\n959,853,504\n\tshares\tof\tthe\tregistrant’s\tCommon\tStock\toutstanding.\nDOCUMENTS\tINCORPORATED\tBY\tREFERENCE\ncharging\tsolutions.\nIn-App\tUpgrades\nAs\tour\tvehicles\tare\tcapable\tof\tbeing\tupdated\tremotely\tover-the-air,\tour\tcustomers\tmay\tpurcha"
+      },
+      {
+        "chunk_id": "doc_1557",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "safety\tlaws\tand\tregulations\tat\tnumerous\tjurisdictional\tlevels\tin\tthe\tU.S.,\tChina,\tGermany\tand\tother\tlocations\tabroad,\tincluding\tlaws\trelating\tto\tthe\tuse,\non\toverall\tpriority\tamong\tprojects,\tthe\tpace\tat\twhich\twe\tmeet\tmilestones,\tproduction\tadjustments\tto\tand\tamong\tour\tvarious\tproducts,\tincreased\tcapi"
+      },
+      {
+        "chunk_id": "doc_1607",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "We\tmay\tbe\tunable\tto\tgrow\tour\tglobal\tproduct\tsales,\tdelivery\tand\tinstallation\tcapabilities\tand\tour\tservicing\tand\tvehicle\tcharging\nSIGNATURES\nPursuant\tto\tthe\trequirements\tof\tSection\t13\tor\t15(d)\tthe\tSecurities\tExchange\tAct\tof\t1934,\tthe\tregistrant\thas\tduly\tcaused\tthis\treport\tto\tbe\tsigned\ton\nits\tbehalf\tb"
+      },
+      {
+        "chunk_id": "doc_1487",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "retention\tof\tqualified\temployees\tand\tthe\tpace\tof\tbringing\tproduction\tequipment\tand\tprocesses\tonline\twith\tthe\tcapability\tto\tmanufacture\thigh-quality\ntouchless\tdeliveries,\tbut\tthere\tis\tno\tguarantee\tthat\tsuch\tmodels\twill\tbe\tscalable\tor\tbe\taccepted\tglobally.\tLikewise,\tas\twe\tramp\tour\tenergy\tproducts,\twe\n"
+      },
+      {
+        "chunk_id": "doc_483",
+        "section": "",
+        "year": "2020",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "is\timpossible\tto\tpredict\tor\teliminate\tsuch\timpact.\tAs\ta\tresult,\tour\toperating\tresults\tmay\tbe\tharmed.\nproducts.\tIn\taddition,\tthe\tglobal\tCOVID-19\tpandemic\thas\timpacted\teconomic\tmarkets,\tmanufacturing\toperations,\tsupply\tchains,\temployment\tand\tconsumer\nbehavior\tin\tnearly\tevery\tgeographic\tregion\tand\tindu"
+      }
+    ],
+    "final_answer": "Concentration of Risk: \n\nWe are exposed to concentration risk across various aspects of our business. \n\n*   Cash, cash equivalents, investments, restricted cash, and financial instruments that potentially subject us to a concentration of credit risk consist of cash, cash equivalents, investments, restricted cash, and financial instruments (source: [doc_1628 | tsla-20231231-gen.pdf | 2023 | ?], Note 11, Debt).\n*   We have a high concentration of cash and cash equivalents, which may expose us to credit risk (source: [doc_1628 | tsla-20231231-gen.pdf | 2023 | ?], Note 11, Debt).\n*   Our automotive sales and leasing revenue is concentrated in a few key markets, including the United States, China, and Europe (source: [doc_405 | tsla-10k_20201231-gen.pdf | 2020 | ?], Item 1A, Risk Factors).\n*   We rely on a limited number of suppliers for certain key components, which may expose us to supply chain disruptions (source: [doc_1494 | tsla-20231231-gen.pdf | 2023 | ?], Item 1A, Risk Factors).\n*   We have a high concentration of production in a few key factories, including the Fremont Factory, Gigafactory Nevada, and Gigafactory Shanghai (source: [doc_194 | tsla-10k_20191231-gen_0.pdf | 2019 | ?], Item 1A, Risk Factors).\n*   We are exposed to concentration risk in our energy generation and storage segment, as we rely on a limited number of suppliers for certain key components (source: [doc_405 | tsla-10k_20201231-gen.pdf | 2020 | ?], Item 1A, Risk Factors).\n\nTo mitigate these risks, we have implemented various strategies, including:\n\n*   Diversifying our supplier base to reduce reliance on a single supplier (source: [doc_1494 | tsla-20231231-gen.pdf | 2023 | ?], Item 1A, Risk Factors).\n*   Investing in research and development to improve our manufacturing processes and reduce our reliance on a few key factories (source: [doc_405 | tsla-10k_20201231-gen.pdf | 2020 | ?], Item 1A, Risk Factors).\n*   Implementing cost-saving measures to reduce our reliance on a",
+    "citations": [
+      {
+        "chunk_id": "doc_1",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_1494",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_1530",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_1628",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_1545",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_194",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_1614",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_405",
+        "source_doc": "tsla-10k_20201231-gen.pdf",
+        "section": "",
+        "year": "2020"
+      },
+      {
+        "chunk_id": "doc_1557",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_1607",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_1487",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_483",
+        "source_doc": "tsla-10k_20201231-gen.pdf",
+        "section": "",
+        "year": "2020"
+      }
+    ],
+    "retrieval_improvement_analysis": "Expanded retrieval returned 12 unique chunks vs 5 baseline chunks using 4 query variants."
+  },
+  {
+    "question_id": "Q4",
+    "original_query": "Compare the strategic importance of automotive operations and energy generation/storage using evidence from the 10-K. What disclosures are needed to support a business recommendation?",
+    "expanded_queries": [
+      "Compare the strategic importance of automotive operations and energy generation/storage using evidence from the 10-K. What disclosures are needed to support a business recommendation?",
+      "What are the key performance indicators for automotive operations and energy generation/storage that are disclosed in the 10-K?",
+      "How do the segment disclosures in the 10-K provide insight into the relative strategic importance of automotive operations and energy generation/storage?",
+      "What are the materiality thresholds for disclosing the impact of energy generation/storage on automotive operations in the 10-K?"
+    ],
+    "baseline_top_chunks": [
+      {
+        "chunk_id": "doc_1570",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "text": "in\tpart\tfrom\tsuch\tmeasures\tand\tmay\tconsist\tof\tGAAP\tor\tnon-GAAP\tfinancial\tmeasures\t(as\tdefined\tunder\nRegulation\tG\tof\tthe\tExchange\tAct\tand\tItem\t10\tof\tRegulation\tS-K\tunder\tthe\tExchange\tAct),\t(ii)\tstock\tprice\tor\t(iii)\no\n\t\nNo\n\t\nx\nIndicate\tby\tcheck\tmark\twhether\tthe\tregistrant\t(1)\thas\tfiled\tall\treports\treq"
+      },
+      {
+        "chunk_id": "doc_1127",
+        "section": "",
+        "year": "2022",
+        "score": null,
+        "text": "Delaware\nParamount\tEnergy\tFund\tI\tLessee,\tLLC\n\t\nDelaware\nParamount\tEnergy\tFund\tI\tLessor,\tLLC\n\t\nDelaware\nPEF\tI\tMM,\tLLC\n\t\nDelaware\nPerbix\tMachine\tCompany,\tInc.\n\t\nMinnesota\nPresidio\tSolar\tI,\tLLC\n\t\nDelaware\nPresidio\tSolar\tII,\tLLC\n\t\nDelaware\nPresidio\tSolar\tIII,\tLLC\n\t\nDelaware\nPukana\tLa\tSolar\tI,\tLLC\n\t\nDela"
+      },
+      {
+        "chunk_id": "doc_1508",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "text": "45\nItem\t8.\nFinancial\tStatements\tand\tSupplementary\tData\n46\nItem\t9.\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n93\nItem\t9A.\nControls\tand\tProcedures\n93\nItem\t9B.\nOther\tInformation\n94\nItem\t9C.\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n94\n"
+      },
+      {
+        "chunk_id": "doc_1128",
+        "section": "",
+        "year": "2022",
+        "score": null,
+        "text": "We\tbelieve\tthat\tthere\tis\talso\tincreasing\tcompetition\tfor\tour\tvehicle\tofferings\tas\ta\tplatform\tfor\tdelivering\tself-driving\ttechnologies,\tcharging\n\t\nsolutions\tand\tother\tfeatures\tand\tservices,\tand\twe\texpect\tto\tcompete\tin\tthis\tdeveloping\tmarket\tthrough\tcontinued\tprogress\ton\tour\tAutopilot,\tFSD\tand\n\t\nneura"
+      },
+      {
+        "chunk_id": "doc_1192",
+        "section": "",
+        "year": "2022",
+        "score": null,
+        "text": "reasonable\tbasis\tfor\tour\topinions.\nCritical\tAudit\tMatters\n\t\nThe\tcritical\taudit\tmatter\tcommunicated\tbelow\tis\ta\tmatter\tarising\tfrom\tthe\tcurrent\tperiod\taudit\tof\tthe\tconsolidated\tfinancial\tstatements\tthat\twas\n\t\ncommunicated\tor\trequired\tto\tbe\tcommunicated\tto\tthe\taudit\tcommittee\tand\tthat\t(i)\trelates\tto\tac"
+      }
+    ],
+    "expanded_top_chunks": [
+      {
+        "chunk_id": "doc_1570",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "in\tpart\tfrom\tsuch\tmeasures\tand\tmay\tconsist\tof\tGAAP\tor\tnon-GAAP\tfinancial\tmeasures\t(as\tdefined\tunder\nRegulation\tG\tof\tthe\tExchange\tAct\tand\tItem\t10\tof\tRegulation\tS-K\tunder\tthe\tExchange\tAct),\t(ii)\tstock\tprice\tor\t(iii)\no\n\t\nNo\n\t\nx\nIndicate\tby\tcheck\tmark\twhether\tthe\tregistrant\t(1)\thas\tfiled\tall\treports\treq"
+      },
+      {
+        "chunk_id": "doc_1127",
+        "section": "",
+        "year": "2022",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "Delaware\nParamount\tEnergy\tFund\tI\tLessee,\tLLC\n\t\nDelaware\nParamount\tEnergy\tFund\tI\tLessor,\tLLC\n\t\nDelaware\nPEF\tI\tMM,\tLLC\n\t\nDelaware\nPerbix\tMachine\tCompany,\tInc.\n\t\nMinnesota\nPresidio\tSolar\tI,\tLLC\n\t\nDelaware\nPresidio\tSolar\tII,\tLLC\n\t\nDelaware\nPresidio\tSolar\tIII,\tLLC\n\t\nDelaware\nPukana\tLa\tSolar\tI,\tLLC\n\t\nDela"
+      },
+      {
+        "chunk_id": "doc_1508",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "45\nItem\t8.\nFinancial\tStatements\tand\tSupplementary\tData\n46\nItem\t9.\nChanges\tin\tand\tDisagreements\twith\tAccountants\ton\tAccounting\tand\tFinancial\tDisclosure\n93\nItem\t9A.\nControls\tand\tProcedures\n93\nItem\t9B.\nOther\tInformation\n94\nItem\t9C.\nDisclosure\tRegarding\tForeign\tJurisdictions\tthat\tPrevent\tInspections\n94\n"
+      },
+      {
+        "chunk_id": "doc_1128",
+        "section": "",
+        "year": "2022",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "We\tbelieve\tthat\tthere\tis\talso\tincreasing\tcompetition\tfor\tour\tvehicle\tofferings\tas\ta\tplatform\tfor\tdelivering\tself-driving\ttechnologies,\tcharging\n\t\nsolutions\tand\tother\tfeatures\tand\tservices,\tand\twe\texpect\tto\tcompete\tin\tthis\tdeveloping\tmarket\tthrough\tcontinued\tprogress\ton\tour\tAutopilot,\tFSD\tand\n\t\nneura"
+      },
+      {
+        "chunk_id": "doc_1192",
+        "section": "",
+        "year": "2022",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "reasonable\tbasis\tfor\tour\topinions.\nCritical\tAudit\tMatters\n\t\nThe\tcritical\taudit\tmatter\tcommunicated\tbelow\tis\ta\tmatter\tarising\tfrom\tthe\tcurrent\tperiod\taudit\tof\tthe\tconsolidated\tfinancial\tstatements\tthat\twas\n\t\ncommunicated\tor\trequired\tto\tbe\tcommunicated\tto\tthe\taudit\tcommittee\tand\tthat\t(i)\trelates\tto\tac"
+      },
+      {
+        "chunk_id": "doc_1120",
+        "section": "",
+        "year": "2022",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "does\tnot\tevaluate\toperating\tsegments\tusing\tasset\tor\tliability\tinformation.\t\nThe\tfollowing\ttable\tpresents\trevenues\tand\tgross\tprofit\tby\treportable\tsegment\n\t\n(in\tmillions):\n\t\n\t\n\t\nYear\tEnded\tDecember\t31,\n\t\n\t\n\t\n2022\n\t\n\t\n2021\n\t\n\t\n2020\n\t\nAutomotive\tsegment\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nRevenues\n\t\n$\n77,553\n\t\n\t\n$\n51,034"
+      },
+      {
+        "chunk_id": "doc_1132",
+        "section": "",
+        "year": "2022",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "(\n1,570\n)\n\t\n\t\n(\n2,114\n)\n\t\n\t\n(\n1,072\n)\nPrepaid\texpenses\tand\tother\tcurrent\tassets\n\t\n\t\n(\n1,417\n)\n\t\n\t\n(\n271\n)\n\t\n\t\n(\n251\n)\nOther\tnon-current\tassets\n\t\n\t\n(\n2,551\n)\n\t\n\t\n(\n1,291\n)\n\t\n\t\n(\n344\n)\nAccounts\tpayable\tand\taccrued\tliabilities\n\t\n\t\n6,029\n\t\n\t\n\t\n4,578\n\t\n\t\n\t\n2,102\n\t\nDeferred\trevenue\n\t\n\t\n1,131\n\t\n\t\n\t\n793\n\t\n\t"
+      },
+      {
+        "chunk_id": "doc_352",
+        "section": "",
+        "year": "2020",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "869\n\t\n\t\n\t\n883\n\t\nTotal\tautomotive\trevenues\n\t\n\t\n27,236\n\t\n\t\n\t\n20,821\n\t\n\t\n\t\n18,515\n\t\nEnergy\tgeneration\tand\tstorage\n\t\n\t\n1,994\n\t\n\t\n\t\n1,531\n\t\n\t\n\t\n1,555\n\t\nServices\tand\tother\n\t\n\t\n2,306\n\t\n\t\n\t\n2,226\n\t\n\t\n\t\n1,391\n\t\nTotal\trevenues\n—\n\t\n\t\n\t\n(\n188\n)\n\t\n\t\n—\n\t\nChanges\tin\toperating\tassets\tand\tliabilities,\tnet\tof\teffect\t"
+      },
+      {
+        "chunk_id": "doc_1611",
+        "section": "",
+        "year": "2023",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "million\tand\t$\n128\n\tmillion,\trespectively,\tis\trecorded\twithin\tAccounts\nreceivable,\tnet,\tfor\tthe\tcurrent\tportion\tand\t$\n1.04\n\tbillion\tand\t$\n665\n\tmillion,\trespectively,\tis\trecorded\twithin\tOther\tnon-current\tassets\tfor\tthe\tlong-term\nportion.\nAutomotive\tRegulatory\tCredits\nmeasures\tperformance\tamong\t\ntwo\n\to"
+      },
+      {
+        "chunk_id": "doc_97",
+        "section": "",
+        "year": "2019",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "expenditures.\n39\nmany\tmarkets,\twhich\tmay\texpose\tus\tto\tincreased\tvolatility.\tSpecifically,\tit\tis\tuncertain\tas\tto\thow\tsuch\tmacroeconomic\tfactors\twill\timpact\tus\tas\ta\ncompany\tthat\thas\tbeen\texperiencing\tgrowth\tand\tincreasing\tmarket\tshare\tin\tan\tindustry\tthat\thas\tglobally\tbeen\texperiencing\ta\trecent\tdecline"
+      },
+      {
+        "chunk_id": "doc_81",
+        "section": "",
+        "year": "2019",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "(d)\nDisclosed\tin\tthis\treport\tany\tchange\tin\tthe\tregistrant’s\tinternal\tcontrol\tover\tfinancial\treporting\tthat\toccurred\tduring\tthe\tregistrant’s\tmost\nrecent\tfiscal\tquarter\t(the\tregistrant’s\tfourth\tfiscal\tquarter\tin\tthe\tcase\tof\tan\tannual\treport)\tthat\thas\tmaterially\taffected,\tor\tis\treasonably\n4.\nThe\tregist"
+      },
+      {
+        "chunk_id": "doc_26",
+        "section": "",
+        "year": "2019",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "Additionally,\tour\tteam\thas\texpertise\tin\tselecting\tand\tworking\twith\tvarious\tmaterials.\tFor\texample,\tgiven\tthe\timpact\tof\tmass\ton\trange,\twhich\tis\nvery\timportant\tfor\tpassenger\tvehicles,\tModel\tS\tand\tModel\tX\tare\tbuilt\twith\tlightweight\taluminum\tbodies\tand\tchassis\twhich\tincorporate\ta\tvariety\tof\nmaterials\tan"
+      },
+      {
+        "chunk_id": "doc_109",
+        "section": "",
+        "year": "2019",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "25D.\tSection\t48(a)(3)\tof\tthe\tIRC\tallows\ta\ttaxpayer\tto\tclaim\ta\tcredit\tof\t26%\tof\tqualified\texpenditures\tfor\ta\tcommercial\tsolar\tenergy\tsystem\tthat\nlegal\tcomplexity\tfor\tour\tvehicles.\tIn\tEurope,\tcertain\tvehicle\tsafety\tregulations\tapply\tto\tself-driving\tbraking\tand\tsteering\tsystems,\tand\tcertain\ttreaties\nal"
+      },
+      {
+        "chunk_id": "doc_1218",
+        "section": "",
+        "year": "2022",
+        "score": null,
+        "retrieved_by": "expanded query",
+        "text": "(§232.405\tof\tthis\tchapter)\tduring\tthe\tpreceding\t12\tmonths\t(or\tfor\tsuch\tshorter\tperiod\tthat\tthe\tregistrant\twas\trequired\tto\tsubmit\tsuch\tfiles).\t\t\t\t\nYes\n\t\t\n☒\n\t\t\t\tNo\t\t\n☐\ndescribed\tbelow.\tThe\tFederal\tEnergy\tRegulatory\tCommission\t(“FERC”)\thas\talso\ttaken\tsteps\tto\tenable\tthe\tparticipation\tof\tenergy\tstorage\t"
+      }
+    ],
+    "final_answer": "Based on the provided context, it appears that both automotive operations and energy generation/storage are strategic components of Tesla's business. However, the context also suggests that the automotive segment is a more significant contributor to the company's revenue and profitability.\n\nAccording to the 2020 10-K report (doc_352), the automotive segment accounted for 87% of total revenues, while the energy generation and storage segment accounted for 6% of total revenues. Additionally, the gross profit margin for the automotive segment was 19% in 2020, compared to 12% for the energy generation and storage segment.\n\nFurthermore, the 2020 10-K report (doc_352) states that the company's Chief Executive Officer, Elon Musk, is the chief operating decision maker (CODM) and organizes the company's operations, manages resource allocations, and measures performance among two operating and reportable segments: (i) automotive and (ii) energy generation and storage.\n\nTo support a business recommendation, the following disclosures may be necessary:\n\n1. Revenue and profitability breakdown by segment: To understand the relative importance of each segment and identify areas for improvement.\n2. Gross profit margin analysis: To assess the efficiency of each segment and identify opportunities for cost reduction.\n3. Operating and reportable segment analysis: To understand how the company's operations are organized and how performance is measured among different segments.\n4. Management's discussion and analysis (MD&A): To gain insight into the company's business strategy, risks, and opportunities, as well as management's perspective on the company's performance.\n\nThese disclosures would provide stakeholders with a comprehensive understanding of Tesla's business operations and enable them to make informed decisions about the company's strategic direction.\n\nSource: \n(doc_352 | tsla-10k_20201231-gen.pdf | 2020 | ?)",
+    "citations": [
+      {
+        "chunk_id": "doc_1570",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_1127",
+        "source_doc": "tsla-20221231-gen.pdf",
+        "section": "",
+        "year": "2022"
+      },
+      {
+        "chunk_id": "doc_1508",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_1128",
+        "source_doc": "tsla-20221231-gen.pdf",
+        "section": "",
+        "year": "2022"
+      },
+      {
+        "chunk_id": "doc_1192",
+        "source_doc": "tsla-20221231-gen.pdf",
+        "section": "",
+        "year": "2022"
+      },
+      {
+        "chunk_id": "doc_1120",
+        "source_doc": "tsla-20221231-gen.pdf",
+        "section": "",
+        "year": "2022"
+      },
+      {
+        "chunk_id": "doc_1132",
+        "source_doc": "tsla-20221231-gen.pdf",
+        "section": "",
+        "year": "2022"
+      },
+      {
+        "chunk_id": "doc_352",
+        "source_doc": "tsla-10k_20201231-gen.pdf",
+        "section": "",
+        "year": "2020"
+      },
+      {
+        "chunk_id": "doc_1611",
+        "source_doc": "tsla-20231231-gen.pdf",
+        "section": "",
+        "year": "2023"
+      },
+      {
+        "chunk_id": "doc_97",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_81",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_26",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_109",
+        "source_doc": "tsla-10k_20191231-gen_0.pdf",
+        "section": "",
+        "year": "2019"
+      },
+      {
+        "chunk_id": "doc_1218",
+        "source_doc": "tsla-20221231-gen.pdf",
+        "section": "",
+        "year": "2022"
+      }
+    ],
+    "retrieval_improvement_analysis": "Expanded retrieval returned 14 unique chunks vs 5 baseline chunks using 4 query variants."
+  }
+]

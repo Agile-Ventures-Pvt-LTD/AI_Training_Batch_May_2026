@@ -1,0 +1,38 @@
+[
+  {
+    "question": "HQ1",
+    "baseline_chunks": 5,
+    "hypothetical_chunks": 4,
+    "baseline_evidence_quality": "Risk factors chunks, direct match",
+    "improved_evidence_quality": "Broader risk coverage via indirect questions",
+    "improvement_observed": "More diverse chunks, indirect risk angles surfaced",
+    "failure_mode": "Some questions too generic"
+  },
+  {
+    "question": "HQ2",
+    "baseline_chunks": 5,
+    "hypothetical_chunks": 5,
+    "baseline_evidence_quality": "Warranty/defect sections matched",
+    "improved_evidence_quality": "Brand+warranty+trust chunks via hyp Q",
+    "improvement_observed": "Indirect brand risk evidence retrieved",
+    "failure_mode": "Hallucination risk if hyp Q too broad"
+  },
+  {
+    "question": "HQ3",
+    "baseline_chunks": 5,
+    "hypothetical_chunks": 5,
+    "baseline_evidence_quality": "Cash flow statement chunks",
+    "improved_evidence_quality": "Capex+working capital chunks via hyp Q",
+    "improvement_observed": "Multi-angle cash flow evidence",
+    "failure_mode": "May miss forward-looking statements"
+  },
+  {
+    "question": "HQ4",
+    "baseline_chunks": 5,
+    "hypothetical_chunks": 5,
+    "baseline_evidence_quality": "Cybersecurity keyword matches",
+    "improved_evidence_quality": "Tech/data/AI risk chunks without keyword",
+    "improvement_observed": "Non-obvious risk chunks surfaced",
+    "failure_mode": "Precision loss on broad queries"
+  }
+]

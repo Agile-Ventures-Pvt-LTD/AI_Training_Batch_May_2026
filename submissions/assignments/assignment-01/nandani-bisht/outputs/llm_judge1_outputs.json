@@ -1,0 +1,36 @@
+{
+  "response_a": {
+    "scores": {
+      "Empathy": 2,
+      "Clarity": 3,
+      "Actionability": 1,
+      "Policy alignment": 4,
+      "Tone appropriateness": 3
+    },
+    "strengths": [
+      "Acknowledges inconvenience"
+    ],
+    "weaknesses": [
+      "Lacks clear action",
+      "Does not address previous support attempts",
+      "Vague about refund process"
+    ]
+  },
+  "response_b": {
+    "scores": {
+      "Empathy": 5,
+      "Clarity": 5,
+      "Actionability": 5,
+      "Policy alignment": 5,
+      "Tone appropriateness": 5
+    },
+    "strengths": [
+      "Acknowledges frustration",
+      "Offers clear escalation path",
+      "Provides specific steps for resolution"
+    ],
+    "weaknesses": []
+  },
+  "winner": "B",
+  "judge_reasoning_summary": "Response B demonstrates higher empathy by acknowledging the customer's frustration and previous support attempts. It also provides clear, actionable steps for resolving the issue, aligns with policy by mentioning refund eligibility verification, and maintains an appropriate tone throughout."
+}

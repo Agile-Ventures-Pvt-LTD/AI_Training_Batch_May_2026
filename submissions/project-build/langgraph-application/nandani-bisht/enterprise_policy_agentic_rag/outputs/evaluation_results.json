@@ -1,0 +1,117 @@
+[
+  {
+    "question": "How many annual leave days can an employee carry forward?",
+    "response": {
+      "answer": "Employees may carry forward a maximum of 6 unused annual leave days to the next calendar year.",
+      "policy_basis": [
+        "Annual Leave Carry-Forward Rule"
+      ],
+      "sources": [
+        "hr_leave_policy.md"
+      ],
+      "answerability": "FOUND",
+      "confidence": "HIGH"
+    }
+  },
+  {
+    "question": "Can I claim meals for same-day domestic business travel?",
+    "response": {
+      "answer": "For same-day domestic business travel, meal reimbursement is allowed up to INR 800 per day, provided the travel duration exceeds 6 hours. Valid receipts must be submitted for all meal claims, and the reimbursement is subject to the company's reimbursement policy and approval requirements.",
+      "policy_basis": [
+        "Reimbursement Policy",
+        "Travel Policy"
+      ],
+      "sources": [
+        "reimbursement_policy.md",
+        "travel_policy.md"
+      ],
+      "answerability": "FOUND",
+      "confidence": "HIGH"
+    }
+  },
+  {
+    "question": "What documents are needed for hotel reimbursement?",
+    "response": {
+      "answer": "For hotel reimbursement, the required documents include a hotel invoice, payment receipt, approved travel request, check-in and check-out dates, and GST details where applicable. Claims submitted without the complete set of required documents will be returned to the employee for resubmission. Incomplete claims do not pause the submission timeline.",
+      "policy_basis": [
+        "4.2 Required Documents for Hotel Reimbursement"
+      ],
+      "sources": [
+        "reimbursement_policy.md"
+      ],
+      "answerability": "FOUND",
+      "confidence": "HIGH"
+    }
+  },
+  {
+    "question": "Can I use my personal laptop for office work?",
+    "response": {
+      "answer": "Personal laptops should not be used for regular office work due to security risks. However, temporary use may be permitted with manager and IT Security approval, ensuring the device meets minimum security standards. Employees must not store confidential data locally on personal laptops and must use secure remote access or company-approved cloud tools.",
+      "policy_basis": [
+        "IT Security Policy",
+        "Personal Laptop Usage"
+      ],
+      "sources": [
+        "it_security_policy.md"
+      ],
+      "answerability": "FOUND",
+      "confidence": "HIGH"
+    }
+  },
+  {
+    "question": "What approvals are needed for international travel?",
+    "response": {
+      "answer": "International business travel requires the following approvals in sequence before any booking is made: 1. Reporting Manager Approval, 2. Business Unit Head Approval, 3. Finance Approval, and 4. Travel Desk Confirmation. No international travel booking should be initiated until all four approvals are obtained. Employees who book international travel without completing this approval chain will be personally liable for cancellation charges.",
+      "policy_basis": [
+        "travel_policy.md"
+      ],
+      "sources": [
+        "travel_policy.md"
+      ],
+      "answerability": "FOUND",
+      "confidence": "HIGH"
+    }
+  },
+  {
+    "question": "Can customer data be uploaded to a public AI tool?",
+    "response": {
+      "answer": "No, customer data cannot be uploaded to a public AI tool under any circumstances.",
+      "policy_basis": [
+        "Employees must not upload, paste, or share customer data into public AI tools"
+      ],
+      "sources": [
+        {
+          "source_file": "ai_usage_policy.md",
+          "policy_domain": "AI_USAGE",
+          "chunk_id": "32d65c028abf",
+          "snippet": "Employees must not upload, paste, or share the following categories of data into public AI tools under any circumstances: Customer data including names, contact details, transaction records, or any personally identifiable information"
+        }
+      ],
+      "answerability": "ANSWERED",
+      "confidence": "HIGH",
+      "recommended_next_step": "If an employee needs to use customer data with an AI tool, they should explore using an approved internal AI tool, following the conditions outlined in section 4.2 of the AI usage policy."
+    }
+  },
+  {
+    "question": "Will my reimbursement definitely be approved?",
+    "response": {
+      "answer": "The policy documents do not contain information that covers this question.",
+      "policy_basis": [],
+      "sources": [],
+      "answerability": "NOT_FOUND",
+      "confidence": "LOW",
+      "recommended_next_step": "Contact the relevant policy owner \u2014 HR, Finance, IT Security, or AI Governance."
+    }
+  },
+  {
+    "question": "What should I do if the policy does not mention my scenario?",
+    "response": {
+      "answer": "The policy documents do not contain information that covers this question.",
+      "policy_basis": [],
+      "sources": [],
+      "answerability": "NOT_FOUND",
+      "confidence": "LOW",
+      "recommended_next_step": "Contact the relevant policy owner \u2014 HR, Finance, IT Security, or AI Governance."
+    }
+  }
+]

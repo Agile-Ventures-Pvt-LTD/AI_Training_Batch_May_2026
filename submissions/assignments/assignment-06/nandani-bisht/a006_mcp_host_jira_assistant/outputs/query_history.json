@@ -1,0 +1,59 @@
+[
+  {
+    "timestamp": "20260702T100922622940Z",
+    "user_query": "List all the jira Projects",
+    "tools_used": [
+      "list_projects"
+    ],
+    "final_answer": "Here are the Jira projects visible to the configured account:\n\n* My WorkSpace (key: SCRUM, type: software)",
+    "write_action_performed": false
+  },
+  {
+    "timestamp": "20260702T103810111876Z",
+    "user_query": "Add a comment to ABC-5 saying QA validation is pending.",
+    "tools_used": [
+      "add_issue_comment",
+      "get_issue_details"
+    ],
+    "final_answer": "I was unable to add a comment to issue ABC-5 because it does not exist in Jira. I performed a write action to attempt to add the comment, but it failed. I then attempted to retrieve the issue details to verify its existence, but this also failed, confirming that the issue does not exist.",
+    "write_action_performed": true
+  },
+  {
+    "timestamp": "20260702T103941247327Z",
+    "user_query": "Show comments on ABC-12",
+    "tools_used": [
+      "get_issue_comments",
+      "get_issue_details"
+    ],
+    "final_answer": "The issue ABC-12 does not exist in Jira. Therefore, it is not possible to show comments on this issue.",
+    "write_action_performed": false
+  },
+  {
+    "timestamp": "20260702T104001031836Z",
+    "user_query": "Update ABC-9 status to Done",
+    "tools_used": [
+      "update_issue_status",
+      "get_issue_details"
+    ],
+    "final_answer": "The issue ABC-9 does not exist in Jira. I was unable to update its status to Done because it was not found. I also attempted to retrieve the issue details, but it was not found.",
+    "write_action_performed": true
+  },
+  {
+    "timestamp": "20260702T124612316368Z",
+    "user_query": "LIST ALL JIRA PROJECTS",
+    "tools_used": [
+      "list_projects"
+    ],
+    "final_answer": "There are no Jira projects visible to the configured account.",
+    "write_action_performed": false
+  },
+  {
+    "timestamp": "20260702T124657482737Z",
+    "user_query": "list al jira projects",
+    "tools_used": [
+      "list_projects"
+    ],
+    "final_answer": "There are no Jira projects visible to the configured account.",
+    "write_action_performed": false
+  }
+]

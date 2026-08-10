@@ -1,0 +1,15 @@
+{
+  "incremental_revenue_range": "$80,000 to $140,000",
+  "incremental_gross_profit_range": "$32,000 to $56,000",
+  "monthly_net_benefit_range": "$2,000 to $26,000",
+  "payback_period_range_months": "6.92 to 90",
+  "decision": "APPROVE_WITH_CONDITIONS",
+  "reasoning_summary": "The project's ROI is potentially positive but requires careful management to ensure it meets the best-case scenario for payback within the desired timeframe.",
+  "key_assumptions": [
+    "Revenue uplift between 4% and 7%",
+    "Gross margin of 40%",
+    "Monthly AI operating costs of $30,000",
+    "Implementation cost of $180,000",
+    "Implementation time of 3 months"
+  ]
+}
