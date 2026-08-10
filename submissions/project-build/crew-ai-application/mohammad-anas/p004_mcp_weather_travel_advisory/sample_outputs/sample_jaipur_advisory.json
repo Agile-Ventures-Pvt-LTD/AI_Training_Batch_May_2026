@@ -1,0 +1,77 @@
+{
+    "destination": "Jaipur",
+    "region": "Rajasthan",
+    "country": "India",
+    "forecast_days": 3,
+    "current_weather": {
+        "temperature_c": 31.0,
+        "humidity": 48,
+        "precipitation_mm": 0.0,
+        "wind_speed_kmph": 12.0,
+        "weather_description": "Sunny"
+    },
+    "daily_forecast": [
+        {
+            "date": "2026-06-26",
+            "max_temp_c": 37.0,
+            "min_temp_c": 27.0,
+            "avg_temp_c": 32.0,
+            "total_precipitation_mm": 1.2,
+            "max_wind_kmph": 28.0,
+            "max_chance_of_rain": 60,
+            "weather_description": "Partly cloudy"
+        },
+        {
+            "date": "2026-06-27",
+            "max_temp_c": 38.0,
+            "min_temp_c": 28.0,
+            "avg_temp_c": 33.0,
+            "total_precipitation_mm": 2.4,
+            "max_wind_kmph": 24.0,
+            "max_chance_of_rain": 30,
+            "weather_description": "Sunny"
+        },
+        {
+            "date": "2026-06-28",
+            "max_temp_c": 36.0,
+            "min_temp_c": 26.0,
+            "avg_temp_c": 31.0,
+            "total_precipitation_mm": 0.5,
+            "max_wind_kmph": 20.0,
+            "max_chance_of_rain": 20,
+            "weather_description": "Clear"
+        }
+    ],
+    "weather_risk": "MEDIUM",
+    "risk_factors": [
+        "Maximum temperature is expected to be above 35°C."
+    ],
+    "recommended_actions": [
+        "Carry water and stay hydrated."
+    ],
+    "packing_suggestions": [
+        "Water bottle",
+        "Cap",
+        "Sunscreen",
+        "Light cotton clothing"
+    ],
+    "travel_readiness_advisory": "Travel is manageable with basic weather precautions.",
+    "weather_risk_explanation": "The forecast indicates moderate heat during the next few days.",
+    "resources_used": [
+        "resource://travel/checklist",
+        "resource://travel/advisory-rules",
+        "resource://weather/normalized-forecast-schema"
+    ],
+    "tools_used": [
+        "validate_city_input_tool",
+        "get_weather_forecast_tool",
+        "normalize_weather_data_tool",
+        "calculate_weather_risk_tool",
+        "save_travel_advisory_tool"
+    ],
+    "prompts_used": [
+        "travel_readiness_prompt",
+        "weather_risk_summary_prompt",
+        "packing_recommendation_prompt"
+    ]
+}

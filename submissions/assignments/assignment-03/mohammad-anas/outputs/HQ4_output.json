@@ -1,0 +1,54 @@
+{
+    "question_id": "HQ4",
+    "user_query": "Which disclosures help evaluate technology, cybersecurity, data, or AI operational risk even if the user does not explicitly say 'cybersecurity'?",
+    "retrieved_hypothetical_questions": [
+        {
+            "hypothetical_question": "What are the risks associated with unauthorized access to our corporate IT networks or customer vehicle systems?",
+            "parent_chunk_id": "chunk_275",
+            "section": "Item_8_Financial_Disclosures_Part_6",
+            "year": 2025,
+            "score": 0.86
+        },
+        {
+            "hypothetical_question": "How could failures or malicious interference with our proprietary AI and Autopilot software lead to operational halting or liability?",
+            "parent_chunk_id": "chunk_319",
+            "section": "Item_8_Financial_Disclosures_Part_7",
+            "year": 2025,
+            "score": 0.83
+        },
+        {
+            "hypothetical_question": "What happens if there is a disruption in our telematics systems or data centers that support vehicle connectivity?",
+            "parent_chunk_id": "chunk_184",
+            "section": "Item_8_Financial_Disclosures_Part_4",
+            "year": 2025,
+            "score": 0.80
+        }
+    ],
+    "parent_chunks_used": [
+        {
+            "chunk_id": "chunk_275",
+            "source_doc": "tsla-20231231-gen.pdf",
+            "section": "Item_8_Financial_Disclosures_Part_6",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_319",
+            "source_doc": "tsla-20221231-gen.pdf",
+            "section": "Item_8_Financial_Disclosures_Part_7",
+            "year": 2025
+        },
+        {
+            "chunk_id": "chunk_184",
+            "source_doc": "tsla-10ka_20211231-gen.pdf",
+            "section": "Item_8_Financial_Disclosures_Part_4",
+            "year": 2025
+        }
+    ],
+    "final_answer": "Disclosures evaluating these risks focus on the integrity of the company's IT infrastructure and proprietary software. Specifically, one should look at risk factors detailing the potential for unauthorized access to corporate networks or the vehicle's internal systems, which could result in data breaches [chunk_275]. Additionally, disclosures discussing vulnerabilities in telematics systems and data centers are critical, as outages there sever vehicle connectivity and diagnostic capabilities [chunk_184]. Finally, evaluations of liability regarding the failure or malicious manipulation of AI-driven systems, such as Autopilot and Full Self-Driving software, highlight severe operational and reputational risks [chunk_319].",
+    "citations": [
+        "chunk_275",
+        "chunk_319",
+        "chunk_184"
+    ],
+    "comparison_with_baseline": "The HyDE Approach successfully captured implicit infrastructural threat logs and AI liability clauses without relying on strict keyword matches for 'cybersecurity', greatly improving recall over the Baseline."
+}

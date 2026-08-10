@@ -1,0 +1,8 @@
+ipykernel>=7.3.0
+python-dotenv>=1.2.2
+langchain-groq==0.3.8
+langchain==0.3.20
+langchain-community==0.3.19 
+langgraph==0.3.21
+Langchain-core
+pytest

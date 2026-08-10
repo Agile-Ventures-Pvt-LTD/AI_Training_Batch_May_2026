@@ -1,0 +1,40 @@
+1- Ask Question (type exit to quit): Show me the database schema.
+
+Answer:
+The database schema consists of 9 tables: customer, netbanking, card_type, card, transaction_type, transaction_terminal, merchant_type, merchant, and transaction. Each table has various columns containing information about customers, cards, transactions, merchants, and more.
+
+2- Ask Question (type exit to quit): Show customer profile for customer 1.
+
+Answer:
+The customer profile for customer 1 is:
+Name: Denise Walker
+Email: de***@gmail.com
+Phone: ******6781
+Address: 1040 West 27th Avenue #APT 000401, Anchorage, AK 99503
+
+3- Ask Question (type exit to quit): Show card details for customer 1.
+
+Answer:
+The card details for customer 1 are: 
+Card Number: **** **** **** 1697
+Valid From: 2013-06-01
+Expiry: 2023-06-01
+Card Type ID: 2
+
+4- Ask Question (type exit to quit): Show the last 5 transactions for customer 1.
+
+Answer:
+The last 5 transactions for customer 1 are:
+
+1. Kroger - $6.33 (Credit) on 2022-06-01 14:21:10
+2. Publix - $30.23 (Debit) on 2022-06-02 08:25:35
+3. Lowe's - $16.13 (Debit) on 2022-06-02 09:56:49
+4. Dollar General - $31.64 (Debit) on 2022-06-02 12:27:42
+5. Costco - $20.24 (Debit) on 2022-06-02 15:57:22
+
+All transactions were made with the same card, **** **** **** 1697.
+
+5 - Ask Question (type exit to quit): Which merchant type has the highest total spend?
+
+Answer:
+The merchant type with the highest total spend is supermarket, with a total spend of $3,497,042.51 and 66,386 transactions.

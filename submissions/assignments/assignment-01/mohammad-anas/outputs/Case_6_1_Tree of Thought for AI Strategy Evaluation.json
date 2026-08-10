@@ -1,0 +1,43 @@
+{
+    "options_evaluated": [
+        {
+            "name": "AI customer support assistant",
+            "business_value": 4,
+            "feasibility": 3,
+            "risk": 2,
+            "pilot_suitability_90d": 3,
+            "adoption": 3
+        },
+        {
+            "name": "AI sales proposal generator",
+            "business_value": 4,
+            "feasibility": 3,
+            "risk": 4,
+            "pilot_suitability_90d": 5,
+            "adoption": 4
+        },
+        {
+            "name": "AI contract risk analyzer",
+            "business_value": 5,
+            "feasibility": 2,
+            "risk": 1,
+            "pilot_suitability_90d": 2,
+            "adoption": 3
+        },
+        {
+            "name": "AI internal HR policy assistant",
+            "business_value": 4,
+            "feasibility": 5,
+            "risk": 3,
+            "pilot_suitability_90d": 5,
+            "adoption": 5
+        }
+    ],
+    "recommended_option": "AI internal HR policy assistant",
+    "why_not_others": [
+        "AI customer support assistant \u2013 moderate feasibility and higher data\u2011privacy risk lower its overall score; pilot suitability and adoption are only average.",
+        "AI sales proposal generator \u2013 while low risk and easy to pilot, its business value and feasibility are slightly lower than the HR assistant and it still requires brand/legal review that adds overhead.",
+        "AI contract risk analyzer \u2013 highest business value but very high implementation complexity, low feasibility, and significant legal risk make it unsuitable for a 90\u2011day pilot."
+    ],
+    "final_recommendation": "Start with a 90\u2011day pilot of the AI internal HR policy assistant. It delivers strong business value through cost savings and high employee usage, is quick to implement, carries moderate risk, and enjoys very high adoption potential. After validating impact and governance, the organization can then evaluate the AI sales proposal generator as a secondary initiative to capture revenue upside with similarly low risk."
+}

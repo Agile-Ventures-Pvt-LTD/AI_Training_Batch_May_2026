@@ -1,0 +1,46 @@
+{
+    "individual_answers": [
+        {
+            "rule": "Base daily meal limit",
+            "value": 60,
+            "note": "Standard limit per day"
+        },
+        {
+            "rule": "International travel uplift",
+            "value": 75,
+            "note": "60 * 1.25 = 75"
+        },
+        {
+            "rule": "Same\u2011day travel >8h (no overnight) limit",
+            "value": 37.5,
+            "note": "50% of uplifted daily limit (75 * 0.5)"
+        },
+        {
+            "rule": "Alcohol exclusion",
+            "value": 12,
+            "note": "Alcohol amount not reimbursable"
+        },
+        {
+            "rule": "Eligible meal expense after alcohol removal",
+            "value": 58,
+            "note": "Submitted $70 \u2013 $12 alcohol"
+        },
+        {
+            "rule": "Reimbursable amount (capped by same\u2011day limit)",
+            "value": 37.5,
+            "note": "Eligible $58 exceeds $37.5 cap, so reimbursable = $37.5"
+        },
+        {
+            "rule": "Receipt requirement",
+            "value": true,
+            "note": "Receipt provided and amount > $25"
+        }
+    ],
+    "final_reimbursable_amount": 37.5,
+    "consistency_count": {
+        "total_rules_evaluated": 5,
+        "consistent_applications": 5
+    },
+    "final_decision": "Approved for $37.50 reimbursement.",
+    "reasoning_summary": "International travel raises the daily meal limit to $75. Because the trip lasted 14 hours without an overnight stay, only 50% of that limit ($37.50) is claimable. After removing the $12 non\u2011reimbursable alcohol, the eligible expense is $58, which exceeds the $37.50 cap, so the reimbursable amount is $37.50. Receipts are provided, satisfying the documentation requirement."
+}

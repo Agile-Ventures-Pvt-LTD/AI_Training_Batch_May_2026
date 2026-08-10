@@ -1,0 +1,60 @@
+from src.schemas import (
+    CurrentWeather,
+    DailyForecast,
+    TravelReport,
+    WeatherRisk,
+)
+
+
+def test_final_report_schema_valid():
+    report = TravelReport(
+        destination="Jaipur",
+        region="Rajasthan",
+        country="India",
+        forecast_days=3,
+        current_weather=CurrentWeather(
+            temperature_c=31,
+            humidity=48,
+            precipitation_mm=0,
+            wind_speed_kmph=12,
+            weather_description="Sunny",
+        ),
+        daily_forecast=[
+            DailyForecast(
+                date="2026-06-26",
+                max_temp_c=37,
+                min_temp_c=27,
+                avg_temp_c=32,
+                total_precipitation_mm=1.2,
+                max_wind_kmph=28,
+                max_chance_of_rain=60,
+                weather_description="Partly cloudy",
+            )
+        ],
+        weather_risk=WeatherRisk.MEDIUM,
+        risk_factors=["Moderate heat"],
+        recommended_actions=["Carry water"],
+        packing_suggestions=["Cap"],
+        travel_readiness_advisory="Travel is manageable.",
+        weather_risk_explanation="Moderate heat expected.",
+        resources_used=[
+            "resource://travel/checklist",
+            "resource://travel/advisory-rules",
+            "resource://weather/normalized-forecast-schema",
+        ],
+        tools_used=[
+            "validate_city_input_tool",
+            "get_weather_forecast_tool",
+            "normalize_weather_data_tool",
+            "calculate_weather_risk_tool",
+            "save_travel_advisory_tool",
+        ],
+        prompts_used=[
+            "travel_readiness_prompt",
+            "weather_risk_summary_prompt",
+            "packing_recommendation_prompt",
+        ],
+    )
+
+    assert report.destination == "Jaipur"
+    assert report.weather_risk == WeatherRisk.MEDIUM

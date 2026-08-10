@@ -1,0 +1,155 @@
+[
+  {
+    "question": "What does Amazon say about AWS and AI-related growth?",
+    "result": {
+      "answer": "Amazon states that AWS is experiencing significant growth related to AI, with a revenue run rate of over $15 billion in Q1 2026, and that customers are choosing AWS for AI due to its broader capabilities, lower latency, and stronger security. AWS added 3.9 gigawatts of new power capacity in 2025 and expects to double its total power capacity by the end of 2027. The company believes that AI will reshape every customer experience and unlock new ones, and that AWS will continue to be a key player in this growth.",
+      "sources": [
+        {
+          "source_file": "Amazon-2025-Annual-Report.pdf",
+          "page_number": 5,
+          "chunk_id": "2/",
+          "snippet": "Customers are choosing AWS for AI for a few reasons. First, we have broader capabilities than others, with compelling offerings for model-building (SageMaker), high-performance inference with leading selection of frontier models (Bedrock), lower-cost inference (on our custom silicon, Trainium), agent-building (Strands), scalable and secure agent environments (AgentCore), and turnkey agents for coding, software migrations, and most tasks knowledge workers use in their daily routines (Kiro, Transform, and Quick)."
+        },
+        {
+          "source_file": "Amazon-2025-Annual-Report.pdf",
+          "page_number": 5,
+          "chunk_id": "3/",
+          "snippet": "AWS added 3.9 gigawatts (\"GW\") of new power capacity in 2025, expects to double total power capacity by the end of 2027, and is monetizing that capacity as fast as it\u2019s installed."
+        },
+        {
+          "source_file": "Amazon-2025-Annual-Report.pdf",
+          "page_number": 8,
+          "chunk_id": "",
+          "snippet": "AWS is at a $142 billion revenue run rate, and yet 85% of global IT spend remains on-premises. This will change."
+        }
+      ],
+      "confidence": "HIGH",
+      "answerability": "ANSWERED"
+    }
+  },
+  {
+    "question": "What risks are mentioned related to supply chain?",
+    "result": {
+      "answer": "The risks mentioned related to supply chain include: decisions by suppliers to limit or stop selling or licensing merchandise, content, components, or services, supplier bankruptcies due to poor economic conditions, natural or human-caused disasters, geopolitical events, labor and trade disputes, and violations by suppliers of applicable laws, regulations, contractual terms, intellectual property rights of others, or Amazon's Supply Chain Standards. Additionally, constraints on the availability of semiconductor products, including those related to artificial intelligence infrastructure, could adversely affect Amazon's ability to develop and operate artificial intelligence technologies, products, or services.",
+      "sources": [
+        {
+          "source_file": "Amazon-2025-Annual-Report.pdf",
+          "page_number": 23,
+          "chunk_id": "Page 23",
+          "snippet": "We have significant suppliers, including content and technology licensors, and in some cases, limited or single-sources of supply, that are important to our sourcing, services, manufacturing, and any related ongoing servicing of merchandise and content."
+        },
+        {
+          "source_file": "Amazon-2025-Annual-Report.pdf",
+          "page_number": 23,
+          "chunk_id": "Page 23",
+          "snippet": "Decisions by our current suppliers to limit or stop selling or licensing merchandise, content, components, or services to us on acceptable terms, or delay delivery, including as a result of one or more supplier bankruptcies due to poor economic conditions, natural or human-caused disasters (including public health crises), geopolitical events, labor and trade disputes, or for other reasons, may result in our being"
+        },
+        {
+          "source_file": "Amazon-2025-Annual-Report.pdf",
+          "page_number": 23,
+          "chunk_id": "Page 23",
+          "snippet": "Constraints on the availability of these products could adversely affect our ability to develop and operate artificial intelligence technologies, products, or services."
+        },
+        {
+          "source_file": "Amazon-2025-Annual-Report.pdf",
+          "page_number": 22,
+          "chunk_id": "Page 22",
+          "snippet": "An inability to negotiate acceptable terms with these companies or performance problems, staffing limitations, or other difficulties experienced by these companies or by our own transportation systems, including as a result of labor market constraints and related costs, could negatively impact our operating results and customer experience."
+        }
+      ],
+      "confidence": "HIGH",
+      "answerability": "ANSWERED"
+    }
+  },
+  {
+    "question": "Summarise Amazon's key risks factors in 5 bullet points.",
+    "result": {
+      "error": "JSON parse error",
+      "raw": "{\n  \"answer\": \"Amazon's key risk factors include: \n    * changes in interest rates (File: Amazon-2025-Annual-Report.pdf | Page: 25)\n    * conditions or trends in the internet, other technologies including artificial intelligence, and the industry segments they operate in (File: Amazon-2025-Annual-Report.pdf | Page: 25)\n    * fluctuations in the stock market in general and market prices for technology-related companies in particular (File: Amazon-2025-Annual-Report.pdf | Page: 25)\n    * global economic and geopolitical conditions (File: Amazon-2025-Annual-Report.pdf | Page: 31)\n    * risks of inventory management, variability in demand (File: Amazon-2025-Annual-Report.pdf | Page: 31)\",\n  \"sources\": [\n    {\"source_file\": \"Amazon-2025-Annual-Report.pdf\", \"page_number\": 25, \"chunk_id\": \"Item 1A\", \"snippet\": \"changes in interest rates;\"},\n    {\"source_file\": \"Amazon-2025-Annual-Report.pdf\", \"page_number\": 25, \"chunk_id\": \"Item 1A\", \"snippet\": \"conditions or trends in the internet, other technologies including artificial intelligence, and the industry segments we operate in;\"},\n    {\"source_file\": \"Amazon-2025-Annual-Report.pdf\", \"page_number\": 25, \"chunk_id\": \"Item 1A\", \"snippet\": \"fluctuations in the stock market in general and market prices for technology-related companies in particular;\"},\n    {\"source_file\": \"Amazon-2025-Annual-Report.pdf\", \"page_number\": 31, \"chunk_id\": \"Overview\", \"snippet\": \"global economic and geopolitical conditions\"},\n    {\"source_file\": \"Amazon-2025-Annual-Report.pdf\", \"page_number\": 31, \"chunk_id\": \"Overview\", \"snippet\": \"risks of inventory management, variability in demand\"}\n  ],\n  \"confidence\": \"HIGH\",\n  \"answerability\": \"ANSWERED\"\n}"
+    }
+  },
+  {
+    "question": "What does the document say about Amazon's advertising services revenue?",
+    "result": {
+      "answer": "The document does not provide a direct figure for Amazon's advertising services revenue. However, it mentions that advertising and other promotional costs to market products and services were $20.3 billion, $21.4 billion, and $23.5 billion in 2023, 2024, and 2025, respectively. Additionally, it notes that service sales, which include advertising services, were $318,898 million, $365,648 million, and $420,658 million in 2023, 2024, and 2025, respectively.",
+      "sources": [
+        {
+          "source_file": "Amazon-2025-Annual-Report.pdf",
+          "page_number": 55,
+          "chunk_id": "Sales and Marketing",
+          "snippet": "Advertising and other promotional costs to market our products and services are expensed as incurred and were $20.3 billion, $21.4 billion, and $23.5 billion in 2023, 2024, and 2025."
+        },
+        {
+          "source_file": "Amazon-2025-Annual-Report.pdf",
+          "page_number": 48,
+          "chunk_id": "CONSOLIDATED STATEMENTS OF OPERATIONS",
+          "snippet": "Net service sales 318,898 365,648 420,658"
+        }
+      ],
+      "confidence": "MEDIUM",
+      "answerability": "PARTIALLY_ANSWERED"
+    }
+  },
+  {
+    "question": "Compare AWS business growth to the India segment based on the provided documents.",
+    "result": {
+      "answer": "There is no information available to compare AWS business growth to the India segment as the India segment is not mentioned in the provided documents.",
+      "sources": [],
+      "confidence": "LOW",
+      "answerability": "NOT_FOUND"
+    }
+  },
+  {
+    "question": "What legal  risks are mentioned for Amazon?",
+    "result": {
+      "answer": "Amazon faces various legal risks, including patent infringement allegations, antitrust claims, and regulatory investigations. Specifically, the company is involved in lawsuits related to patent infringement, such as the complaints filed by Primos Storage Technology LLC and Xockets, Inc. Additionally, Amazon is subject to antitrust claims, including allegations of monopoly in markets for online superstores, marketplace services, or intermediation services. The company is also under investigation for potential violations of competition-related or consumer protection rules and regulations.",
+      "sources": [
+        {
+          "source_file": "Amazon-2025-Annual-Report.pdf",
+          "page_number": 72,
+          "chunk_id": "Page 72",
+          "snippet": "The complaint alleges, among other things, that Amazon S3, Amazon EMR, Amazon EC2 instances using Amazon EBS, and Amazon FSx for Lustre infringe U.S. Patent Nos. 7,386,663; 7,937,528; and 10,599,344"
+        },
+        {
+          "source_file": "Amazon-2025-Annual-Report.pdf",
+          "page_number": 71,
+          "chunk_id": "Page 71",
+          "snippet": "Some of the private plaintiff cases include allegations of distinct purported classes, including consumers who purchased a product through Amazon\u2019s stores and consumers who purchased a product offered by Amazon through another e-commerce retailer"
+        },
+        {
+          "source_file": "Amazon-2025-Annual-Report.pdf",
+          "page_number": 26,
+          "chunk_id": "Page 26",
+          "snippet": "We are regularly subject to formal and informal reviews, investigations, and other proceedings by governments and regulatory authorities under existing laws, regulations, or interpretations or pursuing new and novel approaches to regulate our operations"
+        }
+      ],
+      "confidence": "HIGH",
+      "answerability": "ANSWERED"
+    }
+  },
+  {
+    "question": "What will Amazon's stock price be next year?",
+    "result": {
+      "answer": "I could not find this information in the provided documents.",
+      "sources": [],
+      "confidence": "LOW",
+      "answerability": "NOT_FOUND"
+    }
+  },
+  {
+    "question": "Does the document guarantee future profitability from Amazon's AI investments?",
+    "result": {
+      "answer": "The document does not guarantee future profitability from Amazon's AI investments, but the CEO expresses strong conviction that the margins and ROIC will be appealing.",
+      "sources": [
+        {
+          "source_file": "Amazon-2025-Annual-Report.pdf",
+          "page_number": 4,
+          "chunk_id": "Page 4 text",
+          "snippet": "My strong conviction, at least for Amazon, is that the answers are no, no, and yes."
+        }
+      ],
+      "confidence": "MEDIUM",
+      "answerability": "ANSWERED"
+    }
+  }
+]

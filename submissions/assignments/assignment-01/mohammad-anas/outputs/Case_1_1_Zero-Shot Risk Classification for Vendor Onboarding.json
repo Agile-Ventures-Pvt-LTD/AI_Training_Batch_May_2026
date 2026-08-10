@@ -1,0 +1,21 @@
+{
+    "risk_level": "HIGH",
+    "key_risk_factors": [
+        "Privacy risk \u2013 customer data may be used for product improvement unless a manual opt\u2011out is submitted and no region\u2011specific data residency is currently offered.",
+        "Compliance risk \u2013 only SOC\u202f2 Type\u202fI certification (no Type\u202fII, no ISO\u202f27001, GDPR/CCPA attestations), which may not satisfy regulatory requirements for financial documents.",
+        "Operational risk \u2013 multi\u2011tenant cloud deployment with a 99.5\u202f% uptime SLA and limited documented disaster\u2011recovery or incident\u2011response procedures.",
+        "Vendor maturity risk \u2013 company has been operating for only 18\u202fmonths with 12 enterprise customers, indicating limited track record and support depth.",
+        "Pricing risk \u2013 usage\u2011based model can scale dramatically with document volume and rate\u2011limit thresholds are undocumented, creating cost\u2011predictability issues."
+    ],
+    "missing_information": [
+        "Exact timeline and details for upcoming region\u2011specific data residency options.",
+        "Automated opt\u2011out mechanism for data\u2011use in model training and associated data\u2011retention policy.",
+        "Roadmap to achieve SOC\u202f2 Type\u202fII (or other) certification and any existing ISO\u202f27001, ISO\u202f27701, GDPR/CCPA compliance statements.",
+        "Detailed SLA terms, including penalties for downtime, and documented disaster\u2011recovery / business\u2011continuity plans.",
+        "Comprehensive pricing schedule, volume\u2011discount tiers, and clear API rate\u2011limit specifications.",
+        "Encryption key management model (customer\u2011managed vs. vendor\u2011managed) and key rotation practices.",
+        "Third\u2011party audit reports, security incident history, and references from existing enterprise customers."
+    ],
+    "business_recommendation": "Proceed with a structured pilot only after obtaining the missing information and negotiating stronger contractual safeguards. Require a data\u2011residency addendum, an automated opt\u2011out process, and explicit cost\u2011cap provisions. Insist on SOC\u202f2 Type\u202fII (or equivalent) certification before full production use, and consider alternative vendors with proven maturity and clearer pricing models as a fallback.",
+    "confidence_score": 0.86
+}

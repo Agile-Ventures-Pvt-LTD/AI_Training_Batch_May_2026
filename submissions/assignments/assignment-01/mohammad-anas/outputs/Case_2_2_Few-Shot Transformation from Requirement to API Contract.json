@@ -1,0 +1,45 @@
+[
+    {
+        "action": "APPLY_LEAVE",
+        "parameters": {
+            "start_date": "12th June",
+            "end_date": "15th June",
+            "reason": "travelling"
+        },
+        "requires_clarification": false,
+        "clarification_question": "",
+        "confidence": 0.96
+    },
+    {
+        "action": "CHECK_BALANCE",
+        "parameters": {
+            "leave_type": "casual"
+        },
+        "requires_clarification": false,
+        "clarification_question": "",
+        "confidence": 0.93
+    },
+    {
+        "action": "CANCEL_LEAVE",
+        "parameters": {},
+        "requires_clarification": true,
+        "clarification_question": "Could you please provide the leave ID or the exact dates of the leave you want to cancel?",
+        "confidence": 0.88
+    },
+    {
+        "action": "GET_POLICY",
+        "parameters": {
+            "leave_type": "maternity"
+        },
+        "requires_clarification": false,
+        "clarification_question": "",
+        "confidence": 0.9
+    },
+    {
+        "action": "APPLY_LEAVE",
+        "parameters": {},
+        "requires_clarification": true,
+        "clarification_question": "Could you specify the start and end dates you are considering and the reason for the leave?",
+        "confidence": 0.85
+    }
+]
