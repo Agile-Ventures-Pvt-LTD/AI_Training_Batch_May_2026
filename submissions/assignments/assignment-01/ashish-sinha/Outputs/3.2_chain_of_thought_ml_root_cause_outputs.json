@@ -1,0 +1,45 @@
+{
+    "case_name": "3.2_chain_of_thought_ml_root_cause_outputs",
+    "raw_response": "{\n  \"most_likely_causes\": [\n    \"data drift (transaction_amount distribution shift)\",\n    \"concept drift (new payment channel & changed fraud patterns after promotion)\",\n    \"threshold miscalibration (precision fell more than recall)\"\n  ],\n  \"evidence\": [\n    \"Feature distribution for transaction_amount shifted significantly\",\n    \"A new payment channel was introduced, altering transaction characteristics\",\n    \"Fraud patterns changed after a promotional campaign\",\n    \"Precision dropped from 0.82 to 0.61 while recall only dropped from 0.76 to 0.72\",\n    \"Transaction volume increased by 30%, potentially exposing the model to unseen regimes\"\n  ],\n  \"less_likely_causes\": [\n    \"pipeline failure (logs show no failed jobs)\",\n    \"model over‑fitting (pre‑deployment metrics were strong and no code changes reported)\"\n  ],\n  \"recommended_diagnostics\": [\n    \"Compute Population Stability Index (PSI) / Kolmogorov‑Smirnov test for key features (e.g., transaction_amount, channel_id)\",\n    \"Segment recent data by payment channel and compare confusion matrices to baseline\",\n    \"Label a fresh validation set from the last month and evaluate precision/recall per segment\",\n    \"Run threshold sweep on recent data to see if a different decision threshold restores precision\",\n    \"Check feature engineering code for handling of the new channel (e.g., missing values, encoding)\",\n    \"Monitor model output distribution over time for sudden shifts\"\n  ],\n  \"short_term_actions\": [\n    \"Temporarily raise the decision threshold to improve precision while monitoring recall impact\",\n    \"Add the new channel and recent fraud examples to a hold‑out validation set for immediate re‑evaluation\",\n    \"Alert stakeholders if precision falls below a defined SLA\",\n    \"If drift metrics exceed pre‑defined limits, trigger an emergency model refresh with latest labeled data\"\n  ],\n  \"long_term_actions\": [\n    \"Implement automated drift detection (PSI, KL divergence) and trigger retraining pipelines\",\n    \"Establish a periodic (e.g., monthly) model retraining schedule incorporating new channels and fraud patterns\",\n    \"Adopt adaptive threshold calibration based on rolling precision/recall targets\",\n    \"Extend feature store to version and track new channel attributes\",\n    \"Create a continuous labeling pipeline (e.g., active learning) to keep ground‑truth up‑to‑date\",\n    \"Document and test handling of future payment‑channel additions in the preprocessing code\"\n  ],\n  \"reasoning_summary\": \"The sharp precision loss alongside modest recall decline points to a shift in the underlying data distribution and fraud behavior rather than a broken pipeline. Significant changes in transaction_amount distribution, the introduction of a new payment channel, and altered fraud patterns after a promotion are classic signs of data and concept drift. Mis‑aligned decision thresholds exacerbate the precision drop. Diagnostics should quantify feature drift, evaluate performance per new channel, and test threshold adjustments. Immediate actions focus on threshold tuning and rapid validation, while long‑term measures establish systematic drift monitoring and scheduled retraining to keep the model aligned with evolving business realities.\"\n}",
+    "parsed_output": {
+        "most_likely_causes": [
+            "data drift (transaction_amount distribution shift)",
+            "concept drift (new payment channel & changed fraud patterns after promotion)",
+            "threshold miscalibration (precision fell more than recall)"
+        ],
+        "evidence": [
+            "Feature distribution for transaction_amount shifted significantly",
+            "A new payment channel was introduced, altering transaction characteristics",
+            "Fraud patterns changed after a promotional campaign",
+            "Precision dropped from 0.82 to 0.61 while recall only dropped from 0.76 to 0.72",
+            "Transaction volume increased by 30%, potentially exposing the model to unseen regimes"
+        ],
+        "less_likely_causes": [
+            "pipeline failure (logs show no failed jobs)",
+            "model over‑fitting (pre‑deployment metrics were strong and no code changes reported)"
+        ],
+        "recommended_diagnostics": [
+            "Compute Population Stability Index (PSI) / Kolmogorov‑Smirnov test for key features (e.g., transaction_amount, channel_id)",
+            "Segment recent data by payment channel and compare confusion matrices to baseline",
+            "Label a fresh validation set from the last month and evaluate precision/recall per segment",
+            "Run threshold sweep on recent data to see if a different decision threshold restores precision",
+            "Check feature engineering code for handling of the new channel (e.g., missing values, encoding)",
+            "Monitor model output distribution over time for sudden shifts"
+        ],
+        "short_term_actions": [
+            "Temporarily raise the decision threshold to improve precision while monitoring recall impact",
+            "Add the new channel and recent fraud examples to a hold‑out validation set for immediate re‑evaluation",
+            "Alert stakeholders if precision falls below a defined SLA",
+            "If drift metrics exceed pre‑defined limits, trigger an emergency model refresh with latest labeled data"
+        ],
+        "long_term_actions": [
+            "Implement automated drift detection (PSI, KL divergence) and trigger retraining pipelines",
+            "Establish a periodic (e.g., monthly) model retraining schedule incorporating new channels and fraud patterns",
+            "Adopt adaptive threshold calibration based on rolling precision/recall targets",
+            "Extend feature store to version and track new channel attributes",
+            "Create a continuous labeling pipeline (e.g., active learning) to keep ground‑truth up‑to‑date",
+            "Document and test handling of future payment‑channel additions in the preprocessing code"
+        ],
+        "reasoning_summary": "The sharp precision loss alongside modest recall decline points to a shift in the underlying data distribution and fraud behavior rather than a broken pipeline. Significant changes in transaction_amount distribution, the introduction of a new payment channel, and altered fraud patterns after a promotion are classic signs of data and concept drift. Mis‑aligned decision thresholds exacerbate the precision drop. Diagnostics should quantify feature drift, evaluate performance per new channel, and test threshold adjustments. Immediate actions focus on threshold tuning and rapid validation, while long‑term measures establish systematic drift monitoring and scheduled retraining to keep the model aligned with evolving business realities."
+    }
+}

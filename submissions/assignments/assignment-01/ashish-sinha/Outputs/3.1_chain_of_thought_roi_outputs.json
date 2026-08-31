@@ -1,0 +1,19 @@
+{
+    "case_name": "3.1_chain_of_thought_roi_outputs",
+    "raw_response": "{\n  \"incremental_revenue_range\": \"$80,000 - $140,000 per month\",\n  \"incremental_gross_profit_range\": \"$32,000 - $56,000 per month\",\n  \"monthly_net_benefit_range\": \"$2,000 - $26,000 per month\",\n  \"payback_period_range_months\": \"7 - 90 months\",\n  \"decision\": \"APPROVE_WITH_CONDITIONS\",\n  \"reasoning_summary\": \"The AI engine could lift revenue by 4‑7%, generating $32k‑$56k gross profit monthly. After subtracting $30k operating costs, net benefit ranges from $2k to $26k. Payback of the $180k implementation cost would take 7 months in the best case but up to 90 months in the worst case, exceeding the 12‑month requirement. Approval is advised only with conditions to mitigate downside risk.\",\n  \"key_assumptions\": [\n    \"Revenue uplift applies to current monthly revenue of $2M.\",\n    \"Gross margin remains constant at 40% for incremental revenue.\",\n    \"Monthly AI infrastructure and maintenance costs are fixed at $22k and $8k respectively.\",\n    \"Implementation cost is a one‑time expense incurred before go‑live.\",\n    \"Payback calculation uses monthly net benefit after go‑live, ignoring the 3‑month implementation period.\"\n  ]\n}",
+    "parsed_output": {
+        "incremental_revenue_range": "$80,000 - $140,000 per month",
+        "incremental_gross_profit_range": "$32,000 - $56,000 per month",
+        "monthly_net_benefit_range": "$2,000 - $26,000 per month",
+        "payback_period_range_months": "7 - 90 months",
+        "decision": "APPROVE_WITH_CONDITIONS",
+        "reasoning_summary": "The AI engine could lift revenue by 4‑7%, generating $32k‑$56k gross profit monthly. After subtracting $30k operating costs, net benefit ranges from $2k to $26k. Payback of the $180k implementation cost would take 7 months in the best case but up to 90 months in the worst case, exceeding the 12‑month requirement. Approval is advised only with conditions to mitigate downside risk.",
+        "key_assumptions": [
+            "Revenue uplift applies to current monthly revenue of $2M.",
+            "Gross margin remains constant at 40% for incremental revenue.",
+            "Monthly AI infrastructure and maintenance costs are fixed at $22k and $8k respectively.",
+            "Implementation cost is a one‑time expense incurred before go‑live.",
+            "Payback calculation uses monthly net benefit after go‑live, ignoring the 3‑month implementation period."
+        ]
+    }
+}

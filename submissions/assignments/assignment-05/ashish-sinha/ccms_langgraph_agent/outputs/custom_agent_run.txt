@@ -1,0 +1,138 @@
+User Query: Show me the database schema.
+Agent Response:
+
+Question: Show me the database schema.
+Implementation: custom_react_agent
+Tools Used: inspect_database_schema
+Records Found: 0
+Answer:
+The database schema consists of 9 tables: card, card_type, customer, merchant, merchant_type, netbanking, transaction, transaction_terminal, and transaction_type. Each table has several columns, which are listed in the schema. For example, the card table has columns such as card_number, valid_from, expiry, security_code, and cust_id, among others. Similarly, the customer table has columns such as cust_id, first_name, last_name, email, phone, address, city, state, and zip. The transaction table has columns such as TXN_ID, TX_DATETIME, CARD_ID, TERMINAL_ID, TX_AMOUNT, TX_TIME_SECONDS, TX_TIME_DAYS, TXN_TYPE_ID, and M_ID. The schema provides a detailed structure of the database, which can be useful for querying and analyzing the data.
+Sensitive Data Masked: True
+
+
+User Query: Show customer profile for customer 1.
+Agent Response:
+
+Question: Show customer profile for customer 1.
+Implementation: custom_react_agent
+Tools Used: get_customer_profile
+Records Found: 0
+Answer:
+The customer profile for customer 1 is:
+
+* Customer ID: 1
+* Name: Denise Walker
+* Email: denisewalker717@gmail.com
+* Phone: 689-114-6781
+* City: Anchorage
+* State: AK
+Sensitive Data Masked: True
+
+
+User Query: Show card details for customer 1
+Agent Response:
+
+Question: Show card details for customer 1
+Implementation: custom_react_agent
+Tools Used: get_card_details
+Records Found: 0
+Answer:
+The card details for customer 1 are: **** **** ****1697
+Sensitive Data Masked: True
+
+
+User Query: Show the last 5 transactions for customer 1
+Agent Response:
+
+Question: Show the last 5 transactions for customer 1
+Implementation: custom_react_agent
+Tools Used: get_customer_transactions
+Records Found: 317
+Answer:
+{"count": 317, "transactions": [{"TXN_ID": "202206011421104279862398471697024", "TX_DATETIME": "2022-06-01 14:21:10", "TX_AMOUNT": 6.33, "cust_id": 1, "first_name": "Denise", "last_name": "Walker", "card_number": "****1697", "merchant": "Kroger", "merchant_type": "supermarket", "debit_credit": "Credit", "lcl_intnl": "Local"}, {"TXN_ID": "202206020825354279862398471697039", "TX_DATETIME": "2022-06-02 08:25:35", "TX_AMOUNT": 30.23, "cust_id": 1, "first_name": "Denise", "last_name": "Walker", "card_number": "****1697", "merchant": "Publix", "merchant_type": "supermarket", "debit_credit": "Debit", "lcl_intnl": "Local"}, {"TXN_ID": "202206020956494279862398471697014", "TX_DATETIME": "2022-06-02 09:56:49", "TX_AMOUNT": 16.13, "cust_id": 1, "first_name": "Denise", "last_name": "Walker", "card_number": "****1697", "merchant": "Lowe's", "merchant_type": "home improvement", "debit_credit": "Debit", "lcl_intnl": "Local"}, {"TXN_ID": "202206021227424279862398471697015", "TX_DATETIME": "2022-06-02 12:27:42", "TX_AMOUNT": 31.64, "cust_id": 1, "first_name": "Denise", "last_name": "Walker", "card_number": "****1697", "merchant": "Dollar General", "merchant_type": "discount store", "debit_credit": "Debit", "lcl_intnl": "Local"}, {"TXN_ID": "202206021557224279862398471697081", "TX_DATETIME": "2022-06-02 15:57:22", "TX_AMOUNT": 20.24, "cust_id": 1, "first_name": "Denise", "last_name": "Walker", "card_number": "****1697", "merchant": "Costco", "merchant_type": "cash & carry/warehouse club", "debit_credit": "Debit", "lcl_intnl": "Local"}]}
+Sensitive Data Masked: True
+
+
+User Query: Which customers have the highest amount due?
+Agent Response:
+
+Question: Which customers have the highest amount due?
+Implementation: custom_react_agent
+Tools Used: inspect_database_schema
+Records Found: 0
+Answer:
+{"tables": ["card", "card_type", "customer", "merchant", "merchant_type", "netbanking", "transaction", "transaction_terminal", "transaction_type"], "schema": {"card": ["card_number", "valid_from", "expiry", "security_code", "x-coordinate", "y-coordinate", "mean_amount", "std_amount", "mean_nb_tx_per_day", "cust_id", "card_type_id"], "card_type": ["card_type_id", "card_type", "card_network", "privilege"], "customer": ["cust_id", "first_name", "last_name", "email", "phone", "address", "city", "state", "zip"], "merchant": ["id", "merchant", "merchant_type"], "merchant_type": ["id", "merchant_type"], "netbanking": ["username", "password", "expiry_date", "security_question", "security_answer", "cust_id"], "transaction": ["Unnamed: 0", "TXN_ID", "TX_DATETIME", "CARD_ID", "TERMINAL_ID", "TX_AMOUNT", "TX_TIME_SECONDS", "TX_TIME_DAYS", "TXN_TYPE_ID", "M_ID"], "transaction_terminal": ["TERMINAL_ID", "x_terminal_id", "y_terminal_id"], "transaction_type": ["txn_type_id", "debit_credit", "lcl_intnl"]}}
+Sensitive Data Masked: True
+
+
+User Query: Show statement summary for customer 1.
+Agent Response:
+
+Question: Show statement summary for customer 1.
+Implementation: custom_react_agent
+Tools Used: get_statement_summary
+Records Found: 0
+Answer:
+{"cust_id": "1", "total_amount_due": 7530.68, "min_amount_due": 376.53, "statement_date": "2026-06-17", "due_date": "2026-07-02", "risk_level": "High"}
+Sensitive Data Masked: True
+
+
+User Query: Which merchant type has the highest total spend?
+Agent Response:
+
+Question: Which merchant type has the highest total spend?
+Implementation: custom_react_agent
+Tools Used: get_merchant_spend_summary
+Records Found: 9
+Answer:
+{"group_by": "merchant_type", "results": [{"merchant_type": "supermarket", "total_spend": 3497042.51, "transaction_count": 66386}, {"merchant_type": "drug store/pharmacy", "total_spend": 2330841.59, "transaction_count": 44367}, {"merchant_type": "home improvement", "total_spend": 2312799.75, "transaction_count": 44079}, {"merchant_type": "discount department store", "total_spend": 1172953.75, "transaction_count": 22234}, {"merchant_type": "non-store,e-commerce", "total_spend": 1171730.99, "transaction_count": 22361}, {"merchant_type": "cash & carry/warehouse club", "total_spend": 1167145.49, "transaction_count": 22073}, {"merchant_type": "electronics specialty", "total_spend": 1164602.91, "transaction_count": 22256}, {"merchant_type": "discount store", "total_spend": 1158616.5, "transaction_count": 21949}, {"merchant_type": "hypermarket/supercenter/superstore", "total_spend": 1155328.75, "transaction_count": 21848}]}
+Sensitive Data Masked: True
+
+
+User Query: Show reward points for customer 1
+Agent Response:
+
+Question: Show reward points for customer 1
+Implementation: custom_react_agent
+Tools Used: get_rewards_summary
+Records Found: 0
+Answer:
+Error: KeyError('tx_amount')
+ Please fix your mistakes.
+Sensitive Data Masked: True
+
+
+User Query: Show reward points for customer 1
+Agent Response:
+
+Question: Show reward points for customer 1
+Implementation: custom_react_agent
+Tools Used: get_rewards_summary
+Records Found: 0
+Answer:
+{"cust_id": "1", "reward_points": 44, "related_transactions": [{"TXN_ID": "202208161858014279862398471697047", "TX_DATETIME": "2022-08-16 18:58:01", "TX_AMOUNT": 57.02}, {"TXN_ID": "202209030603484279862398471697015", "TX_DATETIME": "2022-09-03 06:03:48", "TX_AMOUNT": 54.05}, {"TXN_ID": "202208220814514279862398471697063", "TX_DATETIME": "2022-08-22 08:14:51", "TX_AMOUNT": 53.68}, {"TXN_ID": "202208081047264279862398471697049", "TX_DATETIME": "2022-08-08 10:47:26", "TX_AMOUNT": 51.7}, {"TXN_ID": "202207241315004279862398471697001", "TX_DATETIME": "2022-07-24 13:15:00", "TX_AMOUNT": 49.32}, {"TXN_ID": "202207031854444279862398471697044", "TX_DATETIME": "2022-07-03 18:54:44", "TX_AMOUNT": 48.57}, {"TXN_ID": "202206211250274279862398471697082", "TX_DATETIME": "2022-06-21 12:50:27", "TX_AMOUNT": 47.02}, {"TXN_ID": "202208201106574279862398471697024", "TX_DATETIME": "2022-08-20 11:06:57", "TX_AMOUNT": 46.5}, {"TXN_ID": "202208111015314279862398471697042", "TX_DATETIME": "2022-08-11 10:15:31", "TX_AMOUNT": 46.29}, {"TXN_ID": "202209081450114279862398471697042", "TX_DATETIME": "2022-09-08 14:50:11", "TX_AMOUNT": 45.73}]}
+Sensitive Data Masked: True
+
+
+User Query: Identify potentially suspicious transactions.
+Agent Response:
+
+Question: Identify potentially suspicious transactions.
+Implementation: custom_react_agent
+Tools Used: detect_suspicious_transactions
+Records Found: 0
+Answer:
+{"rule_applied": "amount > 75000 or suspicious remarks", "count": 0, "flagged_transactions": []}
+Sensitive Data Masked: True
+
+
+User Query: Which cards are expiring in the next 60 days?
+Agent Response:
+
+Question: Which cards are expiring in the next 60 days?
+Implementation: custom_react_agent
+Tools Used: inspect_database_schema
+Records Found: 0
+Answer:
+{"tables": ["card", "card_type", "customer", "merchant", "merchant_type", "netbanking", "transaction", "transaction_terminal", "transaction_type"], "schema": {"card": ["card_number", "valid_from", "expiry", "security_code", "x-coordinate", "y-coordinate", "mean_amount", "std_amount", "mean_nb_tx_per_day", "cust_id", "card_type_id"], "card_type": ["card_type_id", "card_type", "card_network", "privilege"], "customer": ["cust_id", "first_name", "last_name", "email", "phone", "address", "city", "state", "zip"], "merchant": ["id", "merchant", "merchant_type"], "merchant_type": ["id", "merchant_type"], "netbanking": ["username", "password", "expiry_date", "security_question", "security_answer", "cust_id"], "transaction": ["Unnamed: 0", "TXN_ID", "TX_DATETIME", "CARD_ID", "TERMINAL_ID", "TX_AMOUNT", "TX_TIME_SECONDS", "TX_TIME_DAYS", "TXN_TYPE_ID", "M_ID"], "transaction_terminal": ["TERMINAL_ID", "x_terminal_id", "y_terminal_id"], "transaction_type": ["txn_type_id", "debit_credit", "lcl_intnl"]}}
+Sensitive Data Masked: True

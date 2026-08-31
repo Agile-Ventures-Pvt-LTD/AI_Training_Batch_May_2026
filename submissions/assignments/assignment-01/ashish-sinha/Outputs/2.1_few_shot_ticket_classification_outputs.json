@@ -1,0 +1,36 @@
+{
+    "case_name": "2.1_few_shot_ticket_classification_outputs",
+    "raw_response": "[\n  {\n    \"ticket\": \"I was charged twice this month and your support team has not replied for five days. I am going to post this on social media if this is not fixed today.\",\n    \"category\": \"BILLING_ISSUE\",\n    \"priority\": \"URGENT\",\n    \"justification\": \"Customer reports duplicate charges and a prolonged lack of response, indicating a critical billing problem.\"\n  },\n  {\n    \"ticket\": \"The export button stopped working after your latest update. Our reporting team is blocked.\",\n    \"category\": \"TECHNICAL_BUG\",\n    \"priority\": \"HIGH\",\n    \"justification\": \"Core export functionality is broken after an update, preventing essential reporting tasks.\"\n  },\n  {\n    \"ticket\": \"Can you add approval workflows before invoices are submitted?\",\n    \"category\": \"FEATURE_REQUEST\",\n    \"priority\": \"MEDIUM\",\n    \"justification\": \"Customer is requesting a new workflow capability for invoice approvals.\"\n  },\n  {\n    \"ticket\": \"We need confirmation that our customer data is not being used to train your AI models.\",\n    \"category\": \"COMPLIANCE_CONCERN\",\n    \"priority\": \"HIGH\",\n    \"justification\": \"Customer seeks assurance about data usage and AI training, a compliance‑related concern.\"\n  },\n  {\n    \"ticket\": \"My admin account is locked and the password reset email never arrives.\",\n    \"category\": \"ACCOUNT_ACCESS\",\n    \"priority\": \"URGENT\",\n    \"justification\": \"User is completely blocked from admin access with no password reset email, requiring immediate resolution.\"\n  }\n]",
+    "parsed_output": [
+        {
+            "ticket": "I was charged twice this month and your support team has not replied for five days. I am going to post this on social media if this is not fixed today.",
+            "category": "BILLING_ISSUE",
+            "priority": "URGENT",
+            "justification": "Customer reports duplicate charges and a prolonged lack of response, indicating a critical billing problem."
+        },
+        {
+            "ticket": "The export button stopped working after your latest update. Our reporting team is blocked.",
+            "category": "TECHNICAL_BUG",
+            "priority": "HIGH",
+            "justification": "Core export functionality is broken after an update, preventing essential reporting tasks."
+        },
+        {
+            "ticket": "Can you add approval workflows before invoices are submitted?",
+            "category": "FEATURE_REQUEST",
+            "priority": "MEDIUM",
+            "justification": "Customer is requesting a new workflow capability for invoice approvals."
+        },
+        {
+            "ticket": "We need confirmation that our customer data is not being used to train your AI models.",
+            "category": "COMPLIANCE_CONCERN",
+            "priority": "HIGH",
+            "justification": "Customer seeks assurance about data usage and AI training, a compliance‑related concern."
+        },
+        {
+            "ticket": "My admin account is locked and the password reset email never arrives.",
+            "category": "ACCOUNT_ACCESS",
+            "priority": "URGENT",
+            "justification": "User is completely blocked from admin access with no password reset email, requiring immediate resolution."
+        }
+    ]
+}

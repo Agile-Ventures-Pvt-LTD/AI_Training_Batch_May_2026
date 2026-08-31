@@ -1,0 +1,3 @@
+.venv
+chroma.sqlite3
+__pycache__

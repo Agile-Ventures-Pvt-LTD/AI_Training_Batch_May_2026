@@ -1,0 +1,93 @@
+{
+    "ticket_summary": {
+        "short_summary": "Premium customer charged twice after cancelling subscription",
+        "customer_problem": "Incorrect double charge and lack of response from support",
+        "business_impact": "Potential public escalation on LinkedIn and blocked future payments",
+        "customer_requested_action": "Refund the incorrect charge immediately",
+        "important_context": [
+            "Customer cancelled premium subscription last month",
+            "Customer contacted support twice last week with no proper response",
+            "Duplicate invoice amount appears on bank statement"
+        ],
+        "missing_information": [
+            "Invoice ID",
+            "Registered account email"
+        ]
+    },
+    "classification": {
+        "primary_category": "BILLING_ISSUE",
+        "secondary_categories": [
+            "CANCELLATION_OR_REFUND",
+            "ESCALATION_COMPLAINT"
+        ],
+        "category_reasoning_summary": "The customer was charged twice and is requesting a refund, also mentioning cancellation of their premium subscription and lack of response from support.",
+        "confidence_score": 0.9
+    },
+    "sentiment_analysis": {
+        "sentiment": "Negative",
+        "emotion_signals": [
+            "Frustration",
+            "Anger",
+            "Disappointment"
+        ],
+        "sentiment_reasoning_summary": "The customer is expressing frustration and anger due to being charged twice and not receiving a proper response from support.",
+        "confidence_score": 0.9
+    },
+    "priority_and_risk": "```json\n{\n  \"priority\": \"MEDIUM\",\n  \"escalation_risk\": \"MEDIUM\",\n  \"risk_triggers\": [\n    \"Customer impact\",\n    \"Business risk\"\n  ],\n  \"recommended_sla_action\": \"Standard support response\",\n  \"reasoning_summary\": \"The ticket input indicates a moderate level of customer impact and business risk, warranting a medium priority and escalation risk classification.\"\n}\n```",
+    "sensitive_information_check": {
+        "sensitive_information_detected": false,
+        "sensitive_categories": [
+            "NONE_DETECTED"
+        ],
+        "evidence_summary": "No sensitive information detected in the input",
+        "handling_recommendations": [
+            "No special handling required",
+            "Proceed with normal ticket processing"
+        ]
+    },
+    "routing_recommendation": {
+        "recommended_team": "BILLING_SUPPORT",
+        "routing_reason": "The customer is a premium customer and is experiencing a billing issue, which requires immediate attention from the billing support team.",
+        "internal_note": "The customer has already contacted support twice and did not receive a proper response, so it's essential to resolve this issue promptly and professionally.",
+        "required_follow_up_information": [
+            "Invoice ID",
+            "Registered account email"
+        ]
+    },
+    "draft_customer_response": {
+        "draft_response": "Dear Amit, I apologize for the frustration and inconvenience you've experienced with the duplicate charge on your premium subscription. I understand that you've reached out to our support team previously and haven't received a satisfactory response. I'm here to help you resolve this issue as soon as possible. To better assist you, could you please provide me with your invoice ID or the registered email address associated with your account? This will enable me to look into your case more efficiently. Your issue will be escalated to our billing support team to ensure a prompt resolution.",
+        "response_strategy": "Empathize with the customer, acknowledge their frustration, and request additional information to facilitate the resolution process. Escalate the issue to the billing support team due to the customer's premium status and the nature of the issue.",
+        "assumptions": [
+            "The customer has indeed been charged twice for their premium subscription.",
+            "The customer's previous interactions with the support team did not yield a satisfactory response."
+        ],
+        "information_needed_before_sending": [
+            "Verification of the customer's subscription status and billing history.",
+            "Confirmation of the customer's invoice ID or registered account email."
+        ]
+    },
+    "response_quality_review": {
+        "scores": {
+            "empathy": 0,
+            "correctness": 0,
+            "actionability": 0,
+            "policy_safety": 0,
+            "tone_alignment": 0,
+            "completeness": 0
+        },
+        "strengths": [],
+        "improvement_areas": [
+            "Provide a response that acknowledges the customer's frustration and apologizes for the inconvenience.",
+            "Request additional information such as invoice ID or registered account email to verify the issue.",
+            "Escalate the issue to billing support as per business rules.",
+            "Ensure the response tone is professional and empathetic."
+        ],
+        "final_review_summary": "No response provided to review. Please provide a response to assess its quality."
+    },
+    "generation_metadata": {
+        "model_used": "llama-3.3-70b-versatile",
+        "temperature": 0.3,
+        "total_steps_completed": 8
+    }
+
+}

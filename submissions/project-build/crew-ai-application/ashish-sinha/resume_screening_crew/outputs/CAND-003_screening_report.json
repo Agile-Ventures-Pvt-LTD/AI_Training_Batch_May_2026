@@ -1,0 +1,7 @@
+{
+  "status": "PIPELINE_CRASHED_OR_RATE_LIMITED",
+  "candidate_id": "CAND-003",
+  "error_message": "type object 'ScoringEngine' has no attribute 'MAX_SCORE'",
+  "recommendation": "NEEDS_MANUAL_REVIEW",
+  "human_review_note": "This is an AI-assisted screening report based on the provided resume and job description. A human reviewer should validate the recommendation before making any recruitment decision."
+}

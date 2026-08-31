@@ -1,0 +1,50 @@
+{
+    "runs": [
+        {
+            "run": 1,
+            "response": {
+                "risk_level": "MEDIUM",
+                "reasoning": "The login occurred at 8:15\u202fPM, which is outside business hours (9\u202fAM\u20116\u202fPM), and there was one MFA failure, satisfying the Medium risk condition. The login country (Germany) is a known country and also a known VPN country, so the High\u2011risk condition (new country + >5 downloads) is not met. Therefore, only Medium risk applies."
+            },
+            "risk_level": "MEDIUM"
+        },
+        {
+            "run": 2,
+            "response": {
+                "risk_level": "MEDIUM",
+                "reasoning": "The login occurred at 8:15\u202fPM, which is outside business hours (9\u202fAM\u20116\u202fPM), and there was one MFA failure, satisfying the medium\u2011risk condition. The login country (Germany) is a known country and also a known VPN country, so the high\u2011risk condition (new country + >5 downloads) is not met. Therefore, only the medium\u2011risk condition applies."
+            },
+            "risk_level": "MEDIUM"
+        },
+        {
+            "run": 3,
+            "response": {
+                "risk_level": "MEDIUM",
+                "reasoning": "The login occurred at 8:15\u202fPM, which is outside business hours (9\u202fAM\u20116\u202fPM), and there was one MFA failure, satisfying the medium\u2011risk condition. The login country (Germany) is a known country and also a known VPN country, so the high\u2011risk condition (new country + >5 downloads) is not met. Therefore, only the medium\u2011risk criteria apply."
+            },
+            "risk_level": "MEDIUM"
+        },
+        {
+            "run": 4,
+            "response": {
+                "risk_level": "MEDIUM",
+                "reasoning": "Login occurred at 8:15\u202fPM, which is outside business hours (9\u202fAM\u20116\u202fPM). There was one MFA failure, satisfying the MEDIUM risk condition. The login country (Germany) is a known country and also a known VPN country, so the HIGH risk condition (new country + >5 downloads) is not met. Since only the MEDIUM condition applies, the overall risk classification is MEDIUM."
+            },
+            "risk_level": "MEDIUM"
+        },
+        {
+            "run": 5,
+            "response": {
+                "risk_level": "MEDIUM",
+                "reasoning": "The login occurred at 8:15\u202fPM, which is outside business hours (9\u202fAM\u20136\u202fPM), and there was one MFA failure, satisfying the Medium\u2011risk condition. The login country (Germany) is a known country and also a known VPN country, so the High\u2011risk condition (new country + >5 downloads) is not met. Therefore, only the Medium risk applies."
+            },
+            "risk_level": "MEDIUM"
+        }
+    ],
+    "risk_level_votes": {
+        "MEDIUM": 5
+    },
+    "final_risk_level": "MEDIUM",
+    "disagreement_analysis": "All runs consistently identified MEDIUM risk because the login occurred outside business hours and MFA failed once, while HIGH risk conditions were not satisfied.",
+    "final_reasoning_summary": "The final classification is MEDIUM risk because the login occurred outside business hours and there was one MFA failure. HIGH risk conditions were not met because Germany is not a new country."
+}

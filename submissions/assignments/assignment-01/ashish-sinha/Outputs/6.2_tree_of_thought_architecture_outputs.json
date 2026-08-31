@@ -1,0 +1,82 @@
+{
+    "case_name": "6.2_tree_of_thought_architecture_outputs",
+    "raw_response": "{\n  \"architecture_scores\": [\n    {\n      \"architecture\": \"Option A - Simple RAG with vector database and hosted LLM API\",\n      \"scores\": {\n        \"accuracy\": 4,\n        \"implementation_complexity\": 3,\n        \"infrastructure_cost\": 3,\n        \"privacy_security\": 3,\n        \"scalability\": 4,\n        \"citation_reliability\": 4,\n        \"mvp_feasibility\": 5\n      },\n      \"summary\": \"Balanced accuracy and citation quality, quick to implement, moderate cost, acceptable privacy with encryption, scales well.\"\n    },\n    {\n      \"architecture\": \"Option B - Fine‑tune an open‑source LLM on all documents\",\n      \"scores\": {\n        \"accuracy\": 4,\n        \"implementation_complexity\": 2,\n        \"infrastructure_cost\": 2,\n        \"privacy_security\": 5,\n        \"scalability\": 3,\n        \"citation_reliability\": 3,\n        \"mvp_feasibility\": 2\n      },\n      \"summary\": \"High privacy but heavy compute, long fine‑tuning cycle, risk of hallucinated citations, unlikely to meet 6‑week deadline.\"\n    },\n    {\n      \"architecture\": \"Option C - Keyword search only with no LLM\",\n      \"scores\": {\n        \"accuracy\": 2,\n        \"implementation_complexity\": 5,\n        \"infrastructure_cost\": 5,\n        \"privacy_security\": 5,\n        \"scalability\": 4,\n        \"citation_reliability\": 5,\n        \"mvp_feasibility\": 5\n      },\n      \"summary\": \"Very cheap and fast to build, perfect citation of exact matches, but limited to keyword matching and poor semantic understanding.\"\n    },\n    {\n      \"architecture\": \"Option D - Agentic multi‑step retrieval with query rewriting, reranking, and citation verification\",\n      \"scores\": {\n        \"accuracy\": 5,\n        \"implementation_complexity\": 2,\n        \"infrastructure_cost\": 3,\n        \"privacy_security\": 3,\n        \"scalability\": 3,\n        \"citation_reliability\": 5,\n        \"mvp_feasibility\": 2\n      },\n      \"summary\": \"Best possible accuracy and citation trustworthiness, but orchestration complexity and API usage make 6‑week MVP risky.\"\n    }\n  ],\n  \"recommended_architecture\": \"Option A - Simple RAG with vector database and hosted LLM API\",\n  \"implementation_rationale\": \"Option A delivers strong semantic accuracy and reliable citations while staying within the 6‑week MVP window and a limited budget. It offers a clear path to scale to 20k users and can be incrementally upgraded (e.g., adding query‑rewriting or self‑hosted models) as the product matures.\",\n  \"risks\": [\n    \"Confidential data is sent to a hosted LLM provider.\",\n    \"Potential for LLM to hallucinate citations despite retrieval context.\",\n    \"API usage costs may rise as user base grows.\",\n    \"Vector‑DB performance bottlenecks under heavy concurrent queries.\"\n  ],\n  \"mitigations\": [\n    \"Encrypt PDFs at rest and in transit; use provider’s data‑privacy agreements and consider a private endpoint.\",\n    \"Prompt LLM to only cite retrieved passages and validate that cited text appears in the retrieved chunks.\",\n    \"Implement request caching and rate‑limiting; monitor token usage and set cost alerts.\",\n    \"Choose a managed vector DB with autoscaling (e.g., Pinecone, Qdrant Cloud) or self‑host Milvus with sharding for later stages.\"\n  ],\n  \"mvp_plan\": [\n    \"Week 1: Project kickoff, define data schema, select vector DB service, set up CI/CD pipeline.\",\n    \"Week 2: Build PDF ingestion pipeline – text extraction, chunking (≈500‑word), embedding using provider’s embedding model, store vectors with metadata (doc ID, page).\",\n    \"Week 3: Integrate hosted LLM API (e.g., GPT‑4o). Develop prompt template that injects top‑k retrieved chunks and asks the model to answer with inline citations referencing chunk IDs.\",\n    \"Week 4: Front‑end prototype – file upload, question input, display answer with clickable citations that retrieve original PDF excerpts.\",\n    \"Week 5: End‑to‑end testing with 500‑user load simulation, security review (encryption, access controls), implement logging and monitoring.\",\n    \"Week 6: Beta launch to initial users, collect feedback, iterate on prompt tuning and citation validation, finalize cost‑monitoring dashboards.\"\n  ]\n}",
+    "parsed_output": {
+        "architecture_scores": [
+            {
+                "architecture": "Option A - Simple RAG with vector database and hosted LLM API",
+                "scores": {
+                    "accuracy": 4,
+                    "implementation_complexity": 3,
+                    "infrastructure_cost": 3,
+                    "privacy_security": 3,
+                    "scalability": 4,
+                    "citation_reliability": 4,
+                    "mvp_feasibility": 5
+                },
+                "summary": "Balanced accuracy and citation quality, quick to implement, moderate cost, acceptable privacy with encryption, scales well."
+            },
+            {
+                "architecture": "Option B - Fine‑tune an open‑source LLM on all documents",
+                "scores": {
+                    "accuracy": 4,
+                    "implementation_complexity": 2,
+                    "infrastructure_cost": 2,
+                    "privacy_security": 5,
+                    "scalability": 3,
+                    "citation_reliability": 3,
+                    "mvp_feasibility": 2
+                },
+                "summary": "High privacy but heavy compute, long fine‑tuning cycle, risk of hallucinated citations, unlikely to meet 6‑week deadline."
+            },
+            {
+                "architecture": "Option C - Keyword search only with no LLM",
+                "scores": {
+                    "accuracy": 2,
+                    "implementation_complexity": 5,
+                    "infrastructure_cost": 5,
+                    "privacy_security": 5,
+                    "scalability": 4,
+                    "citation_reliability": 5,
+                    "mvp_feasibility": 5
+                },
+                "summary": "Very cheap and fast to build, perfect citation of exact matches, but limited to keyword matching and poor semantic understanding."
+            },
+            {
+                "architecture": "Option D - Agentic multi‑step retrieval with query rewriting, reranking, and citation verification",
+                "scores": {
+                    "accuracy": 5,
+                    "implementation_complexity": 2,
+                    "infrastructure_cost": 3,
+                    "privacy_security": 3,
+                    "scalability": 3,
+                    "citation_reliability": 5,
+                    "mvp_feasibility": 2
+                },
+                "summary": "Best possible accuracy and citation trustworthiness, but orchestration complexity and API usage make 6‑week MVP risky."
+            }
+        ],
+        "recommended_architecture": "Option A - Simple RAG with vector database and hosted LLM API",
+        "implementation_rationale": "Option A delivers strong semantic accuracy and reliable citations while staying within the 6‑week MVP window and a limited budget. It offers a clear path to scale to 20k users and can be incrementally upgraded (e.g., adding query‑rewriting or self‑hosted models) as the product matures.",
+        "risks": [
+            "Confidential data is sent to a hosted LLM provider.",
+            "Potential for LLM to hallucinate citations despite retrieval context.",
+            "API usage costs may rise as user base grows.",
+            "Vector‑DB performance bottlenecks under heavy concurrent queries."
+        ],
+        "mitigations": [
+            "Encrypt PDFs at rest and in transit; use provider’s data‑privacy agreements and consider a private endpoint.",
+            "Prompt LLM to only cite retrieved passages and validate that cited text appears in the retrieved chunks.",
+            "Implement request caching and rate‑limiting; monitor token usage and set cost alerts.",
+            "Choose a managed vector DB with autoscaling (e.g., Pinecone, Qdrant Cloud) or self‑host Milvus with sharding for later stages."
+        ],
+        "mvp_plan": [
+            "Week 1: Project kickoff, define data schema, select vector DB service, set up CI/CD pipeline.",
+            "Week 2: Build PDF ingestion pipeline – text extraction, chunking (≈500‑word), embedding using provider’s embedding model, store vectors with metadata (doc ID, page).",
+            "Week 3: Integrate hosted LLM API (e.g., GPT‑4o). Develop prompt template that injects top‑k retrieved chunks and asks the model to answer with inline citations referencing chunk IDs.",
+            "Week 4: Front‑end prototype – file upload, question input, display answer with clickable citations that retrieve original PDF excerpts.",
+            "Week 5: End‑to‑end testing with 500‑user load simulation, security review (encryption, access controls), implement logging and monitoring.",
+            "Week 6: Beta launch to initial users, collect feedback, iterate on prompt tuning and citation validation, finalize cost‑monitoring dashboards."
+        ]
+    }
+}

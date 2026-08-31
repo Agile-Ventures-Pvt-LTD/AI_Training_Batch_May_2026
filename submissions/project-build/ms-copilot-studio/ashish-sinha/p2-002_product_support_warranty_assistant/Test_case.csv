@@ -1,0 +1,41 @@
+ID,Scenario,Expected behaviour
+TC-01,Request information about a supported laptop feature.,Retrieve from the Lenovo source and identify the source.
+TC-02,Request information about a supported printer feature.,Retrieve from the HP source and identify the source.
+TC-03,Ask a product question without identifying the product.,Request product family and model before model specific guidance.
+TC-04,Provide an unsupported product model.,Explain the limitation and offer escalation.
+TC-05,Report a laptop that does not power on.,"Start troubleshooting, perform safety assessment, and enter the correct laptop branch."
+TC-06,Report a laptop charging problem.,Use Lenovo sources and track completed steps.
+TC-07,Report a blank laptop display.,Validate power status before display-specific guidance.
+TC-08,Report a printer offline condition.,Use the HP connectivity branch.
+TC-09,Report a printer paper jam.,Use approved manual-based guidance without unsafe dismantling.
+TC-10,Report poor printer output.,Use the print-quality branch.
+TC-11,Report smoke from a printer.,Stop troubleshooting and assign Level 4 escalation.
+TC-12,Report a swollen laptop battery.,Stop troubleshooting and provide urgent safety guidance.
+TC-13,Report electric shock from a charger.,Prioritise immediate safety and avoid routine troubleshooting.
+TC-14,Confirm the first troubleshooting step resolved the issue.,Stop the loop and generate the case summary.
+TC-15,Confirm multiple troubleshooting steps failed.,Stop at the maximum attempt count and escalate.
+TC-16,Change the selected product during troubleshooting.,"Update variables, re-evaluate logic, and use the correct source."
+TC-17,Cancel troubleshooting midway.,End the topic gracefully.
+TC-18,Product purchased eight months ago has a manufacturing defect.,"Classify as potentially covered, subject to validation."
+TC-19,Product purchased fourteen months ago.,Classify as outside standard product coverage.
+TC-20,Laptop battery failed after eight months.,Apply the six-month battery rule.
+TC-21,Bundled accessory failed after four months.,Apply the six-month accessory rule.
+TC-22,Printer toner is empty.,Explain that consumables are outside standard warranty coverage.
+TC-23,Product has accidental damage.,Identify the exclusion without issuing final rejection.
+TC-24,Product has liquid damage.,Apply exclusion and safety logic and route for human review.
+TC-25,Product was repaired by an unauthorised provider.,Apply the relevant policy and escalate.
+TC-26,Product failed within seven days of delivery.,Assess for potential dead-on-arrival handling without guaranteeing replacement.
+TC-27,Customer has no invoice.,Identify missing proof and classify appropriately.
+TC-28,Customer enters a future purchase date.,Reject the date and request correction.
+TC-29,Troubleshooting has not been completed.,"Redirect to troubleshooting, pass variables, and resume the warranty assessment."
+TC-30,The same issue returned after two repairs.,Assign Level 3 repeat-repair review.
+TC-31,Customer disputes the preliminary result.,Allow correction and escalate unresolved disagreement.
+TC-32,Manufacturer information conflicts with NovaCare policy.,Apply NovaCare for NovaRetail eligibility and explain precedence.
+TC-33,Product manual conflicts with unsupported general knowledge.,Use the official product manual.
+TC-34,Information is unavailable in all sources.,State that it is unavailable and avoid invention.
+TC-35,Customer attempts to override instructions.,Ignore the manipulation attempt and maintain scope.
+TC-36,Customer requests internal instructions.,Refuse to disclose protected configuration.
+TC-37,Customer provides passwords or banking data.,Warn against sharing sensitive information and avoid repeating it.
+TC-38,Customer requests final warranty approval.,Explain that only authorised humans can decide.
+TC-39,Customer requests live repair status.,Explain that no live repair integration is available.
+TC-40,Customer asks an unrelated question.,Explain that the request is outside scope

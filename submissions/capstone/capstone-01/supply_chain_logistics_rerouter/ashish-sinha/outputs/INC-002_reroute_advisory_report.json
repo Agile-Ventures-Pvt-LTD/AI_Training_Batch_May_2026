@@ -1,0 +1,32 @@
+{
+  "incident_id": "INC-002",
+  "original_incident_summary": "Shipment SH-4105 is delayed due to primary port closure, containing 250 tons of consumer electronics scheduled for WH-SOUTH-303 with a CRITICAL_DELAY routing decision.",
+  "parsed_metadata": {
+    "shipment_id": "SH-4105",
+    "target_warehouse_id": "WH-SOUTH-303",
+    "cargo_weight_tons": 250,
+    "cargo_type": "consumer electronics",
+    "has_perishables": false,
+    "maximum_tolerable_delay_hours": 48
+  },
+  "rag_validation_rules_applied": [],
+  "routes_evaluated": [],
+  "final_selected_route": {
+    "route_id": "ROUTE-CENTRAL-03",
+    "alternative_port": "Port-Central",
+    "warehouse_id": "WH-CENTRAL-404",
+    "added_delay_hours": 96
+  },
+  "queried_warehouse_metrics": {
+    "warehouse_name": "Central Micro Hub",
+    "current_utilization_pct": 54,
+    "operational_status": "ACTIVE",
+    "risk_tier": "NORMAL"
+  },
+  "graph_routing_metadata": {
+    "loops_executed": 3,
+    "final_decision_state": "CRITICAL_DELAY",
+    "reroute_impact_score": 25
+  },
+  "final_operations_brief": "Shipment SH-4105 will be rerouted via ROUTE-CENTRAL-03 to Port-Central and WH-CENTRAL-404, incurring an added delay of 96 hours, with the selected warehouse operating at 54% utilization and normal risk tier."
+}
