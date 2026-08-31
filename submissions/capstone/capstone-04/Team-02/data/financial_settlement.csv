@@ -1,0 +1,145 @@
+date,channel,reported_revenue,settled_amount,discrepancy_reason
+2026-08-01,Amazon,2429096.0,2143782.67,Settled Clean
+2026-08-01,Blinkit,362750.0,331450.93,Settled Clean
+2026-08-01,Flipkart,1762757.0,1586197.53,Settled Clean
+2026-08-01,Instamart,187050.0,166376.5,Settled Clean
+2026-08-01,Retail-B2B,729277.0,631119.37,Settled Clean
+2026-08-01,Shopify,917974.0,803841.48,Platform Commission & Handling Fee
+2026-08-01,Zepto,102080.0,93090.16,Settled Clean
+2026-08-02,Amazon,2440318.0,2122952.75,Platform Commission & Handling Fee
+2026-08-02,Blinkit,361770.0,328071.13,Platform Commission & Handling Fee
+2026-08-02,Flipkart,1760241.0,1589868.2,Settled Clean
+2026-08-02,Instamart,187600.0,167435.79,Settled Clean
+2026-08-02,Retail-B2B,726841.0,643064.18,Platform Commission & Handling Fee
+2026-08-02,Shopify,985181.0,847955.54,Settled Clean
+2026-08-02,Zepto,102080.0,92745.27,Platform Commission & Handling Fee
+2026-08-03,Amazon,2675099.0,2406689.17,Settled Clean
+2026-08-03,Blinkit,374350.0,339068.53,Settled Clean
+2026-08-03,Flipkart,1712203.0,1525331.1,Settled Clean
+2026-08-03,Instamart,190510.0,168811.7,Settled Clean
+2026-08-03,Retail-B2B,705611.0,626390.28,Settled Clean
+2026-08-03,Shopify,987625.0,869973.93,Settled Clean
+2026-08-03,Zepto,102700.0,91019.98,Settled Clean
+2026-08-04,Amazon,2402434.0,2109562.08,Settled Clean
+2026-08-04,Blinkit,371670.0,333079.06,Platform Commission & Handling Fee
+2026-08-04,Flipkart,1707212.0,1511046.15,Platform Commission & Handling Fee
+2026-08-04,Instamart,189420.0,168390.25,Settled Clean
+2026-08-04,Retail-B2B,737334.0,635256.09,Settled Clean
+2026-08-04,Shopify,980667.0,861735.54,Settled Clean
+2026-08-04,Zepto,104130.0,95697.94,Platform Commission & Handling Fee
+2026-08-05,Amazon,2503187.0,2188729.21,Settled Clean
+2026-08-05,Blinkit,375270.0,338023.06,Settled Clean
+2026-08-05,Flipkart,1871923.0,1709145.5,Platform Commission & Handling Fee
+2026-08-05,Instamart,189430.0,170612.65,Settled Clean
+2026-08-05,Retail-B2B,733533.0,653495.83,Settled Clean
+2026-08-05,Shopify,1006481.0,902137.74,Settled Clean
+2026-08-05,Zepto,104990.0,94124.87,Settled Clean
+2026-08-06,Amazon,2586212.0,2297553.28,Settled Clean
+2026-08-06,Blinkit,380620.0,347883.65,Platform Commission & Handling Fee
+2026-08-06,Flipkart,1636765.0,1448673.84,Settled Clean
+2026-08-06,Instamart,197450.0,176077.32,Settled Clean
+2026-08-06,Retail-B2B,739369.0,654633.93,Platform Commission & Handling Fee
+2026-08-06,Shopify,961552.0,848353.25,Settled Clean
+2026-08-06,Zepto,104990.0,94139.43,Settled Clean
+2026-08-07,Amazon,2635545.0,2316500.19,Settled Clean
+2026-08-07,Blinkit,381650.0,348509.46,Settled Clean
+2026-08-07,Flipkart,1772681.0,1620621.08,Settled Clean
+2026-08-07,Instamart,194490.0,173507.88,Platform Commission & Handling Fee
+2026-08-07,Retail-B2B,725783.0,628820.44,Settled Clean
+2026-08-07,Shopify,934153.0,829306.65,Platform Commission & Handling Fee
+2026-08-07,Zepto,104990.0,94645.09,Settled Clean
+2026-08-08,Amazon,2421720.0,2101219.2,Platform Commission & Handling Fee
+2026-08-08,Blinkit,384090.0,351339.51,Platform Commission & Handling Fee
+2026-08-08,Flipkart,1648648.0,1455875.51,Settled Clean
+2026-08-08,Instamart,198880.0,176815.17,Platform Commission & Handling Fee
+2026-08-08,Retail-B2B,770075.0,688002.68,Platform Commission & Handling Fee
+2026-08-08,Shopify,964593.0,850115.63,Settled Clean
+2026-08-08,Zepto,105700.0,94623.74,Settled Clean
+2026-08-09,Amazon,2403841.0,2123760.87,Platform Commission & Handling Fee
+2026-08-09,Blinkit,381610.0,339840.04,Platform Commission & Handling Fee
+2026-08-09,Flipkart,1762714.0,1604932.3,Settled Clean
+2026-08-09,Instamart,196810.0,176410.76,Settled Clean
+2026-08-09,Retail-B2B,729687.0,628246.13,Settled Clean
+2026-08-09,Shopify,999528.0,890879.76,Platform Commission & Handling Fee
+2026-08-09,Zepto,105700.0,95135.75,Settled Clean
+2026-08-10,Amazon,5014310.0,4337205.74,Platform Commission & Handling Fee
+2026-08-10,Blinkit,385570.0,348249.31,Settled Clean
+2026-08-10,Flipkart,1714890.0,1517691.0,Settled Clean
+2026-08-10,Instamart,199660.0,183272.02,Settled Clean
+2026-08-10,Retail-B2B,723025.0,641367.76,Platform Commission & Handling Fee
+2026-08-10,Shopify,866382.0,755615.89,Settled Clean
+2026-08-10,Zepto,108080.0,97532.25,Settled Clean
+2026-08-11,Amazon,2356591.0,2046597.33,Platform Commission & Handling Fee
+2026-08-11,Blinkit,388510.0,342592.26,Settled Clean
+2026-08-11,Flipkart,1569074.0,1398415.47,Platform Commission & Handling Fee
+2026-08-11,Instamart,202050.0,178367.8,Platform Commission & Handling Fee
+2026-08-11,Retail-B2B,678927.0,609509.92,Settled Clean
+2026-08-11,Shopify,945440.0,834345.62,Platform Commission & Handling Fee
+2026-08-11,Zepto,108930.0,95900.7,Settled Clean
+2026-08-12,Amazon,2522754.0,2262570.25,Settled Clean
+2026-08-12,Blinkit,396830.0,352884.35,Settled Clean
+2026-08-12,Flipkart,1632720.0,1444359.24,Settled Clean
+2026-08-12,Instamart,204220.0,185174.58,Settled Clean
+2026-08-12,Retail-B2B,727599.0,638844.61,Settled Clean
+2026-08-12,Shopify,881682.0,772849.66,Settled Clean
+2026-08-12,Zepto,109840.0,97866.96,Platform Commission & Handling Fee
+2026-08-13,Amazon,2355365.0,2119764.8,Settled Clean
+2026-08-13,Blinkit,397530.0,351417.91,Settled Clean
+2026-08-13,Flipkart,1575443.0,1418108.46,Settled Clean
+2026-08-13,Instamart,206600.0,182379.94,Platform Commission & Handling Fee
+2026-08-13,Retail-B2B,643384.0,560070.3,Settled Clean
+2026-08-13,Shopify,814460.0,725290.56,Settled Clean
+2026-08-13,Zepto,113990.0,101746.12,Platform Commission & Handling Fee
+2026-08-14,Amazon,2110274.0,1879373.77,Settled Clean
+2026-08-14,Blinkit,396060.0,359010.84,Settled Clean
+2026-08-14,Flipkart,1585717.0,1412480.16,Platform Commission & Handling Fee
+2026-08-14,Instamart,206530.0,187741.09,Platform Commission & Handling Fee
+2026-08-14,Retail-B2B,645021.0,560259.94,Settled Clean
+2026-08-14,Shopify,837803.0,735582.11,Settled Clean
+2026-08-14,Zepto,116040.0,105027.28,Settled Clean
+2026-08-15,Amazon,2114789.0,1900736.51,Settled Clean
+2026-08-15,Blinkit,407110.0,368096.95,Platform Commission & Handling Fee
+2026-08-15,Flipkart,1532222.0,1385647.11,Settled Clean
+2026-08-15,Instamart,207020.0,185433.48,Settled Clean
+2026-08-15,Retail-B2B,655943.0,580243.78,Platform Commission & Handling Fee
+2026-08-15,Shopify,872361.0,778698.05,Settled Clean
+2026-08-15,Zepto,116040.0,103509.81,Platform Commission & Handling Fee
+2026-08-16,Amazon,2270926.0,1987996.63,Platform Commission & Handling Fee
+2026-08-16,Blinkit,410800.0,368514.34,Settled Clean
+2026-08-16,Flipkart,1624707.0,1452526.59,Settled Clean
+2026-08-16,Instamart,210430.0,191094.2,Settled Clean
+2026-08-16,Retail-B2B,688993.0,602116.02,Settled Clean
+2026-08-16,Shopify,896894.0,785556.36,Platform Commission & Handling Fee
+2026-08-16,Zepto,116900.0,106783.55,Platform Commission & Handling Fee
+2026-08-17,Amazon,2752704.0,2477042.8,Settled Clean
+2026-08-17,Blinkit,411530.0,372747.53,Settled Clean
+2026-08-17,Flipkart,1450863.0,1322421.32,Platform Commission & Handling Fee
+2026-08-17,Instamart,212770.0,189159.84,Platform Commission & Handling Fee
+2026-08-17,Retail-B2B,652470.0,585422.73,Platform Commission & Handling Fee
+2026-08-17,Shopify,822284.0,716403.38,Settled Clean
+2026-08-17,Zepto,116900.0,105308.45,Settled Clean
+2026-08-18,Amazon,2051126.0,1788607.6,Settled Clean
+2026-08-18,Blinkit,412460.0,375749.37,Settled Clean
+2026-08-18,Flipkart,1521155.0,1388285.67,Settled Clean
+2026-08-18,Instamart,212040.0,190910.35,Settled Clean
+2026-08-18,Retail-B2B,630260.0,553804.35,Settled Clean
+2026-08-18,Shopify,763311.0,663972.37,Settled Clean
+2026-08-18,Zepto,116900.0,102990.55,Platform Commission & Handling Fee
+2026-08-19,Amazon,2141213.0,1917844.54,Settled Clean
+2026-08-19,Blinkit,408520.0,359561.8,Platform Commission & Handling Fee
+2026-08-19,Flipkart,1542273.0,1387199.71,Settled Clean
+2026-08-19,Instamart,214150.0,195832.66,Settled Clean
+2026-08-19,Retail-B2B,652570.0,569385.56,Settled Clean
+2026-08-19,Shopify,851780.0,752820.82,Settled Clean
+2026-08-19,Zepto,116900.0,106687.02,Settled Clean
+2026-08-20,Amazon,2107519.0,1849908.62,Platform Commission & Handling Fee
+2026-08-20,Blinkit,413740.0,379508.43,Platform Commission & Handling Fee
+2026-08-20,Flipkart,1463439.0,1294067.42,Settled Clean
+2026-08-20,Instamart,217170.0,194785.19,Platform Commission & Handling Fee
+2026-08-20,Retail-B2B,667928.0,575393.62,Settled Clean
+2026-08-20,Shopify,772145.0,669302.12,Platform Commission & Handling Fee
+2026-08-20,Zepto,116900.0,104212.21,Platform Commission & Handling Fee
+2026-08-21,Amazon,2845000.0,2615000.0,Settled Clean
+2026-08-21,Blinkit,485000.0,432000.0,Settled Clean
+2026-08-21,Flipkart,1820000.0,1610000.0,Discrepancy - Excess FBA Fee Deduction
+2026-08-21,Shopify,950000.0,912000.0,Settled Clean

@@ -1,0 +1,12 @@
+po_number,sku,supplier_name,quantity_ordered,order_date,expected_delivery_date,actual_delivery_date,po_status,defective_quantity
+PO-2026-001,SLP-COOL-09,OrthoFoam Ltd,1000,2026-08-01,2026-08-10,2026-08-20,Delayed,5
+PO-2026-002,SLP-KIDS-10,SleepSoft Suppliers,800,2026-08-02,2026-08-08,2026-08-18,Delayed,64
+PO-2026-003,SLP-KNEE-08,SleepSoft Suppliers,1200,2026-08-04,2026-08-10,2026-08-19,Delayed,96
+PO-2026-004,SLP-LUM-06,SleepSoft Suppliers,500,2026-08-06,2026-08-12,2026-08-21,Delayed,40
+PO-2026-005,SLP-BAM-01,OrthoFoam Ltd,2000,2026-08-05,2026-08-15,2026-08-25,Delayed,14
+PO-2026-006,SLP-MIC-04,CozyFiber Corp,1500,2026-08-01,2026-08-10,2026-08-10,Delivered,2
+PO-2026-007,SLP-PREG-05,CozyFiber Corp,800,2026-08-03,2026-08-12,2026-08-12,Delivered,4
+PO-2026-008,SLP-TRV-07,CozyFiber Corp,600,2026-08-05,2026-08-14,2026-08-14,Delivered,1
+PO-2026-010,SLP-BAM-01,FlexiFoam India Ltd,1500,2026-08-15,2026-08-22,2026-08-21,Delivered,12
+PO-2026-011,SLP-GEL-02,ThermoGel Molders Corp,1200,2026-08-16,2026-08-24,2026-08-23,Delivered,8
+PO-2026-012,SLP-PREG-05,Ergotech Comfort Pvt Ltd,800,2026-08-18,2026-08-26,,In Transit,0

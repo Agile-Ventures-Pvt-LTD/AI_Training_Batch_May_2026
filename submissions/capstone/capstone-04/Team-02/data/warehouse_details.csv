@@ -1,0 +1,507 @@
+date,warehouse_id,warehouse_name,warehouse_type,region,product_id,sku,product_name,category,stock_units,unit_price,stock_value,stock_status
+2026-08-14,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,270,800.00,216000.00,High Stock
+2026-08-14,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,225,963.12,216702.00,High Stock
+2026-08-14,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,240,1072.50,257400.00,High Stock
+2026-08-14,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,300,1214.38,364314.00,High Stock
+2026-08-14,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,255,1420.00,362100.00,High Stock
+2026-08-14,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,180,1850.00,333000.00,Healthy
+2026-08-14,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,180,800.00,144000.00,Healthy
+2026-08-14,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,150,963.12,144468.00,Healthy
+2026-08-14,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,160,1072.50,171600.00,Healthy
+2026-08-14,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,200,1214.38,242876.00,Healthy
+2026-08-14,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,170,1420.00,241400.00,Healthy
+2026-08-14,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,120,1850.00,222000.00,Healthy
+2026-08-14,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,125,800.00,100000.00,Healthy
+2026-08-14,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,105,963.12,101127.60,Healthy
+2026-08-14,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,112,1072.50,120120.00,Healthy
+2026-08-14,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,140,1214.38,170013.20,Healthy
+2026-08-14,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,118,1420.00,167560.00,Healthy
+2026-08-14,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,84,1850.00,155400.00,Healthy
+2026-08-14,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,216,800.00,172800.00,Healthy
+2026-08-14,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,180,963.12,173361.60,Healthy
+2026-08-14,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,192,1072.50,205920.00,Healthy
+2026-08-14,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,240,1214.38,291451.20,High Stock
+2026-08-14,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,204,1420.00,289680.00,Healthy
+2026-08-14,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,144,1850.00,266400.00,Healthy
+2026-08-14,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,108,800.00,86400.00,Healthy
+2026-08-14,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,90,963.12,86680.80,Healthy
+2026-08-14,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,96,1072.50,102960.00,Healthy
+2026-08-14,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,120,1214.38,145725.60,Healthy
+2026-08-14,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,102,1420.00,144840.00,Healthy
+2026-08-14,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,72,1850.00,133200.00,Healthy
+2026-08-14,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,90,800.00,72000.00,Healthy
+2026-08-14,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,75,963.12,72234.00,Healthy
+2026-08-14,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,80,1072.50,85800.00,Healthy
+2026-08-14,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,100,1214.38,121438.00,Healthy
+2026-08-14,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,85,1420.00,120700.00,Healthy
+2026-08-14,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,60,1850.00,111000.00,Healthy
+2026-08-14,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,198,800.00,158400.00,Healthy
+2026-08-14,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,165,963.12,158914.80,Healthy
+2026-08-14,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,176,1072.50,188760.00,Healthy
+2026-08-14,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,220,1214.38,267163.60,Healthy
+2026-08-14,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,187,1420.00,265540.00,Healthy
+2026-08-14,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,132,1850.00,244200.00,Healthy
+2026-08-14,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,117,800.00,93600.00,Healthy
+2026-08-14,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,97,963.12,93422.64,Healthy
+2026-08-14,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,104,1072.50,111540.00,Healthy
+2026-08-14,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,130,1214.38,157869.40,Healthy
+2026-08-14,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,110,1420.00,156200.00,Healthy
+2026-08-14,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,78,1850.00,144300.00,Healthy
+2026-08-14,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,99,800.00,79200.00,Healthy
+2026-08-14,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,82,963.12,78975.84,Healthy
+2026-08-14,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,88,1072.50,94380.00,Healthy
+2026-08-14,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,110,1214.38,133581.80,Healthy
+2026-08-14,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,93,1420.00,132060.00,Healthy
+2026-08-14,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,66,1850.00,122100.00,Healthy
+2026-08-14,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,162,800.00,129600.00,Healthy
+2026-08-14,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,135,963.12,130021.20,Healthy
+2026-08-14,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,144,1072.50,154440.00,Healthy
+2026-08-14,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,180,1214.38,218588.40,Healthy
+2026-08-14,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,153,1420.00,217260.00,Healthy
+2026-08-14,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,108,1850.00,199800.00,Healthy
+2026-08-14,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,81,800.00,64800.00,Healthy
+2026-08-14,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,67,963.12,64529.04,Healthy
+2026-08-14,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,72,1072.50,77220.00,Healthy
+2026-08-14,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,90,1214.38,109294.20,Healthy
+2026-08-14,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,76,1420.00,107920.00,Healthy
+2026-08-14,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,54,1850.00,99900.00,Healthy
+2026-08-14,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,72,800.00,57600.00,Healthy
+2026-08-14,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,60,963.12,57787.20,Healthy
+2026-08-14,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,64,1072.50,68640.00,Healthy
+2026-08-14,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,80,1214.38,97150.40,Healthy
+2026-08-14,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,68,1420.00,96560.00,Healthy
+2026-08-14,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,48,1850.00,88800.00,Low Stock
+2026-08-15,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,297,800.00,237600.00,High Stock
+2026-08-15,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,247,963.12,237890.64,High Stock
+2026-08-15,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,264,1072.50,283140.00,High Stock
+2026-08-15,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,330,1214.38,400745.40,High Stock
+2026-08-15,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,280,1420.00,397600.00,High Stock
+2026-08-15,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,198,1850.00,366300.00,Healthy
+2026-08-15,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,198,800.00,158400.00,Healthy
+2026-08-15,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,165,963.12,158914.80,Healthy
+2026-08-15,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,176,1072.50,188760.00,Healthy
+2026-08-15,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,220,1214.38,267163.60,Healthy
+2026-08-15,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,187,1420.00,265540.00,Healthy
+2026-08-15,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,132,1850.00,244200.00,Healthy
+2026-08-15,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,137,800.00,109600.00,Healthy
+2026-08-15,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,115,963.12,110758.80,Healthy
+2026-08-15,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,123,1072.50,131917.50,Healthy
+2026-08-15,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,154,1214.38,187014.52,Healthy
+2026-08-15,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,129,1420.00,183180.00,Healthy
+2026-08-15,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,92,1850.00,170200.00,Healthy
+2026-08-15,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,237,800.00,189600.00,High Stock
+2026-08-15,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,198,963.12,190697.76,Healthy
+2026-08-15,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,211,1072.50,226297.50,Healthy
+2026-08-15,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,264,1214.38,320596.32,High Stock
+2026-08-15,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,224,1420.00,318080.00,High Stock
+2026-08-15,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,158,1850.00,292300.00,Healthy
+2026-08-15,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,118,800.00,94400.00,Healthy
+2026-08-15,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,99,963.12,95348.88,Healthy
+2026-08-15,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,105,1072.50,112612.50,Healthy
+2026-08-15,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,132,1214.38,160298.16,Healthy
+2026-08-15,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,112,1420.00,159040.00,Healthy
+2026-08-15,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,79,1850.00,146150.00,Healthy
+2026-08-15,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,99,800.00,79200.00,Healthy
+2026-08-15,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,82,963.12,78975.84,Healthy
+2026-08-15,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,88,1072.50,94380.00,Healthy
+2026-08-15,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,110,1214.38,133581.80,Healthy
+2026-08-15,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,93,1420.00,132060.00,Healthy
+2026-08-15,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,66,1850.00,122100.00,Healthy
+2026-08-15,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,217,800.00,173600.00,Healthy
+2026-08-15,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,181,963.12,174324.72,Healthy
+2026-08-15,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,193,1072.50,206992.50,Healthy
+2026-08-15,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,242,1214.38,293879.96,High Stock
+2026-08-15,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,205,1420.00,291100.00,Healthy
+2026-08-15,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,145,1850.00,268250.00,Healthy
+2026-08-15,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,128,800.00,102400.00,Healthy
+2026-08-15,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,106,963.12,102090.72,Healthy
+2026-08-15,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,114,1072.50,122265.00,Healthy
+2026-08-15,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,143,1214.38,173656.34,Healthy
+2026-08-15,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,121,1420.00,171820.00,Healthy
+2026-08-15,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,85,1850.00,157250.00,Healthy
+2026-08-15,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,108,800.00,86400.00,Healthy
+2026-08-15,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,90,963.12,86680.80,Healthy
+2026-08-15,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,96,1072.50,102960.00,Healthy
+2026-08-15,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,121,1214.38,146939.98,Healthy
+2026-08-15,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,102,1420.00,144840.00,Healthy
+2026-08-15,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,72,1850.00,133200.00,Healthy
+2026-08-15,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,178,800.00,142400.00,Healthy
+2026-08-15,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,148,963.12,142541.76,Healthy
+2026-08-15,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,158,1072.50,169455.00,Healthy
+2026-08-15,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,198,1214.38,240447.24,Healthy
+2026-08-15,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,168,1420.00,238560.00,Healthy
+2026-08-15,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,118,1850.00,218300.00,Healthy
+2026-08-15,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,89,800.00,71200.00,Healthy
+2026-08-15,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,73,963.12,70307.76,Healthy
+2026-08-15,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,79,1072.50,84727.50,Healthy
+2026-08-15,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,99,1214.38,120223.62,Healthy
+2026-08-15,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,83,1420.00,117860.00,Healthy
+2026-08-15,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,59,1850.00,109150.00,Healthy
+2026-08-15,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,79,800.00,63200.00,Healthy
+2026-08-15,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,66,963.12,63565.92,Healthy
+2026-08-15,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,70,1072.50,75075.00,Healthy
+2026-08-15,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,88,1214.38,106865.44,Healthy
+2026-08-15,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,74,1420.00,105080.00,Healthy
+2026-08-15,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,52,1850.00,96200.00,Healthy
+2026-08-16,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,283,800.00,226400.00,High Stock
+2026-08-16,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,236,963.12,227296.32,High Stock
+2026-08-16,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,252,1072.50,270270.00,High Stock
+2026-08-16,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,315,1214.38,382529.70,High Stock
+2026-08-16,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,267,1420.00,379140.00,High Stock
+2026-08-16,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,189,1850.00,349650.00,Healthy
+2026-08-16,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,189,800.00,151200.00,Healthy
+2026-08-16,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,157,963.12,151209.84,Healthy
+2026-08-16,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,168,1072.50,180180.00,Healthy
+2026-08-16,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,210,1214.38,255019.80,Healthy
+2026-08-16,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,178,1420.00,252760.00,Healthy
+2026-08-16,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,126,1850.00,233100.00,Healthy
+2026-08-16,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,131,800.00,104800.00,Healthy
+2026-08-16,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,110,963.12,105943.20,Healthy
+2026-08-16,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,117,1072.50,125482.50,Healthy
+2026-08-16,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,147,1214.38,178513.86,Healthy
+2026-08-16,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,123,1420.00,174660.00,Healthy
+2026-08-16,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,88,1850.00,162800.00,Healthy
+2026-08-16,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,226,800.00,180800.00,High Stock
+2026-08-16,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,189,963.12,182029.68,Healthy
+2026-08-16,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,201,1072.50,215572.50,Healthy
+2026-08-16,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,252,1214.38,306023.76,High Stock
+2026-08-16,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,214,1420.00,303880.00,Healthy
+2026-08-16,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,151,1850.00,279350.00,Healthy
+2026-08-16,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,113,800.00,90400.00,Healthy
+2026-08-16,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,94,963.12,90533.28,Healthy
+2026-08-16,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,100,1072.50,107250.00,Healthy
+2026-08-16,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,126,1214.38,153011.88,Healthy
+2026-08-16,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,107,1420.00,151940.00,Healthy
+2026-08-16,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,75,1850.00,138750.00,Healthy
+2026-08-16,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,94,800.00,75200.00,Healthy
+2026-08-16,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,78,963.12,75123.36,Healthy
+2026-08-16,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,84,1072.50,90090.00,Healthy
+2026-08-16,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,105,1214.38,127509.90,Healthy
+2026-08-16,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,89,1420.00,126380.00,Healthy
+2026-08-16,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,63,1850.00,116550.00,Healthy
+2026-08-16,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,207,800.00,165600.00,Healthy
+2026-08-16,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,173,963.12,166619.76,Healthy
+2026-08-16,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,184,1072.50,197340.00,Healthy
+2026-08-16,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,231,1214.38,280521.78,High Stock
+2026-08-16,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,196,1420.00,278320.00,Healthy
+2026-08-16,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,138,1850.00,255300.00,Healthy
+2026-08-16,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,122,800.00,97600.00,Healthy
+2026-08-16,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,101,963.12,97275.12,Healthy
+2026-08-16,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,109,1072.50,116902.50,Healthy
+2026-08-16,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,136,1214.38,165155.68,Healthy
+2026-08-16,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,115,1420.00,163300.00,Healthy
+2026-08-16,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,81,1850.00,149850.00,Healthy
+2026-08-16,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,103,800.00,82400.00,Healthy
+2026-08-16,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,86,963.12,82828.32,Healthy
+2026-08-16,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,92,1072.50,98670.00,Healthy
+2026-08-16,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,115,1214.38,139653.70,Healthy
+2026-08-16,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,97,1420.00,137740.00,Healthy
+2026-08-16,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,69,1850.00,127650.00,Healthy
+2026-08-16,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,170,800.00,136000.00,Healthy
+2026-08-16,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,141,963.12,135799.92,Healthy
+2026-08-16,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,151,1072.50,161947.50,Healthy
+2026-08-16,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,189,1214.38,229517.82,Healthy
+2026-08-16,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,160,1420.00,227200.00,Healthy
+2026-08-16,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,113,1850.00,209050.00,Healthy
+2026-08-16,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,85,800.00,68000.00,Healthy
+2026-08-16,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,70,963.12,67418.40,Healthy
+2026-08-16,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,75,1072.50,80437.50,Healthy
+2026-08-16,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,94,1214.38,114151.72,Healthy
+2026-08-16,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,79,1420.00,112180.00,Healthy
+2026-08-16,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,56,1850.00,103600.00,Healthy
+2026-08-16,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,75,800.00,60000.00,Healthy
+2026-08-16,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,63,963.12,60676.56,Healthy
+2026-08-16,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,67,1072.50,71857.50,Healthy
+2026-08-16,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,84,1214.38,102007.92,Healthy
+2026-08-16,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,71,1420.00,100820.00,Healthy
+2026-08-16,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,50,1850.00,92500.00,Healthy
+2026-08-17,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,310,800.00,248000.00,High Stock
+2026-08-17,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,258,963.12,248484.96,High Stock
+2026-08-17,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,276,1072.50,296010.00,High Stock
+2026-08-17,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,345,1214.38,418961.10,High Stock
+2026-08-17,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,293,1420.00,416060.00,High Stock
+2026-08-17,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,206,1850.00,381100.00,Healthy
+2026-08-17,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,206,800.00,164800.00,Healthy
+2026-08-17,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,172,963.12,165656.64,Healthy
+2026-08-17,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,184,1072.50,197340.00,Healthy
+2026-08-17,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,229,1214.38,278093.02,High Stock
+2026-08-17,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,195,1420.00,276900.00,Healthy
+2026-08-17,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,138,1850.00,255300.00,Healthy
+2026-08-17,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,143,800.00,114400.00,Healthy
+2026-08-17,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,120,963.12,115574.40,Healthy
+2026-08-17,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,128,1072.50,137280.00,Healthy
+2026-08-17,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,161,1214.38,195515.18,Healthy
+2026-08-17,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,135,1420.00,191700.00,Healthy
+2026-08-17,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,96,1850.00,177600.00,Healthy
+2026-08-17,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,248,800.00,198400.00,High Stock
+2026-08-17,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,206,963.12,198402.72,Healthy
+2026-08-17,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,220,1072.50,235950.00,Healthy
+2026-08-17,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,276,1214.38,335168.88,High Stock
+2026-08-17,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,234,1420.00,332280.00,High Stock
+2026-08-17,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,165,1850.00,305250.00,Healthy
+2026-08-17,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,124,800.00,99200.00,Healthy
+2026-08-17,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,103,963.12,99201.36,Healthy
+2026-08-17,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,110,1072.50,117975.00,Healthy
+2026-08-17,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,138,1214.38,167584.44,Healthy
+2026-08-17,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,117,1420.00,166140.00,Healthy
+2026-08-17,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,82,1850.00,151700.00,Healthy
+2026-08-17,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,103,800.00,82400.00,Healthy
+2026-08-17,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,86,963.12,82828.32,Healthy
+2026-08-17,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,92,1072.50,98670.00,Healthy
+2026-08-17,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,114,1214.38,138439.32,Healthy
+2026-08-17,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,97,1420.00,137740.00,Healthy
+2026-08-17,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,69,1850.00,127650.00,Healthy
+2026-08-17,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,227,800.00,181600.00,High Stock
+2026-08-17,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,189,963.12,182029.68,Healthy
+2026-08-17,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,202,1072.50,216645.00,Healthy
+2026-08-17,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,252,1214.38,306023.76,High Stock
+2026-08-17,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,215,1420.00,305300.00,Healthy
+2026-08-17,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,151,1850.00,279350.00,Healthy
+2026-08-17,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,134,800.00,107200.00,Healthy
+2026-08-17,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,111,963.12,106906.32,Healthy
+2026-08-17,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,119,1072.50,127627.50,Healthy
+2026-08-17,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,149,1214.38,180942.62,Healthy
+2026-08-17,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,126,1420.00,178920.00,Healthy
+2026-08-17,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,89,1850.00,164650.00,Healthy
+2026-08-17,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,113,800.00,90400.00,Healthy
+2026-08-17,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,94,963.12,90533.28,Healthy
+2026-08-17,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,101,1072.50,108322.50,Healthy
+2026-08-17,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,126,1214.38,153011.88,Healthy
+2026-08-17,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,106,1420.00,150520.00,Healthy
+2026-08-17,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,75,1850.00,138750.00,Healthy
+2026-08-17,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,186,800.00,148800.00,Healthy
+2026-08-17,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,155,963.12,149283.60,Healthy
+2026-08-17,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,165,1072.50,176962.50,Healthy
+2026-08-17,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,206,1214.38,250162.28,Healthy
+2026-08-17,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,175,1420.00,248500.00,Healthy
+2026-08-17,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,124,1850.00,229400.00,Healthy
+2026-08-17,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,93,800.00,74400.00,Healthy
+2026-08-17,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,77,963.12,74160.24,Healthy
+2026-08-17,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,82,1072.50,87945.00,Healthy
+2026-08-17,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,103,1214.38,125081.14,Healthy
+2026-08-17,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,87,1420.00,123540.00,Healthy
+2026-08-17,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,62,1850.00,114700.00,Healthy
+2026-08-17,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,82,800.00,65600.00,Healthy
+2026-08-17,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,69,963.12,66455.28,Healthy
+2026-08-17,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,73,1072.50,78292.50,Healthy
+2026-08-17,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,92,1214.38,111722.96,Healthy
+2026-08-17,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,78,1420.00,110760.00,Healthy
+2026-08-17,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,55,1850.00,101750.00,Healthy
+2026-08-18,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,256,800.00,204800.00,High Stock
+2026-08-18,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,213,963.12,205144.56,Healthy
+2026-08-18,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,228,1072.50,244530.00,High Stock
+2026-08-18,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,285,1214.38,346098.30,High Stock
+2026-08-18,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,242,1420.00,343640.00,High Stock
+2026-08-18,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,171,1850.00,316350.00,Healthy
+2026-08-18,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,171,800.00,136800.00,Healthy
+2026-08-18,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,142,963.12,136763.04,Healthy
+2026-08-18,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,152,1072.50,163020.00,Healthy
+2026-08-18,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,190,1214.38,230732.20,Healthy
+2026-08-18,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,161,1420.00,228620.00,Healthy
+2026-08-18,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,114,1850.00,210900.00,Healthy
+2026-08-18,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,118,800.00,94400.00,Healthy
+2026-08-18,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,99,963.12,95348.88,Healthy
+2026-08-18,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,106,1072.50,113685.00,Healthy
+2026-08-18,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,133,1214.38,161512.54,Healthy
+2026-08-18,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,112,1420.00,159040.00,Healthy
+2026-08-18,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,79,1850.00,146150.00,Healthy
+2026-08-18,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,205,800.00,164000.00,Healthy
+2026-08-18,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,171,963.12,164693.52,Healthy
+2026-08-18,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,182,1072.50,195195.00,Healthy
+2026-08-18,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,228,1214.38,276878.64,High Stock
+2026-08-18,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,193,1420.00,274060.00,Healthy
+2026-08-18,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,136,1850.00,251600.00,Healthy
+2026-08-18,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,102,800.00,81600.00,Healthy
+2026-08-18,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,85,963.12,81865.20,Healthy
+2026-08-18,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,91,1072.50,97597.50,Healthy
+2026-08-18,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,114,1214.38,138439.32,Healthy
+2026-08-18,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,96,1420.00,136320.00,Healthy
+2026-08-18,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,68,1850.00,125800.00,Healthy
+2026-08-18,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,85,800.00,68000.00,Healthy
+2026-08-18,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,71,963.12,68381.52,Healthy
+2026-08-18,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,76,1072.50,81510.00,Healthy
+2026-08-18,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,95,1214.38,115366.10,Healthy
+2026-08-18,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,80,1420.00,113600.00,Healthy
+2026-08-18,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,57,1850.00,105450.00,Healthy
+2026-08-18,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,188,800.00,150400.00,Healthy
+2026-08-18,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,156,963.12,150246.72,Healthy
+2026-08-18,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,167,1072.50,179107.50,Healthy
+2026-08-18,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,209,1214.38,253805.42,Healthy
+2026-08-18,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,177,1420.00,251340.00,Healthy
+2026-08-18,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,125,1850.00,231250.00,Healthy
+2026-08-18,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,111,800.00,88800.00,Healthy
+2026-08-18,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,92,963.12,88607.04,Healthy
+2026-08-18,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,98,1072.50,105105.00,Healthy
+2026-08-18,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,123,1214.38,149368.74,Healthy
+2026-08-18,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,104,1420.00,147680.00,Healthy
+2026-08-18,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,74,1850.00,136900.00,Healthy
+2026-08-18,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,94,800.00,75200.00,Healthy
+2026-08-18,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,77,963.12,74160.24,Healthy
+2026-08-18,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,83,1072.50,89017.50,Healthy
+2026-08-18,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,104,1214.38,126295.52,Healthy
+2026-08-18,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,88,1420.00,124960.00,Healthy
+2026-08-18,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,62,1850.00,114700.00,Healthy
+2026-08-18,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,153,800.00,122400.00,Healthy
+2026-08-18,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,128,963.12,123279.36,Healthy
+2026-08-18,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,136,1072.50,145860.00,Healthy
+2026-08-18,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,171,1214.38,207658.98,Healthy
+2026-08-18,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,145,1420.00,205900.00,Healthy
+2026-08-18,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,102,1850.00,188700.00,Healthy
+2026-08-18,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,76,800.00,60800.00,Healthy
+2026-08-18,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,63,963.12,60676.56,Healthy
+2026-08-18,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,68,1072.50,72930.00,Healthy
+2026-08-18,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,85,1214.38,103222.30,Healthy
+2026-08-18,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,72,1420.00,102240.00,Healthy
+2026-08-18,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,51,1850.00,94350.00,Healthy
+2026-08-18,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,68,800.00,54400.00,Healthy
+2026-08-18,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,57,963.12,54897.84,Healthy
+2026-08-18,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,60,1072.50,64350.00,Healthy
+2026-08-18,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,76,1214.38,92292.88,Healthy
+2026-08-18,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,64,1420.00,90880.00,Healthy
+2026-08-18,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,45,1850.00,83250.00,Low Stock
+2026-08-19,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,324,800.00,259200.00,High Stock
+2026-08-19,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,270,963.12,260042.40,High Stock
+2026-08-19,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,288,1072.50,308880.00,High Stock
+2026-08-19,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,360,1214.38,437176.80,High Stock
+2026-08-19,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,306,1420.00,434520.00,High Stock
+2026-08-19,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,216,1850.00,399600.00,Healthy
+2026-08-19,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,216,800.00,172800.00,Healthy
+2026-08-19,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,180,963.12,173361.60,Healthy
+2026-08-19,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,192,1072.50,205920.00,Healthy
+2026-08-19,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,240,1214.38,291451.20,High Stock
+2026-08-19,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,204,1420.00,289680.00,Healthy
+2026-08-19,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,144,1850.00,266400.00,Healthy
+2026-08-19,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,150,800.00,120000.00,Healthy
+2026-08-19,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,126,963.12,121353.12,Healthy
+2026-08-19,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,134,1072.50,143715.00,Healthy
+2026-08-19,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,168,1214.38,204015.84,Healthy
+2026-08-19,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,141,1420.00,200220.00,Healthy
+2026-08-19,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,100,1850.00,185000.00,Healthy
+2026-08-19,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,259,800.00,207200.00,High Stock
+2026-08-19,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,216,963.12,208033.92,Healthy
+2026-08-19,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,230,1072.50,246675.00,High Stock
+2026-08-19,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,288,1214.38,349741.44,High Stock
+2026-08-19,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,244,1420.00,346480.00,High Stock
+2026-08-19,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,172,1850.00,318200.00,Healthy
+2026-08-19,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,129,800.00,103200.00,Healthy
+2026-08-19,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,108,963.12,104016.96,Healthy
+2026-08-19,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,115,1072.50,123337.50,Healthy
+2026-08-19,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,144,1214.38,174870.72,Healthy
+2026-08-19,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,122,1420.00,173240.00,Healthy
+2026-08-19,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,86,1850.00,159100.00,Healthy
+2026-08-19,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,108,800.00,86400.00,Healthy
+2026-08-19,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,90,963.12,86680.80,Healthy
+2026-08-19,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,96,1072.50,102960.00,Healthy
+2026-08-19,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,120,1214.38,145725.60,Healthy
+2026-08-19,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,102,1420.00,144840.00,Healthy
+2026-08-19,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,72,1850.00,133200.00,Healthy
+2026-08-19,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,237,800.00,189600.00,High Stock
+2026-08-19,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,198,963.12,190697.76,Healthy
+2026-08-19,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,211,1072.50,226297.50,Healthy
+2026-08-19,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,264,1214.38,320596.32,High Stock
+2026-08-19,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,224,1420.00,318080.00,High Stock
+2026-08-19,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,158,1850.00,292300.00,Healthy
+2026-08-19,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,140,800.00,112000.00,Healthy
+2026-08-19,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,116,963.12,111721.92,Healthy
+2026-08-19,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,124,1072.50,132990.00,Healthy
+2026-08-19,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,156,1214.38,189443.28,Healthy
+2026-08-19,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,132,1420.00,187440.00,Healthy
+2026-08-19,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,93,1850.00,172050.00,Healthy
+2026-08-19,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,118,800.00,94400.00,Healthy
+2026-08-19,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,98,963.12,94385.76,Healthy
+2026-08-19,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,105,1072.50,112612.50,Healthy
+2026-08-19,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,132,1214.38,160298.16,Healthy
+2026-08-19,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,111,1420.00,157620.00,Healthy
+2026-08-19,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,79,1850.00,146150.00,Healthy
+2026-08-19,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,194,800.00,155200.00,Healthy
+2026-08-19,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,162,963.12,156025.44,Healthy
+2026-08-19,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,172,1072.50,184470.00,Healthy
+2026-08-19,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,216,1214.38,262306.08,Healthy
+2026-08-19,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,183,1420.00,259860.00,Healthy
+2026-08-19,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,129,1850.00,238650.00,Healthy
+2026-08-19,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,97,800.00,77600.00,Healthy
+2026-08-19,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,80,963.12,77049.60,Healthy
+2026-08-19,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,86,1072.50,92235.00,Healthy
+2026-08-19,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,108,1214.38,131153.04,Healthy
+2026-08-19,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,91,1420.00,129220.00,Healthy
+2026-08-19,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,64,1850.00,118400.00,Healthy
+2026-08-19,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,86,800.00,68800.00,Healthy
+2026-08-19,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,72,963.12,69344.64,Healthy
+2026-08-19,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,76,1072.50,81510.00,Healthy
+2026-08-19,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,96,1214.38,116580.48,Healthy
+2026-08-19,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,81,1420.00,115020.00,Healthy
+2026-08-19,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,57,1850.00,105450.00,Healthy
+2026-08-20,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,291,800.00,232800.00,High Stock
+2026-08-20,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,243,963.12,234038.16,High Stock
+2026-08-20,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,259,1072.50,277777.50,High Stock
+2026-08-20,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,324,1214.38,393459.12,High Stock
+2026-08-20,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,275,1420.00,390500.00,High Stock
+2026-08-20,WH-MW-001,Mother Warehouse,Mother Warehouse,National,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,194,1850.00,358900.00,Healthy
+2026-08-20,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,194,800.00,155200.00,Healthy
+2026-08-20,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,162,963.12,156025.44,Healthy
+2026-08-20,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,172,1072.50,184470.00,Healthy
+2026-08-20,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,216,1214.38,262306.08,Healthy
+2026-08-20,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,183,1420.00,259860.00,Healthy
+2026-08-20,WH-RW-N-001,Regional Warehouse - North (Kundli NCR),Regional Warehouse,North,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,129,1850.00,238650.00,Healthy
+2026-08-20,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,135,800.00,108000.00,Healthy
+2026-08-20,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,113,963.12,108832.56,Healthy
+2026-08-20,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,120,1072.50,128700.00,Healthy
+2026-08-20,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,151,1214.38,183371.38,Healthy
+2026-08-20,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,127,1420.00,180340.00,Healthy
+2026-08-20,WH-DW-N-001,Dark Warehouse - North (South Delhi),Dark Warehouse,North,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,90,1850.00,166500.00,Healthy
+2026-08-20,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,233,800.00,186400.00,High Stock
+2026-08-20,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,194,963.12,186845.28,Healthy
+2026-08-20,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,207,1072.50,222007.50,Healthy
+2026-08-20,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,259,1214.38,314524.42,High Stock
+2026-08-20,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,220,1420.00,312400.00,Healthy
+2026-08-20,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,155,1850.00,286750.00,Healthy
+2026-08-20,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,116,800.00,92800.00,Healthy
+2026-08-20,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,97,963.12,93422.64,Healthy
+2026-08-20,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,103,1072.50,110467.50,Healthy
+2026-08-20,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,129,1214.38,156655.02,Healthy
+2026-08-20,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,110,1420.00,156200.00,Healthy
+2026-08-20,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,77,1850.00,142450.00,Healthy
+2026-08-20,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,97,800.00,77600.00,Healthy
+2026-08-20,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,81,963.12,78012.72,Healthy
+2026-08-20,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,86,1072.50,92235.00,Healthy
+2026-08-20,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,108,1214.38,131153.04,Healthy
+2026-08-20,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,91,1420.00,129220.00,Healthy
+2026-08-20,WH-DW-S-002,Dark Warehouse - South (HSR Layout BLR),Dark Warehouse,South,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,64,1850.00,118400.00,Healthy
+2026-08-20,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,213,800.00,170400.00,Healthy
+2026-08-20,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,178,963.12,171435.36,Healthy
+2026-08-20,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,190,1072.50,203775.00,Healthy
+2026-08-20,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,237,1214.38,287808.06,High Stock
+2026-08-20,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,201,1420.00,285420.00,Healthy
+2026-08-20,WH-RW-W-001,Regional Warehouse - West (Mumbai Bhiwandi),Regional Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,142,1850.00,262700.00,Healthy
+2026-08-20,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,126,800.00,100800.00,Healthy
+2026-08-20,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,104,963.12,100164.48,Healthy
+2026-08-20,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,112,1072.50,120120.00,Healthy
+2026-08-20,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,140,1214.38,170013.20,Healthy
+2026-08-20,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,118,1420.00,167560.00,Healthy
+2026-08-20,WH-DW-W-001,Dark Warehouse - West (Bandra BOM),Dark Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,84,1850.00,155400.00,Healthy
+2026-08-20,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,106,800.00,84800.00,Healthy
+2026-08-20,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,88,963.12,84754.56,Healthy
+2026-08-20,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,95,1072.50,101887.50,Healthy
+2026-08-20,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,118,1214.38,143296.84,Healthy
+2026-08-20,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,100,1420.00,142000.00,Healthy
+2026-08-20,WH-DW-W-002,Dark Warehouse - West (Thane BOM),Dark Warehouse,West,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,71,1850.00,131350.00,Healthy
+2026-08-20,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,174,800.00,139200.00,Healthy
+2026-08-20,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,145,963.12,139652.40,Healthy
+2026-08-20,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,155,1072.50,166237.50,Healthy
+2026-08-20,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,194,1214.38,235589.72,Healthy
+2026-08-20,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,165,1420.00,234300.00,Healthy
+2026-08-20,WH-RW-E-001,Regional Warehouse - East (Kolkata Dankuni),Regional Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,116,1850.00,214600.00,Healthy
+2026-08-20,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,87,800.00,69600.00,Healthy
+2026-08-20,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,72,963.12,69344.64,Healthy
+2026-08-20,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,77,1072.50,82582.50,Healthy
+2026-08-20,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,97,1214.38,117794.86,Healthy
+2026-08-20,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,82,1420.00,116440.00,Healthy
+2026-08-20,WH-DW-E-001,Dark Warehouse - East (Salt Lake CCU),Dark Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,58,1850.00,107300.00,Healthy
+2026-08-20,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,77,800.00,61600.00,Healthy
+2026-08-20,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P002,SLP-COOL-09,Sleepsia Dual Sided Cooling & Warmth Pillow,Cooling,64,963.12,61639.68,Healthy
+2026-08-20,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P003,SLP-GEL-02,Sleepsia Orthopedic Cooling Gel Contour Pillow,Orthopedic,69,1072.50,74002.50,Healthy
+2026-08-20,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P004,SLP-MIC-04,Sleepsia Premium Microfiber Soft Pillow,Microfiber,86,1214.38,104436.68,Healthy
+2026-08-20,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P005,SLP-PREG-05,Sleepsia C-Shaped Full Body Pregnancy Pillow,Pregnancy,73,1420.00,103660.00,Healthy
+2026-08-20,WH-DW-E-002,Dark Warehouse - East (New Town CCU),Dark Warehouse,East,P006,SLP-LAT-03,Sleepsia 100% Natural Latex Pillow,Latex,51,1850.00,94350.00,Healthy
+2026-08-21,WH-RW-S-001,Regional Warehouse - South (Bengaluru),Regional Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,450,800.00,360000.00,High Stock
+2026-08-21,WH-DW-S-001,Dark Warehouse - South (Indiranagar BLR),Dark Warehouse,South,P001,SLP-BAM-01,Sleepsia Bamboo Memory Foam Cervical Pillow,Cervical,12,800.00,9600.00,Low Stock
