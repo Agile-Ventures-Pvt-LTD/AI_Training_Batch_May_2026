@@ -1,0 +1,15 @@
+{
+    "risk_level": "HIGH",
+    "key_risk_factors": [
+        "No region‑specific data residency; cross‑border data transfers may violate privacy regulations.",
+        "Customer data may be used for model improvement by default, with only a manual opt‑out process.",
+        "Limited compliance posture – only SOC 2 Type I, short 18‑month operating history, and multi‑tenant cloud deployment."
+    ],
+    "missing_information": [
+        "Detailed data residency options and contractual guarantees for data location.",
+        "Formal, automated opt‑out mechanism and clear policy on data used for product training.",
+        "Comprehensive SLA details: rate‑limit caps, incident‑response procedures, and SOC 2 Type II or equivalent audit reports."
+    ],
+    "business_recommendation": "Proceed with a controlled pilot only after negotiating stronger data‑privacy clauses (including explicit, automated opt‑out and guaranteed data residency), obtaining SOC 2 Type II or equivalent certification, and clarifying performance and pricing terms. If the vendor cannot meet these safeguards, consider alternative providers.",
+    "confidence_score": 0.78
+}

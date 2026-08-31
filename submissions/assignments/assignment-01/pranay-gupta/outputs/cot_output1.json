@@ -1,0 +1,17 @@
+{
+    "incremental_revenue_range": "$80,000 - $140,000 per month",
+    "incremental_gross_profit_range": "$32,000 - $56,000 per month",
+    "monthly_net_benefit_range": "$2,000 - $26,000 per month",
+    "payback_period_range_months": "6.9 - 90 months",
+    "decision": "APPROVE_WITH_CONDITIONS",
+    "reasoning_summary": "The AI uplift yields $80k‑$140k extra revenue monthly, translating to $32k‑$56k gross profit (40% margin). After subtracting $30k monthly infrastructure and maintenance, net benefit is $2k‑$26k. At the low end, payback of the $180k implementation cost would take ~90 months, far exceeding the 12‑month requirement; at the high end it is ~7 months, meeting the target. Approval is conditional on achieving at least a 5.6% revenue uplift (≈$112.5k extra revenue) to ensure a net benefit of $15k/month and a payback ≤12 months.",
+    "key_assumptions": [
+        "Revenue uplift is uniformly 4%–7% of current $2M monthly revenue.",
+        "Gross margin remains constant at 40% for incremental revenue.",
+        "Monthly AI infrastructure cost is $22,000 and maintenance $8,000, total $30,000.",
+        "Implementation cost of $180,000 is incurred upfront and not amortized.",
+        "Net benefit is calculated as incremental gross profit minus monthly AI costs.",
+        "Payback period is computed as implementation cost divided by monthly net benefit, without discounting.",
+        "Leadership’s 12‑month payback requirement applies only after go‑live (implementation time excluded)."
+    ]
+}

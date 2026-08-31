@@ -1,0 +1,90 @@
+
+--------------------------------------------------
+Question: Show me the database schema
+
+Answer:
+The database schema includes the following tables: 
+- card 
+- card_type 
+- customer 
+- merchant 
+- merchant_type 
+- netbanking 
+- transaction 
+- transaction_terminal 
+- transaction_type 
+
+These tables are related to customer and card information, transaction details, and merchant data.
+
+--------------------------------------------------
+Question: Show customer profile for customer 1
+
+Answer:
+The customer profile for customer 1 is:
+
+Customer ID: 1
+First Name: Denise
+Last Name: Walker
+Email: denisewalker717@gmail.com
+Phone: 689-114-6781
+City: Anchorage
+State: AK
+
+--------------------------------------------------
+Question: Show card details for customer 1
+
+Answer:
+The card details for customer 1 are: 
+Card Number: ************1697
+Expiry: 2023-06-01
+Card Type: Silver
+Card Network: MasterCard
+Privilege: Silver plus MasterCard benefits
+
+--------------------------------------------------
+Question: Show the last 5 transactions for customer 1
+
+Answer:
+The last 5 transactions for customer 1 are:
+
+1. Transaction ID: 202209081450114279862398471697042, Date: 2022-09-08 14:50:11, Amount: $45.73, Merchant: Kroger, Type: Credit
+2. Transaction ID: 202209081334124279862398471697015, Date: 2022-09-08 13:34:12, Amount: $27.67, Merchant: Best Buy, Type: Debit
+3. Transaction ID: 202209081008224279862398471697053, Date: 2022-09-08 10:08:22, Amount: $17.07, Merchant: Publix, Type: Credit
+4. Transaction ID: 202209080626474279862398471697015, Date: 2022-09-08 06:26:47, Amount: $25.11, Merchant: Amazon, Type: Debit
+5. Transaction ID: 202209071534594279862398471697064, Date: 2022-09-07 15:34:59, Amount: $0.56, Merchant: Best Buy, Type: Debit
+
+These transactions include a mix of credits and debits from various merchants, including Kroger, Best Buy, Publix, Amazon, and Best Buy.
+
+
+--------------------------------------------------
+Question: Which customers have the highest amount due customer 1
+
+Answer:
+The customer with ID 1, Denise Walker, has a total spend of $7530.68, with an average spend of $23.76. However, the amount due is not provided in the output. To get the amount due, we would need to retrieve the customer's statement summary.
+
+--------------------------------------------------
+Question: Show statement summary for customer 1
+
+Answer:
+The statement summary for customer 1 shows a total of 317 transactions, with a total spend of $7530.68 and an average spend of $23.76.
+
+--------------------------------------------------
+Question: Which merchant type has the highest total spend?
+
+Answer:
+The merchant type with the highest total spend is Walgreens Boots Alliance, with a total spend of $1,176,250.70.
+
+
+--------------------------------------------------
+Question: Show reward points for customer 1
+
+Answer:
+The customer has earned 75.31 reward points based on their total spending.
+
+
+
+--------------------------------------------------
+Question: Which cards are expiring in the next 60 days?
+
+Answer:
+No records were found for cards expiring in the next 60 days.

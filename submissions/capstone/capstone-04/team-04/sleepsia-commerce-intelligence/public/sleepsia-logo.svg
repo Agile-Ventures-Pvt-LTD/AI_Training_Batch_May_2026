@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" width="100%" height="100%">
+  <defs>
+    <!-- Sleepsia Brand Gradient & Colors -->
+    <linearGradient id="sleepsiaTeal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#026b99" />
+      <stop offset="50%" stop-color="#027dae" />
+      <stop offset="100%" stop-color="#0388bc" />
+    </linearGradient>
+  </defs>
+
+  <!-- Top Graceful Swoosh / Wave Line -->
+  <path d="M 50,42 C 120,20 280,24 390,48 C 300,32 140,28 50,42 Z" fill="#027dae" />
+  <path d="M 50,42 C 75,28 140,22 210,24 C 290,26 350,38 390,48 C 340,34 270,24 200,24 C 130,24 75,30 50,42 Z" fill="#026b99" />
+
+  <!-- SLEEPSIA Typographic Serif Wordmark -->
+  <text
+    x="210"
+    y="108"
+    text-anchor="middle"
+    font-family="'Cinzel', 'Playfair Display', 'Baskerville', 'Times New Roman', 'Georgia', serif"
+    font-size="64"
+    font-weight="700"
+    letter-spacing="5"
+    fill="#027dae"
+    style="letter-spacing: 0.12em;"
+  >
+    SLEEPSIA
+  </text>
+
+  <!-- Bottom Graceful Swoosh / Wave Line -->
+  <path d="M 18,118 C 70,138 200,146 320,142 C 220,148 90,144 18,118 Z" fill="#027dae" />
+  <path d="M 18,118 C 50,132 120,142 200,144 C 260,145 305,142 320,142 C 275,145 220,145 160,142 C 90,138 45,128 18,118 Z" fill="#026b99" />
+</svg>

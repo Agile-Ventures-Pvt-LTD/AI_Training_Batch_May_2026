@@ -1,0 +1,7 @@
+AssessmentID	RequestID	ApplicationID	AssessmentDate	CriticalityClassification	RTOStatus	RPOStatus	BackupStatus	DRStatus	MCPTechnicalAssessmentStatus	CriticalGapCount	HighGapCount	MediumGapCount	LowGapCount	OverallReadiness	RemediationPriority	AssessmentStatus	ReportGenerated	NotificationSent	LastUpdated
+ASM-0001	REQ-HIST-01	APP-003	2026-06-15	Important	Meets	Meets	Configured	Configured	Success	0	0	1	1	Ready with Minor Gaps	Low	Completed	Yes	Yes	2026-06-15
+ASM-0002	REQ-HIST-02	APP-001	2026-05-20	Mission Critical	Gap	Gap	Configured	Not Configured	Success	1	2	1	0	High Risk	Critical	Completed	Yes	Yes	2026-05-20
+REQ-006		APP-999												Insufficient Evidence	N/A	Completed	No	No	
+REQ-001		APP-001												High Risk	Critical	Pending Remediation	No	No	
+REQ-001		APP-001												Remediation Required	Critical	Pending Remediation	Yes	No	
+REQ-001		APP-001												Remediation Required	Critical	Pending Remediation	Yes	No	

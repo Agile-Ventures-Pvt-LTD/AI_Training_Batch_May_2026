@@ -1,0 +1,34 @@
+[
+    {
+        "question": "How many annual leave days can an employee carry forward?",
+        "response": "{'answer': 'An employee can carry forward a maximum of 6 unused annual leave days into the next calendar year.', 'policy_basis': ['Carry-Forward Rules'], 'sources': ['hr_leave_policy.md'], 'answerability': 'Direct answer from policy', 'confidence': 'High', 'recommended_next_step': 'Review HR Leave Policy (HR-LV-001) for further details on leave entitlement and carry-forward rules.'}"
+    },
+    {
+        "question": "Can I claim meals for same-day domestic business travel?",
+        "response": "{'answer': 'Yes, you can claim meals for same-day domestic business travel up to INR 800 per day, provided valid receipts are submitted.', 'policy_basis': ['For same-day domestic business travel, meal reimbursement is governed by the Reimbursement Policy', 'Meal reimbursement is allowed for approved business travel. For same-day domestic business travel, employees may claim meals up to INR 800 per day, provided valid receipts are submitted.'], 'sources': ['travel_policy.md', 'reimbursement_policy.md'], 'answerability': 'The answer is based on the provided policy context.', 'confidence': 'High', 'recommended_next_step': 'Submit your meal reimbursement claim with valid receipts for approval.'}"
+    },
+    {
+        "question": "What documents are needed for hotel reimbursement?",
+        "response": "{'answer': 'The required documents for hotel reimbursement are: hotel invoice, payment receipt, approved travel request, check-in and check-out dates, and GST details where applicable.', 'policy_basis': ['Section 6 of the Reimbursement Policy'], 'sources': ['reimbursement_policy.md'], 'answerability': 'The answer is based on the provided context from the Reimbursement Policy.', 'confidence': 'High', 'recommended_next_step': 'Review the Reimbursement Policy for any additional requirements or limitations on hotel reimbursement.'}"
+    },
+    {
+        "question": "Can I use my personal laptop for office work?",
+        "response": "{'answer': 'Generally, no, you should not use your personal laptop for regular office work.', 'policy_basis': ['Employees should not use personal laptops for regular office work.', 'Personal laptop use is allowed only when: there is a temporary business need, manager approval is obtained, IT security approval is obtained, no confidential or customer data is stored locally, and the device meets minimum security requirements'], 'sources': ['IT Security Policy (IT-SEC-001, Version 1.0, Effective Date: 2026-01-01)'], 'answerability': 'The policy provides clear guidelines for personal laptop use.', 'confidence': 'High', 'recommended_next_step': 'If you need to use a personal laptop for office work, obtain manager approval, IT security approval, and ensure the device meets minimum security requirements.'}"
+    },
+    {
+        "question": "What approvals are needed for international travel?",
+        "response": "{'answer': 'International business travel requires reporting manager approval, business unit head approval, finance approval, and travel desk confirmation before ticket booking.', 'policy_basis': ['reporting manager approval', 'business unit head approval', 'finance approval', 'travel desk confirmation'], 'sources': ['travel_policy.md'], 'answerability': 'The answer is based on the provided context from the travel policy document.', 'confidence': 'High', 'recommended_next_step': 'Submit international travel requests at least 15 working days before the travel date, except in urgent client situations, and ensure all required approvals are obtained before booking the ticket.'}"
+    },
+    {
+        "question": "Can customer data be uploaded to a public AI tool?",
+        "response": "{'answer': 'No, customer data cannot be uploaded to a public AI tool.', 'policy_basis': ['Customer data may be used with an approved internal AI tool only if certain conditions are met.', 'Confidential information must not be entered into public AI systems.', 'Employees must not upload customer data to public AI tools.'], 'sources': ['ai_usage_policy.md', 'it_security_policy.md'], 'answerability': 'Directly answerable from policy', 'confidence': 'High', 'recommended_next_step': 'Review the AI Usage Policy and IT Security Policy for further guidance on handling customer data and using AI tools.'}"
+    },
+    {
+        "question": "Will my reimbursement definitely be approved?",
+        "response": "{'answer': 'No, reimbursement approval is not guaranteed.', 'policy_basis': ['Reimbursement approval is not guaranteed. Finance may reject claims that do not meet policy conditions.'], 'sources': ['reimbursement_policy.md'], 'answerability': 'Certain', 'confidence': 'High', 'recommended_next_step': 'Review the reimbursement policy to ensure all conditions are met before submitting a claim.'}"
+    },
+    {
+        "question": "What should I do if the policy does not mention my scenario?",
+        "response": "Please provide more details so I can identify the correct policy."
+    }
+]

@@ -1,0 +1,79 @@
+{
+    "ticket_summary": {
+        "short_summary": "Premium customer Amit was charged twice after cancelling subscription and did not receive a proper response from support.",
+        "customer_problem": "Double charge after subscription cancellation",
+        "business_impact": "Potential loss of customer and public escalation",
+        "customer_requested_action": "Refund the incorrect charge immediately",
+        "important_context": [
+            "Previous interactions with support",
+            "Cancellation of premium subscription"
+        ],
+        "missing_information": [
+            "Invoice ID or registered account email"
+        ]
+    },
+    "classification": {
+        "primary_category": "BILLING_ISSUE",
+        "secondary_categories": [
+            "ACCOUNT_ACCESS"
+        ],
+        "category_reasoning_summary": "The customer is experiencing a billing issue due to a double charge after cancelling their subscription.",
+        "confidence_score": 0.9
+    },
+    "sentiment_analysis": {
+        "sentiment": "FRUSTRATED",
+        "emotion_signals": [
+            "extremely frustrating",
+            "public escalation"
+        ],
+        "sentiment_reasoning_summary": "The customer is frustrated due to the lack of response from support and the incorrect charge.",
+        "confidence_score": 0.95
+    },
+    "priority_and_risk": {
+        "priority": "HIGH",
+        "escalation_risk": "CRITICAL",
+        "risk_triggers": [
+            "Public escalation threat",
+            "Premium customer",
+            "Repeated failed support attempts"
+        ],
+        "recommended_sla_action": "Escalate to billing support immediately",
+        "reasoning_summary": "The customer is a premium customer and has threatened to escalate the issue publicly if not resolved today."
+    },
+    "sensitive_information_check": {
+        "sensitive_information_detected": false,
+        "sensitive_categories": [],
+        "evidence_summary": "No sensitive information detected in the ticket.",
+        "handling_recommendations": []
+    },
+    "routing_recommendation": {
+        "recommended_agent": "Billing support",
+        "reasoning_summary": "The customer is experiencing a billing issue and is a premium customer, so the issue should be escalated to billing support."
+    },
+    "draft_customer_response": {
+        "response": "Dear Amit, sorry to hear that you were charged twice after cancelling your subscription. I understand how frustrating this must be. I'm going to escalate this issue to our billing support team to investigate and resolve the issue as soon as possible. Can you please provide your invoice ID or registered account email so we can look into this further? We appreciate your patience and cooperation in this matter."
+    },
+    "response_quality_review": {
+        "scores": {
+            "empathy": 4,
+            "correctness": 5,
+            "actionability": 5,
+            "policy_safety": 5,
+            "tone_alignment": 5,
+            "completeness": 4
+        },
+        "strengths": [
+            "Empathetic tone",
+            "Clear call to action"
+        ],
+        "improvement_areas": [
+            "Could provide more detail on the investigation process"
+        ],
+        "final_review_summary": "The response is professional, empathetic, and actionable, but could provide more detail on the investigation process."
+    },
+    "generation_metadata": {
+        "model_used": "Customer Support Model",
+        "temperature": 0.5,
+        "total_steps_completed": 10
+    }
+}

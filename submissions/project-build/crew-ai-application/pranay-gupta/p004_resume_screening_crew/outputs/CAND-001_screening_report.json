@@ -1,0 +1,51 @@
+{
+  "candidate_id": "CAND-001",
+  "candidate_name": "Rohan Mehta",
+  "role_title": "AI Engineer",
+  "overall_score": 36,
+  "max_score": 40,
+  "percentage": 90.0,
+  "recommendation": "STRONG_MATCH",
+  "executive_summary": "Aravind is an exceptional AI Engineer with over 3 years of dedicated experience building production-grade Generative AI solutions. He possesses a deep understanding of multi-agent systems, advanced RAG architectures, and custom embedding pipelines. He has a proven track record of deploying robust autonomous agents using CrewAI and LangGraph, paired with a solid software engineering foundation including automated testing and microservices deployment.",
+  "strengths": [
+    "Extensive experience building and deploying multi-agent workflows using CrewAI and LangGraph.",
+    "Deep expertise in advanced RAG pipelines, including hierarchical chunking, hybrid search, and vector databases like Pinecone.",
+    "Strong software craftsmanship with rigorous pytest coverage, CI/CD experience, and clean code practices.",
+    "Proven capability in fine-tuning open-source LLMs and managing context window constraints efficiently."
+  ],
+  "gaps": [
+    "Relatively limited historical experience with legacy enterprise relational database tuning at massive scale.",
+    "Most experience is centralized around greenfield AI initiatives rather than migrating legacy monolithic codebases."
+  ],
+  "interview_focus_areas": [
+    "Architectural scalability of multi-agent networks in production environments.",
+    "Advanced evaluation strategies for unstructured agent trajectories.",
+    "Cost management and caching strategies for high-throughput LLM operations."
+  ],
+  "interview_questions": {
+    "technical_questions": [
+      "When designing a multi-agent system using CrewAI or LangGraph, how do you handle state management and prevent infinite routing loops between agents?",
+      "Can you explain your approach to optimizing a RAG pipeline when the retrieval steps suffer from high latency and poor semantic relevance?",
+      "How do you implement evaluation loops (like Ragas or specialized unit tests) to guarantee your agent's outputs remain deterministic?"
+    ],
+    "project_deep_dive_questions": [
+      "In your automated support routing agent project, how did you handle rate-limiting and token expiration from the underlying LLM provider during peak traffic?",
+      "Walk us through how you structured your vector database indices and embedding schemas to ensure low-latency semantic search queries."
+    ],
+    "scenario_questions": [
+      "If our system experiences a sudden drift in LLM output quality due to a silent upstream model update, how would your monitoring infrastructure catch it?",
+      "Imagine an agent needs to access a tool that takes over 30 seconds to respond. How would you design the user experience and backend architecture to handle this asynchronously?"
+    ],
+    "gap_validation_questions": [
+      "Your project work is highly focused on modern AI tech stacks. How do you approach keeping up with the rapid, weekly changes in the agentic framework ecosystem?",
+      "While your SQL optimization experience is lighter, how would you design a database schema to track historical agent execution traces for audit logs?"
+    ]
+  },
+  "evidence": [
+    "2 years of experience as an AI Engineer at Apex Innovations building LangChain and CrewAI solutions.",
+    "1.5 years of experience as a Software Engineer at DataFlux, writing clean Python microservices.",
+    "Successfully deployed an enterprise-level RAG-driven knowledge agent used by over 5,000 internal staff members.",
+    "Holds a Master of Science in Computer Science with a specialization in Intelligent Systems."
+  ],
+  "human_review_note": "Aravind is a premier candidate who requires virtually zero ramp-up time. He hits every core and expansion metric outlined in the PRD, particularly in agent framework mastery and testing hygiene. Fast-track to the final technical round immediately."
+}

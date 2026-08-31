@@ -1,0 +1,51 @@
+{
+    "options_evaluated": [
+        {
+            "option_name": "AI customer support assistant",
+            "business_value_score": 5,
+            "feasibility_score": 3,
+            "risk_score": 3,
+            "pilot_suitability_score": 3,
+            "adoption_score": 3,
+            "overall_score": 3,
+            "trade_offs": "Very strong cost‑saving potential because of high ticket volume, but handling personal customer data raises privacy compliance work and integration effort, which lowers feasibility and increases risk. Adoption risk is only medium, so rollout may need extra change‑management."
+        },
+        {
+            "option_name": "AI sales proposal generator",
+            "business_value_score": 4,
+            "feasibility_score": 4,
+            "risk_score": 5,
+            "pilot_suitability_score": 5,
+            "adoption_score": 5,
+            "overall_score": 5,
+            "trade_offs": "Delivers medium‑high revenue impact with low‑sensitivity data, making risk minimal. The need for brand/legal review adds a modest gate but does not hinder a quick 90‑day pilot. Simplicity and clear metrics make it the most balanced choice."
+        },
+        {
+            "option_name": "AI contract risk analyzer",
+            "business_value_score": 5,
+            "feasibility_score": 2,
+            "risk_score": 2,
+            "pilot_suitability_score": 2,
+            "adoption_score": 3,
+            "overall_score": 3,
+            "trade_offs": "Provides high strategic value by reducing legal risk, yet the solution must achieve very high accuracy, auditability, and handle highly sensitive legal documents. This drives low feasibility, higher regulatory risk, and makes a short‑term pilot difficult."
+        },
+        {
+            "option_name": "AI internal HR policy assistant",
+            "business_value_score": 4,
+            "feasibility_score": 4,
+            "risk_score": 4,
+            "pilot_suitability_score": 5,
+            "adoption_score": 5,
+            "overall_score": 4,
+            "trade_offs": "Easy to implement and low risk, with strong internal adoption potential. Business impact is solid but limited to cost‑saving and employee efficiency rather than direct revenue, so its overall strategic weight is slightly lower than the sales generator."
+        }
+    ],
+    "recommended_option": "AI sales proposal generator",
+    "why_not_others": {
+        "AI customer support assistant": "Although it offers the highest direct cost savings, the need to process personal customer data and integrate with existing ticketing systems reduces feasibility and raises privacy risk, lowering its overall pilot suitability.",
+        "AI contract risk analyzer": "High strategic value is offset by very high technical and legal complexity, making it hard to achieve the required accuracy and auditability within a 90‑day window and increasing regulatory risk.",
+        "AI internal HR policy assistant": "Very pilot‑friendly and low‑risk, but its business impact is primarily internal efficiency rather than revenue generation, resulting in a lower overall score compared with the sales proposal generator."
+    },
+    "final_recommendation": "Proceed with a 90‑day pilot of the AI sales proposal generator. It balances strong revenue impact, low risk, high feasibility, and rapid adoption, making it the optimal choice for an early‑stage AI initiative."
+}

@@ -1,0 +1,297 @@
+# 📚 Assignment 02 - Advanced RAG Techniques: Improving Information Retrieval Through Query Expansion
+
+## 👨‍💻 Participant Name
+
+**Pranay Gupta**
+
+---
+
+# 🚀 Project Title
+
+**Advanced RAG Techniques: Improving Information Retrieval Through Query Expansion**
+
+---
+
+## 📝 Description
+
+This project demonstrates an advanced Retrieval-Augmented Generation (RAG) technique called **Query Expansion** using the **Groq API**, **ChromaDB**, and **LangChain**.
+
+Traditional RAG systems retrieve documents based on a single user query. However, users often phrase questions differently, causing relevant information to be missed during retrieval.
+
+To overcome this limitation, Query Expansion generates multiple semantically similar versions of the original query using an LLM. Each variation is used to retrieve relevant document chunks from the vector database. The retrieved results are then merged and deduplicated before being passed to the LLM for answer generation.
+
+The project uses Tesla 10-K Annual Reports (2019–2023) as the knowledge base and enables more accurate financial question-answering through improved document retrieval.
+
+---
+
+## 🎯 Learning Objectives
+
+* Understand Retrieval-Augmented Generation (RAG)
+* Implement semantic document retrieval using ChromaDB
+* Apply Query Expansion as an Advanced RAG technique
+* Improve retrieval recall and answer quality
+* Build document-based Question Answering systems
+* Use LLMs for intelligent query reformulation
+
+---
+
+## ⚙️ Prerequisites
+
+Before running the project, ensure you have:
+
+* Python 3.10+
+* Groq API Key
+* Tesla Annual Reports Vector Database
+* Internet Connection
+* ChromaDB Installed
+* Required Python Packages
+
+---
+
+## 📂 Project Structure
+```text
+Assignment-02/
+│
+└── pranay-gupta/
+    │
+    ├── 2_RAG_TESLAReports_QueryExpansion.ipynb
+    ├── rag_query_expansion_output.json
+    ├── tesla_db/
+    │   └── Chroma_Vector_Database/
+    │
+    ├── .env
+    ├── requirements.txt
+    └── README.md
+```
+---
+
+## 📦 Required Libraries
+
+The project uses the following libraries:
+
+```bash
+chromadb
+langchain
+langchain-chroma
+langchain-community
+sentence-transformers
+huggingface-hub
+groq
+python-dotenv
+numpy
+```
+
+---
+
+## 🔧 Installation
+
+Install all dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
+
+Or install manually:
+
+```bash
+pip install chromadb
+pip install langchain
+pip install langchain-chroma
+pip install langchain-community
+pip install sentence-transformers
+pip install groq
+pip install python-dotenv
+pip install numpy
+```
+
+---
+
+## 🔐 Environment Configuration
+
+Create a `.env` file in the project root directory:
+
+```env
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+Load the API key using:
+
+```python
+from dotenv import load_dotenv
+load_dotenv()
+```
+
+---
+
+## ▶️ Running the Project
+
+### Step 1: Start Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+### Step 2: Open Notebook
+
+```text
+2_RAG_TESLAReports_QueryExpansion.ipynb
+```
+
+### Step 3: Execute Cells Sequentially
+
+The notebook performs:
+
+1. Loading the embedding model
+2. Connecting to ChromaDB
+3. Loading Tesla annual report vectors
+4. Retrieving relevant documents
+5. Generating query expansions
+6. Performing expanded retrieval
+7. Merging and deduplicating retrieved documents
+8. Generating the final answer using Groq LLM
+
+---
+
+## 🧠 Query Expansion Workflow
+
+```text
+User Question
+      │
+      ▼
+Generate Multiple Query Variations
+      │
+      ▼
+Retrieve Documents for Each Query
+      │
+      ▼
+Merge Retrieved Documents
+      │
+      ▼
+Remove Duplicate Chunks
+      │
+      ▼
+Build Final Context
+      │
+      ▼
+Generate Answer with LLM
+```
+
+---
+
+## ✨ Example Query
+
+**User Question**
+
+```text
+What was the automotive revenue in 2021?
+```
+
+### Expanded Queries Generated
+
+* What was Tesla's automotive revenue in 2021?
+* How much revenue was generated from automotive sales in 2021?
+* What were Tesla's automotive segment revenues during 2021?
+* Automotive business revenue for Tesla in fiscal year 2021
+
+### Result
+
+The system retrieves relevant financial sections from Tesla's annual reports and generates a context-grounded answer.
+
+---
+
+## 💡 Advantages of Query Expansion
+
+✅ Improves retrieval recall
+
+✅ Captures different user phrasings
+
+✅ Reduces missed relevant documents
+
+✅ Enhances answer quality
+
+✅ Improves performance on complex financial questions
+
+✅ Better utilization of vector databases
+
+---
+
+## ⚠️ Assumptions
+
+* Tesla annual report embeddings are already stored in ChromaDB.
+* The vector database path is correctly configured.
+* A valid Groq API key is available.
+* Internet access is available for model inference.
+* The embedding model downloads successfully.
+* Financial information exists within the indexed documents.
+
+---
+
+## 📊 Output
+
+The notebook produces:
+
+* Query expansion variations
+* Retrieved document chunks
+* Deduplicated context documents
+* Final context-aware answer generated by the LLM
+
+Example Output:
+
+```text
+Automotive revenue for Tesla in 2021 was $47.23 billion.
+```
+
+*(Actual output depends on the retrieved context and model response.)*
+
+---
+
+## 🎓 Learning Outcomes
+
+After completing this project, you will be able to:
+
+* Build a production-style RAG pipeline
+* Understand retrieval limitations in basic RAG systems
+* Apply Query Expansion to improve retrieval quality
+* Use ChromaDB for semantic search
+* Integrate Groq LLMs with LangChain
+* Design context-grounded Question Answering systems
+* Evaluate Advanced RAG retrieval strategies
+
+---
+
+## 🔍 Key Concepts Covered
+
+* Retrieval-Augmented Generation (RAG)
+* Query Expansion
+* Vector Databases
+* Semantic Search
+* Embeddings
+* ChromaDB
+* LangChain
+* Groq API
+* Financial Document Question Answering
+
+---
+
+## 📈 Observations
+
+The Query Expansion technique significantly improves retrieval effectiveness by generating multiple semantic variations of the user's question.
+
+Instead of relying on a single query, the system explores multiple interpretations, resulting in:
+
+* Better document coverage
+* Improved answer accuracy
+* Reduced retrieval failures
+* More reliable context generation
+
+This demonstrates how advanced RAG techniques can substantially enhance LLM-based Question Answering systems.
+
+---
+
+## 👨‍💻 Author
+
+**Pranay Gupta**
+
+Assignment: **Advanced RAG Techniques: Improving Information Retrieval Through Query Expansion**
+
+Built using **Groq API**, **LangChain**, **ChromaDB**, and **Sentence Transformers** 🚀

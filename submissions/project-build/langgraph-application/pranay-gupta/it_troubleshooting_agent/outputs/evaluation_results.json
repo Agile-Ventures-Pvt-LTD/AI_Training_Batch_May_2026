@@ -1,0 +1,189 @@
+[
+  {
+    "query": "Amit says VPN times out after MFA approval. What should we check?",
+    "response": {
+      "issue_type": "VPN",
+      "diagnosis_summary": "Based on the provided information and the functions called, the issue with Amit's VPN timing out after MFA approval is likely due to a combination of factors. The device status shows that the device is compliant, but the disk free percentage is low, which could be causing issues with the VPN connection.",
+      "evidence_used": {
+        "kb_sources": [],
+        "tools_used": [],
+        "diagnostic_signals": []
+      },
+      "recommended_steps": [
+        "The recommended steps to resolve this issue are to verify user identity, check device status, review the knowledge base, and test connectivity. Since the issue requires network support and the device metrics show a high risk due to low disk space, it is recommended to escalate the issue to the Network Support group.",
+        "It is essential to follow safety notes, such as not requesting sensitive credentials, verifying device compliance before troubleshooting, and documenting all steps taken. The confidence level in this diagnosis is medium.",
+        "Therefore, the final answer is to follow the recommended steps and escalate the issue to the Network Support group, while ensuring that all safety protocols are followed."
+      ],
+      "escalation_required": true,
+      "escalation_group": "Identity Access Management",
+      "safety_notes": [
+        "Do not request passwords or MFA codes",
+        "Verify user identity before escalation",
+        "Document all troubleshooting steps"
+      ],
+      "confidence": "MEDIUM"
+    }
+  },
+  {
+    "query": "Priya's laptop is very slow after startup. Diagnose the likely issue.",
+    "response": {
+      "issue_type": "UNKNOWN",
+      "diagnosis_summary": "Error: Agent invocation failed: Error code: 400 - {'error': {'message': \"Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.\", 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '<function=get_user_profile{\"user_identifier\": \"Priya\"}</function>\\n'}}",
+      "evidence_used": {
+        "kb_sources": [],
+        "tools_used": [],
+        "diagnostic_signals": []
+      },
+      "recommended_steps": [
+        "Please try again or contact IT support"
+      ],
+      "escalation_required": true,
+      "escalation_group": "Endpoint Support",
+      "safety_notes": [
+        "An error occurred during processing"
+      ],
+      "confidence": "LOW"
+    }
+  },
+  {
+    "query": "David cannot login and password reset email is not received. What should be done?",
+    "response": {
+      "issue_type": "PASSWORD_RESET",
+      "diagnosis_summary": "Based on the diagnosis summary, it appears that David's login issue is related to his account being locked. The recommended steps include verifying user identity, checking device status, reviewing the knowledge base, and checking service status.",
+      "evidence_used": {
+        "kb_sources": [],
+        "tools_used": [],
+        "diagnostic_signals": []
+      },
+      "recommended_steps": [
+        "Based on the diagnosis summary, it appears that David's login issue is related to his account being locked. The recommended steps include verifying user identity, checking device status, reviewing the knowledge base, and checking service status."
+      ],
+      "escalation_required": false,
+      "escalation_group": "Identity Access Management",
+      "safety_notes": [
+        "Do not request passwords or MFA codes",
+        "Verify user identity before escalation",
+        "Document all troubleshooting steps"
+      ],
+      "confidence": "LOW"
+    }
+  },
+  {
+    "query": "Sara's VPN disconnects frequently. What is the likely reason?",
+    "response": {
+      "issue_type": "VPN",
+      "diagnosis_summary": "Based on the provided information, the likely reason for Sara's VPN disconnecting frequently is due to her device not being found for the user ID provided, and there are no known incidents related to the VPN service. The recommended steps to resolve the issue include verifying user identity, checking device status, reviewing the knowledge base, and testing connectivity.",
+      "evidence_used": {
+        "kb_sources": [],
+        "tools_used": [],
+        "diagnostic_signals": []
+      },
+      "recommended_steps": [
+        "Based on the provided information, the likely reason for Sara's VPN disconnecting frequently is due to her device not being found for the user ID provided, and there are no known incidents related to the VPN service. The recommended steps to resolve the issue include verifying user identity, checking device status, reviewing the knowledge base, and testing connectivity.",
+        "Please ensure that you follow the safety notes provided, including not requesting sensitive credentials, verifying device compliance before troubleshooting, and documenting all steps taken."
+      ],
+      "escalation_required": true,
+      "escalation_group": "Identity Access Management",
+      "safety_notes": [
+        "Do not request passwords or MFA codes",
+        "Verify user identity before escalation",
+        "Document all troubleshooting steps"
+      ],
+      "confidence": "MEDIUM"
+    }
+  },
+  {
+    "query": "Outlook is not syncing for Emily but webmail works. What is the next step?",
+    "response": {
+      "issue_type": "OUTLOOK_EMAIL",
+      "diagnosis_summary": "Based on the analysis, the issue is likely related to the user's Outlook configuration or device settings. The recommended steps are to verify the user's identity, check the device status, review the knowledge base, and check the service status. Since the device metrics show low disk space, it is recommended to escalate the issue to the Messaging Support group for further assistance.",
+      "evidence_used": {
+        "kb_sources": [],
+        "tools_used": [],
+        "diagnostic_signals": []
+      },
+      "recommended_steps": [
+        "Based on the analysis, the issue is likely related to the user's Outlook configuration or device settings. The recommended steps are to verify the user's identity, check the device status, review the knowledge base, and check the service status. Since the device metrics show low disk space, it is recommended to escalate the issue to the Messaging Support group for further assistance."
+      ],
+      "escalation_required": true,
+      "escalation_group": "Identity Access Management",
+      "safety_notes": [
+        "Do not request passwords or MFA codes",
+        "Verify user identity before escalation",
+        "Document all troubleshooting steps"
+      ],
+      "confidence": "MEDIUM"
+    }
+  },
+  {
+    "query": "Which active known incidents may affect VPN users?",
+    "response": {
+      "issue_type": "VPN",
+      "diagnosis_summary": "There are no active known incidents that may affect VPN users.",
+      "evidence_used": {
+        "kb_sources": [],
+        "tools_used": [],
+        "diagnostic_signals": []
+      },
+      "recommended_steps": [
+        "Review knowledge base",
+        "Verify user identity",
+        "Check device status"
+      ],
+      "escalation_required": false,
+      "escalation_group": "Network Support",
+      "safety_notes": [
+        "Do not request passwords or MFA codes",
+        "Verify user identity before escalation",
+        "Document all troubleshooting steps"
+      ],
+      "confidence": "LOW"
+    }
+  },
+  {
+    "query": "Create a ticket summary for Rahul's laptop performance issue.",
+    "response": {
+      "issue_type": "LAPTOP_PERFORMANCE",
+      "diagnosis_summary": "To resolve Rahul's laptop performance issue, the recommended steps are to verify user identity, check device status, review the knowledge base, and check service status. Since the device metrics show high risk and the issue requires Endpoint Support, it is recommended to escalate the issue to the Endpoint Support group. Please document all steps taken and do not request sensitive credentials.",
+      "evidence_used": {
+        "kb_sources": [],
+        "tools_used": [],
+        "diagnostic_signals": []
+      },
+      "recommended_steps": [
+        "To resolve Rahul's laptop performance issue, the recommended steps are to verify user identity, check device status, review the knowledge base, and check service status. Since the device metrics show high risk and the issue requires Endpoint Support, it is recommended to escalate the issue to the Endpoint Support group. Please document all steps taken and do not request sensitive credentials."
+      ],
+      "escalation_required": true,
+      "escalation_group": "Identity Access Management",
+      "safety_notes": [
+        "To resolve Rahul's laptop performance issue, the recommended steps are to verify user identity, check device status, review the knowledge base, and check service status. Since the device metrics show high risk and the issue requires Endpoint Support, it is recommended to escalate the issue to the Endpoint Support group. Please document all steps taken and do not request sensitive credentials."
+      ],
+      "confidence": "LOW"
+    }
+  },
+  {
+    "query": "My email is slow. Fix it.",
+    "response": {
+      "issue_type": "OUTLOOK_EMAIL",
+      "diagnosis_summary": "I need more information about you to assist with the email issue. Can you please provide your email address or user ID so I can look up your profile and device details?",
+      "evidence_used": {
+        "kb_sources": [],
+        "tools_used": [],
+        "diagnostic_signals": []
+      },
+      "recommended_steps": [
+        "Review knowledge base",
+        "Verify user identity",
+        "Check device status"
+      ],
+      "escalation_required": false,
+      "escalation_group": "Messaging Support",
+      "safety_notes": [
+        "Do not request passwords or MFA codes",
+        "Verify user identity before escalation",
+        "Document all troubleshooting steps"
+      ],
+      "confidence": "LOW"
+    }
+  }
+]

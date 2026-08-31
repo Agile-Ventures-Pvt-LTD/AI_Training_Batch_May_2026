@@ -1,0 +1,51 @@
+{
+  "candidate_id": "CAND-003",
+  "candidate_name": "Neha Gupta",
+  "role_title": "AI Engineer",
+  "overall_score": 15,
+  "max_score": 40,
+  "percentage": 37.5,
+  "recommendation": "WEAK_MATCH",
+  "executive_summary": "Rohan is primarily a traditional Data Analyst with strong exploratory data analysis, visualization, and statistical modeling capabilities. While he has extensive experience using Python for Jupyter notebook scripts and standard SQL queries, he lacks essential production software engineering habits. He does not have experience building production web APIs, implementing automated unit testing suites, or developing agentic workflows and RAG architectures.",
+  "strengths": [
+    "Proficient in Python data science libraries including Pandas, NumPy, and Scikit-Learn.",
+    "Experienced in writing data extraction scripts and performing statistical data analytics.",
+    "Strong communication skills and comfortable translating data findings into executive presentations."
+  ],
+  "gaps": [
+    "No experience building production web applications or designing RESTful/GraphQL APIs (FastAPI/Flask).",
+    "Complete lack of familiarity with automated test environments, unit testing with pytest, and CI/CD pipelines.",
+    "No exposure to Generative AI development pipelines, LLMs, embeddings, vector stores, or agentic frameworks.",
+    "Software development history is limited to offline data scripts and Jupyter Notebook sandboxes."
+  ],
+  "interview_focus_areas": [
+    "Understanding of software development life cycles (SDLC) and production deployment strategies.",
+    "Willingness and capacity to pivot from analytical script writing to production application architecture.",
+    "Basic conceptual understanding of application security and stateless API architectures."
+  ],
+  "interview_questions": {
+    "technical_questions": [
+      "Most code in this role lives inside production APIs rather than local Jupyter Notebooks. What is your conceptual understanding of how an API works, and how would you adapt your coding style for it?",
+      "How would you approach learning automated unit testing (like using pytest) if you were asked to write tests for a newly built feature?",
+      "Can you describe the security or maintenance risks of running naked script files directly on production servers without containerization tools like Docker?"
+    ],
+    "project_deep_dive_questions": [
+      "In your Customer Segmentation Model project, how did you deliver the final data clusters to downstream software systems, and how was it maintained?",
+      "Walk us through a time you had to clean a large, highly unstructured dataset. What edge cases did you uncover and how did you resolve them cleanly?"
+    ],
+    "scenario_questions": [
+      "If an AI Engineer on the team gave you a script that parses user inputs and asked you to ensure that no malicious inputs break the system, how would you approach validating that code?",
+      "Imagine you are assigned to help build a chatbot tool. Given your heavy background in data parsing, how would you design a data schema to log the user queries and system responses for analysis?"
+    ],
+    "gap_validation_questions": [
+      "This position is heavily focused on software engineering and production LLM workflows rather than descriptive reporting. Why do you feel this role aligns with your career trajectory?",
+      "What steps are you currently taking to move your software development practices out of local sandbox scripts and into managed source-control repositories?"
+    ]
+  },
+  "evidence": [
+    "2.5 years of experience as a Data Analyst at FinMetrics Corp, focusing on Tableau reports, SQL queries, and local data cleaning scripts.",
+    "Completed multiple offline machine learning scripts for customer segmentation and churn predicting models.",
+    "Holds a Bachelor of Science in Statistics."
+  ],
+  "human_review_note": "Rohan lacks both the production software engineering foundations (APIs, testing, pipelines) and the modern Generative AI framework exposure required for this position. While his analytical skills are sound, the structural skill gap is too wide for an engineering role. Progression is not recommended."
+}

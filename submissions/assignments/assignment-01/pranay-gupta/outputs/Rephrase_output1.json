@@ -1,0 +1,59 @@
+{
+    "rephrased_problem": "The organization wants to (1) cut the time employees spend on repetitive, rule‑based tasks by at least 30% within the next 12 months, and (2) give senior leaders a daily, drill‑down view of key operational KPIs (e.g., order‑to‑cash cycle time, incident resolution time, inventory turnover) with automated anomaly alerts, so they can make faster, data‑driven decisions.",
+    "clarified_assumptions": [
+        "The company uses a core ERP system (e.g., SAP, Oracle) that stores transaction data in a relational database.",
+        "Teams currently rely on manual spreadsheet updates, email forwarding, and copy‑paste to move data between the ERP, a ticketing system, and reporting tools.",
+        "Leadership reviews operational health through static PowerPoint decks prepared weekly.",
+        "There is an IT integration layer (APIs or ETL jobs) that can be extended to expose data in near‑real time.",
+        "The organization has basic cloud infrastructure (AWS, Azure, or GCP) and can host containerized services.",
+        "Data privacy and compliance requirements are limited to internal use; no external sharing of customer‑identifiable data is required."
+    ],
+    "proposed_solution": "Deploy a hybrid Intelligent Automation platform that combines (a) low‑code Robotic Process Automation (RPA) bots to capture, validate, and upload routine transaction data from legacy interfaces into the ERP, and (b) a lightweight Large Language Model (LLM) service that parses unstructured inputs (emails, PDFs, chat messages) to extract relevant fields for the bots. The extracted data feeds a real‑time operational data lake, which powers a leadership dashboard built with a BI tool (e.g., Power BI or Looker). The dashboard includes AI‑generated natural‑language summaries and anomaly detection alerts for the defined KPIs. The solution is delivered as modular micro‑services that can be expanded to additional processes later.",
+    "target_users": [
+        "Front‑line operational staff (order entry, inventory control, help‑desk agents)",
+        "Process owners / team leads who supervise the manual workflows",
+        "C‑suite and senior leadership (CIO, COO, VP of Operations)"
+    ],
+    "key_features": [
+        "RPA bots that log into legacy web forms or desktop apps, copy data from emails/attachments, and push validated records into the ERP via API.",
+        "LLM‑based extraction engine that identifies entities such as order numbers, product SKUs, dates, and issue categories with >90% accuracy.",
+        "Data validation layer that flags mismatches and routes them to a human reviewer via a simple web UI.",
+        "Operational data lake (e.g., Snowflake or Azure Synapse) that stores cleaned, time‑stamped records for analytics.",
+        "Leadership dashboard with KPI tiles, trend charts, and AI‑written daily briefing notes.",
+        "Automated anomaly detection (statistical thresholds + ML) that triggers Slack/Teams alerts to leaders.",
+        "Audit log and role‑based access control for compliance."
+    ],
+    "data_needed": [
+        "Historical transaction logs from the ERP (last 12‑24 months).",
+        "Sample emails, PDFs, and chat transcripts that contain order or incident information.",
+        "Current KPI definitions and calculation formulas used by leadership.",
+        "User access logs for the systems to train validation rules.",
+        "Metadata about existing API endpoints or database schemas."
+    ],
+    "success_metrics": [
+        "Average manual processing time per transaction reduced by ≥30% (baseline measured during discovery).",
+        "Number of data‑entry errors per month reduced by ≥50% compared with the previous quarter.",
+        "Dashboard refresh latency ≤5 minutes after a transaction is recorded.",
+        "Leadership reports generated automatically 100% of business days, with >90% of users rating the AI summary as useful.",
+        "Time to detect and alert on KPI anomalies reduced from days to under 1 hour."
+    ],
+    "implementation_steps": [
+        "1. Discovery (4 weeks): map current manual workflows, collect sample data, define KPI calculations, and establish baseline metrics.",
+        "2. Data preparation (2 weeks): build ETL pipelines to ingest ERP tables and unstructured documents into a staging area.",
+        "3. Model development (3 weeks): fine‑tune an open‑source LLM (e.g., Llama‑2) on the company’s document set for entity extraction; validate >90% precision/recall.",
+        "4. RPA design (3 weeks): create low‑code bots for the top‑3 high‑volume manual tasks identified in discovery; integrate bots with the extraction service via REST APIs.",
+        "5. Validation UI (2 weeks): develop a simple web interface for exception handling and human‑in‑the‑loop review.",
+        "6. Data lake & analytics (3 weeks): load cleaned records into Snowflake/Azure Synapse, build KPI materialized views, and configure Power BI dashboards.",
+        "7. Anomaly detection (2 weeks): implement statistical thresholds and a lightweight isolation‑forest model; set up Teams/Slack alert channels.",
+        "8. Pilot rollout (4 weeks): run bots and dashboard with one business unit, collect feedback, adjust models and bot logic.",
+        "9. Organization‑wide rollout (6 weeks): scale bots to remaining units, train end‑users, and decommission legacy spreadsheets.",
+        "10. Post‑implementation review (2 weeks): measure success metrics, document lessons learned, and plan next‑phase automation."
+    ],
+    "risks": [
+        "Data quality issues in legacy systems may cause extraction errors; mitigated by a robust validation UI and staged rollout.",
+        "Resistance from staff who fear job loss; mitigated by positioning bots as “assistants” and providing reskilling for higher‑value tasks.",
+        "Integration complexity if ERP APIs are limited; mitigated by using screen‑scraping RPA as a fallback and engaging vendor support early.",
+        "Model drift as document formats evolve; mitigated by establishing a quarterly re‑training schedule and monitoring extraction accuracy.",
+        "Security compliance for handling sensitive documents; mitigated by hosting the LLM inference service within the corporate VPC and applying encryption at rest and in transit."
+    ]
+}

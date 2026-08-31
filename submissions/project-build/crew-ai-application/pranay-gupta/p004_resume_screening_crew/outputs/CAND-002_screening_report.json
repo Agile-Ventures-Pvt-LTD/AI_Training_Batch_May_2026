@@ -1,0 +1,54 @@
+{
+  "candidate_id": "CAND-002",
+  "candidate_name": "Priya Sharma",
+  "role_title": "AI Engineer",
+  "overall_score": 24,
+  "max_score": 40,
+  "percentage": 60.0,
+  "recommendation": "MODERATE_MATCH",
+  "executive_summary": "Priya is a structurally sound Backend Python Developer with 4 years of solid experience in API development, database management, and testing frameworks. While her core software engineering skills, API security practices, and development hygiene are excellent, her exposure to Artificial Intelligence is limited to foundational prompt engineering and basic LLM API wrappers. She currently lacks hands-on experience with production RAG architectures, vector databases, and multi-agent orchestration frameworks.",
+  "strengths": [
+    "Strong backend proficiency with Python frameworks like FastAPI and Flask.",
+    "Solid production-grade experience with relational databases (PostgreSQL, SQL optimization).",
+    "Excellent software engineering practices, including structured logging, robust error handling, and pytest pipelines.",
+    "Familiarity with containerization basics (Docker) and CI/CD integration (GitHub Actions)."
+  ],
+  "gaps": [
+    "Minimal exposure to the Generative AI ecosystem, lacking experience with orchestration tools like LangChain or LangGraph.",
+    "No hands-on experience with vector search engines, chunking strategies, or embeddings (RAG pipelines).",
+    "AI projects are limited to basic, non-grounded prompt-based text generation tools.",
+    "Lacks foundational experience with evaluation metrics for unstructured LLM outputs."
+  ],
+  "interview_focus_areas": [
+    "Adaptability of backend engineering skills to AI engineering workflows.",
+    "Database design capabilities for handling structured vs. unstructured data integrations.",
+    "Theoretical understanding of AI concepts like embeddings, context windows, and hallucination mitigation.",
+    "API design patterns tailored for long-running or streaming LLM workloads."
+  ],
+  "interview_questions": {
+    "technical_questions": [
+      "LLM responses can be slow and unpredictable. How would you design a FastAPI endpoint to handle streaming responses or asynchronous processing for a high-traffic AI feature?",
+      "In your backend work, you have relied heavily on relational databases. If you needed to implement a semantic search engine today, how would you approach storing and querying text embeddings?",
+      "How would you implement secure API authentication and rate-limiting to protect an internal endpoint that wraps a costly third-party LLM API?"
+    ],
+    "project_deep_dive_questions": [
+      "In your GenAI Email Draft Prototype, how did you handle edge cases where the LLM returned completely irrelevant text or failed to stick to the requested tone?",
+      "Can you walk us through how you structured your test suite in pytest for the Customer Support API to validate both database state and API responses?"
+    ],
+    "scenario_questions": [
+      "If we tasked you with expanding your Email Draft Prototype into a full RAG system using our internal corporate wiki, what steps would you take to research, design, and build the initial prototype?",
+      "Imagine an AI service you deployed begins experiencing silent failures—the API returns a 200 OK status, but the LLM output is lower quality or garbled. How would you utilize your logging and error-handling background to diagnose this?"
+    ],
+    "gap_validation_questions": [
+      "You have a highly robust background in core backend development. What has motivated your recent transition toward GenAI prototypes, and how have you been upskilling in this domain?",
+      "While you haven't used orchestration libraries like LangChain or CrewAI yet, what is your conceptual understanding of what an 'AI Agent' does compared to a traditional deterministic script?"
+    ]
+  },
+  "evidence": [
+    "3 years of experience as a Backend Developer at CloudCart Systems building FastAPI services, managing database queries, and setting up basic GitHub Actions.",
+    "1 year of experience as a Software Engineer at AppWorks Digital building automation scripts and admin dashboards.",
+    "Completed a prompt-based email draft prototype utilizing an LLM API directly.",
+    "Holds a Bachelor of Engineering in Information Technology."
+  ],
+  "human_review_note": "Priya represents a classic 'strong engineer, nascent AI practitioner' profile. Her superb backend foundations mean she will write much cleaner, safer code than average data science prototypers. However, she will require ramp-up time to master vector search and agent patterns. Recommended for hiring if the team has the bandwidth to mentor her through the AI learning curve."
+}

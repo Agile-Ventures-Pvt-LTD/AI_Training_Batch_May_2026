@@ -1,0 +1,54 @@
+{
+    "rephrased_requirement": "Implement a web‑based AI assistant that allows authenticated users to upload files (up to 100 MB, PDF, DOCX, TXT, CSV) and then pose natural‑language questions about the content of those files. The system must return answers with a latency ≤ 2 seconds for typical queries, handle at least 200 concurrent users, and protect data confidentiality and integrity in transit and at rest. Answer quality must meet a minimum relevance score of 0.8 (based on a human‑rated benchmark).",
+    "functional_requirements": [
+        "FR‑1: Provide a secure UI for users to log in using OAuth2 (e.g., Google, Azure AD).",
+        "FR‑2: Allow authenticated users to upload files of supported types (PDF, DOCX, TXT, CSV) with a maximum size of 100 MB per file.",
+        "FR‑3: Store uploaded files in encrypted object storage and retain them for a configurable retention period (default 30 days).",
+        "FR‑4: Extract text from uploaded files using appropriate parsers and index the content in a vector store.",
+        "FR‑5: Expose an API endpoint that accepts a user question and a reference to a previously uploaded file, then returns a generated answer.",
+        "FR‑6: Log all user actions (upload, query, download) with timestamps for audit purposes.",
+        "FR‑7: Provide a mechanism for users to delete their uploaded files and associated embeddings.",
+        "FR‑8: Return a confidence/relevance score with each answer."
+    ],
+    "non_functional_requirements": [
+        "NFR‑1: Latency – 95 % of answers must be returned within 2 seconds under normal load.",
+        "NFR‑2: Throughput – System must support at least 200 concurrent active sessions (≈ 400 queries per minute).",
+        "NFR‑3: Availability – 99.9 % uptime measured monthly, with automatic fail‑over across two availability zones.",
+        "NFR‑4: Scalability – Horizontal scaling of the inference service and vector store to handle load spikes up to 5× baseline.",
+        "NFR‑5: Accuracy – Minimum average relevance score of 0.8 on a curated benchmark set of 500 question‑answer pairs.",
+        "NFR‑6: Observability – Metrics, logs, and traces must be emitted to a centralized monitoring system (e.g., Prometheus/Grafana).",
+        "NFR‑7: Data retention – Uploaded files and embeddings must be automatically purged after the configured retention period."
+    ],
+    "security_requirements": [
+        "SEC‑1: All client‑to‑server communication must use TLS 1.2 or higher.",
+        "SEC‑2: Files at rest must be encrypted with AES‑256‑GCM.",
+        "SEC‑3: Access to stored files and embeddings must be controlled via IAM policies; only the owning user and privileged admin roles may read them.",
+        "SEC‑4: Implement rate limiting (e.g., 10 requests/second per user) to mitigate abuse.",
+        "SEC‑5: Perform input validation and sanitization on uploaded files to prevent malicious payloads.",
+        "SEC‑6: Conduct regular vulnerability scans and apply security patches to all components.",
+        "SEC‑7: Log authentication events and provide alerts for suspicious activities (e.g., multiple failed logins)."
+    ],
+    "acceptance_criteria": [
+        "AC‑1: A registered user can successfully upload a 50 MB PDF and receive a 200 OK response.",
+        "AC‑2: After upload, the user can ask a question about the document and receive an answer within 2 seconds, accompanied by a relevance score ≥ 0.8 on the test set.",
+        "AC‑3: Unauthorized users are blocked from uploading or querying files (HTTP 401/403).",
+        "AC‑4: All data in transit is encrypted (verified via TLS handshake inspection).",
+        "AC‑5: Files stored in the object bucket are encrypted at rest (verified via bucket encryption settings).",
+        "AC‑6: System maintains ≥ 99.9 % availability over a 30‑day observation period.",
+        "AC‑7: Audit logs contain entries for every upload, query, and delete action with correct user identifiers.",
+        "AC‑8: The service gracefully degrades under load, returning HTTP 429 when rate limits are exceeded."
+    ],
+    "recommended_solution_approach": "Deploy a micro‑service architecture on a cloud provider (e.g., AWS). Use an API Gateway + Cognito for authentication, front‑end SPA (React) for UI, and a backend consisting of: (1) File Service (Lambda or container) that validates, encrypts, and stores files in S3; (2) Extraction Service (container) that runs open‑source parsers (pdfminer, docx2txt, csv) and pushes raw text to an asynchronous queue (SQS). (3) Embedding Service that reads from the queue, generates vector embeddings using a hosted LLM embedding model (e.g., OpenAI embeddings or a self‑hosted sentence‑transformers) and stores them in a managed vector DB (e.g., Pinecone, Milvus, or OpenSearch k‑NN). (4) Query Service that receives user questions, retrieves relevant chunks via similarity search, constructs a prompt, and calls a LLM inference endpoint (e.g., OpenAI GPT‑4o or a self‑hosted Llama‑2) to generate the answer, returning the text plus a confidence score. All services are containerized (Docker) and orchestrated by Kubernetes/EKS with auto‑scaling. Monitoring via Prometheus, logging via CloudWatch/ELK, and CI/CD pipelines enforce automated testing and security scanning.",
+    "open_questions": [
+        "What is the acceptable maximum file size and which additional file formats (e.g., images, spreadsheets) should be supported?",
+        "What is the target user base size and expected peak concurrent query volume?",
+        "Which LLM provider or model version is preferred (hosted API vs. self‑hosted) and what is the budget for inference costs?",
+        "What is the definition of the relevance score threshold (e.g., BLEU, ROUGE, human rating) and how will the benchmark be constructed?",
+        "Are there any regulatory compliance requirements (e.g., GDPR, HIPAA) that affect data residency or retention policies?",
+        "What SLA for answer latency is required under peak load versus average load?",
+        "Should the system support multi‑language documents and queries, and if so, which languages?",
+        "Is there a need for versioning of uploaded files or for collaborative editing?",
+        "What is the preferred method for users to delete their data (immediate purge vs. soft delete)?",
+        "Will there be any integration with existing enterprise identity providers beyond OAuth2 (e.g., SAML, LDAP)?"
+    ]
+}

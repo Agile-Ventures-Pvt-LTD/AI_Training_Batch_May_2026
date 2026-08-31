@@ -1,0 +1,80 @@
+{
+  "destination": "Pune",
+  "region": "Maharashtra",
+  "country": "India",
+  "forecast_days": 3,
+  "current_weather": {
+    "temperature_c": 28.0,
+    "humidity": 65,
+    "precipitation_mm": 0.2,
+    "wind_speed_kmph": 15.0,
+    "weather_description": "Light rain"
+  },
+  "daily_forecast": [
+    {
+      "date": "2026-06-26",
+      "max_temp_c": 30.0,
+      "min_temp_c": 24.0,
+      "avg_temp_c": 27.0,
+      "total_precipitation_mm": 8.5,
+      "max_wind_kmph": 22.0,
+      "max_chance_of_rain": 75,
+      "weather_description": "Moderate rain"
+    },
+    {
+      "date": "2026-06-27",
+      "max_temp_c": 29.0,
+      "min_temp_c": 23.0,
+      "avg_temp_c": 26.0,
+      "total_precipitation_mm": 12.0,
+      "max_wind_kmph": 25.0,
+      "max_chance_of_rain": 80,
+      "weather_description": "Heavy rain"
+    },
+    {
+      "date": "2026-06-28",
+      "max_temp_c": 31.0,
+      "min_temp_c": 25.0,
+      "avg_temp_c": 28.0,
+      "total_precipitation_mm": 3.0,
+      "max_wind_kmph": 18.0,
+      "max_chance_of_rain": 45,
+      "weather_description": "Partly cloudy"
+    }
+  ],
+  "weather_risk": "HIGH",
+  "risk_factors": [
+    "Moderate precipitation is expected during the forecast period.",
+    "High probability of rain during the forecast period."
+  ],
+  "recommended_actions": [
+    "Carry an umbrella or light rain protection.",
+    "Plan indoor activities as backup options."
+  ],
+  "packing_suggestions": [
+    "Umbrella",
+    "Waterproof jacket",
+    "Waterproof shoes",
+    "Phone charger",
+    "Essential documents"
+  ],
+  "travel_readiness_advisory": "Travel to Pune may be risky due to adverse weather conditions. 3-day forecast for Pune: Temperatures ranging from 23.0°C to 31.0°C. Current conditions: Light rain, 28.0°C. Consider postponing non-essential outdoor travel or take extra caution. Carry an umbrella or light rain protection. Plan indoor activities as backup options.",
+  "weather_risk_explanation": "The risk level for Pune is HIGH because severe weather conditions were detected in the forecast. Moderate precipitation is expected during the forecast period. High probability of rain during the forecast period. The traveler should reconsider non-essential outdoor travel or plan with extra caution.",
+  "resources_used": [
+    "resource://travel/checklist",
+    "resource://travel/advisory-rules",
+    "resource://weather/normalized-forecast-schema"
+  ],
+  "tools_used": [
+    "validate_city_input_tool",
+    "get_weather_forecast_tool",
+    "normalize_weather_data_tool",
+    "calculate_weather_risk_tool",
+    "save_travel_advisory_tool"
+  ],
+  "prompts_used": [
+    "travel_readiness_prompt",
+    "weather_risk_summary_prompt",
+    "packing_recommendation_prompt"
+  ]
+}

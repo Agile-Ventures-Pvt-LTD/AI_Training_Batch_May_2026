@@ -1,0 +1,43 @@
+{
+    "most_likely_causes": [
+        "Data drift: significant shift in the distribution of `transaction_amount`",
+        "Concept drift: fraud patterns changed after the promotional campaign and the introduction of a new payment channel",
+        "Feature space expansion: the new payment channel adds unseen feature combinations that the model was never trained on"
+    ],
+    "evidence": [
+        "Precision fell from 0.82 to 0.61 (large increase in false positives)",
+        "Recall fell slightly from 0.76 to 0.72 (some increase in false negatives)",
+        "Feature distribution for `transaction_amount` shifted markedly over the 3‑month period",
+        "Business change: 30% higher transaction volume and a new payment channel were introduced",
+        "Domain change: fraud patterns were reported to have changed after a promotional campaign",
+        "Pipeline logs show no failed jobs, so data ingestion is still operational"
+    ],
+    "less_likely_causes": [
+        "Pipeline failure: logs indicate all jobs completed successfully",
+        "Threshold miscalibration: no evidence of a threshold change; the observed pattern (precision drop > recall drop) aligns more with drift than with a simple threshold shift",
+        "Model code bug: would likely cause more abrupt or erratic metric changes, which are not observed"
+    ],
+    "recommended_diagnostics": [
+        "Run statistical drift tests (e.g., Kolmogorov‑Smirnov, PSI) on key features, especially `transaction_amount` and channel‑specific fields",
+        "Compare label distribution (fraud rate) over time to detect target drift",
+        "Segment performance analysis: compute precision/recall per payment channel and per promotion period",
+        "Generate calibration curves for the current model on recent data to assess probability mis‑calibration",
+        "Create a shadow model trained on the latest 1‑month data and compare its metrics to the production model",
+        "Inspect feature importance on recent data to see if the new channel introduces dominant features the model cannot handle"
+    ],
+    "short_term_actions": [
+        "Temporarily tighten the decision threshold for the new payment channel to curb false positives",
+        "Deploy a quick‑retrain or fine‑tune of the model using the most recent labeled data (including the new channel and post‑promotion transactions)",
+        "Add real‑time alerts for sudden drops in precision or spikes in false‑positive rate",
+        "Apply rule‑based overrides for high‑risk transaction_amount ranges that have shifted"
+    ],
+    "long_term_actions": [
+        "Implement an automated drift monitoring dashboard that triggers retraining when feature or label drift exceeds predefined thresholds",
+        "Establish a regular (e.g., monthly) retraining schedule that incorporates data from new channels and recent campaigns",
+        "Extend the feature engineering pipeline to explicitly handle the new payment channel (e.g., channel‑specific embeddings or one‑hot encoding)",
+        "Adopt a model calibration routine (e.g., Platt scaling or isotonic regression) after each retraining to keep probability outputs reliable",
+        "Introduce incremental or online learning capabilities so the model can adapt continuously to evolving fraud patterns",
+        "Document and version‑control all data schema changes to ensure downstream components are aware of new fields"
+    ],
+    "reasoning_summary": "The sharp decline in precision together with a modest recall drop points to many more legitimate transactions being flagged as fraud, which is typical when the input data distribution changes (data drift) or when the underlying fraud behavior evolves (concept drift). The observed shift in `transaction_amount`, the launch of a new payment channel, and the post‑promotion change in fraud patterns provide concrete evidence of both data and concept drift. Pipeline health appears normal, and there is no indication of threshold adjustments, making those causes less probable. Immediate diagnostics should quantify drift and segment performance, followed by short‑term threshold tuning and a rapid model fine‑tune. Long‑term, a systematic drift monitoring and scheduled retraining framework, along with enhanced feature handling for new channels, will mitigate future degradations."
+}
