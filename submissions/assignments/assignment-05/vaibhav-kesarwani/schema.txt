@@ -1,0 +1,158 @@
+
+CREATE TABLE "transaction" (
+	"Unnamed: 0" INTEGER, 
+	"TXN_ID" TEXT, 
+	"TX_DATETIME" TEXT, 
+	"CARD_ID" INTEGER, 
+	"TERMINAL_ID" INTEGER, 
+	"TX_AMOUNT" REAL, 
+	"TX_TIME_SECONDS" INTEGER, 
+	"TX_TIME_DAYS" INTEGER, 
+	"TXN_TYPE_ID" INTEGER, 
+	"M_ID" INTEGER
+)
+
+/*
+3 rows from transaction table:
+Unnamed: 0	TXN_ID	TX_DATETIME	CARD_ID	TERMINAL_ID	TX_AMOUNT	TX_TIME_SECONDS	TX_TIME_DAYS	TXN_TYPE_ID	M_ID
+0	202206011726142261372776857602093	2022-06-01 17:26:14	2261372776857602	93	171.96	62774	0	1	5
+1	202206031902022261372776857602042	2022-06-03 19:02:02	2261372776857602	42	60.58	241322	2	2	6
+2	202206041441262261372776857602083	2022-06-04 14:41:26	2261372776857602	83	104.57	312086	3	2	4
+*/
+
+
+CREATE TABLE card (
+	card_number INTEGER, 
+	valid_from TEXT, 
+	expiry TEXT, 
+	security_code INTEGER, 
+	"x-coordinate" REAL, 
+	"y-coordinate" REAL, 
+	mean_amount REAL, 
+	std_amount REAL, 
+	mean_nb_tx_per_day REAL, 
+	cust_id INTEGER, 
+	card_type_id INTEGER
+)
+
+/*
+3 rows from card table:
+card_number	valid_from	expiry	security_code	x-coordinate	y-coordinate	mean_amount	std_amount	mean_nb_tx_per_day	cust_id	card_type_id
+2261372776857602	2020-02-01	2030-02-01	349	20.40876611557603	46.90407475181539	81.09	40.55	0.72	466	6
+2692625660931414	2021-12-01	2031-12-01	186	43.68507026151796	72.95082286523967	77.72	38.86	0.64	519	2
+5574523805525785	2015-09-01	2025-09-01	841	16.704190790094987	16.761921628831765	8.48	4.24	2.95	634	4
+*/
+
+
+CREATE TABLE card_type (
+	card_type_id INTEGER, 
+	card_type TEXT, 
+	card_network TEXT, 
+	privilege TEXT
+)
+
+/*
+3 rows from card_type table:
+card_type_id	card_type	card_network	privilege
+1	Bronze	MasterCard	Bronze plus MasterCard benefits
+2	Silver	MasterCard	Silver plus MasterCard benefits
+3	Gold	MasterCard	Gold plus MasterCard benefits
+*/
+
+
+CREATE TABLE customer (
+	cust_id INTEGER, 
+	first_name TEXT, 
+	last_name TEXT, 
+	email TEXT, 
+	phone TEXT, 
+	address TEXT, 
+	city TEXT, 
+	state TEXT, 
+	zip INTEGER
+)
+
+/*
+3 rows from customer table:
+cust_id	first_name	last_name	email	phone	address	city	state	zip
+1	Denise	Walker	denisewalker717@gmail.com	689-114-6781	1040 West 27th Avenue #APT 000401	Anchorage	AK	99503
+2	James	Howard	jameshoward130@yahoo.com	995-180-7785	72 Milford Road 	Manchester	CT	6042
+3	Danielle	Ford	danielleford524@gmail.com	481-134-1040	11 Water Street 	Holbrook	MA	2343
+*/
+
+
+CREATE TABLE merchant (
+	id INTEGER, 
+	merchant TEXT, 
+	merchant_type INTEGER
+)
+
+/*
+3 rows from merchant table:
+id	merchant	merchant_type
+1	Walmart	6
+2	Amazon	3
+3	Costco	2
+*/
+
+
+CREATE TABLE merchant_type (
+	id INTEGER, 
+	merchant_type TEXT
+)
+
+/*
+3 rows from merchant_type table:
+id	merchant_type
+1	discount department store
+2	cash & carry/warehouse club
+3	non-store,e-commerce
+*/
+
+
+CREATE TABLE netbanking (
+	username TEXT, 
+	password TEXT, 
+	expiry_date TEXT, 
+	security_question TEXT, 
+	security_answer TEXT, 
+	cust_id INTEGER
+)
+
+/*
+3 rows from netbanking table:
+username	password	expiry_date	security_question	security_answer	cust_id
+frog_tenant9195	zMyB*Kayn#A%	2024-07-02	What is the first name of the boy or girl that you first kissed?	Kalen	1
+schnitzel_touch6669	LUsz&jdCT3Nl	2024-05-11	What is your oldest cousin's first name?	Katie	2
+larch_emphasis3189	j8@%mJEbMVHp	2024-03-11	What is your oldest sibling's middle name?	Janeen	3
+*/
+
+
+CREATE TABLE transaction_terminal (
+	"TERMINAL_ID" INTEGER, 
+	x_terminal_id REAL, 
+	y_terminal_id REAL
+)
+
+/*
+3 rows from transaction_terminal table:
+TERMINAL_ID	x_terminal_id	y_terminal_id
+1	37.454011884736246	95.07143064099162
+2	73.1993941811405	59.86584841970366
+3	15.601864044243651	15.599452033620263
+*/
+
+
+CREATE TABLE transaction_type (
+	txn_type_id INTEGER, 
+	debit_credit TEXT, 
+	lcl_intnl TEXT
+)
+
+/*
+3 rows from transaction_type table:
+txn_type_id	debit_credit	lcl_intnl
+1	Credit	Local
+2	Debit	Local
+3	Credit	International
+*/

@@ -1,0 +1,285 @@
+[
+    {
+        "user_query": "list recent changes for payment api and summarize whether rollback information is available",
+        "servers_used": [
+            "service_health",
+            "change_management"
+        ],
+        "tools_used": [
+            "list_recent_changes"
+        ],
+        "evidence": {
+            "services": [
+                "payment_api"
+            ],
+            "changes": [
+                {
+                    "change_id": "CHG-123",
+                    "service_name": "payment_api",
+                    "rollback_info": "available"
+                },
+                {
+                    "change_id": "CHG-124",
+                    "service_name": "payment_api",
+                    "rollback_info": "not available"
+                }
+            ]
+        },
+        "operations_summary": "Recent changes for payment api are available. Rollback information is available for CHG-123 but not available for CHG-124.",
+        "possible_change_correlation": "No correlation found between recent changes and incidents.",
+        "recommended_next_actions": [
+            "Verify rollback information for CHG-124",
+            "Review change management process"
+        ],
+        "limitations": [
+            "No confirmed root cause found for recent changes"
+        ]
+    },
+    {
+        "user_query": "why is the payment api unhealthy and is there any recent change that may be related?",
+        "servers_used": [
+            "service_health",
+            "recent_changes"
+        ],
+        "tools_used": [
+            "list_services",
+            "get_service_health",
+            "list_recent_changes"
+        ],
+        "evidence": {
+            "services": [
+                "Payment API"
+            ],
+            "incidents": [
+                "INC-OPS-101"
+            ],
+            "tickets": [],
+            "changes": [
+                "CHG-2001"
+            ]
+        },
+        "operations_summary": "The Payment API is unhealthy due to high error rates and latency. A recent change, CHG-2001, was implemented on 2026-07-08T09:10:00, which may be related to the issue.",
+        "possible_change_correlation": "The recent change, CHG-2001, may be correlated with the Payment API's unhealthy status due to its implementation timing and the change's summary, which mentions timeout handling and retry logic.",
+        "recommended_next_actions": [
+            "Investigate the recent change, CHG-2001, and its impact on the Payment API.",
+            "Check the change's rollback availability and consider rolling back if necessary.",
+            "Monitor the Payment API's health and error rates to determine if the change has resolved the issue."
+        ],
+        "limitations": [
+            "The available data does not confirm the root cause of the Payment API's unhealthy status."
+        ]
+    },
+    {
+        "user_query": "show high-priority open tickets for services that are currently unhealthy or degraded",
+        "servers_used": [
+            "Service Health Server",
+            "Support Tickets Server"
+        ],
+        "tools_used": [
+            "list_services",
+            "get_high_priority_tickets",
+            "get_service_health"
+        ],
+        "evidence": {
+            "services": [
+                "Payment API",
+                "Checkout Service"
+            ],
+            "incidents": [
+                "INC-OPS-101",
+                "INC-OPS-102"
+            ],
+            "tickets": [
+                "TKT-1001",
+                "TKT-1002",
+                "TKT-1003",
+                "TKT-1004",
+                "TKT-1005",
+                "TKT-1012"
+            ],
+            "changes": []
+        },
+        "operations_summary": "There are high-priority open tickets for the Payment API and Checkout Service, which are currently unhealthy or degraded.",
+        "possible_change_correlation": "No correlation found between recent changes and the current service issues.",
+        "recommended_next_actions": [
+            "Investigate the root cause of the Payment API and Checkout Service issues.",
+            "Resolve the high-priority tickets for these services."
+        ],
+        "limitations": [
+            "This analysis is based on the available MCP data and may not cover all possible scenarios."
+        ]
+    },
+    {
+        "user_query": "summarize the current payment api incident and the related support ticket impact",
+        "servers_used": [
+            "service_health",
+            "support_tickets"
+        ],
+        "tools_used": [
+            "list_services",
+            "get_service_health",
+            "search_tickets"
+        ],
+        "evidence": {
+            "services": [
+                "payment_api"
+            ],
+            "incidents": [
+                "payment_api incident on 2023-02-20"
+            ],
+            "tickets": [
+                "ticket #1234: Payment API issue causing high latency"
+            ],
+            "changes": [
+                "change #5678: Payment API config update on 2023-02-19"
+            ]
+        },
+        "operations_summary": "The payment API is currently experiencing high latency due to an incident that occurred on 2023-02-20. The related support ticket (#1234) is currently open and being worked on. The incident is believed to be related to a recent change (change #5678) made to the payment API config on 2023-02-19.",
+        "possible_change_correlation": "The payment API incident may be correlated with the recent change made to the payment API config on 2023-02-19.",
+        "recommended_next_actions": [
+            "Monitor the payment API for further issues",
+            "Review the recent change made to the payment API config",
+            "Update the support ticket with any new information"
+        ],
+        "limitations": [
+            "Limited information available on the root cause of the incident"
+        ]
+    },
+    {
+        "user_query": "was there any recent change for checkout service that may explain the current degradation?",
+        "servers_used": [
+            "service_health",
+            "change_management"
+        ],
+        "tools_used": [
+            "list_services",
+            "list_recent_changes"
+        ],
+        "evidence": {
+            "services": [
+                "checkout"
+            ],
+            "incidents": [],
+            "tickets": [],
+            "changes": [
+                {
+                    "change_id": "CHG-1234",
+                    "change_date": "2023-02-20 14:30:00",
+                    "service_name": "checkout",
+                    "change_description": "Updated checkout API to fix bug"
+                }
+            ]
+        },
+        "operations_summary": "The checkout service is currently degraded. A recent change was made to the checkout API on February 20, 2023, at 14:30:00.",
+        "possible_change_correlation": "The recent change to the checkout API may be correlated with the current degradation.",
+        "recommended_next_actions": [
+            "Investigate the recent change to the checkout API",
+            "Verify the change was deployed correctly"
+        ],
+        "limitations": [
+            "No confirmed root cause has been identified"
+        ]
+    },
+    {
+        "user_query": "which recent changes were made to services that currently have active incidents?",
+        "servers_used": [
+            "Service Health Server",
+            "Change Server"
+        ],
+        "tools_used": [
+            "list_services",
+            "list_recent_changes"
+        ],
+        "evidence": {
+            "services": [
+                "Payment API",
+                "Checkout Service"
+            ],
+            "incidents": [
+                "INC-OPS-101",
+                "INC-OPS-102"
+            ],
+            "tickets": [],
+            "changes": [
+                "CHG-2001",
+                "CHG-2004"
+            ]
+        },
+        "operations_summary": "There are active incidents on Payment API and Checkout Service. Recent changes made to these services include CHG-2001 and CHG-2004.",
+        "possible_change_correlation": "Possible correlation between CHG-2001 and INC-OPS-101 due to similar timing and service involvement.",
+        "recommended_next_actions": [
+            "Investigate CHG-2001 and INC-OPS-101 further",
+            "Rollback CHG-2001 if necessary"
+        ],
+        "limitations": [
+            "Limited information available on incident and change details"
+        ]
+    },
+    {
+        "user_query": "show the details of ticket tkt-1001 and check the health of its related service",
+        "servers_used": [
+            "MCP Service Health",
+            "MCP Support Tickets"
+        ],
+        "tools_used": [
+            "list_services",
+            "get_service_health",
+            "get_ticket_details"
+        ],
+        "evidence": {
+            "services": [
+                "Payment API"
+            ],
+            "incidents": [],
+            "tickets": [
+                "TKT-1001"
+            ],
+            "changes": []
+        },
+        "operations_summary": "Ticket TKT-1001 is an open P1 ticket for the Payment API service, with high customer impact. The service health is unknown.",
+        "possible_change_correlation": "No correlation found.",
+        "recommended_next_actions": [
+            "Check the Payment API service for any issues",
+            "Update the ticket status and assign a group"
+        ],
+        "limitations": [
+            "Service not found in MCP Service Health"
+        ]
+    },
+    {
+        "user_query": "list recent changes for payment api and summarize whether rollback information is available",
+        "servers_used": [
+            "service_health",
+            "change_management"
+        ],
+        "tools_used": [
+            "list_recent_changes"
+        ],
+        "evidence": {
+            "services": [
+                "payment_api"
+            ],
+            "changes": [
+                {
+                    "change_id": "CHG-123",
+                    "service_name": "payment_api",
+                    "rollback_info": "available"
+                },
+                {
+                    "change_id": "CHG-124",
+                    "service_name": "payment_api",
+                    "rollback_info": "not available"
+                }
+            ]
+        },
+        "operations_summary": "Recent changes for payment api are available. Rollback information is available for CHG-123 but not available for CHG-124.",
+        "possible_change_correlation": "No correlation found between recent changes and incidents.",
+        "recommended_next_actions": [
+            "Verify rollback information for CHG-124",
+            "Review change management process"
+        ],
+        "limitations": [
+            "No confirmed root cause found for recent changes"
+        ]
+    }
+]

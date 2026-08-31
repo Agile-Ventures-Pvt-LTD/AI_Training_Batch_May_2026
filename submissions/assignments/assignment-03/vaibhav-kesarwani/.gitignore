@@ -1,0 +1,4 @@
+.venv/
+tesla_db
+*.env
+
