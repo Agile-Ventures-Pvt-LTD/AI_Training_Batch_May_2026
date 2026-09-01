@@ -1,0 +1,57 @@
+{
+  "case_7_1": {
+    "parsed_output": {
+      "rephrased_problem": "Reduce the average time to complete the monthly financial close process from the current 10 business days to 5 business days or less within the next 6 months, while maintaining zero increase in reconciliation errors.",
+      "assumptions": [
+        "The finance team consists of 8–12 members who currently perform manual data entry and reconciliation using Excel and an ERP system.",
+        "Historical financial close data (invoices, receipts, journal entries) are stored digitally as PDFs, scanned images, and CSV exports.",
+        "The organization permits the use of cloud-based AI services for internal data processing."
+      ],
+      "solution": "AI‑powered automated document extraction and transaction matching (RAG‑enabled OCR + classification) that reads invoices/receipts, extracts key fields, and auto‑reconciles them against ERP ledger entries.",
+      "target_users": [
+        "Financial Analyst",
+        "Controller"
+      ],
+      "key_features": [
+        "Intelligent OCR with confidence scoring for invoice data extraction",
+        "Rule‑based and ML classification to map extracted data to GL accounts",
+        "Automated suggestion of matching ledger entries with a confidence threshold"
+      ],
+      "data_needed": [
+        "Historical invoices and receipts (PDF/IMG)",
+        "ERP transaction logs and journal entries (CSV/DB export)",
+        "Manual reconciliation logs for supervised training"
+      ],
+      "success_metrics": [
+        "Average monthly close time ≤5 business days (target 50% reduction)",
+        "Manual data‑entry effort reduced by ≥60% (measured by logged hours)",
+        "Reconciliation error rate ≤0.5% (no increase from baseline)"
+      ],
+      "implementation_steps": [
+        "Gather and label a training set of 5,000+ invoices/receipts with key fields (date, amount, vendor, PO).",
+        "Fine‑tune a pre‑trained OCR model (e.g., LayoutLMv3) and build a classification model for GL mapping.",
+        "Develop an integration layer that streams extracted data into the ERP, presents match suggestions, and logs user approvals.",
+        "Pilot the system on one business unit for 2 months, measure KPIs, and iterate.",
+        "Roll out organization‑wide with training and monitoring dashboards."
+      ],
+      "risks": [
+        "OCR accuracy may drop on low‑quality scans, leading to false matches and manual rework.",
+        "Data privacy regulations may restrict uploading sensitive financial documents to third‑party AI services."
+      ]
+    }
+  },
+  "case_7_2": {
+    "parsed_output": {
+      "rephrased_requirement": "No requirement text was provided; unable to generate a concrete engineering specification.",
+      "functional_requirements": [],
+      "non_functional_requirements": [],
+      "security_requirements": [],
+      "acceptance_criteria": [],
+      "recommended_architecture": "",
+      "open_questions": [
+        "What is the exact product functionality (e.g., file upload, Q&A, search) that needs to be implemented?",
+        "What are the detailed constraints for inputs, outputs, performance, security, and compliance that will drive the system design?"
+      ]
+    }
+  }
+}

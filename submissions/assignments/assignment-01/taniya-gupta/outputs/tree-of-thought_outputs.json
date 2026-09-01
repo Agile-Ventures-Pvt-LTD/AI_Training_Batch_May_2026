@@ -1,0 +1,135 @@
+{
+  "case_6_1": {
+    "parsed_output": {
+      "options_evaluated": [
+        {
+          "option": "Option 1: AI Customer Support Assistant",
+          "business_value": 4,
+          "feasibility": 3,
+          "risk": 3,
+          "pilot_suitability": 4,
+          "adoption": 3,
+          "overall_score": 3.45,
+          "trade_offs": [
+            "High ticket volume gives strong ROI but handling personal customer data raises privacy concerns.",
+            "Implementation is moderate; may need integration with existing ticketing systems and careful monitoring of response quality."
+          ]
+        },
+        {
+          "option": "Option 2: AI Sales Proposal Generator",
+          "business_value": 3,
+          "feasibility": 4,
+          "risk": 5,
+          "pilot_suitability": 3,
+          "adoption": 4,
+          "overall_score": 3.75,
+          "trade_offs": [
+            "Low compliance risk, but the solution must pass brand and legal review before sales can use it, potentially delaying rollout.",
+            "Revenue impact is promising but may take longer than 90 days to surface clearly."
+          ]
+        },
+        {
+          "option": "Option 3: AI Contract Risk Analyzer",
+          "business_value": 5,
+          "feasibility": 2,
+          "risk": 1,
+          "pilot_suitability": 2,
+          "adoption": 3,
+          "overall_score": 2.65,
+          "trade_offs": [
+            "Very high legal/compliance risk; a single mistake could expose the company to liability.",
+            "Complex implementation and need for audit‑grade accuracy make a 90‑day pilot unrealistic."
+          ]
+        },
+        {
+          "option": "Option 4: AI Internal HR Policy Assistant",
+          "business_value": 3,
+          "feasibility": 5,
+          "risk": 4,
+          "pilot_suitability": 5,
+          "adoption": 5,
+          "overall_score": 4.3,
+          "trade_offs": [
+            "Business impact is moderate compared with customer‑facing use cases.",
+            "Relies on internal policy documents that must be kept up‑to‑date; otherwise usefulness declines."
+          ]
+        }
+      ],
+      "recommended_option": "Option 4: AI Internal HR Policy Assistant",
+      "why_not_others": {
+        "Option 1": "Although it promises high ROI, the privacy risk of handling personal customer data and moderate implementation effort lower its overall suitability for a quick, low‑risk pilot.",
+        "Option 2": "Low risk and good adoption, but the required brand and legal approvals could extend beyond the 90‑day window and the revenue impact may not be measurable within the pilot period.",
+        "Option 3": "The legal and compliance exposure, combined with high technical complexity, make it unsuitable for a short‑term pilot despite its long‑term value."
+      },
+      "final_recommendation": "The AI Internal HR Policy Assistant (Option 4) offers the best balance of rapid development, low compliance risk, and strong employee adoption, delivering clear, measurable outcomes within a 90‑day pilot. It maximizes feasibility and safety while still providing meaningful cost‑saving and efficiency gains."
+    }
+  },
+  "case_6_2": {
+    "parsed_output": {
+      "architecture_scores": [
+        {
+          "option": "A",
+          "accuracy": 4,
+          "cost_efficiency": 4,
+          "privacy": 2,
+          "timeline_fit": 5,
+          "scalability": 5,
+          "citation_quality": 4,
+          "overall_score": 24,
+          "notes": "Fast to build, provides reliable citations via retrieved chunks, but data leaves premises to hosted LLM API."
+        },
+        {
+          "option": "B",
+          "accuracy": 3,
+          "cost_efficiency": 2,
+          "privacy": 4,
+          "timeline_fit": 2,
+          "scalability": 3,
+          "citation_quality": 3,
+          "overall_score": 17,
+          "notes": "Requires retraining for each new document set; costly and slow for MVP."
+        },
+        {
+          "option": "C",
+          "accuracy": 2,
+          "cost_efficiency": 5,
+          "privacy": 5,
+          "timeline_fit": 5,
+          "scalability": 4,
+          "citation_quality": 1,
+          "overall_score": 22,
+          "notes": "Very cheap and private but cannot understand semantics; answers are poor and citations weak."
+        },
+        {
+          "option": "D",
+          "accuracy": 5,
+          "cost_efficiency": 1,
+          "privacy": 3,
+          "timeline_fit": 1,
+          "scalability": 4,
+          "citation_quality": 5,
+          "overall_score": 19,
+          "notes": "Highest theoretical accuracy, but complex engineering, high cost, and unrealistic 6‑week timeline."
+        }
+      ],
+      "recommended_architecture": "A",
+      "reasoning": "Option A (simple RAG) balances speed of delivery, acceptable accuracy, and citation quality while staying within budget and timeline constraints. It can be built in 2‑3 weeks, scales easily with hosted vector DB and LLM services, and provides traceable source chunks for each answer. Privacy concerns are mitigated with encryption in transit and optional data‑retention policies, making it suitable for confidential documents in an MVP context.",
+      "risks": [
+        "User documents are sent to a third‑party LLM API, raising confidentiality concerns.",
+        "Retrieval quality may degrade if embeddings are not well‑tuned to the domain.",
+        "Cost of LLM inference could grow with usage beyond the MVP phase."
+      ],
+      "mitigations": [
+        "Use end‑to‑end TLS, enable API‑level data‑deletion after each request, and sign a data‑processing agreement with the LLM provider.",
+        "Fine‑tune the embedding model on a small, representative sample of documents and monitor retrieval relevance metrics.",
+        "Implement usage quotas, cache frequent queries, and evaluate cheaper model tiers or self‑hosted open‑source LLMs for later scaling."
+      ],
+      "mvp_plan": [
+        "Week 1‑2: Set up document ingestion pipeline (PDF parsing → chunking → embedding generation) and provision a managed vector DB (e.g., Pinecone, Weaviate).",
+        "Week 3‑4: Integrate hosted LLM API (e.g., OpenAI, Anthropic) with prompt that includes retrieved chunks and formats citations; build a simple web UI for upload and Q&A.",
+        "Week 5: Conduct internal testing, refine prompt engineering, implement security controls (TLS, data‑deletion), and establish monitoring/alerting.",
+        "Week 6: Launch beta to initial 500 users, collect feedback, and iterate on retrieval relevance and cost‑optimization."
+      ]
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "ticket_summary": {
+    "short_summary": "Customer was charged twice for premium subscription after cancellation",
+    "customer_problem": "Incorrect double charge for premium subscription",
+    "business_impact": "Potential public escalation on LinkedIn and blockage of future payments by finance team",
+    "customer_requested_action": "Refund the incorrect charge immediately",
+    "important_context": [
+      "Customer cancelled premium subscription last month",
+      "Customer contacted support twice last week with no proper response",
+      "Customer is a premium customer"
+    ],
+    "missing_information": [
+      "Details of the previous support interactions",
+      "Invoice amount and date of the incorrect charge",
+      "Cancellation confirmation details"
+    ]
+  },
+  "classification": {
+    "primary_category": "BILLING_ISSUE",
+    "secondary_categories": [
+      "CANCELLATION_OR_REFUND",
+      "ESCALATION_COMPLAINT"
+    ],
+    "category_reasoning_summary": "The customer is reporting being charged twice for their premium subscription after cancelling it, and is requesting a refund for the incorrect charge. They are also expressing frustration with the lack of response from support and threatening to escalate the issue publicly.",
+    "confidence_score": 0.9
+  },
+  "sentiment_analysis": {
+    "sentiment": "Negative",
+    "emotion_signals": [
+      "Urgency",
+      "Frustration",
+      "Escalation threat",
+      "Repeated failed support attempts"
+    ],
+    "sentiment_reasoning_summary": "The customer is expressing frustration due to being charged twice and not receiving a proper response from support. The customer is also threatening to escalate the issue publicly and block future payments if not resolved immediately.",
+    "confidence_score": 0.9
+  },
+  "priority_and_risk": {
+    "priority": "High",
+    "escalation_risk": "High",
+    "risk_triggers": [
+      "Double charging",
+      "Lack of response from support",
+      "Threat of public escalation"
+    ],
+    "recommended_sla_action": "Immediate attention and resolution",
+    "reasoning_summary": "The customer is a premium user who has been incorrectly charged, not received a proper response from support, and is threatening to escalate the issue publicly, warranting high priority and urgent attention."
+  },
+  "sensitive_information_check": {
+    "sensitive_information_detected": "true,",
+    "sensitive_categories": "[",
+    "evidence_summary": [
+      "The ticket discusses payment issues, includes a personal name, and mentions potential legal or compliance actions."
+    ],
+    "handling_recommendations": "["
+  },
+  "routing_recommendation": {
+    "recommended_team": "BILLING_SUPPORT",
+    "routing_reason": "The ticket is related to a billing issue, specifically a double charge and refund request, which falls under the primary category of BILLING_ISSUE.",
+    "internal_note": "The customer has already reached out to support twice and is frustrated with the lack of response. They are threatening to escalate the issue publicly and block future payments if not resolved immediately. Priority attention is required to resolve the issue and prevent further escalation.",
+    "required_follow_up_information": [
+      "refund status",
+      "resolution of double charge issue"
+    ]
+  },
+  "draft_customer_response": {
+    "draft_response": "Dear Amit, I apologize for the frustration caused by the duplicate charge and the lack of response from our support team. I understand that you cancelled your premium subscription last month, but were still charged again this month, with the same invoice amount appearing twice on your bank statement. I acknowledge your concern and appreciate you bringing this to our attention. Our team will verify the details of your subscription and payment history to investigate this further. We will review your previous support requests and ensure that your issue is resolved as soon as possible. I will ensure that you receive a prompt response regarding the outcome of our investigation.",
+    "response_strategy": "Acknowledge and investigate",
+    "assumptions": [],
+    "information_needed_before_sending": [
+      "Subscription details",
+      "Payment history"
+    ]
+  },
+  "response_quality_review": {
+    "scores": "{",
+    "empathy": [
+      8
+    ],
+    "correctness": [
+      9
+    ],
+    "actionability": [
+      8
+    ],
+    "policy_safety": [
+      9
+    ],
+    "tone_alignment": [
+      9
+    ],
+    "completeness": 6,
+    "strengths": "[",
+    "improvement_areas": "[",
+    "final_review_summary": "The draft response is empathetic, correct, and actionable, with a professional tone. However, it could be more complete by providing a specific timeline or a direct solution to the customer's issue."
+  },
+  "generation_metadata": {
+    "model_used": "llama-3.3-70b-versatile",
+    "temperature": 0.5,
+    "total_steps_completed": 8
+  }
+}

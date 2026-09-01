@@ -1,0 +1,52 @@
+{
+    "incident_id": "INC-002",
+    "original_incident_summary": "Shipment SH-4105, carrying 250 tons of consumer electronics bound for WH-SOUTH-303, has been delayed due to the temporary closure of the primary port.",
+    "parsed_metadata": {
+        "shipment_id": "SH-4105",
+        "cargo_weight_tons": 250,
+        "cargo_type": "consumer electronics",
+        "target_warehouse_id": "WH-SOUTH-303",
+        "has_perishables": false,
+        "maximum_tolerable_delay_hours": 0
+    },
+    "rag_validation_rules_applied": [
+        "Any alternative route exceeding 120 hours of total added transit delay must be",
+        "classified as CRITICAL_DELAY.",
+        "Cargo exceeding 500 tons and routed through Port-South requires a",
+        "WAREHOUSE_FIT_CHECK.",
+        "A warehouse operating above 85 percent utilization cannot accept a new automated",
+        "cargo shipment.",
+        "If a warehouse has an ELEVATED risk tier, another route or alternative facility",
+        "must be checked before finalizing the route."
+    ],
+    "routes_evaluated": [
+        {
+            "route_id": "ROUTE-WEST-01",
+            "decision": "ROUTE_CLARIFICATION",
+            "reason": "Warehouse risk tier is elevated"
+        },
+        {
+            "route_id": "ROUTE-SOUTH-02",
+            "decision": "OPTIMAL_PATH_FOUND",
+            "reason": "All conditions are successful"
+        }
+    ],
+    "final_selected_route": {
+        "route_id": "ROUTE-SOUTH-02",
+        "alternative_port": "Port-South",
+        "warehouse_id": "WH-SOUTH-303",
+        "added_delay_hours": 72
+    },
+    "queried_warehouse_metrics": {
+        "warehouse_name": "Southern Distribution Hub",
+        "current_utilization_pct": 72,
+        "operational_status": "ACTIVE",
+        "risk_tier": "NORMAL"
+    },
+    "graph_routing_metadata": {
+        "loops_executed": 1,
+        "final_decision_state": "OPTIMAL_PATH_FOUND",
+        "reroute_impact_score": 0
+    },
+    "final_operations_brief": "**Incident Summary:** \nShipment SH-4105, containing 250 tons of consumer electronics, was delayed due to the temporary closure of the primary port. The shipment was scheduled for warehouse WH-SOUTH-303.\n\n**Selected Route:** \nThe final selected route was ROUTE-SOUTH-02, which uses alternative port Port-South and warehouse WH-SOUTH-303, with an added delay of 72 hours.\n\n**Key Rule Driving the Decision:** \nThe key rule that drove this decision was related to warehouse utilization and risk tier. Since the warehouse WH-SOUTH-303 had a current utilization of 72% (below the 85% threshold) and a NORMAL risk tier, it was suitable for the shipment. Additionally, the total added transit delay of 72 hours was below the 120-hour threshold for CRITICAL_DELAY classification. Another important factor was that the evaluated alternative route (ROUTE-WEST-01) had a warehouse with an elevated risk tier, which according to the rules, required checking another route or alternative facility, making ROUTE-SOUTH-02 the optimal choice."
+}

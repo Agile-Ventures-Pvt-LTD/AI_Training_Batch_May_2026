@@ -1,0 +1,147 @@
+{
+  "case_5_1": {
+    "case_name": "Case 5.1 - Policy Reimbursement",
+    "individual_answers": [
+      {
+        "run": 1,
+        "raw_response": "{\n  \"reimbursable_amount\": 37.5,\n  \"calculation_steps\": [\n    \"Removed ineligible alcohol ($12) from submitted $70, leaving $58 eligible meal expenses.\",\n    \"Base daily meal limit $60 increased by 25% for international travel, resulting in $75.\",\n    \"Applied same‑day travel reduction (travel >8 hrs, no overnight) of 50%, setting the final limit to $37.5; capped eligible expenses to this amount. Receipts are provided, satisfying the >$25 receipt requirement.\"\n  ],\n  \"reasoning\": \"After excluding alcohol and applying the international 25% increase, the daily limit is $75. Because the trip was a 14‑hour same‑day travel, only 50% of that limit applies, yielding $37.5, which caps the $58 eligible expenses. Receipts are present, so the full $37.5 is reimbursable.\"\n}",
+        "parsed": {
+          "reimbursable_amount": 37.5,
+          "calculation_steps": [
+            "Removed ineligible alcohol ($12) from submitted $70, leaving $58 eligible meal expenses.",
+            "Base daily meal limit $60 increased by 25% for international travel, resulting in $75.",
+            "Applied same‑day travel reduction (travel >8 hrs, no overnight) of 50%, setting the final limit to $37.5; capped eligible expenses to this amount. Receipts are provided, satisfying the >$25 receipt requirement."
+          ],
+          "reasoning": "After excluding alcohol and applying the international 25% increase, the daily limit is $75. Because the trip was a 14‑hour same‑day travel, only 50% of that limit applies, yielding $37.5, which caps the $58 eligible expenses. Receipts are present, so the full $37.5 is reimbursable."
+        }
+      },
+      {
+        "run": 2,
+        "raw_response": "{\n  \"reimbursable_amount\": 37.5,\n  \"calculation_steps\": [\n    \"Removed $12 alcohol from $70, leaving $58 eligible expenses\",\n    \"Base daily meal limit $60 increased by 25% for international travel to $75\",\n    \"Applied same‑day travel rule (>8 h, no overnight): 50% of $75 = $37.5 limit; capped $58 to $37.5\"\n  ],\n  \"reasoning\": \"Alcohol is non‑reimbursable; international travel raises the $60 daily limit by 25% to $75; same‑day travel over 8 hours reduces the allowable amount to 50% of that limit, resulting in a $37.5 reimbursement, and receipts are provided for the claim above $25.\"\n}",
+        "parsed": {
+          "reimbursable_amount": 37.5,
+          "calculation_steps": [
+            "Removed $12 alcohol from $70, leaving $58 eligible expenses",
+            "Base daily meal limit $60 increased by 25% for international travel to $75",
+            "Applied same‑day travel rule (>8 h, no overnight): 50% of $75 = $37.5 limit; capped $58 to $37.5"
+          ],
+          "reasoning": "Alcohol is non‑reimbursable; international travel raises the $60 daily limit by 25% to $75; same‑day travel over 8 hours reduces the allowable amount to 50% of that limit, resulting in a $37.5 reimbursement, and receipts are provided for the claim above $25."
+        }
+      },
+      {
+        "run": 3,
+        "raw_response": "{\n  \"reimbursable_amount\": 37.5,\n  \"calculation_steps\": [\n    \"Removed $12 alcohol from claim, eligible meal expenses = $70 - $12 = $58\",\n    \"Base daily meal limit $60 increased by 25% for international travel => $60 * 1.25 = $75\",\n    \"Applied same‑day travel >8 hours rule: claim up to 50% of $75 = $37.5\",\n    \"Eligible expenses $58 exceed $37.5, reimbursement capped at $37.5\",\n    \"Claim > $25 requires receipt; receipt provided, no further adjustment\"\n  ],\n  \"reasoning\": \"After excluding non‑reimbursable alcohol and applying the international travel increase, the 50% same‑day travel reduction limits reimbursement to $37.5, which is approved because proper receipts are attached.\"\n}",
+        "parsed": {
+          "reimbursable_amount": 37.5,
+          "calculation_steps": [
+            "Removed $12 alcohol from claim, eligible meal expenses = $70 - $12 = $58",
+            "Base daily meal limit $60 increased by 25% for international travel => $60 * 1.25 = $75",
+            "Applied same‑day travel >8 hours rule: claim up to 50% of $75 = $37.5",
+            "Eligible expenses $58 exceed $37.5, reimbursement capped at $37.5",
+            "Claim > $25 requires receipt; receipt provided, no further adjustment"
+          ],
+          "reasoning": "After excluding non‑reimbursable alcohol and applying the international travel increase, the 50% same‑day travel reduction limits reimbursement to $37.5, which is approved because proper receipts are attached."
+        }
+      },
+      {
+        "run": 4,
+        "raw_response": "{\n  \"reimbursable_amount\": 37.5,\n  \"calculation_steps\": [\n    \"Step 1: Remove ineligible alcohol ($12) from the submitted $70, leaving $58 eligible expenses.\",\n    \"Step 2: Base daily meal limit is $60; apply international travel increase of 25% → $60 × 1.25 = $75.\",\n    \"Step 3: Travel exceeds 8 hours with no overnight stay, so limit is 50% of $75 → $75 × 0.5 = $37.5. Cap eligible expenses to $37.5.\",\n    \"Step 4: Receipts are provided for the claim (> $25), so no further adjustment.\"\n  ],\n  \"reasoning\": \"After removing alcohol and applying the international travel multiplier, the daily meal limit becomes $75. The same‑day, >8‑hour travel rule reduces the allowable amount to 50%, i.e., $37.5, which caps the reimbursable portion of the $58 eligible expenses. Receipts satisfy the documentation requirement.\"\n}",
+        "parsed": {
+          "reimbursable_amount": 37.5,
+          "calculation_steps": [
+            "Step 1: Remove ineligible alcohol ($12) from the submitted $70, leaving $58 eligible expenses.",
+            "Step 2: Base daily meal limit is $60; apply international travel increase of 25% → $60 × 1.25 = $75.",
+            "Step 3: Travel exceeds 8 hours with no overnight stay, so limit is 50% of $75 → $75 × 0.5 = $37.5. Cap eligible expenses to $37.5.",
+            "Step 4: Receipts are provided for the claim (> $25), so no further adjustment."
+          ],
+          "reasoning": "After removing alcohol and applying the international travel multiplier, the daily meal limit becomes $75. The same‑day, >8‑hour travel rule reduces the allowable amount to 50%, i.e., $37.5, which caps the reimbursable portion of the $58 eligible expenses. Receipts satisfy the documentation requirement."
+        }
+      },
+      {
+        "run": 5,
+        "raw_response": "{\n  \"reimbursable_amount\": 37.5,\n  \"calculation_steps\": [\n    \"Removed $12 alcohol from the $70 submitted, leaving $58 eligible expenses.\",\n    \"Base daily meal limit $60 increased by 25% for international travel to $75.\",\n    \"Applied same‑day travel reduction (travel >8 h, no overnight) to 50% of $75, resulting in a $37.5 maximum reimbursement.\",\n    \"Eligible expenses $58 exceed the $37.5 limit, so reimbursement is capped at $37.5.\",\n    \"Claim exceeds $25, receipts are provided, so no further adjustment.\"\n  ],\n  \"reasoning\": \"After excluding non‑reimbursable alcohol and applying the international multiplier before the same‑day travel reduction, the allowable amount is $37.5, which caps the reimbursement.\"\n}",
+        "parsed": {
+          "reimbursable_amount": 37.5,
+          "calculation_steps": [
+            "Removed $12 alcohol from the $70 submitted, leaving $58 eligible expenses.",
+            "Base daily meal limit $60 increased by 25% for international travel to $75.",
+            "Applied same‑day travel reduction (travel >8 h, no overnight) to 50% of $75, resulting in a $37.5 maximum reimbursement.",
+            "Eligible expenses $58 exceed the $37.5 limit, so reimbursement is capped at $37.5.",
+            "Claim exceeds $25, receipts are provided, so no further adjustment."
+          ],
+          "reasoning": "After excluding non‑reimbursable alcohol and applying the international multiplier before the same‑day travel reduction, the allowable amount is $37.5, which caps the reimbursement."
+        }
+      }
+    ],
+    "reimbursable_amount_votes": {
+      "37.5": 5
+    },
+    "final_reimbursable_amount": "37.5",
+    "consistency_count": 5
+  },
+  "case_5_2": {
+    "case_name": "Case 5.2 - Security Risk Classification",
+    "individual_answers": [
+      {
+        "run": 1,
+        "raw_response": "{\n  \"rule_1_triggered\": false,\n  \"rule_2_triggered\": true,\n  \"rule_3_triggered\": false,\n  \"risk_level\": \"MEDIUM\",\n  \"reasoning\": \"Germany is a known VPN country, so it is not considered a 'new country' despite the 8 downloads; therefore Rule 1 does not fire.\"\n}",
+        "parsed": {
+          "rule_1_triggered": false,
+          "rule_2_triggered": true,
+          "rule_3_triggered": false,
+          "risk_level": "MEDIUM",
+          "reasoning": "Germany is a known VPN country, so it is not considered a 'new country' despite the 8 downloads; therefore Rule 1 does not fire."
+        }
+      },
+      {
+        "run": 2,
+        "raw_response": "{\n  \"rule_1_triggered\": false,\n  \"rule_2_triggered\": true,\n  \"rule_3_triggered\": false,\n  \"risk_level\": \"MEDIUM\",\n  \"reasoning\": \"Germany is a known VPN country, so it is not considered a \\\"new country\\\". Since the \\\"new country\\\" condition is false, Rule 1 does not trigger despite the 8 downloads.\"\n}",
+        "parsed": {
+          "rule_1_triggered": false,
+          "rule_2_triggered": true,
+          "rule_3_triggered": false,
+          "risk_level": "MEDIUM",
+          "reasoning": "Germany is a known VPN country, so it is not considered a \"new country\". Since the \"new country\" condition is false, Rule 1 does not trigger despite the 8 downloads."
+        }
+      },
+      {
+        "run": 3,
+        "raw_response": "{\n  \"rule_1_triggered\": false,\n  \"rule_2_triggered\": true,\n  \"rule_3_triggered\": false,\n  \"risk_level\": \"MEDIUM\",\n  \"reasoning\": \"Germany is a known VPN country, so it is not considered a \\\"new country\\\"; therefore the condition for Rule 1 (new country AND downloads > 5) is not met despite the 8 downloads.\"\n}",
+        "parsed": {
+          "rule_1_triggered": false,
+          "rule_2_triggered": true,
+          "rule_3_triggered": false,
+          "risk_level": "MEDIUM",
+          "reasoning": "Germany is a known VPN country, so it is not considered a \"new country\"; therefore the condition for Rule 1 (new country AND downloads > 5) is not met despite the 8 downloads."
+        }
+      },
+      {
+        "run": 4,
+        "raw_response": "{\n  \"rule_1_triggered\": false,\n  \"rule_2_triggered\": true,\n  \"rule_3_triggered\": false,\n  \"risk_level\": \"MEDIUM\",\n  \"reasoning\": \"Germany is a known VPN country, so it is not considered a 'new country' despite the 8 downloads; thus Rule 1 does not fire, while Rule 2 does due to off‑hours login and one MFA failure.\"\n}",
+        "parsed": {
+          "rule_1_triggered": false,
+          "rule_2_triggered": true,
+          "rule_3_triggered": false,
+          "risk_level": "MEDIUM",
+          "reasoning": "Germany is a known VPN country, so it is not considered a 'new country' despite the 8 downloads; thus Rule 1 does not fire, while Rule 2 does due to off‑hours login and one MFA failure."
+        }
+      },
+      {
+        "run": 5,
+        "raw_response": "{\n  \"rule_1_triggered\": false,\n  \"rule_2_triggered\": true,\n  \"rule_3_triggered\": false,\n  \"risk_level\": \"MEDIUM\",\n  \"reasoning\": \"Rule 1 requires a 'new country' login; Germany is a known country (and a known VPN country), so the 'new country' condition is false despite the 8 downloads.\"\n}",
+        "parsed": {
+          "rule_1_triggered": false,
+          "rule_2_triggered": true,
+          "rule_3_triggered": false,
+          "risk_level": "MEDIUM",
+          "reasoning": "Rule 1 requires a 'new country' login; Germany is a known country (and a known VPN country), so the 'new country' condition is false despite the 8 downloads."
+        }
+      }
+    ],
+    "risk_level_votes": {
+      "MEDIUM": 5
+    },
+    "final_risk_level": "MEDIUM",
+    "consistency_count": 5
+  }
+}

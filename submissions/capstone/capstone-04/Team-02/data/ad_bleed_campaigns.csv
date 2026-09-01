@@ -1,0 +1,15 @@
+campaign_id,campaign_name,platform,sku,product_title,bleed_category,root_cause,daily_waste_inr,acos_pct,roas,rto_pct,stock_on_hand,status
+1,Amazon PPC — Stockout Bleed: SLP-BAM-01 Bamboo Cervical Pillow,Amazon IN,SLP-BAM-01,Bamboo Cervical Pillow,Stockout Bleed,Stockout Bleed (0 units in Delhi-NCR Darkstore),8160,42.5,2.15,6.2,0,Active
+2,Google Search — Stockout Bleed: SLP-COOL-09 Gel Cooling Memory Foam,Shopify D2C,SLP-COOL-09,Gel Cooling Memory Foam Pillow,Stockout Bleed,Stockout Bleed (0 units in Mumbai FC),4850,38.0,2.30,4.5,0,Active
+3,Blinkit Sponsored Ads — Stockout Bleed: SLP-ORTHO-03 Lumbar Support,Blinkit,SLP-ORTHO-03,Orthopedic Lumbar Support Cushion,Stockout Bleed,Stockout Bleed (Critical Stock < 15 units),3420,44.1,2.08,5.1,12,Active
+4,Amazon Sponsored Products — High ACOS: Bamboo Pillow Broad Keywords,Amazon IN,SLP-BAM-01,Bamboo Cervical Pillow,Margin Bleed,Margin Bleed (ACOS 48.5% > 30% target; ROAS 2.06x),4250,48.5,2.06,7.0,250,Active
+5,Meta Advantage+ Ads — Low Conversion Rate: Gel Contour Pillow,Shopify D2C,SLP-COOL-09,Gel Cooling Memory Foam Pillow,Margin Bleed,Margin Bleed (ACOS 52.1%; ROAS 1.92x),2980,52.1,1.92,5.8,180,Active
+6,Flipkart PLA — Unoptimized Bids: Ergonomic Seat Cushion,Flipkart,SLP-SEAT-04,Ergonomic Seat Cushion,Margin Bleed,Margin Bleed (ACOS 46.8%; ROAS 2.13x),1720,46.8,2.13,6.5,310,Active
+7,Instamart Brand Banner — Low Margin Keywords: Microfiber Pillow,Swiggy Instamart,SLP-MICRO-07,Hotel Quality Microfiber Pillow,Margin Bleed,Margin Bleed (ACOS 49.0%; ROAS 2.04x),1240,49.0,2.04,4.2,420,Active
+8,Amazon Sponsored Brand — High Return Rate: Kids Ortho Cushion,Amazon IN,SLP-KIDS-05,Kids Orthopedic Contour Cushion,High Return Bleed,Return Bleed (28.4% RTO Rate > 10% threshold),2850,36.2,2.45,28.4,190,Active
+9,Flipkart Ads — High Return Product: Premium Velvet Mattress Topper,Flipkart,SLP-TOP-11,Premium Velvet Memory Foam Mattress Topper,High Return Bleed,Return Bleed (26.2% RTO Rate > 10% threshold),1650,34.0,2.58,26.2,145,Active
+10,Zepto Flash PPC — Stockout Bleed: SLP-TRAVEL-12 Neck Pillow,Zepto,SLP-TRAVEL-12,Travel Neck Memory Pillow,Stockout Bleed,Stockout Bleed (0 units in Bangalore Darkstore),2100,41.0,2.20,3.8,0,Active
+11,Flipkart Sponsored Products — Low ROAS Bids: SLP-BAM-01,Flipkart,SLP-BAM-01,Bamboo Cervical Pillow,Margin Bleed,Margin Bleed (ACOS 47.5%; ROAS 2.10x),2350,47.5,2.10,6.0,280,Active
+12,Blinkit Brand Boost — High Return Rate: SLP-TOP-11 Topper,Blinkit,SLP-TOP-11,Premium Velvet Memory Foam Mattress Topper,High Return Bleed,Return Bleed (27.5% RTO Rate > 10% threshold),1890,35.5,2.48,27.5,95,Active
+15,Amazon PPC — Out-of-Stock Bleed: SLP-PREG-05 Full Body Pillow,Amazon IN,SLP-PREG-05,Full Body Pregnancy Pillow,Stockout Bleed,Stockout Bleed (0 units in Bengaluru Darkstore),6200,45.2,2.05,5.8,0,Active
+16,Meta Ads — High ACOS Margin Bleed: Cooling Gel Contour Pillow,Shopify D2C,SLP-GEL-02,Gel-Infused Orthopedic Pillow,Margin Bleed,Margin Bleed (ACOS 52.1% > 30% target),5100,52.1,1.92,4.2,180,Active

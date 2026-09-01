@@ -1,0 +1,187 @@
+[
+  {
+    "question": "How many annual leave days can an employee carry forward?",
+    "response": {
+      "answer": "An employee can carry forward a maximum of 6 unused annual leave days into the next calendar year.",
+      "policy_basis": [
+        "Carry-forward rules as defined in the HR Leave Policy"
+      ],
+      "sources": [
+        {
+          "source_file": "hr_leave_policy.md",
+          "policy_domain": "HR_LEAVE",
+          "chunk_id": "hr_leave_policy.md_chunk_001",
+          "snippet": "Employees may carry forward a maximum of **6 unused annual leave days** into the next calendar year."
+        }
+      ],
+      "answerability": "ANSWERED",
+      "confidence": "HIGH",
+      "recommended_next_step": "Review the HR Leave Policy for further details on leave entitlement and carry-forward rules."
+    }
+  },
+  {
+    "question": "Can I claim meals for same-day domestic business travel?",
+    "response": {
+      "answer": "Yes, you can claim meals for same-day domestic business travel up to INR 800 per day, provided valid receipts are submitted.",
+      "policy_basis": [
+        "Meal reimbursement is allowed for approved business travel.",
+        "For same-day domestic business travel, employees may claim meals up to INR 800 per day, provided valid receipts are submitted."
+      ],
+      "sources": [
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_chunk_003",
+          "snippet": "For same-day domestic business travel, employees may claim meals up to INR 800 per day, provided valid receipts are submitted."
+        }
+      ],
+      "answerability": "ANSWERED",
+      "confidence": "HIGH",
+      "recommended_next_step": "Submit your meal receipts for same-day domestic business travel within 15 calendar days of the expense date, ensuring the claim is within the policy limit of INR 800 per day."
+    }
+  },
+  {
+    "question": "What documents are needed for hotel reimbursement?",
+    "response": {
+      "answer": "For hotel reimbursement, the required documents are: hotel invoice, payment receipt, approved travel request, check-in and check-out dates, and GST details where applicable.",
+      "policy_basis": [
+        "Hotel reimbursement is allowed only for approved overnight business travel.",
+        "Required documents for hotel reimbursement are specified in the policy."
+      ],
+      "sources": [
+        {
+          "source_file": "reimbursement_policy.md",
+          "policy_domain": "REIMBURSEMENT",
+          "chunk_id": "reimbursement_policy.md_chunk_003",
+          "snippet": "Required documents for hotel reimbursement: - hotel invoice - payment receipt - approved travel request - check-in and check-out dates - GST details where applicable"
+        }
+      ],
+      "answerability": "ANSWERED",
+      "confidence": "HIGH",
+      "recommended_next_step": "Submit the required documents for hotel reimbursement as per the policy."
+    }
+  },
+  {
+    "question": "Can I use my personal laptop for office work?",
+    "response": {
+      "answer": "No, you should not use your personal laptop for regular office work, but it may be allowed in certain circumstances with approvals and security requirements met.",
+      "policy_basis": [
+        "Employees should not use personal laptops for regular office work.",
+        "Personal laptop use is allowed only when there is a temporary business need, manager approval is obtained, IT security approval is obtained, no confidential or customer data is stored locally, and the device meets minimum security requirements."
+      ],
+      "sources": [
+        {
+          "source_file": "it_security_policy.md",
+          "policy_domain": "IT_SECURITY",
+          "chunk_id": "it_security_policy.md_chunk_002",
+          "snippet": "Employees should not use personal laptops for regular office work."
+        },
+        {
+          "source_file": "it_security_policy.md",
+          "policy_domain": "IT_SECURITY",
+          "chunk_id": "it_security_policy.md_chunk_002",
+          "snippet": "Personal laptop use is allowed only when: - there is a temporary business need - manager approval is obtained - IT security approval is obtained - no confidential or customer data is stored locally - the device meets minimum security requirements"
+        }
+      ],
+      "answerability": "ANSWERED",
+      "confidence": "HIGH",
+      "recommended_next_step": "If you need to use your personal laptop for office work, obtain manager approval, IT security approval, ensure the device meets minimum security requirements, and do not store confidential or customer data locally."
+    }
+  },
+  {
+    "question": "What approvals are needed for international travel?",
+    "response": {
+      "answer": "For international travel, approvals are needed from the reporting manager, business unit head, and finance, along with travel desk confirmation before ticket booking.",
+      "policy_basis": [
+        "International business travel requires multiple approvals and travel desk confirmation"
+      ],
+      "sources": [
+        {
+          "source_file": "travel_policy.md",
+          "policy_domain": "TRAVEL",
+          "chunk_id": "travel_policy.md_chunk_004",
+          "snippet": "International business travel requires: - reporting manager approval - business unit head approval - finance approval - travel desk confirmation before ticket booking"
+        }
+      ],
+      "answerability": "ANSWERED",
+      "confidence": "HIGH",
+      "recommended_next_step": "Submit international travel requests at least 15 working days before the travel date and ensure all required approvals are obtained."
+    }
+  },
+  {
+    "question": "Can customer data be uploaded to a public AI tool?",
+    "response": {
+      "answer": "No, customer data cannot be uploaded to a public AI tool.",
+      "policy_basis": [
+        "Customer data may not be uploaded to public AI tools, only approved internal AI tools with specific approvals and controls"
+      ],
+      "sources": [
+        {
+          "source_file": "ai_usage_policy.md",
+          "policy_domain": "AI_USAGE",
+          "chunk_id": "ai_usage_policy.md_chunk_000",
+          "snippet": "Employees must not upload customer data, personal data, confidential company data, source code, production logs, contracts, financial data, credentials, or security findings to public AI tools."
+        }
+      ],
+      "answerability": "ANSWERED",
+      "confidence": "HIGH",
+      "recommended_next_step": "If an employee needs to use AI tools with customer data, they should use an approved internal AI tool and follow the AI Usage Policy, including obtaining necessary approvals and applying access controls."
+    }
+  },
+  {
+    "question": "Will my reimbursement definitely be approved?",
+    "response": {
+      "answer": "Please clarify your request. To determine if your reimbursement will be approved, we need more details such as the type of reimbursement you are applying for, the organization or institution handling the reimbursement, and any specific policies or criteria that apply to your situation.",
+      "policy_basis": [],
+      "sources": [],
+      "answerability": "NEEDS_CLARIFICATION",
+      "confidence": "LOW",
+      "recommended_next_step": "Provide the requested details, including the purpose of the reimbursement, the amount, and any relevant documentation or guidelines that may influence the approval decision."
+    }
+  },
+  {
+    "question": "What should I do if the policy does not mention my scenario?",
+    "response": {
+      "answer": "Please clarify your request. (Details on what is missing, such as the type of policy, the specific scenario, and any relevant context)",
+      "policy_basis": [],
+      "sources": [],
+      "answerability": "NEEDS_CLARIFICATION",
+      "confidence": "LOW",
+      "recommended_next_step": "Provide the requested details, including the policy in question and your specific scenario, so we can better assist you."
+    }
+  },
+  {
+    "question": "Are there any security guidelines for using ChatGPT or Copilot on company laptops?",
+    "response": {
+      "answer": "To use ChatGPT or Copilot on company laptops, employees must follow the IT Security Policy and AI Usage Policy. They should use only company-approved AI tools for business work and ensure that customer data is handled according to the policies.",
+      "policy_basis": [
+        "Company Device Usage",
+        "Approved AI Tools",
+        "Customer Data Restriction"
+      ],
+      "sources": [
+        {
+          "source_file": "it_security_policy.md",
+          "policy_domain": "IT_SECURITY",
+          "chunk_id": "it_security_policy.md_chunk_002",
+          "snippet": "Employees must use company-managed devices for business work whenever possible."
+        },
+        {
+          "source_file": "ai_usage_policy.md",
+          "policy_domain": "AI_USAGE",
+          "chunk_id": "ai_usage_policy.md_chunk_000",
+          "snippet": "Employees may use only company-approved AI tools for business work."
+        },
+        {
+          "source_file": "ai_usage_policy.md",
+          "policy_domain": "AI_USAGE",
+          "chunk_id": "ai_usage_policy.md_chunk_000",
+          "snippet": "Customer data may be used with an approved internal AI tool only if: the use case is approved by the AI Governance Committee"
+        }
+      ],
+      "answerability": "ANSWERED",
+      "confidence": "HIGH",
+      "recommended_next_step": "Review the IT Security Policy and AI Usage Policy to ensure compliance with company regulations."
+    }
+  }
+]

@@ -1,0 +1,168 @@
+[
+    {
+        "question_id": "Q1",
+        "original_query": "Does Tesla's growth story appear more constrained by external supply risk or internal execution and cost structure?",
+        "expanded_queries": [
+            "Is Tesla's growth more limited by external supply chain risks affecting margins or by internal execution and cost efficiency?  ",
+            "Are the dominant risks to Tesla's expansion external supply constraints versus internal execution and cost structure?  ",
+            "Is Tesla's ability to scale hindered more by outside supply bottlenecks or by internal operational execution and cost framework?  ",
+            "Is Tesla's growth story constrained primarily by outside supply risk or by internal execution and cost architecture?"
+        ],
+        "baseline_top_chunks": [
+            "delivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor",
+            "our\tindustries,\tor\tare\tsubject\tto\tnegative\tpublicity,\tthen\tour\tfinancial\tcondition,\toperating\tresults,\tbusiness\tprospect",
+            "to\tsupport\tour\tplanned\thigh-volume\tproduct\tsales,\tmarket\tand\tgeographical\texpansion\tand\ttechnological\tinnovations.\tIf\twe"
+        ],
+        "expanded_top_chunks": [
+            "delivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor",
+            "our\tindustries,\tor\tare\tsubject\tto\tnegative\tpublicity,\tthen\tour\tfinancial\tcondition,\toperating\tresults,\tbusiness\tprospect",
+            "www.sec.gov\n)\tthat\tcontains\nreports,\tproxy\tand\tinformation\tstatements,\tand\tother\tinformation\tregarding\tissuers\tthat\tfile",
+            "Any\tof\tthe\tforegoing\tevents\tmay\tharm\tour\tbusiness,\tfinancial\tcondition\tand\toperating\tresults.\nIf\twe\tare\tunable\tto\tattrac",
+            "Moreover,\tbecause\tof\tour\tunique\texpertise\twith\tour\tvehicles,\twe\trecommend\tthat\tour\tvehicles\tbe\tserviced\tby\tus\tor\tby\tcert",
+            "depend\ton\tour\tability\tto\tcorrectly\tforecast\tdemand\tin\tvarious\tmarkets.\n\t\nBecause\twe\tdo\tnot\thave\tindependent\tdealer\tnetwo"
+        ],
+        "retrieved_by": {
+            "unknown": [
+                "Is Tesla's growth more limited by external supply chain risks affecting margins or by internal execution and cost efficiency?  ",
+                "Is Tesla's growth more limited by external supply chain risks affecting margins or by internal execution and cost efficiency?  ",
+                "Is Tesla's growth more limited by external supply chain risks affecting margins or by internal execution and cost efficiency?  ",
+                "Are the dominant risks to Tesla's expansion external supply constraints versus internal execution and cost structure?  ",
+                "Are the dominant risks to Tesla's expansion external supply constraints versus internal execution and cost structure?  ",
+                "Are the dominant risks to Tesla's expansion external supply constraints versus internal execution and cost structure?  ",
+                "Is Tesla's ability to scale hindered more by outside supply bottlenecks or by internal operational execution and cost framework?  ",
+                "Is Tesla's ability to scale hindered more by outside supply bottlenecks or by internal operational execution and cost framework?  ",
+                "Is Tesla's ability to scale hindered more by outside supply bottlenecks or by internal operational execution and cost framework?  ",
+                "Is Tesla's growth story constrained primarily by outside supply risk or by internal execution and cost architecture?",
+                "Is Tesla's growth story constrained primarily by outside supply risk or by internal execution and cost architecture?",
+                "Is Tesla's growth story constrained primarily by outside supply risk or by internal execution and cost architecture?"
+            ]
+        },
+        "retrieval_improvement_analysis": "Expanded retrieval increased coverage by searching alternative phrasings."
+    },
+    {
+        "question_id": "Q2",
+        "original_query": "Explain how Tesla's AI and product roadmap is reflected in spending, operational priorities, and risk disclosures.",
+        "expanded_queries": [
+            "From a financial analyst standpoint, how does Tesla's AI and product roadmap manifest in its capital expenditures, R&D spending, and overall financial allocations as disclosed in the 10\u2011K?  ",
+            "What risk factors does Tesla highlight in its 10\u2011K that relate to its AI initiatives and product roadmap, and how are those risks tied to its spending and operational focus?  ",
+            "How are Tesla's AI strategy and upcoming product roadmap reflected in the company's operational priorities, resource deployment, and day\u2011to\u2011day execution as described in the 10\u2011K?  ",
+            "In other words, how does Tesla's artificial intelligence and product development plan show up in its expense patterns, operational emphasis, and risk commentary within the filing?"
+        ],
+        "baseline_top_chunks": [
+            "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2023\nINDEX\n\t\n\t\nPage\nPART\tI.\n\t\n\t\nItem\t1.\nBusiness\n",
+            "delivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor",
+            "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2022\nINDEX\n\t\n\t\t\n\t\t\n\t\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n"
+        ],
+        "expanded_top_chunks": [
+            "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2023\nINDEX\n\t\n\t\nPage\nPART\tI.\n\t\n\t\nItem\t1.\nBusiness\n",
+            "salary\tand\tequity-based\tincentives,\tas\twell\tas\tother\tbenefits\tgenerally\tavailable\tto\temployees.\tWe\tcombine\tthese\telement",
+            "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2019\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nI",
+            "www.sec.gov\n)\tthat\tcontains\nreports,\tproxy\tand\tinformation\tstatements,\tand\tother\tinformation\tregarding\tissuers\tthat\tfile",
+            "Any\tof\tthe\tforegoing\tevents\tmay\tharm\tour\tbusiness,\tfinancial\tcondition\tand\toperating\tresults.\nIf\twe\tare\tunable\tto\tattrac",
+            "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2020\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nI",
+            "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2022\nINDEX\n\t\n\t\t\n\t\t\n\t\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n"
+        ],
+        "retrieved_by": {
+            "unknown": [
+                "From a financial analyst standpoint, how does Tesla's AI and product roadmap manifest in its capital expenditures, R&D spending, and overall financial allocations as disclosed in the 10\u2011K?  ",
+                "From a financial analyst standpoint, how does Tesla's AI and product roadmap manifest in its capital expenditures, R&D spending, and overall financial allocations as disclosed in the 10\u2011K?  ",
+                "From a financial analyst standpoint, how does Tesla's AI and product roadmap manifest in its capital expenditures, R&D spending, and overall financial allocations as disclosed in the 10\u2011K?  ",
+                "What risk factors does Tesla highlight in its 10\u2011K that relate to its AI initiatives and product roadmap, and how are those risks tied to its spending and operational focus?  ",
+                "What risk factors does Tesla highlight in its 10\u2011K that relate to its AI initiatives and product roadmap, and how are those risks tied to its spending and operational focus?  ",
+                "What risk factors does Tesla highlight in its 10\u2011K that relate to its AI initiatives and product roadmap, and how are those risks tied to its spending and operational focus?  ",
+                "How are Tesla's AI strategy and upcoming product roadmap reflected in the company's operational priorities, resource deployment, and day\u2011to\u2011day execution as described in the 10\u2011K?  ",
+                "How are Tesla's AI strategy and upcoming product roadmap reflected in the company's operational priorities, resource deployment, and day\u2011to\u2011day execution as described in the 10\u2011K?  ",
+                "How are Tesla's AI strategy and upcoming product roadmap reflected in the company's operational priorities, resource deployment, and day\u2011to\u2011day execution as described in the 10\u2011K?  ",
+                "In other words, how does Tesla's artificial intelligence and product development plan show up in its expense patterns, operational emphasis, and risk commentary within the filing?",
+                "In other words, how does Tesla's artificial intelligence and product development plan show up in its expense patterns, operational emphasis, and risk commentary within the filing?",
+                "In other words, how does Tesla's artificial intelligence and product development plan show up in its expense patterns, operational emphasis, and risk commentary within the filing?"
+            ]
+        },
+        "retrieval_improvement_analysis": "Expanded retrieval increased coverage by searching alternative phrasings."
+    },
+    {
+        "question_id": "Q3",
+        "original_query": "Assess Tesla's concentration risk across factories, suppliers, raw materials and geographies.",
+        "expanded_queries": [
+            "From a financial analyst standpoint, evaluate Tesla's revenue and earnings concentration risk related to its manufacturing plants, key suppliers, critical raw materials, and geographic markets.  ",
+            "Identify and analyze the concentration risk factors for Tesla concerning its factory locations, supplier base, essential raw material sources, and regional exposure.  ",
+            "Examine how Tesla's operational dependence on specific factories, supplier networks, raw material inputs, and geographic regions could affect its production continuity and efficiency.  ",
+            "Assess Tesla's exposure to concentration across production sites, component vendors, primary material inputs, and geographic territories."
+        ],
+        "baseline_top_chunks": [
+            "Tesla,\tInc.\nNotes\tto\tConsolidated\tFinancial\tStatements\n\t\nNote\t1\t\u2013\tOverview\nTesla,\tInc.\t(\u201cTesla\u201d,\tthe\t\u201cCompany\u201d,\t\u201cwe\u201d,\t\u201cu",
+            "www.sec.gov\n)\tthat\tcontains\nreports,\tproxy\tand\tinformation\tstatements,\tand\tother\tinformation\tregarding\tissuers\tthat\tfile",
+            "Moreover,\tbecause\tof\tour\tunique\texpertise\twith\tour\tvehicles,\twe\trecommend\tthat\tour\tvehicles\tbe\tserviced\tby\tus\tor\tby\tcert"
+        ],
+        "expanded_top_chunks": [
+            "www.sec.gov\n)\tthat\tcontains\nreports,\tproxy\tand\tinformation\tstatements,\tand\tother\tinformation\tregarding\tissuers\tthat\tfile",
+            "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2022\nINDEX\n\t\n\t\t\n\t\t\n\t\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n",
+            "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2020\nINDEX\n\t\n\t\n\t\n\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nI",
+            "Tesla,\tInc.\nNotes\tto\tConsolidated\tFinancial\tStatements\n\t\nNote\t1\t\u2013\tOverview\nTesla,\tInc.\t(\u201cTesla\u201d,\tthe\t\u201cCompany\u201d,\t\u201cwe\u201d,\t\u201cu",
+            "Moreover,\tbecause\tof\tour\tunique\texpertise\twith\tour\tvehicles,\twe\trecommend\tthat\tour\tvehicles\tbe\tserviced\tby\tus\tor\tby\tcert",
+            "depend\ton\tour\tability\tto\tcorrectly\tforecast\tdemand\tin\tvarious\tmarkets.\n\t\nBecause\twe\tdo\tnot\thave\tindependent\tdealer\tnetwo",
+            "Exhibit\t21.1\n\t\nSUBSIDIARIES\tOF\tTESLA,\tINC.\n\t\nName\tof\tSubsidiary\n\t\nJurisdiction\tof\n\t\nIncorporation\tor\tOrganization\nAlabam"
+        ],
+        "retrieved_by": {
+            "unknown": [
+                "From a financial analyst standpoint, evaluate Tesla's revenue and earnings concentration risk related to its manufacturing plants, key suppliers, critical raw materials, and geographic markets.  ",
+                "From a financial analyst standpoint, evaluate Tesla's revenue and earnings concentration risk related to its manufacturing plants, key suppliers, critical raw materials, and geographic markets.  ",
+                "From a financial analyst standpoint, evaluate Tesla's revenue and earnings concentration risk related to its manufacturing plants, key suppliers, critical raw materials, and geographic markets.  ",
+                "Identify and analyze the concentration risk factors for Tesla concerning its factory locations, supplier base, essential raw material sources, and regional exposure.  ",
+                "Identify and analyze the concentration risk factors for Tesla concerning its factory locations, supplier base, essential raw material sources, and regional exposure.  ",
+                "Identify and analyze the concentration risk factors for Tesla concerning its factory locations, supplier base, essential raw material sources, and regional exposure.  ",
+                "Examine how Tesla's operational dependence on specific factories, supplier networks, raw material inputs, and geographic regions could affect its production continuity and efficiency.  ",
+                "Examine how Tesla's operational dependence on specific factories, supplier networks, raw material inputs, and geographic regions could affect its production continuity and efficiency.  ",
+                "Examine how Tesla's operational dependence on specific factories, supplier networks, raw material inputs, and geographic regions could affect its production continuity and efficiency.  ",
+                "Assess Tesla's exposure to concentration across production sites, component vendors, primary material inputs, and geographic territories.",
+                "Assess Tesla's exposure to concentration across production sites, component vendors, primary material inputs, and geographic territories.",
+                "Assess Tesla's exposure to concentration across production sites, component vendors, primary material inputs, and geographic territories."
+            ]
+        },
+        "retrieval_improvement_analysis": "Expanded retrieval increased coverage by searching alternative phrasings."
+    },
+    {
+        "question_id": "Q4",
+        "original_query": "Compare the strategic importance of automotive operations and energy generation/storage.",
+        "expanded_queries": [
+            "From a financial analyst standpoint, how does the strategic importance of Tesla's automotive operations compare to its energy generation and storage segment in terms of revenue contribution, profitability, and cash\u2011flow generation?  ",
+            "What are the primary risk factors tied to the strategic importance of Tesla's automotive operations versus its energy generation and storage businesses, including regulatory, market, and technology risks?  ",
+            "How do the operational priorities, production capacities, and supply\u2011chain considerations of Tesla's automotive manufacturing differ from those of its energy generation and storage activities, and what does this imply for the company's overall strategic focus?  ",
+            "How does the strategic significance of Tesla's vehicle production compare with its power generation and storage operations, using alternative terminology such as \u201cautomotive segment\u201d versus \u201cenergy segment\u201d?"
+        ],
+        "baseline_top_chunks": [
+            "The\tmarkets\tin\twhich\twe\toperate\tare\thighly\tcompetitive,\tand\twe\tmay\tnot\tbe\tsuccessful\tin\tcompeting\tin\tthese\tindustries.\tW",
+            "Energy\tGeneration\tand\tStorage\tSegment\nEnergy\tgeneration\tand\tstorage\trevenue\tincludes\tsales\tand\tleasing\tof\tsolar\tenergy\tg",
+            "facilities;\n\t\n\u2022\ncompetition,\tincluding\tfrom\tother\ttypes\tof\talternative\tfuel\tvehicles,\tplug-in\thybrid\telectric\tvehicles\ta"
+        ],
+        "expanded_top_chunks": [
+            "Tesla,\tInc.\nConsolidated\tStatements\tof\tOperations\n(in\tmillions,\texcept\tper\tshare\tdata)\nYear\tEnded\tDecember\t31,\n2023\n2022",
+            "Tesla,\tInc.\nConsolidated\tStatements\tof\tOperations\n(in\tmillions,\texcept\tper\tshare\tdata)\n\t\t\n\t\n\t\nYear\tEnded\tDecember\t31,\n\t\n",
+            "Tesla,\tInc.\n\t\nConsolidated\tStatements\tof\tOperations\n(in\tmillions,\texcept\tper\tshare\tdata)\n\t\n\t\n\t\nYear\tEnded\tDecember\t31,\n\t",
+            "our\tindustries,\tor\tare\tsubject\tto\tnegative\tpublicity,\tthen\tour\tfinancial\tcondition,\toperating\tresults,\tbusiness\tprospect",
+            "www.sec.gov\n)\tthat\tcontains\nreports,\tproxy\tand\tinformation\tstatements,\tand\tother\tinformation\tregarding\tissuers\tthat\tfile",
+            "Any\tof\tthe\tforegoing\tevents\tmay\tharm\tour\tbusiness,\tfinancial\tcondition\tand\toperating\tresults.\nIf\twe\tare\tunable\tto\tattrac",
+            "Moreover,\tbecause\tof\tour\tunique\texpertise\twith\tour\tvehicles,\twe\trecommend\tthat\tour\tvehicles\tbe\tserviced\tby\tus\tor\tby\tcert",
+            "are\tworking\tto\tsubstantially\tincrease\tour\tproduction\tand\tinstallation\tcapabilities.\tIf\twe\texperience\tproduction\tdelays\to",
+            "delivery\tand\tservice\toperations\tto\tmeet\tdemand;\tcompetition\tand\tuncertainty\tregarding\tthe\tfuture\tof\telectric\tvehicles\tor",
+            "Tesla,\tInc.\nNotes\tto\tConsolidated\tFinancial\tStatements\n\t\nNote\t1\t\u2013\tOverview\nTesla,\tInc.\t(\u201cTesla\u201d,\tthe\t\u201cCompany\u201d,\t\u201cwe\u201d,\t\u201cu"
+        ],
+        "retrieved_by": {
+            "unknown": [
+                "From a financial analyst standpoint, how does the strategic importance of Tesla's automotive operations compare to its energy generation and storage segment in terms of revenue contribution, profitability, and cash\u2011flow generation?  ",
+                "From a financial analyst standpoint, how does the strategic importance of Tesla's automotive operations compare to its energy generation and storage segment in terms of revenue contribution, profitability, and cash\u2011flow generation?  ",
+                "From a financial analyst standpoint, how does the strategic importance of Tesla's automotive operations compare to its energy generation and storage segment in terms of revenue contribution, profitability, and cash\u2011flow generation?  ",
+                "What are the primary risk factors tied to the strategic importance of Tesla's automotive operations versus its energy generation and storage businesses, including regulatory, market, and technology risks?  ",
+                "What are the primary risk factors tied to the strategic importance of Tesla's automotive operations versus its energy generation and storage businesses, including regulatory, market, and technology risks?  ",
+                "What are the primary risk factors tied to the strategic importance of Tesla's automotive operations versus its energy generation and storage businesses, including regulatory, market, and technology risks?  ",
+                "How do the operational priorities, production capacities, and supply\u2011chain considerations of Tesla's automotive manufacturing differ from those of its energy generation and storage activities, and what does this imply for the company's overall strategic focus?  ",
+                "How do the operational priorities, production capacities, and supply\u2011chain considerations of Tesla's automotive manufacturing differ from those of its energy generation and storage activities, and what does this imply for the company's overall strategic focus?  ",
+                "How do the operational priorities, production capacities, and supply\u2011chain considerations of Tesla's automotive manufacturing differ from those of its energy generation and storage activities, and what does this imply for the company's overall strategic focus?  ",
+                "How does the strategic significance of Tesla's vehicle production compare with its power generation and storage operations, using alternative terminology such as \u201cautomotive segment\u201d versus \u201cenergy segment\u201d?",
+                "How does the strategic significance of Tesla's vehicle production compare with its power generation and storage operations, using alternative terminology such as \u201cautomotive segment\u201d versus \u201cenergy segment\u201d?",
+                "How does the strategic significance of Tesla's vehicle production compare with its power generation and storage operations, using alternative terminology such as \u201cautomotive segment\u201d versus \u201cenergy segment\u201d?"
+            ]
+        },
+        "retrieval_improvement_analysis": "Expanded retrieval increased coverage by searching alternative phrasings."
+    }
+]

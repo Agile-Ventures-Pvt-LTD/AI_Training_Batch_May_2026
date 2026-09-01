@@ -1,0 +1,45 @@
+{
+  "parsed_output": [
+    {
+      "action": "APPLY_LEAVE",
+      "parameters": {
+        "reason": "travelling"
+      },
+      "requires_clarification": true,
+      "clarification_question": "Could you please specify the leave type (e.g., annual, sick, casual) and the year for the dates you mentioned?",
+      "confidence": 0.9
+    },
+    {
+      "action": "CHECK_BALANCE",
+      "parameters": {
+        "leave_type": "casual"
+      },
+      "requires_clarification": false,
+      "clarification_question": "",
+      "confidence": 0.98
+    },
+    {
+      "action": "CANCEL_LEAVE",
+      "parameters": {},
+      "requires_clarification": true,
+      "clarification_question": "Could you provide the exact date (YYYY-MM-DD) of the leave you want to cancel or the request ID?",
+      "confidence": 0.9
+    },
+    {
+      "action": "GET_POLICY",
+      "parameters": {
+        "leave_type": "maternity"
+      },
+      "requires_clarification": false,
+      "clarification_question": "",
+      "confidence": 0.98
+    },
+    {
+      "action": "APPLY_LEAVE",
+      "parameters": {},
+      "requires_clarification": true,
+      "clarification_question": "Would you like to apply for leave? If so, please provide the exact dates you are considering and the type of leave.",
+      "confidence": 0.6
+    }
+  ]
+}

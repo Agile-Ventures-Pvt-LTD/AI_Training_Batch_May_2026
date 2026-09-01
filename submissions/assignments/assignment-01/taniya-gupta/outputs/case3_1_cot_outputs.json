@@ -1,0 +1,14 @@
+{
+  "parsed_output": {
+    "incremental_revenue_range": "$80,000 - $140,000",
+    "incremental_gross_profit_range": "$32,000 - $56,000",
+    "monthly_net_benefit_range": "$2,000 - $26,000",
+    "payback_period_range_months": "6.9 - 90",
+    "decision": "APPROVE_WITH_CONDITIONS",
+    "reasoning_summary": "Low uplift yields a 90‑month payback, exceeding the 12‑month requirement; high uplift achieves ~6.9‑month payback, meeting the requirement. Approval is conditional on achieving at least the high uplift scenario.",
+    "key_assumptions": [
+      "Revenue uplift of 4‑7% is realized immediately after go‑live and sustained monthly.",
+      "Gross margin remains constant at 40% and operating costs stay at $30,000 per month."
+    ]
+  }
+}
