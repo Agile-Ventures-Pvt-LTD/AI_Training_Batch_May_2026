@@ -1,0 +1,242 @@
+[
+  {
+    "timestamp": "2024-03-16T10:11:12.494Z",
+    "question": "What is the total revenue?",
+    "query_type": "FACTUAL_LOOKUP",
+    "retrieved_sources": [
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "47",
+        "chunk_id": "text_77",
+        "snippet": "AMAZON.COM, INC.\nCONSOLIDATED STATEMENTS OF OPERAT..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "46",
+        "chunk_id": "text_75",
+        "snippet": "AMAZON.COM, INC.\nCONSOLIDATED STATEMENTS OF CASH F..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "81",
+        "chunk_id": "text_128",
+        "snippet": "Depreciation and amortization expense on property ..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "52",
+        "chunk_id": "text_83",
+        "snippet": "physical stores. These fourth quarter charges were..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "37",
+        "chunk_id": "text_63",
+        "snippet": "General and Administrative\nGeneral and administrat..."
+      }
+    ],
+    "answer": "The total revenue for the years 2023, 2024, and 2025 are $574,785 million, $637,959 million, and $716,924 million respectively.",
+    "answerability": "ANSWERED",
+    "confidence": "HIGH"
+  },
+  {
+    "timestamp": "2024-04-08T12:00:00",
+    "question": "what is the name of the company?",
+    "query_type": "FACTUAL_LOOKUP",
+    "retrieved_sources": [
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": 15,
+        "chunk_id": "text_23",
+        "snippet": "Available Information\nOur investor relations websi..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": 13,
+        "chunk_id": "text_20",
+        "snippet": "AMAZON.COM, INC.\nPART I\nItem 1. Business\nThis Annu..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": 51,
+        "chunk_id": "text_81",
+        "snippet": "AMAZON.COM, INC.\nNOTES TO CONSOLIDATED FINANCIAL S..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": 10,
+        "chunk_id": "text_16",
+        "snippet": "Infrastructure\nDuring 1997, we worked hard to expa..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": 16,
+        "chunk_id": "text_25",
+        "snippet": "Board of Directors\nName Age Position\nJeffrey P. Be..."
+      }
+    ],
+    "answer": "Amazon.com, Inc.",
+    "answerability": "ANSWERED",
+    "confidence": "HIGH"
+  },
+  {
+    "timestamp": "2024-12-09T14:30:00",
+    "question": "What is the revenue in the 2024?",
+    "query_type": "FACTUAL_LOOKUP",
+    "retrieved_sources": [
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "37",
+        "chunk_id": "text_63",
+        "snippet": "General and Administrative\nGeneral and administrat..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "40",
+        "chunk_id": "text_68",
+        "snippet": "Guidance\nWe provided guidance on February 5, 2026,..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "7",
+        "chunk_id": "text_13",
+        "snippet": "Parting thoughts. Amazon had another strong year i..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "74",
+        "chunk_id": "text_118",
+        "snippet": "The 2025 Tax Act was signed into law on July 4, 20..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "33",
+        "chunk_id": "text_57",
+        "snippet": "point in time is subject to many variables, includ..."
+      }
+    ],
+    "answer": "The revenue in 2024 was $638 billion.",
+    "answerability": "ANSWERED",
+    "confidence": "HIGH"
+  },
+  {
+    "timestamp": "2024-03-16T10:11:12.023Z",
+    "question": "What is the total revenue?",
+    "query_type": "FACTUAL_LOOKUP",
+    "retrieved_sources": [
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "47",
+        "chunk_id": "text_77",
+        "snippet": "AMAZON.COM, INC.\nCONSOLIDATED STATEMENTS OF OPERAT..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "46",
+        "chunk_id": "text_75",
+        "snippet": "AMAZON.COM, INC.\nCONSOLIDATED STATEMENTS OF CASH F..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "81",
+        "chunk_id": "text_128",
+        "snippet": "Depreciation and amortization expense on property ..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "52",
+        "chunk_id": "text_83",
+        "snippet": "physical stores. These fourth quarter charges were..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "37",
+        "chunk_id": "text_63",
+        "snippet": "General and Administrative\nGeneral and administrat..."
+      }
+    ],
+    "answer": "The total revenue for the years 2023, 2024, and 2025 are $574,785 million, $637,959 million, and $716,924 million respectively.",
+    "answerability": "ANSWERED",
+    "confidence": "HIGH"
+  },
+  {
+    "timestamp": "2024-03-16T14:30:00",
+    "question": "What is the total revenue",
+    "query_type": "FACTUAL_LOOKUP",
+    "retrieved_sources": [
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": 47,
+        "chunk_id": "text_77",
+        "snippet": "AMAZON.COM, INC.\nCONSOLIDATED STATEMENTS OF OPERAT..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": 61,
+        "chunk_id": "text_99",
+        "snippet": "Unearned Revenue\nUnearned revenue is recorded when..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": 46,
+        "chunk_id": "text_75",
+        "snippet": "AMAZON.COM, INC.\nCONSOLIDATED STATEMENTS OF CASH F..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": 81,
+        "chunk_id": "text_128",
+        "snippet": "Depreciation and amortization expense on property ..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": 52,
+        "chunk_id": "text_83",
+        "snippet": "physical stores. These fourth quarter charges were..."
+      }
+    ],
+    "answer": "The total revenue for the years 2023, 2024, and 2025 are $574,785 million, $637,959 million, and $716,924 million respectively.",
+    "answerability": "ANSWERED",
+    "confidence": "HIGH"
+  },
+  {
+    "timestamp": "2024-03-16T10:11:12.023197",
+    "question": "What is the total revenue",
+    "query_type": "FACTUAL_LOOKUP",
+    "retrieved_sources": [
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "47",
+        "chunk_id": "text_77",
+        "snippet": "AMAZON.COM, INC.\nCONSOLIDATED STATEMENTS OF OPERAT..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "61",
+        "chunk_id": "text_99",
+        "snippet": "Unearned Revenue\nUnearned revenue is recorded when..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "46",
+        "chunk_id": "text_75",
+        "snippet": "AMAZON.COM, INC.\nCONSOLIDATED STATEMENTS OF CASH F..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "81",
+        "chunk_id": "text_128",
+        "snippet": "Depreciation and amortization expense on property ..."
+      },
+      {
+        "source_file": "data\\raw\\Amazon-2025-Annual-Report.pdf",
+        "page_number": "52",
+        "chunk_id": "text_83",
+        "snippet": "physical stores. These fourth quarter charges were..."
+      }
+    ],
+    "answer": "The total revenue for the years 2023, 2024, and 2025 are $574,785 million, $637,959 million, and $716,924 million respectively.",
+    "answerability": "ANSWERED",
+    "confidence": "HIGH"
+  }
+]

@@ -1,0 +1,837 @@
+{
+  "batch 1": [
+    "Q1: What are the key attributes and qualifications of Tesla's Board of Directors, as outlined in the company's 10-K/A filing for the fiscal year ended December 31, 2021?",
+    "Q2: How does the Board of Directors' composition and experience impact Tesla's corporate governance and decision-making processes, as described in the 10-K/A filing?",
+    "Q3: What are the key roles and responsibilities of the Audit Committee, as established in accordance with Section 3(a)(58) of the Exchange Act, as outlined in the 10-K/A filing for the fiscal year ended December 31, 2021?"
+  ],
+  "batch 2": [
+    "Q1: What are the key factors that the Compensation Committee considers when determining executive compensation at Tesla, and how do these factors impact the overall compensation structure?",
+    "Q2: How does Tesla's equity award program contribute to the overall compensation of its named executive officers, and what types of equity awards are granted to these officers?",
+    "Q3: What are the terms and conditions of the 2018 CEO Performance Award granted to Elon Musk, and how does this award align with Tesla's long-term goals and objectives?"
+  ],
+  "batch 3": [
+    "Q1: What are the specific operational targets that Tesla's Board of Directors established for Elon Musk's 2018 CEO Performance Award, and how do these targets align with the company's plans for future growth?",
+    "Q2: How does the achievement of market capitalization milestones under the 2018 CEO Performance Award differ in a change in control situation, and what is the measurement of Tesla's market capitalization determined by in such a scenario?",
+    "Q3: What is the significance of realized compensation in understanding the value of compensation that Elon Musk ultimately realizes, and how does this relate to the vesting of certain option awards and the market value of Tesla's common stock?"
+  ],
+  "batch 4": [
+    "Q1: What are the key factors that determine the vesting of stock options and restricted stock units for Tesla's named executive officers and non-employee directors?",
+    "Q2: How does Tesla's compensation program for non-employee directors align with the company's overall compensation philosophy, and what are the implications of this alignment?",
+    "Q3: What are the ownership stakes of Tesla's largest shareholders, including Elon Musk, The Vanguard Group, and Blackrock, Inc., as of December 31, 2021?"
+  ],
+  "batch 5": [
+    "Q1: What are the total number of shares that can be issued upon exercise of options exercisable within 60 days after December 31, 2021, including shares pledged as collateral to secure certain personal indebtedness?",
+    "Q2: What are the terms of the related party transactions between Tesla and SpaceX, including the prices for vehicle components and solar modules, and the engineering support and resources provided by Tesla to SpaceX?",
+    "Q3: What are the principal accounting fees and services rendered to Tesla by PricewaterhouseCoopers LLP for the years ended December 31, 2020 and 2021, including audit fees, audit-related fees, tax fees, and all other fees?"
+  ],
+  "batch 6": [
+    "Q1: What are the key dates and events related to the issuance and modification of SolarCity's Solar Bonds, as recorded in the supplemental indentures filed with the SEC?",
+    "Q2: How do the various supplemental indentures dated between October 2014 and December 2015 reflect changes to the terms and conditions of SolarCity's Solar Bonds, and what are the implications of these changes for investors and stakeholders?",
+    "Q3: What is the overall pattern of issuance and modification of SolarCity's Solar Bonds over the period from 2014 to 2015, and how do the supplemental indentures provide insight into the company's financial and strategic decisions during this time?"
+  ],
+  "batch 7": [
+    "Q1: What are the key agreements and contracts related to Tesla's supply chain and partnerships with Panasonic Corporation, including the 2011 Supply Agreement, the 2019 Pricing Agreement, and the 2020 Pricing Agreement?",
+    "Q2: What are the terms and conditions of the Amended and Restated Factory Lease between Tesla and Panasonic Energy North America, including the lease amendment and the second lease amendment?",
+    "Q3: What are the details of the Loan and Security Agreement between LML 2018 Warehouse SPV, LLC, Tesla Finance LLC, and the lenders, including the amendment no. 1, amendment no. 2, and the letter of consent dated February 18, 2020?"
+  ],
+  "batch 8": [
+    "Q1: What are the key amendments to the Research & Development Alliance on Triex Module Technology between The Research Foundation For The State University of New York and Silevo, Inc. that have been made over the years, and how have they impacted the partnership?",
+    "Q2: What are the primary financial agreements between Tesla (Shanghai) Co., Ltd. and various Chinese banks, and how have they contributed to Tesla's financial growth and development in China?",
+    "Q3: What are the key certifications and statements made by Tesla's executives, including Elon Musk and Zachary J. Kirkhorn, in the company's 10-K report for the year ended December 31, 2019, and what do they indicate about the company's financial health and compliance with regulatory requirements?"
+  ],
+  "batch 9": [
+    "Q1: What are the key technological advancements and innovations in Tesla's electric powertrain, battery, and energy storage systems that enable the company to offer high-performance, long-range electric vehicles and energy storage solutions?",
+    "Q2: How does Tesla's direct-to-consumer sales model and global Supercharger network contribute to the company's strategy to accelerate the adoption of electric vehicles and reduce the barrier of limited range?",
+    "Q3: What are the key features and benefits of Tesla's energy storage products, such as Powerwall, Powerpack, and Megapack, and how do they integrate with the company's solar energy systems and grid services?"
+  ],
+  "batch 10": [
+    "Q1: What are the primary differences between the warranties offered for new vehicles, energy storage systems, and solar energy systems, and how do they vary in terms of duration and coverage?",
+    "Q2: How do Tesla's manufacturing facilities, such as the Fremont Factory, Gigafactory Nevada, and Gigafactory New York, contribute to the company's ability to produce and deliver its products, and what are the key factors that influence their operations?",
+    "Q3: What are the main regulatory requirements and incentives that affect Tesla's business, including those related to vehicle safety, energy storage, and solar energy, and how do these factors impact the company's operations and profitability?"
+  ],
+  "batch 11": [
+    "Q1: How do regulatory constraints, such as tariffs on automobiles manufactured in the US, impact Tesla's ability to expand its sales in China and maintain its competitive edge in the electric vehicle market?",
+    "Q2: What are the potential risks and challenges associated with Tesla's vertical integration of lithium-ion cell production at Gigafactory Nevada, and how might these affect the company's ability to supply battery packs and other components for its vehicles?",
+    "Q3: How might Tesla's reliance on single-source suppliers, particularly Panasonic, for critical components such as lithium-ion cells, impact its ability to manage production costs, quality, and volume, and what are the potential consequences of supplier failure or disruption?"
+  ],
+  "batch 12": [
+    "Q1: What are the potential risks and challenges associated with Tesla's international operations, including regulatory, political, economic, tax, and labor conditions, and how might these risks impact the company's business and financial condition?",
+    "Q2: How might Tesla's dependence on key employees, such as Elon Musk, impact the company's ability to compete and grow, and what strategies might the company employ to mitigate this risk?",
+    "Q3: What are the potential consequences for Tesla if it fails to comply with the terms of its agreement with the SUNY Foundation relating to its Gigafactory in New York, and how might this impact the company's business and financial condition?"
+  ],
+  "batch 13": [
+    "Q1: What are the potential risks and consequences for Tesla's business operations if the company fails to comply with various U.S. and international privacy and consumer protection laws?",
+    "Q2: How might fluctuations in currency exchange rates, particularly a strengthening of the U.S. dollar, impact Tesla's financial results and operating margins, given the company's significant revenues and costs denominated in foreign currencies?",
+    "Q3: What are the potential regulatory limitations on Tesla's ability to sell vehicles directly to consumers, and how might these limitations affect the company's business prospects and financial condition?"
+  ],
+  "batch 14": [
+    "Q1: What are the potential risks and challenges that Tesla may face in its expansion and growth plans, particularly in terms of regulatory compliance, supply chain constraints, and employee retention?",
+    "Q2: How may the volatility in Tesla's stock price be influenced by factors such as short selling, public perception, and the company's ability to meet its publicly announced guidance and other expectations about its business?",
+    "Q3: What are the potential implications of Tesla's convertible notes on the ownership interest of existing stockholders, and how may the company's ability to obtain and protect intellectual property rights impact its business and financial condition?"
+  ],
+  "batch 15": [
+    "Q1: What are the expected average annual capital expenditures for Tesla in 2020 and the two succeeding fiscal years, and how do they align with the company's current strategy of using partners to manufacture battery cells?",
+    "Q2: How does Tesla recognize revenue from automotive sales, including the recognition of revenue related to Autopilot and FSD features, and what is the process for determining whether there is a significant economic incentive for customers to exercise resale value guarantees?",
+    "Q3: What are the key performance obligations and revenue recognition criteria for Tesla's energy generation and storage sales, including the recognition of revenue from solar energy systems and energy storage systems, and how does the company allocate consideration to various obligations in a single contract?"
+  ],
+  "batch 16": [
+    "Q1: What are the primary factors that contribute to the variability in the warranty reserve, and how do changes in historical or projected warranty experience impact the reserve?",
+    "Q2: How do changes in the risk-free interest rate, expected term, and expected volatility of stock option awards impact the fair value of these awards, and what are the potential consequences of these changes on stock-based compensation expense?",
+    "Q3: What are the key assumptions and judgments involved in determining the provision for income taxes, and how may changes in tax laws, regulations, or administrative practices impact the valuation allowance recorded against deferred tax assets?"
+  ],
+  "batch 17": [
+    "Q1: What were the primary drivers of the decrease in R&D expenses from 7% to 5% of revenue in the year ended December 31, 2019?",
+    "Q2: How did the company's sources of liquidity and cash flows enable it to fund ongoing operations, research and development projects, and expansion plans, and what were the expected capital expenditures for the next three fiscal years?",
+    "Q3: What were the main factors contributing to the increase in net income from operating activities by $307 million in the year ended December 31, 2019, and how did the company's cash flows from operating activities affect its liquidity?"
+  ],
+  "batch 18": [
+    "Q1: What are the potential financial impacts on Tesla's revenue and operating results if there is a strengthening of the U.S. dollar, considering the company's foreign currency risks and lack of hedging?",
+    "Q2: How does Tesla's management estimate the sales return reserve and warranty reserve, and what are the critical audit matters related to these estimates, including the use of historical experience and estimated future market values?",
+    "Q3: What are the key factors that Tesla's management considers when determining whether customers have a significant economic incentive to exercise their put rights under resale value guarantees and buyback option programs, and how does this impact the company's revenue recognition and sales return reserve?"
+  ],
+  "batch 19": [
+    "Q1: What are the key differences in revenue recognition between automotive sales with and without resale value guarantees, and how do these differences impact the company's financial statements?",
+    "Q2: How does the company estimate the sales return reserve for vehicles sold under the buyback options program, and what factors influence this estimate?",
+    "Q3: What are the implications of adopting the new revenue standard (ASC 606) on the company's financial statements, particularly with regards to the recognition of revenue from contracts with customers?"
+  ],
+  "batch 20": [
+    "Q1: What is the total amount of deferred revenue related to automotive sales with and without resale value guarantees as of December 31, 2019?",
+    "Q2: How does Tesla account for revenue from the sale of automotive regulatory credits, and what was the total revenue from such sales for the years ended December 31, 2019, 2018, and 2017?",
+    "Q3: What is the process to determine whether there is a significant economic incentive for customers to exercise the resale value guarantee provided in certain international programs, and what was the amount of guarantees exercisable by customers within the next 12 months as of December 31, 2019 and 2018?"
+  ],
+  "batch 21": [
+    "Q1: What are the key differences in accounting for leases under the new revenue standard (ASC 842) compared to the previous lease accounting standard (ASC 840)?",
+    "Q2: How do the adoption of the new lease standard (ASC 842) and the election of practical expedients impact the recognition of right-of-use assets and lease liabilities on the consolidated balance sheet?",
+    "Q3: What are the key assumptions and methods used to determine the carrying value of inventory, including the lower of cost or net realizable value, and how may changes in estimates impact reported financial results?"
+  ],
+  "batch 22": [
+    "Q1: What are the key differences in accounting for operating leases and capital leases under ASC 842, and how do these differences impact the financial statements of a company?",
+    "Q2: How does the adoption of the new lease standard, ASC 842, affect the classification and accounting for solar energy systems and other types of leases, and what are the implications for the financial statements?",
+    "Q3: What are the key factors considered in determining the fair value of assets acquired and liabilities assumed in a business combination, and how do these factors impact the allocation of the purchase price?"
+  ],
+  "batch 23": [
+    "Q1: What are the total amounts of indefinite-lived intangible assets and total intangible assets as of December 31, 2019, and how do they compare to the previous year?",
+    "Q2: What are the estimated future amortization expenses for finite-lived intangible assets from 2020 to 2024, and what is the total estimated future amortization expense for these assets?",
+    "Q3: What are the total amounts of recourse debt and non-recourse debt as of December 31, 2019, and what are the interest rates and maturity dates for these debts?"
+  ],
+  "batch 24": [
+    "Q1: What are the total debt and unused committed amounts under the credit facilities and financing funds as of December 31, 2018?",
+    "Q2: How do the convertible note hedges and warrants associated with the 2019 Notes, 2021 Notes, 2022 Notes, and 2024 Notes reduce potential dilution and/or cash payments from the conversion of these notes?",
+    "Q3: What are the key features and terms of the Solar Bonds, Automotive Asset-backed Notes, and Solar Asset-backed Notes, including their conversion prices, maximum conversion rates, and redemption prices?"
+  ],
+  "batch 25": [
+    "Q1: What are the total outstanding borrowings under the Fixed Asset Facility and the Working Capital Facility, and how do they accrue interest?",
+    "Q2: What are the terms of the Warehouse Agreements, including the interest rates and the availability period, and how have they been amended over time?",
+    "Q3: What are the future scheduled principal maturities of debt as of December 31, 2019, and how do they break down between recourse and non-recourse debt?"
+  ],
+  "batch 26": [
+    "Q1: What are the key performance milestones that must be achieved for the 2018 CEO Performance Award to vest, and how are these milestones measured?",
+    "Q2: How does the company account for stock-based compensation expense, and what are the key factors that determine the expected achievement period for each performance milestone?",
+    "Q3: What are the implications of the 2017 Tax Cuts and Jobs Act on the company's deferred tax assets and liabilities, and how does this impact the company's income tax expense?"
+  ],
+  "batch 27": [
+    "Q1: What are the key terms and conditions of the operating lease arrangement between Tesla and the SUNY Foundation for the Gigafactory in Buffalo, New York?",
+    "Q2: What are the potential risks and liabilities associated with the various legal proceedings and investigations involving Tesla, including securities litigation, CEO performance award, and SEC investigations?",
+    "Q3: How do the variable interest entity arrangements between Tesla and its investors affect the company's financial statements and what are the key terms and conditions of these arrangements?"
+  ],
+  "batch 28": [
+    "Q1: What are the total lease pass-through financing obligations as of December 31, 2019 and 2018, and how are they classified?",
+    "Q2: What is the nature of the lease pass-through financing obligation, and how is it accounted for in the consolidated financial statements?",
+    "Q3: What are the future minimum master lease payments to be received from investors for each of the next five years and thereafter, as of December 31, 2019?"
+  ],
+  "batch 29": [
+    "Q1: What are the key amendments and waivers made to the Investor's Rights Agreement between the Registrant, the Elon Musk Revocable Trust, and certain other holders of the capital stock of the Registrant, as reflected in the various 8-K filings from 2013 to 2019?",
+    "Q2: What are the terms and conditions of the various indentures and supplemental indentures entered into between the Registrant and U.S. Bank National Association, as well as between SolarCity and Wells Fargo Bank, National Association, as trustee, as reflected in the 8-K filings from 2014 to 2017?",
+    "Q3: What are the key features and updates of the various supplemental indentures entered into between SolarCity and the Trustee, related to the 3.60%, 4.00%, 4.70%, and 5.45% Solar Bonds, Series 2015, as reflected in the 8-K filings from April 2015 to July 2015?"
+  ],
+  "batch 30": [
+    "Q1: What are the key dates and events related to the supplemental indentures and equity incentive plans of SolarCity, including the filing dates and exhibit descriptions?",
+    "Q2: How do the supplemental indentures and equity incentive plans of SolarCity relate to the company's solar bonds and equity incentive plans, including the series numbers and percentages?",
+    "Q3: What are the key terms and conditions of the equity incentive plans of SolarCity, including the 2003 Equity Incentive Plan, 2010 Equity Incentive Plan, and 2019 Equity Incentive Plan, and how do they relate to the company's stock options and restricted stock unit awards?"
+  ],
+  "batch 31": [
+    "Q1: What are the key agreements and amendments related to the ABL Credit Agreement and Loan and Security Agreements between Tesla, Inc. and various lenders, including Deutsche Bank AG, New York Branch, and Wells Fargo Bank, National Association?",
+    "Q2: What are the significant changes and updates to the Supply Agreement between Panasonic Corporation and the Registrant (Tesla, Inc.) from 2011 to 2019, including the Amendment No. 1 to the Supply Agreement and the 2019 Pricing Agreement (2170 Cells)?",
+    "Q3: What are the key terms and conditions of the Purchase Agreement dated August 11, 2017, between Tesla, Inc., SolarCity, Goldman Sachs & Co. LLC, and Morgan Stanley & Co. LLC, as representatives of the several initial purchasers named therein?"
+  ],
+  "batch 32": [
+    "Q1: What are the key amendments made to the Loan Agreement between Tesla Finance LLC, the Lenders, the Group Agents, the Administrative Agent, and the Paying Agent, as stated in Amendment No. 2 to Loan and Security Agreement, dated December 13, 2019?",
+    "Q2: How do the provisions of Delaware law and the amended and restated certificate of incorporation and bylaws of Tesla, Inc. impact the company's ability to engage in business combinations with interested stockholders, as described in Exhibit 10.69?",
+    "Q3: What are the registration rights provided to certain holders of unregistered common stock purchased in private placements, as described in Exhibit 4.119, and how do these rights impact the company's ability to register such shares under the Securities Act of 1933?"
+  ],
+  "batch 33": [
+    "Q1: What are the conditions precedent that must be satisfied or waived for the Amendment to become effective, and how do these conditions relate to the Loan Agreement and the parties involved?",
+    "Q2: What are the representations and warranties made by the Borrower to the Administrative Agent, Group Agents, and Lenders as of the date of the Amendment, and how do these representations and warranties impact the Loan Agreement and the parties involved?",
+    "Q3: What are the governing law and dispute resolution provisions of the Loan Agreement, and how do these provisions affect the interpretation and enforcement of the Agreement among the parties involved?"
+  ],
+  "batch 34": [
+    "Q1: What are the key terms and definitions outlined in the agreement, particularly in relation to the Facility, the Borrower, and the Lenders?",
+    "Q2: How does the agreement address the use of the Advances drawn under the Facility, including the purposes for which they can be used and the restrictions on their use?",
+    "Q3: What are the procedures for drawing down Advances under the Facility, including the requirements for the Drawdown Notice and the role of the Facility Agent in forwarding the notice to the Lenders?"
+  ],
+  "batch 35": [
+    "Q1: What are the specific documents and information required from the Borrower to be submitted to the Facility Agent before the first drawdown, and what are the consequences of failing to provide these documents?",
+    "Q2: How does the interest rate on the Advances drawn in RMB and USD under the Facility work, and what are the conditions for adjusting the Interest Rate?",
+    "Q3: What are the repayment terms and conditions for the Borrower, including the loan period, repayment schedule, and prepayment options, and what are the consequences of failing to meet these conditions?"
+  ],
+  "batch 36": [
+    "Q1: What are the specific conditions under which the Borrower is required to provide audited financial statements to the Facility Agent, and what are the consequences of failing to do so?",
+    "Q2: How does the agreement define a Material Adverse Effect, and what are the specific events or circumstances that would trigger such an effect?",
+    "Q3: What are the rights and remedies available to the Finance Parties in the event of an Event of Default by the Borrower, and how do these rights and remedies interact with the duties and responsibilities of the Facility Agent?"
+  ],
+  "batch 37": [
+    "Q1: What are the specific circumstances under which the Facility Agent may assume certain representations or facts made by other parties to this Agreement, and what are the implications of such assumptions?",
+    "Q2: How do the obligations of each Finance Party under this Agreement relate to one another, and what are the consequences of a Finance Party's failure to perform its obligations?",
+    "Q3: What are the requirements for a Lender to transfer its rights and obligations under this Agreement to another financial institution, and what are the implications of such a transfer for the Transferee Bank?"
+  ],
+  "batch 38": [
+    "Q1: What are the key provisions and obligations outlined in the Fixed Asset Syndication Loan Agreement, particularly with regards to confidentiality, disclosure, and notice requirements?",
+    "Q2: How do the parties to the agreement, including the Borrower and the Finance Parties, interact and communicate with each other, particularly with regards to amendments, waivers, and dispute resolution?",
+    "Q3: What are the key terms and conditions of the agreement, including the original commitment, drawdown notice, transfer certificate, and other schedules and exhibits, and how do they impact the relationship between the parties?"
+  ],
+  "batch 39": [
+    "Q1: What are the primary terms and conditions of the RMB Nine Billion fixed asset syndication loan agreement between Tesla (Shanghai) Co., Ltd. and the Original Lenders, as supplemented by the Supplemental Agreement dated December 18, 2019?",
+    "Q2: What are the key definitions and interpretations used in the Supplemental Agreement, including the meanings of Financial Year, Commitment Percentage, Commitment, Original Commitment, Loan Period, Outstanding Advances, Loan Account, Facility, Lender, Loan Prime Rate (LPR), and Interest Rate?",
+    "Q3: What are the roles and responsibilities of the parties involved in the Supplemental Agreement, including the Borrower, the Lead Arrangers, the Facility Agent, the Trade Finance Bank, and the Original Lenders, and what are the key provisions related to their obligations and rights?"
+  ],
+  "batch 40": [
+    "Q1: What are the specific conditions that must be met by the Borrower before the Facility Agent can confirm the satisfaction of the conditions precedent to each drawdown under the Facility Agreement?",
+    "Q2: How does the Facility Agent determine the rate of interest accrued on each Advance drawn in RMB or USD under the Facility, and what happens if the USD Benchmark Rate is no longer announced?",
+    "Q3: What are the repayment terms under the Facility Agreement, including the loan period, repayment of Outstanding Advances, and prepayment of principal and interest?"
+  ],
+  "batch 41": [
+    "Q1: What are the specific circumstances under which the Facility Agent is obligated to make an Advance on the proposed Drawdown Date, and what are the consequences if any Lender fails to make the Advance on time?",
+    "Q2: How does the Facility Agent distribute payments received from the Borrower, and what are the conditions under which a Recovering Lender may notify the Facility Agent of a Sharing Amount?",
+    "Q3: What are the rights and obligations of the Facility Agent in the event of an Event of Default, and how does the Facility Agent exercise its rights to grant a waiver or approve a remedy of the relevant Event of Default?"
+  ],
+  "batch 42": [
+    "Q1: What are the conditions under which a Lender may assume the risks of judgments and decisions made in relation to the transactions contemplated under this Agreement?",
+    "Q2: How does the Facility Agent fulfill its supervisory responsibility of the accounts opened by the Borrower under this Agreement, and what are the subsequent management responsibilities of the Finance Parties?",
+    "Q3: What are the procedures for convening a syndication conference, and how does the Facility Agent notify each Lender of the conference, including the time, place, manner, and proposal of the conference?"
+  ],
+  "batch 43": [
+    "Q1: What are the key terms and conditions outlined in the Syndication Revolving Loan Agreement between Tesla (Shanghai) Co., Ltd. and the participating banks, including the governing law, dispute resolution, and loan amount?",
+    "Q2: What is the structure of the loan agreement, including the roles of the Facility Agent, Primary Lead Arranger, and Joint Lead Arrangers, and how do they interact with each other and with the Borrower?",
+    "Q3: What are the key subsidiaries of Tesla, Inc. listed in Exhibit 21.1, and what is the significance of these subsidiaries in the context of the loan agreement and the overall business operations of Tesla?"
+  ],
+  "batch 44": [
+    "Q1: What are the names of all subsidiaries and affiliates of Tesla, Inc. mentioned in the 2020 Annual Report on Form 10-K?",
+    "Q2: What are the locations of all subsidiaries and affiliates of Tesla, Inc. mentioned in the 2020 Annual Report on Form 10-K?",
+    "Q3: What are the types of entities (e.g., corporations, limited liability companies, partnerships) that comprise the subsidiaries and affiliates of Tesla, Inc. mentioned in the 2020 Annual Report on Form 10-K?"
+  ],
+  "batch 45": [
+    "Q1: What are the key technological advancements and innovations that Tesla has made in the development of its electric vehicles and energy storage products, and how do these advancements contribute to the company's mission to accelerate the world's transition to sustainable energy?",
+    "Q2: How does Tesla's business model and sales strategy, including its direct-to-consumer sales approach and the use of various financing options, contribute to the company's ability to offer its products at a competitive price and to achieve its goal of making sustainable energy accessible to all?",
+    "Q3: What role do government programs, incentives, and regulations play in supporting Tesla's business and products, and how do these programs and incentives impact the company's operations and financial performance?"
+  ],
+  "batch 46": [
+    "Q1: How do the evolving laws and regulations related to self-driving vehicles impact Tesla's ability to develop and deploy autonomous features in various markets?",
+    "Q2: What are the potential risks and challenges associated with Tesla's plans to expand its global production and delivery capabilities, including the ramp-up of new products and features, and how might these impact the company's financial condition and operating results?",
+    "Q3: How might changes in consumer demand for electric vehicles, government regulations and incentives, and competition from other types of alternative fuel vehicles affect Tesla's business prospects, financial condition, and operating results?"
+  ],
+  "batch 47": [
+    "Q1: What are the potential consequences of a widespread economic downturn or other catastrophic event on Tesla's vehicle and solar energy system financing programs, including the risk of customer default and substantial credit losses?",
+    "Q2: How might the loss of key employees, such as Elon Musk, or significant portions of Tesla's workforce disrupt the company's operations, delay the development and introduction of new products and services, and impact its ability to compete?",
+    "Q3: What are the potential risks and consequences of unauthorized access to or control of Tesla's products or their systems, including the loss of data, legal claims, or government investigations, and how might these events harm the company's brand, prospects, and operating results?"
+  ],
+  "batch 48": [
+    "Q1: What are the potential risks and consequences associated with Tesla's manufacturing equipment becoming obsolete, and how might this impact the company's financial condition and operating results?",
+    "Q2: How might changes in government incentives and regulations, such as tax credits and rebates, affect demand for Tesla's products, particularly in the solar and energy storage sectors, and what are the potential consequences for the company's business and financial condition?",
+    "Q3: What are the potential risks and consequences associated with Tesla's failure to comply with evolving laws and regulations, such as those related to data protection and cybersecurity, and how might this impact the company's brand, prospects, and operating results?"
+  ],
+  "batch 49": [
+    "Q1: What are the potential risks and uncertainties that could impact Tesla's financial condition and operating results, including the volatility of the company's common stock price and the impact of regulatory limitations and other obstacles on the company's ability to sell vehicles directly to consumers?",
+    "Q2: How does Tesla's business model and financial performance vary from period to period, and what factors contribute to these fluctuations, including the company's operating costs, production capacity, and revenue from new markets and products?",
+    "Q3: What are the potential risks and consequences of Tesla's convertible senior notes and warrant transactions, including the dilution of ownership interest and the potential impact on the company's common stock price and market value?"
+  ],
+  "batch 50": [
+    "Q1: What are the key factors that contribute to the uncertainties in establishing and ramping up manufacturing operations for the company's plans, and how do these uncertainties impact the company's ability to meet its ambitious technological targets?",
+    "Q2: How does the company's cost reduction efforts and additional localized procurement and manufacturing impact the affordability of its vehicles, and what role does the company's strategy of improving vehicle functionality play in generating demand and brand awareness?",
+    "Q3: What are the implications of the company's adoption of ASC 842 on its accounting for direct vehicle operating leasing programs, and how does this impact the company's revenue recognition and cash flow from financing activities?"
+  ],
+  "batch 51": [
+    "Q1: What are the primary factors that contribute to the increase in automotive sales revenue in the year ended December 31, 2020, as compared to the year ended December 31, 2019?",
+    "Q2: How do the changes in warranty reserve estimates and the introduction of new products, such as Megapack, impact the energy generation and storage segment's revenue and cost of revenues in the year ended December 31, 2020?",
+    "Q3: What are the key drivers of the increase in cost of revenues for the automotive and services and other segment in the year ended December 31, 2020, as compared to the year ended December 31, 2019, and how do these changes impact the segment's gross profit and gross margin?"
+  ],
+  "batch 52": [
+    "Q1: What were the primary factors contributing to the increase in cost of energy generation and storage revenue in the year ended December 31, 2020, as compared to the year ended December 31, 2019?",
+    "Q2: How did the company's research and development expenses change in the year ended December 31, 2020, as compared to the year ended December 31, 2019, and what were the primary factors contributing to this change?",
+    "Q3: What were the company's sources of liquidity and cash flows as of December 31, 2020, and how did the company expect to use these funds to support its ongoing operations and future growth?"
+  ],
+  "batch 53": [
+    "Q1: What are the total contractual obligations of Tesla, Inc. as of December 31, 2020, including operating lease obligations, finance lease obligations, and purchase obligations?",
+    "Q2: How does Tesla, Inc. account for foreign currency risk, and what are the potential impacts of changes in exchange rates on the company's revenue and operating results?",
+    "Q3: What are the principal considerations for the auditor's determination that performing procedures relating to automotive sales to customers with a resale value guarantee or buyback option is a critical audit matter, and how did the auditor address this matter in the audit?"
+  ],
+  "batch 54": [
+    "Q1: What are the total revenues and total cost of revenues for Tesla, Inc. for the years 2020, 2019, and 2018, respectively, and how do these figures compare across the three years?",
+    "Q2: What are the net income (loss) and comprehensive income (loss) for Tesla, Inc. for the years 2020, 2019, and 2018, respectively, and how do these figures compare across the three years?",
+    "Q3: What are the cash flows from operating, investing, and financing activities for Tesla, Inc. for the years 2020, 2019, and 2018, respectively, and how do these figures compare across the three years?"
+  ],
+  "batch 55": [
+    "Q1: What were the total cash proceeds and total shares issued in the public offering of common stock on February 19, 2020, and how did the stock split on August 10, 2020, affect the share and per-share amounts presented in the accompanying notes?",
+    "Q2: How did the company account for the direct vehicle operating leasing programs, and what were the terms and conditions of the leases, including the option to return the vehicle or purchase it at the end of the lease term?",
+    "Q3: What were the revenue recognition criteria for the energy generation and storage sales, including the recognition of revenue for solar energy systems and power purchase agreements (PPAs), and how did the company account for the operations and maintenance service revenue?"
+  ],
+  "batch 56": [
+    "Q1: What are the key factors that contribute to the variability in the company's accounts receivable balance, and how do these factors impact the company's financial statements?",
+    "Q2: How does the company account for the costs associated with the sale of solar energy systems and energy storage systems, and what are the key components of these costs?",
+    "Q3: What are the implications of the company's adoption of ASC 326, Financial Instruments – Credit Losses, on its accounting for customer notes receivable, and how does this impact the company's financial statements?"
+  ],
+  "batch 57": [
+    "Q1: What is the accounting method used to record the cost of solar energy systems and operating lease vehicles, and how does it differ from the method used for other assets?",
+    "Q2: How does the company determine the useful life of its assets, such as solar energy systems and property, plant, and equipment, and what methods are used to depreciate them?",
+    "Q3: What is the impact of the adoption of ASU 2019-12 on the company's consolidated financial statements, and how does it affect the accounting for income taxes, franchise tax, and goodwill?"
+  ],
+  "batch 58": [
+    "Q1: What are the total intangible assets and their carrying amounts as of December 31, 2020, and 2019, including the breakdown of finite-lived and indefinite-lived intangible assets?",
+    "Q2: What are the fair values of our financial instruments that are not re-measured at fair value, including accounts receivable, MyPower customer notes receivable, accounts payable, accrued liabilities, customer deposits, and debt, as of December 31, 2020, and 2019?",
+    "Q3: What are the total debt and finance leases as of December 31, 2020, and 2019, including the breakdown of recourse debt, non-recourse debt, and finance leases, and the interest rates and maturity dates of each debt instrument?"
+  ],
+  "batch 59": [
+    "Q1: What are the key differences between the various types of debt facilities and financing arrangements utilized by the company, and how do they impact the company's financial position and obligations?",
+    "Q2: How do the convertible note hedge transactions and warrant sales impact the company's financial statements, and what are the accounting implications of these transactions?",
+    "Q3: What are the key terms and conditions of the various debt facilities and financing arrangements, including the interest rates, repayment terms, and any collateral or security requirements?"
+  ],
+  "batch 60": [
+    "Q1: What are the total outstanding borrowings under the Fixed Asset Facility and the Working Capital Facility, and how are they secured?",
+    "Q2: What are the interest rates for the Fixed Asset Facility and the Working Capital Facility, and how do they compare to the market quoted interest rate published by the People's Bank of China?",
+    "Q3: What are the future scheduled principal maturities of debt as of December 31, 2020, and how do they break down between recourse debt and non-recourse debt?"
+  ],
+  "batch 61": [
+    "Q1: What are the total unrecognized stock-based compensation expenses related to non-performance awards as of December 31, 2020, and how long will they be recognized over a weighted-average period?",
+    "Q2: What are the changes in valuation allowance on our net deferred taxes during the years ended December 31, 2020, 2019, and 2018, and how does it impact our income tax expense?",
+    "Q3: What are the potential outcomes of the current examination by the IRS for the years 2015 to 2018, and how might it affect our unrecognized tax benefits within the next 12 months?"
+  ],
+  "batch 62": [
+    "Q1: What are the total maximum funding allocations from the State of New York for the SUNY Foundation's construction costs, acquisition and commissioning of manufacturing equipment, and additional specified scope costs, and how do these allocations impact Tesla's financial obligations?",
+    "Q2: What are the potential consequences for Tesla if it fails to meet its investment and job creation requirements under the operating lease arrangement for Gigafactory Shanghai, and how does this impact its financial position and prospects?",
+    "Q3: What are the implications for Tesla's business, results of operations, prospects, cash flows, financial position, and brand if it is subject to an unfavorable ruling or development in the various legal proceedings and claims it is facing, and how does this impact its ability to defend against these claims?"
+  ],
+  "batch 63": [
+    "Q1: What are the total liabilities and lease pass-through financing obligation as of December 31, 2020, and how do they compare to the previous year?",
+    "Q2: How have the company's revenues and gross profit changed over the past three years, and what are the main drivers of these changes?",
+    "Q3: What are the company's plans for investing in digital assets, such as bitcoin, and how will they be accounted for in the company's financial statements?"
+  ],
+  "batch 64": [
+    "Q1: What are the key dates and agreements related to the waiver of the Fifth Amended and Restated Investor's Rights Agreement between the Registrant and certain holders of the capital stock of the Registrant?",
+    "Q2: What are the details of the various supplemental indentures and their corresponding filing dates related to the SolarCity's Solar Bonds, including the 4.00%, 4.70%, 5.00%, 5.45%, and 5.75% series?",
+    "Q3: What are the key filing dates and descriptions of the various exhibits and supplemental indentures related to the Registrant's agreements with U.S. Bank National Association, including the Indenture, Third Supplemental Indenture, and Fourth Supplemental Indenture?"
+  ],
+  "batch 65": [
+    "Q1: What are the key terms and conditions of the various agreements and indentures related to SolarCity's bond offerings, including the Supplemental Indentures and the Loan and Security Agreements?",
+    "Q2: How have the relationships between Tesla, Panasonic, and other parties evolved over time, as reflected in the various agreements and amendments related to the Gigafactory and supply agreements?",
+    "Q3: What are the key financial terms and conditions of the ABL Credit Agreement and its amendments, including the First Amendment to the Amended and Restated ABL Credit Agreement?"
+  ],
+  "batch 66": [
+    "Q1: What are the key agreements and contracts related to Tesla's research and development alliances, particularly with the State University of New York, as of 2020?",
+    "Q2: What are the terms and conditions of the 2021 Pricing Agreement (Japan Cells) between Tesla and Panasonic Corporation of North America, including the pricing validity period, volume commitment period, and payment terms?",
+    "Q3: What are the key financial agreements and contracts related to Tesla's loan and security agreements, particularly with Deutsche Bank Trust Company Americas and Industrial and Commercial Bank of China, as of 2020?"
+  ],
+  "batch 67": [
+    "Q1: What are the specific conditions under which the terms of the 2019 Pricing Agreement (Japan Cells) between the Parties take precedence over those in this PPA in the event of a conflict?",
+    "Q2: What are the consequences for Tesla if it fails to order and purchase the minimum volume of Cells as committed to in the Purchase Commitment, and what are the procedures for discussing and resolving any shortfall in Cell orders?",
+    "Q3: What are the requirements for Seller to comply with Tesla's Conduct Policies, including the Tesla Supplier Code of Conduct and the Human Rights and Conflict Minerals Policy, and what are the consequences for non-compliance?"
+  ],
+  "batch 68": [
+    "Q1: What are the key terms and conditions of the 2021 Pricing Agreement (Japan Cells) between Tesla, Inc. and Panasonic Corporation of North America, including the exhibit schedules and adjustment provisions?",
+    "Q2: What are the amendments made to the Amended and Restated ABL Credit Agreement by the First Amendment to Amended and Restated ABL Credit Agreement, including the joinder and assumption of obligations by Tesla UK, and the amendments to the Credit Agreement, U.S. Guaranty, and Dutch Guaranty?",
+    "Q3: What are the conditions precedent for the effectiveness of the First Amendment to Amended and Restated ABL Credit Agreement, including the receipt of certain certificates, opinions, and documentation from the Credit Parties, and the satisfaction of certain conditions related to the security agreements and beneficial ownership certifications?"
+  ],
+  "batch 69": [
+    "Q1: What are the specific obligations and liabilities that remain in full force and effect for the Borrowers and Credit Parties under the Amended Credit Agreement, as outlined in Section 7 of the First Amendment?",
+    "Q2: How does the First Amendment affect the rights and remedies of the Lenders and Agent under the Amended Credit Agreement, particularly in relation to the obligations and liabilities of the Borrowers and Credit Parties?",
+    "Q3: What is the governing law and jurisdiction for the First Amendment and the rights of the parties under it, as specified in Section 8 of the First Amendment?"
+  ],
+  "batch 70": [
+    "Q1: What are the conditions precedent to credit events on the effective date, and how do they impact the borrowing base calculation?",
+    "Q2: What are the representations and warranties made by the Company and the Borrowers, and how do they affect the credit facilities provided under the Amended and Restated ABL Credit Agreement?",
+    "Q3: What are the affirmative covenants and negative covenants imposed on the Borrowers, and how do they impact the credit facilities and the relationship between the Borrowers and the Lenders?"
+  ],
+  "batch 71": [
+    "Q1: What are the specific conditions under which a Person is deemed to control another Person in the context of this credit agreement?",
+    "Q2: How does the concept of \"Aggregate Exposure\" relate to the overall financial situation of the Company and its subsidiaries, and what are the key components that make up this calculation?",
+    "Q3: What is the process for determining the Benchmark Replacement, and what are the key factors that influence this determination, including the role of the Administrative Agent and the U.S. Borrower?"
+  ],
+  "batch 72": [
+    "Q1: What are the specific conditions under which a Benchmark Transition Event is deemed to have occurred, and how does it impact the availability of a Benchmark?",
+    "Q2: What is the definition of a Change of Control, and how does it affect the Company's obligations and the repurchase of Permitted Convertible Notes or Permitted Additional Indebtedness?",
+    "Q3: How does the definition of Consolidated EBITDA account for non-cash charges, and what are the specific items that are added back or subtracted from Consolidated Net Income in determining Consolidated EBITDA?"
+  ],
+  "batch 73": [
+    "Q1: What is the aggregate amount of all assets of the Company and its Consolidated Subsidiaries, as set forth in the most recent consolidated balance sheet, computed in accordance with GAAP?",
+    "Q2: What is the sum of the principal amount (or accreted principal amount) of all Indebtedness of the Company and its Subsidiaries, including Contingent Obligations, at any time, computed in accordance with the definition of Indebtedness?",
+    "Q3: What is the amount of any Contingent Obligation of a Person, including any obligation to purchase or supply funds to maintain the net worth or solvency of the primary obligor, calculated in accordance with the definition of Contingent Obligation?"
+  ],
+  "batch 74": [
+    "Q1: What are the specific criteria for determining Eligible Accounts, and how do they vary for different types of accounts and account debtors?",
+    "Q2: What are the requirements for Eligible Inventory, and how do they differ for inventory owned by U.S. Borrowers, Dutch Borrowers, and UK Borrowers?",
+    "Q3: What are the conditions under which an Account or Inventory may be excluded from being Eligible, and how does the Administrative Agent exercise its discretion in making such determinations?"
+  ],
+  "batch 75": [
+    "Q1: What are the specific criteria for Eligible Inventory, and how do they vary across different types of inventory, such as raw materials, finished goods, and in-transit inventory?",
+    "Q2: What are the key requirements for Eligible Real Property, including the need for a mortgage, title insurance, and a survey, and how do these requirements differ from those for Eligible Inventory?",
+    "Q3: How do the definitions of Eligible Inventory and Eligible Real Property intersect with the concept of Energy Environmental Attributes, and what implications does this have for the valuation and management of these assets?"
+  ],
+  "batch 76": [
+    "Q1: What are the key definitions and concepts related to environmental law, liability, and regulations as outlined in this document?",
+    "Q2: How do the definitions of \"Equipment\" and \"Equity Interests\" impact the financial and operational aspects of the company, particularly in relation to the Uniform Commercial Code and ERISA?",
+    "Q3: What are the implications of the EU Bail-In Legislation Schedule, FATCA, and FIRREA on the company's financial and regulatory obligations, particularly in relation to foreign currency denominated loans and foreign pension plans?"
+  ],
+  "batch 77": [
+    "Q1: What are the conditions that must be satisfied for an Incremental Commitment to become effective, as outlined in Section 2.14 of the Credit Documents?",
+    "Q2: How is the Individual Exposure of any Lender calculated, as per the definition provided in the Credit Documents?",
+    "Q3: What is the meaning of Material Disposition, as defined in the Credit Documents, and what are the implications of such a disposition on the Company and its Subsidiaries?"
+  ],
+  "batch 78": [
+    "Q1: What are the specific meanings of the terms \"Maximum Letter of Credit Amount\", \"Maximum Rate\", and \"Maximum Swingline Amount\" in the context of the provided document?",
+    "Q2: How do the definitions of \"Permitted Additional Secured Indebtedness\" and \"Permitted Additional Unsecured Indebtedness\" relate to the overall financial structure and obligations of the Company and its Subsidiaries?",
+    "Q3: What are the key characteristics and requirements of a \"Permitted Securitization Facility\" as defined in the document, and how does it differ from other types of financing arrangements?"
+  ],
+  "batch 79": [
+    "Q1: What are the implications of incurring any indebtedness (other than revolving indebtedness) after the first day of the relevant calculation period or test period, as if such indebtedness had been incurred (and the proceeds thereof applied) on the first day of such test period or calculation period?",
+    "Q2: How do the rules for determining consolidated EBITDA on a pro forma basis apply to material acquisitions and dispositions, and what effect is given to such events in making any determination of consolidated EBITDA?",
+    "Q3: What are the requirements for a \"Qualifying Lender\" under the agreement, and how do the definitions of \"Qualifying Lender\" and \"Lender\" relate to each other?"
+  ],
+  "batch 80": [
+    "Q1: What are the key definitions and agreements outlined in the document, and how do they relate to the overall structure and purpose of the Credit Agreement?",
+    "Q2: How do the various definitions and agreements, such as the Security Agreement, the Security Documents, and the Securitization Subsidiary, interact with one another to facilitate the financing and hedging activities of the Company and its Subsidiaries?",
+    "Q3: What are the implications of the document's definitions and agreements on the Company's and its Subsidiaries' financial obligations, risk management, and compliance with regulatory requirements?"
+  ],
+  "batch 81": [
+    "Q1: What are the specific conditions under which a Lender is not required to make a Revolving Loan, as per Section 2.01 of the Credit Agreement?",
+    "Q2: How does the definition of \"U.S. Borrowing Base\" in Section 1.01 relate to the calculation of the \"U.S. Dollar Equivalent\" in Section 1.01, and what are the implications for the Total Revolving Loan Commitment?",
+    "Q3: What are the consequences of a Default or Event of Default on the Administrative Agent's ability to revalue the U.S. Dollar Equivalent of outstanding amounts under the Credit Documents, as per Section 1.01?"
+  ],
+  "batch 82": [
+    "Q1: What are the conditions under which the Swingline Lender is not required to make a Swingline Loan to a Borrower, and what are the consequences of exceeding the Aggregate Dutch Borrower Exposure or the Dutch Borrowing Base?",
+    "Q2: How does the Administrative Agent's right to establish Reserves affect the Borrowing Bases, and what are the limitations on the Administrative Agent's discretion in this regard?",
+    "Q3: What are the procedures for making Mandatory Borrowings, and what are the consequences of a Borrower's failure to comply with the conditions precedent to making Revolving Loans?"
+  ],
+  "batch 83": [
+    "Q1: What are the specific conditions under which a Lender may elect to not permit the selection of an Interest Period for a LIBOR Loan, and what are the consequences of such an election on the Borrower's obligations?",
+    "Q2: How do the Borrowers and the Administrative Agent respond to changes in the London interbank market that affect the ascertaining of the applicable interest rate for LIBOR Loans, and what are the implications of such changes on the Borrowers' obligations?",
+    "Q3: What are the procedures for establishing an alternate rate of interest to replace the LIBO Rate in the event of a Benchmark Transition Event, a Term SOFR Transition Event, or an Early Opt-in Election, and how does the Administrative Agent notify the U.S. Borrower and the Lenders of such events?"
+  ],
+  "batch 84": [
+    "Q1: What are the specific conditions under which a LIBOR Loan can be converted to a Base Rate Loan, and what are the implications of such a conversion on the loan terms and the parties involved?",
+    "Q2: How do the provisions of Section 2.10 regarding the impact of changes in applicable laws or regulations on LIBOR Loans affect the obligations of the Borrowers and the Lenders, and what are the consequences of non-compliance with these provisions?",
+    "Q3: What are the procedures and requirements for replacing a Defaulting Lender or an Impacted Lender under Section 2.13, and what are the implications of such a replacement on the loan terms and the parties involved?"
+  ],
+  "batch 85": [
+    "Q1: What are the specific provisions and conditions that must be met for an Incremental Commitment to be effective, as outlined in Section 2.14 of the agreement?",
+    "Q2: How do the provisions of Section 2.15, specifically clauses (i) through (v), address the reallocation of Swingline Loan Exposure and Letter of Credit Exposure among Non-Defaulting Lenders in the event of a Defaulting Lender?",
+    "Q3: What are the key requirements and procedures for the Extension of Revolving Loan Commitments, as outlined in Section 2.19 of the agreement, including the notice and consent requirements for Lenders?"
+  ],
+  "batch 86": [
+    "Q1: What are the specific conditions under which an Issuing Lender is not obligated to issue a Letter of Credit, as outlined in Section 3.02 of the Agreement?",
+    "Q2: How do the obligations of the Participants to make payments to each Issuing Lender with respect to Letters of Credit differ from other circumstances, as described in Section 3.04(f) of the Agreement?",
+    "Q3: What are the joint and several obligations of the U.S. Borrowers, Dutch Borrowers, or UK Borrowers to reimburse each Issuing Lender with respect to drafts, demands, and other presentations for payment under Letters of Credit issued by it, as outlined in Section 3.05(b) of the Agreement?"
+  ],
+  "batch 87": [
+    "Q1: What are the conditions under which the applicable Borrowers shall repay the applicable Loans and/or cash collateralize outstanding Letters of Credit, as per Section 5.02(a)(i)?",
+    "Q2: How do the Revolving Loan Commitments of each Lender terminate in their entirety upon the Final Maturity Date applicable thereto, as per Section 4.03?",
+    "Q3: What are the requirements for the Borrowers to repay all Revolving Loans of a Lender, together with accrued and unpaid interest, Fees, and all other amounts then owing to such Lender, as per Section 5.02(b)?"
+  ],
+  "batch 88": [
+    "Q1: What are the specific conditions under which the Administrative Agent may extend the due date for payments made under this Agreement, and how do these conditions affect the payment terms for U.S. Borrowers, Dutch Borrowers, and UK Borrowers?",
+    "Q2: How do the Cash Management Control Agreements for Core U.S. Deposit Accounts, Core Dutch Deposit Accounts, and Core UK Deposit Accounts facilitate the collection and allocation of payments from Account Debtors, and what are the implications of these agreements for the Borrowers and the Administrative Agent?",
+    "Q3: What are the priority rules for the allocation of payments received by the Administrative Agent in a DB U.S. Account, a DB Netherlands Account, and a DB UK Account, and how do these rules affect the payment of outstanding Obligations for U.S. Borrowers, Dutch Borrowers, and UK Borrowers?"
+  ],
+  "batch 89": [
+    "Q1: What are the conditions precedent to the occurrence of a Credit Event on the Effective Date, as outlined in Section 6 of the Agreement?",
+    "Q2: How do Lenders and Borrowers interact with the Administrative Agent to provide necessary documentation and information, such as tax receipts and certificates, as per Section 5.04 of the Agreement?",
+    "Q3: What are the requirements for Lenders to confirm their tax status and provide necessary documentation, as per Section 5.04(e) of the Agreement, and what are the consequences of failing to do so?"
+  ],
+  "batch 90": [
+    "Q1: What are the specific requirements for the Company and its Subsidiaries to have paid all costs, duties, fees, and expenses to the Arrangers, Agents, and Lenders prior to the Effective Date, as per Section 6.12 of the Credit Agreement?",
+    "Q2: What are the conditions that must be met for the Company and its Subsidiaries to have no outstanding Indebtedness, Contingent Obligations, or Preferred Equity, except for certain permitted exceptions, as per Section 6.13 of the Credit Agreement?",
+    "Q3: What are the representations and warranties made by the Company and the other Borrowers to induce the Lenders to enter into the Agreement and make the Loans, as per Section 8 of the Credit Agreement?"
+  ],
+  "batch 91": [
+    "Q1: What is the current status of the Company's compliance with all applicable statutes, regulations, and orders of, and all applicable restrictions imposed by, all Governmental Authorities in respect of the conduct of its business and the ownership of its property, including Environmental Laws, as of the Effective Date?",
+    "Q2: Are there any pending or threatened environmental claims against the Company or any of its Subsidiaries, or against or relating to any Real Property owned, leased, or operated by the Company or any of its Subsidiaries, that could reasonably be expected to have a Material Adverse Effect?",
+    "Q3: Has the Company or any of its Subsidiaries incurred any liability under Section 4069 or 4212(c) of ERISA, which either individually or in the aggregate could reasonably be expected to result in a Material Adverse Effect?"
+  ],
+  "batch 92": [
+    "Q1: What are the specific requirements for the Company to provide Borrowing Base Certificates, and what are the consequences of failing to do so?",
+    "Q2: What are the Company's obligations regarding compliance with Environmental Laws, and what are the consequences of failing to comply?",
+    "Q3: What are the Company's obligations regarding the maintenance of property, insurance, and the provision of information to the Administrative Agent, and what are the consequences of failing to comply?"
+  ],
+  "batch 93": [
+    "Q1: What are the specific requirements for a Wholly-Owned Subsidiary to become a party to the Intercreditor Agreement and other applicable Security Documents, as outlined in Section 9.12 of the agreement?",
+    "Q2: How do the Credit Parties acknowledge and consent to the potential write-down and conversion of liabilities of EEA Financial Institutions, as described in Section 9.15 of the agreement?",
+    "Q3: What are the permitted Liens that the Company and its Subsidiaries are allowed to create, incur, assume, or suffer to exist, as outlined in Section 10.01 of the agreement?"
+  ],
+  "batch 94": [
+    "Q1: What are the specific conditions under which the Company or its Subsidiaries are permitted to incur Indebtedness, as outlined in Section 10.04 of the Agreement?",
+    "Q2: What types of Liens are permitted under Section 10.01 of the Agreement, and what are the specific requirements for each type of Lien?",
+    "Q3: What are the restrictions on the Company's ability to change its jurisdiction of organization, as outlined in Section 10.02(b) of the Agreement?"
+  ],
+  "batch 95": [
+    "Q1: What are the specific conditions under which the Company or its Subsidiaries are permitted to incur Indebtedness, and what are the aggregate principal amount limits for each type of Indebtedness?",
+    "Q2: How do the provisions of this Agreement restrict the Company's ability to enter into transactions with Affiliates, and what exceptions are made for certain types of transactions?",
+    "Q3: What are the requirements for the Company or its Subsidiaries to incur Indebtedness for the purpose of providing all or a portion of, or reimbursing the Company or any Subsidiary for expenditures relating to the cost of construction, repair, or improvement of any Manufacturing Facility?"
+  ],
+  "batch 96": [
+    "Q1: What are the specific conditions under which the Company or its Subsidiaries may make payments or prepayments on, or redemptions or acquisitions for value of, Permitted Convertible Notes, SolarCity Convertible Notes, or Permitted Additional Indebtedness?",
+    "Q2: What are the restrictions on the creation or existence of encumbrances or restrictions on the ability of any Subsidiary to pay dividends or make other distributions on its capital stock or any other Equity Interest owned by the Company or any of its Subsidiaries?",
+    "Q3: What are the limitations on the issuance of Preferred Equity or redeemable common stock or other redeemable common Equity Interests by the Company or its Subsidiaries?"
+  ],
+  "batch 97": [
+    "Q1: What are the specific conditions under which the Administrative Agent may resign from its duties, and what are the consequences of such resignation on the performance of the Credit Documents?",
+    "Q2: How does the concept of Event of Default (EoD) impact the obligations and rights of the Credit Parties, the Lenders, and the Administrative Agent, particularly in the context of the Security Documents and the Intercreditor Agreement?",
+    "Q3: What are the key provisions and implications of the indemnification clause (Section 12.06) in the Credit Documents, and how does it affect the liability and responsibilities of the Lenders and the Administrative Agent?"
+  ],
+  "batch 98": [
+    "Q1: What are the specific circumstances under which the Administrative Agent may release a lien on Eligible Real Property, as outlined in Section 12.10 of the Agreement?",
+    "Q2: How do the Dutch Credit Parties' obligations under Section 12.12 of the Agreement differ from their Dutch Corresponding Debt, and what are the implications of these differences?",
+    "Q3: What are the indemnification obligations of the Borrowers under Section 13.01 of the Agreement, and what types of liabilities are they required to indemnify the Administrative Agent and other Indemnified Persons against?"
+  ],
+  "batch 99": [
+    "Q1: What are the implications of a Credit Party being required to pay an amount equal to the consideration for a supply to a Supplier, where the Supplier is the Person required to account to the relevant tax authority for the Foreign Tax?",
+    "Q2: How does the assignment of a Lender's Revolving Loan Commitment and related outstanding Obligations under Section 13.04.13.05(b) affect the Lender's obligations and status under the Agreement?",
+    "Q3: What are the consequences of a Lender failing to provide the Company and the Administrative Agent with the appropriate Internal Revenue Service Forms and a U.S. Tax Compliance Certificate, as required under Section 13.04.13.05(b)?"
+  ],
+  "batch 100": [
+    "Q1: What are the specific conditions under which the Administrative Agent may waive or modify certain provisions of the Agreement, and what are the implications of such actions on the rights and obligations of the parties involved?",
+    "Q2: How does the Agreement address the issue of confidentiality, and what are the permitted disclosures of information related to the Company or its Subsidiaries by the Agents and Lenders?",
+    "Q3: What are the procedures for the registration and transfer of Revolving Loan Commitments and Loans, and how does the Register maintained by the Administrative Agent affect the ownership and obligations of the parties involved?"
+  ],
+  "batch 101": [
+    "Q1: What are the implications of the Credit Parties waiving their sovereign immunity under the Foreign Sovereign Immunities Act of 1976, and how does this affect their liability in the event of a dispute?",
+    "Q2: How do the provisions of the Intercreditor Agreement, including the creation of liens on collateral, impact the relationships between the Lenders and the Credit Parties, and what are the consequences of any conflicts between the terms of the Intercreditor Agreement and the Credit Documents?",
+    "Q3: What are the effects of the U.S. Special Resolution Regimes on the resolution of Supported QFCs and QFC Credit Support, and how do the provisions of the Credit Documents govern the rights and obligations of the parties in the event of a Covered Entity becoming subject to a proceeding under a U.S. Special Resolution Regime?"
+  ],
+  "batch 102": [
+    "Q1: What are the primary obligations of the Guarantors under the Guaranty, and how do they relate to the payment of principal, interest, and other obligations of the UK Borrowers under the Credit Agreement?",
+    "Q2: What are the conditions precedent to the making of Loans to the Borrowers and the issuance of Letters of Credit for the account of the Borrowers under the Credit Agreement, and how do they relate to the execution and delivery of the Guaranty by each Guarantor?",
+    "Q3: What are the benefits accruing to each Guarantor under the Guaranty, and how do they relate to the execution and delivery of the Guaranty by each Guarantor in consideration of the receipt and sufficiency of the benefits?"
+  ],
+  "batch 103": [
+    "Q1: What are the primary obligations of a Guarantor under the terms of the Guaranty, and how do these obligations relate to the Guaranteed Obligations?",
+    "Q2: How do the waivers and releases granted by the Guarantors in Section 4 of the Guaranty affect their liability and rights under the agreement?",
+    "Q3: What are the consequences of an Event of Default under the Credit Agreement, and how do these consequences impact the rights and obligations of the Guarantors and the Secured Creditors?"
+  ],
+  "batch 104": [
+    "Q1: What are the specific conditions under which a Guarantor's obligations under this Guaranty may be terminated, and what are the implications of such termination on their contribution obligations?",
+    "Q2: How do the provisions of this Guaranty address the issue of fraudulent transfers or conveyances, and what steps are taken to ensure that the Guaranteed Obligations do not constitute a fraudulent transfer or conveyance?",
+    "Q3: What are the rules governing the payment of Guaranteed Obligations under this Guaranty, including the requirement that payments be made without setoff, counterclaim, or other defense, and in the same currency as the Obligation Currency?"
+  ],
+  "batch 105": [
+    "Q1: What are the key provisions and obligations of the Guaranty and Security Agreement in relation to currency conversion and exchange rates, particularly in the event of a change in the rate of exchange between the Judgment Currency Conversion Date and the date of actual payment of the amount due?",
+    "Q2: What are the definitions and interpretations of key terms in the Security Agreement, including Accession Deed, Account Control Agreement, and Perfection Requirements, and how do these definitions impact the enforceability of the Security Agreement in different jurisdictions?",
+    "Q3: What are the indemnity and miscellaneous provisions in the Security Agreement, including the principles of legal reservations, limitation acts, and quasi-security, and how do these provisions affect the rights and obligations of the parties to the agreement?"
+  ],
+  "batch 106": [
+    "Q1: What are the specific obligations and liabilities of a Chargor under this Deed, particularly in relation to the payment and discharge of Secured Obligations?",
+    "Q2: How does the conversion of a floating charge into a fixed charge occur under this Deed, and what are the circumstances that trigger such a conversion?",
+    "Q3: What rights and remedies does the Collateral Agent have in relation to the Security Assets, including the ability to exercise licenses and take possession of the assets?"
+  ],
+  "batch 107": [
+    "Q1: What are the specific conditions under which a floating charge can be crystallized, and what are the implications for the Chargor and the Collateral Agent?",
+    "Q2: How does the Deed address the issue of liability in the event of a default, and what are the rights and powers of the Collateral Agent in such a scenario?",
+    "Q3: What are the key provisions regarding the appointment and powers of a Receiver, and how do these provisions impact the relationship between the Chargor, the Collateral Agent, and the Receiver?"
+  ],
+  "batch 108": [
+    "Q1: What are the primary obligations that must be paid to the Secured Creditors in the event of a default, and how are the proceeds of the Security Assets distributed among the Secured Creditors?",
+    "Q2: What are the powers of a Receiver appointed under this Deed, and how do these powers relate to the Collateral Agent and the Security Assets?",
+    "Q3: How are the proceeds of the Security Assets applied among the Secured Creditors, and what are the rules for determining the Pro Rata Share of each Secured Creditor?"
+  ],
+  "batch 109": [
+    "Q1: What are the key obligations of the Chargors under this Deed, and how do they impact the relationship between the Chargors and the Collateral Agent?",
+    "Q2: How does the indemnity clause in Section 25.1 protect the Collateral Agent and other Secured Creditors from potential liabilities, and what are the limitations of this protection?",
+    "Q3: What are the consequences of a discharge or arrangement made in respect of the obligations of a Chargor or security for those obligations, and how does this impact the liability of the Chargors under this Deed?"
+  ],
+  "batch 110": [
+    "Q1: What are the key terms and conditions that the Chargors and the Collateral Agent agree to in the Security Agreement, and how do they impact the relationship between the parties?",
+    "Q2: What are the specific rights and obligations of the Account Bank in relation to the Charged Accounts, and how do they align with the terms of the Security Agreement?",
+    "Q3: How do the Accession Deed and the Security Agreement interact, and what are the implications of the Accession Deed for the rights and obligations of the Acceding Companies?"
+  ],
+  "batch 111": [
+    "Q1: What are the names of all subsidiaries and affiliates of Tesla, Inc. mentioned in this document, including those in the United States, China, Europe, and other countries?",
+    "Q2: What are the details of the loan commitments and revolving loan commitments made by various lenders to Tesla, Inc., as specified in Schedule 1.01(a) of this document?",
+    "Q3: What are the names and addresses of the witnesses, directors, and officers of Tesla, Inc. and its subsidiaries, as well as the signatures of the witnesses and directors, as mentioned in the signature block of this document?"
+  ],
+  "batch 112": [
+    "Q1: What are the primary segments of Tesla's business operations, and how do they contribute to the company's overall mission to accelerate the world's transition to sustainable energy?",
+    "Q2: What are the key technologies and innovations that Tesla is developing to improve the performance, safety, and user experience of its electric vehicles and energy storage products?",
+    "Q3: How does Tesla's vertically integrated business model and focus on user experience differentiate the company from other companies in the electric vehicle and energy storage industries?"
+  ],
+  "batch 113": [
+    "Q1: What are the primary factors that influence the adoption of energy storage systems, and how does Tesla's modular, scalable design contribute to its competitive advantage in this market?",
+    "Q2: How does Tesla's emphasis on innovation and proprietary designs, such as its Autopilot and FSD capabilities, impact its ability to compete in the electric vehicle market, and what measures does the company take to protect its intellectual property rights?",
+    "Q3: What are the key regulatory challenges and opportunities that Tesla faces in the energy storage and solar energy markets, and how does the company's strategy for navigating these challenges impact its ability to accelerate the world's transition to sustainable energy?"
+  ],
+  "batch 114": [
+    "Q1: How does Tesla's commitment to sustainability and responsible sourcing impact its ability to meet its production and growth targets, particularly in the context of increasing global demand for electric vehicles?",
+    "Q2: What are the potential risks and challenges associated with Tesla's reliance on a limited number of suppliers for critical components, such as battery cells, and how might these risks be mitigated?",
+    "Q3: How might Tesla's ability to innovate and adapt to changing market conditions, including the development of new products and services, be impacted by its need to maintain and grow its access to battery cells and related raw materials?"
+  ],
+  "batch 115": [
+    "Q1: What are the potential risks and challenges associated with the increasing competition in the electric vehicle market, and how may they impact Tesla's business and financial condition?",
+    "Q2: How may the loss of key employees, including Elon Musk, impact Tesla's ability to compete and maintain its market position, and what steps can the company take to mitigate this risk?",
+    "Q3: What are the potential consequences of a security incident or data breach affecting Tesla's information technology systems, and how may the company's reliance on service providers and its own systems contribute to this risk?"
+  ],
+  "batch 116": [
+    "Q1: What are the potential risks and consequences associated with the company's warranty reserves being inadequate to cover future warranty claims on its products?",
+    "Q2: How might the company's operations be impacted by the evolving laws and regulations related to environmental, social, and governance (ESG) practices, and what potential costs or risks could arise from non-compliance?",
+    "Q3: What are the potential consequences for the company if it fails to comply with a variety of U.S. and international privacy and consumer protection laws, and what types of regulatory or litigation-related actions could be taken against the company?"
+  ],
+  "batch 117": [
+    "Q1: What are the potential risks and uncertainties associated with Tesla's ability to meet its publicly announced guidance or other expectations about its business, and how might these risks impact the company's stock price?",
+    "Q2: How might the implementation of new product and manufacturing technologies, as well as the introduction of new products, impact Tesla's operating costs and revenues, and what are the potential implications for the company's financial results and stock price?",
+    "Q3: What are the potential consequences of a decline in the price of Tesla's common stock, and how might this impact the company's ability to meet its loan obligations, as well as the potential for stockholder litigation and the impact on the company's financial condition and operating results?"
+  ],
+  "batch 118": [
+    "Q1: What are the key factors that contribute to the increase in automotive sales revenue in the year ended December 31, 2022, as compared to the year ended December 31, 2021?",
+    "Q2: How do the changes in accounting estimates and assumptions, such as the valuation of inventory and the carrying value of assets, impact the financial statements of the company?",
+    "Q3: What are the primary drivers of the increase in cost of automotive sales revenue in the year ended December 31, 2022, as compared to the year ended December 31, 2021, and how do these changes affect the gross margin of the automotive segment?"
+  ],
+  "batch 119": [
+    "Q1: What were the primary drivers of the $703 million increase in cost of energy generation and storage revenue in 2022 compared to 2021, and how did this impact the company's overall financial performance?",
+    "Q2: How did the company's research and development expenses change in 2022 compared to 2021, and what were the main factors contributing to this change?",
+    "Q3: What were the key factors influencing the company's liquidity and capital resources in 2022, and how did the company's cash flows from operating, investing, and financing activities change during this period?"
+  ],
+  "batch 120": [
+    "Q1: What are the key audit matters and significant judgments made by management in determining the automotive warranty reserve for certain Tesla vehicle models, and how did the auditor evaluate the reasonableness of management's estimates?",
+    "Q2: What are the changes in accounting principles and their impact on the Company's financial statements, and how did the auditor address the critical audit matter related to the automotive warranty reserve?",
+    "Q3: What are the key components of the Company's internal control over financial reporting, and how did the auditor evaluate the effectiveness of the Company's internal control over financial reporting as of December 31, 2022?"
+  ],
+  "batch 121": [
+    "Q1: What is the total amount of cash and cash equivalents and restricted cash at the beginning and end of the period for the years 2022, 2021, and 2020, respectively?",
+    "Q2: How does Tesla's revenue recognition policy for automotive sales and leasing revenue differ from its policy for energy generation and storage sales revenue?",
+    "Q3: What is the impact of the 2022 Stock Split on the company's financial statements, and how are the share and per-share amounts presented in the financial statements affected by this event?"
+  ],
+  "batch 122": [
+    "Q1: What are the key factors considered when evaluating the creditworthiness of customers for financing options, and how do these factors impact the allowance for loan losses?",
+    "Q2: How do the company's revenue recognition policies for energy generation and storage contracts, including the use of the percentage of completion method and the allocation of consideration to various obligations, impact the financial statements?",
+    "Q3: What are the implications of the company's decision to capitalize initial direct costs from the execution of agreements for solar energy systems and PPAs, and how does this impact the financial statements?"
+  ],
+  "batch 123": [
+    "Q1: What are the key factors that contribute to the impairment of long-lived assets, including intangible assets and goodwill, and how do they impact the company's financial statements?",
+    "Q2: How do the company's government assistance programs and incentives, such as the Gigafactory New York and Shanghai agreements, affect its financial statements, and what are the terms and conditions of these arrangements?",
+    "Q3: What are the implications of the recently issued accounting pronouncements, including ASU 2021-08, ASU 2022-02, and ASU 2020-06, on the company's financial statements, and how do they impact its accounting policies and procedures?"
+  ],
+  "batch 124": [
+    "Q1: What are the total amounts of digital assets purchased and received by the company during the years ended December 31, 2022 and 2021, and what were the impairment losses and gains realized on these assets?",
+    "Q2: How do the company's assets and liabilities that were measured at fair value on a recurring basis change from December 31, 2021 to December 31, 2022, and what are the estimated fair values of the Convertible Senior Notes as of December 31, 2022 and 2021?",
+    "Q3: What are the total amounts of property, plant, and equipment, net, and construction in progress as of December 31, 2022 and 2021, and how do the company's accrued liabilities and other current liabilities change from December 31, 2021 to December 31, 2022?"
+  ],
+  "batch 125": [
+    "Q1: What are the key terms and conditions of the 2024 Notes, including the conversion price, conversion events, and repurchase provisions?",
+    "Q2: How do the lease pass-through financing obligations, such as the master lease payments, impact the company's cash flows and financial position?",
+    "Q3: What are the key features and terms of the 2019 Equity Incentive Plan, including the types of equity awards granted, vesting periods, and available shares for issuance?"
+  ],
+  "batch 126": [
+    "Q1: What is the total amount of stock-based compensation expense recorded by the company for the years ended December 31, 2022, 2021, and 2020, respectively?",
+    "Q2: What is the weighted-average grant date fair value of RSUs granted in the years ended December 31, 2022, 2021, and 2020, respectively, as adjusted to give effect to the 2022 Stock Split?",
+    "Q3: What is the total amount of unrecognized stock-based compensation expense related to non-performance awards as of December 31, 2022, which will be recognized over a weighted-average period of 2.26 years?"
+  ],
+  "batch 127": [
+    "Q1: What are the potential financial implications of the SEC's ongoing investigation into Tesla's governance processes and compliance with the SEC settlement, as amended?",
+    "Q2: How might the outcome of the ongoing litigation related to the SolarCity acquisition, including the potential appeal to the Supreme Court of Delaware, impact Tesla's financial position and prospects?",
+    "Q3: What are the potential consequences of the ongoing investigations and lawsuits related to alleged discrimination and harassment at Tesla, including the potential impact on the company's reputation and financial position?"
+  ],
+  "batch 128": [
+    "Q1: What are the total revenues and gross profit for the energy generation and storage segment for the years 2022, 2021, and 2020, respectively?",
+    "Q2: What are the long-lived assets by geographic area for the years 2022 and 2021, and what is the total amount of long-lived assets as of December 31, 2022?",
+    "Q3: What are the impairment losses on digital assets for the years 2022 and 2021, and what are the gains realized in connection with converting digital assets into fiat currency for the same years?"
+  ],
+  "batch 129": [
+    "Q1: What are the key dates and events related to the supplemental indentures and equity incentive plans of SolarCity, including the dates of the indentures, the series of bonds, and the types of bonds?",
+    "Q2: What are the main provisions and agreements related to the equity incentive plans and stock option agreements of SolarCity, including the 2003 Equity Incentive Plan, the 2010 Equity Incentive Plan, and the 2019 Equity Incentive Plan?",
+    "Q3: What are the key terms and conditions of the indemnification agreements between SolarCity and its directors, officers, and other parties, including the dates of the agreements, the parties involved, and the types of indemnification provided?"
+  ],
+  "batch 130": [
+    "Q1: What are the key agreements and contracts related to the supply of components, such as cells and modules, to Tesla from Panasonic Corporation and its subsidiaries, as disclosed in the 10-K and 10-Q filings?",
+    "Q2: What are the terms and conditions of the Amended and Restated Agreement for Research & Development Alliance on Triex Module Technology between The Research Foundation for The State University of New York and Silevo, LLC, as disclosed in the 10-Q filings?",
+    "Q3: What are the details of the Grant Contract for State-Owned Construction Land Use Right between Shanghai Planning and Land Resource Administration Bureau and Tesla (Shanghai) Co., Ltd., as disclosed in the 10-Q filing?"
+  ],
+  "batch 131": [
+    "Q1: What are the key terms and definitions outlined in Article I of the Credit Agreement, and how do they impact the loan terms and conditions?",
+    "Q2: What are the roles and responsibilities of the Administrative Agent, Syndication Agent, and Documentation Agents as outlined in Article VIII of the Credit Agreement, and how do they contribute to the overall administration of the loan?",
+    "Q3: What are the key covenants and obligations of the Borrower as outlined in Article V of the Credit Agreement, and how do they ensure the Borrower's compliance with the loan terms and conditions?"
+  ],
+  "batch 132": [
+    "Q1: What are the conditions under which a Benchmark Transition Event is deemed to have occurred, and what are the implications for the Benchmark Replacement Date and the Benchmark Unavailability Period?",
+    "Q2: How does the definition of a Defaulting Lender impact the Borrower's obligations and the Administrative Agent's duties, and what are the consequences of a Lender being deemed a Defaulting Lender?",
+    "Q3: What are the key differences between a Disqualified Institution and a Discretionary Guarantor, and how do these designations affect the Borrower's relationships with its Subsidiaries and Affiliates?"
+  ],
+  "batch 133": [
+    "Q1: What are the key definitions and terms used in this document, particularly in the context of financial agreements and obligations?",
+    "Q2: How do the various definitions of \"Indebtedness\" and \"Guarantee\" impact the understanding of financial obligations and liabilities in this document?",
+    "Q3: What are the implications of the \"Excluded Subsidiary\" and \"Excluded Taxes\" definitions on the scope of financial agreements and obligations in this document?"
+  ],
+  "batch 134": [
+    "Q1: What are the specific types of obligations that are excluded from the definition of Indebtedness in this agreement, and how do they relate to the ordinary course of business?",
+    "Q2: What is the meaning of the term \"Permitted Encumbrances\" in this agreement, and how does it relate to the concept of Liens and other encumbrances on assets?",
+    "Q3: What is the significance of the \"Material Indebtedness\" threshold of $350,000,000, and how does it impact the definition of Material Indebtedness in this agreement?"
+  ],
+  "batch 135": [
+    "Q1: What are the implications of a change in the rating system of Moody's or S&P on the Applicable Rate, and how is it determined?",
+    "Q2: How does the definition of \"Relevant Governmental Body\" apply to a Benchmark Replacement in respect of Obligations, interest, fees, commissions, or other amounts denominated in or calculated with respect to Dollars or any Foreign Currency?",
+    "Q3: What is the meaning of \"Stated Amount\" or \"Stated Amounts\" in the context of a Letter of Credit, and how are increases or decreases in the Stated Amount determined?"
+  ],
+  "batch 136": [
+    "Q1: What are the specific conditions under which Term SOFR will be used as a replacement rate for the Term SOFR Reference Rate, and how does it relate to the publication of the Term SOFR Reference Rate by the Term SOFR Administrator?",
+    "Q2: How do the definitions of \"Total Available Commitments\" and \"Total Credit Exposure\" relate to the calculation of the Dollar Amount of outstanding principal amounts of all Lenders' Loans and their LC Exposure at a given time?",
+    "Q3: What are the implications of a change in currency of a country on the Agreement, and how does the Administrative Agent and the Borrower reasonably determine the necessary amendments to reflect the change in currency?"
+  ],
+  "batch 137": [
+    "Q1: What are the specific requirements for a Borrower to request a Borrowing under Section 2.03, including the notice period and the information that must be specified in the Borrowing Request?",
+    "Q2: What are the conditions under which an Issuing Bank may issue a Letter of Credit under Section 2.04, including the requirements for the Borrower to have entered into a continuing agreement or submitted a letter of credit application?",
+    "Q3: What are the consequences of an Event of Default under Section 2.04(j), including the requirement for the Borrower to deposit cash collateral in an account with the Administrative Agent?"
+  ],
+  "batch 138": [
+    "Q1: What are the conditions under which the Borrower may request an extension of the Maturity Date for each Lender, and what are the consequences of such an extension?",
+    "Q2: How does the Borrower's failure to deliver a timely Interest Election Request affect the interest period of a Term Benchmark Borrowing, and what are the implications of such a failure?",
+    "Q3: Under what circumstances is the Borrower obligated to prepay the outstanding principal amount of Loans, and what are the consequences of failing to make such a prepayment?"
+  ],
+  "batch 139": [
+    "Q1: What are the specific dates and conditions under which commitment fees accrued through and including the last day of March, June, September, and December of each year shall be payable?",
+    "Q2: How do the interest rates for Term Benchmark Loans and SONIA Loans change in the event of a fundamental change in the foreign exchange or interbank markets with respect to the applicable Foreign Currency?",
+    "Q3: What are the consequences of a Lender or Issuing Bank determining that any Change in Law has resulted in an increase in the cost to such Lender or Issuing Bank of making or maintaining, continuing or converting to any Term Benchmark Loan or SONIA Loan, or maintaining its obligation to make any such Loan?"
+  ],
+  "batch 140": [
+    "Q1: What are the specific requirements for a Lender to comply with FATCA reporting requirements, and what documentation must be provided to the Borrower and Administrative Agent?",
+    "Q2: How do the provisions of Section 2.20 apply to a Defaulting Lender, and what are the consequences of a Lender becoming a Defaulting Lender, including the reallocation of LC Exposure and the payment of fees?",
+    "Q3: What are the procedures for the Administrative Agent to determine the Exchange Rate for Euros and Pounds Sterling, and how does this affect the calculation of interest and the distribution of payments among the Lenders?"
+  ],
+  "batch 141": [
+    "Q1: What are the conditions under which a Borrower may terminate Commitments, and what are the consequences of such termination?",
+    "Q2: How does the Administrative Agent determine the replacement of a Benchmark, and what are the effects of such replacement on the Agreement?",
+    "Q3: What are the circumstances under which a Lender may suspend its obligation to make SONIA Loans or Term Benchmark Loans, and what are the consequences of such suspension?"
+  ],
+  "batch 142": [
+    "Q1: What are the specific conditions that must be satisfied for the obligations of the Lenders to make Loans and of the Issuing Banks to issue Letters of Credit under this Agreement to become effective?",
+    "Q2: What are the affirmative covenants that the Borrower must comply with until the Commitments have expired or been terminated and the principal of and interest on each Loan and all fees payable hereunder have been paid in full?",
+    "Q3: What are the requirements for the Borrower to deliver to the Administrative Agent certain information and documentation regarding the operations, business affairs, and financial condition of the Borrower or any Restricted Subsidiary, or compliance with the terms of this Agreement?"
+  ],
+  "batch 143": [
+    "Q1: What are the specific conditions under which the Borrower is allowed to create, incur, assume, or permit to exist any Lien on any property or asset now owned or hereafter acquired by it, or assign or sell any income or revenues (including accounts receivable) or rights in respect of any thereof?",
+    "Q2: What are the restrictions on the Borrower's ability to engage in material transactions with its Affiliates, and what exceptions apply to these restrictions?",
+    "Q3: What types of Indebtedness are permitted for the Borrower's Restricted Subsidiaries, and what are the specific conditions and limitations that apply to each type of permitted Indebtedness?"
+  ],
+  "batch 144": [
+    "Q1: What are the specific conditions under which the Administrative Agent may terminate the Commitments and declare the Loans due and payable in whole or in part?",
+    "Q2: How do the payments received on account of the Obligations get applied by the Administrative Agent during the occurrence and continuance of an Event of Default?",
+    "Q3: What are the responsibilities and limitations of the Administrative Agent, and what are the consequences of its resignation or removal?"
+  ],
+  "batch 145": [
+    "Q1: What are the conditions under which the Administrative Agent may set off, net, and apply any and all amounts owing to a Lender or Issuing Bank under any Loan Document, and what are the implications of such action?",
+    "Q2: How does the Administrative Agent handle Erroneous Payments, including the procedures for notifying Payment Recipients, the obligations of Payment Recipients to return Erroneous Payments, and the consequences of failure to return Erroneous Payments?",
+    "Q3: What are the notice and communication procedures under the Agreement, including the methods of delivery, the parties responsible for sending and receiving notices, and the timing of receipt of notices?"
+  ],
+  "batch 146": [
+    "Q1: What are the specific conditions under which a Lender may assign its rights and obligations under this Agreement to another party, and what are the requirements for such an assignment to be effective?",
+    "Q2: How does the concept of Disqualified Institutions impact the rights and obligations of parties under this Agreement, and what are the consequences of assigning or participating in Loans to such institutions?",
+    "Q3: What are the provisions regarding the maintenance of records and the disclosure of information related to the assignment and participation of Loans under this Agreement?"
+  ],
+  "batch 147": [
+    "Q1: What are the conditions under which a Guarantor will be automatically released from its obligations under the Loan Documents and the Guarantee of such Guarantor?",
+    "Q2: How do the parties agree to handle the resolution of any Supported QFC and QFC Credit Support in the event a Covered Entity becomes subject to a proceeding under a U.S. Special Resolution Regime?",
+    "Q3: What are the provisions regarding the conversion of currencies for the purpose of obtaining judgment in any court, and how do the parties agree to handle any loss resulting from such conversion?"
+  ],
+  "batch 148": [
+    "Q1: What are the obligations of a guarantor in the event of a specified borrower's indebtedness, and how are they released or terminated?",
+    "Q2: What is the interest rate limitation under Section 9.20 of the agreement, and how is it applied to loans or other obligations?",
+    "Q3: Who are the parties to the credit agreement, and what are their roles and responsibilities as lenders, administrative agents, or other parties?"
+  ],
+  "batch 149": [
+    "Q1: What are the names of all subsidiaries of Tesla, Inc. mentioned in the exhibit, and what are their jurisdictions of incorporation or organization?",
+    "Q2: Who are the directors and managing directors of Tesla, Inc. mentioned in the exhibit, and what are their titles?",
+    "Q3: What are the names of all lenders mentioned in the exhibit, and what are their titles and jurisdictions?"
+  ],
+  "batch 150": [
+    "Q1: What are the key components of Tesla's internal control over financial reporting, as described in the company's 10-K filing for the year ended December 31, 2023?",
+    "Q2: How does Tesla's use of modular design and power electronics in its energy storage products enable the company to optimize manufacturing capacity and provide fast-acting systems for power injection and absorption?",
+    "Q3: What are the key technologies and systems that Tesla is developing to enable self-driving vehicles, and how does the company's expertise in artificial intelligence and robotics inform its approach to autonomous ride-hailing and other applications?"
+  ],
+  "batch 151": [
+    "Q1: How does Tesla's expansion of its manufacturing facilities, including the establishment of Gigafactories in various locations, impact the company's ability to meet growing demand for its electric vehicles and energy storage products?",
+    "Q2: What are the key regulatory challenges and opportunities facing Tesla's solar energy business, particularly with regards to net metering and the adoption of renewable energy systems?",
+    "Q3: How does Tesla's commitment to sustainability and responsible sourcing of materials, as well as its focus on worker safety and engagement, contribute to the company's overall Environmental, Social, and Governance (ESG) performance?"
+  ],
+  "batch 152": [
+    "Q1: How does Tesla's ability to attract and retain high-quality employees impact its ability to achieve its goals, including those related to ESG and sustainability?",
+    "Q2: What are the potential risks and challenges associated with Tesla's plans to expand its manufacturing capabilities, including the construction and ramp of new factories, and how might these risks impact the company's business and operating results?",
+    "Q3: How does Tesla's dependence on lithium-ion battery cells and its plans to develop and manufacture its own cells impact its ability to grow its business and meet its production targets, and what are the potential risks and challenges associated with this strategy?"
+  ],
+  "batch 153": [
+    "Q1: What are the potential risks and consequences of Tesla's products containing defects or failing to perform as expected, and how might these risks impact the company's business and financial condition?",
+    "Q2: How might Tesla's dependence on the services of Elon Musk, its CEO, and other key employees impact the company's ability to compete and grow, and what steps could the company take to mitigate this risk?",
+    "Q3: What are the potential risks and consequences of cyber-attacks or other security incidents affecting Tesla's information technology systems, and how might these risks impact the company's business and financial condition?"
+  ],
+  "batch 154": [
+    "Q1: What are the potential risks and consequences for Tesla's financial condition and operating results if the company is unable to raise additional funds when needed, or at all?",
+    "Q2: How might changes in government and economic incentives, such as tax exemptions and rebates, impact demand for Tesla's products and services, and what steps might the company take to adapt to such changes?",
+    "Q3: What are the potential risks and consequences for Tesla's business and financial condition if the company fails to comply with evolving laws and regulations related to intellectual property, data privacy, and cybersecurity, and what steps might the company take to mitigate such risks?"
+  ],
+  "batch 155": [
+    "Q1: What are the key cybersecurity risks and measures implemented by Tesla to mitigate these risks, and how do these efforts impact the company's overall risk management and strategy?",
+    "Q2: How does Tesla's focus on vertical integration, expansion of its product roadmap, and provision of financing options to customers contribute to its ability to generate positive cash flows and self-fund its operations?",
+    "Q3: What are the critical accounting policies and estimates that Tesla uses to prepare its consolidated financial statements, and how do these estimates and assumptions impact the company's reported amounts of assets, liabilities, revenues, costs, and expenses?"
+  ],
+  "batch 156": [
+    "Q1: What are the key factors that contribute to the increase in revenue and gross profit for the Energy Generation and Storage segment in 2023 compared to 2022?",
+    "Q2: How do the changes in foreign exchange rates impact the company's other income (expense), net, and what are the implications for the company's financial performance?",
+    "Q3: What are the main reasons for the decrease in gross margin for the Automotive segment in 2023 compared to 2022, and how do these changes affect the company's overall financial performance?"
+  ],
+  "batch 157": [
+    "Q1: What are the primary sources of funds for Tesla's liquidity and capital resources, and how do they plan to adjust their capital and operating expenditures in response to changes in their business operations?",
+    "Q2: What are the expected capital expenditures for Tesla's projects globally in 2024 and the following two fiscal years, and how do they plan to fund these expenditures?",
+    "Q3: What are the potential risks and uncertainties associated with Tesla's foreign currency risk, and how do they plan to mitigate these risks in the near term?"
+  ],
+  "batch 158": [
+    "Q1: What are the total revenues from sales and services for Tesla, Inc. for the years ended December 31, 2023, 2022, and 2021, respectively?",
+    "Q2: How does Tesla, Inc. account for its direct vehicle operating leasing programs, and what are the terms of these leases?",
+    "Q3: What are the components of Tesla, Inc.'s comprehensive income for the years ended December 31, 2023, 2022, and 2021, respectively?"
+  ],
+  "batch 159": [
+    "Q1: What are the key factors that contribute to the variability in the company's deferred tax assets and liabilities, and how do these factors impact the company's income tax expense and deferred tax assets?",
+    "Q2: How does the company's accounting for business combinations under ASC 805 impact its financial statements, and what are the key considerations for determining the fair value of assets and liabilities acquired in a business combination?",
+    "Q3: What are the key risks associated with the company's financing receivables, and how does the company manage these risks, including the allowance for expected credit losses and the concentration of risk in its receivables portfolio?"
+  ],
+  "batch 160": [
+    "Q1: What are the key factors considered when determining the fair value of digital assets, and how do they impact the carrying value of these assets?",
+    "Q2: How do the company's operating lease vehicles and solar energy systems impact the company's financial statements, and what are the key accounting principles used to depreciate these assets?",
+    "Q3: What are the implications of the recently issued accounting pronouncements, such as ASU 2023-07, ASU 2023-08, and ASU 2023-09, on the company's financial statements and accounting practices?"
+  ],
+  "batch 161": [
+    "Q1: What is the total value of our investments as of December 31, 2023, and how does it compare to the value as of December 31, 2022?",
+    "Q2: What are the main components of our debt and finance leases as of December 31, 2023, and how do they compare to the components as of December 31, 2022?",
+    "Q3: What are the key terms and conditions of our operating and finance lease agreements, and how do they impact our financial statements?"
+  ],
+  "batch 162": [
+    "Q1: What are the total minimum lease payments and the long-term portion of lease obligations as of December 31, 2023, for operating and finance leases, excluding short-term leases?",
+    "Q2: What is the total unrecognized stock-based compensation expense related to non-performance awards as of December 31, 2023, and the weighted-average period over which it will be recognized?",
+    "Q3: What is the total deferred tax assets and liabilities, net of valuation allowance, as of December 31, 2023, and what is the breakdown of the valuation allowance on deferred tax assets that are not more likely than not to be realized?"
+  ],
+  "batch 163": [
+    "Q1: What are the total amounts of federal, federal renewable energy, and state research and development tax credits that Tesla had as of December 31, 2023?",
+    "Q2: What are the potential liabilities and risks associated with Tesla's ongoing litigation and investigations, including the class action lawsuits and government inquiries?",
+    "Q3: How does Tesla's consolidation of variable interest entities (VIEs) affect its financial statements, and what are the terms of the agreements with fund investors?"
+  ],
+  "batch 164": [
+    "Q1: What are the total assets and liabilities of Tesla, Inc. as of December 31, 2023, and how do they compare to the same period in 2022?",
+    "Q2: What are the revenues and gross profit of Tesla's automotive and energy generation and storage segments for the years ended December 31, 2023, 2022, and 2021?",
+    "Q3: What are the long-lived assets and inventory of Tesla by geographic area as of December 31, 2023, and how do they compare to the same period in 2022?"
+  ],
+  "batch 165": [
+    "Q1: What are the key dates and events related to the formation and development of SolarCity's 4.70% Solar Bonds, Series 2015/C81-10, and how have they impacted the company's financials and operations?",
+    "Q2: What are the terms and conditions of the Supply Agreement between Panasonic Corporation and Tesla Motors, Inc., and how have they influenced the company's production and pricing strategies for its solar energy products?",
+    "Q3: What are the key amendments and restatements to the Agreement for Research & Development Alliance on Triex Module Technology between The Research Foundation for the State University of New York and Silevo, LLC, and how have they impacted the company's research and development efforts in the field of solar energy?"
+  ],
+  "batch 166": [
+    "Q1: What is the list of all subsidiaries of Tesla, Inc. as of January 26, 2024, and what are their respective jurisdictions of incorporation or organization?",
+    "Q2: Who are the officers and directors of Tesla, Inc. as of January 26, 2024, and what are their respective titles and dates of signature?",
+    "Q3: What are the certifications and consents provided by PricewaterhouseCoopers LLP and Elon Musk in relation to the financial statements and internal control over financial reporting of Tesla, Inc. as of January 26, 2024?"
+  ],
+  "batch 167": [
+    "Q1: What are the specific circumstances under which the Tesla Clawback Policy would require the forfeiture or repayment of Erroneously Awarded Compensation, and what is the process for determining the amount to be recovered?",
+    "Q2: How does the Clawback Policy interact with other laws and regulations, such as the Dodd-Frank Wall Street Reform and Consumer Protection Act, and what are the implications for executive officers and the Company Group?",
+    "Q3: What are the key differences between the Clawback Policy and other clawback policies or recoupment provisions that may be applicable to the Company Group, and how does the Policy address potential conflicts or inconsistencies with other compensation or benefit arrangements?"
+  ]
+}

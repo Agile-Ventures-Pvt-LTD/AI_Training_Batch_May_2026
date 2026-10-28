@@ -1,0 +1,74 @@
+{
+  "python_programming": [
+    "python",
+    "python scripts",
+    "python application",
+    "pandas"
+  ],
+  "sql_database_skills": [
+    "sql",
+    "sqlite",
+    "postgresql",
+    "database",
+    "queries",
+    "joins",
+    "reporting"
+  ],
+  "api_integration": [
+    "api",
+    "rest api",
+    "fastapi",
+    "flask",
+    "openai api",
+    "groq api",
+    "llm api",
+    "api clients"
+  ],
+  "llm_application_development": [
+    "llm",
+    "large language model",
+    "genai",
+    "generative ai",
+    "prompt engineering",
+    "llm application",
+    "chatbot"
+  ],
+  "agent_frameworks": [
+    "langchain",
+    "langgraph",
+    "crewai",
+    "agent",
+    "agents",
+    "agentic workflow"
+  ],
+  "rag_understanding": [
+    "rag",
+    "retrieval augmented generation",
+    "retrieval-augmented generation",
+    "embeddings",
+    "vector database",
+    "chroma",
+    "faiss",
+    "retrieval",
+    "citations"
+  ],
+  "testing_and_quality": [
+    "pytest",
+    "unit tests",
+    "integration tests",
+    "schema validation",
+    "ci",
+    "github actions",
+    "logging",
+    "error handling",
+    "evaluation"
+  ],
+  "communication": [
+    "documentation",
+    "stakeholders",
+    "business teams",
+    "technical decisions",
+    "limitations",
+    "project summaries"
+  ]
+}

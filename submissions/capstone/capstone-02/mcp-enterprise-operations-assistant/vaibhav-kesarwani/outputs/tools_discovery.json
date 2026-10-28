@@ -1,0 +1,26 @@
+[
+    {
+        "server": "service-health",
+        "tools": [
+            "list_services",
+            "get_service_health",
+            "get_active_incidents"
+        ]
+    },
+    {
+        "server": "support-ticket",
+        "tools": [
+            "search_tickets",
+            "get_ticket_details",
+            "get_high_priority_tickets"
+        ]
+    },
+    {
+        "server": "change-management",
+        "tools": [
+            "list_recent_changes",
+            "get_change_details",
+            "get_changes_for_service"
+        ]
+    }
+]

@@ -1,0 +1,22 @@
+{
+    "mcpServers": {
+        "service-health": {
+            "command": "python",
+            "args": [
+                "./servers/service_health_server.py"
+            ]
+        },
+        "support-ticket": {
+            "command": "python",
+            "args": [
+                "./servers/support_ticket_server.py"
+            ]
+        },
+        "change-management": {
+            "command": "python",
+            "args": [
+                "./servers/change_management_server.py"
+            ]
+        }
+    }
+}

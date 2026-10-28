@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "jira": {
+      "command": "python",
+      "args": ["./server/jira_mcp_server.py"]
+    }
+  }
+}

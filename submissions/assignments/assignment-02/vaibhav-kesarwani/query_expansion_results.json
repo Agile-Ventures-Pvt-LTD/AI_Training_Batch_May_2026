@@ -1,0 +1,474 @@
+[
+    {
+        "question_id": "Q1",
+        "original_query": "Does Tesla's growth story appear more constrained by external supply risk or internal execution and cost structure? Use evidence across Risk Factors and MD&A.",
+        "expanded_queries": [
+            "Is Tesla's growth more limited by external supply risk or by internal execution and cost structure, according to the Risk Factors and MD&A sections?",
+            "Does the evidence in Tesla's Risk Factors and MD&A indicate that external supply constraints or internal operational and cost challenges are the primary barrier to its growth?",
+            "Which factor—external supply risk or internal execution and cost structure—poses a greater constraint on Tesla's growth story as described in the Risk Factors and MD&A?"
+        ],
+        "baseline_top_chunks": [
+            {
+                "source": "tesla-annual-reports/tsla-10k_20191231-gen_0.pdf",
+                "page": 24,
+                "page_label": "25",
+                "rank": 1,
+                "content_preview": "developing\tbusiness\trelationships\twith\tus\tif\tthey\tare\tnot\tconvinced\tthat\tour\tbusiness\twill\tsucceed.\tAccordingly,\tin\torder\tto\tbuild\tand\tmaintain\tour\nbu"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20221231-gen.pdf",
+                "page": 1,
+                "page_label": "2",
+                "rank": 2,
+                "content_preview": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2022\nINDEX\n\t\n\t\t\n\t\t\n\t\t\n\t\nPage\nPART\tI.\n\t\n\t\n\t\n\t\n\t\n\t\n\t\nItem\t1.\n\t\nBusiness\n\t\n4\nItem\t"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20231231-gen.pdf",
+                "page": 2,
+                "page_label": "3",
+                "rank": 3,
+                "content_preview": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2023\nINDEX\n\t\n\t\nPage\nPART\tI.\n\t\n\t\nItem\t1.\nBusiness\n4\nItem\t1A.\nRisk\tFactors\n14\nIte"
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "source": "tesla-annual-reports/tsla-10k_20191231-gen_0.pdf",
+                "page": 24,
+                "page_label": "25",
+                "retrieved_by": [
+                    "Is Tesla's growth more limited by external supply risk or by internal execution and cost structure, according to the Risk Factors and MD&A sections?",
+                    "Does the evidence in Tesla's Risk Factors and MD&A indicate that external supply constraints or internal operational and cost challenges are the primary barrier to its growth?",
+                    "Which factor—external supply risk or internal execution and cost structure—poses a greater constraint on Tesla's growth story as described in the Risk Factors and MD&A?"
+                ],
+                "rank": 1,
+                "content_preview": "developing business relationships with us if they are not convinced that our business will succeed. Accordingly, in order to build and maintain our business, we must maintain confidence among customer"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20221231-gen.pdf",
+                "page": 1,
+                "page_label": "2",
+                "retrieved_by": [
+                    "Is Tesla's growth more limited by external supply risk or by internal execution and cost structure, according to the Risk Factors and MD&A sections?",
+                    "Which factor—external supply risk or internal execution and cost structure—poses a greater constraint on Tesla's growth story as described in the Risk Factors and MD&A?"
+                ],
+                "rank": 2,
+                "content_preview": "TESLA, INC. ANNUAL REPORT ON FORM 10-K FOR THE YEAR ENDED DECEMBER 31, 2022 INDEX Page PART I. Item 1. Business 4 Item 1A. Risk Factors 14 Item 1B. Unresolved Staff Comments 29 Item 2. Properties 29 I"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 17,
+                "page_label": "18",
+                "retrieved_by": [
+                    "Is Tesla's growth more limited by external supply risk or by internal execution and cost structure, according to the Risk Factors and MD&A sections?"
+                ],
+                "rank": 3,
+                "content_preview": "claims for vehicle exposure, meaning that any product liability claims will likely have to be paid from company funds and not by insurance. We will need to maintain public credibility and confidence i"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 14,
+                "page_label": "15",
+                "retrieved_by": [
+                    "Does the evidence in Tesla's Risk Factors and MD&A indicate that external supply constraints or internal operational and cost challenges are the primary barrier to its growth?",
+                    "Which factor—external supply risk or internal execution and cost structure—poses a greater constraint on Tesla's growth story as described in the Risk Factors and MD&A?"
+                ],
+                "rank": 2,
+                "content_preview": "inventory. Similarly, the increasing number of Tesla vehicles also requires us to continue to rapidly increase the number of our Supercharger stations and connectors throughout the world. There is no "
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20221231-gen.pdf",
+                "page": 52,
+                "page_label": "53",
+                "retrieved_by": [
+                    "Does the evidence in Tesla's Risk Factors and MD&A indicate that external supply constraints or internal operational and cost challenges are the primary barrier to its growth?"
+                ],
+                "rank": 3,
+                "content_preview": "Tesla, Inc. Notes to Consolidated Financial Statements Note 1 – Overview Tesla, Inc. (“Tesla”, the “Company”, “we”, “us” or “our”) was incorporated in the State of Delaware on July 1, 2003. We design,"
+            }
+        ],
+        "final_answer": "Tesla’s growth narrative is portrayed as being more limited by its own ability to execute and manage costs than by external supply constraints. The Risk Factors repeatedly cite “delays in scaling manufacturing, delivery and service operations,” “our quarterly production and sales performance compared with market expectations,” and the need to “maintain confidence among customers, suppliers, analysts, investors, ratings agencies” despite a “limited operating history” and “competition and uncertainty regarding the future of electric vehicles.” In the MD&A, Tesla warns that there is “no assurance that we will be able to ramp our business to meet our sales, delivery, installation, servicing and vehicle‑charging targets globally,” that the plans “require significant cash investments and management resources,” and that it may face “cost overruns” or difficulty hiring additional personnel. These passages emphasize internal execution challenges and cost‑structure pressures as the primary constraints on growth.",
+        "citations": [
+            {
+                "source": "tesla-annual-reports/tsla-10k_20191231-gen_0.pdf",
+                "page": 24,
+                "page_label": "25"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20221231-gen.pdf",
+                "page": 1,
+                "page_label": "2"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 17,
+                "page_label": "18"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 14,
+                "page_label": "15"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20221231-gen.pdf",
+                "page": 52,
+                "page_label": "53"
+            }
+        ],
+        "retrieval_improvement_analysis": "Expanded retrieval used 3 query variations."
+    },
+    {
+        "question_id": "Q2",
+        "original_query": "Explain how Tesla's AI and product roadmap is reflected in spending, operational priorities, and risk disclosures. Avoid generic AI claims.",
+        "expanded_queries": [
+            "Explain how Tesla's AI and product roadmap is reflected in its spending, operational priorities, and risk disclosures.",
+            "Describe how Tesla's AI and product development plans are shown through its expenditures, operational focus, and risk factors.",
+            "What does Tesla's 10‑K reveal about the alignment of its AI and product roadmap with its spending, operational priorities, and disclosed risks?",
+            "How are Tesla's AI initiatives and product roadmap manifested in its financial spending, operational emphasis, and risk disclosures?"
+        ],
+        "baseline_top_chunks": [
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 17,
+                "page_label": "18",
+                "rank": 1,
+                "content_preview": "claims\tfor\tvehicle\texposure,\tmeaning\tthat\tany\tproduct\tliability\tclaims\twill\tlikely\thave\tto\tbe\tpaid\tfrom\tcompany\tfunds\tand\tnot\tby\tinsurance.\nWe\twill\tne"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-10k_20191231-gen_0.pdf",
+                "page": 24,
+                "page_label": "25",
+                "rank": 2,
+                "content_preview": "developing\tbusiness\trelationships\twith\tus\tif\tthey\tare\tnot\tconvinced\tthat\tour\tbusiness\twill\tsucceed.\tAccordingly,\tin\torder\tto\tbuild\tand\tmaintain\tour\nbu"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20231231-gen.pdf",
+                "page": 2,
+                "page_label": "3",
+                "rank": 3,
+                "content_preview": "TESLA,\tINC.\nANNUAL\tREPORT\tON\tFORM\t10-K\tFOR\tTHE\tYEAR\tENDED\tDECEMBER\t31,\t2023\nINDEX\n\t\n\t\nPage\nPART\tI.\n\t\n\t\nItem\t1.\nBusiness\n4\nItem\t1A.\nRisk\tFactors\n14\nIte"
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "source": "tesla-annual-reports/tsla-20231231-gen.pdf",
+                "page": 2,
+                "page_label": "3",
+                "retrieved_by": [
+                    "Explain how Tesla's AI and product roadmap is reflected in its spending, operational priorities, and risk disclosures.",
+                    "Describe how Tesla's AI and product development plans are shown through its expenditures, operational focus, and risk factors.",
+                    "What does Tesla's 10‑K reveal about the alignment of its AI and product roadmap with its spending, operational priorities, and disclosed risks?",
+                    "How are Tesla's AI initiatives and product roadmap manifested in its financial spending, operational emphasis, and risk disclosures?"
+                ],
+                "rank": 1,
+                "content_preview": "TESLA, INC. ANNUAL REPORT ON FORM 10-K FOR THE YEAR ENDED DECEMBER 31, 2023 INDEX Page PART I. Item 1. Business 4 Item 1A. Risk Factors 14 Item 1B. Unresolved Staff Comments 28 Item 1C. Cybersecurity "
+            },
+            {
+                "source": "tesla-annual-reports/tsla-10k_20191231-gen_0.pdf",
+                "page": 24,
+                "page_label": "25",
+                "retrieved_by": [
+                    "Explain how Tesla's AI and product roadmap is reflected in its spending, operational priorities, and risk disclosures.",
+                    "Describe how Tesla's AI and product development plans are shown through its expenditures, operational focus, and risk factors."
+                ],
+                "rank": 2,
+                "content_preview": "developing business relationships with us if they are not convinced that our business will succeed. Accordingly, in order to build and maintain our business, we must maintain confidence among customer"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20221231-gen.pdf",
+                "page": 1,
+                "page_label": "2",
+                "retrieved_by": [
+                    "Explain how Tesla's AI and product roadmap is reflected in its spending, operational priorities, and risk disclosures.",
+                    "What does Tesla's 10‑K reveal about the alignment of its AI and product roadmap with its spending, operational priorities, and disclosed risks?",
+                    "How are Tesla's AI initiatives and product roadmap manifested in its financial spending, operational emphasis, and risk disclosures?"
+                ],
+                "rank": 3,
+                "content_preview": "TESLA, INC. ANNUAL REPORT ON FORM 10-K FOR THE YEAR ENDED DECEMBER 31, 2022 INDEX Page PART I. Item 1. Business 4 Item 1A. Risk Factors 14 Item 1B. Unresolved Staff Comments 29 Item 2. Properties 29 I"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20231231-gen.pdf",
+                "page": 20,
+                "page_label": "21",
+                "retrieved_by": [
+                    "Describe how Tesla's AI and product development plans are shown through its expenditures, operational focus, and risk factors."
+                ],
+                "rank": 3,
+                "content_preview": "development, introduction and ramp of our products and services. In particular, we are highly dependent on the services of Elon Musk, Technoking of Tesla and our Chief Executive Officer. None of our k"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 1,
+                "page_label": "2",
+                "retrieved_by": [
+                    "What does Tesla's 10‑K reveal about the alignment of its AI and product roadmap with its spending, operational priorities, and disclosed risks?",
+                    "How are Tesla's AI initiatives and product roadmap manifested in its financial spending, operational emphasis, and risk disclosures?"
+                ],
+                "rank": 3,
+                "content_preview": "TESLA, INC. ANNUAL REPORT ON FORM 10-K FOR THE YEAR ENDED DECEMBER 31, 2020 INDEX Page PART I. Item 1. Business 4 Item 1A. Risk Factors 14 Item 1B. Unresolved Staff Comments 27 Item 2. Properties 27 I"
+            }
+        ],
+        "final_answer": "I don't know.",
+        "citations": [
+            {
+                "source": "tesla-annual-reports/tsla-20231231-gen.pdf",
+                "page": 2,
+                "page_label": "3"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-10k_20191231-gen_0.pdf",
+                "page": 24,
+                "page_label": "25"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20221231-gen.pdf",
+                "page": 1,
+                "page_label": "2"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20231231-gen.pdf",
+                "page": 20,
+                "page_label": "21"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 1,
+                "page_label": "2"
+            }
+        ],
+        "retrieval_improvement_analysis": "Expanded retrieval used 4 query variations."
+    },
+    {
+        "question_id": "Q3",
+        "original_query": "A supplier asks whether Tesla is exposed to concentration risk across factories, suppliers, raw materials, or geographies. Prepare a concise risk note with citations.",
+        "expanded_queries": [
+            "Is Tesla exposed to concentration risk across its factories, suppliers, raw materials, or geographic regions? Provide a concise risk note with citations.",
+            "Does Tesla face concentration risk in its manufacturing sites, supplier network, raw material sources, or geographic locations? Prepare a brief risk note with references.",
+            "Prepare a short, cited risk assessment of Tesla's exposure to concentration risk regarding its plants, suppliers, raw material inputs, and geographies."
+        ],
+        "baseline_top_chunks": [
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 17,
+                "page_label": "18",
+                "rank": 1,
+                "content_preview": "claims\tfor\tvehicle\texposure,\tmeaning\tthat\tany\tproduct\tliability\tclaims\twill\tlikely\thave\tto\tbe\tpaid\tfrom\tcompany\tfunds\tand\tnot\tby\tinsurance.\nWe\twill\tne"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 206,
+                "page_label": "207",
+                "rank": 2,
+                "content_preview": ".\n“\nHazardous\tMaterials\n”\tshall\tmean\tany\tchemicals,\tmaterials,\twastes,\tpollutants,\tcontaminants,\tor\tsubstances\tin\tany\tform\tthat\tis\nprohibited,\tlimited"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 14,
+                "page_label": "15",
+                "rank": 3,
+                "content_preview": "inventory.\tSimilarly,\tthe\tincreasing\tnumber\tof\tTesla\tvehicles\talso\trequires\tus\tto\tcontinue\tto\trapidly\tincrease\tthe\tnumber\tof\tour\tSupercharger\tstations"
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 17,
+                "page_label": "18",
+                "retrieved_by": [
+                    "Is Tesla exposed to concentration risk across its factories, suppliers, raw materials, or geographic regions? Provide a concise risk note with citations.",
+                    "Does Tesla face concentration risk in its manufacturing sites, supplier network, raw material sources, or geographic locations? Prepare a brief risk note with references.",
+                    "Prepare a short, cited risk assessment of Tesla's exposure to concentration risk regarding its plants, suppliers, raw material inputs, and geographies."
+                ],
+                "rank": 1,
+                "content_preview": "claims for vehicle exposure, meaning that any product liability claims will likely have to be paid from company funds and not by insurance. We will need to maintain public credibility and confidence i"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 206,
+                "page_label": "207",
+                "retrieved_by": [
+                    "Is Tesla exposed to concentration risk across its factories, suppliers, raw materials, or geographic regions? Provide a concise risk note with citations.",
+                    "Prepare a short, cited risk assessment of Tesla's exposure to concentration risk regarding its plants, suppliers, raw material inputs, and geographies."
+                ],
+                "rank": 2,
+                "content_preview": ". “ Hazardous Materials ” shall mean any chemicals, materials, wastes, pollutants, contaminants, or substances in any form that is prohibited, limited or regulated pursuant to any Environmental Law by"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20221231-gen.pdf",
+                "page": 1,
+                "page_label": "2",
+                "retrieved_by": [
+                    "Is Tesla exposed to concentration risk across its factories, suppliers, raw materials, or geographic regions? Provide a concise risk note with citations.",
+                    "Prepare a short, cited risk assessment of Tesla's exposure to concentration risk regarding its plants, suppliers, raw material inputs, and geographies."
+                ],
+                "rank": 3,
+                "content_preview": "TESLA, INC. ANNUAL REPORT ON FORM 10-K FOR THE YEAR ENDED DECEMBER 31, 2022 INDEX Page PART I. Item 1. Business 4 Item 1A. Risk Factors 14 Item 1B. Unresolved Staff Comments 29 Item 2. Properties 29 I"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 14,
+                "page_label": "15",
+                "retrieved_by": [
+                    "Does Tesla face concentration risk in its manufacturing sites, supplier network, raw material sources, or geographic locations? Prepare a brief risk note with references."
+                ],
+                "rank": 2,
+                "content_preview": "inventory. Similarly, the increasing number of Tesla vehicles also requires us to continue to rapidly increase the number of our Supercharger stations and connectors throughout the world. There is no "
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20221231-gen.pdf",
+                "page": 18,
+                "page_label": "19",
+                "retrieved_by": [
+                    "Does Tesla face concentration risk in its manufacturing sites, supplier network, raw material sources, or geographic locations? Prepare a brief risk note with references."
+                ],
+                "rank": 3,
+                "content_preview": "manufacturing, delivery and service operations to meet demand; competition and uncertainty regarding the future of electric vehicles or our other products and services; our quarterly production and sa"
+            }
+        ],
+        "final_answer": "I don't know.",
+        "citations": [
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 17,
+                "page_label": "18"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 206,
+                "page_label": "207"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20221231-gen.pdf",
+                "page": 1,
+                "page_label": "2"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 14,
+                "page_label": "15"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20221231-gen.pdf",
+                "page": 18,
+                "page_label": "19"
+            }
+        ],
+        "retrieval_improvement_analysis": "Expanded retrieval used 3 query variations."
+    },
+    {
+        "question_id": "Q4",
+        "original_query": "Compare the strategic importance of automotive operations and energy generation/storage using evidence from the 10-K. What disclosures are needed to support a business recommendation?",
+        "expanded_queries": [
+            "How do the automotive operations and energy generation/storage segments differ in strategic importance according to the 10‑K, and which disclosures are required to support a business recommendation?",
+            "What evidence from the 10‑K highlights the relative strategic significance of automotive operations versus energy generation and storage, and what disclosures must be included to justify a recommendation?",
+            "Using the 10‑K, compare the strategic value of the automotive business to the energy generation/storage business and identify the necessary disclosures to back a business recommendation."
+        ],
+        "baseline_top_chunks": [
+            {
+                "source": "tesla-annual-reports/tsla-20231231-gen.pdf",
+                "page": 33,
+                "page_label": "34",
+                "rank": 1,
+                "content_preview": "ITEM\t7.\tMANAGEMENT’S\tDISCUSSION\tAND\tANALYSIS\tOF\tFINANCIAL\tCONDITION\tAND\tRESULTS\tOF\tOPERATIONS\nThe\tfollowing\tdiscussion\tand\tanalysis\tshould\tbe\tread\tin\t"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 104,
+                "page_label": "105",
+                "rank": 2,
+                "content_preview": "Note\t\n2\n1\n\t–\tSegment\tReporting\tand\tInformation\tabout\tGeographic\tAreas\nWe\thave\t\ntwo\n\toperating\tand\treportable\tsegments:\t(i)\tautomotive\tand\t(ii)\tenergy\t"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20221231-gen.pdf",
+                "page": 31,
+                "page_label": "32",
+                "rank": 3,
+                "content_preview": "ITEM\t7.\t\nMANAGEMENT’S\tDISCUSSION\tAND\tANALYSIS\tOF\tFINANCIAL\tCONDITION\tAND\tRESULTS\tOF\tOPERATIONS\nThe\tfollowing\tdiscussion\tand\tanalysis\tshould\tbe\tread\tin"
+            }
+        ],
+        "expanded_top_chunks": [
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 104,
+                "page_label": "105",
+                "retrieved_by": [
+                    "How do the automotive operations and energy generation/storage segments differ in strategic importance according to the 10‑K, and which disclosures are required to support a business recommendation?",
+                    "What evidence from the 10‑K highlights the relative strategic significance of automotive operations versus energy generation and storage, and what disclosures must be included to justify a recommendation?",
+                    "Using the 10‑K, compare the strategic value of the automotive business to the energy generation/storage business and identify the necessary disclosures to back a business recommendation."
+                ],
+                "rank": 1,
+                "content_preview": "Note 2 1 – Segment Reporting and Information about Geographic Areas We have two operating and reportable segments: (i) automotive and (ii) energy generation and storage. The automotive segment include"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20231231-gen.pdf",
+                "page": 4,
+                "page_label": "5",
+                "retrieved_by": [
+                    "How do the automotive operations and energy generation/storage segments differ in strategic importance according to the 10‑K, and which disclosures are required to support a business recommendation?",
+                    "Using the 10‑K, compare the strategic value of the automotive business to the energy generation/storage business and identify the necessary disclosures to back a business recommendation."
+                ],
+                "rank": 2,
+                "content_preview": "Table of Contents PART I ITEM 1. BUSINESS Overview We design, develop, manufacture, sell and lease high-performance fully electric vehicles and energy generation and storage systems, and offer service"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20221231-gen.pdf",
+                "page": 3,
+                "page_label": "4",
+                "retrieved_by": [
+                    "How do the automotive operations and energy generation/storage segments differ in strategic importance according to the 10‑K, and which disclosures are required to support a business recommendation?",
+                    "Using the 10‑K, compare the strategic value of the automotive business to the energy generation/storage business and identify the necessary disclosures to back a business recommendation."
+                ],
+                "rank": 3,
+                "content_preview": "PART I ITEM 1. BUSINESS Overview We design, develop, manufacture, sell and lease high-performance fully electric vehicles and energy generation and storage systems, and offer services related to our p"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20231231-gen.pdf",
+                "page": 33,
+                "page_label": "34",
+                "retrieved_by": [
+                    "What evidence from the 10‑K highlights the relative strategic significance of automotive operations versus energy generation and storage, and what disclosures must be included to justify a recommendation?"
+                ],
+                "rank": 1,
+                "content_preview": "ITEM 7. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS The following discussion and analysis should be read in conjunction with the consolidated financial statem"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20231231-gen.pdf",
+                "page": 17,
+                "page_label": "18",
+                "retrieved_by": [
+                    "What evidence from the 10‑K highlights the relative strategic significance of automotive operations versus energy generation and storage, and what disclosures must be included to justify a recommendation?"
+                ],
+                "rank": 3,
+                "content_preview": "attempt to accurately project demand and infrastructure requirements globally and deploy our production, workforce and other resources accordingly. Rising interest rates may lead to consumers to incre"
+            }
+        ],
+        "final_answer": "The 10‑K makes clear that the automotive segment is the company’s primary engine of growth.  It accounts for the vast majority of revenue—$29.5 billion in 2020 versus $2.0 billion for the energy‑generation and storage segment—and drives most of the gross profit ($6.6 billion versus $0.0 billion reported for energy).  The automotive segment also encompasses the core product set (design, development, manufacturing, sales and leasing of high‑performance electric vehicles) and ancillary high‑margin services such as used‑vehicle sales, non‑warranty after‑sales work, paid Supercharging, insurance and retail merchandise.  The company’s mission—“to accelerate the world’s transition to sustainable energy”—is expressed through the automotive business, which is highlighted in the MD&A as the focus of production, capacity expansion, cost‑reduction, and technology development (e.g., self‑driving, battery advances).\n\nThe energy‑generation and storage segment, while smaller, is strategically important for diversification and alignment with the broader sustainability mission.  It includes the design, manufacture, installation, sales and leasing of solar‑energy generation and storage products, and it contributes additional revenue streams such as solar‑system incentives.  The MD&A notes that the company is expanding into AI‑driven, robotic and automation‑based services, indicating that energy products are part of a longer‑term growth narrative that complements the automotive business.\n\n**Disclosures needed to support a business recommendation**\n\n1. **Segment financials** – Detailed revenue, gross profit, operating income and cash‑flow metrics for each segment (automotive vs. energy) over multiple years to quantify relative contribution and trends.  \n2. **Segment composition** – Narrative description of what each segment includes (e.g., vehicle sales, regulatory credits, services for automotive; solar‑panel sales, storage systems, incentives for energy).  \n3. **Capital allocation** – Planned capital expenditures, R&D spend, and infrastructure investment for each segment, showing how resources will be directed to sustain growth.  \n4. **Market risk factors** – Competitive landscape, regulatory changes, interest‑rate sensitivity, and incentive dependence for both automotive and energy businesses.  \n5. **Strategic initiatives** – Specific projects (e.g., production capacity expansion, self‑driving technology, AI/robotics integration, solar‑installation network) that illustrate how each segment will create future value.  \n6. **Liquidity and financing** – Information on how the company will fund segment‑specific growth (debt, equity, leasing arrangements, government subsidies).  \n7. **Geographic exposure** – Breakdown of sales and operations by region to assess exposure to market‑specific incentives or trade barriers.  \n\nProviding these disclosures would allow an investor or analyst to evaluate the relative strategic weight of the automotive and energy‑generation/storage businesses and to justify a recommendation—whether to prioritize further investment in the dominant automotive platform, to accelerate the emerging energy segment, or to maintain a balanced portfolio across both.",
+        "citations": [
+            {
+                "source": "tesla-annual-reports/tsla-10k_20201231-gen.pdf",
+                "page": 104,
+                "page_label": "105"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20231231-gen.pdf",
+                "page": 4,
+                "page_label": "5"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20221231-gen.pdf",
+                "page": 3,
+                "page_label": "4"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20231231-gen.pdf",
+                "page": 33,
+                "page_label": "34"
+            },
+            {
+                "source": "tesla-annual-reports/tsla-20231231-gen.pdf",
+                "page": 17,
+                "page_label": "18"
+            }
+        ],
+        "retrieval_improvement_analysis": "Expanded retrieval used 3 query variations."
+    }
+]

@@ -1,0 +1,120 @@
+{
+    "ticket_summary": {
+        "short_summary": "Customer was charged twice after cancelling a premium subscription and has not received a response from support.",
+        "customer_problem": "A double charge appears on the bank statement for a subscription that was cancelled last month, and previous support inquiries were unanswered.",
+        "business_impact": "Financial loss for the customer, risk of public escalation on LinkedIn, and potential blockage of future payments by the customer's finance team.",
+        "customer_requested_action": "Refund the incorrect charge immediately and resolve the issue today.",
+        "important_context": [
+            "Premium subscription cancelled last month.",
+            "Charge and duplicate invoice appeared this month.",
+            "Customer contacted support twice last week with no proper response.",
+            "Ticket is for Billing and subscription.",
+            "Customer is a Premium tier client."
+        ],
+        "missing_information": [
+            "Invoice ID or reference number for the duplicate charge.",
+            "Registered account email or customer ID to verify cancellation.",
+            "Payment method details to process the refund."
+        ]
+    },
+    "classification": {
+        "primary_category": "BILLING_ISSUE",
+        "secondary_categories": [
+            "CANCELLATION_OR_REFUND",
+            "ESCALATION_COMPLAINT"
+        ],
+        "category_reasoning_summary": "The customer reports being charged twice after cancelling a premium subscription and requests an immediate refund, indicating a clear billing problem. They also mention lack of response and threat to escalate, adding a cancellation/refund aspect and an escalation complaint.",
+        "confidence_score": 0.97
+    },
+    "sentiment_analysis": {
+        "sentiment": "URGENT",
+        "emotion_signals": [
+            "repeated follow-ups",
+            "threat of escalation",
+            "urgency",
+            "frustration",
+            "dissatisfaction",
+            "loss of trust"
+        ],
+        "sentiment_reasoning_summary": "The customer reports being charged twice after cancellation, mentions two prior support contacts with no proper response, and threatens public escalation and finance block if not resolved today. This combination of repeated follow‑ups, escalation threat, and a demand for immediate action signals a high‑urgency, frustrated sentiment.",
+        "confidence_score": 0.96
+    },
+    "priority_and_risk": {
+        "priority": "URGENT",
+        "escalation_risk": "CRITICAL",
+        "risk_triggers": [
+            "double charge after cancellation",
+            "payment/financial impact",
+            "multiple unanswered support attempts",
+            "threat of public escalation on LinkedIn",
+            "threat to block future payments by finance team",
+            "premium customer status"
+        ],
+        "recommended_sla_action": "Escalate immediately to Billing Support Lead and Account Management; acknowledge the ticket within 30 minutes, begin verification of the duplicate charge, and initiate refund process. Provide hourly status updates to the customer and involve a senior manager to mitigate public escalation risk.",
+        "reasoning_summary": "The premium customer faces a direct financial impact (duplicate charge) and has experienced repeated support failures. They have explicitly threatened a public escalation and finance block, raising both business and reputational risk. Given the SLA tier, payment impact, repeated follow‑ups, and escalation threat, the ticket warrants an URGENT priority and a CRITICAL escalation risk."
+    },
+    "sensitive_information_check": {
+        "sensitive_information_detected": true,
+        "sensitive_categories": [
+            "PERSONAL_INFORMATION"
+        ],
+        "evidence_summary": "The ticket contains the customer's name (Amit) and references to billing details (duplicate charge, invoice) that could be linked to the individual's account.",
+        "handling_recommendations": [
+            "Verify the customer's identity before proceeding with any refund or account changes.",
+            "Request the specific invoice ID or registered email associated with the account to locate the transaction.",
+            "Do not disclose the customer's personal name or billing details in any public or insecure channels.",
+            "Escalate the issue to the billing support team as per the business rules for premium customers.",
+            "Follow the rule: Do not promise a refund before verification and do not confirm cancellation until verified."
+        ]
+    },
+    "routing_recommendation": {
+        "recommended_team": "BILLING_SUPPORT",
+        "routing_reason": "Premium customer reporting duplicate charge and unresponsive prior support; requires billing verification, potential refund, and escalation per business rules.",
+        "internal_note": "Verify the customer's account email and the specific invoice ID(s) showing the duplicate charge. Confirm the cancellation status of the premium subscription before any refund is processed. Follow the business rule: do not promise a refund until verification is complete. Respond professionally and empathetically, and keep the customer updated on the investigation.",
+        "required_follow_up_information": [
+            "Invoice ID(s) showing the duplicate charge",
+            "Registered account email address",
+            "Last four digits of the payment method used",
+            "Confirmation of the cancellation request date"
+        ]
+    },
+    "draft_customer_response": {
+        "draft_response": "Hi Amit,\n\nThank you for reaching out and I’m sorry to hear about the duplicate charge and the delay in response – I understand how frustrating this must be.\n\nI see that you cancelled your Premium subscription last month and that the same invoice amount appears twice on your bank statement. To investigate this promptly, could you please provide the invoice number(s) and the email address associated with your account (or the subscription ID)? This information will allow us to verify the cancellation status and the charges.\n\nOnce we have those details, I will forward your case to our Billing Support team, who will prioritize a review and get back to you with a resolution as quickly as possible.\n\nWe appreciate your patience and will keep you updated.\n\nBest regards,\n[Your Name]\nCustomer Support",
+        "response_strategy": "1. Acknowledge the customer's concern and frustration. 2. Express empathy for the duplicate charge and lack of response. 3. Summarize the issue (cancellation, double charge, no reply). 4. Request missing information (invoice ID(s) and account email/subscription ID) needed to verify the situation. 5. Explain that the case will be escalated to Billing Support for priority handling. 6. Set clear next steps and assure ongoing communication, without promising a refund or confirming cancellation until verification.",
+        "assumptions": [
+            "The customer has a Premium account.",
+            "A cancellation request was submitted last month.",
+            "The duplicate charge appears on the customer's bank statement."
+        ],
+        "information_needed_before_sending": [
+            "Invoice number(s) for the disputed charges.",
+            "The email address or subscription ID associated with Amit's account."
+        ]
+    },
+    "response_quality_review": {
+        "scores": {
+            "empathy": 5,
+            "correctness": 5,
+            "actionability": 5,
+            "policy_safety": 5,
+            "tone_alignment": 5,
+            "completeness": 5
+        },
+        "strengths": [
+            "Strong empathy statement that acknowledges the customer's frustration.",
+            "Clear, actionable request for specific information (invoice numbers, email/subscription ID).",
+            "Safe language that avoids making unsupported promises or guarantees.",
+            "Professional and courteous tone throughout the response."
+        ],
+        "improvement_areas": [
+            "Could include an estimated timeline for the follow‑up (e.g., \"we aim to get back to you within 2 business days\").",
+            "Might reference any prior tickets or communications to show continuity, if applicable."
+        ],
+        "final_review_summary": "The draft response effectively acknowledges Amit's frustration, stays fact‑based, provides clear next steps, and adheres to policy safety while maintaining a professional tone. Minor enhancements could involve adding an expected response timeframe and referencing any earlier interactions."
+    },
+    "generation_metadata": {
+        "model_used": "llama-3.3-70b-versatile",
+        "temperature": 0.2,
+        "total_steps_completed": 8
+    }
+}

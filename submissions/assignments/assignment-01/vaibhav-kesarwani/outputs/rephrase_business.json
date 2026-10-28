@@ -1,0 +1,51 @@
+{
+  "case_name": "rephrase_business",
+  "raw_response": "```json\n{\n  \"rephrased_problem\": \"Automate manual tasks and provide real-time operational insights to reduce processing time by 30% and increase team productivity by 25% within the next 6 months\",\n  \"clarified_assumptions\": [\n    \"Existing manual processes are well-documented and can be mapped to automated workflows\",\n    \"Teams are open to adopting new technology and workflows\",\n    \"Leadership is committed to providing necessary resources and support for implementation\",\n    \"Current data infrastructure can support integration with new AI system\"\n  ],\n  \"proposed_solution\": \"Develop a custom Automated Task Management System (ATMS) leveraging machine learning and natural language processing to streamline workflows, predict bottlenecks, and provide data-driven insights\",\n  \"target_users\": [\n    \"Operations teams\",\n    \"Team leads\",\n    \"Department managers\",\n    \"Executive leadership\"\n  ],\n  \"key_features\": [\n    \"Task automation and workflow optimization\",\n    \"Predictive analytics for identifying potential bottlenecks\",\n    \"Real-time dashboard for monitoring team performance and productivity\",\n    \"Customizable reporting and alerts for leadership\"\n  ],\n  \"data_needed\": [\n    \"Historical task and workflow data\",\n    \"Team performance metrics\",\n    \"Current process documentation\",\n    \"Leadership's key performance indicators (KPIs)\"\n  ],\n  \"success_metrics\": [\n    \"Reduction in manual task processing time (30% target)\",\n    \"Increase in team productivity (25% target)\",\n    \"User adoption rate (80% target)\",\n    \"Leadership satisfaction with insights and visibility (90% target)\"\n  ],\n  \"implementation_steps\": [\n    \"Requirements gathering and process mapping\",\n    \"ATMS development and testing\",\n    \"Pilot deployment and user training\",\n    \"Full-scale rollout and monitoring\",\n    \"Ongoing evaluation and improvement\"\n  ],\n  \"risks\": [\n    \"Resistance to change from teams\",\n    \"Insufficient data quality or availability\",\n    \"Technical integration challenges\",\n    \"Leadership buy-in and support\"\n  ]\n}\n```",
+  "parsed_output": {
+    "rephrased_problem": "Automate manual tasks and provide real-time operational insights to reduce processing time by 30% and increase team productivity by 25% within the next 6 months",
+    "clarified_assumptions": [
+      "Existing manual processes are well-documented and can be mapped to automated workflows",
+      "Teams are open to adopting new technology and workflows",
+      "Leadership is committed to providing necessary resources and support for implementation",
+      "Current data infrastructure can support integration with new AI system"
+    ],
+    "proposed_solution": "Develop a custom Automated Task Management System (ATMS) leveraging machine learning and natural language processing to streamline workflows, predict bottlenecks, and provide data-driven insights",
+    "target_users": [
+      "Operations teams",
+      "Team leads",
+      "Department managers",
+      "Executive leadership"
+    ],
+    "key_features": [
+      "Task automation and workflow optimization",
+      "Predictive analytics for identifying potential bottlenecks",
+      "Real-time dashboard for monitoring team performance and productivity",
+      "Customizable reporting and alerts for leadership"
+    ],
+    "data_needed": [
+      "Historical task and workflow data",
+      "Team performance metrics",
+      "Current process documentation",
+      "Leadership's key performance indicators (KPIs)"
+    ],
+    "success_metrics": [
+      "Reduction in manual task processing time (30% target)",
+      "Increase in team productivity (25% target)",
+      "User adoption rate (80% target)",
+      "Leadership satisfaction with insights and visibility (90% target)"
+    ],
+    "implementation_steps": [
+      "Requirements gathering and process mapping",
+      "ATMS development and testing",
+      "Pilot deployment and user training",
+      "Full-scale rollout and monitoring",
+      "Ongoing evaluation and improvement"
+    ],
+    "risks": [
+      "Resistance to change from teams",
+      "Insufficient data quality or availability",
+      "Technical integration challenges",
+      "Leadership buy-in and support"
+    ]
+  }
+}

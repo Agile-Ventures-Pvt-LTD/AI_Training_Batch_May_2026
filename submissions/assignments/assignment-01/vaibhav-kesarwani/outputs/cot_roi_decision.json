@@ -1,0 +1,18 @@
+{
+  "case_name": "cot_roi_decision",
+  "raw_response": "{\n  \"incremental_revenue_range\": \"$80,000 - $140,000\",\n  \"incremental_gross_profit_range\": \"$32,000 - $56,000\",\n  \"monthly_net_benefit_range\": \"$2,000 - $26,000\",\n  \"payback_period_range_months\": \"6.9 - 9.0\",\n  \"decision\": \"APPROVE\",\n  \"reasoning_summary\": \"The expected payback period is within 12 months after go-live, and the assumptions are manageable. The incremental gross profit range is substantial, and the monthly net benefit range is positive, indicating a viable investment.\",\n  \"key_assumptions\": [\n    \"Revenue uplift from recommendations: 4% to 7%\",\n    \"Gross margin: 40%\",\n    \"Monthly AI infrastructure cost: $22,000\",\n    \"Monthly maintenance cost: $8,000\"\n  ]\n}",
+  "parsed_output": {
+    "incremental_revenue_range": "$80,000 - $140,000",
+    "incremental_gross_profit_range": "$32,000 - $56,000",
+    "monthly_net_benefit_range": "$2,000 - $26,000",
+    "payback_period_range_months": "6.9 - 9.0",
+    "decision": "APPROVE",
+    "reasoning_summary": "The expected payback period is within 12 months after go-live, and the assumptions are manageable. The incremental gross profit range is substantial, and the monthly net benefit range is positive, indicating a viable investment.",
+    "key_assumptions": [
+      "Revenue uplift from recommendations: 4% to 7%",
+      "Gross margin: 40%",
+      "Monthly AI infrastructure cost: $22,000",
+      "Monthly maintenance cost: $8,000"
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.0, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Vaibhav Kesarwani\Desktop\AI_Training_Batch_May_2026\submissions\capstone\capstone-02\mcp-enterprise-operations-assistant\vaibhav-kesarwani\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Vaibhav Kesarwani\Desktop\AI_Training_Batch_May_2026\submissions\capstone\capstone-02\mcp-enterprise-operations-assistant\vaibhav-kesarwani
+plugins: anyio-4.14.1, langsmith-0.9.8, asyncio-1.4.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 13 items
+
+tests/test_change_tools.py::test_get_changes_for_payment_api PASSED      [  7%]
+tests/test_change_tools.py::test_get_change_details_valid_change PASSED  [ 15%]
+tests/test_host_queries.py::test_host_payment_api_change_query PASSED    [ 23%]
+tests/test_host_queries.py::test_host_ticket_service_health_query PASSED [ 30%]
+tests/test_mcp_discovery.py::test_mcp_discovery PASSED                   [ 38%]
+tests/test_service_health_tools.py::test_list_services_returns_services PASSED [ 46%]
+tests/test_service_health_tools.py::test_get_service_health_payment_api PASSED [ 53%]
+tests/test_service_health_tools.py::test_get_service_health_unknown_service PASSED [ 61%]
+tests/test_service_health_tools.py::test_get_active_incidents_payment_api PASSED [ 69%]
+tests/test_ticket_tools.py::test_search_open_payment_tickets PASSED      [ 76%]
+tests/test_ticket_tools.py::test_get_ticket_details_valid_ticket PASSED  [ 84%]
+tests/test_ticket_tools.py::test_get_ticket_details_invalid_ticket PASSED [ 92%]
+tests/test_ticket_tools.py::test_high_priority_tickets_only_returns_p1_p2 PASSED [100%]
+
+============================== warnings summary ===============================
+.venv\Lib\site-packages\mcp_use\client\auth\oauth.py:26
+  C:\Users\Vaibhav Kesarwani\Desktop\AI_Training_Batch_May_2026\submissions\capstone\capstone-02\mcp-enterprise-operations-assistant\vaibhav-kesarwani\.venv\Lib\site-packages\mcp_use\client\auth\oauth.py:26: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    class ServerOAuthMetadata(BaseModel):
+
+.venv\Lib\site-packages\mcp_use\client\auth\oauth.py:99
+  C:\Users\Vaibhav Kesarwani\Desktop\AI_Training_Batch_May_2026\submissions\capstone\capstone-02\mcp-enterprise-operations-assistant\vaibhav-kesarwani\.venv\Lib\site-packages\mcp_use\client\auth\oauth.py:99: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    class ClientRegistrationResponse(BaseModel):
+
+.venv\Lib\site-packages\mcp_use\__init__.py:19
+  C:\Users\Vaibhav Kesarwani\Desktop\AI_Training_Batch_May_2026\submissions\capstone\capstone-02\mcp-enterprise-operations-assistant\vaibhav-kesarwani\.venv\Lib\site-packages\mcp_use\__init__.py:19: DeprecationWarning: mcp_use.config is deprecated. Use mcp_use.client.config. This import will be removed in version 2.0.0
+    from .config import load_config_file
+
+.venv\Lib\site-packages\mcp_use\__init__.py:20
+  C:\Users\Vaibhav Kesarwani\Desktop\AI_Training_Batch_May_2026\submissions\capstone\capstone-02\mcp-enterprise-operations-assistant\vaibhav-kesarwani\.venv\Lib\site-packages\mcp_use\__init__.py:20: DeprecationWarning: mcp_use.connectors is deprecated. Use mcp_use.client.connectors. This import will be removed in version 2.0.0
+    from .connectors import BaseConnector, HttpConnector, StdioConnector, WebSocketConnector
+
+.venv\Lib\site-packages\mcp_use\__init__.py:22
+  C:\Users\Vaibhav Kesarwani\Desktop\AI_Training_Batch_May_2026\submissions\capstone\capstone-02\mcp-enterprise-operations-assistant\vaibhav-kesarwani\.venv\Lib\site-packages\mcp_use\__init__.py:22: DeprecationWarning: mcp_use.session.MCPSession is deprecated. Use mcp_use.client.session.MCPSession. This import will be removed in version 2.0.0
+    from .session import MCPSession
+
+tests\test_host_queries.py:27
+  C:\Users\Vaibhav Kesarwani\Desktop\AI_Training_Batch_May_2026\submissions\capstone\capstone-02\mcp-enterprise-operations-assistant\vaibhav-kesarwani\tests\test_host_queries.py:27: PytestUnknownMarkWarning: Unknown pytest.mark.integration - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.integration
+
+tests\test_host_queries.py:35
+  C:\Users\Vaibhav Kesarwani\Desktop\AI_Training_Batch_May_2026\submissions\capstone\capstone-02\mcp-enterprise-operations-assistant\vaibhav-kesarwani\tests\test_host_queries.py:35: PytestUnknownMarkWarning: Unknown pytest.mark.integration - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.integration
+
+tests/test_host_queries.py::test_host_payment_api_change_query
+tests/test_host_queries.py::test_host_payment_api_change_query
+tests/test_host_queries.py::test_host_payment_api_change_query
+tests/test_host_queries.py::test_host_payment_api_change_query
+tests/test_host_queries.py::test_host_payment_api_change_query
+tests/test_host_queries.py::test_host_payment_api_change_query
+tests/test_host_queries.py::test_host_payment_api_change_query
+tests/test_host_queries.py::test_host_payment_api_change_query
+tests/test_host_queries.py::test_host_payment_api_change_query
+  C:\Users\Vaibhav Kesarwani\Desktop\AI_Training_Batch_May_2026\submissions\capstone\capstone-02\mcp-enterprise-operations-assistant\vaibhav-kesarwani\.venv\Lib\site-packages\mcp_use\agents\adapters\base.py:324: DeprecationWarning: The 'tools' property is deprecated and may return stale data. Use 'await list_tools()' instead to ensure fresh data.
+    return bool(getattr(connector, "tools", None))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================= 13 passed, 16 warnings in 62.82s (0:01:02) ==================

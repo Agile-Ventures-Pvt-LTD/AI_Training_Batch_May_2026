@@ -1,0 +1,26 @@
+[
+    {
+        "user_query": "How many spaces are there in my jira account?",
+        "tools_used": [
+            "list_projects"
+        ],
+        "final_answer": "There are at least 2 spaces in your Jira account: \"Agile Training\" and \"Basic\".",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Is there any task present in any of the spaces?",
+        "tools_used": [
+            "search_issues"
+        ],
+        "final_answer": "There are tasks present in the spaces. The spaces \"Agile Training\" and \"Basic\" have the following tasks:\n\n- Subtask 2.1 (To Do)\n- Task 3 (In Progress)\n- Task 2 (In Progress)\n- Task 1 (To Do)\n- Agile MCP (To Do)",
+        "write_action_performed": false
+    },
+    {
+        "user_query": "Can show me hte Agile MCP task",
+        "tools_used": [
+            "get_issue_details"
+        ],
+        "final_answer": "The Agile MCP task has the following details:\n- Issue Key: BAS-1\n- Summary: Agile MCP\n- Description: Agile MCP\n- Status: To Do\n- Assignee: Unassigned",
+        "write_action_performed": false
+    }
+]

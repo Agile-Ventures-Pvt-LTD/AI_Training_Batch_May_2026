@@ -1,0 +1,6 @@
+{
+  "name": "Agile Solutions Control Tower",
+  "description": "Agile Solutions Autonomous Control Tower for E-commerce Intelligence, Digital Shelf, Quick Commerce, Pricing, and Inventory Decision Support",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

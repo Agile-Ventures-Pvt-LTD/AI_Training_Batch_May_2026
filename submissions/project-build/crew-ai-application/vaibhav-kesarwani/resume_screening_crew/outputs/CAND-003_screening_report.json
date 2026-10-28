@@ -1,0 +1,54 @@
+{
+  "candidate_id": "CAND-003",
+  "candidate_name": "Neha Gupta",
+  "role_title": "AI Engineer",
+  "overall_score": 16,
+  "max_score": 40,
+  "percentage": 40,
+  "recommendation": "NOT_RECOMMENDED",
+  "executive_summary": "Neha is a capable Data Analyst with 3 years of experience specializing in business intelligence, SQL reporting, and structured data manipulation using Python and pandas. However, her background lacks core software engineering primitives (such as robust API design, structured error handling, asynchronous patterns, and production deployment) and features minimal exposure to the Generative AI ecosystem. Her AI experience is confined to introductory self-study and basic, non-integrated prompt scripts.",
+  "strengths": [
+    "Strong proficiency in SQL query design, data extraction, and relational database concepts.",
+    "Solid data manipulation, cleaning, and analysis capabilities using Python and pandas.",
+    "Proven track record of translating messy data into structured business metrics and stakeholder dashboards.",
+    "Familiarity with foundational prompt engineering basics from independent study."
+  ],
+  "gaps": [
+    "Lacks backend software engineering experience, including API development frameworks (FastAPI, Flask) and web protocols.",
+    "No practical exposure to production AI engineering concepts, including RAG pipelines, vector databases, and embedding models.",
+    "No experience with production-level LLM orchestration frameworks like LangChain, LangGraph, or CrewAI.",
+    "Deficient in software quality assurance standards, lacking experience with automated testing tools like pytest and CI/CD workflows."
+  ],
+  "interview_focus_areas": [
+    "Feasibility of transitioning from data analysis to structured software and AI engineering.",
+    "Core programming hygiene, modular code design, and error-handling capabilities.",
+    "Conceptual grasp of text embeddings and the mathematical intuition behind semantic search.",
+    "Familiarity with web architectures, RESTful design patterns, and handling unstructured data formats."
+  ],
+  "interview_questions": {
+    "technical_questions": [
+      "Your background focuses heavily on analytical scripts. How would you modify your Python scripts to expose their functionality as a reusable REST API for other applications?",
+      "In data analysis, you work primarily with tabular data. If you had to process thousands of unstructured PDF manuals for an AI application, how would your approach to data cleaning change?",
+      "AI pipelines require strict exception handling to manage API drops and timeouts. Can you explain your approach to handling runtime errors and exceptions in your automation scripts?"
+    ],
+    "project_deep_dive_questions": [
+      "In your LLM Study Notes Assistant notebook, how did you structure your prompt templates to ensure the summaries remained accurate and didn't omit key details?",
+      "For your Inventory Alert Script, how did you validate the integrity of the incoming data before running your alert logic to ensure false alerts weren't triggered?"
+    ],
+    "scenario_questions": [
+      "Suppose we want to build a feature that allows business stakeholders to ask questions in plain English and automatically turns them into SQL queries. Given your strong SQL background, how would you design a prompt-based prototype to attempt this?",
+      "If an LLM API rate limit is reached while running an automation script, what programmatic strategies would you implement to ensure the script does not crash and resumes safely?"
+    ],
+    "gap_validation_questions": [
+      "An AI Engineer role requires heavy software engineering hygiene like automated unit testing. What steps have you taken to learn frameworks like pytest or version control workflows?",
+      "What specific areas of generative AI and machine learning are you currently studying to help bridge the gap between analytics and active software development?"
+    ]
+  },
+  "evidence": [
+    "2 years of experience as a Data Analyst at RetailVista Analytics building Power BI dashboards and pandas automation scripts.",
+    "1 year of experience as a Junior Analyst at MarketPulse Services cleaning CSV data and writing ad-hoc SQL extracts.",
+    "Developed a basic personal notebook using an LLM API to summarize study notes.",
+    "Holds a Bachelor of Science in Statistics."
+  ],
+  "human_review_note": "Neha is a skilled data analyst, but her profile has severe technical gaps for a core AI Engineer position. She lacks the fundamental backend engineering skills and architectural experience required to build and deploy scalable AI applications. She would be a much stronger fit for an Analytics Engineer, Data Analyst, or specialized AI Product Operations role where her statistics and SQL strengths can be immediately leveraged."
+}

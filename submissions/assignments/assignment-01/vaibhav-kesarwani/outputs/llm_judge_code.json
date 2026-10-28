@@ -1,0 +1,34 @@
+{
+  "case_name": "llm_judge_code",
+  "raw_response": "```json\n{\n  \"explanation_a\": {\n    \"scores\": {\n      \"Technical Accuracy\": 5,\n      \"Clarity for Beginners\": 5,\n      \"Depth of Explanation\": 4,\n      \"Misleading or Incorrect Claims\": 1,\n      \"Practical Correctness\": 5\n    },\n    \"issues\": [],\n    \"overall_score\": 8\n  },\n  \"explanation_b\": {\n    \"scores\": {\n      \"Technical Accuracy\": 2,\n      \"Clarity for Beginners\": 4,\n      \"Depth of Explanation\": 2,\n      \"Misleading or Incorrect Claims\": 5,\n      \"Practical Correctness\": 2\n    },\n    \"issues\": [\n      \"Shallow copy is not always bad\",\n      \"Deep copy is not always better\",\n      \"Oversimplification of memory allocation\"\n    ],\n    \"overall_score\": 2\n  },\n  \"winner\": \"explanation_a\",\n  \"judge_reasoning_summary\": \"Explanation A accurately describes the difference between shallow and deep copying in Python, providing a clear and concise explanation. Explanation B oversimplifies the concept, leading to misleading claims about the superiority of deep copying and the inferiority of shallow copying.\"\n}\n```",
+  "parsed_output": {
+    "explanation_a": {
+      "scores": {
+        "Technical Accuracy": 5,
+        "Clarity for Beginners": 5,
+        "Depth of Explanation": 4,
+        "Misleading or Incorrect Claims": 1,
+        "Practical Correctness": 5
+      },
+      "issues": [],
+      "overall_score": 8
+    },
+    "explanation_b": {
+      "scores": {
+        "Technical Accuracy": 2,
+        "Clarity for Beginners": 4,
+        "Depth of Explanation": 2,
+        "Misleading or Incorrect Claims": 5,
+        "Practical Correctness": 2
+      },
+      "issues": [
+        "Shallow copy is not always bad",
+        "Deep copy is not always better",
+        "Oversimplification of memory allocation"
+      ],
+      "overall_score": 2
+    },
+    "winner": "explanation_a",
+    "judge_reasoning_summary": "Explanation A accurately describes the difference between shallow and deep copying in Python, providing a clear and concise explanation. Explanation B oversimplifies the concept, leading to misleading claims about the superiority of deep copying and the inferiority of shallow copying."
+  }
+}
